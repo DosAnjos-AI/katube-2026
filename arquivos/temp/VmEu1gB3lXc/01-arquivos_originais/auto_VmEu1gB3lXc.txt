@@ -1,0 +1,968 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.320 --> 00:00:02.070 align:start position:0%
+ 
+Aquele<00:00:00.640><c> abraço</c><00:00:01.000><c> a</c><00:00:01.160><c> você</c><00:00:01.400><c> que</c><00:00:01.520><c> tá</c><00:00:01.680><c> aqui</c><00:00:01.880><c> no</c>
+
+00:00:02.070 --> 00:00:02.080 align:start position:0%
+Aquele abraço a você que tá aqui no
+ 
+
+00:00:02.080 --> 00:00:04.150 align:start position:0%
+Aquele abraço a você que tá aqui no
+canal<00:00:02.320><c> do</c><00:00:02.560><c> YouTube</c><00:00:02.879><c> da</c><00:00:03.120><c> Pand</c><00:00:03.480><c> News</c><00:00:03.719><c> Goiânia,</c>
+
+00:00:04.150 --> 00:00:04.160 align:start position:0%
+canal do YouTube da Pand News Goiânia,
+ 
+
+00:00:04.160 --> 00:00:06.670 align:start position:0%
+canal do YouTube da Pand News Goiânia,
+acompanhando<00:00:04.920><c> todos</c><00:00:05.160><c> os</c><00:00:05.359><c> nossos</c><00:00:05.720><c> conteúdos</c><00:00:06.480><c> e</c>
+
+00:00:06.670 --> 00:00:06.680 align:start position:0%
+acompanhando todos os nossos conteúdos e
+ 
+
+00:00:06.680 --> 00:00:09.230 align:start position:0%
+acompanhando todos os nossos conteúdos e
+também<00:00:06.960><c> até</c><00:00:07.200><c> a</c><00:00:07.359><c> nossa</c><00:00:07.839><c> programação</c><00:00:08.519><c> ao</c><00:00:08.679><c> vivo.</c>
+
+00:00:09.230 --> 00:00:09.240 align:start position:0%
+também até a nossa programação ao vivo.
+ 
+
+00:00:09.240 --> 00:00:11.629 align:start position:0%
+também até a nossa programação ao vivo.
+Eu<00:00:09.360><c> sou</c><00:00:09.480><c> o</c><00:00:09.519><c> Igor</c><00:00:09.800><c> Santiago,</c><00:00:10.559><c> a</c><00:00:10.679><c> sua</c><00:00:10.880><c> fonte</c><00:00:11.160><c> de</c>
+
+00:00:11.629 --> 00:00:11.639 align:start position:0%
+Eu sou o Igor Santiago, a sua fonte de
+ 
+
+00:00:11.639 --> 00:00:13.749 align:start position:0%
+Eu sou o Igor Santiago, a sua fonte de
+informações<00:00:12.240><c> do</c><00:00:12.400><c> Vila</c><00:00:12.639><c> Nova,</c><00:00:13.120><c> chegando</c><00:00:13.519><c> aqui</c>
+
+00:00:13.749 --> 00:00:13.759 align:start position:0%
+informações do Vila Nova, chegando aqui
+ 
+
+00:00:13.759 --> 00:00:15.990 align:start position:0%
+informações do Vila Nova, chegando aqui
+para<00:00:13.960><c> trazer</c><00:00:14.280><c> um</c><00:00:14.480><c> conteúdo</c><00:00:15.160><c> um</c><00:00:15.480><c> pouco</c>
+
+00:00:15.990 --> 00:00:16.000 align:start position:0%
+para trazer um conteúdo um pouco
+ 
+
+00:00:16.000 --> 00:00:18.429 align:start position:0%
+para trazer um conteúdo um pouco
+diferente.<00:00:16.920><c> Já</c><00:00:17.119><c> chega</c><00:00:17.359><c> aí</c><00:00:17.640><c> deixando</c><00:00:18.080><c> o</c><00:00:18.160><c> seu</c>
+
+00:00:18.429 --> 00:00:18.439 align:start position:0%
+diferente. Já chega aí deixando o seu
+ 
+
+00:00:18.439 --> 00:00:20.790 align:start position:0%
+diferente. Já chega aí deixando o seu
+like,<00:00:19.000><c> compartilhando</c><00:00:19.640><c> esse</c><00:00:19.880><c> vídeo</c><00:00:20.359><c> e</c><00:00:20.560><c> se</c>
+
+00:00:20.790 --> 00:00:20.800 align:start position:0%
+like, compartilhando esse vídeo e se
+ 
+
+00:00:20.800 --> 00:00:22.550 align:start position:0%
+like, compartilhando esse vídeo e se
+inscrevendo<00:00:21.519><c> no</c><00:00:21.720><c> nosso</c><00:00:22.000><c> canal.</c><00:00:22.359><c> Estamos</c>
+
+00:00:22.550 --> 00:00:22.560 align:start position:0%
+inscrevendo no nosso canal. Estamos
+ 
+
+00:00:22.560 --> 00:00:25.429 align:start position:0%
+inscrevendo no nosso canal. Estamos
+quase<00:00:22.880><c> batendo</c><00:00:23.560><c> a</c><00:00:23.720><c> marca</c><00:00:24.000><c> de</c><00:00:24.240><c> 64.000</c><00:00:25.240><c> 1000</c>
+
+00:00:25.429 --> 00:00:25.439 align:start position:0%
+quase batendo a marca de 64.000 1000
+ 
+
+00:00:25.439 --> 00:00:27.910 align:start position:0%
+quase batendo a marca de 64.000 1000
+inscritos.<00:00:25.960><c> E</c><00:00:26.080><c> hoje</c><00:00:26.599><c> a</c><00:00:26.760><c> Band</c><00:00:27.080><c> News</c><00:00:27.320><c> Goiânia</c>
+
+00:00:27.910 --> 00:00:27.920 align:start position:0%
+inscritos. E hoje a Band News Goiânia
+ 
+
+00:00:27.920 --> 00:00:31.349 align:start position:0%
+inscritos. E hoje a Band News Goiânia
+completa<00:00:28.720><c> 6</c><00:00:29.039><c> anos</c><00:00:29.320><c> de</c><00:00:29.560><c> existência,</c><00:00:30.560><c> 6</c><00:00:30.759><c> anos</c><00:00:31.039><c> de</c>
+
+00:00:31.349 --> 00:00:31.359 align:start position:0%
+completa 6 anos de existência, 6 anos de
+ 
+
+00:00:31.359 --> 00:00:34.590 align:start position:0%
+completa 6 anos de existência, 6 anos de
+muita<00:00:31.720><c> história,</c><00:00:32.439><c> de</c><00:00:32.640><c> liderança</c><00:00:33.520><c> máxima</c><00:00:34.280><c> no</c>
+
+00:00:34.590 --> 00:00:34.600 align:start position:0%
+muita história, de liderança máxima no
+ 
+
+00:00:34.600 --> 00:00:37.190 align:start position:0%
+muita história, de liderança máxima no
+esporte<00:00:35.280><c> em</c><00:00:35.480><c> Goiás.</c><00:00:35.960><c> Então</c><00:00:36.480><c> já</c><00:00:36.719><c> chega</c><00:00:36.960><c> aí</c>
+
+00:00:37.190 --> 00:00:37.200 align:start position:0%
+esporte em Goiás. Então já chega aí
+ 
+
+00:00:37.200 --> 00:00:39.389 align:start position:0%
+esporte em Goiás. Então já chega aí
+fazendo<00:00:37.960><c> todo</c><00:00:38.200><c> esse</c><00:00:38.440><c> movimento,</c><00:00:38.920><c> curtindo,</c>
+
+00:00:39.389 --> 00:00:39.399 align:start position:0%
+fazendo todo esse movimento, curtindo,
+ 
+
+00:00:39.399 --> 00:00:41.350 align:start position:0%
+fazendo todo esse movimento, curtindo,
+compartilhando<00:00:40.039><c> e</c><00:00:40.239><c> se</c><00:00:40.399><c> inscrevendo</c><00:00:40.879><c> no</c><00:00:41.079><c> nosso</c>
+
+00:00:41.350 --> 00:00:41.360 align:start position:0%
+compartilhando e se inscrevendo no nosso
+ 
+
+00:00:41.360 --> 00:00:42.990 align:start position:0%
+compartilhando e se inscrevendo no nosso
+canal<00:00:41.840><c> que</c><00:00:42.000><c> eu</c><00:00:42.120><c> já</c><00:00:42.280><c> chego</c><00:00:42.520><c> aqui</c><00:00:42.680><c> com</c><00:00:42.840><c> um</c>
+
+00:00:42.990 --> 00:00:43.000 align:start position:0%
+canal que eu já chego aqui com um
+ 
+
+00:00:43.000 --> 00:00:45.630 align:start position:0%
+canal que eu já chego aqui com um
+assunto<00:00:43.760><c> bombástico</c><00:00:44.719><c> pra</c><00:00:44.960><c> gente</c><00:00:45.120><c> falar</c><00:00:45.440><c> sobre</c>
+
+00:00:45.630 --> 00:00:45.640 align:start position:0%
+assunto bombástico pra gente falar sobre
+ 
+
+00:00:45.640 --> 00:00:48.510 align:start position:0%
+assunto bombástico pra gente falar sobre
+o<00:00:45.760><c> Vila</c><00:00:46.000><c> Nova.</c><00:00:46.440><c> E</c><00:00:46.559><c> é</c><00:00:46.680><c> o</c><00:00:46.800><c> seguinte,</c><00:00:47.239><c> galera,</c><00:00:47.879><c> é</c>
+
+00:00:48.510 --> 00:00:48.520 align:start position:0%
+o Vila Nova. E é o seguinte, galera, é
+ 
+
+00:00:48.520 --> 00:00:51.510 align:start position:0%
+o Vila Nova. E é o seguinte, galera, é
+às<00:00:48.719><c> vezes</c><00:00:48.879><c> o</c><00:00:49.039><c> torcedor</c><00:00:49.559><c> vilovense</c><00:00:50.559><c> ele</c><00:00:50.960><c> cobra</c>
+
+00:00:51.510 --> 00:00:51.520 align:start position:0%
+às vezes o torcedor vilovense ele cobra
+ 
+
+00:00:51.520 --> 00:00:54.069 align:start position:0%
+às vezes o torcedor vilovense ele cobra
+um<00:00:51.760><c> pouco</c><00:00:52.079><c> demais.</c><00:00:52.559><c> o</c><00:00:52.640><c> torcedor</c><00:00:53.039><c> do</c><00:00:53.239><c> Vila,</c><00:00:53.840><c> ele</c>
+
+00:00:54.069 --> 00:00:54.079 align:start position:0%
+um pouco demais. o torcedor do Vila, ele
+ 
+
+00:00:54.079 --> 00:00:56.310 align:start position:0%
+um pouco demais. o torcedor do Vila, ele
+é<00:00:54.239><c> um</c><00:00:54.399><c> torcedor</c><00:00:54.840><c> muito</c><00:00:55.160><c> apaixonado,</c><00:00:56.079><c> tá</c>
+
+00:00:56.310 --> 00:00:56.320 align:start position:0%
+é um torcedor muito apaixonado, tá
+ 
+
+00:00:56.320 --> 00:00:58.509 align:start position:0%
+é um torcedor muito apaixonado, tá
+sempre<00:00:56.719><c> presente</c><00:00:57.199><c> ali,</c><00:00:57.840><c> eh,</c><00:00:58.120><c> e</c>
+
+00:00:58.509 --> 00:00:58.519 align:start position:0%
+sempre presente ali, eh, e
+ 
+
+00:00:58.519 --> 00:01:00.869 align:start position:0%
+sempre presente ali, eh, e
+consequentemente<00:00:59.320><c> ele</c><00:00:59.559><c> cobra</c><00:00:59.960><c> bastante</c><00:01:00.680><c> a</c>
+
+00:01:00.869 --> 00:01:00.879 align:start position:0%
+consequentemente ele cobra bastante a
+ 
+
+00:01:00.879 --> 00:01:02.790 align:start position:0%
+consequentemente ele cobra bastante a
+sua<00:01:01.120><c> diretoria.</c><00:01:01.879><c> E</c><00:01:02.000><c> o</c><00:01:02.120><c> assunto</c><00:01:02.399><c> que</c><00:01:02.519><c> eu</c><00:01:02.600><c> venho</c>
+
+00:01:02.790 --> 00:01:02.800 align:start position:0%
+sua diretoria. E o assunto que eu venho
+ 
+
+00:01:02.800 --> 00:01:04.910 align:start position:0%
+sua diretoria. E o assunto que eu venho
+trazer<00:01:03.160><c> aqui</c><00:01:03.480><c> hoje</c><00:01:03.920><c> é</c><00:01:04.119><c> um</c><00:01:04.239><c> assunto</c><00:01:04.479><c> pra</c><00:01:04.720><c> gente</c>
+
+00:01:04.910 --> 00:01:04.920 align:start position:0%
+trazer aqui hoje é um assunto pra gente
+ 
+
+00:01:04.920 --> 00:01:07.990 align:start position:0%
+trazer aqui hoje é um assunto pra gente
+debater<00:01:05.439><c> sobre</c><00:01:06.159><c> o</c><00:01:06.360><c> lado</c><00:01:06.799><c> financeiro</c><00:01:07.560><c> do</c><00:01:07.720><c> Vila</c>
+
+00:01:07.990 --> 00:01:08.000 align:start position:0%
+debater sobre o lado financeiro do Vila
+ 
+
+00:01:08.000 --> 00:01:10.710 align:start position:0%
+debater sobre o lado financeiro do Vila
+Nova,<00:01:08.640><c> principalmente</c><00:01:09.520><c> o</c><00:01:09.680><c> lado</c><00:01:10.000><c> financeiro</c>
+
+00:01:10.710 --> 00:01:10.720 align:start position:0%
+Nova, principalmente o lado financeiro
+ 
+
+00:01:10.720 --> 00:01:13.230 align:start position:0%
+Nova, principalmente o lado financeiro
+da<00:01:11.000><c> atual</c><00:01:11.600><c> diretoria</c><00:01:12.159><c> do</c><00:01:12.320><c> Vila,</c><00:01:12.799><c> que</c><00:01:12.960><c> é</c><00:01:13.080><c> uma</c>
+
+00:01:13.230 --> 00:01:13.240 align:start position:0%
+da atual diretoria do Vila, que é uma
+ 
+
+00:01:13.240 --> 00:01:15.630 align:start position:0%
+da atual diretoria do Vila, que é uma
+diretoria<00:01:13.720><c> que</c><00:01:13.920><c> tem</c><00:01:14.159><c> como</c><00:01:14.439><c> seu,</c><00:01:15.000><c> eh,</c><00:01:15.240><c> primeiro</c>
+
+00:01:15.630 --> 00:01:15.640 align:start position:0%
+diretoria que tem como seu, eh, primeiro
+ 
+
+00:01:15.640 --> 00:01:18.590 align:start position:0%
+diretoria que tem como seu, eh, primeiro
+objetivo<00:01:16.680><c> limpar</c><00:01:17.119><c> o</c><00:01:17.280><c> clube,</c><00:01:17.920><c> dar</c><00:01:18.159><c> aquela</c>
+
+00:01:18.590 --> 00:01:18.600 align:start position:0%
+objetivo limpar o clube, dar aquela
+ 
+
+00:01:18.600 --> 00:01:21.390 align:start position:0%
+objetivo limpar o clube, dar aquela
+cara,<00:01:18.920><c> aquela</c><00:01:19.280><c> cara</c><00:01:19.680><c> digna</c><00:01:20.400><c> ao</c><00:01:20.560><c> Vila</c><00:01:20.840><c> Nova,</c>
+
+00:01:21.390 --> 00:01:21.400 align:start position:0%
+cara, aquela cara digna ao Vila Nova,
+ 
+
+00:01:21.400 --> 00:01:24.069 align:start position:0%
+cara, aquela cara digna ao Vila Nova,
+uma<00:01:21.640><c> cara</c><00:01:21.840><c> que</c><00:01:22.119><c> não</c><00:01:22.400><c> era</c><00:01:22.759><c> trabalhada</c><00:01:23.759><c> nas</c>
+
+00:01:24.069 --> 00:01:24.079 align:start position:0%
+uma cara que não era trabalhada nas
+ 
+
+00:01:24.079 --> 00:01:25.830 align:start position:0%
+uma cara que não era trabalhada nas
+últimas<00:01:24.640><c> gestões.</c><00:01:25.240><c> Por</c><00:01:25.360><c> que</c><00:01:25.439><c> que</c><00:01:25.560><c> eu</c><00:01:25.680><c> tô</c>
+
+00:01:25.830 --> 00:01:25.840 align:start position:0%
+últimas gestões. Por que que eu tô
+ 
+
+00:01:25.840 --> 00:01:28.710 align:start position:0%
+últimas gestões. Por que que eu tô
+falando<00:01:26.119><c> isso?</c><00:01:26.920><c> Eh,</c><00:01:27.159><c> nos</c><00:01:27.400><c> últimos</c><00:01:27.799><c> anos</c><00:01:28.439><c> de</c>
+
+00:01:28.710 --> 00:01:28.720 align:start position:0%
+falando isso? Eh, nos últimos anos de
+ 
+
+00:01:28.720 --> 00:01:30.990 align:start position:0%
+falando isso? Eh, nos últimos anos de
+desde<00:01:29.079><c> 2020</c><00:01:29.720><c> para</c><00:01:29.920><c> cá,</c><00:01:30.200><c> quando</c><00:01:30.360><c> o</c><00:01:30.439><c> Hugo</c><00:01:30.680><c> Jorge</c>
+
+00:01:30.990 --> 00:01:31.000 align:start position:0%
+desde 2020 para cá, quando o Hugo Jorge
+ 
+
+00:01:31.000 --> 00:01:34.550 align:start position:0%
+desde 2020 para cá, quando o Hugo Jorge
+Bravo<00:01:31.640><c> assumiu</c><00:01:32.119><c> Vila</c><00:01:32.399><c> Nova,</c><00:01:32.880><c> o</c><00:01:33.040><c> Tigrão</c><00:01:33.439><c> vem</c><00:01:33.960><c> eh</c>
+
+00:01:34.550 --> 00:01:34.560 align:start position:0%
+Bravo assumiu Vila Nova, o Tigrão vem eh
+ 
+
+00:01:34.560 --> 00:01:37.510 align:start position:0%
+Bravo assumiu Vila Nova, o Tigrão vem eh
+tratando<00:01:35.360><c> com</c><00:01:35.680><c> muita</c><00:01:36.159><c> seriedade</c><00:01:37.119><c> as</c><00:01:37.280><c> suas</c>
+
+00:01:37.510 --> 00:01:37.520 align:start position:0%
+tratando com muita seriedade as suas
+ 
+
+00:01:37.520 --> 00:01:40.149 align:start position:0%
+tratando com muita seriedade as suas
+dívidas,<00:01:38.240><c> as</c><00:01:38.360><c> suas</c><00:01:38.640><c> contas,</c><00:01:39.320><c> vem</c><00:01:39.560><c> honrando</c>
+
+00:01:40.149 --> 00:01:40.159 align:start position:0%
+dívidas, as suas contas, vem honrando
+ 
+
+00:01:40.159 --> 00:01:43.149 align:start position:0%
+dívidas, as suas contas, vem honrando
+seus<00:01:40.520><c> compromissos</c><00:01:41.520><c> e</c><00:01:42.000><c> essas</c><00:01:42.399><c> atitudes</c><00:01:42.920><c> elas</c>
+
+00:01:43.149 --> 00:01:43.159 align:start position:0%
+seus compromissos e essas atitudes elas
+ 
+
+00:01:43.159 --> 00:01:46.590 align:start position:0%
+seus compromissos e essas atitudes elas
+não<00:01:43.360><c> eram</c><00:01:43.680><c> tomadas</c><00:01:44.600><c> desta</c><00:01:45.079><c> forma</c><00:01:45.719><c> nas</c><00:01:46.040><c> últimas</c>
+
+00:01:46.590 --> 00:01:46.600 align:start position:0%
+não eram tomadas desta forma nas últimas
+ 
+
+00:01:46.600 --> 00:01:49.389 align:start position:0%
+não eram tomadas desta forma nas últimas
+gestões.<00:01:47.479><c> Isso</c><00:01:47.640><c> daí</c><00:01:47.920><c> gerou</c><00:01:48.560><c> inúmeros</c>
+
+00:01:49.389 --> 00:01:49.399 align:start position:0%
+gestões. Isso daí gerou inúmeros
+ 
+
+00:01:49.399 --> 00:01:51.870 align:start position:0%
+gestões. Isso daí gerou inúmeros
+problemas<00:01:49.880><c> ao</c><00:01:50.079><c> Vila</c><00:01:50.280><c> Nova.</c><00:01:51.079><c> São</c><00:01:51.280><c> contas,</c><00:01:51.680><c> são</c>
+
+00:01:51.870 --> 00:01:51.880 align:start position:0%
+problemas ao Vila Nova. São contas, são
+ 
+
+00:01:51.880 --> 00:01:55.270 align:start position:0%
+problemas ao Vila Nova. São contas, são
+dívidas,<00:01:52.680><c> é,</c><00:01:53.320><c> lá</c><00:01:53.560><c> do</c><00:01:53.759><c> passado,</c><00:01:54.280><c> de</c><00:01:54.640><c> 15</c><00:01:54.960><c> anos</c>
+
+00:01:55.270 --> 00:01:55.280 align:start position:0%
+dívidas, é, lá do passado, de 15 anos
+ 
+
+00:01:55.280 --> 00:01:57.950 align:start position:0%
+dívidas, é, lá do passado, de 15 anos
+atrás,<00:01:55.960><c> que</c><00:01:56.159><c> estão</c><00:01:56.439><c> batendo</c><00:01:56.840><c> na</c><00:01:57.079><c> porta</c><00:01:57.640><c> hoje</c>
+
+00:01:57.950 --> 00:01:57.960 align:start position:0%
+atrás, que estão batendo na porta hoje
+ 
+
+00:01:57.960 --> 00:02:00.190 align:start position:0%
+atrás, que estão batendo na porta hoje
+do<00:01:58.159><c> Vila</c><00:01:58.439><c> Nova.</c><00:01:58.960><c> E</c><00:01:59.119><c> querendo</c><00:01:59.399><c> ou</c><00:01:59.560><c> não,</c><00:02:00.000><c> isso</c>
+
+00:02:00.190 --> 00:02:00.200 align:start position:0%
+do Vila Nova. E querendo ou não, isso
+ 
+
+00:02:00.200 --> 00:02:03.469 align:start position:0%
+do Vila Nova. E querendo ou não, isso
+daí<00:02:00.719><c> prejudica</c><00:02:01.960><c> é</c><00:02:02.439><c> o</c><00:02:02.640><c> rendimento,</c><00:02:03.320><c> o</c>
+
+00:02:03.469 --> 00:02:03.479 align:start position:0%
+daí prejudica é o rendimento, o
+ 
+
+00:02:03.479 --> 00:02:06.469 align:start position:0%
+daí prejudica é o rendimento, o
+andamento<00:02:04.320><c> do</c><00:02:04.600><c> projeto</c><00:02:05.240><c> atual</c><00:02:05.560><c> do</c><00:02:05.719><c> Vila</c><00:02:05.960><c> Nova.</c>
+
+00:02:06.469 --> 00:02:06.479 align:start position:0%
+andamento do projeto atual do Vila Nova.
+ 
+
+00:02:06.479 --> 00:02:08.869 align:start position:0%
+andamento do projeto atual do Vila Nova.
+Para<00:02:06.640><c> você</c><00:02:06.880><c> ter</c><00:02:07.119><c> noção,</c><00:02:07.600><c> hoje</c><00:02:08.200><c> o</c><00:02:08.360><c> Vila</c><00:02:08.640><c> tem</c><00:02:08.759><c> um</c>
+
+00:02:08.869 --> 00:02:08.879 align:start position:0%
+Para você ter noção, hoje o Vila tem um
+ 
+
+00:02:08.879 --> 00:02:11.830 align:start position:0%
+Para você ter noção, hoje o Vila tem um
+treinador<00:02:09.319><c> de</c><00:02:09.520><c> ponta</c><00:02:10.119><c> que</c><00:02:10.319><c> é</c><00:02:10.640><c> o</c><00:02:10.840><c> Paulo</c><00:02:11.239><c> Turra.</c>
+
+00:02:11.830 --> 00:02:11.840 align:start position:0%
+treinador de ponta que é o Paulo Turra.
+ 
+
+00:02:11.840 --> 00:02:14.470 align:start position:0%
+treinador de ponta que é o Paulo Turra.
+Vila<00:02:12.080><c> Nova</c><00:02:12.400><c> paga</c><00:02:12.680><c> o</c><00:02:12.879><c> salário</c><00:02:13.680><c> normalmente</c><00:02:14.280><c> do</c>
+
+00:02:14.470 --> 00:02:14.480 align:start position:0%
+Vila Nova paga o salário normalmente do
+ 
+
+00:02:14.480 --> 00:02:17.070 align:start position:0%
+Vila Nova paga o salário normalmente do
+Paulo<00:02:14.800><c> Turra,</c><00:02:15.400><c> tá</c><00:02:15.879><c> eh</c><00:02:16.239><c> honrando</c><00:02:16.640><c> com</c><00:02:16.760><c> as</c><00:02:16.879><c> suas</c>
+
+00:02:17.070 --> 00:02:17.080 align:start position:0%
+Paulo Turra, tá eh honrando com as suas
+ 
+
+00:02:17.080 --> 00:02:20.630 align:start position:0%
+Paulo Turra, tá eh honrando com as suas
+dívidas,<00:02:17.959><c> tá</c><00:02:18.200><c> pagando</c><00:02:18.519><c> o</c><00:02:18.640><c> Paulo</c><00:02:19.000><c> Turra,</c><00:02:19.720><c> mas</c>
+
+00:02:20.630 --> 00:02:20.640 align:start position:0%
+dívidas, tá pagando o Paulo Turra, mas
+ 
+
+00:02:20.640 --> 00:02:23.030 align:start position:0%
+dívidas, tá pagando o Paulo Turra, mas
+ao<00:02:20.920><c> mesmo</c><00:02:21.319><c> tempo</c><00:02:21.760><c> o</c><00:02:21.959><c> Vila</c><00:02:22.280><c> também</c><00:02:22.640><c> paga</c><00:02:22.879><c> o</c>
+
+00:02:23.030 --> 00:02:23.040 align:start position:0%
+ao mesmo tempo o Vila também paga o
+ 
+
+00:02:23.040 --> 00:02:25.830 align:start position:0%
+ao mesmo tempo o Vila também paga o
+salário<00:02:23.680><c> do</c><00:02:23.959><c> Eduardo</c><00:02:24.560><c> Batista,</c><00:02:25.360><c> que</c><00:02:25.560><c> hoje</c>
+
+00:02:25.830 --> 00:02:25.840 align:start position:0%
+salário do Eduardo Batista, que hoje
+ 
+
+00:02:25.840 --> 00:02:27.670 align:start position:0%
+salário do Eduardo Batista, que hoje
+também<00:02:26.120><c> é</c><00:02:26.239><c> um</c><00:02:26.360><c> treinador</c><00:02:26.800><c> de</c><00:02:27.000><c> ponta</c><00:02:27.280><c> na</c><00:02:27.440><c> Série</c>
+
+00:02:27.670 --> 00:02:27.680 align:start position:0%
+também é um treinador de ponta na Série
+ 
+
+00:02:27.680 --> 00:02:30.550 align:start position:0%
+também é um treinador de ponta na Série
+B<00:02:27.800><c> do</c><00:02:27.959><c> Campeonato</c><00:02:28.440><c> Brasileiro</c><00:02:29.160><c> e</c><00:02:29.440><c> está</c><00:02:30.120><c> no</c>
+
+00:02:30.550 --> 00:02:30.560 align:start position:0%
+B do Campeonato Brasileiro e está no
+ 
+
+00:02:30.560 --> 00:02:32.509 align:start position:0%
+B do Campeonato Brasileiro e está no
+Novo<00:02:30.800><c> Horizontino</c><00:02:31.480><c> ou</c><00:02:31.680><c> no</c><00:02:31.840><c> Criciuma,</c><00:02:32.360><c> se</c><00:02:32.440><c> eu</c>
+
+00:02:32.509 --> 00:02:32.519 align:start position:0%
+Novo Horizontino ou no Criciuma, se eu
+ 
+
+00:02:32.519 --> 00:02:34.869 align:start position:0%
+Novo Horizontino ou no Criciuma, se eu
+não<00:02:32.599><c> me</c><00:02:32.720><c> engano.</c><00:02:33.319><c> Vocês</c><00:02:33.560><c> me</c><00:02:33.760><c> perdoem</c><00:02:34.160><c> aí</c><00:02:34.599><c> é,</c><00:02:34.760><c> se</c>
+
+00:02:34.869 --> 00:02:34.879 align:start position:0%
+não me engano. Vocês me perdoem aí é, se
+ 
+
+00:02:34.879 --> 00:02:36.509 align:start position:0%
+não me engano. Vocês me perdoem aí é, se
+eu<00:02:35.000><c> não</c><00:02:35.080><c> me</c><00:02:35.160><c> engano,</c><00:02:35.400><c> ele</c><00:02:35.560><c> está</c><00:02:35.720><c> no</c><00:02:35.840><c> Crisciuma,</c>
+
+00:02:36.509 --> 00:02:36.519 align:start position:0%
+eu não me engano, ele está no Crisciuma,
+ 
+
+00:02:36.519 --> 00:02:39.790 align:start position:0%
+eu não me engano, ele está no Crisciuma,
+vocês<00:02:36.760><c> me</c><00:02:36.920><c> perdoem</c><00:02:37.360><c> aí</c><00:02:37.720><c> a</c><00:02:37.879><c> minha</c><00:02:38.760><c> breve</c>
+
+00:02:39.790 --> 00:02:39.800 align:start position:0%
+vocês me perdoem aí a minha breve
+ 
+
+00:02:39.800 --> 00:02:42.710 align:start position:0%
+vocês me perdoem aí a minha breve
+ignorância,<00:02:40.560><c> mas</c><00:02:40.800><c> por</c><00:02:41.000><c> conta</c><00:02:41.560><c> do</c><00:02:41.920><c> amarelo</c><00:02:42.400><c> dos</c>
+
+00:02:42.710 --> 00:02:42.720 align:start position:0%
+ignorância, mas por conta do amarelo dos
+ 
+
+00:02:42.720 --> 00:02:45.430 align:start position:0%
+ignorância, mas por conta do amarelo dos
+dois<00:02:43.120><c> times</c><00:02:43.920><c> e</c><00:02:44.200><c> se</c><00:02:44.360><c> eu</c><00:02:44.440><c> não</c><00:02:44.560><c> me</c><00:02:44.680><c> engano,</c><00:02:45.200><c> ele</c>
+
+00:02:45.430 --> 00:02:45.440 align:start position:0%
+dois times e se eu não me engano, ele
+ 
+
+00:02:45.440 --> 00:02:48.670 align:start position:0%
+dois times e se eu não me engano, ele
+está<00:02:45.640><c> assim</c><00:02:46.080><c> no</c><00:02:46.360><c> Crisuma.</c><00:02:47.120><c> E</c><00:02:47.239><c> aí</c><00:02:47.480><c> o</c><00:02:47.640><c> Vila</c><00:02:47.959><c> Nova</c>
+
+00:02:48.670 --> 00:02:48.680 align:start position:0%
+está assim no Crisuma. E aí o Vila Nova
+ 
+
+00:02:48.680 --> 00:02:51.630 align:start position:0%
+está assim no Crisuma. E aí o Vila Nova
+paga<00:02:49.159><c> o</c><00:02:49.360><c> salário</c><00:02:50.000><c> do</c><00:02:50.280><c> Turra</c><00:02:50.680><c> e</c><00:02:50.920><c> ao</c><00:02:51.120><c> mesmo</c><00:02:51.440><c> tempo</c>
+
+00:02:51.630 --> 00:02:51.640 align:start position:0%
+paga o salário do Turra e ao mesmo tempo
+ 
+
+00:02:51.640 --> 00:02:54.350 align:start position:0%
+paga o salário do Turra e ao mesmo tempo
+o<00:02:51.800><c> salário</c><00:02:52.599><c> do</c><00:02:52.840><c> técnico</c><00:02:53.319><c> Eduardo</c><00:02:53.760><c> Batista.</c>
+
+00:02:54.350 --> 00:02:54.360 align:start position:0%
+o salário do técnico Eduardo Batista.
+ 
+
+00:02:54.360 --> 00:02:56.390 align:start position:0%
+o salário do técnico Eduardo Batista.
+Por<00:02:54.519><c> que,</c><00:02:54.720><c> Igor?</c><00:02:55.400><c> Por</c><00:02:55.560><c> que</c><00:02:55.640><c> que</c><00:02:55.800><c> o</c><00:02:55.879><c> Vila</c><00:02:56.120><c> Nova</c>
+
+00:02:56.390 --> 00:02:56.400 align:start position:0%
+Por que, Igor? Por que que o Vila Nova
+ 
+
+00:02:56.400 --> 00:02:58.630 align:start position:0%
+Por que, Igor? Por que que o Vila Nova
+tá<00:02:56.599><c> pagando</c><00:02:57.319><c> um</c><00:02:57.519><c> salário</c><00:02:57.920><c> para</c><00:02:58.080><c> o</c><00:02:58.200><c> Eduardo</c>
+
+00:02:58.630 --> 00:02:58.640 align:start position:0%
+tá pagando um salário para o Eduardo
+ 
+
+00:02:58.640 --> 00:03:02.229 align:start position:0%
+tá pagando um salário para o Eduardo
+Batista?<00:02:59.360><c> É</c><00:02:59.519><c> o</c><00:02:59.640><c> seguinte,</c><00:03:00.400><c> em</c><00:03:01.080><c> 2019,</c><00:03:02.000><c> na</c>
+
+00:03:02.229 --> 00:03:02.239 align:start position:0%
+Batista? É o seguinte, em 2019, na
+ 
+
+00:03:02.239 --> 00:03:05.630 align:start position:0%
+Batista? É o seguinte, em 2019, na
+gestão<00:03:03.040><c> do</c><00:03:03.480><c> Escival</c><00:03:04.040><c> Martins,</c><00:03:04.480><c> que</c><00:03:04.680><c> hoje</c><00:03:05.280><c> eh</c>
+
+00:03:05.630 --> 00:03:05.640 align:start position:0%
+gestão do Escival Martins, que hoje eh
+ 
+
+00:03:05.640 --> 00:03:07.949 align:start position:0%
+gestão do Escival Martins, que hoje eh
+comanda<00:03:06.159><c> o</c><00:03:06.360><c> Goiânia,</c><00:03:06.920><c> né,</c><00:03:07.120><c> o</c><00:03:07.280><c> rebaixado</c>
+
+00:03:07.949 --> 00:03:07.959 align:start position:0%
+comanda o Goiânia, né, o rebaixado
+ 
+
+00:03:07.959 --> 00:03:10.710 align:start position:0%
+comanda o Goiânia, né, o rebaixado
+Goiânia<00:03:08.760><c> eh</c><00:03:09.000><c> no</c><00:03:09.200><c> Campeonato</c><00:03:09.720><c> Goiano,</c><00:03:10.560><c> o</c>
+
+00:03:10.710 --> 00:03:10.720 align:start position:0%
+Goiânia eh no Campeonato Goiano, o
+ 
+
+00:03:10.720 --> 00:03:13.949 align:start position:0%
+Goiânia eh no Campeonato Goiano, o
+Escival<00:03:11.640><c> contratou</c><00:03:12.280><c> o</c><00:03:12.480><c> Eduardo</c><00:03:12.920><c> Batista.</c>
+
+00:03:13.949 --> 00:03:13.959 align:start position:0%
+Escival contratou o Eduardo Batista.
+ 
+
+00:03:13.959 --> 00:03:15.710 align:start position:0%
+Escival contratou o Eduardo Batista.
+Naquela<00:03:14.440><c> época,</c><00:03:14.799><c> o</c><00:03:14.879><c> Eduardo</c><00:03:15.239><c> Batista</c>
+
+00:03:15.710 --> 00:03:15.720 align:start position:0%
+Naquela época, o Eduardo Batista
+ 
+
+00:03:15.720 --> 00:03:18.270 align:start position:0%
+Naquela época, o Eduardo Batista
+comandou<00:03:16.080><c> o</c><00:03:16.159><c> Vila</c><00:03:16.400><c> Nova</c><00:03:16.959><c> por</c><00:03:17.280><c> 23</c><00:03:17.799><c> jogos</c><00:03:18.120><c> e</c>
+
+00:03:18.270 --> 00:03:18.280 align:start position:0%
+comandou o Vila Nova por 23 jogos e
+ 
+
+00:03:18.280 --> 00:03:21.149 align:start position:0%
+comandou o Vila Nova por 23 jogos e
+acabou<00:03:19.000><c> e</c><00:03:19.239><c> tendo</c><00:03:19.480><c> o</c><00:03:19.599><c> seu</c><00:03:19.879><c> contrato</c><00:03:20.319><c> quebrado.</c>
+
+00:03:21.149 --> 00:03:21.159 align:start position:0%
+acabou e tendo o seu contrato quebrado.
+ 
+
+00:03:21.159 --> 00:03:24.910 align:start position:0%
+acabou e tendo o seu contrato quebrado.
+E<00:03:21.280><c> aí</c><00:03:21.640><c> o</c><00:03:21.799><c> Esival</c><00:03:22.480><c> não</c><00:03:22.799><c> honrou</c><00:03:23.560><c> com</c><00:03:23.920><c> eh</c><00:03:24.280><c> a</c><00:03:24.519><c> dívida</c>
+
+00:03:24.910 --> 00:03:24.920 align:start position:0%
+E aí o Esival não honrou com eh a dívida
+ 
+
+00:03:24.920 --> 00:03:26.670 align:start position:0%
+E aí o Esival não honrou com eh a dívida
+trabalhista,<00:03:25.480><c> né,</c><00:03:25.680><c> ali</c><00:03:25.920><c> com</c><00:03:26.080><c> o</c><00:03:26.239><c> contrato</c>
+
+00:03:26.670 --> 00:03:26.680 align:start position:0%
+trabalhista, né, ali com o contrato
+ 
+
+00:03:26.680 --> 00:03:29.589 align:start position:0%
+trabalhista, né, ali com o contrato
+quebrado<00:03:27.360><c> do</c><00:03:27.519><c> Eduardo</c><00:03:28.319><c> Batista.</c><00:03:29.120><c> E</c><00:03:29.280><c> querendo</c>
+
+00:03:29.589 --> 00:03:29.599 align:start position:0%
+quebrado do Eduardo Batista. E querendo
+ 
+
+00:03:29.599 --> 00:03:31.990 align:start position:0%
+quebrado do Eduardo Batista. E querendo
+ou<00:03:29.720><c> não,</c><00:03:29.959><c> essa</c><00:03:30.159><c> dívida</c><00:03:30.560><c> acabou</c><00:03:31.319><c> chegando</c><00:03:31.799><c> ao</c>
+
+00:03:31.990 --> 00:03:32.000 align:start position:0%
+ou não, essa dívida acabou chegando ao
+ 
+
+00:03:32.000 --> 00:03:35.110 align:start position:0%
+ou não, essa dívida acabou chegando ao
+Vila<00:03:32.239><c> Nova</c><00:03:32.760><c> nos</c><00:03:33.080><c> tempos</c><00:03:33.599><c> atuais.</c><00:03:34.519><c> O</c><00:03:34.640><c> Eduardo</c>
+
+00:03:35.110 --> 00:03:35.120 align:start position:0%
+Vila Nova nos tempos atuais. O Eduardo
+ 
+
+00:03:35.120 --> 00:03:37.070 align:start position:0%
+Vila Nova nos tempos atuais. O Eduardo
+fez<00:03:35.480><c> um</c><00:03:35.799><c> acordo</c><00:03:36.200><c> com</c><00:03:36.360><c> o</c><00:03:36.480><c> presidente</c><00:03:36.879><c> Hugo</c>
+
+00:03:37.070 --> 00:03:37.080 align:start position:0%
+fez um acordo com o presidente Hugo
+ 
+
+00:03:37.080 --> 00:03:38.710 align:start position:0%
+fez um acordo com o presidente Hugo
+Jorge<00:03:37.360><c> Bravo,</c><00:03:37.640><c> por</c><00:03:37.720><c> isso</c><00:03:37.840><c> que</c><00:03:37.920><c> o</c><00:03:38.000><c> Vila</c><00:03:38.239><c> Nova</c>
+
+00:03:38.710 --> 00:03:38.720 align:start position:0%
+Jorge Bravo, por isso que o Vila Nova
+ 
+
+00:03:38.720 --> 00:03:42.030 align:start position:0%
+Jorge Bravo, por isso que o Vila Nova
+paga<00:03:39.080><c> ele</c><00:03:39.519><c> de</c><00:03:39.799><c> forma</c><00:03:40.319><c> mensal.</c><00:03:41.280><c> Então</c><00:03:41.519><c> o</c><00:03:41.680><c> Vila</c>
+
+00:03:42.030 --> 00:03:42.040 align:start position:0%
+paga ele de forma mensal. Então o Vila
+ 
+
+00:03:42.040 --> 00:03:45.750 align:start position:0%
+paga ele de forma mensal. Então o Vila
+hoje<00:03:42.720><c> paga</c><00:03:43.280><c> o</c><00:03:43.640><c> Paulo</c><00:03:44.000><c> Turra</c><00:03:44.599><c> e</c><00:03:44.920><c> também</c><00:03:45.560><c> o</c>
+
+00:03:45.750 --> 00:03:45.760 align:start position:0%
+hoje paga o Paulo Turra e também o
+ 
+
+00:03:45.760 --> 00:03:48.429 align:start position:0%
+hoje paga o Paulo Turra e também o
+Eduardo<00:03:46.239><c> Batista.</c><00:03:46.840><c> Fora</c><00:03:47.159><c> claro</c><00:03:47.799><c> as</c><00:03:48.040><c> outras</c>
+
+00:03:48.429 --> 00:03:48.439 align:start position:0%
+Eduardo Batista. Fora claro as outras
+ 
+
+00:03:48.439 --> 00:03:50.390 align:start position:0%
+Eduardo Batista. Fora claro as outras
+dívidas<00:03:48.840><c> que</c><00:03:48.959><c> o</c><00:03:49.000><c> Vila</c><00:03:49.239><c> Nova</c><00:03:49.480><c> vem</c><00:03:49.720><c> pagando,</c>
+
+00:03:50.390 --> 00:03:50.400 align:start position:0%
+dívidas que o Vila Nova vem pagando,
+ 
+
+00:03:50.400 --> 00:03:53.550 align:start position:0%
+dívidas que o Vila Nova vem pagando,
+Tigrão<00:03:50.799><c> gasta</c><00:03:51.120><c> aí</c><00:03:51.640><c> e</c><00:03:51.840><c> pelo</c><00:03:52.159><c> menos</c><00:03:52.519><c> R$</c><00:03:52.599><c> 300.000</c>
+
+00:03:53.550 --> 00:03:53.560 align:start position:0%
+Tigrão gasta aí e pelo menos R$ 300.000
+ 
+
+00:03:53.560 --> 00:03:56.630 align:start position:0%
+Tigrão gasta aí e pelo menos R$ 300.000
+ao<00:03:53.760><c> mês</c><00:03:54.439><c> e</c><00:03:54.720><c> eh</c><00:03:54.720><c> e</c><00:03:55.239><c> com</c><00:03:55.439><c> dívidas</c><00:03:56.000><c> passadas.</c>
+
+00:03:56.630 --> 00:03:56.640 align:start position:0%
+ao mês e eh e com dívidas passadas.
+ 
+
+00:03:56.640 --> 00:03:59.069 align:start position:0%
+ao mês e eh e com dívidas passadas.
+Então<00:03:57.120><c> para</c><00:03:57.319><c> você</c><00:03:57.640><c> torcedor</c><00:03:58.079><c> vilanovense</c><00:03:58.959><c> que</c>
+
+00:03:59.069 --> 00:03:59.079 align:start position:0%
+Então para você torcedor vilanovense que
+ 
+
+00:03:59.079 --> 00:04:01.069 align:start position:0%
+Então para você torcedor vilanovense que
+às<00:03:59.239><c> vezes</c><00:03:59.360><c> fica</c><00:03:59.599><c> cobrando</c><00:04:00.159><c> investimentos,</c>
+
+00:04:01.069 --> 00:04:01.079 align:start position:0%
+às vezes fica cobrando investimentos,
+ 
+
+00:04:01.079 --> 00:04:02.789 align:start position:0%
+às vezes fica cobrando investimentos,
+fica<00:04:01.319><c> cobrando</c><00:04:01.680><c> uma</c><00:04:01.879><c> folha</c><00:04:02.159><c> salarial</c><00:04:02.720><c> mais</c>
+
+00:04:02.789 --> 00:04:02.799 align:start position:0%
+fica cobrando uma folha salarial mais
+ 
+
+00:04:02.799 --> 00:04:06.990 align:start position:0%
+fica cobrando uma folha salarial mais
+mais<00:04:03.920><c> eh</c><00:04:04.079><c> eh</c><00:04:04.400><c> mais</c><00:04:05.120><c> eh</c><00:04:05.439><c> gorda,</c><00:04:05.879><c> né,</c><00:04:06.079><c> mais</c>
+
+00:04:06.990 --> 00:04:07.000 align:start position:0%
+mais eh eh mais eh gorda, né, mais
+ 
+
+00:04:07.000 --> 00:04:09.229 align:start position:0%
+mais eh eh mais eh gorda, né, mais
+largas,<00:04:07.519><c> assim,</c><00:04:07.799><c> assim</c><00:04:08.079><c> dizendo,</c><00:04:08.879><c> você,</c>
+
+00:04:09.229 --> 00:04:09.239 align:start position:0%
+largas, assim, assim dizendo, você,
+ 
+
+00:04:09.239 --> 00:04:11.589 align:start position:0%
+largas, assim, assim dizendo, você,
+torcedor<00:04:09.760><c> colorado,</c><00:04:10.439><c> tem</c><00:04:10.640><c> que</c><00:04:10.920><c> entender</c><00:04:11.360><c> a</c>
+
+00:04:11.589 --> 00:04:11.599 align:start position:0%
+torcedor colorado, tem que entender a
+ 
+
+00:04:11.599 --> 00:04:14.910 align:start position:0%
+torcedor colorado, tem que entender a
+realidade<00:04:12.200><c> financeira</c><00:04:13.000><c> do</c><00:04:13.200><c> Vila</c><00:04:13.519><c> Nova</c><00:04:14.079><c> hoje.</c>
+
+00:04:14.910 --> 00:04:14.920 align:start position:0%
+realidade financeira do Vila Nova hoje.
+ 
+
+00:04:14.920 --> 00:04:16.390 align:start position:0%
+realidade financeira do Vila Nova hoje.
+presidente<00:04:15.239><c> Hugo</c><00:04:15.439><c> Jorge</c><00:04:15.720><c> Bravo</c><00:04:16.000><c> tá</c><00:04:16.160><c> fazendo</c>
+
+00:04:16.390 --> 00:04:16.400 align:start position:0%
+presidente Hugo Jorge Bravo tá fazendo
+ 
+
+00:04:16.400 --> 00:04:20.789 align:start position:0%
+presidente Hugo Jorge Bravo tá fazendo
+um<00:04:16.600><c> trabalho</c><00:04:17.239><c> de</c><00:04:17.519><c> excelência</c><00:04:18.519><c> por</c><00:04:19.400><c> mesmo</c><00:04:19.959><c> com</c>
+
+00:04:20.789 --> 00:04:20.799 align:start position:0%
+um trabalho de excelência por mesmo com
+ 
+
+00:04:20.799 --> 00:04:23.469 align:start position:0%
+um trabalho de excelência por mesmo com
+eh<00:04:21.120><c> essas</c><00:04:21.720><c> essas</c><00:04:22.120><c> dívidas,</c><00:04:22.919><c> essas</c>
+
+00:04:23.469 --> 00:04:23.479 align:start position:0%
+eh essas essas dívidas, essas
+ 
+
+00:04:23.479 --> 00:04:26.790 align:start position:0%
+eh essas essas dívidas, essas
+responsabilidades<00:04:24.360><c> que</c><00:04:25.080><c> não</c><00:04:25.440><c> seriam</c><00:04:26.280><c> eh</c><00:04:26.479><c> eh</c>
+
+00:04:26.790 --> 00:04:26.800 align:start position:0%
+responsabilidades que não seriam eh eh
+ 
+
+00:04:26.800 --> 00:04:29.710 align:start position:0%
+responsabilidades que não seriam eh eh
+eh<00:04:27.160><c> eh</c><00:04:27.759><c> dele,</c><00:04:28.440><c> ele</c><00:04:28.680><c> tá</c><00:04:28.880><c> conseguindo</c><00:04:29.320><c> fazer</c><00:04:29.560><c> um</c>
+
+00:04:29.710 --> 00:04:29.720 align:start position:0%
+eh eh dele, ele tá conseguindo fazer um
+ 
+
+00:04:29.720 --> 00:04:32.110 align:start position:0%
+eh eh dele, ele tá conseguindo fazer um
+grande<00:04:30.000><c> trabalho.</c><00:04:30.440><c> Vila</c><00:04:30.800><c> todo</c><00:04:31.039><c> ano</c><00:04:31.600><c> montando</c>
+
+00:04:32.110 --> 00:04:32.120 align:start position:0%
+grande trabalho. Vila todo ano montando
+ 
+
+00:04:32.120 --> 00:04:35.070 align:start position:0%
+grande trabalho. Vila todo ano montando
+times<00:04:32.440><c> aí</c><00:04:33.000><c> eh</c><00:04:33.400><c> com</c><00:04:33.919><c> orçamento</c><00:04:34.479><c> lá</c><00:04:34.759><c> embaixo,</c>
+
+00:04:35.070 --> 00:04:35.080 align:start position:0%
+times aí eh com orçamento lá embaixo,
+ 
+
+00:04:35.080 --> 00:04:37.790 align:start position:0%
+times aí eh com orçamento lá embaixo,
+mesmo<00:04:35.320><c> assim</c><00:04:35.639><c> brigando.</c><00:04:36.560><c> Então,</c><00:04:36.840><c> rapaz,</c><00:04:37.560><c> tem</c>
+
+00:04:37.790 --> 00:04:37.800 align:start position:0%
+mesmo assim brigando. Então, rapaz, tem
+ 
+
+00:04:37.800 --> 00:04:41.110 align:start position:0%
+mesmo assim brigando. Então, rapaz, tem
+que<00:04:37.919><c> se</c><00:04:38.080><c> bater</c><00:04:38.360><c> palma</c><00:04:39.039><c> pra</c><00:04:39.840><c> gestão</c><00:04:40.560><c> Hugo</c><00:04:40.800><c> Jorge</c>
+
+00:04:41.110 --> 00:04:41.120 align:start position:0%
+que se bater palma pra gestão Hugo Jorge
+ 
+
+00:04:41.120 --> 00:04:43.390 align:start position:0%
+que se bater palma pra gestão Hugo Jorge
+Bravo,<00:04:41.440><c> para</c><00:04:41.600><c> os</c><00:04:41.720><c> seus</c><00:04:42.000><c> vices,</c><00:04:42.800><c> para</c><00:04:43.199><c> a</c>
+
+00:04:43.390 --> 00:04:43.400 align:start position:0%
+Bravo, para os seus vices, para a
+ 
+
+00:04:43.400 --> 00:04:45.110 align:start position:0%
+Bravo, para os seus vices, para a
+direção<00:04:43.759><c> de</c><00:04:43.960><c> futebol</c><00:04:44.280><c> do</c><00:04:44.400><c> Vila</c><00:04:44.639><c> Nova,</c><00:04:44.919><c> todo</c>
+
+00:04:45.110 --> 00:04:45.120 align:start position:0%
+direção de futebol do Vila Nova, todo
+ 
+
+00:04:45.120 --> 00:04:46.310 align:start position:0%
+direção de futebol do Vila Nova, todo
+mundo,<00:04:45.280><c> né?</c><00:04:45.479><c> Todo</c><00:04:45.600><c> o</c><00:04:45.680><c> departamento</c><00:04:46.160><c> de</c>
+
+00:04:46.310 --> 00:04:46.320 align:start position:0%
+mundo, né? Todo o departamento de
+ 
+
+00:04:46.320 --> 00:04:48.870 align:start position:0%
+mundo, né? Todo o departamento de
+futebol<00:04:46.639><c> do</c><00:04:46.800><c> Vila</c><00:04:47.320><c> tá</c><00:04:47.520><c> de</c><00:04:47.720><c> parabéns.</c><00:04:48.520><c> E</c><00:04:48.639><c> isso,</c>
+
+00:04:48.870 --> 00:04:48.880 align:start position:0%
+futebol do Vila tá de parabéns. E isso,
+ 
+
+00:04:48.880 --> 00:04:50.870 align:start position:0%
+futebol do Vila tá de parabéns. E isso,
+torcedor,<00:04:49.400><c> não</c><00:04:49.560><c> é</c><00:04:49.720><c> uma</c><00:04:49.960><c> muleta</c><00:04:50.520><c> para</c><00:04:50.720><c> se</c>
+
+00:04:50.870 --> 00:04:50.880 align:start position:0%
+torcedor, não é uma muleta para se
+ 
+
+00:04:50.880 --> 00:04:53.430 align:start position:0%
+torcedor, não é uma muleta para se
+apoiar,<00:04:51.560><c> mas</c><00:04:51.759><c> é</c><00:04:51.919><c> um</c><00:04:52.080><c> fato</c><00:04:52.479><c> importante</c><00:04:53.199><c> para</c>
+
+00:04:53.430 --> 00:04:53.440 align:start position:0%
+apoiar, mas é um fato importante para
+ 
+
+00:04:53.440 --> 00:04:56.350 align:start position:0%
+apoiar, mas é um fato importante para
+você<00:04:53.880><c> ficar</c><00:04:54.600><c> ciente</c><00:04:55.440><c> mais</c><00:04:55.680><c> ou</c><00:04:55.880><c> menos</c><00:04:56.039><c> do</c><00:04:56.240><c> que</c>
+
+00:04:56.350 --> 00:04:56.360 align:start position:0%
+você ficar ciente mais ou menos do que
+ 
+
+00:04:56.360 --> 00:04:59.029 align:start position:0%
+você ficar ciente mais ou menos do que
+que<00:04:56.479><c> tá</c><00:04:56.639><c> acontecendo</c><00:04:57.479><c> nos</c><00:04:57.800><c> bastidores</c>
+
+00:04:59.029 --> 00:04:59.039 align:start position:0%
+que tá acontecendo nos bastidores
+ 
+
+00:04:59.039 --> 00:05:01.790 align:start position:0%
+que tá acontecendo nos bastidores
+financeiros<00:05:00.120><c> do</c><00:05:00.360><c> Vila</c><00:05:00.600><c> Nova.</c><00:05:01.160><c> Fechou?</c>
+
+00:05:01.790 --> 00:05:01.800 align:start position:0%
+financeiros do Vila Nova. Fechou?
+ 
+
+00:05:01.800 --> 00:05:04.070 align:start position:0%
+financeiros do Vila Nova. Fechou?
+Qualquer<00:05:02.199><c> dúvida,</c><00:05:02.639><c> comenta</c><00:05:03.000><c> aí</c><00:05:03.280><c> que</c><00:05:03.520><c> eu</c><00:05:03.759><c> mesmo</c>
+
+00:05:04.070 --> 00:05:04.080 align:start position:0%
+Qualquer dúvida, comenta aí que eu mesmo
+ 
+
+00:05:04.080 --> 00:05:05.950 align:start position:0%
+Qualquer dúvida, comenta aí que eu mesmo
+no<00:05:04.280><c> meu</c><00:05:04.479><c> perfil</c><00:05:04.840><c> pessoal</c><00:05:05.520><c> vou</c><00:05:05.680><c> est</c>
+
+00:05:05.950 --> 00:05:05.960 align:start position:0%
+no meu perfil pessoal vou est
+ 
+
+00:05:05.960 --> 00:05:08.110 align:start position:0%
+no meu perfil pessoal vou est
+respondendo<00:05:06.479><c> você</c><00:05:07.120><c> nos</c><00:05:07.520><c> comentários.</c>
+
+00:05:08.110 --> 00:05:08.120 align:start position:0%
+respondendo você nos comentários.
+ 
+
+00:05:08.120 --> 00:05:11.310 align:start position:0%
+respondendo você nos comentários.
+Lembrando,<00:05:08.919><c> curte,</c><00:05:09.400><c> comenta</c><00:05:09.880><c> e</c><00:05:10.199><c> compartilha</c>
+
+00:05:11.310 --> 00:05:11.320 align:start position:0%
+Lembrando, curte, comenta e compartilha
+ 
+
+00:05:11.320 --> 00:05:13.950 align:start position:0%
+Lembrando, curte, comenta e compartilha
+esse<00:05:11.720><c> vídeo.</c><00:05:12.440><c> Fechou?</c><00:05:13.120><c> Tamos</c><00:05:13.400><c> junto.</c><00:05:13.720><c> Eu</c><00:05:13.759><c> fico</c>
+
+00:05:13.950 --> 00:05:13.960 align:start position:0%
+esse vídeo. Fechou? Tamos junto. Eu fico
+ 
+
+00:05:13.960 --> 00:05:17.720 align:start position:0%
+esse vídeo. Fechou? Tamos junto. Eu fico
+por<00:05:14.120><c> aqui.</c><00:05:14.520><c> Um</c><00:05:14.639><c> abraço.</c><00:05:15.240><c> Fui.</c>
+

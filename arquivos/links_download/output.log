@@ -1,0 +1,38 @@
+2026-01-08 23:06:03 | INFO | ======================================================================
+2026-01-08 23:06:03 | INFO | INICIANDO MÓDULO DOWNLOADER
+2026-01-08 23:06:03 | INFO | ======================================================================
+2026-01-08 23:06:03 | INFO | Validando ambiente de execução...
+2026-01-08 23:06:03 | INFO | Pasta de links: /home/dos-anjos/Dropbox/PROJETO CEIA/Alcateia/katube-2026/arquivos/links_download
+2026-01-08 23:06:03 | INFO | Pasta de áudios: /home/dos-anjos/Dropbox/PROJETO CEIA/Alcateia/katube-2026/arquivos/audios
+2026-01-08 23:06:03 | INFO | Ambiente validado com sucesso!
+2026-01-08 23:06:03 | INFO | 
+Configurações ativas:
+2026-01-08 23:06:03 | INFO |   Formato áudio: flac
+2026-01-08 23:06:03 | INFO |   Bitrate: 0 kbps
+2026-01-08 23:06:03 | INFO |   Sample rate: 24000 Hz
+2026-01-08 23:06:03 | INFO |   Idiomas legenda: ['pt-BR', 'pt']
+2026-01-08 23:06:03 | INFO |   Aceitar automáticas: True
+2026-01-08 23:06:03 | INFO |   Duração: 60s - 3600s
+2026-01-08 23:06:03 | INFO |   Limite por fonte: 0
+2026-01-08 23:06:03 | INFO | 
+2026-01-08 23:06:03 | INFO | Total de links a processar: 1
+2026-01-08 23:06:03 | INFO | ======================================================================
+2026-01-08 23:06:03 | INFO | 
+======================================================================
+2026-01-08 23:06:03 | INFO | LINK [1/1]: https://www.youtube.com/watch?v=VmEu1gB3lXc
+2026-01-08 23:06:03 | INFO | ======================================================================
+2026-01-08 23:06:06 | INFO | Tipo identificado: video
+2026-01-08 23:06:06 | INFO | ----------------------------------------------------------------------
+2026-01-08 23:06:06 | INFO | Processando: Bomba! Vila Nova está pagando dois treinadores na Série B
+2026-01-08 23:06:06 | INFO | ID: VmEu1gB3lXc | Duração: 317s
+2026-01-08 23:06:06 | INFO | Verificando legendas para vídeo VmEu1gB3lXc...
+2026-01-08 23:06:06 | INFO | Legenda automática encontrada: pt
+2026-01-08 23:06:08 | INFO | Legenda salva (vtt): auto_VmEu1gB3lXc.txt
+2026-01-08 23:06:08 | INFO | Iniciando download de áudio: VmEu1gB3lXc
+2026-01-08 23:06:13 | INFO | Áudio baixado com sucesso: VmEu1gB3lXc.flac
+2026-01-08 23:06:13 | INFO | Download concluído com sucesso: VmEu1gB3lXc
+2026-01-08 23:06:13 | INFO | Registrado em sucesso: https://www.youtube.com/watch?v=VmEu1gB3lXc
+2026-01-08 23:06:13 | INFO | 
+======================================================================
+2026-01-08 23:06:13 | INFO | PROCESSAMENTO CONCLUÍDO
+2026-01-08 23:06:13 | INFO | ======================================================================
