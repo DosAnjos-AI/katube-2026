@@ -1,0 +1,15 @@
+{
+  "sample_rate_declarado": 24000,
+  "sample_rate_efetivo": 23990,
+  "frequencia_corte_hz": 11995.488894269365,
+  "status": "real",
+  "qualidade_real": "24kHz",
+  "energia_por_banda": {
+    "0-8kHz": 0.00675837839535047,
+    "8-16kHz": 5.1459089030544984e-05,
+    "16-24kHz": 0.0
+  },
+  "arquivo": "kzwB1kLsLes_016.flac",
+  "canais": 1,
+  "duracao_segundos": 13.078833333333334
+}

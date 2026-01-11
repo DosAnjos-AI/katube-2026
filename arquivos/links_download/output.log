@@ -1,38 +1,101 @@
-2026-01-08 23:06:03 | INFO | ======================================================================
-2026-01-08 23:06:03 | INFO | INICIANDO MÓDULO DOWNLOADER
-2026-01-08 23:06:03 | INFO | ======================================================================
-2026-01-08 23:06:03 | INFO | Validando ambiente de execução...
-2026-01-08 23:06:03 | INFO | Pasta de links: /home/dos-anjos/Dropbox/PROJETO CEIA/Alcateia/katube-2026/arquivos/links_download
-2026-01-08 23:06:03 | INFO | Pasta de áudios: /home/dos-anjos/Dropbox/PROJETO CEIA/Alcateia/katube-2026/arquivos/audios
-2026-01-08 23:06:03 | INFO | Ambiente validado com sucesso!
-2026-01-08 23:06:03 | INFO | 
+2026-01-09 16:14:57 | INFO | ======================================================================
+2026-01-09 16:14:57 | INFO | INICIANDO MÓDULO DOWNLOADER
+2026-01-09 16:14:57 | INFO | ======================================================================
+2026-01-09 16:14:57 | INFO | Validando ambiente de execução...
+2026-01-09 16:14:57 | INFO | Pasta de links: /home/dos-anjos/Dropbox/PROJETO CEIA/Alcateia/katube-2026/arquivos/links_download
+2026-01-09 16:14:57 | INFO | Pasta de áudios: /home/dos-anjos/Dropbox/PROJETO CEIA/Alcateia/katube-2026/arquivos/audios
+2026-01-09 16:14:57 | INFO | Ambiente validado com sucesso!
+2026-01-09 16:14:57 | INFO | 
 Configurações ativas:
-2026-01-08 23:06:03 | INFO |   Formato áudio: flac
-2026-01-08 23:06:03 | INFO |   Bitrate: 0 kbps
-2026-01-08 23:06:03 | INFO |   Sample rate: 24000 Hz
-2026-01-08 23:06:03 | INFO |   Idiomas legenda: ['pt-BR', 'pt']
-2026-01-08 23:06:03 | INFO |   Aceitar automáticas: True
-2026-01-08 23:06:03 | INFO |   Duração: 60s - 3600s
-2026-01-08 23:06:03 | INFO |   Limite por fonte: 0
-2026-01-08 23:06:03 | INFO | 
-2026-01-08 23:06:03 | INFO | Total de links a processar: 1
-2026-01-08 23:06:03 | INFO | ======================================================================
-2026-01-08 23:06:03 | INFO | 
+2026-01-09 16:14:57 | INFO |   Formato áudio: flac
+2026-01-09 16:14:57 | INFO |   Bitrate: 0 kbps
+2026-01-09 16:14:57 | INFO |   Sample rate: 24000 Hz
+2026-01-09 16:14:57 | INFO |   Idiomas legenda: ['pt-BR', 'pt']
+2026-01-09 16:14:57 | INFO |   Aceitar automáticas: True
+2026-01-09 16:14:57 | INFO |   Duração: 60s - 3600s
+2026-01-09 16:14:57 | INFO |   Limite por fonte: 0
+2026-01-09 16:14:57 | INFO | 
+2026-01-09 16:14:57 | INFO | Total de links a processar: 3
+2026-01-09 16:14:57 | INFO | ======================================================================
+2026-01-09 16:14:57 | INFO | 
 ======================================================================
-2026-01-08 23:06:03 | INFO | LINK [1/1]: https://www.youtube.com/watch?v=VmEu1gB3lXc
-2026-01-08 23:06:03 | INFO | ======================================================================
-2026-01-08 23:06:06 | INFO | Tipo identificado: video
-2026-01-08 23:06:06 | INFO | ----------------------------------------------------------------------
-2026-01-08 23:06:06 | INFO | Processando: Bomba! Vila Nova está pagando dois treinadores na Série B
-2026-01-08 23:06:06 | INFO | ID: VmEu1gB3lXc | Duração: 317s
-2026-01-08 23:06:06 | INFO | Verificando legendas para vídeo VmEu1gB3lXc...
-2026-01-08 23:06:06 | INFO | Legenda automática encontrada: pt
-2026-01-08 23:06:08 | INFO | Legenda salva (vtt): auto_VmEu1gB3lXc.txt
-2026-01-08 23:06:08 | INFO | Iniciando download de áudio: VmEu1gB3lXc
-2026-01-08 23:06:13 | INFO | Áudio baixado com sucesso: VmEu1gB3lXc.flac
-2026-01-08 23:06:13 | INFO | Download concluído com sucesso: VmEu1gB3lXc
-2026-01-08 23:06:13 | INFO | Registrado em sucesso: https://www.youtube.com/watch?v=VmEu1gB3lXc
-2026-01-08 23:06:13 | INFO | 
+2026-01-09 16:14:57 | INFO | LINK [1/3]: https://www.youtube.com/watch?v=kzwB1kLsLes
+2026-01-09 16:14:57 | INFO | ======================================================================
+2026-01-09 16:15:00 | INFO | Tipo identificado: video
+2026-01-09 16:15:00 | INFO | ----------------------------------------------------------------------
+2026-01-09 16:15:00 | INFO | Processando: Adson Batista explica reformulação no Atlético
+2026-01-09 16:15:00 | INFO | ID: kzwB1kLsLes | Duração: 204s
+2026-01-09 16:15:00 | INFO | Verificando legendas para vídeo kzwB1kLsLes...
+2026-01-09 16:15:00 | INFO | Legenda automática encontrada: pt
+2026-01-09 16:15:02 | INFO | Legenda salva (vtt): auto_kzwB1kLsLes.txt
+2026-01-09 16:15:02 | INFO | Iniciando download de áudio: kzwB1kLsLes
+2026-01-09 16:15:06 | INFO | Áudio baixado com sucesso: kzwB1kLsLes.flac
+2026-01-09 16:15:06 | INFO | Download concluído com sucesso: kzwB1kLsLes
+2026-01-09 16:15:06 | INFO | Registrado em sucesso: https://www.youtube.com/watch?v=kzwB1kLsLes
+2026-01-09 16:15:06 | INFO | 
+Aguardando 5.83s antes do próximo link do CSV...
+2026-01-09 16:15:11 | INFO | 
 ======================================================================
-2026-01-08 23:06:13 | INFO | PROCESSAMENTO CONCLUÍDO
-2026-01-08 23:06:13 | INFO | ======================================================================
+2026-01-09 16:15:11 | INFO | LINK [2/3]: https://www.youtube.com/watch?v=LBui15ktBc0
+2026-01-09 16:15:11 | INFO | ======================================================================
+2026-01-09 16:15:13 | INFO | Tipo identificado: video
+2026-01-09 16:15:13 | INFO | ----------------------------------------------------------------------
+2026-01-09 16:15:13 | INFO | Processando: GOIANÃO 2026 - ABECAT TUDO PRONTO!!!
+2026-01-09 16:15:13 | INFO | ID: LBui15ktBc0 | Duração: 380s
+2026-01-09 16:15:13 | INFO | Verificando legendas para vídeo LBui15ktBc0...
+2026-01-09 16:15:13 | INFO | Legenda automática encontrada: pt
+2026-01-09 16:15:15 | INFO | Legenda salva (vtt): auto_LBui15ktBc0.txt
+2026-01-09 16:15:15 | INFO | Iniciando download de áudio: LBui15ktBc0
+2026-01-09 16:15:20 | INFO | Áudio baixado com sucesso: LBui15ktBc0.flac
+2026-01-09 16:15:20 | INFO | Download concluído com sucesso: LBui15ktBc0
+2026-01-09 16:15:20 | INFO | Registrado em sucesso: https://www.youtube.com/watch?v=LBui15ktBc0
+2026-01-09 16:15:20 | INFO | 
+Aguardando 6.88s antes do próximo link do CSV...
+2026-01-09 16:15:27 | INFO | 
+======================================================================
+2026-01-09 16:15:27 | INFO | LINK [3/3]: https://www.youtube.com/watch?v=TRPBY_lxJfE&list=PLd6DVnxUXB2xbV5opTB9mXRMxROfIDQl_&pp=gAQB0gcJCbEEOCosWNin
+2026-01-09 16:15:27 | INFO | ======================================================================
+2026-01-09 16:15:35 | INFO | Tipo identificado: playlist
+2026-01-09 16:15:35 | INFO | Processando playlist: teste_katube2 (3 vídeos)
+2026-01-09 16:15:35 | INFO | 
+[1/3] Processando vídeo da playlist...
+2026-01-09 16:15:37 | INFO | ----------------------------------------------------------------------
+2026-01-09 16:15:37 | INFO | Processando: Motivação para estudar (BRIO) | Clóvis de Barros
+2026-01-09 16:15:37 | INFO | ID: TRPBY_lxJfE | Duração: 526s
+2026-01-09 16:15:37 | INFO | Verificando legendas para vídeo TRPBY_lxJfE...
+2026-01-09 16:15:37 | INFO | Legenda automática encontrada: pt
+2026-01-09 16:15:39 | INFO | Legenda salva (vtt): auto_TRPBY_lxJfE.txt
+2026-01-09 16:15:39 | INFO | Iniciando download de áudio: TRPBY_lxJfE
+2026-01-09 16:15:44 | INFO | Áudio baixado com sucesso: TRPBY_lxJfE.flac
+2026-01-09 16:15:44 | INFO | Download concluído com sucesso: TRPBY_lxJfE
+2026-01-09 16:15:44 | INFO | Registrado em sucesso: https://www.youtube.com/watch?v=TRPBY_lxJfE&list=PLd6DVnxUXB2xbV5opTB9mXRMxROfIDQl_&pp=gAQB0gcJCbEEOCosWNin
+2026-01-09 16:15:44 | INFO | Aguardando 4.80s antes do próximo vídeo...
+2026-01-09 16:15:49 | INFO | 
+[2/3] Processando vídeo da playlist...
+2026-01-09 16:15:51 | INFO | ----------------------------------------------------------------------
+2026-01-09 16:15:51 | INFO | Processando: Tenha tesão pela vida | Clóvis de Barros
+2026-01-09 16:15:51 | INFO | ID: SbqKZdL_Mfc | Duração: 473s
+2026-01-09 16:15:51 | INFO | Verificando legendas para vídeo SbqKZdL_Mfc...
+2026-01-09 16:15:51 | INFO | Legenda automática encontrada: pt
+2026-01-09 16:15:54 | INFO | Legenda salva (vtt): auto_SbqKZdL_Mfc.txt
+2026-01-09 16:15:54 | INFO | Iniciando download de áudio: SbqKZdL_Mfc
+2026-01-09 16:15:58 | INFO | Áudio baixado com sucesso: SbqKZdL_Mfc.flac
+2026-01-09 16:15:58 | INFO | Download concluído com sucesso: SbqKZdL_Mfc
+2026-01-09 16:15:58 | INFO | Registrado em sucesso: https://www.youtube.com/watch?v=TRPBY_lxJfE&list=PLd6DVnxUXB2xbV5opTB9mXRMxROfIDQl_&pp=gAQB0gcJCbEEOCosWNin
+2026-01-09 16:15:58 | INFO | Aguardando 4.43s antes do próximo vídeo...
+2026-01-09 16:16:03 | INFO | 
+[3/3] Processando vídeo da playlist...
+2026-01-09 16:16:05 | INFO | ----------------------------------------------------------------------
+2026-01-09 16:16:05 | INFO | Processando: VELHO DA LANCHA  - ANDROPAUSA | EMBRULHA PRA VIAGEM
+2026-01-09 16:16:05 | INFO | ID: A8PX38jfPI8 | Duração: 308s
+2026-01-09 16:16:05 | INFO | Verificando legendas para vídeo A8PX38jfPI8...
+2026-01-09 16:16:05 | INFO | Legenda manual encontrada: pt-BR
+2026-01-09 16:16:07 | INFO | Legenda salva (vtt): manual_A8PX38jfPI8.txt
+2026-01-09 16:16:07 | INFO | Iniciando download de áudio: A8PX38jfPI8
+2026-01-09 16:16:11 | INFO | Áudio baixado com sucesso: A8PX38jfPI8.flac
+2026-01-09 16:16:11 | INFO | Download concluído com sucesso: A8PX38jfPI8
+2026-01-09 16:16:11 | INFO | Registrado em sucesso: https://www.youtube.com/watch?v=TRPBY_lxJfE&list=PLd6DVnxUXB2xbV5opTB9mXRMxROfIDQl_&pp=gAQB0gcJCbEEOCosWNin
+2026-01-09 16:16:11 | INFO | 
+======================================================================
+2026-01-09 16:16:11 | INFO | PROCESSAMENTO CONCLUÍDO
+2026-01-09 16:16:11 | INFO | ======================================================================

@@ -117,3 +117,25 @@ DOWNLOADER = {
         'sobrescrever': False,
     },
 }
+
+
+# =============================================================================
+# MÓDULO 01: SEGMENTADOR DE ÁUDIO
+# =============================================================================
+
+# Configurações do módulo de segmentação de áudio
+SEGMENTADOR_AUDIO = {
+    
+    # ------------------------------------------------------------------------
+    # Controle do tamanho dos segmentos criados
+    # ------------------------------------------------------------------------
+    # min_seg: Duração mínima de cada segmento em segundos
+    # - Segmentos menores serão agrupados com próximos (respeitando locutores)
+    # - Tolerância: aceita até 0.8s a menos
+    'min_seg': 12,
+    
+    # max_seg: Duração máxima de cada segmento em segundos
+    # - Segmentos não ultrapassam este limite
+    # - Tolerância: aceita até 0.8s a mais
+    'max_seg': 25,
+}

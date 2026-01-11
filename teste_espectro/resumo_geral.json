@@ -1,0 +1,259 @@
+{
+  "data_analise": "2026-01-10T09:20:43.100465",
+  "total_arquivos": 16,
+  "tempo_processamento_s": 68.120343,
+  "configuracao": {
+    "threshold_db": -60,
+    "formatos": [
+      ".flac",
+      ".mp3",
+      ".wav"
+    ]
+  },
+  "estatisticas": {
+    "real": 16,
+    "upsampled": 0
+  },
+  "resultados": [
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 23851,
+      "frequencia_corte_hz": 11925.789916609288,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.005110076645559546,
+        "8-16kHz": 3.005934619475334e-05,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_001.flac",
+      "canais": 1,
+      "duracao_segundos": 13.071
+    },
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 23896,
+      "frequencia_corte_hz": 11948.156862745098,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.004934628435706225,
+        "8-16kHz": 2.4015062342965916e-05,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_002.flac",
+      "canais": 1,
+      "duracao_segundos": 12.75
+    },
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 23982,
+      "frequencia_corte_hz": 11991.228824490498,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.007230005678128581,
+        "8-16kHz": 3.823897805551004e-05,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_003.flac",
+      "canais": 1,
+      "duracao_segundos": 11.629
+    },
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 23941,
+      "frequencia_corte_hz": 11970.742249189596,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.004454828403597441,
+        "8-16kHz": 3.3860526394665396e-05,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_004.flac",
+      "canais": 1,
+      "duracao_segundos": 12.031
+    },
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 23998,
+      "frequencia_corte_hz": 11999.364524584955,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.008770051725105909,
+        "8-16kHz": 3.69852297143812e-05,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_005.flac",
+      "canais": 1,
+      "duracao_segundos": 12.589
+    },
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 23919,
+      "frequencia_corte_hz": 11959.652200442377,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.00809116758881605,
+        "8-16kHz": 1.4977293783287656e-05,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_006.flac",
+      "canais": 1,
+      "duracao_segundos": 13.111
+    },
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 23907,
+      "frequencia_corte_hz": 11953.553441522105,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.00528126279376615,
+        "8-16kHz": 2.017327513541451e-05,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_007.flac",
+      "canais": 1,
+      "duracao_segundos": 12.509
+    },
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 23985,
+      "frequencia_corte_hz": 11992.609082813891,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.0070915973209597204,
+        "8-16kHz": 4.6904688318374313e-05,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_008.flac",
+      "canais": 1,
+      "duracao_segundos": 11.23
+    },
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 23908,
+      "frequencia_corte_hz": 11954.12844036697,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.00861729283782917,
+        "8-16kHz": 9.521931109144332e-05,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_009.flac",
+      "canais": 1,
+      "duracao_segundos": 11.99
+    },
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 23998,
+      "frequencia_corte_hz": 11999.389765495598,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.009274527311720265,
+        "8-16kHz": 0.000229566976240595,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_010.flac",
+      "canais": 1,
+      "duracao_segundos": 11.471
+    },
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 23971,
+      "frequencia_corte_hz": 11985.73705179283,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.005899847272449818,
+        "8-16kHz": 7.278655127237287e-05,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_011.flac",
+      "canais": 1,
+      "duracao_segundos": 12.55
+    },
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 24000,
+      "frequencia_corte_hz": 12000.000000000002,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.006845221287875276,
+        "8-16kHz": 5.595725069967626e-05,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_012.flac",
+      "canais": 1,
+      "duracao_segundos": 12.55
+    },
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 23951,
+      "frequencia_corte_hz": 11975.899005355775,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.006424863804114835,
+        "8-16kHz": 4.5887777823593745e-05,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_013.flac",
+      "canais": 1,
+      "duracao_segundos": 13.07
+    },
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 23686,
+      "frequencia_corte_hz": 11843.234042553191,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.006036838098193166,
+        "8-16kHz": 1.5188421396388935e-05,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_014.flac",
+      "canais": 1,
+      "duracao_segundos": 11.75
+    },
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 23914,
+      "frequencia_corte_hz": 11957.185405807892,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.005400521500796633,
+        "8-16kHz": 3.263181979425453e-05,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_015.flac",
+      "canais": 1,
+      "duracao_segundos": 13.43
+    },
+    {
+      "sample_rate_declarado": 24000,
+      "sample_rate_efetivo": 23990,
+      "frequencia_corte_hz": 11995.488894269365,
+      "status": "real",
+      "qualidade_real": "24kHz",
+      "energia_por_banda": {
+        "0-8kHz": 0.00675837839535047,
+        "8-16kHz": 5.1459089030544984e-05,
+        "16-24kHz": 0.0
+      },
+      "arquivo": "kzwB1kLsLes_016.flac",
+      "canais": 1,
+      "duracao_segundos": 13.078833333333334
+    }
+  ]
+}
