@@ -3,7 +3,7 @@ from pathlib import Path
 # ============================================================================
 # DIRETÓRIO RAIZ DO PROJETO
 # ============================================================================
-PROJECT_ROOT = Path(__file__).parent.resolve()
+PROJECT_ROOT = Path(__file__).resolve().parent
 
 
 # ============================================================================
@@ -12,9 +12,10 @@ PROJECT_ROOT = Path(__file__).parent.resolve()
 # Ativa/desativa módulos principais do sistema
 # True = módulo será executado | False = módulo será ignorado
 MASTER = {
-    'downloader': True,      # Módulo de download de áudios do YouTube
-    'transcricao': False,    # [FUTURO] Módulo de transcrição
-    'processamento': False,  # [FUTURO] Módulo de processamento
+    'downloader': True,        # Módulo de download de áudios do YouTube
+    'segmentacao': 'vad',  # opções: 'legenda', 'vad', '' para não usar segmentador audio já segmentado.
+    'transcricao': False,      # [FUTURO] Módulo de transcrição
+    'processamento': False,    # [FUTURO] Módulo de processamento
 }
 
 
@@ -53,39 +54,78 @@ DOWNLOADER = {
         # 0 = usa a taxa original do vídeo (recomendado)
         # Valores comuns: 44100 (CD quality), 48000 (padrão YouTube), 96000 (high-res)
         # Nota: valores maiores = melhor qualidade, mas arquivos maiores
-        'sample_rate_hz': 24000,
+        'sample_rate_hz': 0,
     },
     
     # ------------------------------------------------------------------------
     # Legendas (OBRIGATÓRIAS)
     # ------------------------------------------------------------------------
     'legendas': {
-        # Idiomas de legenda aceitos (ordem de prioridade)
-        # Primeiro tenta "pt-BR", depois "pt"
-        # IMPORTANTE: O vídeo só é REJEITADO se não encontrar NENHUMA legenda
-        # (nem manual nem automática, caso automáticas estejam ativadas)
-        'idiomas': ['pt-BR', 'pt'],
-        
-        # Aceitar legendas automáticas (auto-geradas pelo YouTube)
-        # True = aceita legendas automáticas se manuais não existirem
-        # False = aceita APENAS legendas criadas manualmente
-        # ATENÇÃO: Se False e sem legenda manual → vídeo é REJEITADO
-        'aceitar_automaticas': True,
+        # Lista de prioridades de legendas (ordem = prioridade de tentativa)
+        # Formato: 'idioma-tipo' onde tipo pode ser 'manual' ou 'auto'
+        # O sistema tentará baixar na ordem da lista até encontrar uma disponível
+        # Se nenhuma legenda da lista for encontrada, o vídeo é REJEITADO
+        #
+        # Opções disponíveis (exemplos):
+        # 'pt-BR-manual'  - Português Brasil (legenda manual/criada por humano)
+        # 'pt-BR-auto'    - Português Brasil (legenda automática/gerada pelo YouTube)
+        # 'pt-manual'     - Português genérico (legenda manual)
+        # 'pt-auto'       - Português genérico (legenda automática)
+        # 'pt-PT-manual'  - Português Portugal (legenda manual)
+        # 'pt-PT-auto'    - Português Portugal (legenda automática)
+        # 'en-manual'     - Inglês (legenda manual)
+        # 'en-auto'       - Inglês (legenda automática)
+        # 'es-manual'     - Espanhol (legenda manual)
+        # 'es-auto'       - Espanhol (legenda automática)
+        # 'fr-manual'     - Francês (legenda manual)
+        # 'fr-auto'       - Francês (legenda automática)
+        # ... [qualquer código de idioma ISO 639-1 ou variante regional]
+        #
+        # Dica: Para aceitar apenas legendas manuais, remova as opções '-auto'
+        #       Para priorizar automáticas, coloque '-auto' antes de '-manual'
+        'prioridade': [
+            'pt-BR-manual',
+            'pt-BR-auto',
+            'pt-manual',
+            'pt-auto',
+        ],
     },
     
     # ------------------------------------------------------------------------
-    # Filtros de Duração
+    # Filtros de Seleção de Vídeos
     # ------------------------------------------------------------------------
-    'duracao': {
-        # Duração mínima do vídeo em segundos
-        # Vídeos mais curtos serão rejeitados
-        # Exemplo: 30 = rejeita vídeos com menos de 30 segundos
-        'minima_segundos': 60,
+    'filtros': {
+        # Filtros de duração do vídeo
+        'duracao': {
+            # Duração mínima do vídeo em segundos
+            # Vídeos mais curtos serão rejeitados
+            # Exemplo: 60 = rejeita vídeos com menos de 1 minuto
+            'minima_segundos': 60,
+            
+            # Duração máxima do vídeo em segundos
+            # Vídeos mais longos serão rejeitados
+            # Exemplo: 3600 = rejeita vídeos com mais de 1 hora (60 minutos)
+            'maxima_segundos': 3600,
+        },
         
-        # Duração máxima do vídeo em segundos
-        # Vídeos mais longos serão rejeitados
-        # Exemplo: 3600 = rejeita vídeos com mais de 1 hora (60 minutos)
-        'maxima_segundos': 3600,
+        # Filtros de data de upload (formato: DD-MM-AAAA)
+        'data_upload': {
+            # Data mínima de upload
+            # '0' = sem filtro mínimo (aceita qualquer data antiga)
+            # Formato: 'DD-MM-AAAA'
+            # Exemplos: '01-01-2024' (apenas vídeos de 2024 em diante)
+            #           '15-06-2023' (vídeos de 15/06/2023 em diante)
+            #           '0' (sem filtro, aceita todos)
+            'minima': '12-12-2020',
+            
+            # Data máxima de upload
+            # '0' = sem filtro máximo (aceita até hoje)
+            # Formato: 'DD-MM-AAAA'
+            # Exemplos: '31-12-2024' (apenas vídeos até 31/12/2024)
+            #           '30-09-2025' (vídeos até 30/09/2025)
+            #           '0' (sem filtro, aceita todos)
+            'maxima': '0',
+        },
     },
     
     # ------------------------------------------------------------------------
@@ -103,7 +143,7 @@ DOWNLOADER = {
         # Aplica-se apenas quando baixando múltiplos vídeos de uma mesma fonte
         'entre_videos_playlist': {
             'minimo_segundos': 3,   # Recomendado mínimo: 3s
-            'maximo_segundos': 6,  # Recomendado máximo: 10-15s
+            'maximo_segundos': 10,  # Recomendado máximo: 10-15s
         },
     },
     
@@ -120,10 +160,11 @@ DOWNLOADER = {
 
 
 # =============================================================================
-# MÓDULO 01: SEGMENTADOR DE ÁUDIO
+# MÓDULO 01: SEGMENTADOR DE ÁUDIO (BASEADO EM LEGENDAS)
 # =============================================================================
 
-# Configurações do módulo de segmentação de áudio
+# Configurações do módulo de segmentação de áudio usando legendas
+# Utilizado quando MASTER['segmentacao'] = 'legenda'
 SEGMENTADOR_AUDIO = {
     
     # ------------------------------------------------------------------------
@@ -138,4 +179,129 @@ SEGMENTADOR_AUDIO = {
     # - Segmentos não ultrapassam este limite
     # - Tolerância: aceita até 0.8s a mais
     'max_seg': 25,
+}
+
+
+# =============================================================================
+# MÓDULO 01: SEGMENTADOR DE ÁUDIO VAD (VOICE ACTIVITY DETECTION)
+# =============================================================================
+
+# Configurações do módulo de segmentação automática usando detecção de voz
+# Utilizado quando MASTER['segmentacao'] = 'vad'
+# 
+# Este módulo utiliza Silero-VAD para detectar automaticamente momentos de
+# fala e silêncio no áudio, criando segmentos baseados em pausas naturais
+# (sem depender de legendas).
+#
+# IMPORTANTE: Sempre processa áudio em 16 kHz internamente (conversão automática)
+SEGMENTADOR_AUDIO_VAD = {
+    
+    # ------------------------------------------------------------------------
+    # Detecção de Voz (Voice Activity Detection)
+    # ------------------------------------------------------------------------
+    'deteccao': {
+        # Threshold de confiança para considerar que há voz presente (0.0 a 1.0)
+        # - Valores BAIXOS (0.3-0.4): mais sensível, detecta até sussurros/ruídos
+        # - Valores MÉDIOS (0.5): equilíbrio, recomendado para maioria dos casos
+        # - Valores ALTOS (0.6-0.8): menos sensível, só detecta voz clara
+        # Exemplo: 0.5 = confiança média (50%) para considerar como voz
+        'voice_threshold': 0.5,
+        
+        # Tamanho da janela de análise em segundos
+        # Define a granularidade temporal da detecção de voz
+        # - Valores menores (0.05-0.1): maior precisão, mais processamento
+        # - Valores médios (0.15): equilíbrio recomendado
+        # - Valores maiores (0.3-0.5): menos precisão, mais rápido
+        # Exemplo: 0.15 = analisa o áudio em blocos de 150ms
+        'window_size_seconds': 0.15,
+    },
+    
+    # ------------------------------------------------------------------------
+    # Critérios de Silêncio e Fala
+    # ------------------------------------------------------------------------
+    'criterios': {
+        # Duração mínima de FALA para ser considerada válida (milissegundos)
+        # Falas mais curtas são ignoradas (consideradas ruído)
+        # - Valores baixos (100-200ms): captura falas muito breves
+        # - Valores médios (250-500ms): filtra ruídos curtos (recomendado)
+        # - Valores altos (>500ms): só aceita falas longas
+        # Exemplo: 250 = ignora sons com menos de 250ms (0.25s)
+        'min_speech_duration_ms': 250,
+        
+        # Duração mínima de SILÊNCIO entre falas (milissegundos)
+        # Silêncios mais curtos não separam falas (continuam no mesmo segmento)
+        # - Valores baixos (50-100ms): divide em pausas muito breves
+        # - Valores médios (100-200ms): equilíbrio (recomendado)
+        # - Valores altos (>300ms): só divide em pausas longas
+        # Exemplo: 100 = pausas menores que 100ms não dividem o segmento
+        'min_silence_duration_ms': 100,
+        
+        # Duração mínima de SILÊNCIO para FORÇAR divisão de segmento (segundos)
+        # Pausas maiores que este valor sempre criam novo segmento
+        # - Valores baixos (0.2-0.3s): sensível a pausas curtas
+        # - Valores médios (0.3-0.5s): equilíbrio (recomendado)
+        # - Valores altos (>0.5s): só divide em pausas muito longas
+        # Exemplo: 0.3 = pausa de 300ms sempre cria novo segmento
+        'min_silence_for_split': 0.3,
+    },
+    
+    # ------------------------------------------------------------------------
+    # Padding (Margem de Segurança nos Cortes)
+    # ------------------------------------------------------------------------
+    'padding': {
+        # Tempo adicional no INÍCIO de cada segmento (milissegundos)
+        # Evita cortar o início da primeira palavra
+        # - Valores baixos (10-30ms): corte mais preciso
+        # - Valores médios (30-50ms): segurança recomendada
+        # - Valores altos (>100ms): pode incluir silêncio extra
+        # Exemplo: 30 = adiciona 30ms antes do início detectado da fala
+        'inicio_ms': 30,
+        
+        # Tempo adicional no FIM de cada segmento (milissegundos)
+        # Evita cortar o final da última palavra
+        # - Valores baixos (10-30ms): corte mais preciso
+        # - Valores médios (30-50ms): segurança recomendada
+        # - Valores altos (>100ms): pode incluir silêncio extra
+        # Exemplo: 30 = adiciona 30ms após o fim detectado da fala
+        'fim_ms': 30,
+    },
+    
+    # ------------------------------------------------------------------------
+    # Limites de Duração dos Segmentos Finais
+    # ------------------------------------------------------------------------
+    'segmentos': {
+        # Duração MÍNIMA de cada segmento em segundos
+        # Segmentos mais curtos são agrupados com próximos
+        # - Valores baixos (2-4s): aceita segmentos muito curtos
+        # - Valores médios (4-8s): equilíbrio (recomendado)
+        # - Valores altos (>10s): força segmentos longos
+        # Exemplo: 4.0 = todos os segmentos terão no mínimo 4 segundos
+        'min_seg': 4.0,
+        
+        # Duração MÁXIMA de cada segmento em segundos
+        # Segmentos mais longos são divididos em pausas naturais
+        # - Valores baixos (8-12s): força segmentos curtos
+        # - Valores médios (15-20s): equilíbrio (recomendado)
+        # - Valores altos (>25s): permite segmentos muito longos
+        # Exemplo: 15.0 = nenhum segmento ultrapassará 15 segundos
+        'max_seg': 15.0,
+        
+        # Tolerância nas durações (segundos)
+        # Permite pequenas variações nos limites min/max
+        # - Valores baixos (0.3-0.5s): mais rigoroso
+        # - Valores médios (0.8-1.0s): equilíbrio (recomendado)
+        # - Valores altos (>1.5s): mais flexível
+        # Exemplo: 0.8 = aceita segmento de 3.2s (min=4.0 - tolerância=0.8)
+        'tolerancia': 0.8,
+    },
+    
+    # ------------------------------------------------------------------------
+    # Comportamento Geral
+    # ------------------------------------------------------------------------
+    'comportamento': {
+        # Sobrescrever segmentos existentes
+        # False = pula áudios já segmentados (verifica pasta segments/)
+        # True = re-segmenta mesmo que já exista
+        'sobrescrever': False,
+    },
 }

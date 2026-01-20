@@ -1,0 +1,472 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.080 --> 00:00:01.709 align:start position:0%
+ 
+Boa<00:00:00.320><c> tarde,</c><00:00:00.560><c> Daniel.</c><00:00:00.960><c> Víor</c><00:00:01.240><c> Pimenta</c><00:00:01.560><c> da</c>
+
+00:00:01.709 --> 00:00:01.719 align:start position:0%
+Boa tarde, Daniel. Víor Pimenta da
+ 
+
+00:00:01.719 --> 00:00:02.790 align:start position:0%
+Boa tarde, Daniel. Víor Pimenta da
+Pimenta<00:00:02.000><c> TV.</c>
+
+00:00:02.790 --> 00:00:02.800 align:start position:0%
+Pimenta TV.
+ 
+
+00:00:02.800 --> 00:00:03.790 align:start position:0%
+Pimenta TV.
+&gt;&gt; Professor,<00:00:03.199><c> não</c><00:00:03.320><c> sei</c><00:00:03.439><c> se</c><00:00:03.520><c> você</c><00:00:03.639><c> tem</c>
+
+00:00:03.790 --> 00:00:03.800 align:start position:0%
+&gt;&gt; Professor, não sei se você tem
+ 
+
+00:00:03.800 --> 00:00:06.070 align:start position:0%
+&gt;&gt; Professor, não sei se você tem
+acompanhado<00:00:04.240><c> a</c><00:00:04.600><c> Copinha,</c><00:00:05.080><c> né?</c><00:00:05.240><c> O</c><00:00:05.319><c> Goiás</c><00:00:05.640><c> joga</c>
+
+00:00:06.070 --> 00:00:06.080 align:start position:0%
+acompanhado a Copinha, né? O Goiás joga
+ 
+
+00:00:06.080 --> 00:00:07.510 align:start position:0%
+acompanhado a Copinha, né? O Goiás joga
+daqui<00:00:06.359><c> a</c><00:00:06.480><c> pouco,</c><00:00:06.799><c> já</c><00:00:06.919><c> venceu</c><00:00:07.200><c> os</c><00:00:07.319><c> dois</c>
+
+00:00:07.510 --> 00:00:07.520 align:start position:0%
+daqui a pouco, já venceu os dois
+ 
+
+00:00:07.520 --> 00:00:09.430 align:start position:0%
+daqui a pouco, já venceu os dois
+primeiros<00:00:07.879><c> jogos.</c><00:00:08.679><c> Queria</c><00:00:08.960><c> saber</c><00:00:09.160><c> o</c><00:00:09.280><c> que</c><00:00:09.360><c> que</c>
+
+00:00:09.430 --> 00:00:09.440 align:start position:0%
+primeiros jogos. Queria saber o que que
+ 
+
+00:00:09.440 --> 00:00:10.990 align:start position:0%
+primeiros jogos. Queria saber o que que
+você<00:00:09.559><c> tem</c><00:00:09.719><c> visto</c><00:00:09.960><c> já</c><00:00:10.160><c> de</c><00:00:10.320><c> interessante</c><00:00:10.800><c> na</c>
+
+00:00:10.990 --> 00:00:11.000 align:start position:0%
+você tem visto já de interessante na
+ 
+
+00:00:11.000 --> 00:00:12.910 align:start position:0%
+você tem visto já de interessante na
+garotada<00:00:11.440><c> que</c><00:00:11.559><c> tá</c><00:00:11.719><c> jogando</c><00:00:11.960><c> lá</c><00:00:12.080><c> em</c><00:00:12.200><c> São</c><00:00:12.360><c> Paulo</c>
+
+00:00:12.910 --> 00:00:12.920 align:start position:0%
+garotada que tá jogando lá em São Paulo
+ 
+
+00:00:12.920 --> 00:00:15.150 align:start position:0%
+garotada que tá jogando lá em São Paulo
+e<00:00:13.120><c> também</c><00:00:13.360><c> dos</c><00:00:13.679><c> garotos</c><00:00:14.080><c> novos</c><00:00:14.599><c> que</c><00:00:14.839><c> você</c><00:00:15.000><c> tem</c>
+
+00:00:15.150 --> 00:00:15.160 align:start position:0%
+e também dos garotos novos que você tem
+ 
+
+00:00:15.160 --> 00:00:16.990 align:start position:0%
+e também dos garotos novos que você tem
+à<00:00:15.320><c> disposição</c><00:00:16.199><c> pro</c><00:00:16.400><c> jogo</c><00:00:16.600><c> diante</c><00:00:16.880><c> do</c>
+
+00:00:16.990 --> 00:00:17.000 align:start position:0%
+à disposição pro jogo diante do
+ 
+
+00:00:17.000 --> 00:00:18.750 align:start position:0%
+à disposição pro jogo diante do
+Goiatuba,<00:00:17.480><c> esses</c><00:00:17.800><c> garotos</c><00:00:18.080><c> formados</c><00:00:18.439><c> na</c><00:00:18.600><c> base</c>
+
+00:00:18.750 --> 00:00:18.760 align:start position:0%
+Goiatuba, esses garotos formados na base
+ 
+
+00:00:18.760 --> 00:00:20.310 align:start position:0%
+Goiatuba, esses garotos formados na base
+do<00:00:18.880><c> Goiás.</c>
+
+00:00:20.310 --> 00:00:20.320 align:start position:0%
+do Goiás.
+ 
+
+00:00:20.320 --> 00:00:22.870 align:start position:0%
+do Goiás.
+Bom,<00:00:20.600><c> é</c><00:00:20.760><c> uma</c><00:00:20.960><c> é</c><00:00:21.160><c> uma</c><00:00:21.400><c> safra</c><00:00:22.000><c> interessante,</c>
+
+00:00:22.870 --> 00:00:22.880 align:start position:0%
+Bom, é uma é uma safra interessante,
+ 
+
+00:00:22.880 --> 00:00:25.870 align:start position:0%
+Bom, é uma é uma safra interessante,
+atletas<00:00:23.359><c> que</c><00:00:23.599><c> estão</c><00:00:23.880><c> aí</c><00:00:24.080><c> em</c><00:00:24.279><c> desenvolvimento.</c>
+
+00:00:25.870 --> 00:00:25.880 align:start position:0%
+atletas que estão aí em desenvolvimento.
+ 
+
+00:00:25.880 --> 00:00:27.109 align:start position:0%
+atletas que estão aí em desenvolvimento.
+Eh,<00:00:26.039><c> nós</c><00:00:26.199><c> estamos</c><00:00:26.480><c> trabalhando,</c><00:00:26.840><c> se</c><00:00:26.960><c> eu</c><00:00:27.039><c> não</c>
+
+00:00:27.109 --> 00:00:27.119 align:start position:0%
+Eh, nós estamos trabalhando, se eu não
+ 
+
+00:00:27.119 --> 00:00:29.950 align:start position:0%
+Eh, nós estamos trabalhando, se eu não
+tiver<00:00:27.359><c> enganado,</c><00:00:27.880><c> desde</c><00:00:28.119><c> o</c><00:00:28.240><c> dia</c><00:00:28.599><c> 15</c><00:00:29.400><c> eh</c><00:00:29.759><c> de</c>
+
+00:00:29.950 --> 00:00:29.960 align:start position:0%
+tiver enganado, desde o dia 15 eh de
+ 
+
+00:00:29.960 --> 00:00:31.550 align:start position:0%
+tiver enganado, desde o dia 15 eh de
+dezembro<00:00:30.480><c> e</c><00:00:30.640><c> nesse</c><00:00:30.920><c> primeiro,</c><00:00:31.199><c> nessa</c>
+
+00:00:31.550 --> 00:00:31.560 align:start position:0%
+dezembro e nesse primeiro, nessa
+ 
+
+00:00:31.560 --> 00:00:33.110 align:start position:0%
+dezembro e nesse primeiro, nessa
+primeira
+
+00:00:33.110 --> 00:00:33.120 align:start position:0%
+primeira
+ 
+
+00:00:33.120 --> 00:00:35.709 align:start position:0%
+primeira
+etapa<00:00:33.600><c> de</c><00:00:33.840><c> preparação,</c><00:00:34.559><c> foram</c><00:00:34.920><c> atletas</c><00:00:35.360><c> únic</c>
+
+00:00:35.709 --> 00:00:35.719 align:start position:0%
+etapa de preparação, foram atletas únic
+ 
+
+00:00:35.719 --> 00:00:38.270 align:start position:0%
+etapa de preparação, foram atletas únic
+exclusivamente<00:00:36.600><c> jovens</c><00:00:37.040><c> do</c><00:00:37.239><c> clube,</c><00:00:37.719><c> né?</c>
+
+00:00:38.270 --> 00:00:38.280 align:start position:0%
+exclusivamente jovens do clube, né?
+ 
+
+00:00:38.280 --> 00:00:41.110 align:start position:0%
+exclusivamente jovens do clube, né?
+Alguns<00:00:38.719><c> estão</c><00:00:39.000><c> aqui</c><00:00:39.239><c> conosco,</c><00:00:40.120><c> outros</c><00:00:40.879><c> estão</c>
+
+00:00:41.110 --> 00:00:41.120 align:start position:0%
+Alguns estão aqui conosco, outros estão
+ 
+
+00:00:41.120 --> 00:00:43.029 align:start position:0%
+Alguns estão aqui conosco, outros estão
+lá<00:00:41.280><c> na</c><00:00:41.440><c> Copinha,</c><00:00:41.920><c> como</c><00:00:42.120><c> o</c><00:00:42.239><c> próprio</c><00:00:42.559><c> Víor,</c><00:00:42.879><c> que</c>
+
+00:00:43.029 --> 00:00:43.039 align:start position:0%
+lá na Copinha, como o próprio Víor, que
+ 
+
+00:00:43.039 --> 00:00:44.750 align:start position:0%
+lá na Copinha, como o próprio Víor, que
+tem,<00:00:43.520><c> que</c><00:00:43.640><c> é</c><00:00:43.719><c> um</c><00:00:43.800><c> atleta</c><00:00:44.079><c> que</c><00:00:44.239><c> nos</c><00:00:44.399><c> chamou</c>
+
+00:00:44.750 --> 00:00:44.760 align:start position:0%
+tem, que é um atleta que nos chamou
+ 
+
+00:00:44.760 --> 00:00:47.950 align:start position:0%
+tem, que é um atleta que nos chamou
+atenção<00:00:45.320><c> meio-campo,</c><00:00:46.440><c> tem</c><00:00:46.960><c> eh</c><00:00:47.520><c> o</c><00:00:47.680><c> próprio</c>
+
+00:00:47.950 --> 00:00:47.960 align:start position:0%
+atenção meio-campo, tem eh o próprio
+ 
+
+00:00:47.960 --> 00:00:49.630 align:start position:0%
+atenção meio-campo, tem eh o próprio
+centraavante,<00:00:48.840><c> eu</c><00:00:48.960><c> esqueci</c><00:00:49.239><c> o</c><00:00:49.320><c> nome</c><00:00:49.440><c> dele</c>
+
+00:00:49.630 --> 00:00:49.640 align:start position:0%
+centraavante, eu esqueci o nome dele
+ 
+
+00:00:49.640 --> 00:00:51.709 align:start position:0%
+centraavante, eu esqueci o nome dele
+agora,<00:00:49.920><c> o</c>
+
+00:00:51.709 --> 00:00:51.719 align:start position:0%
+agora, o
+ 
+
+00:00:51.719 --> 00:00:53.389 align:start position:0%
+agora, o
+&gt;&gt; o<00:00:52.000><c> tem</c><00:00:52.160><c> o</c><00:00:52.239><c> Will,</c><00:00:52.520><c> tem</c><00:00:52.680><c> o</c><00:00:52.760><c> outro</c><00:00:52.879><c> que</c><00:00:53.000><c> fez</c><00:00:53.120><c> o</c><00:00:53.239><c> gol</c>
+
+00:00:53.389 --> 00:00:53.399 align:start position:0%
+&gt;&gt; o tem o Will, tem o outro que fez o gol
+ 
+
+00:00:53.399 --> 00:00:55.750 align:start position:0%
+&gt;&gt; o tem o Will, tem o outro que fez o gol
+agora.<00:00:54.160><c> É</c><00:00:54.280><c> que</c><00:00:54.640><c> é</c><00:00:54.920><c> tanto</c><00:00:55.199><c> nome</c><00:00:55.399><c> que</c><00:00:55.559><c> a</c><00:00:55.640><c> gente</c>
+
+00:00:55.750 --> 00:00:55.760 align:start position:0%
+agora. É que é tanto nome que a gente
+ 
+
+00:00:55.760 --> 00:00:58.389 align:start position:0%
+agora. É que é tanto nome que a gente
+ainda<00:00:56.000><c> tá</c><00:00:56.160><c> se</c><00:00:57.039><c> familiarizando,</c><00:00:58.000><c> mas</c><00:00:58.199><c> são</c>
+
+00:00:58.389 --> 00:00:58.399 align:start position:0%
+ainda tá se familiarizando, mas são
+ 
+
+00:00:58.399 --> 00:01:00.110 align:start position:0%
+ainda tá se familiarizando, mas são
+atletas<00:00:58.800><c> também</c><00:00:59.039><c> de</c><00:00:59.199><c> potencial.</c><00:00:59.760><c> O</c><00:00:59.840><c> próprio</c>
+
+00:01:00.110 --> 00:01:00.120 align:start position:0%
+atletas também de potencial. O próprio
+ 
+
+00:01:00.120 --> 00:01:01.910 align:start position:0%
+atletas também de potencial. O próprio
+Pablo<00:01:00.399><c> é</c><00:01:00.519><c> outro</c><00:01:00.719><c> atleta</c><00:01:01.039><c> que</c><00:01:01.199><c> também</c><00:01:01.480><c> teve</c><00:01:01.760><c> com</c>
+
+00:01:01.910 --> 00:01:01.920 align:start position:0%
+Pablo é outro atleta que também teve com
+ 
+
+00:01:01.920 --> 00:01:04.950 align:start position:0%
+Pablo é outro atleta que também teve com
+a<00:01:02.039><c> gente</c><00:01:02.879><c> nos</c><00:01:03.199><c> trabalhos</c><00:01:03.680><c> aí</c><00:01:03.960><c> durante</c><00:01:04.600><c> essa</c>
+
+00:01:04.950 --> 00:01:04.960 align:start position:0%
+a gente nos trabalhos aí durante essa
+ 
+
+00:01:04.960 --> 00:01:07.030 align:start position:0%
+a gente nos trabalhos aí durante essa
+primeira<00:01:05.320><c> etapa</c><00:01:05.840><c> de</c><00:01:06.040><c> treinamento</c><00:01:06.520><c> e</c><00:01:06.680><c> hoje</c><00:01:06.880><c> tá</c>
+
+00:01:07.030 --> 00:01:07.040 align:start position:0%
+primeira etapa de treinamento e hoje tá
+ 
+
+00:01:07.040 --> 00:01:09.230 align:start position:0%
+primeira etapa de treinamento e hoje tá
+lá<00:01:07.159><c> na</c><00:01:07.479><c> na</c><00:01:08.080><c> própria</c><00:01:08.400><c> Copinha.</c><00:01:08.840><c> Nós</c><00:01:09.000><c> estamos</c>
+
+00:01:09.230 --> 00:01:09.240 align:start position:0%
+lá na na própria Copinha. Nós estamos
+ 
+
+00:01:09.240 --> 00:01:11.950 align:start position:0%
+lá na na própria Copinha. Nós estamos
+acompanhando.<00:01:10.080><c> Claro</c><00:01:10.320><c> que</c><00:01:10.479><c> hoje,</c><00:01:11.400><c> devido</c><00:01:11.759><c> ao</c>
+
+00:01:11.950 --> 00:01:11.960 align:start position:0%
+acompanhando. Claro que hoje, devido ao
+ 
+
+00:01:11.960 --> 00:01:14.030 align:start position:0%
+acompanhando. Claro que hoje, devido ao
+treinamento,<00:01:12.520><c> no</c><00:01:12.720><c> mesmo</c><00:01:13.040><c> horário</c><00:01:13.720><c> a</c><00:01:13.880><c> gente</c>
+
+00:01:14.030 --> 00:01:14.040 align:start position:0%
+treinamento, no mesmo horário a gente
+ 
+
+00:01:14.040 --> 00:01:16.550 align:start position:0%
+treinamento, no mesmo horário a gente
+não<00:01:14.240><c> vai</c><00:01:14.479><c> conseguir,</c><00:01:15.520><c> mas</c><00:01:15.880><c> a</c><00:01:16.040><c> gente</c><00:01:16.240><c> espera</c>
+
+00:01:16.550 --> 00:01:16.560 align:start position:0%
+não vai conseguir, mas a gente espera
+ 
+
+00:01:16.560 --> 00:01:18.630 align:start position:0%
+não vai conseguir, mas a gente espera
+que<00:01:16.720><c> o</c><00:01:16.840><c> quanto</c><00:01:17.159><c> eles</c><00:01:17.400><c> vão</c><00:01:17.640><c> mais</c><00:01:17.920><c> longe</c><00:01:18.360><c> é</c>
+
+00:01:18.630 --> 00:01:18.640 align:start position:0%
+que o quanto eles vão mais longe é
+ 
+
+00:01:18.640 --> 00:01:20.950 align:start position:0%
+que o quanto eles vão mais longe é
+melhor<00:01:19.040><c> para</c><00:01:19.240><c> eles,</c><00:01:19.560><c> pro</c><00:01:19.720><c> clube,</c><00:01:20.119><c> para</c><00:01:20.320><c> todos.</c>
+
+00:01:20.950 --> 00:01:20.960 align:start position:0%
+melhor para eles, pro clube, para todos.
+ 
+
+00:01:20.960 --> 00:01:23.109 align:start position:0%
+melhor para eles, pro clube, para todos.
+Outros<00:01:21.680><c> atletas</c><00:01:22.119><c> estão</c><00:01:22.400><c> aqui,</c><00:01:22.840><c> como</c><00:01:23.000><c> o</c>
+
+00:01:23.109 --> 00:01:23.119 align:start position:0%
+Outros atletas estão aqui, como o
+ 
+
+00:01:23.119 --> 00:01:27.429 align:start position:0%
+Outros atletas estão aqui, como o
+próprio<00:01:23.400><c> Lucas,</c><00:01:24.079><c> Valdória,</c><00:01:25.079><c> Danilo,</c><00:01:26.200><c> eh,</c>
+
+00:01:27.429 --> 00:01:27.439 align:start position:0%
+próprio Lucas, Valdória, Danilo, eh,
+ 
+
+00:01:27.439 --> 00:01:30.350 align:start position:0%
+próprio Lucas, Valdória, Danilo, eh,
+Anthony,<00:01:28.479><c> eh,</c><00:01:28.880><c> Alan,</c><00:01:29.240><c> atletas</c><00:01:29.640><c> que</c><00:01:30.040><c> são</c>
+
+00:01:30.350 --> 00:01:30.360 align:start position:0%
+Anthony, eh, Alan, atletas que são
+ 
+
+00:01:30.360 --> 00:01:32.550 align:start position:0%
+Anthony, eh, Alan, atletas que são
+formados<00:01:30.920><c> aqui</c><00:01:31.200><c> no</c><00:01:31.360><c> no</c><00:01:31.600><c> Goiás</c><00:01:32.079><c> e</c><00:01:32.200><c> estão</c><00:01:32.399><c> à</c>
+
+00:01:32.550 --> 00:01:32.560 align:start position:0%
+formados aqui no no Goiás e estão à
+ 
+
+00:01:32.560 --> 00:01:34.429 align:start position:0%
+formados aqui no no Goiás e estão à
+disposição,<00:01:33.280><c> trabalhando,</c><00:01:33.840><c> buscando</c><00:01:34.240><c> seu</c>
+
+00:01:34.429 --> 00:01:34.439 align:start position:0%
+disposição, trabalhando, buscando seu
+ 
+
+00:01:34.439 --> 00:01:36.789 align:start position:0%
+disposição, trabalhando, buscando seu
+espaço,<00:01:34.799><c> sendo</c><00:01:35.079><c> preparados</c><00:01:36.240><c> dentro</c><00:01:36.560><c> do</c>
+
+00:01:36.789 --> 00:01:36.799 align:start position:0%
+espaço, sendo preparados dentro do
+ 
+
+00:01:36.799 --> 00:01:38.109 align:start position:0%
+espaço, sendo preparados dentro do
+momento<00:01:37.040><c> que</c><00:01:37.159><c> a</c><00:01:37.240><c> hora</c><00:01:37.360><c> que</c><00:01:37.479><c> a</c><00:01:37.560><c> gente</c><00:01:37.759><c> entender</c>
+
+00:01:38.109 --> 00:01:38.119 align:start position:0%
+momento que a hora que a gente entender
+ 
+
+00:01:38.119 --> 00:01:39.630 align:start position:0%
+momento que a hora que a gente entender
+eles,<00:01:38.360><c> esses</c><00:01:38.600><c> atletas</c><00:01:38.960><c> vão</c><00:01:39.119><c> ganhar</c><00:01:39.399><c> suas</c>
+
+00:01:39.630 --> 00:01:39.640 align:start position:0%
+eles, esses atletas vão ganhar suas
+ 
+
+00:01:39.640 --> 00:01:42.149 align:start position:0%
+eles, esses atletas vão ganhar suas
+oportunidades.<00:01:41.040><c> Talvez</c><00:01:41.360><c> no</c><00:01:41.600><c> primeiro</c><00:01:41.880><c> jogo,</c>
+
+00:01:42.149 --> 00:01:42.159 align:start position:0%
+oportunidades. Talvez no primeiro jogo,
+ 
+
+00:01:42.159 --> 00:01:43.630 align:start position:0%
+oportunidades. Talvez no primeiro jogo,
+no<00:01:42.360><c> segundo,</c><00:01:42.680><c> no</c><00:01:42.840><c> terceiro,</c><00:01:43.159><c> a</c><00:01:43.280><c> gente</c><00:01:43.439><c> não</c>
+
+00:01:43.630 --> 00:01:43.640 align:start position:0%
+no segundo, no terceiro, a gente não
+ 
+
+00:01:43.640 --> 00:01:46.830 align:start position:0%
+no segundo, no terceiro, a gente não
+sabe,<00:01:44.280><c> aja</c><00:01:44.600><c> vista</c><00:01:44.880><c> que</c><00:01:45.680><c> o</c><00:01:45.880><c> curto</c><00:01:46.200><c> espaço</c><00:01:46.600><c> de</c>
+
+00:01:46.830 --> 00:01:46.840 align:start position:0%
+sabe, aja vista que o curto espaço de
+ 
+
+00:01:46.840 --> 00:01:50.109 align:start position:0%
+sabe, aja vista que o curto espaço de
+preparação<00:01:48.000><c> é</c><00:01:48.320><c> beneficia</c><00:01:49.320><c> esses</c><00:01:49.680><c> atletas</c>
+
+00:01:50.109 --> 00:01:50.119 align:start position:0%
+preparação é beneficia esses atletas
+ 
+
+00:01:50.119 --> 00:01:51.709 align:start position:0%
+preparação é beneficia esses atletas
+mais<00:01:50.320><c> jovens,</c><00:01:50.759><c> porque</c><00:01:51.000><c> estão</c><00:01:51.200><c> treinando</c><00:01:51.520><c> há</c>
+
+00:01:51.709 --> 00:01:51.719 align:start position:0%
+mais jovens, porque estão treinando há
+ 
+
+00:01:51.719 --> 00:01:53.630 align:start position:0%
+mais jovens, porque estão treinando há
+mais<00:01:51.960><c> tempo,</c><00:01:52.360><c> então</c><00:01:52.640><c> assim,</c><00:01:52.960><c> se</c><00:01:52.960><c> se</c><00:01:53.479><c> se</c>
+
+00:01:53.630 --> 00:01:53.640 align:start position:0%
+mais tempo, então assim, se se se
+ 
+
+00:01:53.640 --> 00:01:55.350 align:start position:0%
+mais tempo, então assim, se se se
+apresentam<00:01:54.119><c> numa</c><00:01:54.360><c> condição</c><00:01:54.680><c> física</c><00:01:55.079><c> melhor</c>
+
+00:01:55.350 --> 00:01:55.360 align:start position:0%
+apresentam numa condição física melhor
+ 
+
+00:01:55.360 --> 00:01:57.469 align:start position:0%
+apresentam numa condição física melhor
+que<00:01:55.479><c> os</c><00:01:55.600><c> outros,</c><00:01:56.240><c> mas</c><00:01:56.439><c> isso</c><00:01:56.640><c> tem</c><00:01:56.840><c> sido</c><00:01:57.039><c> levado</c>
+
+00:01:57.469 --> 00:01:57.479 align:start position:0%
+que os outros, mas isso tem sido levado
+ 
+
+00:01:57.479 --> 00:02:00.590 align:start position:0%
+que os outros, mas isso tem sido levado
+muito<00:01:57.719><c> em</c><00:01:57.840><c> consideração</c><00:01:58.360><c> a</c><00:01:58.479><c> questão</c><00:01:58.759><c> da</c><00:01:59.960><c> da</c>
+
+00:02:00.590 --> 00:02:00.600 align:start position:0%
+muito em consideração a questão da da
+ 
+
+00:02:00.600 --> 00:02:02.590 align:start position:0%
+muito em consideração a questão da da
+performance<00:02:01.159><c> deles,</c><00:02:01.479><c> de</c><00:02:01.719><c> preparação</c><00:02:02.439><c> para</c>
+
+00:02:02.590 --> 00:02:02.600 align:start position:0%
+performance deles, de preparação para
+ 
+
+00:02:02.600 --> 00:02:04.230 align:start position:0%
+performance deles, de preparação para
+que<00:02:02.880><c> eles</c><00:02:03.119><c> sejam</c><00:02:03.399><c> lançados</c><00:02:03.799><c> no</c><00:02:03.960><c> momento</c>
+
+00:02:04.230 --> 00:02:04.240 align:start position:0%
+que eles sejam lançados no momento
+ 
+
+00:02:04.240 --> 00:02:06.439 align:start position:0%
+que eles sejam lançados no momento
+certo.
+

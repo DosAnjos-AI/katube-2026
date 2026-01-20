@@ -1,0 +1,1648 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:04.450 --> 00:00:07.390 align:start position:0%
+ 
+[Música]
+
+00:00:07.390 --> 00:00:07.400 align:start position:0%
+[Música]
+ 
+
+00:00:07.400 --> 00:00:17.930 align:start position:0%
+[Música]
+anderson<00:00:09.050><c> anderson</c><00:00:13.700><c> elder</c><00:00:14.700><c> quer</c><00:00:15.560><c> ou</c><00:00:16.560><c> ou</c><00:00:17.279><c> feliz</c>
+
+00:00:17.930 --> 00:00:17.940 align:start position:0%
+anderson anderson elder quer ou ou feliz
+ 
+
+00:00:17.940 --> 00:00:19.400 align:start position:0%
+anderson anderson elder quer ou ou feliz
+natal
+
+00:00:19.400 --> 00:00:19.410 align:start position:0%
+natal
+ 
+
+00:00:19.410 --> 00:00:28.900 align:start position:0%
+natal
+ele<00:00:23.750><c> leu</c>
+
+00:00:28.900 --> 00:00:28.910 align:start position:0%
+ 
+ 
+
+00:00:28.910 --> 00:00:31.700 align:start position:0%
+ 
+ratan<00:00:29.910><c> de</c><00:00:30.090><c> cats</c>
+
+00:00:31.700 --> 00:00:31.710 align:start position:0%
+ratan de cats
+ 
+
+00:00:31.710 --> 00:00:33.220 align:start position:0%
+ratan de cats
+[Aplausos]
+
+00:00:33.220 --> 00:00:33.230 align:start position:0%
+[Aplausos]
+ 
+
+00:00:33.230 --> 00:00:39.220 align:start position:0%
+[Aplausos]
+[Música]
+
+00:00:39.220 --> 00:00:39.230 align:start position:0%
+[Música]
+ 
+
+00:00:39.230 --> 00:00:41.860 align:start position:0%
+[Música]
+pouca<00:00:40.160><c> gente</c><00:00:40.220><c> sabe</c><00:00:40.700><c> mas</c><00:00:40.970><c> também</c><00:00:41.390><c> cats</c><00:00:41.750><c> é</c><00:00:41.809><c> um</c>
+
+00:00:41.860 --> 00:00:41.870 align:start position:0%
+pouca gente sabe mas também cats é um
+ 
+
+00:00:41.870 --> 00:00:44.680 align:start position:0%
+pouca gente sabe mas também cats é um
+animê<00:00:42.200><c> esse</c><00:00:42.829><c> desenho</c><00:00:43.250><c> era</c><00:00:43.489><c> escrito</c><00:00:44.120><c> e</c><00:00:44.150><c> dublado</c>
+
+00:00:44.680 --> 00:00:44.690 align:start position:0%
+animê esse desenho era escrito e dublado
+ 
+
+00:00:44.690 --> 00:00:47.200 align:start position:0%
+animê esse desenho era escrito e dublado
+nos<00:00:44.870><c> estados</c><00:00:45.260><c> unidos</c><00:00:45.680><c> mas</c><00:00:46.250><c> era</c><00:00:46.460><c> animado</c><00:00:47.000><c> no</c>
+
+00:00:47.200 --> 00:00:47.210 align:start position:0%
+nos estados unidos mas era animado no
+ 
+
+00:00:47.210 --> 00:00:50.640 align:start position:0%
+nos estados unidos mas era animado no
+japão<00:00:47.750><c> a</c><00:00:48.110><c> série</c><00:00:48.440><c> original</c><00:00:48.650><c> foi</c><00:00:49.160><c> ao</c><00:00:49.280><c> ar</c><00:00:49.430><c> em</c><00:00:49.520><c> 1985</c>
+
+00:00:50.640 --> 00:00:50.650 align:start position:0%
+japão a série original foi ao ar em 1985
+ 
+
+00:00:50.650 --> 00:00:53.740 align:start position:0%
+japão a série original foi ao ar em 1985
+e<00:00:51.650><c> tava</c><00:00:52.010><c> bem</c><00:00:52.340><c> à</c><00:00:52.550><c> frente</c><00:00:52.760><c> do</c><00:00:53.090><c> seu</c><00:00:53.329><c> tempo</c><00:00:53.390><c> em</c>
+
+00:00:53.740 --> 00:00:53.750 align:start position:0%
+e tava bem à frente do seu tempo em
+ 
+
+00:00:53.750 --> 00:00:56.290 align:start position:0%
+e tava bem à frente do seu tempo em
+quase<00:00:54.079><c> todos</c><00:00:54.710><c> os</c><00:00:54.739><c> quesitos</c><00:00:55.300><c> thundercat</c>
+
+00:00:56.290 --> 00:00:56.300 align:start position:0%
+quase todos os quesitos thundercat
+ 
+
+00:00:56.300 --> 00:00:59.110 align:start position:0%
+quase todos os quesitos thundercat
+lidava<00:00:57.230><c> com</c><00:00:57.320><c> temas</c><00:00:57.830><c> que</c><00:00:57.920><c> poucas</c><00:00:58.430><c> animações</c><00:00:58.879><c> da</c>
+
+00:00:59.110 --> 00:00:59.120 align:start position:0%
+lidava com temas que poucas animações da
+ 
+
+00:00:59.120 --> 00:01:02.619 align:start position:0%
+lidava com temas que poucas animações da
+época<00:00:59.600><c> ousavam</c><00:01:00.589><c> mexer</c><00:01:01.010><c> é</c><00:01:01.400><c> um</c><00:01:01.519><c> exemplo</c><00:01:02.089><c> olha</c>
+
+00:01:02.619 --> 00:01:02.629 align:start position:0%
+época ousavam mexer é um exemplo olha
+ 
+
+00:01:02.629 --> 00:01:05.200 align:start position:0%
+época ousavam mexer é um exemplo olha
+pra<00:01:02.900><c> esse</c><00:01:03.110><c> episódio</c><00:01:03.350><c> chamado</c><00:01:04.040><c> o</c><00:01:04.430><c> jardim</c><00:01:04.970><c> das</c>
+
+00:01:05.200 --> 00:01:05.210 align:start position:0%
+pra esse episódio chamado o jardim das
+ 
+
+00:01:05.210 --> 00:01:07.719 align:start position:0%
+pra esse episódio chamado o jardim das
+delícias<00:01:05.320><c> a</c><00:01:06.320><c> complexidade</c><00:01:07.070><c> desse</c><00:01:07.640><c> episódio</c>
+
+00:01:07.719 --> 00:01:07.729 align:start position:0%
+delícias a complexidade desse episódio
+ 
+
+00:01:07.729 --> 00:01:10.630 align:start position:0%
+delícias a complexidade desse episódio
+já<00:01:08.420><c> vem</c><00:01:08.630><c> um</c><00:01:08.690><c> título</c><00:01:09.290><c> que</c><00:01:09.650><c> faz</c><00:01:09.890><c> referência</c><00:01:10.550><c> a</c>
+
+00:01:10.630 --> 00:01:10.640 align:start position:0%
+já vem um título que faz referência a
+ 
+
+00:01:10.640 --> 00:01:13.090 align:start position:0%
+já vem um título que faz referência a
+essa<00:01:10.909><c> obra</c><00:01:11.210><c> de</c><00:01:11.420><c> um</c><00:01:11.479><c> cara</c><00:01:11.720><c> chamado</c><00:01:11.930><c> bosch</c><00:01:12.590><c> esse</c>
+
+00:01:13.090 --> 00:01:13.100 align:start position:0%
+essa obra de um cara chamado bosch esse
+ 
+
+00:01:13.100 --> 00:01:15.219 align:start position:0%
+essa obra de um cara chamado bosch esse
+quadro<00:01:13.610><c> se</c><00:01:13.729><c> chama</c><00:01:14.119><c> o</c><00:01:14.360><c> jardim</c><00:01:14.899><c> das</c><00:01:15.140><c> delícias</c>
+
+00:01:15.219 --> 00:01:15.229 align:start position:0%
+quadro se chama o jardim das delícias
+ 
+
+00:01:15.229 --> 00:01:17.440 align:start position:0%
+quadro se chama o jardim das delícias
+terrenas<00:01:16.180><c> hoje</c>
+
+00:01:17.440 --> 00:01:17.450 align:start position:0%
+terrenas hoje
+ 
+
+00:01:17.450 --> 00:01:20.020 align:start position:0%
+terrenas hoje
+se<00:01:17.690><c> isso</c><00:01:17.930><c> tivesse</c><00:01:18.380><c> no</c><00:01:18.619><c> museu</c><00:01:19.130><c> brasileiro</c>
+
+00:01:20.020 --> 00:01:20.030 align:start position:0%
+se isso tivesse no museu brasileiro
+ 
+
+00:01:20.030 --> 00:01:22.180 align:start position:0%
+se isso tivesse no museu brasileiro
+talvez<00:01:20.509><c> fosse</c><00:01:20.840><c> alvo</c><00:01:21.050><c> de</c><00:01:21.170><c> protestos</c>
+
+00:01:22.180 --> 00:01:22.190 align:start position:0%
+talvez fosse alvo de protestos
+ 
+
+00:01:22.190 --> 00:01:24.910 align:start position:0%
+talvez fosse alvo de protestos
+mas<00:01:22.430><c> o</c><00:01:22.490><c> quadro</c><00:01:22.759><c> foi</c><00:01:22.970><c> pintado</c><00:01:23.030><c> no</c><00:01:23.509><c> século</c><00:01:23.600><c> 14</c><00:01:24.320><c> e</c>
+
+00:01:24.910 --> 00:01:24.920 align:start position:0%
+mas o quadro foi pintado no século 14 e
+ 
+
+00:01:24.920 --> 00:01:26.889 align:start position:0%
+mas o quadro foi pintado no século 14 e
+é<00:01:25.039><c> um</c><00:01:25.070><c> marco</c><00:01:25.490><c> na</c><00:01:25.759><c> história</c><00:01:25.850><c> da</c><00:01:26.360><c> arte</c>
+
+00:01:26.889 --> 00:01:26.899 align:start position:0%
+é um marco na história da arte
+ 
+
+00:01:26.899 --> 00:01:28.680 align:start position:0%
+é um marco na história da arte
+ele<00:01:27.170><c> fala</c><00:01:27.530><c> de</c><00:01:27.619><c> prazeres</c><00:01:28.130><c> efêmeros</c>
+
+00:01:28.680 --> 00:01:28.690 align:start position:0%
+ele fala de prazeres efêmeros
+ 
+
+00:01:28.690 --> 00:01:31.450 align:start position:0%
+ele fala de prazeres efêmeros
+passageiros<00:01:29.690><c> e</c><00:01:30.110><c> do</c><00:01:30.289><c> preço</c><00:01:30.950><c> que</c><00:01:31.130><c> a</c><00:01:31.160><c> humanidade</c>
+
+00:01:31.450 --> 00:01:31.460 align:start position:0%
+passageiros e do preço que a humanidade
+ 
+
+00:01:31.460 --> 00:01:34.630 align:start position:0%
+passageiros e do preço que a humanidade
+paga<00:01:32.030><c> por</c><00:01:32.210><c> eles</c><00:01:32.509><c> é</c><00:01:32.960><c> o</c><00:01:33.080><c> mesmo</c><00:01:33.560><c> tema</c><00:01:34.009><c> do</c><00:01:34.250><c> nono</c>
+
+00:01:34.630 --> 00:01:34.640 align:start position:0%
+paga por eles é o mesmo tema do nono
+ 
+
+00:01:34.640 --> 00:01:36.940 align:start position:0%
+paga por eles é o mesmo tema do nono
+episódio<00:01:34.789><c> da</c><00:01:35.570><c> primeira</c><00:01:36.110><c> temporada</c><00:01:36.170><c> dos</c>
+
+00:01:36.940 --> 00:01:36.950 align:start position:0%
+episódio da primeira temporada dos
+ 
+
+00:01:36.950 --> 00:01:38.080 align:start position:0%
+episódio da primeira temporada dos
+thunder<00:01:37.190><c> cats</c>
+
+00:01:38.080 --> 00:01:38.090 align:start position:0%
+thunder cats
+ 
+
+00:01:38.090 --> 00:01:41.290 align:start position:0%
+thunder cats
+nada<00:01:38.600><c> mal</c><00:01:38.929><c> um</c><00:01:39.229><c> desenho</c><00:01:39.800><c> dos</c><00:01:39.979><c> anos</c><00:01:40.009><c> 80</c><00:01:40.759><c> no</c>
+
+00:01:41.290 --> 00:01:41.300 align:start position:0%
+nada mal um desenho dos anos 80 no
+ 
+
+00:01:41.300 --> 00:01:42.609 align:start position:0%
+nada mal um desenho dos anos 80 no
+jardim<00:01:41.690><c> das</c><00:01:41.929><c> delícias</c>
+
+00:01:42.609 --> 00:01:42.619 align:start position:0%
+jardim das delícias
+ 
+
+00:01:42.619 --> 00:01:44.499 align:start position:0%
+jardim das delícias
+o<00:01:42.649><c> pai</c><00:01:43.009><c> era</c><00:01:43.160><c> encontrar</c><00:01:43.819><c> essa</c><00:01:44.000><c> planta</c>
+
+00:01:44.499 --> 00:01:44.509 align:start position:0%
+o pai era encontrar essa planta
+ 
+
+00:01:44.509 --> 00:01:57.160 align:start position:0%
+o pai era encontrar essa planta
+esquisita<00:01:45.470><c> e</c><00:01:45.679><c> sedutora</c><00:01:46.610><c> também</c><00:01:52.690><c> dei</c><00:01:53.690><c> comigo</c>
+
+00:01:57.160 --> 00:01:57.170 align:start position:0%
+ 
+ 
+
+00:01:57.170 --> 00:02:04.100 align:start position:0%
+ 
+eu<00:01:58.170><c> eu</c><00:01:58.829><c> não</c><00:01:58.979><c> devo</c><00:01:59.399><c> tanto</c><00:02:00.090><c> eu</c><00:02:00.210><c> não</c><00:02:00.329><c> vivo</c><00:02:03.020><c> é</c><00:02:04.020><c> uma</c>
+
+00:02:04.100 --> 00:02:04.110 align:start position:0%
+eu eu não devo tanto eu não vivo é uma
+ 
+
+00:02:04.110 --> 00:02:07.609 align:start position:0%
+eu eu não devo tanto eu não vivo é uma
+fruta<00:02:04.530><c> tão</c><00:02:04.860><c> duro</c><00:02:05.219><c> e</c><00:02:05.640><c> o</c><00:02:05.789><c> doce</c><00:02:06.390><c> não</c><00:02:06.869><c> demorou</c><00:02:07.439><c> para</c>
+
+00:02:07.609 --> 00:02:07.619 align:start position:0%
+fruta tão duro e o doce não demorou para
+ 
+
+00:02:07.619 --> 00:02:11.630 align:start position:0%
+fruta tão duro e o doce não demorou para
+bater<00:02:08.069><c> me</c><00:02:08.700><c> sinto</c><00:02:09.179><c> como</c><00:02:10.009><c> como</c><00:02:11.009><c> se</c><00:02:11.160><c> estivesse</c>
+
+00:02:11.630 --> 00:02:11.640 align:start position:0%
+bater me sinto como como se estivesse
+ 
+
+00:02:11.640 --> 00:02:17.619 align:start position:0%
+bater me sinto como como se estivesse
+voando
+
+00:02:17.619 --> 00:02:17.629 align:start position:0%
+ 
+ 
+
+00:02:17.629 --> 00:02:22.280 align:start position:0%
+ 
+ei<00:02:18.769><c> isso</c><00:02:20.220><c> isso</c><00:02:20.550><c> é</c><00:02:20.610><c> ótimo</c>
+
+00:02:22.280 --> 00:02:22.290 align:start position:0%
+ei isso isso é ótimo
+ 
+
+00:02:22.290 --> 00:02:31.670 align:start position:0%
+ei isso isso é ótimo
+ei<00:02:23.599><c> telequete</c><00:02:29.180><c> viagem</c><00:02:30.180><c> maneira</c><00:02:30.810><c> é</c><00:02:31.140><c> claro</c><00:02:31.590><c> que</c>
+
+00:02:31.670 --> 00:02:31.680 align:start position:0%
+ei telequete viagem maneira é claro que
+ 
+
+00:02:31.680 --> 00:02:36.259 align:start position:0%
+ei telequete viagem maneira é claro que
+o<00:02:31.739><c> time</c><00:02:32.099><c> ea</c><00:02:32.430><c> querer</c><00:02:32.760><c> mais</c><00:02:33.060><c> dessa</c><00:02:33.300><c> fruta</c><00:02:35.269><c> tem</c>
+
+00:02:36.259 --> 00:02:36.269 align:start position:0%
+o time ea querer mais dessa fruta tem
+ 
+
+00:02:36.269 --> 00:02:37.699 align:start position:0%
+o time ea querer mais dessa fruta tem
+mais<00:02:36.569><c> aquela</c><00:02:36.870><c> fruta</c>
+
+00:02:37.699 --> 00:02:37.709 align:start position:0%
+mais aquela fruta
+ 
+
+00:02:37.709 --> 00:02:40.220 align:start position:0%
+mais aquela fruta
+eventualmente<00:02:38.280><c> ele</c><00:02:38.670><c> fica</c><00:02:38.940><c> tão</c><00:02:39.299><c> viciado</c><00:02:39.989><c> nessa</c>
+
+00:02:40.220 --> 00:02:40.230 align:start position:0%
+eventualmente ele fica tão viciado nessa
+ 
+
+00:02:40.230 --> 00:02:42.589 align:start position:0%
+eventualmente ele fica tão viciado nessa
+droga<00:02:40.440><c> que</c><00:02:41.099><c> chega</c><00:02:41.430><c> até</c><00:02:41.610><c> procurar</c><00:02:42.090><c> o</c><00:02:42.150><c> vilão</c>
+
+00:02:42.589 --> 00:02:42.599 align:start position:0%
+droga que chega até procurar o vilão
+ 
+
+00:02:42.599 --> 00:02:49.430 align:start position:0%
+droga que chega até procurar o vilão
+para<00:02:42.930><c> não</c><00:02:43.080><c> ficar</c><00:02:43.470><c> sem</c><00:02:43.769><c> o</c><00:02:43.950><c> barato</c><00:02:44.430><c> dele</c><00:02:48.049><c> e</c><00:02:49.049><c> isso</c>
+
+00:02:49.430 --> 00:02:49.440 align:start position:0%
+para não ficar sem o barato dele e isso
+ 
+
+00:02:49.440 --> 00:02:51.979 align:start position:0%
+para não ficar sem o barato dele e isso
+coloca<00:02:49.709><c> os</c><00:02:49.920><c> amigos</c><00:02:50.430><c> do</c><00:02:50.519><c> time</c><00:02:50.940><c> em</c><00:02:50.970><c> risco</c><00:02:51.360><c> mas</c><00:02:51.870><c> no</c>
+
+00:02:51.979 --> 00:02:51.989 align:start position:0%
+coloca os amigos do time em risco mas no
+ 
+
+00:02:51.989 --> 00:02:54.500 align:start position:0%
+coloca os amigos do time em risco mas no
+fim<00:02:52.170><c> o</c><00:02:52.440><c> time</c><00:02:52.680><c> é</c><00:02:52.950><c> perdoado</c><00:02:53.670><c> todo</c><00:02:54.150><c> mundo</c><00:02:54.390><c> se</c>
+
+00:02:54.500 --> 00:02:54.510 align:start position:0%
+fim o time é perdoado todo mundo se
+ 
+
+00:02:54.510 --> 00:02:57.199 align:start position:0%
+fim o time é perdoado todo mundo se
+salva<00:02:54.980><c> episódio</c><00:02:55.980><c> acaba</c><00:02:56.459><c> como</c><00:02:56.670><c> todo</c><00:02:57.120><c> episódio</c>
+
+00:02:57.199 --> 00:02:57.209 align:start position:0%
+salva episódio acaba como todo episódio
+ 
+
+00:02:57.209 --> 00:03:01.430 align:start position:0%
+salva episódio acaba como todo episódio
+de<00:02:57.780><c> todo</c><00:02:58.140><c> o</c><00:02:58.170><c> desenho</c><00:02:58.560><c> daquela</c><00:02:58.950><c> época</c>
+
+00:03:01.430 --> 00:03:01.440 align:start position:0%
+ 
+ 
+
+00:03:01.440 --> 00:03:06.810 align:start position:0%
+ 
+[Música]
+
+00:03:06.810 --> 00:03:06.820 align:start position:0%
+ 
+ 
+
+00:03:06.820 --> 00:03:10.030 align:start position:0%
+ 
+quase<00:03:07.820><c> 30</c><00:03:08.330><c> anos</c><00:03:08.450><c> depois</c><00:03:08.630><c> disso</c><00:03:09.320><c> em</c><00:03:09.530><c> 2011</c>
+
+00:03:10.030 --> 00:03:10.040 align:start position:0%
+quase 30 anos depois disso em 2011
+ 
+
+00:03:10.040 --> 00:03:13.010 align:start position:0%
+quase 30 anos depois disso em 2011
+thundercat<00:03:11.000><c> ganhou</c><00:03:11.630><c> um</c><00:03:11.660><c> remake</c>
+
+00:03:13.010 --> 00:03:13.020 align:start position:0%
+thundercat ganhou um remake
+ 
+
+00:03:13.020 --> 00:03:19.670 align:start position:0%
+thundercat ganhou um remake
+[Música]
+
+00:03:19.670 --> 00:03:19.680 align:start position:0%
+ 
+ 
+
+00:03:19.680 --> 00:03:22.369 align:start position:0%
+ 
+essa<00:03:20.310><c> nova</c><00:03:20.640><c> versão</c><00:03:20.849><c> toma</c><00:03:21.689><c> as</c><00:03:21.780><c> suas</c><00:03:21.840><c> liberdades</c>
+
+00:03:22.369 --> 00:03:22.379 align:start position:0%
+essa nova versão toma as suas liberdades
+ 
+
+00:03:22.379 --> 00:03:25.729 align:start position:0%
+essa nova versão toma as suas liberdades
+criativas<00:03:23.150><c> mas</c><00:03:24.150><c> assim</c><00:03:24.480><c> como</c><00:03:24.689><c> o</c><00:03:24.810><c> original</c><00:03:24.930><c> ela</c>
+
+00:03:25.729 --> 00:03:25.739 align:start position:0%
+criativas mas assim como o original ela
+ 
+
+00:03:25.739 --> 00:03:27.470 align:start position:0%
+criativas mas assim como o original ela
+também<00:03:26.069><c> toca</c><00:03:26.459><c> em</c><00:03:26.670><c> temas</c><00:03:26.819><c> que</c><00:03:27.180><c> seriam</c>
+
+00:03:27.470 --> 00:03:27.480 align:start position:0%
+também toca em temas que seriam
+ 
+
+00:03:27.480 --> 00:03:29.690 align:start position:0%
+também toca em temas que seriam
+considerados<00:03:28.260><c> adultos</c>
+
+00:03:29.690 --> 00:03:29.700 align:start position:0%
+considerados adultos
+ 
+
+00:03:29.700 --> 00:03:32.300 align:start position:0%
+considerados adultos
+o<00:03:29.849><c> episódio</c><00:03:30.120><c> a</c><00:03:30.659><c> cansando</c><00:03:31.260><c> hospitalar</c><00:03:32.010><c> ccih</c><00:03:32.219><c> é</c>
+
+00:03:32.300 --> 00:03:32.310 align:start position:0%
+o episódio a cansando hospitalar ccih é
+ 
+
+00:03:32.310 --> 00:03:35.479 align:start position:0%
+o episódio a cansando hospitalar ccih é
+sobre<00:03:32.670><c> o</c><00:03:32.730><c> tema</c><00:03:33.030><c> mais</c><00:03:33.390><c> duro</c><00:03:33.930><c> de</c><00:03:34.019><c> todos</c><00:03:34.409><c> a</c><00:03:34.920><c> morte</c>
+
+00:03:35.479 --> 00:03:35.489 align:start position:0%
+sobre o tema mais duro de todos a morte
+ 
+
+00:03:35.489 --> 00:03:38.360 align:start position:0%
+sobre o tema mais duro de todos a morte
+nesse<00:03:36.209><c> episódio</c><00:03:36.329><c> os</c><00:03:37.230><c> thunder</c><00:03:37.409><c> cats</c><00:03:37.889><c> conhecem</c>
+
+00:03:38.360 --> 00:03:38.370 align:start position:0%
+nesse episódio os thunder cats conhecem
+ 
+
+00:03:38.370 --> 00:03:41.030 align:start position:0%
+nesse episódio os thunder cats conhecem
+esses<00:03:38.609><c> seres</c><00:03:39.060><c> que</c><00:03:39.450><c> vivem</c><00:03:39.959><c> e</c><00:03:40.049><c> morrem</c><00:03:40.349><c> em</c><00:03:40.680><c> apenas</c>
+
+00:03:41.030 --> 00:03:41.040 align:start position:0%
+esses seres que vivem e morrem em apenas
+ 
+
+00:03:41.040 --> 00:03:42.020 align:start position:0%
+esses seres que vivem e morrem em apenas
+um<00:03:41.250><c> dia</c>
+
+00:03:42.020 --> 00:03:42.030 align:start position:0%
+um dia
+ 
+
+00:03:42.030 --> 00:03:43.339 align:start position:0%
+um dia
+eles<00:03:42.239><c> estão</c><00:03:42.359><c> perdidos</c><00:03:42.719><c> nessa</c><00:03:43.260><c> floresta</c>
+
+00:03:43.339 --> 00:03:43.349 align:start position:0%
+eles estão perdidos nessa floresta
+ 
+
+00:03:43.349 --> 00:03:46.910 align:start position:0%
+eles estão perdidos nessa floresta
+espinhosa<00:03:44.340><c> e</c><00:03:44.730><c> sonham</c><00:03:45.450><c> em</c><00:03:45.599><c> voltar</c><00:03:45.780><c> pra</c><00:03:46.200><c> casa</c>
+
+00:03:46.910 --> 00:03:46.920 align:start position:0%
+espinhosa e sonham em voltar pra casa
+ 
+
+00:03:46.920 --> 00:03:49.309 align:start position:0%
+espinhosa e sonham em voltar pra casa
+a<00:03:47.069><c> única</c><00:03:47.609><c> esperança</c><00:03:48.030><c> dos</c><00:03:48.389><c> patetas</c><00:03:48.750><c> lars</c><00:03:49.079><c> é</c>
+
+00:03:49.309 --> 00:03:49.319 align:start position:0%
+a única esperança dos patetas lars é
+ 
+
+00:03:49.319 --> 00:03:52.339 align:start position:0%
+a única esperança dos patetas lars é
+esse<00:03:49.590><c> mapa</c><00:03:50.040><c> deixado</c><00:03:50.909><c> pelos</c><00:03:51.180><c> ancestrais</c><00:03:51.540><c> deles</c>
+
+00:03:52.339 --> 00:03:52.349 align:start position:0%
+esse mapa deixado pelos ancestrais deles
+ 
+
+00:03:52.349 --> 00:03:54.289 align:start position:0%
+esse mapa deixado pelos ancestrais deles
+porque<00:03:52.799><c> esses</c><00:03:53.040><c> bichinhos</c><00:03:53.400><c> estão</c><00:03:53.730><c> perdidos</c>
+
+00:03:54.289 --> 00:03:54.299 align:start position:0%
+porque esses bichinhos estão perdidos
+ 
+
+00:03:54.299 --> 00:03:56.629 align:start position:0%
+porque esses bichinhos estão perdidos
+nessa<00:03:54.569><c> floresta</c><00:03:54.689><c> há</c><00:03:55.290><c> gerações</c>
+
+00:03:56.629 --> 00:03:56.639 align:start position:0%
+nessa floresta há gerações
+ 
+
+00:03:56.639 --> 00:03:59.179 align:start position:0%
+nessa floresta há gerações
+quando<00:03:57.090><c> o</c><00:03:57.120><c> santander</c><00:03:57.359><c> cats</c><00:03:57.930><c> se</c><00:03:58.200><c> comprometem</c><00:03:58.980><c> a</c>
+
+00:03:59.179 --> 00:03:59.189 align:start position:0%
+quando o santander cats se comprometem a
+ 
+
+00:03:59.189 --> 00:04:02.300 align:start position:0%
+quando o santander cats se comprometem a
+levar<00:03:59.280><c> hospitalares</c><00:04:00.180><c> da</c><00:04:00.359><c> casa</c><00:04:00.900><c> o</c><00:04:01.409><c> lyon</c><00:04:01.769><c> acaba</c>
+
+00:04:02.300 --> 00:04:02.310 align:start position:0%
+levar hospitalares da casa o lyon acaba
+ 
+
+00:04:02.310 --> 00:04:05.179 align:start position:0%
+levar hospitalares da casa o lyon acaba
+girando<00:04:02.430><c> o</c><00:04:02.700><c> mestre</c><00:04:03.180><c> o</c><00:04:03.209><c> mentor</c><00:04:03.720><c> do</c><00:04:03.900><c> henrique</c><00:04:04.620><c> eu</c>
+
+00:04:05.179 --> 00:04:05.189 align:start position:0%
+girando o mestre o mentor do henrique eu
+ 
+
+00:04:05.189 --> 00:04:07.220 align:start position:0%
+girando o mestre o mentor do henrique eu
+crescer<00:04:05.549><c> quero</c><00:04:05.579><c> ser</c><00:04:06.030><c> igual</c><00:04:06.180><c> a</c><00:04:06.510><c> você</c><00:04:06.750><c> lá</c><00:04:06.989><c> eu</c>
+
+00:04:07.220 --> 00:04:07.230 align:start position:0%
+crescer quero ser igual a você lá eu
+ 
+
+00:04:07.230 --> 00:04:09.409 align:start position:0%
+crescer quero ser igual a você lá eu
+aproveite<00:04:08.069><c> a</c><00:04:08.129><c> sua</c><00:04:08.250><c> infância</c><00:04:08.730><c> porque</c><00:04:09.090><c> quando</c>
+
+00:04:09.409 --> 00:04:09.419 align:start position:0%
+aproveite a sua infância porque quando
+ 
+
+00:04:09.419 --> 00:04:11.569 align:start position:0%
+aproveite a sua infância porque quando
+crescer<00:04:09.930><c> vai</c><00:04:10.290><c> sentir</c><00:04:10.650><c> saudade</c>
+
+00:04:11.569 --> 00:04:11.579 align:start position:0%
+crescer vai sentir saudade
+ 
+
+00:04:11.579 --> 00:04:13.240 align:start position:0%
+crescer vai sentir saudade
+muito<00:04:11.909><c> me</c><00:04:12.000><c> ensinar</c><00:04:12.359><c> a</c><00:04:12.419><c> usar</c><00:04:12.540><c> a</c><00:04:12.689><c> espada</c>
+
+00:04:13.240 --> 00:04:13.250 align:start position:0%
+muito me ensinar a usar a espada
+ 
+
+00:04:13.250 --> 00:04:15.559 align:start position:0%
+muito me ensinar a usar a espada
+primeiro<00:04:14.250><c> você</c><00:04:14.489><c> não</c><00:04:14.639><c> pode</c><00:04:14.879><c> sair</c><00:04:15.060><c> impunham</c><00:04:15.540><c> uma</c>
+
+00:04:15.559 --> 00:04:15.569 align:start position:0%
+primeiro você não pode sair impunham uma
+ 
+
+00:04:15.569 --> 00:04:17.720 align:start position:0%
+primeiro você não pode sair impunham uma
+arma<00:04:15.900><c> dessas</c><00:04:16.019><c> assim</c>
+
+00:04:17.720 --> 00:04:17.730 align:start position:0%
+arma dessas assim
+ 
+
+00:04:17.730 --> 00:04:20.960 align:start position:0%
+arma dessas assim
+tem<00:04:18.720><c> que</c><00:04:18.810><c> se</c><00:04:18.870><c> concentrar</c><00:04:19.170><c> e</c><00:04:19.950><c> o</c><00:04:20.130><c> irão</c><00:04:20.520><c> vai</c><00:04:20.610><c> vendo</c>
+
+00:04:20.960 --> 00:04:20.970 align:start position:0%
+tem que se concentrar e o irão vai vendo
+ 
+
+00:04:20.970 --> 00:04:23.300 align:start position:0%
+tem que se concentrar e o irão vai vendo
+henrique<00:04:21.420><c> crescer</c><00:04:22.020><c> diante</c><00:04:22.320><c> dele</c><00:04:22.800><c> não</c>
+
+00:04:23.300 --> 00:04:23.310 align:start position:0%
+henrique crescer diante dele não
+ 
+
+00:04:23.310 --> 00:04:25.040 align:start position:0%
+henrique crescer diante dele não
+reconhece<00:04:23.790><c> o</c><00:04:23.850><c> seu</c><00:04:23.970><c> velho</c><00:04:24.150><c> amigo</c>
+
+00:04:25.040 --> 00:04:25.050 align:start position:0%
+reconhece o seu velho amigo
+ 
+
+00:04:25.050 --> 00:04:27.590 align:start position:0%
+reconhece o seu velho amigo
+lembro<00:04:25.620><c> que</c><00:04:25.710><c> eu</c><00:04:25.800><c> sou</c><00:04:25.980><c> um</c><00:04:26.010><c> garoto</c><00:04:26.510><c> talvez</c><00:04:27.510><c> da</c>
+
+00:04:27.590 --> 00:04:27.600 align:start position:0%
+lembro que eu sou um garoto talvez da
+ 
+
+00:04:27.600 --> 00:04:29.090 align:start position:0%
+lembro que eu sou um garoto talvez da
+última<00:04:27.840><c> vez</c><00:04:28.020><c> que</c><00:04:28.080><c> você</c><00:04:28.290><c> viu</c>
+
+00:04:29.090 --> 00:04:29.100 align:start position:0%
+última vez que você viu
+ 
+
+00:04:29.100 --> 00:04:30.590 align:start position:0%
+última vez que você viu
+mas<00:04:29.310><c> acho</c><00:04:29.490><c> que</c><00:04:29.580><c> fiquei</c><00:04:29.760><c> perdido</c><00:04:30.180><c> por</c><00:04:30.330><c> muito</c>
+
+00:04:30.590 --> 00:04:30.600 align:start position:0%
+mas acho que fiquei perdido por muito
+ 
+
+00:04:30.600 --> 00:04:32.810 align:start position:0%
+mas acho que fiquei perdido por muito
+tempo
+
+00:04:32.810 --> 00:04:32.820 align:start position:0%
+ 
+ 
+
+00:04:32.820 --> 00:04:35.450 align:start position:0%
+ 
+no<00:04:33.180><c> entanto</c><00:04:33.750><c> depois</c><00:04:34.230><c> da</c><00:04:34.560><c> ascensão</c><00:04:34.860><c> veio</c>
+
+00:04:35.450 --> 00:04:35.460 align:start position:0%
+no entanto depois da ascensão veio
+ 
+
+00:04:35.460 --> 00:04:38.230 align:start position:0%
+no entanto depois da ascensão veio
+declínio<00:04:36.180><c> e</c><00:04:36.300><c> o</c><00:04:36.450><c> iraque</c><00:04:36.870><c> começa</c><00:04:37.260><c> a</c><00:04:37.470><c> envelhecer</c>
+
+00:04:38.230 --> 00:04:38.240 align:start position:0%
+declínio e o iraque começa a envelhecer
+ 
+
+00:04:38.240 --> 00:04:40.970 align:start position:0%
+declínio e o iraque começa a envelhecer
+tenente<00:04:39.240><c> acha</c><00:04:39.570><c> que</c><00:04:39.690><c> chegou</c><00:04:40.020><c> o</c><00:04:40.170><c> fim</c><00:04:40.260><c> da</c><00:04:40.740><c> minha</c>
+
+00:04:40.970 --> 00:04:40.980 align:start position:0%
+tenente acha que chegou o fim da minha
+ 
+
+00:04:40.980 --> 00:04:41.930 align:start position:0%
+tenente acha que chegou o fim da minha
+jornada
+
+00:04:41.930 --> 00:04:41.940 align:start position:0%
+jornada
+ 
+
+00:04:41.940 --> 00:04:44.180 align:start position:0%
+jornada
+no<00:04:42.150><c> fim</c><00:04:42.360><c> o</c><00:04:42.630><c> henrique</c><00:04:43.050><c> morre</c><00:04:43.380><c> antes</c><00:04:43.650><c> de</c>
+
+00:04:44.180 --> 00:04:44.190 align:start position:0%
+no fim o henrique morre antes de
+ 
+
+00:04:44.190 --> 00:04:47.750 align:start position:0%
+no fim o henrique morre antes de
+conseguir<00:04:44.910><c> voltar</c><00:04:45.150><c> para</c><00:04:45.330><c> casa</c><00:04:45.480><c> no</c><00:04:46.470><c> fim</c><00:04:46.710><c> o</c><00:04:47.550><c> que</c>
+
+00:04:47.750 --> 00:04:47.760 align:start position:0%
+conseguir voltar para casa no fim o que
+ 
+
+00:04:47.760 --> 00:04:50.750 align:start position:0%
+conseguir voltar para casa no fim o que
+importa<00:04:48.300><c> não</c><00:04:48.420><c> é</c><00:04:48.510><c> quanto</c><00:04:48.840><c> tempo</c><00:04:48.930><c> eventos</c><00:04:49.860><c> mais</c>
+
+00:04:50.750 --> 00:04:50.760 align:start position:0%
+importa não é quanto tempo eventos mais
+ 
+
+00:04:50.760 --> 00:04:51.980 align:start position:0%
+importa não é quanto tempo eventos mais
+intensidade
+
+00:04:51.980 --> 00:04:51.990 align:start position:0%
+intensidade
+ 
+
+00:04:51.990 --> 00:04:55.460 align:start position:0%
+intensidade
+é<00:04:52.920><c> tudo</c><00:04:53.160><c> muito</c><00:04:53.430><c> triste</c><00:04:53.730><c> mas</c><00:04:54.540><c> é</c><00:04:54.690><c> pedagógico</c>
+
+00:04:55.460 --> 00:04:55.470 align:start position:0%
+é tudo muito triste mas é pedagógico
+ 
+
+00:04:55.470 --> 00:04:56.930 align:start position:0%
+é tudo muito triste mas é pedagógico
+também<00:04:55.620><c> o</c><00:04:56.370><c> lion</c>
+
+00:04:56.930 --> 00:04:56.940 align:start position:0%
+também o lion
+ 
+
+00:04:56.940 --> 00:04:59.270 align:start position:0%
+também o lion
+aprendi<00:04:57.360><c> que</c><00:04:57.480><c> mais</c><00:04:57.840><c> importante</c><00:04:58.560><c> que</c><00:04:58.620><c> proteger</c>
+
+00:04:59.270 --> 00:04:59.280 align:start position:0%
+aprendi que mais importante que proteger
+ 
+
+00:04:59.280 --> 00:05:02.360 align:start position:0%
+aprendi que mais importante que proteger
+a<00:04:59.430><c> própria</c><00:04:59.640><c> vida</c><00:04:59.940><c> é</c><00:05:00.720><c> viver</c><00:05:01.230><c> aí</c><00:05:01.620><c> ele</c><00:05:01.800><c> começa</c><00:05:02.070><c> a</c>
+
+00:05:02.360 --> 00:05:02.370 align:start position:0%
+a própria vida é viver aí ele começa a
+ 
+
+00:05:02.370 --> 00:05:04.670 align:start position:0%
+a própria vida é viver aí ele começa a
+assumir<00:05:02.850><c> os</c><00:05:02.940><c> riscos</c><00:05:03.000><c> para</c><00:05:03.810><c> viver</c><00:05:04.380><c> uma</c><00:05:04.440><c> vida</c>
+
+00:05:04.670 --> 00:05:04.680 align:start position:0%
+assumir os riscos para viver uma vida
+ 
+
+00:05:04.680 --> 00:05:05.690 align:start position:0%
+assumir os riscos para viver uma vida
+mais<00:05:04.980><c> plena</c>
+
+00:05:05.690 --> 00:05:05.700 align:start position:0%
+mais plena
+ 
+
+00:05:05.700 --> 00:05:08.510 align:start position:0%
+mais plena
+somos<00:05:06.000><c> folha</c><00:05:06.390><c> só</c><00:05:06.600><c> porque</c><00:05:06.870><c> o</c><00:05:06.900><c> vento</c><00:05:07.590><c> estamos</c>
+
+00:05:08.510 --> 00:05:08.520 align:start position:0%
+somos folha só porque o vento estamos
+ 
+
+00:05:08.520 --> 00:05:10.940 align:start position:0%
+somos folha só porque o vento estamos
+aqui<00:05:08.700><c> hoje</c><00:05:08.820><c> e</c><00:05:09.030><c> depois</c><00:05:09.210><c> subir</c><00:05:09.620><c> mas</c><00:05:10.620><c> enquanto</c>
+
+00:05:10.940 --> 00:05:10.950 align:start position:0%
+aqui hoje e depois subir mas enquanto
+ 
+
+00:05:10.950 --> 00:05:13.310 align:start position:0%
+aqui hoje e depois subir mas enquanto
+estamos<00:05:11.310><c> aqui</c><00:05:11.550><c> vamos</c><00:05:12.360><c> viver</c><00:05:12.900><c> intensamente</c>
+
+00:05:13.310 --> 00:05:13.320 align:start position:0%
+estamos aqui vamos viver intensamente
+ 
+
+00:05:13.320 --> 00:05:16.010 align:start position:0%
+estamos aqui vamos viver intensamente
+esse<00:05:13.950><c> episódio</c><00:05:14.220><c> me</c><00:05:14.610><c> faz</c><00:05:14.850><c> chorar</c><00:05:15.030><c> e</c><00:05:15.540><c> eu</c><00:05:15.660><c> não</c><00:05:15.780><c> sei</c>
+
+00:05:16.010 --> 00:05:16.020 align:start position:0%
+esse episódio me faz chorar e eu não sei
+ 
+
+00:05:16.020 --> 00:05:17.960 align:start position:0%
+esse episódio me faz chorar e eu não sei
+se<00:05:16.050><c> eu</c><00:05:16.200><c> choro</c><00:05:16.530><c> pelo</c><00:05:16.770><c> henrique</c><00:05:17.310><c> que</c><00:05:17.460><c> morreu</c><00:05:17.790><c> sem</c>
+
+00:05:17.960 --> 00:05:17.970 align:start position:0%
+se eu choro pelo henrique que morreu sem
+ 
+
+00:05:17.970 --> 00:05:19.430 align:start position:0%
+se eu choro pelo henrique que morreu sem
+realizar<00:05:18.420><c> o</c><00:05:18.450><c> sonho</c><00:05:18.660><c> dele</c>
+
+00:05:19.430 --> 00:05:19.440 align:start position:0%
+realizar o sonho dele
+ 
+
+00:05:19.440 --> 00:05:21.770 align:start position:0%
+realizar o sonho dele
+seu<00:05:19.710><c> choro</c><00:05:19.980><c> pelo</c><00:05:20.280><c> lion</c><00:05:20.670><c> que</c><00:05:20.940><c> nunca</c><00:05:21.330><c> mais</c><00:05:21.630><c> vai</c>
+
+00:05:21.770 --> 00:05:21.780 align:start position:0%
+seu choro pelo lion que nunca mais vai
+ 
+
+00:05:21.780 --> 00:05:24.410 align:start position:0%
+seu choro pelo lion que nunca mais vai
+ver<00:05:21.990><c> o</c><00:05:22.020><c> amigo</c><00:05:22.440><c> ou</c><00:05:23.250><c> seu</c><00:05:23.430><c> choro</c><00:05:23.760><c> por</c><00:05:23.940><c> mim</c><00:05:24.120><c> porque</c>
+
+00:05:24.410 --> 00:05:24.420 align:start position:0%
+ver o amigo ou seu choro por mim porque
+ 
+
+00:05:24.420 --> 00:05:26.330 align:start position:0%
+ver o amigo ou seu choro por mim porque
+eu<00:05:24.510><c> também</c><00:05:24.660><c> vou</c><00:05:24.960><c> morrer</c><00:05:25.350><c> um</c><00:05:25.380><c> dia</c><00:05:25.470><c> e</c><00:05:25.950><c> acho</c><00:05:26.220><c> que</c>
+
+00:05:26.330 --> 00:05:26.340 align:start position:0%
+eu também vou morrer um dia e acho que
+ 
+
+00:05:26.340 --> 00:05:27.620 align:start position:0%
+eu também vou morrer um dia e acho que
+isso<00:05:26.490><c> me</c><00:05:26.520><c> deixa</c><00:05:26.820><c> com</c><00:05:26.970><c> medo</c>
+
+00:05:27.620 --> 00:05:27.630 align:start position:0%
+isso me deixa com medo
+ 
+
+00:05:27.630 --> 00:05:30.440 align:start position:0%
+isso me deixa com medo
+o<00:05:27.900><c> fato</c><00:05:28.350><c> é</c><00:05:28.590><c> que</c><00:05:28.650><c> nada</c><00:05:29.100><c> nessa</c><00:05:29.460><c> vida</c><00:05:29.550><c> mas</c><00:05:30.090><c> a</c><00:05:30.330><c> gente</c>
+
+00:05:30.440 --> 00:05:30.450 align:start position:0%
+o fato é que nada nessa vida mas a gente
+ 
+
+00:05:30.450 --> 00:05:33.590 align:start position:0%
+o fato é que nada nessa vida mas a gente
+chorar<00:05:30.690><c> tanto</c><00:05:31.290><c> quanto</c><00:05:31.650><c> à</c><00:05:31.710><c> morte</c><00:05:32.010><c> porque</c><00:05:32.700><c> eu</c>
+
+00:05:33.590 --> 00:05:33.600 align:start position:0%
+chorar tanto quanto à morte porque eu
+ 
+
+00:05:33.600 --> 00:05:35.590 align:start position:0%
+chorar tanto quanto à morte porque eu
+precisava<00:05:34.140><c> dar</c><00:05:34.290><c> resposta</c>
+
+00:05:35.590 --> 00:05:35.600 align:start position:0%
+precisava dar resposta
+ 
+
+00:05:35.600 --> 00:05:37.630 align:start position:0%
+precisava dar resposta
+subir<00:05:35.810><c> a</c><00:05:35.870><c> montanha</c><00:05:35.990><c> mais</c><00:05:36.470><c> alta</c><00:05:36.620><c> foi</c><00:05:37.250><c> falar</c><00:05:37.580><c> com</c>
+
+00:05:37.630 --> 00:05:37.640 align:start position:0%
+subir a montanha mais alta foi falar com
+ 
+
+00:05:37.640 --> 00:05:39.220 align:start position:0%
+subir a montanha mais alta foi falar com
+a<00:05:37.760><c> mulher</c><00:05:37.820><c> mais</c><00:05:38.210><c> sarada</c>
+
+00:05:39.220 --> 00:05:39.230 align:start position:0%
+a mulher mais sarada
+ 
+
+00:05:39.230 --> 00:05:41.490 align:start position:0%
+a mulher mais sarada
+[Música]
+
+00:05:41.490 --> 00:05:41.500 align:start position:0%
+[Música]
+ 
+
+00:05:41.500 --> 00:05:43.890 align:start position:0%
+[Música]
+eu<00:05:42.010><c> não</c><00:05:42.160><c> tenho</c><00:05:42.370><c> medo</c><00:05:42.550><c> da</c><00:05:42.850><c> morte</c><00:05:42.910><c> eu</c><00:05:43.570><c> estive</c>
+
+00:05:43.890 --> 00:05:43.900 align:start position:0%
+eu não tenho medo da morte eu estive
+ 
+
+00:05:43.900 --> 00:05:46.110 align:start position:0%
+eu não tenho medo da morte eu estive
+morta<00:05:44.260><c> por</c><00:05:44.440><c> bilhões</c><00:05:45.130><c> e</c><00:05:45.190><c> bilhões</c><00:05:45.310><c> de</c><00:05:45.700><c> anos</c>
+
+00:05:46.110 --> 00:05:46.120 align:start position:0%
+morta por bilhões e bilhões de anos
+ 
+
+00:05:46.120 --> 00:05:47.940 align:start position:0%
+morta por bilhões e bilhões de anos
+antes<00:05:46.300><c> de</c><00:05:46.480><c> nascer</c><00:05:46.810><c> e</c><00:05:47.140><c> eu</c><00:05:47.290><c> não</c><00:05:47.410><c> lembro</c><00:05:47.800><c> de</c><00:05:47.830><c> ter</c>
+
+00:05:47.940 --> 00:05:47.950 align:start position:0%
+antes de nascer e eu não lembro de ter
+ 
+
+00:05:47.950 --> 00:05:50.130 align:start position:0%
+antes de nascer e eu não lembro de ter
+sofrido<00:05:48.220><c> nadinha</c><00:05:48.940><c> nesse</c><00:05:49.180><c> tempo</c><00:05:49.480><c> todo</c><00:05:49.660><c> que</c>
+
+00:05:50.130 --> 00:05:50.140 align:start position:0%
+sofrido nadinha nesse tempo todo que
+ 
+
+00:05:50.140 --> 00:05:52.350 align:start position:0%
+sofrido nadinha nesse tempo todo que
+frase<00:05:50.470><c> legal</c><00:05:50.860><c> é</c><00:05:50.950><c> quase</c><00:05:51.220><c> engraçado</c><00:05:51.340><c> parece</c><00:05:52.150><c> que</c>
+
+00:05:52.350 --> 00:05:52.360 align:start position:0%
+frase legal é quase engraçado parece que
+ 
+
+00:05:52.360 --> 00:05:54.150 align:start position:0%
+frase legal é quase engraçado parece que
+nada<00:05:52.690><c> te</c><00:05:52.900><c> deixa</c><00:05:53.230><c> triste</c><00:05:53.740><c> né</c>
+
+00:05:54.150 --> 00:05:54.160 align:start position:0%
+nada te deixa triste né
+ 
+
+00:05:54.160 --> 00:05:56.880 align:start position:0%
+nada te deixa triste né
+essa<00:05:54.430><c> frase</c><00:05:54.820><c> é</c><00:05:54.910><c> de</c><00:05:55.000><c> um</c><00:05:55.060><c> cara</c><00:05:55.330><c> muito</c><00:05:55.630><c> esperto</c><00:05:56.050><c> e</c>
+
+00:05:56.880 --> 00:05:56.890 align:start position:0%
+essa frase é de um cara muito esperto e
+ 
+
+00:05:56.890 --> 00:05:58.620 align:start position:0%
+essa frase é de um cara muito esperto e
+ela<00:05:57.130><c> é</c><00:05:57.190><c> muito</c><00:05:57.370><c> especial</c><00:05:57.820><c> porque</c><00:05:58.300><c> gera</c>
+
+00:05:58.620 --> 00:05:58.630 align:start position:0%
+ela é muito especial porque gera
+ 
+
+00:05:58.630 --> 00:06:00.570 align:start position:0%
+ela é muito especial porque gera
+conforto<00:05:59.020><c> em</c><00:05:59.290><c> relação</c><00:05:59.350><c> à</c><00:05:59.770><c> morte</c><00:06:00.100><c> a</c><00:06:00.160><c> partir</c><00:06:00.490><c> de</c>
+
+00:06:00.570 --> 00:06:00.580 align:start position:0%
+conforto em relação à morte a partir de
+ 
+
+00:06:00.580 --> 00:06:02.880 align:start position:0%
+conforto em relação à morte a partir de
+um<00:06:00.670><c> argumento</c><00:06:00.820><c> que</c><00:06:01.390><c> é</c><00:06:01.450><c> quase</c><00:06:01.750><c> lógico</c><00:06:02.380><c> sem</c>
+
+00:06:02.880 --> 00:06:02.890 align:start position:0%
+um argumento que é quase lógico sem
+ 
+
+00:06:02.890 --> 00:06:04.350 align:start position:0%
+um argumento que é quase lógico sem
+precisar<00:06:03.400><c> apelar</c><00:06:03.520><c> para</c><00:06:03.820><c> a</c><00:06:03.910><c> fé</c>
+
+00:06:04.350 --> 00:06:04.360 align:start position:0%
+precisar apelar para a fé
+ 
+
+00:06:04.360 --> 00:06:06.570 align:start position:0%
+precisar apelar para a fé
+então<00:06:04.510><c> você</c><00:06:04.750><c> acha</c><00:06:05.020><c> que</c><00:06:05.260><c> não</c><00:06:05.530><c> existe</c><00:06:05.770><c> vida</c><00:06:06.370><c> após</c>
+
+00:06:06.570 --> 00:06:06.580 align:start position:0%
+então você acha que não existe vida após
+ 
+
+00:06:06.580 --> 00:06:08.730 align:start position:0%
+então você acha que não existe vida após
+a<00:06:06.850><c> morte</c><00:06:06.910><c> não</c><00:06:07.630><c> importa</c><00:06:08.050><c> o</c><00:06:08.110><c> que</c><00:06:08.170><c> eu</c><00:06:08.260><c> acho</c>
+
+00:06:08.730 --> 00:06:08.740 align:start position:0%
+a morte não importa o que eu acho
+ 
+
+00:06:08.740 --> 00:06:11.070 align:start position:0%
+a morte não importa o que eu acho
+importa<00:06:09.250><c> o</c><00:06:09.280><c> que</c><00:06:09.340><c> eu</c><00:06:09.430><c> sei</c><00:06:09.730><c> eu</c><00:06:10.390><c> sei</c><00:06:10.450><c> que</c><00:06:10.780><c> a</c><00:06:10.810><c> morte</c>
+
+00:06:11.070 --> 00:06:11.080 align:start position:0%
+importa o que eu sei eu sei que a morte
+ 
+
+00:06:11.080 --> 00:06:13.410 align:start position:0%
+importa o que eu sei eu sei que a morte
+coloca<00:06:11.530><c> vida</c><00:06:11.800><c> em</c><00:06:11.860><c> perspectiva</c><00:06:12.700><c> e</c><00:06:13.060><c> faz</c><00:06:13.300><c> a</c><00:06:13.360><c> gente</c>
+
+00:06:13.410 --> 00:06:13.420 align:start position:0%
+coloca vida em perspectiva e faz a gente
+ 
+
+00:06:13.420 --> 00:06:15.780 align:start position:0%
+coloca vida em perspectiva e faz a gente
+se<00:06:13.750><c> sentir</c><00:06:13.950><c> responsável</c><00:06:14.950><c> pela</c><00:06:15.130><c> qualidade</c><00:06:15.460><c> de</c>
+
+00:06:15.780 --> 00:06:15.790 align:start position:0%
+se sentir responsável pela qualidade de
+ 
+
+00:06:15.790 --> 00:06:17.730 align:start position:0%
+se sentir responsável pela qualidade de
+cada<00:06:16.090><c> momento</c><00:06:16.390><c> que</c><00:06:16.780><c> a</c><00:06:16.810><c> gente</c><00:06:16.930><c> ainda</c><00:06:17.200><c> tem</c><00:06:17.380><c> nesse</c>
+
+00:06:17.730 --> 00:06:17.740 align:start position:0%
+cada momento que a gente ainda tem nesse
+ 
+
+00:06:17.740 --> 00:06:18.480 align:start position:0%
+cada momento que a gente ainda tem nesse
+mundo
+
+00:06:18.480 --> 00:06:18.490 align:start position:0%
+mundo
+ 
+
+00:06:18.490 --> 00:06:20.760 align:start position:0%
+mundo
+nesse<00:06:18.910><c> sentido</c><00:06:19.300><c> pensar</c><00:06:19.870><c> na</c><00:06:19.960><c> morte</c><00:06:20.140><c> pode</c><00:06:20.560><c> até</c>
+
+00:06:20.760 --> 00:06:20.770 align:start position:0%
+nesse sentido pensar na morte pode até
+ 
+
+00:06:20.770 --> 00:06:23.040 align:start position:0%
+nesse sentido pensar na morte pode até
+ser<00:06:20.950><c> uma</c><00:06:21.010><c> coisa</c><00:06:21.220><c> positiva</c><00:06:21.430><c> porque</c><00:06:22.419><c> isso</c><00:06:22.900><c> te</c>
+
+00:06:23.040 --> 00:06:23.050 align:start position:0%
+ser uma coisa positiva porque isso te
+ 
+
+00:06:23.050 --> 00:06:25.260 align:start position:0%
+ser uma coisa positiva porque isso te
+possa<00:06:23.410><c> fazer</c><00:06:23.740><c> o</c><00:06:23.770><c> melhor</c><00:06:23.950><c> uso</c><00:06:24.310><c> possível</c><00:06:24.580><c> da</c><00:06:25.120><c> sua</c>
+
+00:06:25.260 --> 00:06:25.270 align:start position:0%
+possa fazer o melhor uso possível da sua
+ 
+
+00:06:25.270 --> 00:06:27.659 align:start position:0%
+possa fazer o melhor uso possível da sua
+vida<00:06:25.660><c> foi</c><00:06:26.050><c> o</c><00:06:26.140><c> que</c><00:06:26.200><c> aconteceu</c><00:06:26.380><c> com</c><00:06:26.950><c> esse</c><00:06:27.250><c> cara</c>
+
+00:06:27.659 --> 00:06:27.669 align:start position:0%
+vida foi o que aconteceu com esse cara
+ 
+
+00:06:27.669 --> 00:06:30.240 align:start position:0%
+vida foi o que aconteceu com esse cara
+em<00:06:27.970><c> 2007</c><00:06:28.870><c> ele</c><00:06:28.990><c> descobriu</c><00:06:29.530><c> que</c><00:06:29.560><c> tinha</c><00:06:29.650><c> poucos</c>
+
+00:06:30.240 --> 00:06:30.250 align:start position:0%
+em 2007 ele descobriu que tinha poucos
+ 
+
+00:06:30.250 --> 00:06:32.400 align:start position:0%
+em 2007 ele descobriu que tinha poucos
+meses<00:06:30.550><c> de</c><00:06:30.730><c> vida</c><00:06:30.820><c> por</c><00:06:31.480><c> causa</c><00:06:31.600><c> de</c><00:06:31.870><c> um</c><00:06:31.930><c> câncer</c>
+
+00:06:32.400 --> 00:06:32.410 align:start position:0%
+meses de vida por causa de um câncer
+ 
+
+00:06:32.410 --> 00:06:34.080 align:start position:0%
+meses de vida por causa de um câncer
+quando<00:06:32.770><c> descobriu</c><00:06:33.400><c> que</c><00:06:33.460><c> a</c><00:06:33.550><c> morte</c><00:06:33.760><c> estava</c>
+
+00:06:34.080 --> 00:06:34.090 align:start position:0%
+quando descobriu que a morte estava
+ 
+
+00:06:34.090 --> 00:06:36.180 align:start position:0%
+quando descobriu que a morte estava
+próxima<00:06:34.720><c> o</c><00:06:34.810><c> professor</c><00:06:35.320><c> vem</c><00:06:35.440><c> de</c><00:06:35.590><c> posse</c><00:06:36.010><c> começou</c>
+
+00:06:36.180 --> 00:06:36.190 align:start position:0%
+próxima o professor vem de posse começou
+ 
+
+00:06:36.190 --> 00:06:38.670 align:start position:0%
+próxima o professor vem de posse começou
+a<00:06:36.430><c> preparar</c><00:06:36.910><c> a</c><00:06:36.940><c> última</c><00:06:37.210><c> ea</c><00:06:37.690><c> melhor</c><00:06:38.230><c> aula</c><00:06:38.470><c> da</c>
+
+00:06:38.670 --> 00:06:38.680 align:start position:0%
+a preparar a última ea melhor aula da
+ 
+
+00:06:38.680 --> 00:06:39.720 align:start position:0%
+a preparar a última ea melhor aula da
+vida<00:06:38.919><c> dele</c>
+
+00:06:39.720 --> 00:06:39.730 align:start position:0%
+vida dele
+ 
+
+00:06:39.730 --> 00:06:46.140 align:start position:0%
+vida dele
+a<00:06:40.240><c> vila</c><00:06:41.230><c> é</c><00:06:41.290><c> mais</c><00:06:41.530><c> rápido</c><00:06:41.860><c> que</c><00:06:41.919><c> eu</c><00:06:44.700><c> sou</c><00:06:45.700><c> da</c><00:06:46.090><c> área</c>
+
+00:06:46.140 --> 00:06:46.150 align:start position:0%
+a vila é mais rápido que eu sou da área
+ 
+
+00:06:46.150 --> 00:06:50.700 align:start position:0%
+a vila é mais rápido que eu sou da área
+mesmo<00:06:46.870><c> que</c><00:06:47.140><c> ande</c><00:06:47.650><c> é</c><00:06:48.150><c> a</c><00:06:49.150><c> favor</c><00:06:49.870><c> ou</c><00:06:49.960><c> contra</c><00:06:50.020><c> o</c>
+
+00:06:50.700 --> 00:06:50.710 align:start position:0%
+mesmo que ande é a favor ou contra o
+ 
+
+00:06:50.710 --> 00:06:58.020 align:start position:0%
+mesmo que ande é a favor ou contra o
+shane<00:06:51.520><c> do</c><00:06:51.669><c> código</c><00:06:56.310><c> penal</c><00:06:57.310><c> a</c><00:06:57.550><c> ministra</c><00:06:57.669><c> grega</c>
+
+00:06:58.020 --> 00:06:58.030 align:start position:0%
+shane do código penal a ministra grega
+ 
+
+00:06:58.030 --> 00:07:05.550 align:start position:0%
+shane do código penal a ministra grega
+tenha<00:07:01.979><c> um</c><00:07:02.979><c> elenco</c><00:07:03.130><c> cheio</c><00:07:03.430><c> de</c><00:07:04.110><c> efeito</c>
+
+00:07:05.550 --> 00:07:05.560 align:start position:0%
+tenha um elenco cheio de efeito
+ 
+
+00:07:05.560 --> 00:07:18.369 align:start position:0%
+tenha um elenco cheio de efeito
+rio
+
+00:07:18.369 --> 00:07:18.379 align:start position:0%
+ 
+ 
+
+00:07:18.379 --> 00:07:21.259 align:start position:0%
+ 
+seu<00:07:19.379><c> embarque</c><00:07:19.709><c> onde</c><00:07:19.829><c> decorre</c><00:07:20.519><c> o</c><00:07:20.610><c> técnico</c>
+
+00:07:21.259 --> 00:07:21.269 align:start position:0%
+seu embarque onde decorre o técnico
+ 
+
+00:07:21.269 --> 00:07:25.569 align:start position:0%
+seu embarque onde decorre o técnico
+garantiu<00:07:21.929><c> a</c><00:07:22.019><c> fidel</c><00:07:22.529><c> é</c><00:07:22.979><c> direito</c><00:07:23.459><c> dele</c>
+
+00:07:25.569 --> 00:07:25.579 align:start position:0%
+garantiu a fidel é direito dele
+ 
+
+00:07:25.579 --> 00:07:28.309 align:start position:0%
+garantiu a fidel é direito dele
+ele<00:07:26.579><c> foi</c><00:07:26.759><c> muito</c><00:07:27.029><c> sincero</c><00:07:27.449><c> respeito</c><00:07:27.929><c> da</c>
+
+00:07:28.309 --> 00:07:28.319 align:start position:0%
+ele foi muito sincero respeito da
+ 
+
+00:07:28.319 --> 00:07:30.439 align:start position:0%
+ele foi muito sincero respeito da
+própria<00:07:28.589><c> situação</c><00:07:28.889><c> mas</c><00:07:29.849><c> não</c><00:07:29.999><c> se</c><00:07:30.059><c> deixou</c>
+
+00:07:30.439 --> 00:07:30.449 align:start position:0%
+própria situação mas não se deixou
+ 
+
+00:07:30.449 --> 00:07:32.029 align:start position:0%
+própria situação mas não se deixou
+abater<00:07:30.719><c> pelo</c><00:07:31.079><c> medo</c><00:07:31.349><c> da</c><00:07:31.439><c> morte</c>
+
+00:07:32.029 --> 00:07:32.039 align:start position:0%
+abater pelo medo da morte
+ 
+
+00:07:32.039 --> 00:07:36.259 align:start position:0%
+abater pelo medo da morte
+o<00:07:32.069><c> nokia</c><00:07:32.759><c> spirit</c><00:07:33.119><c> of</c><00:07:33.239><c> houdini</c><00:07:34.969><c> logo</c><00:07:35.969><c> ao</c><00:07:36.059><c> sair</c>
+
+00:07:36.259 --> 00:07:36.269 align:start position:0%
+o nokia spirit of houdini logo ao sair
+ 
+
+00:07:36.269 --> 00:07:39.069 align:start position:0%
+o nokia spirit of houdini logo ao sair
+da<00:07:36.419><c> regra</c><00:07:36.779><c> diferente</c><00:07:37.169><c> do</c><00:07:37.289><c> df</c><00:07:37.559><c> pede</c><00:07:37.649><c> um</c><00:07:37.829><c> beijo</c>
+
+00:07:39.069 --> 00:07:39.079 align:start position:0%
+da regra diferente do df pede um beijo
+ 
+
+00:07:39.079 --> 00:07:41.790 align:start position:0%
+da regra diferente do df pede um beijo
+para<00:07:40.079><c> minha</c><00:07:40.319><c> casa</c>
+
+00:07:41.790 --> 00:07:41.800 align:start position:0%
+para minha casa
+ 
+
+00:07:41.800 --> 00:07:50.080 align:start position:0%
+para minha casa
+[Aplausos]
+
+00:07:50.080 --> 00:07:50.090 align:start position:0%
+[Aplausos]
+ 
+
+00:07:50.090 --> 00:07:53.729 align:start position:0%
+[Aplausos]
+ai<00:07:50.750><c> ai</c><00:07:50.780><c> ai</c>
+
+00:07:53.729 --> 00:07:53.739 align:start position:0%
+ 
+ 
+
+00:07:53.739 --> 00:07:56.739 align:start position:0%
+ 
+e<00:07:54.739><c> foi</c><00:07:54.979><c> assim</c><00:07:55.159><c> que</c><00:07:55.459><c> ele</c><00:07:55.580><c> fez</c><00:07:55.819><c> o</c><00:07:55.939><c> momento</c><00:07:56.389><c> final</c>
+
+00:07:56.739 --> 00:07:56.749 align:start position:0%
+e foi assim que ele fez o momento final
+ 
+
+00:07:56.749 --> 00:07:59.320 align:start position:0%
+e foi assim que ele fez o momento final
+da<00:07:56.899><c> vida</c><00:07:57.049><c> dele</c><00:07:57.499><c> seu</c><00:07:57.739><c> momento</c><00:07:58.189><c> mais</c><00:07:58.580><c> produtivo</c>
+
+00:07:59.320 --> 00:07:59.330 align:start position:0%
+da vida dele seu momento mais produtivo
+ 
+
+00:07:59.330 --> 00:08:03.149 align:start position:0%
+da vida dele seu momento mais produtivo
+e<00:07:59.389><c> mais</c><00:07:59.649><c> brilhantes</c><00:08:00.649><c> nova</c><00:08:00.949><c> iorque</c><00:08:01.309><c> grande</c>
+
+00:08:03.149 --> 00:08:03.159 align:start position:0%
+e mais brilhantes nova iorque grande
+ 
+
+00:08:03.159 --> 00:08:05.750 align:start position:0%
+e mais brilhantes nova iorque grande
+herói
+
+00:08:05.750 --> 00:08:05.760 align:start position:0%
+herói
+ 
+
+00:08:05.760 --> 00:08:09.650 align:start position:0%
+herói
+ele<00:08:06.420><c> love</c><00:08:06.720><c> your</c><00:08:06.930><c> way</c><00:08:07.100><c> fala</c><00:08:08.100><c> o</c><00:08:08.310><c> coração</c><00:08:08.790><c> do</c>
+
+00:08:09.650 --> 00:08:09.660 align:start position:0%
+ele love your way fala o coração do
+ 
+
+00:08:09.660 --> 00:08:11.840 align:start position:0%
+ele love your way fala o coração do
+índio<00:08:10.020><c> é</c><00:08:10.110><c> um</c><00:08:10.200><c> dia</c><00:08:10.470><c> quer</c><00:08:11.130><c> dizer</c><00:08:11.520><c> que</c><00:08:11.610><c> o</c><00:08:11.670><c> cara</c>
+
+00:08:11.840 --> 00:08:11.850 align:start position:0%
+índio é um dia quer dizer que o cara
+ 
+
+00:08:11.850 --> 00:08:14.690 align:start position:0%
+índio é um dia quer dizer que o cara
+descobriu<00:08:12.390><c> que</c><00:08:12.660><c> a</c><00:08:12.720><c> morrer</c><00:08:13.140><c> foi</c><00:08:13.460><c> trabalhar</c>
+
+00:08:14.690 --> 00:08:14.700 align:start position:0%
+descobriu que a morrer foi trabalhar
+ 
+
+00:08:14.700 --> 00:08:17.060 align:start position:0%
+descobriu que a morrer foi trabalhar
+você<00:08:15.030><c> está</c><00:08:15.180><c> enganado</c><00:08:15.870><c> ele</c><00:08:16.350><c> também</c><00:08:16.800><c> tinha</c><00:08:17.010><c> uma</c>
+
+00:08:17.060 --> 00:08:17.070 align:start position:0%
+você está enganado ele também tinha uma
+ 
+
+00:08:17.070 --> 00:08:20.930 align:start position:0%
+você está enganado ele também tinha uma
+resposta<00:08:17.490><c> pra</c><00:08:17.880><c> isso</c><00:08:18.420><c> lembrei</c><00:08:19.130><c> action</c><00:08:20.130><c> foi</c><00:08:20.250><c> nos</c>
+
+00:08:20.930 --> 00:08:20.940 align:start position:0%
+resposta pra isso lembrei action foi nos
+ 
+
+00:08:20.940 --> 00:08:26.180 align:start position:0%
+resposta pra isso lembrei action foi nos
+para<00:08:21.240><c> amigas</c><00:08:21.750><c> do</c><00:08:23.960><c> reclamante</c><00:08:24.960><c> escolas</c><00:08:25.650><c> recebe</c>
+
+00:08:26.180 --> 00:08:26.190 align:start position:0%
+para amigas do reclamante escolas recebe
+ 
+
+00:08:26.190 --> 00:08:30.470 align:start position:0%
+para amigas do reclamante escolas recebe
+o<00:08:26.670><c> irão</c><00:08:26.940><c> quer</c><00:08:27.620><c> as</c><00:08:28.620><c> músicas</c><00:08:29.400><c> mas</c><00:08:30.000><c> não</c><00:08:30.030><c> levou</c><00:08:30.390><c> a</c>
+
+00:08:30.470 --> 00:08:30.480 align:start position:0%
+o irão quer as músicas mas não levou a
+ 
+
+00:08:30.480 --> 00:08:37.969 align:start position:0%
+o irão quer as músicas mas não levou a
+sic<00:08:30.720><c> online</c><00:08:30.780><c> do</c><00:08:31.020><c> word</c><00:08:31.140><c> em</c><00:08:32.630><c> geral</c><00:08:34.160><c> da</c><00:08:35.160><c> gaga</c><00:08:36.979><c> das</c>
+
+00:08:37.969 --> 00:08:37.979 align:start position:0%
+sic online do word em geral da gaga das
+ 
+
+00:08:37.979 --> 00:08:54.380 align:start position:0%
+sic online do word em geral da gaga das
+ruas<00:08:48.230><c> para</c><00:08:49.230><c> fora</c><00:08:49.500><c> da</c><00:08:49.620><c> água</c><00:08:49.830><c> e</c><00:08:52.490><c> justo</c>
+
+00:08:54.380 --> 00:08:54.390 align:start position:0%
+ruas para fora da água e justo
+ 
+
+00:08:54.390 --> 00:08:56.990 align:start position:0%
+ruas para fora da água e justo
+a<00:08:54.810><c> última</c><00:08:55.320><c> aula</c><00:08:55.500><c> do</c><00:08:55.650><c> professor</c><00:08:55.890><c> pode</c><00:08:56.490><c> é</c><00:08:56.940><c> o</c>
+
+00:08:56.990 --> 00:08:57.000 align:start position:0%
+a última aula do professor pode é o
+ 
+
+00:08:57.000 --> 00:08:59.480 align:start position:0%
+a última aula do professor pode é o
+legado<00:08:57.390><c> de</c><00:08:57.540><c> uma</c><00:08:57.600><c> vida</c><00:08:57.960><c> curta</c><00:08:58.260><c> mas</c><00:08:58.770><c> muito</c><00:08:59.040><c> bem</c>
+
+00:08:59.480 --> 00:08:59.490 align:start position:0%
+legado de uma vida curta mas muito bem
+ 
+
+00:08:59.490 --> 00:09:00.380 align:start position:0%
+legado de uma vida curta mas muito bem
+de<00:08:59.640><c> vida</c>
+
+00:09:00.380 --> 00:09:00.390 align:start position:0%
+de vida
+ 
+
+00:09:00.390 --> 00:09:02.690 align:start position:0%
+de vida
+quando<00:09:00.780><c> esse</c><00:09:00.930><c> legado</c><00:09:01.260><c> já</c><00:09:01.530><c> tinha</c><00:09:01.860><c> sido</c><00:09:02.070><c> deixado</c>
+
+00:09:02.690 --> 00:09:02.700 align:start position:0%
+quando esse legado já tinha sido deixado
+ 
+
+00:09:02.700 --> 00:09:04.760 align:start position:0%
+quando esse legado já tinha sido deixado
+ele<00:09:03.210><c> preparou</c><00:09:03.660><c> a</c><00:09:03.750><c> família</c><00:09:04.260><c> dele</c><00:09:04.560><c> para</c><00:09:04.710><c> o</c>
+
+00:09:04.760 --> 00:09:04.770 align:start position:0%
+ele preparou a família dele para o
+ 
+
+00:09:04.770 --> 00:09:11.940 align:start position:0%
+ele preparou a família dele para o
+momento<00:09:05.130><c> final</c>
+
+00:09:11.940 --> 00:09:11.950 align:start position:0%
+ 
+ 
+
+00:09:11.950 --> 00:09:36.820 align:start position:0%
+ 
+[Música]
+
+00:09:36.820 --> 00:09:36.830 align:start position:0%
+ 
+ 
+
+00:09:36.830 --> 00:09:48.610 align:start position:0%
+ 
+[Música]
+
+00:09:48.610 --> 00:09:48.620 align:start position:0%
+ 
+ 
+
+00:09:48.620 --> 00:09:52.070 align:start position:0%
+ 
+além<00:09:49.620><c> de</c><00:09:49.770><c> bosh</c><00:09:50.160><c> morreu</c><00:09:50.580><c> em</c><00:09:50.670><c> 2008</c>
+
+00:09:52.070 --> 00:09:52.080 align:start position:0%
+além de bosh morreu em 2008
+ 
+
+00:09:52.080 --> 00:09:54.380 align:start position:0%
+além de bosh morreu em 2008
+ele<00:09:52.380><c> ensinou</c><00:09:52.740><c> muita</c><00:09:53.280><c> coisa</c><00:09:53.370><c> pra</c><00:09:53.910><c> muita</c><00:09:54.300><c> gente</c>
+
+00:09:54.380 --> 00:09:54.390 align:start position:0%
+ele ensinou muita coisa pra muita gente
+ 
+
+00:09:54.390 --> 00:09:58.310 align:start position:0%
+ele ensinou muita coisa pra muita gente
+e<00:09:55.350><c> uma</c><00:09:55.650><c> das</c><00:09:55.860><c> lições</c><00:09:56.130><c> dele</c><00:09:56.700><c> é</c><00:09:56.820><c> essa</c><00:09:57.030><c> a</c><00:09:57.750><c> morte</c><00:09:58.260><c> é</c>
+
+00:09:58.310 --> 00:09:58.320 align:start position:0%
+e uma das lições dele é essa a morte é
+ 
+
+00:09:58.320 --> 00:10:00.860 align:start position:0%
+e uma das lições dele é essa a morte é
+inevitável<00:09:58.490><c> mas</c><00:09:59.490><c> se</c><00:09:59.670><c> deixar</c><00:10:00.090><c> intimidar</c><00:10:00.210><c> pelo</c>
+
+00:10:00.860 --> 00:10:00.870 align:start position:0%
+inevitável mas se deixar intimidar pelo
+ 
+
+00:10:00.870 --> 00:10:05.330 align:start position:0%
+inevitável mas se deixar intimidar pelo
+medo<00:10:01.170><c> dela</c><00:10:01.590><c> é</c><00:10:01.950><c> uma</c><00:10:02.130><c> opção</c><00:10:02.430><c> sua</c>
+
+00:10:05.330 --> 00:10:05.340 align:start position:0%
+ 
+ 
+
+00:10:05.340 --> 00:10:08.040 align:start position:0%
+ 
+assim<00:10:06.340><c> ou</c><00:10:06.610><c> não</c><00:10:06.670><c> da</c><00:10:07.270><c> água</c>
+
+00:10:08.040 --> 00:10:08.050 align:start position:0%
+assim ou não da água
+ 
+
+00:10:08.050 --> 00:10:12.540 align:start position:0%
+assim ou não da água
+bruno<00:10:08.590><c> moraes</c><00:10:09.250><c> wii</c><00:10:10.770><c> não</c><00:10:11.770><c> tem</c><00:10:11.980><c> que</c><00:10:12.070><c> ser</c>
+
+00:10:12.540 --> 00:10:12.550 align:start position:0%
+bruno moraes wii não tem que ser
+ 
+
+00:10:12.550 --> 00:10:15.720 align:start position:0%
+bruno moraes wii não tem que ser
+racional<00:10:12.760><c> e</c><00:10:13.570><c> no</c><00:10:13.720><c> olho</c>
+
+00:10:15.720 --> 00:10:15.730 align:start position:0%
+racional e no olho
+ 
+
+00:10:15.730 --> 00:10:19.230 align:start position:0%
+racional e no olho
+assim<00:10:16.390><c> no</c><00:10:16.690><c> iefp</c><00:10:17.470><c> e</c><00:10:17.500><c> atuei</c><00:10:18.340><c> em</c><00:10:18.580><c> resposta</c><00:10:19.060><c> ao</c>
+
+00:10:19.230 --> 00:10:19.240 align:start position:0%
+assim no iefp e atuei em resposta ao
+ 
+
+00:10:19.240 --> 00:10:24.150 align:start position:0%
+assim no iefp e atuei em resposta ao
+item<00:10:19.630><c> que</c><00:10:19.750><c> quer</c><00:10:20.190><c> a</c><00:10:22.440><c> guerra</c><00:10:23.440><c> nem</c><00:10:23.680><c> tenho</c><00:10:23.920><c> o</c><00:10:24.130><c> que</c>
+
+00:10:24.150 --> 00:10:24.160 align:start position:0%
+item que quer a guerra nem tenho o que
+ 
+
+00:10:24.160 --> 00:10:25.020 align:start position:0%
+item que quer a guerra nem tenho o que
+querem
+
+00:10:25.020 --> 00:10:25.030 align:start position:0%
+querem
+ 
+
+00:10:25.030 --> 00:10:30.260 align:start position:0%
+querem
+vai<00:10:25.390><c> entender</c>
+
+00:10:30.260 --> 00:10:30.270 align:start position:0%
+ 
+ 
+
+00:10:30.270 --> 00:10:32.940 align:start position:0%
+ 
+muito<00:10:31.270><c> obrigado</c><00:10:31.840><c> por</c><00:10:31.990><c> ver</c><00:10:32.200><c> esse</c><00:10:32.440><c> vídeo</c><00:10:32.530><c> até</c><00:10:32.890><c> o</c>
+
+00:10:32.940 --> 00:10:32.950 align:start position:0%
+muito obrigado por ver esse vídeo até o
+ 
+
+00:10:32.950 --> 00:10:35.430 align:start position:0%
+muito obrigado por ver esse vídeo até o
+final<00:10:33.310><c> esse</c><00:10:33.730><c> é</c><00:10:33.820><c> o</c><00:10:33.850><c> nosso</c><00:10:34.000><c> canal</c><00:10:34.330><c> você</c><00:10:35.020><c> pode</c><00:10:35.290><c> se</c>
+
+00:10:35.430 --> 00:10:35.440 align:start position:0%
+final esse é o nosso canal você pode se
+ 
+
+00:10:35.440 --> 00:10:37.830 align:start position:0%
+final esse é o nosso canal você pode se
+inscrever<00:10:35.500><c> mas</c><00:10:36.340><c> só</c><00:10:36.580><c> se</c><00:10:36.790><c> você</c><00:10:36.850><c> quiser</c><00:10:37.480><c> nosso</c>
+
+00:10:37.830 --> 00:10:37.840 align:start position:0%
+inscrever mas só se você quiser nosso
+ 
+
+00:10:37.840 --> 00:10:40.230 align:start position:0%
+inscrever mas só se você quiser nosso
+conteúdo<00:10:38.200><c> é</c><00:10:38.410><c> financiado</c><00:10:39.160><c> por</c><00:10:39.280><c> pessoas</c><00:10:39.910><c> de</c><00:10:40.000><c> bom</c>
+
+00:10:40.230 --> 00:10:40.240 align:start position:0%
+conteúdo é financiado por pessoas de bom
+ 
+
+00:10:40.240 --> 00:10:42.150 align:start position:0%
+conteúdo é financiado por pessoas de bom
+coração<00:10:40.450><c> a</c><00:10:40.930><c> gente</c><00:10:41.230><c> faz</c><00:10:41.500><c> o</c><00:10:41.530><c> possível</c><00:10:41.590><c> para</c>
+
+00:10:42.150 --> 00:10:42.160 align:start position:0%
+coração a gente faz o possível para
+ 
+
+00:10:42.160 --> 00:10:44.370 align:start position:0%
+coração a gente faz o possível para
+recompensar<00:10:42.910><c> todas</c><00:10:43.330><c> elas</c><00:10:43.660><c> com</c><00:10:43.780><c> conteúdo</c>
+
+00:10:44.370 --> 00:10:44.380 align:start position:0%
+recompensar todas elas com conteúdo
+ 
+
+00:10:44.380 --> 00:10:45.270 align:start position:0%
+recompensar todas elas com conteúdo
+exclusivo
+
+00:10:45.270 --> 00:10:45.280 align:start position:0%
+exclusivo
+ 
+
+00:10:45.280 --> 00:10:47.430 align:start position:0%
+exclusivo
+muito<00:10:45.610><c> obrigado</c><00:10:46.090><c> rafael</c><00:10:46.330><c> caputo</c><00:10:47.020><c> daniel</c>
+
+00:10:47.430 --> 00:10:47.440 align:start position:0%
+muito obrigado rafael caputo daniel
+ 
+
+00:10:47.440 --> 00:10:50.430 align:start position:0%
+muito obrigado rafael caputo daniel
+vieira<00:10:47.710><c> é</c><00:10:47.890><c> pablo</c><00:10:48.220><c> souza</c><00:10:48.670><c> luís</c><00:10:49.570><c> filipe</c><00:10:50.050><c> e</c>
+
+00:10:50.430 --> 00:10:50.440 align:start position:0%
+vieira é pablo souza luís filipe e
+ 
+
+00:10:50.440 --> 00:10:53.430 align:start position:0%
+vieira é pablo souza luís filipe e
+rafael<00:10:50.680><c> ferreira</c><00:10:51.430><c> além</c><00:10:52.240><c> do</c><00:10:52.480><c> agrônomo</c><00:10:53.080><c> poucos</c>
+
+00:10:53.430 --> 00:10:53.440 align:start position:0%
+rafael ferreira além do agrônomo poucos
+ 
+
+00:10:53.440 --> 00:10:55.730 align:start position:0%
+rafael ferreira além do agrônomo poucos
+e<00:10:53.830><c> um</c><00:10:53.980><c> feliz</c><00:10:54.250><c> aniversário</c><00:10:54.580><c> para</c><00:10:55.240><c> o</c><00:10:55.390><c> canal</c><00:10:55.690><c> é</c>
+
+00:10:55.730 --> 00:10:55.740 align:start position:0%
+e um feliz aniversário para o canal é
+ 
+
+00:10:55.740 --> 00:10:58.800 align:start position:0%
+e um feliz aniversário para o canal é
+bonitinho<00:10:56.740><c> que</c><00:10:56.950><c> fofura</c><00:10:57.520><c> usem</c><00:10:58.180><c> a</c><00:10:58.240><c> caixa</c><00:10:58.690><c> de</c>
+
+00:10:58.800 --> 00:10:58.810 align:start position:0%
+bonitinho que fofura usem a caixa de
+ 
+
+00:10:58.810 --> 00:11:01.230 align:start position:0%
+bonitinho que fofura usem a caixa de
+comentários<00:10:59.020><c> com</c><00:10:59.770><c> sabedoria</c><00:11:00.400><c> mas</c><00:11:01.030><c> sem</c>
+
+00:11:01.230 --> 00:11:01.240 align:start position:0%
+comentários com sabedoria mas sem
+ 
+
+00:11:01.240 --> 00:11:04.050 align:start position:0%
+comentários com sabedoria mas sem
+moderação<00:11:01.750><c> e</c><00:11:02.230><c> de</c><00:11:02.710><c> vergonha</c><00:11:02.890><c> aquela</c><00:11:03.430><c> piada</c><00:11:03.850><c> do</c>
+
+00:11:04.050 --> 00:11:04.060 align:start position:0%
+moderação e de vergonha aquela piada do
+ 
+
+00:11:04.060 --> 00:11:07.330 align:start position:0%
+moderação e de vergonha aquela piada do
+vôo<00:11:04.750><c> no</c><00:11:04.870><c> começo</c><00:11:05.260><c> do</c><00:11:05.380><c> vídeo</c><00:11:05.560><c> dá</c><00:11:05.890><c> tchau</c>
+
+00:11:07.330 --> 00:11:07.340 align:start position:0%
+vôo no começo do vídeo dá tchau
+ 
+
+00:11:07.340 --> 00:11:16.330 align:start position:0%
+vôo no começo do vídeo dá tchau
+[Música]
+

@@ -12,6 +12,8 @@ import time
 import random
 import logging
 import shutil
+import json
+from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Optional, Tuple
 
@@ -243,8 +245,8 @@ def filtrar_por_duracao(duracao_segundos: int) -> bool:
     Verifica se vídeo está dentro dos limites de duração configurados
     Retorna True se está dentro dos limites, False caso contrário
     """
-    min_dur = DOWNLOADER['duracao']['minima_segundos']
-    max_dur = DOWNLOADER['duracao']['maxima_segundos']
+    min_dur = DOWNLOADER['filtros']['duracao']['minima_segundos']
+    max_dur = DOWNLOADER['filtros']['duracao']['maxima_segundos']
     
     if duracao_segundos < min_dur:
         logging.warning(f"Vídeo muito curto: {duracao_segundos}s (mínimo: {min_dur}s)")
@@ -257,47 +259,160 @@ def filtrar_por_duracao(duracao_segundos: int) -> bool:
     return True
 
 
+def validar_formato_data(data_str: str) -> bool:
+    """
+    Valida se string está no formato DD-MM-AAAA
+    Retorna True se válida, False caso contrário
+    """
+    if data_str == '0':
+        return True
+    
+    try:
+        dia, mes, ano = data_str.split('-')
+        dia, mes, ano = int(dia), int(mes), int(ano)
+        
+        # Valida ranges
+        if not (1 <= dia <= 31):
+            return False
+        if not (1 <= mes <= 12):
+            return False
+        if not (1900 <= ano <= 2100):
+            return False
+        
+        # Valida data real (ex: 31-02-2024 é inválido)
+        from datetime import datetime
+        datetime(ano, mes, dia)
+        
+        return True
+    except:
+        return False
+
+
+def converter_data_para_comparacao(data_str: str) -> Optional[int]:
+    """
+    Converte data DD-MM-AAAA para formato comparável (AAAAMMDD)
+    Retorna inteiro ou None se inválida
+    '0' retorna None (sem filtro)
+    """
+    if data_str == '0':
+        return None
+    
+    try:
+        dia, mes, ano = data_str.split('-')
+        # Converte para AAAAMMDD como inteiro para comparação
+        return int(f"{ano}{mes.zfill(2)}{dia.zfill(2)}")
+    except:
+        return None
+
+
+def filtrar_por_data_upload(upload_date: Optional[str]) -> Tuple[bool, str]:
+    """
+    Verifica se vídeo está dentro dos limites de data de upload
+    Retorna (passou_filtro: bool, motivo_rejeicao: str)
+    """
+    data_min_str = DOWNLOADER['filtros']['data_upload']['minima']
+    data_max_str = DOWNLOADER['filtros']['data_upload']['maxima']
+    
+    # Valida formato das datas configuradas
+    if not validar_formato_data(data_min_str):
+        logging.error(f"Data mínima inválida no config: '{data_min_str}' (formato: DD-MM-AAAA)")
+        sys.exit(1)
+    
+    if not validar_formato_data(data_max_str):
+        logging.error(f"Data máxima inválida no config: '{data_max_str}' (formato: DD-MM-AAAA)")
+        sys.exit(1)
+    
+    # Converte datas para comparação
+    data_min = converter_data_para_comparacao(data_min_str)
+    data_max = converter_data_para_comparacao(data_max_str)
+    
+    # Se vídeo não tem data de upload
+    if not upload_date:
+        logging.warning("Vídeo sem data de upload (vídeo muito antigo ou metadata incompleta)")
+        return True, ""  # Permite continuar
+    
+    # Converte data do vídeo (formato AAAAMMDD do YouTube)
+    try:
+        video_date = int(upload_date)
+    except:
+        logging.error(f"Data de upload do vídeo em formato inválido: {upload_date}")
+        return True, ""  # Permite continuar em caso de erro
+    
+    # Aplica filtro mínimo
+    if data_min and video_date < data_min:
+        return False, f"Data de upload muito antiga: {upload_date} < {data_min_str}"
+    
+    # Aplica filtro máximo
+    if data_max and video_date > data_max:
+        return False, f"Data de upload muito recente: {upload_date} > {data_max_str}"
+    
+    return True, ""
+
+
 # ============================================================================
 # DOWNLOAD DE LEGENDAS
 # ============================================================================
 
-def verificar_e_baixar_legendas(video_id: str, info: Dict, pasta_output: Path) -> Tuple[bool, str]:
+def verificar_e_baixar_legendas(video_id: str, info: Dict, pasta_output: Path) -> Tuple[bool, Dict]:
     """
-    Verifica disponibilidade e baixa legendas em português
-    Retorna (sucesso: bool, tipo_legenda: str)
-    tipo_legenda pode ser: 'manual', 'auto' ou ''
+    Verifica disponibilidade e baixa legendas conforme prioridades configuradas
+    Retorna (sucesso: bool, info_legenda: Dict)
+    info_legenda contém: {'tipo': 'manual'|'auto', 'idioma': 'pt-BR', 'formato': 'vtt'}
     """
-    idiomas = DOWNLOADER['legendas']['idiomas']
-    aceitar_auto = DOWNLOADER['legendas']['aceitar_automaticas']
+    prioridades = DOWNLOADER['legendas']['prioridade']
+    
+    if not prioridades:
+        logging.warning("Lista de prioridades de legendas está vazia!")
+        return False, {}
     
     subtitles = info.get('subtitles', {})
     auto_captions = info.get('automatic_captions', {})
     
     logging.info(f"Verificando legendas para vídeo {video_id}...")
+    logging.debug(f"Legendas manuais disponíveis: {list(subtitles.keys())}")
+    logging.debug(f"Legendas automáticas disponíveis: {list(auto_captions.keys())}")
     
-    # Tenta legendas manuais
-    for idioma in idiomas:
-        if idioma in subtitles:
-            logging.info(f"Legenda manual encontrada: {idioma}")
-            if baixar_legenda(video_id, info['webpage_url'], idioma, False, pasta_output):
-                return True, 'manual'
+    # Itera na ordem de prioridade configurada
+    for prioridade in prioridades:
+        try:
+            # Parse do formato 'idioma-tipo' (ex: 'pt-BR-manual')
+            partes = prioridade.rsplit('-', 1)
+            if len(partes) != 2:
+                logging.error(f"Formato inválido na prioridade: '{prioridade}' (esperado: 'idioma-tipo')")
+                continue
+            
+            idioma, tipo = partes
+            is_auto = (tipo == 'auto')
+            
+            # Verifica disponibilidade
+            fonte = auto_captions if is_auto else subtitles
+            
+            if idioma in fonte:
+                logging.info(f"Tentando legenda: {idioma} ({'automática' if is_auto else 'manual'})")
+                
+                formato_baixado = baixar_legenda(video_id, info['webpage_url'], idioma, is_auto, pasta_output)
+                if formato_baixado:
+                    info_legenda = {
+                        'tipo': tipo,
+                        'idioma': idioma,
+                        'formato_original': formato_baixado
+                    }
+                    return True, info_legenda
+                else:
+                    logging.warning(f"Falha ao baixar legenda {idioma} ({tipo})")
+        
+        except Exception as e:
+            logging.error(f"Erro ao processar prioridade '{prioridade}': {e}")
+            continue
     
-    # Tenta legendas automáticas se configurado
-    if aceitar_auto:
-        for idioma in idiomas:
-            if idioma in auto_captions:
-                logging.info(f"Legenda automática encontrada: {idioma}")
-                if baixar_legenda(video_id, info['webpage_url'], idioma, True, pasta_output):
-                    return True, 'auto'
-    
-    logging.warning(f"Nenhuma legenda em português encontrada para {video_id}")
-    return False, ''
+    logging.warning(f"Nenhuma legenda encontrada nas prioridades configuradas")
+    return False, {}
 
 
-def baixar_legenda(video_id: str, url: str, idioma: str, is_auto: bool, pasta_output: Path) -> bool:
+def baixar_legenda(video_id: str, url: str, idioma: str, is_auto: bool, pasta_output: Path) -> Optional[str]:
     """
     Baixa legenda específica
-    Retorna True se sucesso, False caso contrário
+    Retorna formato da legenda baixada ('vtt', 'srv3', 'srt') ou None se falhar
     """
     tipo = 'auto' if is_auto else 'manual'
     arquivo_legenda = pasta_output / f"{tipo}_{video_id}.txt"
@@ -307,7 +422,7 @@ def baixar_legenda(video_id: str, url: str, idioma: str, is_auto: bool, pasta_ou
         'writesubtitles': True,
         'writeautomaticsub': is_auto,
         'subtitleslangs': [idioma],
-        'subtitlesformat': 'vtt/srv3/srt',
+        'subtitlesformat': 'vtt/srv3/srt',  # Prioridade: vtt → srv3 → srt
         'outtmpl': str(pasta_output / video_id),
         'quiet': True,
         'no_warnings': True,
@@ -317,22 +432,22 @@ def baixar_legenda(video_id: str, url: str, idioma: str, is_auto: bool, pasta_ou
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             ydl.download([url])
         
-        # Procura arquivo de legenda em qualquer formato (srv3, vtt, srt)
-        formatos_possiveis = ['srv3', 'vtt', 'srt']
+        # Procura arquivo de legenda em qualquer formato (ordem de prioridade)
+        formatos_possiveis = ['vtt', 'srv3', 'srt']
         for extensao in formatos_possiveis:
             arquivo_legenda_temp = pasta_output / f"{video_id}.{idioma}.{extensao}"
             if arquivo_legenda_temp.exists():
                 arquivo_legenda_temp.rename(arquivo_legenda)
-                logging.info(f"Legenda salva ({extensao}): {arquivo_legenda.name}")
-                return True
+                logging.info(f"Legenda salva (formato {extensao}): {arquivo_legenda.name}")
+                return extensao  # Retorna o formato baixado
         
         # Se não encontrou nenhum formato
         logging.warning(f"Arquivo de legenda não encontrado em nenhum formato: {formatos_possiveis}")
-        return False
+        return None
     
     except Exception as e:
         logging.error(f"Erro ao baixar legenda: {e}")
-        return False
+        return None
 
 
 # ============================================================================
@@ -387,6 +502,48 @@ def baixar_audio(video_id: str, url: str, pasta_output: Path) -> bool:
         return False
 
 
+def criar_metadata(video_info: Dict, url_original: str, info_legenda: Dict, pasta_output: Path) -> None:
+    """
+    Cria arquivo JSON com metadados do vídeo baixado
+    """
+    video_id = video_info.get('id')
+    upload_date_raw = video_info.get('upload_date')  # Formato: AAAAMMDD
+    
+    # Converte upload_date de AAAAMMDD para DD-MM-AAAA
+    upload_date_formatado = 'N/A'
+    if upload_date_raw:
+        try:
+            ano = upload_date_raw[:4]
+            mes = upload_date_raw[4:6]
+            dia = upload_date_raw[6:8]
+            upload_date_formatado = f"{dia}-{mes}-{ano}"
+        except:
+            upload_date_formatado = upload_date_raw
+    
+    # Data do download
+    download_date = datetime.now().strftime('%d-%m-%Y')
+    
+    # Monta estrutura de metadados
+    metadata = {
+        'video_id': video_id,
+        'titulo': video_info.get('title', 'N/A'),
+        'url_original': url_original,
+        'duracao_segundos': video_info.get('duration', 0),
+        'upload_date': upload_date_formatado,
+        'download_date': download_date,
+        'legenda': info_legenda
+    }
+    
+    # Salva arquivo JSON
+    arquivo_metadata = pasta_output / f"metadata_{video_id}.json"
+    try:
+        with open(arquivo_metadata, 'w', encoding='utf-8') as f:
+            json.dump(metadata, f, ensure_ascii=False, indent=2)
+        logging.info(f"Metadados salvos: {arquivo_metadata.name}")
+    except Exception as e:
+        logging.error(f"Erro ao salvar metadados: {e}")
+
+
 # ============================================================================
 # PROCESSAMENTO DE VÍDEOS
 # ============================================================================
@@ -399,10 +556,11 @@ def processar_video(video_info: Dict, url_original: str) -> bool:
     video_id = video_info.get('id')
     titulo = video_info.get('title', 'Sem título')
     duracao = video_info.get('duration', 0)
+    upload_date = video_info.get('upload_date')  # Formato: AAAAMMDD
     
     logging.info("-" * 70)
     logging.info(f"Processando: {titulo}")
-    logging.info(f"ID: {video_id} | Duração: {duracao}s")
+    logging.info(f"ID: {video_id} | Duração: {duracao}s | Upload: {upload_date or 'N/A'}")
     
     # Define pasta de output
     pasta_output = PROJECT_ROOT / 'arquivos' / 'audios' / video_id
@@ -422,12 +580,20 @@ def processar_video(video_info: Dict, url_original: str) -> bool:
             shutil.rmtree(pasta_output, ignore_errors=True)
             return False
         
+        # Valida data de upload
+        passou_filtro_data, motivo_data = filtrar_por_data_upload(upload_date)
+        if not passou_filtro_data:
+            logging.warning(f"Vídeo rejeitado: {motivo_data}")
+            registrar_rejeitado(url_original, motivo_data)
+            shutil.rmtree(pasta_output, ignore_errors=True)
+            return False
+        
         # Baixa legendas (OBRIGATÓRIO)
-        tem_legenda, tipo_legenda = verificar_e_baixar_legendas(video_id, video_info, pasta_output)
+        tem_legenda, info_legenda = verificar_e_baixar_legendas(video_id, video_info, pasta_output)
         
         if not tem_legenda:
-            logging.warning(f"Vídeo rejeitado: sem legendas em português")
-            registrar_rejeitado(url_original, "Sem legendas em português")
+            logging.warning(f"Vídeo rejeitado: sem legendas nas prioridades configuradas")
+            registrar_rejeitado(url_original, "Sem legendas disponíveis")
             shutil.rmtree(pasta_output, ignore_errors=True)
             return False
         
@@ -437,6 +603,9 @@ def processar_video(video_info: Dict, url_original: str) -> bool:
             registrar_rejeitado(url_original, "Erro ao baixar áudio")
             shutil.rmtree(pasta_output, ignore_errors=True)
             return False
+        
+        # Cria arquivo de metadados
+        criar_metadata(video_info, url_original, info_legenda, pasta_output)
         
         # Sucesso!
         logging.info(f"Download concluído com sucesso: {video_id}")
@@ -581,9 +750,10 @@ def main():
     logging.info(f"  Formato áudio: {DOWNLOADER['audio']['formato']}")
     logging.info(f"  Bitrate: {DOWNLOADER['audio']['bitrate_kbps']} kbps")
     logging.info(f"  Sample rate: {DOWNLOADER['audio']['sample_rate_hz']} Hz")
-    logging.info(f"  Idiomas legenda: {DOWNLOADER['legendas']['idiomas']}")
-    logging.info(f"  Aceitar automáticas: {DOWNLOADER['legendas']['aceitar_automaticas']}")
-    logging.info(f"  Duração: {DOWNLOADER['duracao']['minima_segundos']}s - {DOWNLOADER['duracao']['maxima_segundos']}s")
+    logging.info(f"  Prioridade legendas: {DOWNLOADER['legendas']['prioridade']}")
+    logging.info(f"  Duração: {DOWNLOADER['filtros']['duracao']['minima_segundos']}s - {DOWNLOADER['filtros']['duracao']['maxima_segundos']}s")
+    logging.info(f"  Data upload mín: {DOWNLOADER['filtros']['data_upload']['minima']}")
+    logging.info(f"  Data upload máx: {DOWNLOADER['filtros']['data_upload']['maxima']}")
     logging.info(f"  Limite por fonte: {DOWNLOADER['quantidade']['limit']}")
     logging.info("")
     
