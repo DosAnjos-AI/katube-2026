@@ -1,0 +1,418 @@
+{
+  "CA6TSoMw86k_001.flac": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:13.468",
+    "duracao": 13.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_002.flac": {
+    "tempo_inicio": "00:00:14.916",
+    "tempo_fim": "00:00:23.836",
+    "duracao": 8.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_003.flac": {
+    "tempo_inicio": "00:00:24.420",
+    "tempo_fim": "00:00:31.132",
+    "duracao": 6.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_004.flac": {
+    "tempo_inicio": "00:00:45.284",
+    "tempo_fim": "00:00:52.124",
+    "duracao": 6.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_005.flac": {
+    "tempo_inicio": "00:01:02.532",
+    "tempo_fim": "00:01:07.580",
+    "duracao": 5.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_006.flac": {
+    "tempo_inicio": "00:01:20.644",
+    "tempo_fim": "00:01:29.084",
+    "duracao": 8.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_007.flac": {
+    "tempo_inicio": "00:01:29.796",
+    "tempo_fim": "00:01:35.260",
+    "duracao": 5.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_008.flac": {
+    "tempo_inicio": "00:01:35.940",
+    "tempo_fim": "00:01:39.900",
+    "duracao": 3.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_009.flac": {
+    "tempo_inicio": "00:01:40.580",
+    "tempo_fim": "00:01:45.788",
+    "duracao": 5.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_010.flac": {
+    "tempo_inicio": "00:01:50.404",
+    "tempo_fim": "00:02:00.572",
+    "duracao": 10.17,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_011.flac": {
+    "tempo_inicio": "00:02:01.412",
+    "tempo_fim": "00:02:13.564",
+    "duracao": 12.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_012.flac": {
+    "tempo_inicio": "00:02:14.084",
+    "tempo_fim": "00:02:17.596",
+    "duracao": 3.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_013.flac": {
+    "tempo_inicio": "00:02:31.332",
+    "tempo_fim": "00:02:35.036",
+    "duracao": 3.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_014.flac": {
+    "tempo_inicio": "00:02:39.812",
+    "tempo_fim": "00:02:47.580",
+    "duracao": 7.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_015.flac": {
+    "tempo_inicio": "00:02:50.052",
+    "tempo_fim": "00:02:53.436",
+    "duracao": 3.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_016.flac": {
+    "tempo_inicio": "00:02:53.924",
+    "tempo_fim": "00:02:57.948",
+    "duracao": 4.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_017.flac": {
+    "tempo_inicio": "00:02:58.788",
+    "tempo_fim": "00:03:02.972",
+    "duracao": 4.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_018.flac": {
+    "tempo_inicio": "00:03:09.156",
+    "tempo_fim": "00:03:16.188",
+    "duracao": 7.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_019.flac": {
+    "tempo_inicio": "00:03:16.644",
+    "tempo_fim": "00:03:27.580",
+    "duracao": 10.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_020.flac": {
+    "tempo_inicio": "00:03:31.236",
+    "tempo_fim": "00:03:41.820",
+    "duracao": 10.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_021.flac": {
+    "tempo_inicio": "00:03:48.132",
+    "tempo_fim": "00:03:53.052",
+    "duracao": 4.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_022.flac": {
+    "tempo_inicio": "00:04:01.156",
+    "tempo_fim": "00:04:06.972",
+    "duracao": 5.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_023.flac": {
+    "tempo_inicio": "00:04:09.988",
+    "tempo_fim": "00:04:19.132",
+    "duracao": 9.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_024.flac": {
+    "tempo_inicio": "00:04:32.132",
+    "tempo_fim": "00:04:37.884",
+    "duracao": 5.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_025.flac": {
+    "tempo_inicio": "00:04:39.972",
+    "tempo_fim": "00:04:44.796",
+    "duracao": 4.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_026.flac": {
+    "tempo_inicio": "00:04:45.636",
+    "tempo_fim": "00:04:49.980",
+    "duracao": 4.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_027.flac": {
+    "tempo_inicio": "00:04:51.332",
+    "tempo_fim": "00:04:55.100",
+    "duracao": 3.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_028.flac": {
+    "tempo_inicio": "00:04:55.620",
+    "tempo_fim": "00:05:02.204",
+    "duracao": 6.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_029.flac": {
+    "tempo_inicio": "00:05:03.652",
+    "tempo_fim": "00:05:08.188",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_030.flac": {
+    "tempo_inicio": "00:05:08.868",
+    "tempo_fim": "00:05:12.156",
+    "duracao": 3.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_031.flac": {
+    "tempo_inicio": "00:05:19.524",
+    "tempo_fim": "00:05:27.548",
+    "duracao": 8.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_032.flac": {
+    "tempo_inicio": "00:05:28.036",
+    "tempo_fim": "00:05:31.900",
+    "duracao": 3.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_033.flac": {
+    "tempo_inicio": "00:05:40.708",
+    "tempo_fim": "00:05:44.892",
+    "duracao": 4.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_034.flac": {
+    "tempo_inicio": "00:05:52.836",
+    "tempo_fim": "00:05:57.884",
+    "duracao": 5.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_035.flac": {
+    "tempo_inicio": "00:06:04.740",
+    "tempo_fim": "00:06:13.436",
+    "duracao": 8.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_036.flac": {
+    "tempo_inicio": "00:06:21.956",
+    "tempo_fim": "00:06:25.340",
+    "duracao": 3.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_037.flac": {
+    "tempo_inicio": "00:06:29.988",
+    "tempo_fim": "00:06:33.468",
+    "duracao": 3.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_038.flac": {
+    "tempo_inicio": "00:06:38.468",
+    "tempo_fim": "00:06:42.460",
+    "duracao": 3.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_039.flac": {
+    "tempo_inicio": "00:06:44.612",
+    "tempo_fim": "00:06:49.788",
+    "duracao": 5.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_040.flac": {
+    "tempo_inicio": "00:06:57.060",
+    "tempo_fim": "00:07:00.540",
+    "duracao": 3.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_041.flac": {
+    "tempo_inicio": "00:07:01.124",
+    "tempo_fim": "00:07:08.444",
+    "duracao": 7.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_042.flac": {
+    "tempo_inicio": "00:07:09.092",
+    "tempo_fim": "00:07:19.868",
+    "duracao": 10.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_043.flac": {
+    "tempo_inicio": "00:07:20.068",
+    "tempo_fim": "00:07:29.820",
+    "duracao": 9.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_044.flac": {
+    "tempo_inicio": "00:07:30.404",
+    "tempo_fim": "00:07:44.060",
+    "duracao": 13.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_045.flac": {
+    "tempo_inicio": "00:07:44.548",
+    "tempo_fim": "00:07:50.396",
+    "duracao": 5.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_046.flac": {
+    "tempo_inicio": "00:07:58.564",
+    "tempo_fim": "00:08:02.012",
+    "duracao": 3.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_047.flac": {
+    "tempo_inicio": "00:08:08.388",
+    "tempo_fim": "00:08:12.348",
+    "duracao": 3.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_048.flac": {
+    "tempo_inicio": "00:08:15.844",
+    "tempo_fim": "00:08:21.052",
+    "duracao": 5.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_049.flac": {
+    "tempo_inicio": "00:08:21.668",
+    "tempo_fim": "00:08:28.092",
+    "duracao": 6.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_050.flac": {
+    "tempo_inicio": "00:08:43.524",
+    "tempo_fim": "00:08:46.876",
+    "duracao": 3.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_051.flac": {
+    "tempo_inicio": "00:08:48.452",
+    "tempo_fim": "00:08:51.996",
+    "duracao": 3.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CA6TSoMw86k_052.flac": {
+    "tempo_inicio": "00:08:54.308",
+    "tempo_fim": "00:09:01.340",
+    "duracao": 7.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  }
+}
