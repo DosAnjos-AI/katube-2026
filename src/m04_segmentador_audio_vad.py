@@ -15,7 +15,7 @@ import torchaudio
 sys.path.append(str(Path(__file__).parent.parent))
 from config import SEGMENTADOR_AUDIO_VAD, PROJECT_ROOT
 
-id_video = 'CA6TSoMw86k'
+id_video = 'CKidrRu_OEM'
 
 # =============================================================================
 # VARIÁVEIS DE TESTE (hardcoded para desenvolvimento)

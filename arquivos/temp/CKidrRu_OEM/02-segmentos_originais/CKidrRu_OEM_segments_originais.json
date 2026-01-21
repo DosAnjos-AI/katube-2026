@@ -1,0 +1,386 @@
+{
+  "CKidrRu_OEM_001.flac": {
+    "tempo_inicio": "00:00:14.468",
+    "tempo_fim": "00:00:18.748",
+    "duracao": 4.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_002.flac": {
+    "tempo_inicio": "00:00:39.812",
+    "tempo_fim": "00:00:51.356",
+    "duracao": 11.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_003.flac": {
+    "tempo_inicio": "00:00:51.556",
+    "tempo_fim": "00:01:06.172",
+    "duracao": 14.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_004.flac": {
+    "tempo_inicio": "00:01:06.276",
+    "tempo_fim": "00:01:20.060",
+    "duracao": 13.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_005.flac": {
+    "tempo_inicio": "00:01:20.132",
+    "tempo_fim": "00:01:32.828",
+    "duracao": 12.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_006.flac": {
+    "tempo_inicio": "00:01:32.900",
+    "tempo_fim": "00:01:40.828",
+    "duracao": 7.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_007.flac": {
+    "tempo_inicio": "00:01:41.124",
+    "tempo_fim": "00:01:47.132",
+    "duracao": 6.01,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_008.flac": {
+    "tempo_inicio": "00:01:47.652",
+    "tempo_fim": "00:02:01.084",
+    "duracao": 13.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_009.flac": {
+    "tempo_inicio": "00:02:01.220",
+    "tempo_fim": "00:02:10.140",
+    "duracao": 8.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_010.flac": {
+    "tempo_inicio": "00:02:19.300",
+    "tempo_fim": "00:02:23.388",
+    "duracao": 4.09,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_011.flac": {
+    "tempo_inicio": "00:02:24.164",
+    "tempo_fim": "00:02:33.916",
+    "duracao": 9.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_012.flac": {
+    "tempo_inicio": "00:02:35.972",
+    "tempo_fim": "00:02:44.892",
+    "duracao": 8.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_013.flac": {
+    "tempo_inicio": "00:02:47.556",
+    "tempo_fim": "00:03:01.788",
+    "duracao": 14.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_014.flac": {
+    "tempo_inicio": "00:03:07.524",
+    "tempo_fim": "00:03:12.412",
+    "duracao": 4.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_015.flac": {
+    "tempo_inicio": "00:03:20.132",
+    "tempo_fim": "00:03:35.644",
+    "duracao": 15.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_016.flac": {
+    "tempo_inicio": "00:03:35.972",
+    "tempo_fim": "00:03:50.300",
+    "duracao": 14.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_017.flac": {
+    "tempo_inicio": "00:03:50.372",
+    "tempo_fim": "00:04:01.212",
+    "duracao": 10.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_018.flac": {
+    "tempo_inicio": "00:04:01.284",
+    "tempo_fim": "00:04:13.564",
+    "duracao": 12.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_019.flac": {
+    "tempo_inicio": "00:04:17.604",
+    "tempo_fim": "00:04:24.764",
+    "duracao": 7.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_020.flac": {
+    "tempo_inicio": "00:04:32.356",
+    "tempo_fim": "00:04:47.132",
+    "duracao": 14.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_021.flac": {
+    "tempo_inicio": "00:04:47.492",
+    "tempo_fim": "00:05:00.540",
+    "duracao": 13.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_022.flac": {
+    "tempo_inicio": "00:05:00.612",
+    "tempo_fim": "00:05:07.452",
+    "duracao": 6.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_023.flac": {
+    "tempo_inicio": "00:05:10.404",
+    "tempo_fim": "00:05:22.844",
+    "duracao": 12.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_024.flac": {
+    "tempo_inicio": "00:05:23.076",
+    "tempo_fim": "00:05:38.812",
+    "duracao": 15.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_025.flac": {
+    "tempo_inicio": "00:05:41.892",
+    "tempo_fim": "00:05:56.764",
+    "duracao": 14.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_026.flac": {
+    "tempo_inicio": "00:05:56.804",
+    "tempo_fim": "00:06:10.108",
+    "duracao": 13.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_027.flac": {
+    "tempo_inicio": "00:06:10.244",
+    "tempo_fim": "00:06:18.524",
+    "duracao": 8.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_028.flac": {
+    "tempo_inicio": "00:06:18.628",
+    "tempo_fim": "00:06:39.676",
+    "duracao": 21.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_029.flac": {
+    "tempo_inicio": "00:06:40.164",
+    "tempo_fim": "00:06:54.108",
+    "duracao": 13.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_030.flac": {
+    "tempo_inicio": "00:06:54.564",
+    "tempo_fim": "00:07:06.620",
+    "duracao": 12.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_031.flac": {
+    "tempo_inicio": "00:07:19.204",
+    "tempo_fim": "00:07:23.740",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_032.flac": {
+    "tempo_inicio": "00:07:26.404",
+    "tempo_fim": "00:07:34.940",
+    "duracao": 8.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_033.flac": {
+    "tempo_inicio": "00:07:35.556",
+    "tempo_fim": "00:07:39.292",
+    "duracao": 3.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_034.flac": {
+    "tempo_inicio": "00:07:54.692",
+    "tempo_fim": "00:08:02.012",
+    "duracao": 7.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_035.flac": {
+    "tempo_inicio": "00:08:10.980",
+    "tempo_fim": "00:08:19.260",
+    "duracao": 8.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_036.flac": {
+    "tempo_inicio": "00:08:19.716",
+    "tempo_fim": "00:08:23.036",
+    "duracao": 3.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_037.flac": {
+    "tempo_inicio": "00:08:23.492",
+    "tempo_fim": "00:08:32.188",
+    "duracao": 8.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_038.flac": {
+    "tempo_inicio": "00:08:40.612",
+    "tempo_fim": "00:08:44.284",
+    "duracao": 3.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_039.flac": {
+    "tempo_inicio": "00:08:46.788",
+    "tempo_fim": "00:08:51.676",
+    "duracao": 4.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_040.flac": {
+    "tempo_inicio": "00:08:52.356",
+    "tempo_fim": "00:09:05.724",
+    "duracao": 13.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_041.flac": {
+    "tempo_inicio": "00:09:55.300",
+    "tempo_fim": "00:10:03.228",
+    "duracao": 7.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_042.flac": {
+    "tempo_inicio": "00:10:06.052",
+    "tempo_fim": "00:10:14.812",
+    "duracao": 8.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_043.flac": {
+    "tempo_inicio": "00:10:15.428",
+    "tempo_fim": "00:10:20.380",
+    "duracao": 4.95,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_044.flac": {
+    "tempo_inicio": "00:10:22.788",
+    "tempo_fim": "00:10:27.292",
+    "duracao": 4.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_045.flac": {
+    "tempo_inicio": "00:10:30.980",
+    "tempo_fim": "00:10:34.748",
+    "duracao": 3.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_046.flac": {
+    "tempo_inicio": "00:10:34.852",
+    "tempo_fim": "00:10:50.300",
+    "duracao": 15.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_047.flac": {
+    "tempo_inicio": "00:10:50.404",
+    "tempo_fim": "00:11:02.076",
+    "duracao": 11.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "CKidrRu_OEM_048.flac": {
+    "tempo_inicio": "00:11:02.180",
+    "tempo_fim": "00:11:06.812",
+    "duracao": 4.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  }
+}

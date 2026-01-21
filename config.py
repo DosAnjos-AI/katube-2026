@@ -305,3 +305,88 @@ SEGMENTADOR_AUDIO_VAD = {
         'sobrescrever': False,
     },
 }
+
+# =============================================================================
+# MÓDULO 02: MOS FILTER (MEAN OPINION SCORE - QUALIDADE DE ÁUDIO)
+# =============================================================================
+
+# Configurações do filtro de qualidade de áudio baseado em MOS
+# Avalia áudio usando modelo SQUIM (Speech Quality and Intelligibility Measures)
+# Classifica segmentos em: baixa, média ou alta qualidade
+MOS_FILTER = {
+    
+    # ------------------------------------------------------------------------
+    # Dispositivo de Processamento
+    # ------------------------------------------------------------------------
+    # Define onde o modelo MOS será executado
+    # Opções disponíveis:
+    # - "auto": Detecta automaticamente (GPU se disponível, senão CPU)
+    # - "gpu": Força uso de GPU/CUDA (falha se GPU não disponível)
+    # - "cpu": Força uso de CPU (mais lento, mas funciona em qualquer máquina)
+    # 
+    # Recomendação: "auto" para máxima compatibilidade
+    # Nota: GPU acelera significativamente (3-5x mais rápido)
+    'device': 'auto',
+    
+    # ------------------------------------------------------------------------
+    # Limiares de Qualidade (MOS Score)
+    # ------------------------------------------------------------------------
+    # MOS (Mean Opinion Score) varia de 1.0 (péssimo) a 5.0 (excelente)
+    # Define os limiares para classificação de qualidade
+    
+    'thresholds': {
+        # Limiar mínimo aceitável
+        # Áudios com MOS < min_threshold são DESCARTADOS
+        # Valores típicos: 1.5-2.5
+        # Exemplo: 2.0 = descarta áudios muito ruins
+        'min_threshold': 2.5,
+        
+        # Limiar para alta qualidade
+        # Áudios com MOS >= max_threshold são considerados ÓTIMOS
+        # Não precisam de denoising posterior
+        # Valores típicos: 3.0-4.0
+        # Exemplo: 3.5 = áudios acima disso vão direto pro dataset
+        'max_threshold': 3.0,
+        
+        # Faixa intermediária (calculada automaticamente):
+        # min_threshold <= MOS < max_threshold
+        # Estes áudios passam por denoising antes do dataset final
+    },
+    
+    # ------------------------------------------------------------------------
+    # Batch Processing (Processamento em Lote)
+    # ------------------------------------------------------------------------
+    # Processa múltiplos áudios simultaneamente para maior eficiência
+    
+    'batch': {
+        # Tamanho do batch (quantos áudios processar juntos)
+        # Valores maiores = mais rápido, mas usa mais VRAM
+        # 
+        # Opções:
+        # - "auto": Calcula automaticamente baseado em VRAM disponível
+        # - 1-16: Valor fixo (números maiores exigem mais VRAM)
+        # 
+        # Referência de uso de VRAM (aproximado):
+        # - batch_size=1:  ~2.0 GB
+        # - batch_size=4:  ~3.0 GB
+        # - batch_size=8:  ~4.0 GB
+        # - batch_size=16: ~6.0 GB
+        # 
+        # Recomendação:
+        # - GPU com 24GB: "auto" ou 16
+        # - GPU com 8-16GB: 8
+        # - GPU com 4-8GB: 4
+        # - CPU: 1-2
+        'batch_size': 'auto',
+    },
+    
+    # ------------------------------------------------------------------------
+    # Comportamento Geral
+    # ------------------------------------------------------------------------
+    'comportamento': {
+        # Sobrescrever análises existentes
+        # False = pula segmentos já analisados (verifica se JSON existe)
+        # True = re-analisa todos os segmentos
+        'sobrescrever': False,
+    },
+}
