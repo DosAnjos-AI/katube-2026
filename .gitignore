@@ -1,0 +1,129 @@
+# =============================================================================
+# GITIGNORE - KATUBE-2026
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Variáveis de Ambiente e Credenciais
+# -----------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+# Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Distribuição / Empacotamento
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+
+# Instaladores
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ambientes virtuais
+venv/
+ENV/
+env/
+.venv
+
+# -----------------------------------------------------------------------------
+# Dados Temporários e Processamento
+# -----------------------------------------------------------------------------
+# Pasta principal de arquivos temporários do projeto
+arquivos/temp/
+
+# Logs
+*.log
+logs/
+
+# Cache de modelos ML
+*.ckpt
+*.pth
+*.pt
+checkpoints/
+
+# -----------------------------------------------------------------------------
+# IDEs e Editores
+# -----------------------------------------------------------------------------
+# VSCode
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# -----------------------------------------------------------------------------
+# Sistema Operacional
+# -----------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# -----------------------------------------------------------------------------
+# Testes e Cobertura
+# -----------------------------------------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# -----------------------------------------------------------------------------
+# Documentação
+# -----------------------------------------------------------------------------
+docs/_build/
+site/

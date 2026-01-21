@@ -11,7 +11,8 @@ import shutil
 from pathlib import Path
 from typing import List, Tuple
 
-id_video= '0aICqierMVA'
+
+id_video= 'LBui15ktBc0'
 
 # ==============================================================================
 # CONFIGURACAO DE CAMINHOS
@@ -146,16 +147,18 @@ def listar_arquivos_audio(pasta: Path) -> List[Path]:
     return sorted(arquivos)
 
 
-def copiar_json(pasta_origem: Path, pasta_destino: Path) -> bool:
+def copiar_json(pasta_origem: Path, pasta_destino: Path, id_video: str) -> bool:
     """
     Copia o arquivo JSON de metadados para pasta destino
+    E cria copia adicional na pasta 00-json_dinamico com nome customizado
     
     Args:
         pasta_origem: Path da pasta de origem
         pasta_destino: Path da pasta de destino
+        id_video: ID do video para nomear arquivo de acompanhamento
         
     Returns:
-        True se copia bem-sucedida, False caso contrario
+        True se ambas copias bem-sucedidas, False caso contrario
     """
     try:
         arquivos_json = list(pasta_origem.glob('*.json'))
@@ -167,10 +170,22 @@ def copiar_json(pasta_origem: Path, pasta_destino: Path) -> bool:
             print(f"AVISO: Multiplos JSONs encontrados, copiando o primeiro: {arquivos_json[0].name}")
         
         json_origem = arquivos_json[0]
-        json_destino = pasta_destino / json_origem.name
         
+        # Copia 1: pasta 03-segments_16khz com nome original
+        json_destino = pasta_destino / json_origem.name
         shutil.copy2(json_origem, json_destino)
         print(f"JSON copiado: {json_origem.name}")
+        
+        # Copia 2: pasta 00-json_dinamico com nome customizado
+        pasta_json_dinamico = pasta_destino.parent / "00-json_dinamico"
+        pasta_json_dinamico.mkdir(parents=True, exist_ok=True)
+        
+        nome_acompanhamento = f"{id_video}_segments_acompanhamento.json"
+        json_acompanhamento = pasta_json_dinamico / nome_acompanhamento
+        
+        shutil.copy2(json_origem, json_acompanhamento)
+        print(f"JSON acompanhamento copiado: {nome_acompanhamento}")
+        
         return True
         
     except Exception as e:
@@ -271,7 +286,7 @@ def processar_pasta():
     
     # Copiar JSON
     print("\n" + "-" * 70)
-    copiar_json(pasta_input, pasta_output)
+    copiar_json(pasta_input, pasta_output, id_video)
     
     # Relatorio final
     print("\n" + "=" * 70)

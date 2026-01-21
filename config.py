@@ -390,3 +390,75 @@ MOS_FILTER = {
         'sobrescrever': False,
     },
 }
+
+# =============================================================================
+# MÓDULO 04: DETECTOR DE OVERLAP 01 (SOBREPOSIÇÃO DE LOCUTORES)
+# =============================================================================
+
+# Configurações do detector de overlap usando diarização de speakers
+# Detecta se há sobreposição de fala (múltiplos locutores falando simultaneamente)
+# Utiliza modelo pyannote para análise de áudio
+OVERLAP_DETECTOR = {
+    
+    # ------------------------------------------------------------------------
+    # Dispositivo de Processamento
+    # ------------------------------------------------------------------------
+    # Define onde o modelo será executado
+    # Opções disponíveis:
+    # - "auto": Detecta automaticamente (GPU se disponível, senão CPU)
+    # - "gpu": Força uso de GPU/CUDA (falha se GPU não disponível)
+    # - "cpu": Força uso de CPU (mais lento, mas funciona em qualquer máquina)
+    # 
+    # Recomendação: "auto" para máxima compatibilidade
+    # Nota: GPU acelera significativamente o processamento
+    'device': 'auto',
+    
+    # ------------------------------------------------------------------------
+    # Modelo de Diarização
+    # ------------------------------------------------------------------------
+    # Modelo HuggingFace para detecção de overlap
+    # pyannote/speaker-diarization-community-1CC-BY-4.0
+    # Licença: CC-BY-4.0 (permissiva para uso acadêmico)
+    # IMPORTANTE: Requer token HuggingFace configurado em .env
+    'modelo': 'pyannote/speaker-diarization-3.1',
+    
+    # ------------------------------------------------------------------------
+    # Batch Processing (Processamento em Lote)
+    # ------------------------------------------------------------------------
+    # Processa múltiplos áudios simultaneamente para maior eficiência
+    
+    'batch': {
+        # Tamanho do batch (quantos áudios processar juntos)
+        # Valores maiores = mais rápido, mas usa mais VRAM
+        # 
+        # Opções:
+        # - "auto": Calcula automaticamente baseado em VRAM disponível
+        # - 1-16: Valor fixo (números maiores exigem mais VRAM)
+        # 
+        # Referência de uso de VRAM (aproximado):
+        # - batch_size=1:  ~3.0 GB
+        # - batch_size=4:  ~5.0 GB
+        # - batch_size=8:  ~8.0 GB
+        # - batch_size=16: ~12.0 GB
+        # 
+        # Recomendação:
+        # - GPU com 24GB: "auto" ou 16
+        # - GPU com 8-16GB: 8
+        # - GPU com 4-8GB: 4
+        # - CPU: 1
+        'batch_size': 'auto',
+    },
+    'timeout': {
+    'por_audio_segundos': 60,  # Timeout máximo por áudio
+    },
+    
+    # ------------------------------------------------------------------------
+    # Comportamento Geral
+    # ------------------------------------------------------------------------
+    'comportamento': {
+        # Sobrescrever análises existentes
+        # False = pula segmentos já analisados (verifica se campo overlap01 existe)
+        # True = re-analisa todos os segmentos
+        'sobrescrever': False,
+    },
+}

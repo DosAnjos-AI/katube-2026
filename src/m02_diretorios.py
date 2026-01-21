@@ -2,7 +2,7 @@ from pathlib import Path
 import shutil
 
 
-id_video= 'CKidrRu_OEM'
+id_video= 'LBui15ktBc0'
 
 
 #============================================================
@@ -15,6 +15,9 @@ pasta.mkdir(parents=True, exist_ok=True)
 #============================================================
 # Criando subpastas
 #============================================================
+# criar pasta para os .json dinâmicos
+pasta1= Path(str(pasta)+'/00-json_dinamico')
+pasta1.mkdir(parents=True, exist_ok=True)
 
 # criar pasta com as copias dos arquivos originais
 pasta1= Path(str(pasta)+'/01-arquivos_originais')

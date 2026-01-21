@@ -12,6 +12,7 @@ import logging
 from typing import Dict, List, Tuple, Optional
 import time
 import sys
+import shutil
 
 sys.path.append(str(Path(__file__).parent.parent))
 
@@ -20,7 +21,7 @@ from config import MOS_FILTER, PROJECT_ROOT
 
 # ==================== CONFIGURAÇÃO MANUAL ====================
 # ID do vídeo a ser processado
-video_id = '0aICqierMVA'
+video_id = 'LBui15ktBc0'
 
 
 # ==================== CONFIGURAÇÃO DE LOGGING ====================
@@ -471,6 +472,24 @@ def processar_mos(video_id: str) -> bool:
         if not salvar_json_com_validacao(dados_aprovados, json_mos_path):
             logger.error("Falha ao salvar JSON MOS")
             return False
+        
+        # Copia JSONs para pasta 00-json_dinamico
+        logger.info("Copiando JSONs para 00-json_dinamico...")
+        json_dinamico_dir = PROJECT_ROOT / 'arquivos' / 'temp' / video_id / '00-json_dinamico'
+        
+        # Copia acompanhamento (mesmo nome)
+        shutil.copy2(
+            json_acompanhamento_path,
+            json_dinamico_dir / f"{video_id}_segments_acompanhamento.json"
+        )
+        
+        # Copia mos (renomeia para {id}.json)
+        shutil.copy2(
+            json_mos_path,
+            json_dinamico_dir / f"{video_id}.json"
+        )
+        
+        logger.info("JSONs copiados para 00-json_dinamico")
         
         logger.info("=" * 60)
         logger.info(f"MOS processado com sucesso: {video_id}")
