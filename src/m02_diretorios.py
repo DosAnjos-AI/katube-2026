@@ -2,7 +2,7 @@ from pathlib import Path
 import shutil
 
 
-id_video= 'LBui15ktBc0'
+id_video= 'QN7gUP7nYhQ'
 
 
 #============================================================
@@ -39,33 +39,30 @@ pasta4.mkdir(parents=True, exist_ok=True)
 pasta5= Path(str(pasta)+ '/05-overlap1')
 pasta5.mkdir(parents=True, exist_ok=True)
 
-# criar pasta com arquivos do overlap 2
-pasta6= Path(str(pasta)+ '/06-overlap2')
+# criar pasta com arquivos do -stt_whisper
+pasta6= Path(str(pasta)+ '/06-stt_whisper')
 pasta6.mkdir(parents=True, exist_ok=True)
 
-# criar pasta com arquivos do stt-whisper
-pasta7= Path(str(pasta)+ '/07-stt_whisper')
+# criar pasta com arquivos do stt_wav2vec
+pasta7= Path(str(pasta)+ '/07-stt_wav2vec')
 pasta7.mkdir(parents=True, exist_ok=True)
 
-# criar pasta com arquivos do stt-wav2vec
-pasta8= Path(str(pasta)+ '/08-stt_wav2vec')
+# criar pasta com arquivos do normalizador_texto
+pasta8= Path(str(pasta)+ '/08-normalizador_texto')
 pasta8.mkdir(parents=True, exist_ok=True)
 
-# criar pasta com arquivos do normalizador de texto
-pasta9= Path(str(pasta)+ '/09-normalizador_texto')
+# criar pasta com arquivos do validacao_levenstein
+pasta9= Path(str(pasta)+ '/09-validacao_levenshtein')
 pasta9.mkdir(parents=True, exist_ok=True)
 
-# criar pasta com arquivos do validação
-pasta10= Path(str(pasta)+ '/10-validacao_levenstein')
+# criar pasta com arquivos do denoiser
+pasta10= Path(str(pasta)+ '/10-denoiser')
 pasta10.mkdir(parents=True, exist_ok=True)
 
-# criar pasta com arquivos do Denoiser
-pasta11= Path(str(pasta)+ '/11-denoiser')
+# criar pasta com arquivos do normalizador_audio
+pasta11= Path(str(pasta)+ '/11-normalizador_audio')
 pasta11.mkdir(parents=True, exist_ok=True)
 
-# criar pasta com arquivos do normalizador de texto
-pasta12= Path(str(pasta)+ '/12-normalizador_audio')
-pasta12.mkdir(parents=True, exist_ok=True)
 
 
 #########################################################

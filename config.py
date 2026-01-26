@@ -276,7 +276,7 @@ SEGMENTADOR_AUDIO_VAD = {
         # - Valores médios (4-8s): equilíbrio (recomendado)
         # - Valores altos (>10s): força segmentos longos
         # Exemplo: 4.0 = todos os segmentos terão no mínimo 4 segundos
-        'min_seg': 4.0,
+        'min_seg': 8.0,
         
         # Duração MÁXIMA de cada segmento em segundos
         # Segmentos mais longos são divididos em pausas naturais
@@ -461,4 +461,199 @@ OVERLAP_DETECTOR = {
         # True = re-analisa todos os segmentos
         'sobrescrever': False,
     },
+}
+
+# =============================================================================
+# MÓDULO 05: STT WHISPER (SPEECH-TO-TEXT)
+# =============================================================================
+
+# Configurações do módulo de transcrição usando Whisper
+# Converte segmentos de áudio em texto usando modelo distil-whisper PT-BR
+# Modelo: freds0/distil-whisper-large-v3-ptbr
+STT_WHISPER = {
+    
+    # ------------------------------------------------------------------------
+    # Dispositivo de Processamento
+    # ------------------------------------------------------------------------
+    # Define onde o modelo Whisper será executado
+    # Opções disponíveis:
+    # - "auto": Detecta automaticamente (GPU se disponível, senão CPU)
+    # - "gpu": Força uso de GPU/CUDA (falha se GPU não disponível)
+    # - "cpu": Força uso de CPU (mais lento, mas funciona em qualquer máquina)
+    # 
+    # Recomendação: "auto" para máxima compatibilidade
+    # Nota: GPU acelera significativamente (6x mais rápido que large-v3)
+    'device': 'auto',
+    
+    # ------------------------------------------------------------------------
+    # Batch Processing (Processamento em Lote)
+    # ------------------------------------------------------------------------
+    # Processa múltiplos áudios simultaneamente para maior eficiência
+    
+    'batch': {
+        # Tamanho do batch (quantos áudios transcrever juntos)
+        # Valores maiores = mais rápido, mas usa mais VRAM
+        # 
+        # Opções:
+        # - "auto": Calcula automaticamente baseado em VRAM disponível
+        # - 1-16: Valor fixo (números maiores exigem mais VRAM)
+        # 
+        # Referência de uso de VRAM (aproximado):
+        # - batch_size=1:  ~2.5 GB
+        # - batch_size=4:  ~4.0 GB
+        # - batch_size=8:  ~6.0 GB
+        # - batch_size=16: ~10.0 GB
+        # 
+        # Recomendação:
+        # - GPU com 24GB: "auto" ou 16
+        # - GPU com 8-16GB: 8
+        # - GPU com 4-8GB: 4
+        # - CPU: 1 automático
+        'batch_size': 8,
+    },
+    
+    # ------------------------------------------------------------------------
+    # Comportamento Geral
+    # ------------------------------------------------------------------------
+    'comportamento': {
+        # Sobrescrever transcrições existentes
+        # False = pula segmentos já transcritos (verifica se campo stt_whisper existe)
+        # True = re-transcreve todos os segmentos
+        'sobrescrever': False,
+    },
+}
+
+# ============================================================
+# MÓDULO 06: STT WAV2VEC2 (SPEECH-TO-TEXT) 
+# ============================================================
+STT_WAV2VEC2= {
+    "device": "auto",  # Dispositivo de processamento: auto, cpu, gpu
+}
+
+
+# ============================================================
+# MÓDULO 07: NORMALIZADOR DE TEXTO (TEXT NORMALIZER)
+# ============================================================
+TEXT_NORMALIZER = {
+
+    # Pontuação que afeta dicção/pronúncia do locutor
+    # Remove: . , ; ! ? _
+    # Exemplo: "Olá, mundo!" → "Olá mundo" (com remove=True)
+    # Exemplo: "Olá, mundo!" → "Olá, mundo!" (com remove=False)
+    # Útil para: comparação STT onde pontuação não é transcrita
+    "remove_punctuation_diction": True,
+    
+    # Acentuação gráfica (marcas diacríticas)
+    # Remove: ' ` ^ ~
+    # Exemplo: "josé" → "jose" (com remove=True)
+    # Exemplo: "josé" → "josé" (com remove=False)
+    # IMPORTANTE: Se False, números por extenso terão acento (três, décimo)
+    #             Se True, números por extenso sem acento (tres, decimo)
+    # Útil para: normalização para modelos que não lidam bem com acentos
+    "remove_accents_graphic": True,
+}
+
+# ============================================================
+# MÓDULO 08: VALIDADOR DE SIMILARIDADE (SIMILARITY VALIDATOR)
+# ============================================================
+SIMILARITY_VALIDATOR = {
+    
+    # Limiar de similaridade para aprovação de segmentos
+    # Valor entre 0.0 (totalmente diferente) e 1.0 (idêntico)
+    # Segmentos com similaridade >= threshold são aprovados
+    # Exemplo com threshold=0.75:
+    #   - Similaridade 0.80 → APROVADO (>=0.75)
+    #   - Similaridade 0.70 → REJEITADO (<0.75)
+    # Valores típicos: 0.70 (permissivo), 0.80 (equilibrado), 0.90 (restritivo)
+    # Útil para: filtrar segmentos com alta divergência entre modelos STT
+    "similarity_threshold": 0.75,
+    
+    # Tipo de métrica para cálculo de similaridade
+    # Opções disponíveis:
+    #   "wer" (Word Error Rate) - Padrão da indústria STT
+    #       Calcula: 1 - (edições_necessárias / total_palavras)
+    #       Exemplo: "casa azul" vs "casa verde" → WER ~0.50
+    #       Sensível à ordem das palavras
+    #       Melhor para: avaliar qualidade de transcrição completa
+    #   
+    #   "cer" (Character Error Rate) - Análise em nível de caractere
+    #       Calcula: 1 - (edições_necessárias / total_caracteres)
+    #       Exemplo: "josé" vs "jose" → CER ~0.80
+    #       Mais granular que WER
+    #       Melhor para: detectar erros sutis (acentos, typos)
+    #   
+    #   "levenshtein_norm" - Distância de edição normalizada
+    #       Calcula: 1 - (distância_levenshtein / max_length)
+    #       Exemplo: "gato" vs "pato" → 0.75 (1 edição em 4 chars)
+    #       Não diferencia palavras vs caracteres
+    #       Melhor para: comparação genérica de strings
+    # 
+    # Recomendação: "wer" para STT (alinhado com métricas acadêmicas)
+    "metric_type": "wer",
+}
+
+# ============================================================
+# MÓDULO 09: DENOISER DEEPFILTERNET
+# ============================================================
+DEEPFILTERNET_DENOISER = {
+    
+    # Filtro de qualidade MOS para seleção de áudios a processar
+    # Array com categorias de qualidade desejadas
+    # Opções disponíveis: "alta", "media", "baixa"
+    # Exemplos de uso:
+    #   ["alta", "media", "baixa"] → Processa TODOS os áudios (independente de MOS)
+    #   ["alta"] → Processa APENAS áudios de alta qualidade
+    #   ["media", "baixa"] → Processa áudios de média e baixa qualidade
+    #   [] → NÃO PROCESSA NENHUM ÁUDIO (array vazio = sem processamento)
+    # 
+    # Caso de uso típico: ["media", "baixa"] 
+    #   Aplica denoising apenas onde há maior chance de melhoria
+    #   Áudios de alta qualidade já processados permanecem intactos
+    # 
+    # IMPORTANTE: Os arquivos originais (input) SEMPRE permanecem intactos
+    #             O denoising cria novos arquivos processados no output
+    "mos_quality_filter": ["media"],
+    
+    # Dispositivo de processamento
+    # Opções: "auto", "gpu", "cpu"
+    #   "auto" → Detecta GPU automaticamente, fallback para CPU
+    #   "gpu"  → Força uso de GPU (falha se indisponível)
+    #   "cpu"  → Força processamento em CPU (mais lento, sempre disponível)
+    # Recomendação: "auto" para máxima compatibilidade
+    "device": "auto",
+    
+    # Nível de agressividade do filtro pós-processamento
+    # Valores: 0, 1, 2
+    #   0 → Preserva mais características do áudio original (mínimo denoising)
+    #   1 → Balanceado entre remoção de ruído e preservação de fala (PADRÃO)
+    #   2 → Remoção máxima de ruído (pode afetar naturalidade da voz)
+    # 
+    # Recomendação por cenário:
+    #   Música de fundo presente → usar 0 ou 1
+    #   Ruído ambiente severo → usar 2
+    #   Análise STT downstream → usar 1 (equilibrado)
+    "post_filter": 1,
+    
+    # Limite de atenuação aplicado ao sinal
+    # Valor entre 0.0 e 1.0 (float)
+    #   0.0 → Sem limitação (pode causar over-processing)
+    #   1.0 → Limitação máxima (preserva dinâmica do áudio)
+    # 
+    # Função: Previne distorção em trechos de fala suave
+    # Padrão DeepFilterNet: 0.95
+    # 
+    # ⚠️ Valores muito baixos (<0.8) podem degradar inteligibilidade
+    # Recomendação: manter entre 0.90-0.98 para português brasileiro
+    "attenuation_limit": 0.95,
+    
+    # Pular segmentos já processados anteriormente
+    # Verifica flag "deepfilternet_processed" no JSON dinâmico
+    #   True → Ignora áudios com flag existente (economiza processamento)
+    #   False → Reprocessa todos os áudios elegíveis (sobrescreve outputs)
+    # 
+    # Caso de uso True: Re-execuções após falhas/interrupções
+    # Caso de uso False: Mudança de parâmetros (post_filter, attenuation_limit)
+    # 
+    # IMPORTANTE: Flag apenas previne reprocessamento, não valida qualidade
+    "skip_if_already_processed": True,
 }

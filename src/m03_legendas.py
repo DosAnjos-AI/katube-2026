@@ -23,7 +23,7 @@ import re
 from typing import List, Dict, Tuple
 
 # Recebendo o id do audio corrente
-id_video= 'LBui15ktBc0'
+id_video= 'QN7gUP7nYhQ'
 class WebVTTProcessor:
     """
     Processador universal de legendas com detecção automática de formato.

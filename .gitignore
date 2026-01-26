@@ -126,4 +126,5 @@ htmlcov/
 # Documentação
 # -----------------------------------------------------------------------------
 docs/_build/
-site/
+site/arquivos/temp/
+arquivos/audios/
