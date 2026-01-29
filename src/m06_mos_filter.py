@@ -21,7 +21,7 @@ from config import MOS_FILTER, PROJECT_ROOT
 
 # ==================== CONFIGURAÇÃO MANUAL ====================
 # ID do vídeo a ser processado
-video_id = 'QN7gUP7nYhQ'
+video_id = '0aICqierMVA'
 
 
 # ==================== CONFIGURAÇÃO DE LOGGING ====================

@@ -13,7 +13,7 @@ import sys
 sys.path.append(str(Path(__file__).parent.parent))
 from config import SEGMENTADOR_AUDIO
 
-id_video= 'QN7gUP7nYhQ'
+id_video= '0aICqierMVA'
 
 # =============================================================================
 # VARIÁVEIS DE TESTE (hardcoded para desenvolvimento)

@@ -657,3 +657,104 @@ DEEPFILTERNET_DENOISER = {
     # IMPORTANTE: Flag apenas previne reprocessamento, não valida qualidade
     "skip_if_already_processed": True,
 }
+
+# ============================================================
+# MÓDULO 10: NORMALIZADOR DE ÁUDIO SOX
+# ============================================================
+SOX_NORMALIZER = {
+    
+    # Taxa de amostragem (sample rate) do áudio de saída
+    # Valores comuns: 8000, 16000, 22050, 44100, 48000 (em Hz)
+    # Exemplos de uso por aplicação:
+    #   8000  → Telefonia (qualidade mínima)
+    #   16000 → STT (Speech-to-Text) -BalanceIO qualidade/performance
+    #   22050 → TTS (Text-to-Speech) - Qualidade intermediária
+    #   44100 → CD quality - Uso geral alta fidelidade
+    #   48000 → Professional audio/broadcasting
+    # 
+    # IMPORTANTE: Modelos STT/TTS geralmente esperam 16kHz ou 22050Hz
+    # Valores mais altos = maior qualidade mas maior custo computacional
+    "sample_rate": 24000,
+    # Valores comuns: 8000, 16000, 22050, 24000, 44100, 48000 (em Hz)
+    # Profundidade de bits (bit depth) do áudio
+    # Valores: 16, 24, 32 (em bits)
+    #   16 → Padrão para STT/TTS (suficiente para fala)
+    #   24 → Maior dinâmica (uso profissional)
+    #   32 → Máxima qualidade (raramente necessário para IA)
+    # 
+    # Recomendação: 16 bits para datasets de treino IA
+    # Valores maiores aumentam tamanho sem ganho significativo
+    "bit_depth": 16,
+    
+    # Número de canais de áudio
+    # Valores: 1 (mono), 2 (stereo)
+    #   1 → OBRIGATÓRIO para STT/TTS (modelos esperam mono)
+    #   2 → Apenas se necessário preservar espacialização
+    # 
+    # ⚠️ CRÍTICO: Praticamente todos modelos STT/TTS requerem MONO
+    # Stereo aumenta tamanho 2x sem benefício para treino
+    "channels": 1,
+    
+    # Formato do arquivo de áudio de saída
+    # Opções: "wav", "flac", "mp3", "ogg"
+    #   "wav"  → Sem compressão, máxima qualidade, arquivos grandes
+    #   "flac" → Compressão lossless, qualidade=WAV, ~50% menor
+    #   "mp3"  → Compressão lossy, qualidade OK, arquivos pequenos
+    #   "ogg"  → Compressão lossy, melhor que MP3, menos compatível
+    # 
+    # Recomendação por caso:
+    #   Treino IA → "flac" (qualidade perfeita, economia storage)
+    #   Deployment → "mp3" (menor latência de carregamento)
+    #   Arquivamento → "wav" (sem perdas, compatibilidade total)
+    "output_format": "flac",
+    
+    # Método de normalização de volume
+    # Opções: "peak", "rms", "loudness"
+    #   "peak"     → Normaliza baseado no pico mais alto (evita clipping)
+    #   "rms"      → Normaliza baseado na energia média (mais consistente)
+    #   "loudness" → Normaliza baseado em percepção humana (LUFS/EBU R128)
+    # 
+    # Recomendação por cenário:
+    #   STT dataset → "rms" (consistência entre amostras)
+    #   TTS dataset → "loudness" (naturalidade percebida)
+    #   Mixagem → "peak" (controle máximo de headroom)
+    "normalize_method": "rms",
+    
+    # Nível alvo de normalização em decibéis
+    # Valores típicos: -3.0, -1.0, 0.0 (em dB)
+    #   -3.0 → Conservador (headroom para evitar clipping)
+    #   -1.0 → Balanceado (padrão broadcasting)
+    #   0.0  → Máximo (sem margem de segurança)
+    # 
+    # ⚠️ Valores positivos causam distorção (clipping)
+    # Valores muito negativos resultam em áudio baixo
+    # Recomendação: -3.0 para datasets de treino
+    "target_level_db": -3.0,
+    
+    # Remover silêncios no início e fim dos arquivos
+    # Valores: True, False
+    #   True  → Remove silêncios (economiza storage + melhora treino)
+    #   False → Preserva áudio original completo
+    # 
+    # Benefícios quando True:
+    #   - Reduz tamanho do dataset (menos padding inútil)
+    #   - Melhora eficiência de treino (modelo foca em fala)
+    #   - Facilita alinhamento temporal em pipelines downstream
+    # 
+    # Desvantagem: Perde contexto de pausas naturais
+    # Recomendação: True para maioria dos casos STT/TTS
+    "remove_silence": True,
+    
+    # Threshold para detecção de silêncio em decibéis
+    # Valores típicos: -50, -40, -30 (em dB, negativos)
+    #   -50 → Mais sensível (remove até ruído de fundo baixo)
+    #   -40 → Balanceado (padrão recomendado)
+    #   -30 → Menos sensível (remove apenas silêncios óbvios)
+    # 
+    # IMPORTANTE: Só tem efeito se remove_silence=True
+    # Valores muito altos (-20) podem cortar fala suave
+    # Valores muito baixos (-60) podem não remover silêncio
+    # 
+    # Recomendação: -40 dB para áudio limpo, -50 dB para áudio ruidoso
+    "silence_threshold_db": -40,
+}

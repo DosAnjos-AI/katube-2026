@@ -23,8 +23,8 @@ from scipy import signal
 # ========================================
 
 # Caminhos (relativo ou absoluto)
-INPUT_DIR = "/home/dos-anjos/Dropbox/PROJETO CEIA/Alcateia/katube-2026/arquivos/temp/kzwB1kLsLes/03-segments_16khz"
-OUTPUT_DIR = "/home/dos-anjos/Dropbox/PROJETO CEIA/Alcateia/katube-2026/teste_espectro/teste_16khz"
+INPUT_DIR = "/home/ubuntu/z_projeto_2026/dataset/audio_dataset/QN7gUP7nYhQ"
+OUTPUT_DIR = "/home/ubuntu/z_projeto_2026/dataset/audio_dataset/QN7gUP7nYhQ"
 # Parâmetros de análise
 ENERGY_THRESHOLD_DB = -60  # Threshold para detectar corte espectral
 FORMATOS_SUPORTADOS = ['.flac', '.mp3', '.wav']

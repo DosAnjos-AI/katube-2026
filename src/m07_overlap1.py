@@ -32,7 +32,7 @@ from config import OVERLAP_DETECTOR, PROJECT_ROOT
 load_dotenv(PROJECT_ROOT / '.env')
 
 # ID do video a processar
-id_video = 'QN7gUP7nYhQ'
+id_video = '0aICqierMVA'
 
 # Caminhos de entrada
 PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"

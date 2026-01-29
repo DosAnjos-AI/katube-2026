@@ -2,7 +2,7 @@ from pathlib import Path
 import shutil
 
 
-id_video= 'QN7gUP7nYhQ'
+id_video= '0aICqierMVA'
 
 
 #============================================================
@@ -13,7 +13,7 @@ pasta= Path("arquivos/temp/"+ id_video)
 pasta.mkdir(parents=True, exist_ok=True)
 
 #============================================================
-# Criando subpastas
+# Criando subpastas para arquivos intermediarios
 #============================================================
 # criar pasta para os .json dinâmicos
 pasta1= Path(str(pasta)+'/00-json_dinamico')
@@ -80,3 +80,31 @@ pasta_destino.mkdir(parents=True, exist_ok=True)
 for item in pasta_origem.iterdir():
     if item.is_file():
         shutil.copy2(item, pasta_destino / item.name)
+
+
+#########################################################
+#============================================================
+# Criando pastas de dataset
+#============================================================
+
+#Definindo a pasta raiz do projeto
+projeto_raiz= Path(__file__).resolve().parent.parent
+
+
+#Criar a pasta de dataset, 
+dataset=projeto_raiz / 'dataset'
+dataset.mkdir(parents=True, exist_ok=True)
+
+#Criar a pasta de audio_dataset
+audio_dataset= dataset/ 'audio_dataset'
+audio_dataset.mkdir(parents=True, exist_ok=True)
+
+#Criar a pasta de historico
+historico_dataset= dataset/'historico_dataset'
+historico_dataset.mkdir(parents=True, exist_ok=True)
+
+#Criar a pasta de log
+log= dataset/'log'
+log.mkdir(parents=True, exist_ok=True)
+
+

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Modulo m05_segmentador_16khz.py
-Converte segmentos de audio para 16kHz quando necessario
+Converte segmentos de audio para 16kHz mono quando necessario
 Mantem formato original, copia JSON de metadados
 """
 
@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import List, Tuple
 
 
-id_video= 'QN7gUP7nYhQ'
+id_video= '0aICqierMVA'
 
 # ==============================================================================
 # CONFIGURACAO DE CAMINHOS
@@ -58,9 +58,36 @@ def obter_sample_rate(caminho_audio: Path) -> int:
         return 0
 
 
-def converter_audio_16khz(caminho_origem: Path, caminho_destino: Path) -> bool:
+def obter_canais(caminho_audio: Path) -> int:
     """
-    Converte audio para 16kHz mantendo formato original
+    Obtem o numero de canais de um arquivo de audio usando ffprobe
+    
+    Args:
+        caminho_audio: Path do arquivo de audio
+        
+    Returns:
+        Numero de canais (1=mono, 2=stereo, etc)
+        Retorna 0 se houver erro
+    """
+    try:
+        cmd = [
+            'ffprobe',
+            '-v', 'error',
+            '-select_streams', 'a:0',
+            '-show_entries', 'stream=channels',
+            '-of', 'default=noprint_wrappers=1:nokey=1',
+            str(caminho_audio)
+        ]
+        resultado = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        return int(resultado.stdout.strip())
+    except Exception as e:
+        print(f"Erro ao obter canais de {caminho_audio.name}: {e}")
+        return 0
+
+
+def converter_audio_16khz_mono(caminho_origem: Path, caminho_destino: Path) -> bool:
+    """
+    Converte audio para 16kHz mono mantendo formato original
     
     Args:
         caminho_origem: Path do arquivo original
@@ -74,6 +101,7 @@ def converter_audio_16khz(caminho_origem: Path, caminho_destino: Path) -> bool:
             'ffmpeg',
             '-i', str(caminho_origem),
             '-ar', '16000',
+            '-ac', '1',  # Forca conversao para mono
             '-y',  # Sobrescrever sem perguntar
             str(caminho_destino)
         ]
@@ -116,17 +144,18 @@ def processar_audio(caminho_origem: Path, caminho_destino: Path) -> Tuple[bool, 
         acao pode ser: 'convertido', 'copiado', 'falhou'
     """
     sr_atual = obter_sample_rate(caminho_origem)
+    canais_atual = obter_canais(caminho_origem)
     
-    if sr_atual == 0:
+    if sr_atual == 0 or canais_atual == 0:
         return False, 'falhou'
     
-    if sr_atual == 16000:
-        # Audio ja esta em 16kHz, apenas copiar
+    if sr_atual == 16000 and canais_atual == 1:
+        # Audio ja esta em 16kHz mono, apenas copiar
         sucesso = copiar_audio(caminho_origem, caminho_destino)
         return sucesso, 'copiado' if sucesso else 'falhou'
     else:
-        # Precisa converter para 16kHz
-        sucesso = converter_audio_16khz(caminho_origem, caminho_destino)
+        # Precisa converter para 16kHz mono
+        sucesso = converter_audio_16khz_mono(caminho_origem, caminho_destino)
         return sucesso, 'convertido' if sucesso else 'falhou'
 
 
@@ -200,10 +229,10 @@ def copiar_json(pasta_origem: Path, pasta_destino: Path, id_video: str) -> bool:
 def processar_pasta():
     """
     Funcao principal: processa todos os audios da pasta input
-    Converte para 16kHz quando necessario e copia JSON
+    Converte para 16kHz mono quando necessario e copia JSON
     """
     print("=" * 70)
-    print("INICIANDO CONVERSAO DE AUDIOS PARA 16kHz")
+    print("INICIANDO CONVERSAO DE AUDIOS PARA 16kHz MONO")
     print("=" * 70)
     
     # Validar caminhos
@@ -293,8 +322,8 @@ def processar_pasta():
     print("PROCESSAMENTO CONCLUIDO")
     print("=" * 70)
     print(f"Total de arquivos: {total_arquivos}")
-    print(f"Convertidos (SR alterado): {convertidos}")
-    print(f"Copiados (SR ja era 16kHz): {copiados}")
+    print(f"Convertidos (SR/canais alterados): {convertidos}")
+    print(f"Copiados (ja 16kHz mono): {copiados}")
     print(f"Falhas finais: {len(falhas)}")
     
     if falhas:
