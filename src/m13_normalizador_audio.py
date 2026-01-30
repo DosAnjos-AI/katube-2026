@@ -8,6 +8,7 @@ Adiciona campos 'sox_*' e 'utilizou_sox' aos metadados JSON
 import sys
 import json
 import subprocess
+import shutil
 from pathlib import Path
 from typing import Dict, Optional, Tuple
 
@@ -293,6 +294,27 @@ def adicionar_campos_sox(metadados: Dict, config: Dict, processado: bool) -> Dic
     return metadados_atualizados
 
 
+def limpar_pasta_vazia(pasta: Path) -> None:
+    """
+    Remove pasta se estiver vazia (sem arquivos)
+    Utilizado para evitar pastas vazias no dataset
+    """
+    if not pasta.exists():
+        return
+    
+    try:
+        # Verificar se pasta esta vazia (sem arquivos, pode ter subpastas vazias)
+        arquivos = list(pasta.rglob('*'))
+        arquivos_reais = [f for f in arquivos if f.is_file()]
+        
+        if len(arquivos_reais) == 0:
+            # Pasta vazia: remover
+            shutil.rmtree(pasta)
+            print(f"\nPasta vazia removida: {pasta}")
+    except Exception as e:
+        print(f"Aviso: Nao foi possivel remover pasta vazia {pasta}: {e}")
+
+
 def processar_normalizacao() -> Tuple[int, int, int]:
     """
     Funcao principal de processamento
@@ -412,6 +434,9 @@ def processar_normalizacao() -> Tuple[int, int, int]:
     if normalizado_atualizado:
         salvar_json(normalizado_atualizado, caminho_filtro_dinamico)
     
+    # Limpar pasta de dataset se ficou vazia
+    limpar_pasta_vazia(PASTA_OUTPUT_DATASET)
+    
     return processados, pulados, falhados
 
 
@@ -437,5 +462,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-#marcio

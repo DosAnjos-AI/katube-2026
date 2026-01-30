@@ -13,9 +13,10 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 # True = módulo será executado | False = módulo será ignorado
 MASTER = {
     'downloader': True,        # Módulo de download de áudios do YouTube
-    'segmentacao': 'vad',  # opções: 'legenda', 'vad', '' para não usar segmentador audio já segmentado.
+    'segmentacao': 'vad',      # Opções: 'legenda', 'vad', '' para não usar segmentador audio já segmentado
     'transcricao': False,      # [FUTURO] Módulo de transcrição
     'processamento': False,    # [FUTURO] Módulo de processamento
+    'cleanup': 'temp',          # Opções: 'all' (input+temp), 'input' (só input), 'temp' (só temp), 'none' (não apaga)
 }
 
 

@@ -79,6 +79,7 @@ checkpoints/
 *.iml
 *.iws
 .idea_modules/
+*.pyc
 
 # Vim
 *.swp
