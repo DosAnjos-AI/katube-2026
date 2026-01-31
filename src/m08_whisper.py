@@ -19,6 +19,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from config import STT_WHISPER, PROJECT_ROOT
+from m01_load_models import ModelManager
 
 
 # ==============================================================================
@@ -26,7 +27,7 @@ from config import STT_WHISPER, PROJECT_ROOT
 # ==============================================================================
 
 # ID do video a processar
-id_video = '0aICqierMVA'
+id_video = 'B4RgpqJhoIo'
 
 # Caminhos de entrada
 PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
@@ -144,44 +145,6 @@ def obter_batch_size(device: str) -> int:
         return int(batch_config)
 
 
-def carregar_modelo_whisper(device: str, torch_dtype: torch.dtype) -> pipeline:
-    """
-    Carrega o modelo Whisper e cria pipeline de transcricao
-    
-    Args:
-        device: 'cuda' ou 'cpu'
-        torch_dtype: torch.float16 ou torch.float32
-        
-    Returns:
-        Pipeline de transcricao configurado
-    """
-    print(f"\nCarregando modelo Whisper: {MODELO_WHISPER}")
-    print("Aguarde, isso pode levar alguns minutos na primeira execucao...")
-    
-    # Carregar modelo
-    model = AutoModelForSpeechSeq2Seq.from_pretrained(
-        MODELO_WHISPER,
-        torch_dtype=torch_dtype,
-        low_cpu_mem_usage=True,
-        use_safetensors=True
-    )
-    model.to(device)
-    
-    # Carregar processor
-    processor = AutoProcessor.from_pretrained(MODELO_WHISPER)
-    
-    # Criar pipeline
-    pipe = pipeline(
-        "automatic-speech-recognition",
-        model=model,
-        tokenizer=processor.tokenizer,
-        feature_extractor=processor.feature_extractor,
-        torch_dtype=torch_dtype,
-        device=device,
-    )
-    
-    print("Modelo carregado com sucesso!")
-    return pipe
 
 
 # ==============================================================================
@@ -526,14 +489,22 @@ def main():
     print(f"Video ID: {id_video}")
     print(f"Modelo: {MODELO_WHISPER}")
     
-    # 1. Detectar device e configurar
-    device, torch_dtype = detectar_device_e_dtype()
+    # 1. Carregar modelo usando ModelManager (singleton)
+    print("\nCarregando modelo Whisper...")
+    manager = ModelManager()
+    pipe = manager.get_whisper()
+    
+    # Device e dtype ja gerenciados pelo manager
+    # Obter device do modelo para logs e batch_size
+    device = str(pipe.model.device)
+    if 'cuda' in device:
+        device = 'cuda'
+    print(f"Pipeline carregado em {device.upper()}")
+    
+    # Obter batch_size
     batch_size = obter_batch_size(device)
     
-    # 2. Carregar modelo
-    pipe = carregar_modelo_whisper(device, torch_dtype)
-    
-    # 3. Carregar metadados
+    # 2. Carregar metadados
     print("\n" + "=" * 70)
     print("CARREGANDO METADADOS")
     print("=" * 70)

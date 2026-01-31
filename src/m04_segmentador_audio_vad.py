@@ -21,8 +21,10 @@ id_video = 'QN7gUP7nYhQ'
 # VARIÁVEIS DE TESTE (hardcoded para desenvolvimento)
 # =============================================================================
 
-PASTA_ORIGEM = "arquivos/temp/"+id_video+"/01-arquivos_originais"
-PASTA_DESTINO = "arquivos/temp/"+id_video+"/02-segmentos_originais"
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+PASTA_ORIGEM = PROJECT_ROOT / "arquivos" / "temp" / id_video / "01-arquivos_originais"
+PASTA_DESTINO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "02-segmentos_originais"
 
 
 # =============================================================================

@@ -19,6 +19,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from config import STT_WAV2VEC2, PROJECT_ROOT
+from m01_load_models import ModelManager
 
 
 # ==============================================================================
@@ -26,7 +27,7 @@ from config import STT_WAV2VEC2, PROJECT_ROOT
 # ==============================================================================
 
 # ID do video a processar
-id_video = '0aICqierMVA'
+id_video = 'B4RgpqJhoIo'
 
 # Caminhos de entrada
 PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
@@ -138,18 +139,21 @@ def transcrever_segmentos(dados_acompanhamento: Dict, segmentos_elegiveis: Set[s
     Returns:
         Tupla (dados_acompanhamento_atualizado, dados_wav2vec_somente_elegiveis)
     """
-    # Configurar device
-    device = obter_device()
-    device_id = 0 if device == "cuda" else -1
-    print(f"\nUsando device: {device}")
+    # Inicializar pipeline wav2vec2 usando ModelManager (singleton)
+    print(f"\nCarregando modelo: {MODELO_WAV2VEC2}")
+    manager = ModelManager()
+    pipe = manager.get_wav2vec()
     
-    # Inicializar pipeline wav2vec2
-    print(f"Carregando modelo: {MODELO_WAV2VEC2}")
-    pipe = pipeline(
-        "automatic-speech-recognition",
-        model=MODELO_WAV2VEC2,
-        device=device_id
-    )
+    # Device ja gerenciado pelo manager
+    device = str(pipe.model.device)
+    if 'cuda' in device:
+        device = 'cuda'
+        device_id = 0
+    else:
+        device = 'cpu'
+        device_id = -1
+    
+    print(f"Usando device: {device}")
     print("Modelo carregado com sucesso\n")
     
     # Preparar outputs

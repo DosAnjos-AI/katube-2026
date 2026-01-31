@@ -22,6 +22,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from config import OVERLAP_DETECTOR, PROJECT_ROOT
+from m01_load_models import ModelManager
 
 
 # ==============================================================================
@@ -32,7 +33,7 @@ from config import OVERLAP_DETECTOR, PROJECT_ROOT
 load_dotenv(PROJECT_ROOT / '.env')
 
 # ID do video a processar
-id_video = '0aICqierMVA'
+id_video = 'B4RgpqJhoIo'
 
 # Caminhos de entrada
 PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
@@ -135,32 +136,6 @@ def detectar_device(config_device: str) -> str:
 # FUNCOES DE CARREGAMENTO
 # ==============================================================================
 
-def carregar_modelo(device: str, hf_token: str):
-    """
-    Carrega modelo pyannote de diarizacao
-    
-    Args:
-        device: 'cuda' ou 'cpu'
-        hf_token: Token HuggingFace para autenticacao
-        
-    Returns:
-        Pipeline pyannote carregado
-    """
-    from pyannote.audio import Pipeline
-    
-    modelo_nome = OVERLAP_DETECTOR['modelo']
-    print(f"Carregando modelo: {modelo_nome}")
-    print("AVISO: Primeira execucao pode demorar (download ~1-3GB)")
-    
-    pipeline = Pipeline.from_pretrained(
-        modelo_nome,
-        token=hf_token  # Atualizado: use_auth_token -> token
-    )
-    
-    pipeline.to(torch.device(device))
-    print(f"Modelo carregado em {device.upper()}")
-    
-    return pipeline
 
 
 def carregar_json(caminho: Path) -> Dict:
@@ -514,10 +489,7 @@ def main():
     print("DETECTOR DE OVERLAP DE LOCUTORES")
     print("=" * 70)
     
-    # Validar configuracoes
-    print("\n1. Validando configuracoes...")
-    hf_token = validar_hf_token()
-    device = detectar_device(OVERLAP_DETECTOR['device'])
+    # Configurar timeout
     timeout_segundos = OVERLAP_DETECTOR['timeout']['por_audio_segundos']
     
     # Validar caminhos
@@ -529,9 +501,17 @@ def main():
         print(f"ERRO: Pasta de audios nao existe: {PASTA_AUDIOS}")
         return
     
-    # Carregar modelo
+    # Carregar modelo usando ModelManager (singleton)
     print("\n2. Carregando modelo pyannote...")
-    pipeline = carregar_modelo(device, hf_token)
+    manager = ModelManager()
+    pipeline = manager.get_pyannote()
+    
+    # O device ja esta configurado pelo ModelManager
+    # Pyannote pipeline nao tem .parameters() como modelos normais
+    device = OVERLAP_DETECTOR['device']
+    if device == 'auto':
+        device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    print(f"Pipeline configurado para {device.upper()}")
     
     # Listar segmentos para processar
     print("\n3. Listando segmentos para processar...")

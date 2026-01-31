@@ -27,7 +27,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 # ==============================================================================
 
 # ID do video a processar
-id_video = 'QN7gUP7nYhQ'
+id_video = 'B4RgpqJhoIo'
 
 # Caminhos de entrada
 PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"

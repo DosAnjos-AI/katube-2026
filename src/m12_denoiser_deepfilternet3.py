@@ -27,6 +27,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from config import DEEPFILTERNET_DENOISER, PROJECT_ROOT
+from m01_load_models import ModelManager
 
 
 # ==============================================================================
@@ -34,7 +35,7 @@ from config import DEEPFILTERNET_DENOISER, PROJECT_ROOT
 # ==============================================================================
 
 # ID do video a processar
-id_video = '0aICqierMVA'
+id_video = 'B4RgpqJhoIo'
 
 # Caminhos de entrada
 PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
@@ -95,32 +96,6 @@ def detectar_device(device_config: str) -> torch.device:
         raise ValueError(f"device_config inválido: {device_config}. Use 'auto', 'gpu' ou 'cpu'")
 
 
-def inicializar_deepfilternet(device: torch.device, post_filter: int, attenuation_limit: float):
-    """
-    Inicializa o modelo DeepFilterNet3
-    
-    Args:
-        device: Dispositivo torch
-        post_filter: Nivel de agressividade do filtro (0, 1, 2)
-        attenuation_limit: Limite de atenuacao (0.0-1.0)
-    
-    Returns:
-        Tupla (model, df_state, sample_rate)
-    """
-    print("[INFO] Inicializando DeepFilterNet3...")
-    
-    # Inicializa modelo e estado
-    model, df_state, sr = init_df(
-        post_filter=post_filter,
-        log_level="ERROR"  # Reduz verbosidade
-    )
-    
-    # Move modelo para dispositivo
-    model = model.to(device)
-    
-    print(f"[INFO] Modelo carregado: SR={sr}Hz, post_filter={post_filter}, attenuation_limit={attenuation_limit}")
-    
-    return model, df_state, sr
 
 
 # ==============================================================================
@@ -411,8 +386,15 @@ def main():
     # PASSO 3: Inicializar modelo DeepFilterNet
     if segmentos_elegiveis:
         print("[PASSO 3/6] Inicializando DeepFilterNet3...")
-        device = detectar_device(DEVICE)
-        model, df_state, sr_modelo = inicializar_deepfilternet(device, POST_FILTER, ATTENUATION_LIMIT)
+        
+        # Usar ModelManager (singleton)
+        manager = ModelManager()
+        model, df_state, sr_modelo = manager.get_deepfilternet()
+        
+        # Device ja gerenciado pelo manager
+        device = next(model.parameters()).device
+        print(f"[INFO] Modelo carregado em {device}")
+        print(f"[INFO] SR={sr_modelo}Hz, post_filter={POST_FILTER}, attenuation_limit={ATTENUATION_LIMIT}")
         print()
     else:
         print("[PASSO 3/6] Pulando inicialização - nenhum segmento para processar")

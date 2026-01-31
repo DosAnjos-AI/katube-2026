@@ -13,15 +13,15 @@ import sys
 sys.path.append(str(Path(__file__).parent.parent))
 from config import SEGMENTADOR_AUDIO
 
-id_video= '0aICqierMVA'
+id_video= 'B4RgpqJhoIo'
 
 # =============================================================================
 # VARIÁVEIS DE TESTE (hardcoded para desenvolvimento)
 # =============================================================================
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-PASTA_ORIGEM = "arquivos/temp/"+id_video+"/01-arquivos_originais"  # Substituir pelo caminho real (input: CSV + áudio)
-PASTA_DESTINO = "arquivos/temp/"+id_video+"/02-segmentos_originais"  # Substituir pelo caminho real (output: segmentos + JSON)
-
+PASTA_ORIGEM = PROJECT_ROOT / "arquivos" / "temp" / id_video / "01-arquivos_originais"
+PASTA_DESTINO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "02-segmentos_originais"
 
 # =============================================================================
 # FUNÇÕES AUXILIARES

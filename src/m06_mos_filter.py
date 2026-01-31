@@ -17,11 +17,11 @@ import shutil
 sys.path.append(str(Path(__file__).parent.parent))
 
 from config import MOS_FILTER, PROJECT_ROOT
-
+from m01_load_models import ModelManager
 
 # ==================== CONFIGURAÇÃO MANUAL ====================
 # ID do vídeo a ser processado
-video_id = '0aICqierMVA'
+video_id = 'B4RgpqJhoIo'
 
 
 # ==================== CONFIGURAÇÃO DE LOGGING ====================
@@ -90,33 +90,6 @@ def calcular_batch_size(device: torch.device) -> int:
         logger.info(f"Batch size configurado: {batch_size}")
     
     return batch_size
-
-
-def carregar_modelo(device: torch.device) -> torch.nn.Module:
-    """
-    Carrega modelo SQUIM no dispositivo especificado.
-    
-    Args:
-        device: Dispositivo onde carregar o modelo
-        
-    Returns:
-        torch.nn.Module: Modelo SQUIM carregado
-    """
-    logger.info("Carregando modelo SQUIM...")
-    start_time = time.time()
-    
-    try:
-        model = torchaudio.pipelines.SQUIM_OBJECTIVE.get_model().to(device)
-        model.eval()
-        
-        elapsed = time.time() - start_time
-        logger.info(f"Modelo SQUIM carregado com sucesso ({elapsed:.2f}s)")
-        
-        return model
-        
-    except Exception as e:
-        logger.error(f"Erro ao carregar modelo SQUIM: {e}")
-        raise
 
 
 def carregar_json_input(json_path: Path) -> Dict:
@@ -437,11 +410,13 @@ def processar_mos(video_id: str) -> bool:
         dados_json = carregar_json_input(json_input_path)
         
         # Detecta device e configura batch size
-        device = detectar_device()
+        # Obter modelo do manager (singleton)
+        manager = ModelManager()
+        model = manager.get_squim()
+
+        # Device ja gerenciado pelo manager
+        device = next(model.parameters()).device
         batch_size = calcular_batch_size(device)
-        
-        # Carrega modelo
-        model = carregar_modelo(device)
         
         # Processa todos os segmentos
         start_time = time.time()

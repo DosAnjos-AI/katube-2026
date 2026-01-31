@@ -12,10 +12,13 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 # Ativa/desativa módulos principais do sistema
 # True = módulo será executado | False = módulo será ignorado
 MASTER = {
-    'downloader': True,        # Módulo de download de áudios do YouTube
+    'downloader': False,        # Módulo de download de áudios do YouTube
     'segmentacao': 'vad',      # Opções: 'legenda', 'vad', '' para não usar segmentador audio já segmentado
-    'transcricao': False,      # [FUTURO] Módulo de transcrição
-    'processamento': False,    # [FUTURO] Módulo de processamento
+    'mos_filter': True,        # True = utilizar; False = Não utilizar
+    'overlap': True,           # Utilizar ou não o detector de overlap
+    'transcricao_whisper': True,
+    'transcricao_wav2vec': True,      
+    'Denoiser': True,    
     'cleanup': 'temp',          # Opções: 'all' (input+temp), 'input' (só input), 'temp' (só temp), 'none' (não apaga)
 }
 

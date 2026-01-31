@@ -12,14 +12,15 @@ from pathlib import Path
 from typing import List, Tuple
 
 
-id_video= '0aICqierMVA'
+id_video= 'B4RgpqJhoIo'
 
 # ==============================================================================
 # CONFIGURACAO DE CAMINHOS
 # ==============================================================================
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-PASTA_INPUT = "arquivos/temp/"+id_video+"/02-segmentos_originais"  # Alterar para pasta de origem
-PASTA_OUTPUT = "arquivos/temp/"+id_video+"/03-segments_16khz"  # Alterar para pasta destino
+PASTA_INPUT = PROJECT_ROOT / "arquivos" / "temp" / id_video /"02-segmentos_originais"  # Alterar para pasta de origem
+PASTA_OUTPUT = PROJECT_ROOT / "arquivos" / "temp" / id_video /"03-segments_16khz"  # Alterar para pasta destino
 
 # ==============================================================================
 # EXTENSOES DE AUDIO SUPORTADAS

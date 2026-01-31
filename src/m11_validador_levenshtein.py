@@ -24,7 +24,7 @@ from config import SIMILARITY_VALIDATOR, TEXT_NORMALIZER
 # ==============================================================================
 
 # ID do video a processar
-id_video = '0aICqierMVA'
+id_video = 'B4RgpqJhoIo'
 
 # Caminhos de entrada
 PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
