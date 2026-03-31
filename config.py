@@ -19,7 +19,7 @@ MASTER = {
     'transcricao_whisper': True,
     'transcricao_wav2vec': True,      
     'Denoiser': True,    
-    'cleanup': 'temp',          # Opções: 'all' (input+temp), 'input' (só input), 'temp' (só temp), 'none' (não apaga)
+    'cleanup': 'all',          # Opções: 'all' (input+temp), 'input' (só input), 'temp' (só temp), 'none' (não apaga)
 }
 
 
@@ -177,12 +177,12 @@ SEGMENTADOR_AUDIO = {
     # min_seg: Duração mínima de cada segmento em segundos
     # - Segmentos menores serão agrupados com próximos (respeitando locutores)
     # - Tolerância: aceita até 0.8s a menos
-    'min_seg': 12,
+    'min_seg': 4,
     
     # max_seg: Duração máxima de cada segmento em segundos
     # - Segmentos não ultrapassam este limite
     # - Tolerância: aceita até 0.8s a mais
-    'max_seg': 25,
+    'max_seg': 15,
 }
 
 
@@ -280,7 +280,7 @@ SEGMENTADOR_AUDIO_VAD = {
         # - Valores médios (4-8s): equilíbrio (recomendado)
         # - Valores altos (>10s): força segmentos longos
         # Exemplo: 4.0 = todos os segmentos terão no mínimo 4 segundos
-        'min_seg': 8.0,
+        'min_seg': 4.0,
         
         # Duração MÁXIMA de cada segmento em segundos
         # Segmentos mais longos são divididos em pausas naturais
@@ -296,7 +296,7 @@ SEGMENTADOR_AUDIO_VAD = {
         # - Valores médios (0.8-1.0s): equilíbrio (recomendado)
         # - Valores altos (>1.5s): mais flexível
         # Exemplo: 0.8 = aceita segmento de 3.2s (min=4.0 - tolerância=0.8)
-        'tolerancia': 0.8,
+        'tolerancia': 0.5,
     },
     
     # ------------------------------------------------------------------------
@@ -570,7 +570,7 @@ SIMILARITY_VALIDATOR = {
     #   - Similaridade 0.70 → REJEITADO (<0.75)
     # Valores típicos: 0.70 (permissivo), 0.80 (equilibrado), 0.90 (restritivo)
     # Útil para: filtrar segmentos com alta divergência entre modelos STT
-    "similarity_threshold": 0.75,
+    "similarity_threshold": 0.8,
     
     # Tipo de métrica para cálculo de similaridade
     # Opções disponíveis:

@@ -25,20 +25,6 @@ from config import TEXT_NORMALIZER, PROJECT_ROOT
 # CONFIGURACAO
 # ==============================================================================
 
-# ID do video a processar
-id_video = 'B4RgpqJhoIo'
-
-# Caminhos de entrada
-PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
-
-# Caminhos de saida
-PASTA_OUTPUT_NORMALIZADO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "08-normalizador_texto"
-PASTA_OUTPUT_JSON_DINAMICO = PASTA_JSON_DINAMICO  # Sobrescreve na mesma pasta
-
-# Arquivos de entrada/saida
-ARQUIVO_FILTRO = PASTA_JSON_DINAMICO / f"{id_video}.json"
-ARQUIVO_ACOMPANHAMENTO = PASTA_JSON_DINAMICO / f"{id_video}_segments_acompanhamento.json"
-
 # Configurar logging
 logging.basicConfig(
     level=logging.INFO,
@@ -270,7 +256,7 @@ def advanced_number_to_text(text: str, with_accents: bool = False) -> str:
         gender = 'f' if match.group(2) == 'ª' else 'm'
         return ordinal_to_words_pt(num, gender, with_accents)
     
-    text = re.sub(r'(\d+)[ºª]', replace_ordinal, text)
+    text = re.sub(r'(\d+)([ºª])', replace_ordinal, text)
     
     # Decimais (ex: 3.14, 2,5)
     def replace_decimal(match):
@@ -507,9 +493,12 @@ def normalizar_segmentos(
 # FUNCAO PRINCIPAL
 # ==============================================================================
 
-def processar_normalizacao():
+def processar_normalizacao(id_video: str):
     """
     Processa normalizacao de textos STT
+    
+    Args:
+        id_video: ID do video a processar
     
     Fluxo:
     1. Carrega arquivo de acompanhamento (obrigatorio)
@@ -518,6 +507,14 @@ def processar_normalizacao():
     4. Salva em 08-normalizador_texto/
     5. Copia para 00-json_dinamico/ (sobrescreve)
     """
+    # Definir caminhos baseados no id_video
+    PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
+    PASTA_OUTPUT_NORMALIZADO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "08-normalizador_texto"
+    PASTA_OUTPUT_JSON_DINAMICO = PASTA_JSON_DINAMICO
+    
+    ARQUIVO_FILTRO = PASTA_JSON_DINAMICO / f"{id_video}.json"
+    ARQUIVO_ACOMPANHAMENTO = PASTA_JSON_DINAMICO / f"{id_video}_segments_acompanhamento.json"
+    
     logger.info("="*70)
     logger.info("MODULO 10: NORMALIZADOR DE TEXTO")
     logger.info("="*70)
@@ -638,7 +635,7 @@ def processar_normalizacao():
 # ==============================================================================
 
 if __name__ == "__main__":
-    sucesso = processar_normalizacao()
+    sucesso = processar_normalizacao('CA6TSoMw86k')
     
     if not sucesso:
         logger.error("ERRO: Processamento falhou")

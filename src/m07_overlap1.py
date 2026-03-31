@@ -32,17 +32,6 @@ from m01_load_models import ModelManager
 # Carregar variaveis de ambiente (.env)
 load_dotenv(PROJECT_ROOT / '.env')
 
-# ID do video a processar
-id_video = 'B4RgpqJhoIo'
-
-# Caminhos de entrada
-PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
-PASTA_AUDIOS = PROJECT_ROOT / "arquivos" / "temp" / id_video / "03-segments_16khz"
-
-# Caminhos de saida
-PASTA_OUTPUT_OVERLAP = PROJECT_ROOT / "arquivos" / "temp" / id_video / "05-overlap1"
-PASTA_OUTPUT_JSON_DINAMICO = PASTA_JSON_DINAMICO  # Sobrescreve na mesma pasta
-
 # Extensoes de audio suportadas
 EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
 
@@ -168,9 +157,13 @@ def salvar_json(dados: Dict, caminho: Path) -> None:
 # FUNCOES DE PROCESSAMENTO
 # ==============================================================================
 
-def listar_segmentos_para_processar() -> Tuple[Dict, Dict, List[str]]:
+def listar_segmentos_para_processar(pasta_json_dinamico: Path, id_video: str) -> Tuple[Dict, Dict, List[str]]:
     """
     Lista segmentos elegiveis para processamento
+    
+    Args:
+        pasta_json_dinamico: Caminho para pasta 00-json_dinamico
+        id_video: ID do video
     
     Returns:
         Tupla contendo:
@@ -179,7 +172,7 @@ def listar_segmentos_para_processar() -> Tuple[Dict, Dict, List[str]]:
         - segmentos_processar: Lista de nomes de arquivos a processar
     """
     # Carregar JSON de acompanhamento (obrigatorio)
-    json_acompanhamento = PASTA_JSON_DINAMICO / f"{id_video}_segments_acompanhamento.json"
+    json_acompanhamento = pasta_json_dinamico / f"{id_video}_segments_acompanhamento.json"
     
     if not json_acompanhamento.exists():
         raise FileNotFoundError(
@@ -189,7 +182,7 @@ def listar_segmentos_para_processar() -> Tuple[Dict, Dict, List[str]]:
     dados_acompanhamento = carregar_json(json_acompanhamento)
     
     # Tentar carregar JSON de filtro (opcional)
-    json_filtro = PASTA_JSON_DINAMICO / f"{id_video}.json"
+    json_filtro = pasta_json_dinamico / f"{id_video}.json"
     dados_filtro = None
     
     if json_filtro.exists():
@@ -243,7 +236,8 @@ def detectar_overlap(pipeline, audio_path: Path, timeout_segundos: int) -> Optio
 def processar_todos_segmentos(
     pipeline,
     segmentos: List[str],
-    timeout_segundos: int
+    timeout_segundos: int,
+    pasta_audios: Path
 ) -> Dict[str, Optional[bool]]:
     """
     Processa todos os segmentos de audio
@@ -252,38 +246,35 @@ def processar_todos_segmentos(
         pipeline: Pipeline pyannote carregado
         segmentos: Lista de nomes de arquivos a processar
         timeout_segundos: Timeout por audio
+        pasta_audios: Caminho para pasta com audios
         
     Returns:
         Dicionario {nome_arquivo: resultado_overlap}
+        resultado_overlap pode ser: True, False ou None
     """
     resultados = {}
     total = len(segmentos)
     
-    print(f"\nProcessando {total} segmentos de audio...")
+    print(f"Total de segmentos a processar: {total}")
     print("-" * 70)
     
     for idx, nome_arquivo in enumerate(segmentos, 1):
-        # Encontrar arquivo de audio correspondente
+        # Encontrar arquivo de audio (pode ter extensao diferente)
         audio_path = None
         for ext in EXTENSOES_AUDIO:
-            caminho_teste = PASTA_AUDIOS / nome_arquivo
-            # Ajustar extensao se necessario
-            if caminho_teste.suffix.lower() not in EXTENSOES_AUDIO:
-                # Tentar com extensao do JSON
-                caminho_teste = PASTA_AUDIOS / nome_arquivo
-            
+            caminho_teste = pasta_audios / nome_arquivo
             if caminho_teste.exists():
                 audio_path = caminho_teste
                 break
         
         if not audio_path:
-            print(f"[{idx}/{total}] {nome_arquivo}... AUDIO NAO ENCONTRADO")
+            print(f"[{idx}/{total}] {nome_arquivo} - ARQUIVO NAO ENCONTRADO")
             resultados[nome_arquivo] = None
             continue
         
+        # Processar audio
         print(f"[{idx}/{total}] {nome_arquivo}...", end=" ", flush=True)
         
-        # Detectar overlap
         resultado = detectar_overlap(pipeline, audio_path, timeout_segundos)
         
         if resultado is None:
@@ -301,33 +292,36 @@ def processar_todos_segmentos(
 def retry_falhas(
     pipeline,
     resultados: Dict[str, Optional[bool]],
-    timeout_segundos: int
+    timeout_segundos: int,
+    pasta_audios: Path
 ) -> Dict[str, Optional[bool]]:
     """
-    Tenta reprocessar segmentos que falharam
+    Tenta reprocessar arquivos que falharam
     
     Args:
-        pipeline: Pipeline pyannote
-        resultados: Resultados da primeira tentativa
+        pipeline: Pipeline pyannote carregado
+        resultados: Resultados do processamento inicial
         timeout_segundos: Timeout por audio
+        pasta_audios: Caminho para pasta com audios
         
     Returns:
-        Resultados atualizados
+        Dicionario de resultados atualizado
     """
-    falhas = [nome for nome, res in resultados.items() if res is None]
+    # Identificar falhas
+    falhas = [nome for nome, resultado in resultados.items() if resultado is None]
     
     if not falhas:
+        print("\nNenhuma falha detectada - nao ha necessidade de retry")
         return resultados
     
-    print("\n" + "=" * 70)
-    print(f"SEGUNDA TENTATIVA - {len(falhas)} segmento(s) com falha")
+    print(f"\n{len(falhas)} arquivo(s) falharam - tentando novamente...")
     print("=" * 70)
     
     for idx, nome_arquivo in enumerate(falhas, 1):
         # Encontrar arquivo
         audio_path = None
         for ext in EXTENSOES_AUDIO:
-            caminho_teste = PASTA_AUDIOS / nome_arquivo
+            caminho_teste = pasta_audios / nome_arquivo
             if caminho_teste.exists():
                 audio_path = caminho_teste
                 break
@@ -395,7 +389,8 @@ def criar_jsons_output(
 def validar_consistencia(
     json_acompanhamento: Dict,
     json_overlap01: Dict,
-    resultados: Dict[str, Optional[bool]]
+    resultados: Dict[str, Optional[bool]],
+    pasta_audios: Path
 ) -> bool:
     """
     Valida consistencia dos dados antes de salvar
@@ -404,6 +399,7 @@ def validar_consistencia(
         json_acompanhamento: JSON de acompanhamento
         json_overlap01: JSON overlap01
         resultados: Resultados do processamento
+        pasta_audios: Caminho para pasta com audios
         
     Returns:
         True se validacao OK, False caso contrario
@@ -424,7 +420,7 @@ def validar_consistencia(
     for nome in resultados.keys():
         arquivo_existe = False
         for ext in EXTENSOES_AUDIO:
-            if (PASTA_AUDIOS / nome).exists():
+            if (pasta_audios / nome).exists():
                 arquivo_existe = True
                 break
         
@@ -442,7 +438,10 @@ def validar_consistencia(
 
 def salvar_outputs(
     json_acompanhamento: Dict,
-    json_overlap01: Dict
+    json_overlap01: Dict,
+    pasta_output_overlap: Path,
+    pasta_output_json_dinamico: Path,
+    id_video: str
 ) -> None:
     """
     Salva JSONs nas pastas de output
@@ -450,29 +449,32 @@ def salvar_outputs(
     Args:
         json_acompanhamento: JSON de acompanhamento atualizado
         json_overlap01: JSON overlap01 (apenas aprovados)
+        pasta_output_overlap: Caminho para pasta 05-overlap1
+        pasta_output_json_dinamico: Caminho para pasta 00-json_dinamico
+        id_video: ID do video
     """
     # Criar pasta 05-overlap1 se nao existir
-    PASTA_OUTPUT_OVERLAP.mkdir(parents=True, exist_ok=True)
+    pasta_output_overlap.mkdir(parents=True, exist_ok=True)
     
     # Salvar em 05-overlap1
-    caminho_acompanhamento = PASTA_OUTPUT_OVERLAP / f"{id_video}_segments_acompanhamento.json"
-    caminho_overlap01 = PASTA_OUTPUT_OVERLAP / f"{id_video}_overlap01.json"
+    caminho_acompanhamento = pasta_output_overlap / f"{id_video}_segments_acompanhamento.json"
+    caminho_overlap01 = pasta_output_overlap / f"{id_video}_overlap01.json"
     
     salvar_json(json_acompanhamento, caminho_acompanhamento)
     salvar_json(json_overlap01, caminho_overlap01)
     
-    print(f"\nJSONs salvos em: {PASTA_OUTPUT_OVERLAP}")
+    print(f"\nJSONs salvos em: {pasta_output_overlap}")
     print(f"  - {caminho_acompanhamento.name}")
     print(f"  - {caminho_overlap01.name}")
     
     # Copiar para 00-json_dinamico (sobrescrever)
-    dest_acompanhamento = PASTA_OUTPUT_JSON_DINAMICO / f"{id_video}_segments_acompanhamento.json"
-    dest_filtro = PASTA_OUTPUT_JSON_DINAMICO / f"{id_video}.json"
+    dest_acompanhamento = pasta_output_json_dinamico / f"{id_video}_segments_acompanhamento.json"
+    dest_filtro = pasta_output_json_dinamico / f"{id_video}.json"
     
     shutil.copy2(caminho_acompanhamento, dest_acompanhamento)
     shutil.copy2(caminho_overlap01, dest_filtro)
     
-    print(f"\nJSONs copiados para: {PASTA_OUTPUT_JSON_DINAMICO}")
+    print(f"\nJSONs copiados para: {pasta_output_json_dinamico}")
     print(f"  - {dest_acompanhamento.name} (sobrescrito)")
     print(f"  - {dest_filtro.name} (sobrescrito)")
 
@@ -481,10 +483,19 @@ def salvar_outputs(
 # FUNCAO PRINCIPAL
 # ==============================================================================
 
-def main():
+def main(id_video: str):
     """
     Funcao principal: orquestra todo o processamento
+    
+    Args:
+        id_video: ID do video a processar
     """
+    # Definir caminhos baseados no id_video
+    PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
+    PASTA_AUDIOS = PROJECT_ROOT / "arquivos" / "temp" / id_video / "03-segments_16khz"
+    PASTA_OUTPUT_OVERLAP = PROJECT_ROOT / "arquivos" / "temp" / id_video / "05-overlap1"
+    PASTA_OUTPUT_JSON_DINAMICO = PASTA_JSON_DINAMICO
+    
     print("=" * 70)
     print("DETECTOR DE OVERLAP DE LOCUTORES")
     print("=" * 70)
@@ -515,7 +526,7 @@ def main():
     
     # Listar segmentos para processar
     print("\n3. Listando segmentos para processar...")
-    dados_acompanhamento, dados_filtro, segmentos = listar_segmentos_para_processar()
+    dados_acompanhamento, dados_filtro, segmentos = listar_segmentos_para_processar(PASTA_JSON_DINAMICO, id_video)
     
     if not segmentos:
         print("AVISO: Nenhum segmento para processar")
@@ -523,10 +534,10 @@ def main():
     
     # Processar segmentos
     print("\n4. Processando segmentos...")
-    resultados = processar_todos_segmentos(pipeline, segmentos, timeout_segundos)
+    resultados = processar_todos_segmentos(pipeline, segmentos, timeout_segundos, PASTA_AUDIOS)
     
     # Retry para falhas (se houver)
-    resultados = retry_falhas(pipeline, resultados, timeout_segundos)
+    resultados = retry_falhas(pipeline, resultados, timeout_segundos, PASTA_AUDIOS)
     
     # Criar JSONs de output
     print("\n5. Criando JSONs de output...")
@@ -538,7 +549,7 @@ def main():
     
     # Validar consistencia
     print("\n6. Validando consistencia dos dados...")
-    if not validar_consistencia(json_acompanhamento_novo, json_overlap01, resultados):
+    if not validar_consistencia(json_acompanhamento_novo, json_overlap01, resultados, PASTA_AUDIOS):
         print("\nERRO: Validacao falhou - JSONs NAO foram salvos")
         return
     
@@ -546,7 +557,7 @@ def main():
     
     # Salvar outputs
     print("\n7. Salvando outputs...")
-    salvar_outputs(json_acompanhamento_novo, json_overlap01)
+    salvar_outputs(json_acompanhamento_novo, json_overlap01, PASTA_OUTPUT_OVERLAP, PASTA_OUTPUT_JSON_DINAMICO, id_video)
     
     # Relatorio final
     print("\n" + "=" * 70)
@@ -571,4 +582,4 @@ def main():
 # ==============================================================================
 
 if __name__ == "__main__":
-    main()
+    main('CA6TSoMw86k')

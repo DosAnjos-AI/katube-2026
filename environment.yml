@@ -1,0 +1,47 @@
+name: katube-2026
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  # -------------------------------------------------------------------------
+  # Python
+  # -------------------------------------------------------------------------
+  - python=3.10.19
+
+  # -------------------------------------------------------------------------
+  # PyTorch com CUDA 12.1
+  # CRITICO: deve vir pelo canal pytorch/nvidia, nao pelo pip
+  # Instalar antes de qualquer dependencia de ML
+  # -------------------------------------------------------------------------
+  - pytorch::pytorch=2.8.0=py3.10_cuda12.1_cudnn9.1_0
+  - pytorch::torchaudio=2.8.0=py310_cu121
+  - pytorch::torchvision=0.23.0=py310_cu121
+  - pytorch::pytorch-cuda=12.1
+
+  # -------------------------------------------------------------------------
+  # Computacao cientifica
+  # CRITICO: numpy pinado em 1.26.4 — numba e librosa dependem desta versao
+  # -------------------------------------------------------------------------
+  - numpy=1.26.4
+  - scipy=1.15.3
+  - numba=0.63.1
+  - scikit-learn=1.7.2
+
+  # -------------------------------------------------------------------------
+  # Audio (binarios via conda — mais estavel que pip)
+  # -------------------------------------------------------------------------
+  - conda-forge::librosa=0.11.0
+  - conda-forge::pysoundfile=0.13.1
+  - conda-forge::soxr-python=1.0.0
+
+  # -------------------------------------------------------------------------
+  # Utilitarios sistema
+  # -------------------------------------------------------------------------
+  - conda-forge::ffmpeg
+  - conda-forge::sox
+  - pip
+  - pip:
+      - -r requirements.txt

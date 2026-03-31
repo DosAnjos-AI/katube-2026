@@ -13,6 +13,8 @@ import random
 import logging
 import shutil
 import json
+import subprocess
+import platform
 from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Optional, Tuple
@@ -60,6 +62,75 @@ def configurar_logging() -> None:
     logging.info("="*70)
     logging.info("INICIANDO MÓDULO DOWNLOADER")
     logging.info("="*70)
+
+
+# ============================================================================
+# ATUALIZAÇÃO AUTOMÁTICA DO YT-DLP
+# ============================================================================
+
+def atualizar_yt_dlp() -> bool:
+    """
+    Atualiza yt-dlp automaticamente antes de iniciar downloads
+    Detecta SO e método de instalação
+    Retorna True se sucesso ou se atualização não for necessária, False em caso de erro crítico
+    """
+    sistema = platform.system()  # 'Linux', 'Windows', 'Darwin' (Mac)
+    
+    logging.info(f"Sistema operacional detectado: {sistema}")
+    logging.info("Verificando atualizações do yt-dlp...")
+    
+    try:
+        # Obtém versão atual
+        try:
+            result_version = subprocess.run(
+                [sys.executable, '-m', 'pip', 'show', 'yt-dlp'],
+                capture_output=True,
+                text=True,
+                timeout=10
+            )
+            
+            if result_version.returncode == 0:
+                for linha in result_version.stdout.split('\n'):
+                    if linha.startswith('Version:'):
+                        versao_atual = linha.split(':')[1].strip()
+                        logging.info(f"Versão atual do yt-dlp: {versao_atual}")
+                        break
+        except:
+            logging.warning("Não foi possível obter versão atual")
+        
+        # Tenta atualizar via pip (funciona em todos os SOs)
+        logging.info("Executando atualização do yt-dlp...")
+        result = subprocess.run(
+            [sys.executable, '-m', 'pip', 'install', '--upgrade', 'yt-dlp'],
+            capture_output=True,
+            text=True,
+            timeout=60
+        )
+        
+        if result.returncode == 0:
+            # Verifica se houve atualização ou já estava atualizado
+            if 'Successfully installed' in result.stdout:
+                logging.info("yt-dlp atualizado com sucesso!")
+            elif 'Requirement already satisfied' in result.stdout or 'already up-to-date' in result.stdout:
+                logging.info("yt-dlp já está na versão mais recente")
+            else:
+                logging.info("Atualização do yt-dlp concluída")
+            return True
+        else:
+            logging.warning(f"Não foi possível atualizar yt-dlp")
+            logging.warning(f"Detalhes: {result.stderr[:200]}")
+            logging.info("Continuando com a versão atual instalada...")
+            return True  # Continua mesmo sem atualizar
+            
+    except subprocess.TimeoutExpired:
+        logging.warning("Timeout ao tentar atualizar yt-dlp")
+        logging.info("Continuando com a versão atual instalada...")
+        return True  # Continua mesmo sem atualizar
+        
+    except Exception as e:
+        logging.error(f"Erro ao atualizar yt-dlp: {e}")
+        logging.info("Continuando com a versão atual instalada...")
+        return True  # Continua mesmo sem atualizar
 
 
 # ============================================================================
@@ -739,6 +810,11 @@ def main():
     """
     # Configura logging
     configurar_logging()
+    
+    # Atualiza yt-dlp automaticamente
+    logging.info("")
+    atualizar_yt_dlp()
+    logging.info("")
     
     # Valida ambiente
     if not validar_ambiente():

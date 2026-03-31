@@ -20,17 +20,6 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from config import MASTER
 
 # ==============================================================================
-# CONFIGURACAO DE INPUTS/OUTPUTS
-# ==============================================================================
-
-# ID do video a processar
-id_video = 'QN7gUP7nYhQ'
-
-# Caminhos para limpeza
-PASTA_TEMP = PROJECT_ROOT / "arquivos" / "temp" / id_video
-PASTA_INPUT = PROJECT_ROOT / "arquivos" / "audios" / id_video
-
-# ==============================================================================
 # FUNCOES DE LIMPEZA
 # ==============================================================================
 
@@ -61,12 +50,22 @@ def excluir_pasta(pasta: Path, tipo: str) -> bool:
 # FUNCAO PRINCIPAL DE CLEANUP
 # ==============================================================================
 
-def executar_cleanup():
-    """Executa limpeza conforme configuracao MASTER['cleanup']"""
+def executar_cleanup(id_video: str):
+    """
+    Executa limpeza conforme configuracao MASTER['cleanup']
+    
+    Args:
+        id_video: ID do video a processar
+    """
+    # Definir caminhos baseados no id_video
+    PASTA_TEMP = PROJECT_ROOT / "arquivos" / "temp" / id_video
+    PASTA_INPUT = PROJECT_ROOT / "arquivos" / "audios" / id_video
+    
     modo = MASTER.get('cleanup', 'none')
     
     print(f"\n{'='*70}")
     print(f"INICIANDO CLEANUP - Modo: {modo}")
+    print(f"ID do video: {id_video}")
     print(f"{'='*70}\n")
     
     if modo == 'none':
@@ -100,4 +99,4 @@ def executar_cleanup():
 # ==============================================================================
 
 if __name__ == "__main__":
-    executar_cleanup()
+    executar_cleanup('B4RgpqJhoIo')

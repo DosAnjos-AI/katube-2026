@@ -12,15 +12,12 @@ from pathlib import Path
 from typing import List, Tuple
 
 
-id_video= 'B4RgpqJhoIo'
 
 # ==============================================================================
 # CONFIGURACAO DE CAMINHOS
 # ==============================================================================
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-PASTA_INPUT = PROJECT_ROOT / "arquivos" / "temp" / id_video /"02-segmentos_originais"  # Alterar para pasta de origem
-PASTA_OUTPUT = PROJECT_ROOT / "arquivos" / "temp" / id_video /"03-segments_16khz"  # Alterar para pasta destino
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 # ==============================================================================
 # EXTENSOES DE AUDIO SUPORTADAS
@@ -227,18 +224,22 @@ def copiar_json(pasta_origem: Path, pasta_destino: Path, id_video: str) -> bool:
 # FUNCAO PRINCIPAL
 # ==============================================================================
 
-def processar_pasta():
+def processar_pasta(id_video: str):
     """
     Funcao principal: processa todos os audios da pasta input
     Converte para 16kHz mono quando necessario e copia JSON
+    
+    Args:
+        id_video: ID do video a processar
     """
     print("=" * 70)
     print("INICIANDO CONVERSAO DE AUDIOS PARA 16kHz MONO")
     print("=" * 70)
     
     # Validar caminhos
-    pasta_input = Path(PASTA_INPUT)
-    pasta_output = Path(PASTA_OUTPUT)
+    PROJECT_ROOT = Path(__file__).resolve().parent.parent
+    pasta_input = PROJECT_ROOT / "arquivos" / "temp" / id_video / "02-segmentos_originais"
+    pasta_output = PROJECT_ROOT / "arquivos" / "temp" / id_video / "03-segments_16khz"
     
     if not pasta_input.exists():
         print(f"ERRO: Pasta de input nao existe: {PASTA_INPUT}")
@@ -340,4 +341,4 @@ def processar_pasta():
 # ==============================================================================
 
 if __name__ == "__main__":
-    processar_pasta()
+    processar_pasta('CA6TSoMw86k') # verificar para testes, garantir que existe este id no input "./arquivos/audios/"

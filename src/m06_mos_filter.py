@@ -19,10 +19,6 @@ sys.path.append(str(Path(__file__).parent.parent))
 from config import MOS_FILTER, PROJECT_ROOT
 from m01_load_models import ModelManager
 
-# ==================== CONFIGURAÇÃO MANUAL ====================
-# ID do vídeo a ser processado
-video_id = 'B4RgpqJhoIo'
-
 
 # ==================== CONFIGURAÇÃO DE LOGGING ====================
 logging.basicConfig(
@@ -494,7 +490,7 @@ def processar_mos(video_id: str) -> bool:
 # ==================== TESTE MANUAL ====================
 
 if __name__ == "__main__":
-    sucesso = processar_mos(video_id)
+    sucesso = processar_mos("CA6TSoMw86k")
     
     if sucesso:
         logger.info("Processamento MOS concluido com sucesso")

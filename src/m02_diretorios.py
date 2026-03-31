@@ -4,11 +4,9 @@ import shutil
 # Definir PROJECT_ROOT no escopo global
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-id_video = 'B4RgpqJhoIo'
 
-print(str(PROJECT_ROOT) + "/arquivos/temp/" + id_video)
 
-def criar_diretorios():
+def criar_diretorios(id_video: str):
     #============================================================
     # Criando pasta geral do vídeo onde estará todos as subpastas
     #============================================================
@@ -107,4 +105,5 @@ def criar_diretorios():
 
 
 if __name__ == '__main__':
-    criar_diretorios()
+    id_video_testes='CA6TSoMw86k'       #para testes, verificar se existe pasta com esse id
+    criar_diretorios(id_video_testes)

@@ -1,49 +1,108 @@
-# ============================================
-# KATUBE-2026 - Requirements
-# Projeto de Processamento de Áudio e Speech-to-Text
-# Python 3.10 Compatible
-# ============================================
+# =============================================================================
+# ORDEM DE INSTALACAO IMPORTA — nao reorganizar blocos
+# Executar sempre apos criar o ambiente via environment.yml
+# =============================================================================
 
-# Core Data Science (compatível com Python 3.10)
-numpy>=2.0.0,<2.3.0
-pandas>=2.0.0
-scipy>=1.10.0
-scikit-learn>=1.3.0
 
-# Machine Learning
-xgboost>=2.0.0
-imbalanced-learn>=0.11.0
+# -----------------------------------------------------------------------------
+# BLOCO 1: Infraestrutura base
+# Instalar primeiro — outros pacotes dependem destes
+# -----------------------------------------------------------------------------
+numpy==1.26.4
+packaging==23.2
+filelock==3.20.0
+fsspec==2026.1.0
+typing_extensions==4.15.0
+requests==2.32.5
+tqdm==4.67.1
+pyyaml==6.0.3
+regex==2026.1.15
+safetensors==0.7.0
+tokenizers==0.22.2
 
-# Visualização
-matplotlib>=3.8.0
-seaborn
 
-# Processamento de Áudio
-soundfile>=0.12.0
-librosa>=0.10.0
-audioread>=3.0.0
-pydub>=0.25.0
+# -----------------------------------------------------------------------------
+# BLOCO 2: HuggingFace
+# Instalar antes de transformers, pyannote e deepfilternet
+# -----------------------------------------------------------------------------
+huggingface-hub==0.36.0
+accelerate==1.12.0
+transformers==4.57.6
 
-# Utilitários
-tqdm>=4.65.0
-python-dateutil
-pyyaml
-click
-rich
 
-# Speech-to-Text
-openai-whisper
-faster-whisper
-transformers>=4.30.0
-accelerate>=0.20.0
+# -----------------------------------------------------------------------------
+# BLOCO 3: Pyannote (overlap/diarizacao)
+# CRITICO: requer torch ja instalado e token HuggingFace configurado no .env
+# Instalar apos transformers
+# -----------------------------------------------------------------------------
+pyannote-audio==4.0.3
+pyannote-core==6.0.1
+pyannote-database==6.1.1
+pyannote-metrics==4.0.0
+pyannote-pipeline==4.0.0
+pyannoteai-sdk==0.4.0
+asteroid-filterbanks==0.4.0
+julius==0.2.7
+einops==0.8.1
+lightning==2.6.0
+lightning-utilities==0.15.2
+pytorch-lightning==2.6.0
+pytorch-metric-learning==2.9.0
+torch-audiomentations==0.12.0
+torch-pitch-shift==1.2.5
+torchmetrics==1.8.2
 
-# Análise de Voz
-pyannote.audio
 
-# Download
-yt-dlp
+# -----------------------------------------------------------------------------
+# BLOCO 4: DeepFilterNet (denoiser)
+# CRITICO: instalar apos torch e torchaudio estarem estaveis no ambiente
+# -----------------------------------------------------------------------------
+deepfilternet==0.5.6
 
-#Jupyter
-jupyter
-ipykernel
-notebook
+
+# -----------------------------------------------------------------------------
+# BLOCO 5: Audio e processamento
+# -----------------------------------------------------------------------------
+pydub==0.25.1
+audioread==3.0.1
+soundfile==0.13.1
+sox==1.5.0
+soxr==1.0.0
+onnxruntime==1.23.2
+
+
+# -----------------------------------------------------------------------------
+# BLOCO 6: STT / NLP
+# -----------------------------------------------------------------------------
+Levenshtein==0.27.3
+python-Levenshtein==0.27.3
+rapidfuzz==3.14.3
+
+
+# -----------------------------------------------------------------------------
+# BLOCO 7: Download
+# -----------------------------------------------------------------------------
+yt-dlp==2026.2.4
+yt-dlp-ejs==0.4.0
+mutagen==1.47.0
+pycryptodomex==3.23.0
+curl_cffi==0.14.0
+websockets==16.0
+
+
+# -----------------------------------------------------------------------------
+# BLOCO 8: Utilitarios gerais
+# -----------------------------------------------------------------------------
+python-dotenv==1.2.1
+loguru==0.7.3
+colorlog==6.10.1
+coloredlogs==15.0.1
+rich==14.2.0
+pandas==2.3.3
+numpy==1.26.4
+psutil==7.2.1
+python-dateutil==2.9.0.post0
+tzdata==2025.3
+pytz==2025.2
+six==1.17.0
+click==8.3.1

@@ -1,132 +1,73 @@
 # =============================================================================
-# GITIGNORE - KATUBE-2026
+# VARIAVEIS DE AMBIENTE
+# =============================================================================
+.env
+.env.*
+env/
+venv/
+.venv/
+
+# =============================================================================
+# AUDIOS (formatos de audio)
+# =============================================================================
+*.flac
+*.wav
+*.mp3
+*.m4a
+*.opus
+*.ogg
+*.aac
+
+# =============================================================================
+# PASTAS DO PIPELINE (manter estrutura, ignorar conteudo)
 # =============================================================================
 
-# -----------------------------------------------------------------------------
-# Variáveis de Ambiente e Credenciais
-# -----------------------------------------------------------------------------
-.env
-.env.local
-.env.*.local
+# audios brutos
+arquivos/audios/*
+!arquivos/audios/.gitkeep
 
-# -----------------------------------------------------------------------------
-# Python
-# -----------------------------------------------------------------------------
-# Bytecode
+# temporarios
+arquivos/temp/*
+!arquivos/temp/.gitkeep
+
+# segmentos aprovados
+dataset/audio_dataset/*
+!dataset/audio_dataset/.gitkeep
+
+# historico de processamento (jsons)
+dataset/historico_dataset/*
+!dataset/historico_dataset/.gitkeep
+
+# logs de processamento
+dataset/log/*.log
+!dataset/log/.gitkeep
+
+# dataset consolidado
+dataset/dataset.csv
+
+# =============================================================================
+# PYTHON
+# =============================================================================
 __pycache__/
-*.py[cod]
-*$py.class
 *.pyc
-
-# Distribuição / Empacotamento
-*.so
-*.egg
+*.pyo
+*.pyd
 *.egg-info/
 dist/
 build/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.manifest
-*.spec
-
-# Instaladores
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Ambientes virtuais
-venv/
-ENV/
-env/
-.venv
-
-# -----------------------------------------------------------------------------
-# Dados Temporários e Processamento
-# -----------------------------------------------------------------------------
-# Pasta principal de arquivos temporários do projeto
-arquivos/temp/
-
-# Logs
-*.log
-logs/
-
-# Cache de modelos ML
-*.ckpt
-*.pth
-*.pt
-checkpoints/
-
-# -----------------------------------------------------------------------------
-# IDEs e Editores
-# -----------------------------------------------------------------------------
-# VSCode
-.vscode/
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# PyCharm
-.idea/
-*.iml
-*.iws
-.idea_modules/
-*.pyc
-
-# Vim
-*.swp
-*.swo
-*~
-
-# Emacs
-*~
-\#*\#
-.\#*
-
-# Sublime Text
-*.sublime-project
-*.sublime-workspace
-
-# -----------------------------------------------------------------------------
-# Sistema Operacional
-# -----------------------------------------------------------------------------
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-._*
-
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-
-# Linux
-.directory
-.Trash-*
-
-# -----------------------------------------------------------------------------
-# Testes e Cobertura
-# -----------------------------------------------------------------------------
 .pytest_cache/
 .coverage
 htmlcov/
-.tox/
-.nox/
 
-# -----------------------------------------------------------------------------
-# Documentação
-# -----------------------------------------------------------------------------
-docs/_build/
-site/arquivos/temp/
-arquivos/audios/
-dataset/
+# =============================================================================
+# JUPYTER
+# =============================================================================
+.ipynb_checkpoints/
+
+# =============================================================================
+# IDEs E SISTEMA OPERACIONAL
+# =============================================================================
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

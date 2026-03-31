@@ -26,17 +26,6 @@ from m01_load_models import ModelManager
 # CONFIGURACAO
 # ==============================================================================
 
-# ID do video a processar
-id_video = 'B4RgpqJhoIo'
-
-# Caminhos de entrada
-PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
-PASTA_AUDIOS = PROJECT_ROOT / "arquivos" / "temp" / id_video / "03-segments_16khz"
-
-# Caminhos de saida
-PASTA_OUTPUT_STT = PROJECT_ROOT / "arquivos" / "temp" / id_video / "06-stt_whisper"
-PASTA_OUTPUT_JSON_DINAMICO = PASTA_JSON_DINAMICO  # Sobrescreve na mesma pasta
-
 # Extensoes de audio suportadas
 EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
 
@@ -191,9 +180,13 @@ def salvar_json(dados: Dict, caminho: Path) -> bool:
         return False
 
 
-def carregar_metadados() -> Tuple[Optional[Dict], Optional[Dict]]:
+def carregar_metadados(pasta_json_dinamico: Path, id_video: str) -> Tuple[Optional[Dict], Optional[Dict]]:
     """
     Carrega os arquivos JSON de metadados
+    
+    Args:
+        pasta_json_dinamico: Caminho para pasta 00-json_dinamico
+        id_video: ID do video
     
     Returns:
         Tupla (json_filtrado, json_acompanhamento)
@@ -201,7 +194,7 @@ def carregar_metadados() -> Tuple[Optional[Dict], Optional[Dict]]:
         json_acompanhamento deve existir (obrigatorio)
     """
     # Arquivo de acompanhamento (obrigatorio)
-    arquivo_acompanhamento = PASTA_JSON_DINAMICO / f"{id_video}_segments_acompanhamento.json"
+    arquivo_acompanhamento = pasta_json_dinamico / f"{id_video}_segments_acompanhamento.json"
     json_acompanhamento = carregar_json(arquivo_acompanhamento)
     
     if json_acompanhamento is None:
@@ -209,7 +202,7 @@ def carregar_metadados() -> Tuple[Optional[Dict], Optional[Dict]]:
         return None, None
     
     # Arquivo filtrado (opcional)
-    arquivo_filtrado = PASTA_JSON_DINAMICO / f"{id_video}.json"
+    arquivo_filtrado = pasta_json_dinamico / f"{id_video}.json"
     json_filtrado = carregar_json(arquivo_filtrado)
     
     if json_filtrado is None:
@@ -320,6 +313,7 @@ def transcrever_batch(pipe: pipeline,
                     
             except Exception as e:
                 print(f"  ERRO no batch: {e}")
+                # Marcar todos do batch como falha
                 for nome in nomes:
                     if nome not in resultados:
                         resultados[nome] = None
@@ -409,7 +403,10 @@ def adicionar_transcricoes_null(json_dados: Dict,
 def salvar_outputs(json_filtrado: Optional[Dict],
                   json_acompanhamento: Dict,
                   segmentos_elegiveis: List[str],
-                  transcricoes: Dict[str, str]) -> bool:
+                  transcricoes: Dict[str, str],
+                  pasta_output_stt: Path,
+                  pasta_output_json_dinamico: Path,
+                  id_video: str) -> bool:
     """
     Salva os JSONs atualizados nas pastas de output
     
@@ -418,12 +415,15 @@ def salvar_outputs(json_filtrado: Optional[Dict],
         json_acompanhamento: JSON acompanhamento original
         segmentos_elegiveis: Lista de segmentos que eram elegiveis
         transcricoes: Dicionario com transcricoes
+        pasta_output_stt: Caminho para pasta 06-stt_whisper
+        pasta_output_json_dinamico: Caminho para pasta 00-json_dinamico
+        id_video: ID do video
         
     Returns:
         True se sucesso, False se erro
     """
     # Criar pasta output se nao existir
-    PASTA_OUTPUT_STT.mkdir(parents=True, exist_ok=True)
+    pasta_output_stt.mkdir(parents=True, exist_ok=True)
     
     print("\n" + "=" * 70)
     print("SALVANDO OUTPUTS")
@@ -441,13 +441,13 @@ def salvar_outputs(json_filtrado: Optional[Dict],
     )
     
     # Salvar em 06-stt_whisper
-    arquivo_acomp_output = PASTA_OUTPUT_STT / f"{id_video}_segments_acompanhamento.json"
+    arquivo_acomp_output = pasta_output_stt / f"{id_video}_segments_acompanhamento.json"
     if not salvar_json(json_acomp_atualizado, arquivo_acomp_output):
         return False
     print(f"Salvo: {arquivo_acomp_output}")
     
     # Copiar para 00-json_dinamico (sobrescrever)
-    arquivo_acomp_dinamico = PASTA_OUTPUT_JSON_DINAMICO / f"{id_video}_segments_acompanhamento.json"
+    arquivo_acomp_dinamico = pasta_output_json_dinamico / f"{id_video}_segments_acompanhamento.json"
     if not salvar_json(json_acomp_atualizado, arquivo_acomp_dinamico):
         return False
     print(f"Sobrescrito: {arquivo_acomp_dinamico}")
@@ -460,13 +460,13 @@ def salvar_outputs(json_filtrado: Optional[Dict],
         )
         
         # Salvar em 06-stt_whisper
-        arquivo_filtrado_output = PASTA_OUTPUT_STT / f"{id_video}_whisper.json"
+        arquivo_filtrado_output = pasta_output_stt / f"{id_video}_whisper.json"
         if not salvar_json(json_filtrado_atualizado, arquivo_filtrado_output):
             return False
         print(f"Salvo: {arquivo_filtrado_output}")
         
         # Copiar para 00-json_dinamico como {id}.json (sobrescrever)
-        arquivo_filtrado_dinamico = PASTA_OUTPUT_JSON_DINAMICO / f"{id_video}.json"
+        arquivo_filtrado_dinamico = pasta_output_json_dinamico / f"{id_video}.json"
         if not salvar_json(json_filtrado_atualizado, arquivo_filtrado_dinamico):
             return False
         print(f"Sobrescrito: {arquivo_filtrado_dinamico}")
@@ -479,10 +479,19 @@ def salvar_outputs(json_filtrado: Optional[Dict],
 # FUNCAO PRINCIPAL
 # ==============================================================================
 
-def main():
+def main(id_video: str):
     """
     Funcao principal: orquestra todo o fluxo de transcricao
+    
+    Args:
+        id_video: ID do video a processar
     """
+    # Definir caminhos baseados no id_video
+    PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
+    PASTA_AUDIOS = PROJECT_ROOT / "arquivos" / "temp" / id_video / "03-segments_16khz"
+    PASTA_OUTPUT_STT = PROJECT_ROOT / "arquivos" / "temp" / id_video / "06-stt_whisper"
+    PASTA_OUTPUT_JSON_DINAMICO = PASTA_JSON_DINAMICO
+    
     print("=" * 70)
     print("MODULO 08: TRANSCRICAO WHISPER")
     print("=" * 70)
@@ -508,7 +517,7 @@ def main():
     print("\n" + "=" * 70)
     print("CARREGANDO METADADOS")
     print("=" * 70)
-    json_filtrado, json_acompanhamento = carregar_metadados()
+    json_filtrado, json_acompanhamento = carregar_metadados(PASTA_JSON_DINAMICO, id_video)
     
     if json_acompanhamento is None:
         print("ERRO: Nao foi possivel carregar metadados. Abortando.")
@@ -548,7 +557,10 @@ def main():
         json_filtrado,
         json_acompanhamento,
         segmentos_elegiveis,
-        transcricoes
+        transcricoes,
+        PASTA_OUTPUT_STT,
+        PASTA_OUTPUT_JSON_DINAMICO,
+        id_video
     )
     
     # 8. Relatorio final
@@ -570,4 +582,4 @@ def main():
 # ==============================================================================
 
 if __name__ == "__main__":
-    main()
+    main('CA6TSoMw86k')

@@ -23,18 +23,6 @@ from config import SIMILARITY_VALIDATOR, TEXT_NORMALIZER
 # CONFIGURACAO
 # ==============================================================================
 
-# ID do video a processar
-id_video = 'B4RgpqJhoIo'
-
-# Caminhos de entrada
-PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
-ARQUIVO_ACOMPANHAMENTO = PASTA_JSON_DINAMICO / f"{id_video}_segments_acompanhamento.json"
-ARQUIVO_FILTRADO = PASTA_JSON_DINAMICO / f"{id_video}.json"
-
-# Caminhos de saida
-PASTA_OUTPUT_VALIDACAO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "09-validacao_levenshtein"
-PASTA_OUTPUT_JSON_DINAMICO = PASTA_JSON_DINAMICO  # Sobrescreve na mesma pasta
-
 # Campos de texto a comparar (todos opcionais)
 CAMPOS_STT = ["stt_leg_normalizado", "stt_whisper_normalizado", "stt_wav2vec_normalizado"]
 
@@ -275,10 +263,20 @@ def validar_segmento(dados_segmento: Dict) -> Dict:
 # FUNCOES DE PROCESSAMENTO
 # ==============================================================================
 
-def processar_validacao():
+def processar_validacao(id_video: str):
     """
     Processa validacao de similaridade para todos os segmentos elegiveis
+    
+    Args:
+        id_video: ID do video a processar
     """
+    # Definir caminhos baseados no id_video
+    PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
+    ARQUIVO_ACOMPANHAMENTO = PASTA_JSON_DINAMICO / f"{id_video}_segments_acompanhamento.json"
+    ARQUIVO_FILTRADO = PASTA_JSON_DINAMICO / f"{id_video}.json"
+    PASTA_OUTPUT_VALIDACAO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "09-validacao_levenshtein"
+    PASTA_OUTPUT_JSON_DINAMICO = PASTA_JSON_DINAMICO
+    
     print(f"\n{'='*70}")
     print(f"INICIANDO VALIDACAO DE SIMILARIDADE - Video: {id_video}")
     print(f"{'='*70}\n")
@@ -390,7 +388,7 @@ def processar_validacao():
 
 if __name__ == "__main__":
     try:
-        processar_validacao()
+        processar_validacao('CA6TSoMw86k')
     except Exception as e:
         print(f"\n[ERRO] Falha na validacao: {str(e)}")
         raise

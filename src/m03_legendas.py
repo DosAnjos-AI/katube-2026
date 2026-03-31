@@ -22,8 +22,6 @@ Projeto: Katube - Sistema de Transcrição e Análise de Áudio
 import re
 from typing import List, Dict, Tuple
 
-# Recebendo o id do audio corrente
-id_video= 'B4RgpqJhoIo'
 class WebVTTProcessor:
     """
     Processador universal de legendas com detecção automática de formato.
@@ -678,33 +676,41 @@ class WebVTTProcessor:
         
         return len(segments)
 
-
-if __name__ == "__main__":
+def processar_legendas(id_video: str):
+    """
+    Processa arquivo de legendas .txt e converte para .csv
+    
+    Args:
+        id_video: ID do video a processar
+        
+    Returns:
+        bool: True se processou com sucesso, False caso contrario
+    """
     import sys
     from pathlib import Path
     
     # Caminhos relativos ao diretorio do script
     script_dir = Path(__file__).parent
-    id_video_input= "../arquivos/temp/" + id_video + "/01-arquivos_originais"
-    id_video_output= "../arquivos/temp/" + id_video + "/01-arquivos_originais"
+    id_video_input = "../arquivos/temp/" + id_video + "/01-arquivos_originais"
+    id_video_output = "../arquivos/temp/" + id_video + "/01-arquivos_originais"
     input_dir = script_dir / id_video_input
     output_dir = script_dir / id_video_output
     
     # Validacao: diretorio de entrada existe
     if not input_dir.exists():
         print(f"ERRO: Pasta de input nao encontrada: {input_dir}")
-        sys.exit(1)
+        return False
     
     if not input_dir.is_dir():
         print(f"ERRO: Input nao e uma pasta: {input_dir}")
-        sys.exit(1)
+        return False
     
     # Busca por arquivo .txt no diretorio de entrada
     txt_files = list(input_dir.glob('*.txt'))
     
     if not txt_files:
         print(f"ERRO: Nenhum arquivo .txt encontrado em: {input_dir}")
-        sys.exit(1)
+        return False
     
     if len(txt_files) > 1:
         print(f"AVISO: {len(txt_files)} arquivos .txt encontrados. Processando o primeiro.")
@@ -739,8 +745,15 @@ if __name__ == "__main__":
         print(f"   Segmentos: {len(segments)}")
         print(f"   CSV salvo em: {output_file.relative_to(script_dir)}")
         
+        return True
+        
     except Exception as e:
         print(f"\nERRO ao processar: {e}")
         import traceback
         traceback.print_exc()
-        sys.exit(1)
+        return False
+
+
+if __name__ == "__main__":
+    # Teste standalone
+    processar_legendas('CA6TSoMw86k') #rtrocar o id, conforme disponibildidade na pasta dde input audios/

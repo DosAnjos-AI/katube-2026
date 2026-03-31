@@ -34,17 +34,6 @@ from m01_load_models import ModelManager
 # CONFIGURACAO
 # ==============================================================================
 
-# ID do video a processar
-id_video = 'B4RgpqJhoIo'
-
-# Caminhos de entrada
-PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
-PASTA_AUDIOS_ORIGINAIS = PROJECT_ROOT / "arquivos" / "temp" / id_video / "02-segmentos_originais"
-
-# Caminhos de saida
-PASTA_OUTPUT_DENOISER = PROJECT_ROOT / "arquivos" / "temp" / id_video / "10-denoiser"
-PASTA_OUTPUT_JSON_DINAMICO = PASTA_JSON_DINAMICO  # Sobrescreve na mesma pasta
-
 # Extensoes de audio suportadas
 EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
 
@@ -325,10 +314,19 @@ def salvar_json_atualizado(
 # FUNCAO PRINCIPAL
 # ==============================================================================
 
-def main():
+def main(id_video: str):
     """
     Funcao principal de execucao
+    
+    Args:
+        id_video: ID do video a processar
     """
+    # Definir caminhos baseados no id_video
+    PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
+    PASTA_AUDIOS_ORIGINAIS = PROJECT_ROOT / "arquivos" / "temp" / id_video / "02-segmentos_originais"
+    PASTA_OUTPUT_DENOISER = PROJECT_ROOT / "arquivos" / "temp" / id_video / "10-denoiser"
+    PASTA_OUTPUT_JSON_DINAMICO = PASTA_JSON_DINAMICO
+    
     print("=" * 70)
     print("MÓDULO 12: DENOISER DEEPFILTERNET3")
     print("=" * 70)
@@ -497,4 +495,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main('CA6TSoMw86k')

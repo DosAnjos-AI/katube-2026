@@ -26,17 +26,6 @@ from m01_load_models import ModelManager
 # CONFIGURACAO
 # ==============================================================================
 
-# ID do video a processar
-id_video = 'B4RgpqJhoIo'
-
-# Caminhos de entrada
-PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
-PASTA_AUDIOS = PROJECT_ROOT / "arquivos" / "temp" / id_video / "03-segments_16khz"
-
-# Caminhos de saida
-PASTA_OUTPUT_STT = PROJECT_ROOT / "arquivos" / "temp" / id_video / "07-stt_wav2vec"
-PASTA_OUTPUT_JSON_DINAMICO = PASTA_JSON_DINAMICO  # Sobrescreve na mesma pasta
-
 # Extensoes de audio suportadas
 EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
 
@@ -93,22 +82,26 @@ def carregar_json(caminho: Path) -> Optional[Dict]:
         return None
 
 
-def obter_segmentos_elegiveis() -> tuple[Dict, Set[str]]:
+def obter_segmentos_elegiveis(pasta_json_dinamico: Path, id_video: str) -> tuple[Dict, Set[str]]:
     """
     Determina quais segmentos devem ser processados
+    
+    Args:
+        pasta_json_dinamico: Caminho para pasta 00-json_dinamico
+        id_video: ID do video
     
     Returns:
         Tupla (dados_acompanhamento, set_de_chaves_elegiveis)
     """
     # Carregar arquivo de acompanhamento (obrigatorio)
-    caminho_acompanhamento = PASTA_JSON_DINAMICO / f"{id_video}_segments_acompanhamento.json"
+    caminho_acompanhamento = pasta_json_dinamico / f"{id_video}_segments_acompanhamento.json"
     dados_acompanhamento = carregar_json(caminho_acompanhamento)
     
     if not dados_acompanhamento:
         raise FileNotFoundError(f"Arquivo obrigatorio nao encontrado: {caminho_acompanhamento}")
     
     # Tentar carregar arquivo de filtro (opcional)
-    caminho_filtro = PASTA_JSON_DINAMICO / f"{id_video}.json"
+    caminho_filtro = pasta_json_dinamico / f"{id_video}.json"
     dados_filtro = carregar_json(caminho_filtro)
     
     # Determinar segmentos elegiveis
@@ -128,13 +121,14 @@ def obter_segmentos_elegiveis() -> tuple[Dict, Set[str]]:
 # FUNCAO DE TRANSCRICAO
 # ==============================================================================
 
-def transcrever_segmentos(dados_acompanhamento: Dict, segmentos_elegiveis: Set[str]) -> tuple[Dict, Dict]:
+def transcrever_segmentos(dados_acompanhamento: Dict, segmentos_elegiveis: Set[str], pasta_audios: Path) -> tuple[Dict, Dict]:
     """
     Transcreve os segmentos elegiveis usando wav2vec2
     
     Args:
         dados_acompanhamento: Dicionario completo de segmentos
         segmentos_elegiveis: Set com chaves dos segmentos a processar
+        pasta_audios: Caminho para pasta com audios
         
     Returns:
         Tupla (dados_acompanhamento_atualizado, dados_wav2vec_somente_elegiveis)
@@ -174,7 +168,7 @@ def transcrever_segmentos(dados_acompanhamento: Dict, segmentos_elegiveis: Set[s
             continue
         
         # Buscar arquivo de audio
-        caminho_audio = PASTA_AUDIOS / chave_segmento
+        caminho_audio = pasta_audios / chave_segmento
         
         if not caminho_audio.exists():
             print(f"[{processados}/{total}] AVISO: Audio nao encontrado: {chave_segmento}")
@@ -225,24 +219,27 @@ def salvar_json(dados: Dict, caminho: Path):
     print(f"Salvo: {caminho}")
 
 
-def salvar_outputs(dados_acompanhamento: Dict, dados_wav2vec: Dict):
+def salvar_outputs(dados_acompanhamento: Dict, dados_wav2vec: Dict, pasta_output_stt: Path, pasta_output_json_dinamico: Path, id_video: str):
     """
     Salva os arquivos de output nas pastas corretas
     
     Args:
         dados_acompanhamento: Dados completos com stt_wav2vec
         dados_wav2vec: Dados apenas dos segmentos elegiveis
+        pasta_output_stt: Caminho para pasta 07-stt_wav2vec
+        pasta_output_json_dinamico: Caminho para pasta 00-json_dinamico
+        id_video: ID do video
     """
     print("\n" + "="*70)
     print("SALVANDO OUTPUTS")
     print("="*70)
     
     # Criar pasta de output STT
-    PASTA_OUTPUT_STT.mkdir(parents=True, exist_ok=True)
+    pasta_output_stt.mkdir(parents=True, exist_ok=True)
     
     # Salvar em 07-stt_wav2vec
-    caminho_acompanhamento_stt = PASTA_OUTPUT_STT / f"{id_video}_segments_acompanhamento.json"
-    caminho_wav2vec_stt = PASTA_OUTPUT_STT / f"{id_video}_wav2vec.json"
+    caminho_acompanhamento_stt = pasta_output_stt / f"{id_video}_segments_acompanhamento.json"
+    caminho_wav2vec_stt = pasta_output_stt / f"{id_video}_wav2vec.json"
     
     salvar_json(dados_acompanhamento, caminho_acompanhamento_stt)
     salvar_json(dados_wav2vec, caminho_wav2vec_stt)
@@ -250,8 +247,8 @@ def salvar_outputs(dados_acompanhamento: Dict, dados_wav2vec: Dict):
     # Copiar para 00-json_dinamico (sobrescrever)
     print("\nCopiando para pasta dinamica (sobrescrever):")
     
-    caminho_acompanhamento_dinamico = PASTA_OUTPUT_JSON_DINAMICO / f"{id_video}_segments_acompanhamento.json"
-    caminho_wav2vec_dinamico = PASTA_OUTPUT_JSON_DINAMICO / f"{id_video}.json"
+    caminho_acompanhamento_dinamico = pasta_output_json_dinamico / f"{id_video}_segments_acompanhamento.json"
+    caminho_wav2vec_dinamico = pasta_output_json_dinamico / f"{id_video}.json"
     
     shutil.copy2(caminho_acompanhamento_stt, caminho_acompanhamento_dinamico)
     print(f"Copiado: {caminho_acompanhamento_dinamico}")
@@ -264,10 +261,19 @@ def salvar_outputs(dados_acompanhamento: Dict, dados_wav2vec: Dict):
 # FUNCAO PRINCIPAL
 # ==============================================================================
 
-def main():
+def main(id_video: str):
     """
     Funcao principal de execucao
+    
+    Args:
+        id_video: ID do video a processar
     """
+    # Definir caminhos baseados no id_video
+    PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
+    PASTA_AUDIOS = PROJECT_ROOT / "arquivos" / "temp" / id_video / "03-segments_16khz"
+    PASTA_OUTPUT_STT = PROJECT_ROOT / "arquivos" / "temp" / id_video / "07-stt_wav2vec"
+    PASTA_OUTPUT_JSON_DINAMICO = PASTA_JSON_DINAMICO
+    
     print("="*70)
     print("TRANSCRICAO COM WAV2VEC2")
     print("="*70)
@@ -275,16 +281,17 @@ def main():
     print(f"Modelo: {MODELO_WAV2VEC2}\n")
     
     # Obter segmentos elegiveis
-    dados_acompanhamento, segmentos_elegiveis = obter_segmentos_elegiveis()
+    dados_acompanhamento, segmentos_elegiveis = obter_segmentos_elegiveis(PASTA_JSON_DINAMICO, id_video)
     
     # Transcrever
     dados_acompanhamento_atualizado, dados_wav2vec = transcrever_segmentos(
         dados_acompanhamento,
-        segmentos_elegiveis
+        segmentos_elegiveis,
+        PASTA_AUDIOS
     )
     
     # Salvar outputs
-    salvar_outputs(dados_acompanhamento_atualizado, dados_wav2vec)
+    salvar_outputs(dados_acompanhamento_atualizado, dados_wav2vec, PASTA_OUTPUT_STT, PASTA_OUTPUT_JSON_DINAMICO, id_video)
     
     print("\n" + "="*70)
     print("PROCESSAMENTO CONCLUIDO")
@@ -292,4 +299,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main('CA6TSoMw86k')

@@ -23,21 +23,6 @@ from config import SOX_NORMALIZER, PROJECT_ROOT
 # CONFIGURACAO
 # ==============================================================================
 
-# ID do video a processar
-id_video = 'B4RgpqJhoIo'
-
-# Caminhos de entrada - JSON
-PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
-
-# Caminhos de entrada - Audios
-PASTA_AUDIOS_DENOISER = PROJECT_ROOT / "arquivos" / "temp" / id_video / "10-denoiser"
-PASTA_AUDIOS_ORIGINAIS = PROJECT_ROOT / "arquivos" / "temp" / id_video / "02-segmentos_originais"
-
-# Caminhos de saida
-PASTA_OUTPUT_NORMALIZADOR = PROJECT_ROOT / "arquivos" / "temp" / id_video / "11-normalizador_audio"
-PASTA_OUTPUT_JSON_DINAMICO = PASTA_JSON_DINAMICO  # Sobrescreve na mesma pasta
-PASTA_OUTPUT_DATASET = PROJECT_ROOT / "dataset" / "audio_dataset" / id_video
-
 # Extensoes de audio suportadas
 EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
 
@@ -231,19 +216,27 @@ def normalizar_audio(
 
 def obter_caminho_input_audio(
     nome_audio: str,
-    metadados: Dict
+    metadados: Dict,
+    pasta_audios_denoiser: Path,
+    pasta_audios_originais: Path
 ) -> Optional[Path]:
     """
     Determina caminho de input do audio baseado em 'utilizou_denoiser'
     Prioriza pasta denoiser se flag=True, senao usa originais
     Retorna Path se arquivo existe, None caso contrario
+    
+    Args:
+        nome_audio: Nome do arquivo de audio
+        metadados: Metadados do segmento
+        pasta_audios_denoiser: Caminho para pasta 10-denoiser
+        pasta_audios_originais: Caminho para pasta 02-segmentos_originais
     """
     usou_denoiser = metadados.get('utilizou_denoiser', False)
     
     if usou_denoiser:
-        caminho = PASTA_AUDIOS_DENOISER / nome_audio
+        caminho = pasta_audios_denoiser / nome_audio
     else:
-        caminho = PASTA_AUDIOS_ORIGINAIS / nome_audio
+        caminho = pasta_audios_originais / nome_audio
     
     if not caminho.exists():
         print(f"AVISO: Audio nao encontrado: {caminho}")
@@ -278,7 +271,6 @@ def adicionar_campos_sox(metadados: Dict, config: Dict, processado: bool) -> Dic
         metadados_atualizados['sox_normalize_method'] = config['normalize_method']
         metadados_atualizados['sox_target_level_db'] = config['target_level_db']
         metadados_atualizados['sox_remove_silence'] = config['remove_silence']
-        metadados_atualizados['sox_silence_threshold_db'] = config['silence_threshold_db']
         metadados_atualizados['utilizou_sox'] = True
     else:
         metadados_atualizados['sox_sample_rate'] = None
@@ -288,13 +280,12 @@ def adicionar_campos_sox(metadados: Dict, config: Dict, processado: bool) -> Dic
         metadados_atualizados['sox_normalize_method'] = None
         metadados_atualizados['sox_target_level_db'] = None
         metadados_atualizados['sox_remove_silence'] = None
-        metadados_atualizados['sox_silence_threshold_db'] = None
         metadados_atualizados['utilizou_sox'] = False
     
     return metadados_atualizados
 
 
-def limpar_pasta_vazia(pasta: Path) -> None:
+def limpar_pasta_vazia(pasta: Path):
     """
     Remove pasta se estiver vazia (sem arquivos)
     Utilizado para evitar pastas vazias no dataset
@@ -315,11 +306,23 @@ def limpar_pasta_vazia(pasta: Path) -> None:
         print(f"Aviso: Nao foi possivel remover pasta vazia {pasta}: {e}")
 
 
-def processar_normalizacao() -> Tuple[int, int, int]:
+def processar_normalizacao(id_video: str) -> Tuple[int, int, int]:
     """
     Funcao principal de processamento
+    
+    Args:
+        id_video: ID do video a processar
+    
     Retorna tupla: (processados, pulados, falhados)
     """
+    # Definir caminhos baseados no id_video
+    PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / id_video / "00-json_dinamico"
+    PASTA_AUDIOS_DENOISER = PROJECT_ROOT / "arquivos" / "temp" / id_video / "10-denoiser"
+    PASTA_AUDIOS_ORIGINAIS = PROJECT_ROOT / "arquivos" / "temp" / id_video / "02-segmentos_originais"
+    PASTA_OUTPUT_NORMALIZADOR = PROJECT_ROOT / "arquivos" / "temp" / id_video / "11-normalizador_audio"
+    PASTA_OUTPUT_JSON_DINAMICO = PASTA_JSON_DINAMICO
+    PASTA_OUTPUT_DATASET = PROJECT_ROOT / "dataset" / "audio_dataset" / id_video
+    
     print("\n" + "="*70)
     print("INICIANDO NORMALIZACAO DE AUDIO COM SOX")
     print("="*70)
@@ -377,7 +380,12 @@ def processar_normalizacao() -> Tuple[int, int, int]:
         print(f"\nProcessando: {nome_audio}")
         
         # Obter caminho de input
-        caminho_input = obter_caminho_input_audio(nome_audio, metadados)
+        caminho_input = obter_caminho_input_audio(
+            nome_audio, 
+            metadados,
+            PASTA_AUDIOS_DENOISER,
+            PASTA_AUDIOS_ORIGINAIS
+        )
         if caminho_input is None:
             falhados += 1
             metadados_updated = adicionar_campos_sox(metadados, SOX_NORMALIZER, False)
@@ -444,11 +452,14 @@ def processar_normalizacao() -> Tuple[int, int, int]:
 # MAIN
 # ==============================================================================
 
-def main():
+def main(id_video: str):
     """
     Funcao principal
+    
+    Args:
+        id_video: ID do video a processar
     """
-    processados, pulados, falhados = processar_normalizacao()
+    processados, pulados, falhados = processar_normalizacao(id_video)
     
     print("\n" + "="*70)
     print("RESUMO DO PROCESSAMENTO")
@@ -461,4 +472,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main('CA6TSoMw86k')
