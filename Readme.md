@@ -3,6 +3,7 @@
 Pipeline automatizado para download de áudios do YouTube e geração de datasets de alta qualidade para treinamento de modelos TTS/STT em Português Brasileiro.
 
 Desenvolvido no âmbito do **Projeto CEIA / Alcateia** (CEIA/UFG).
+
 Comparativo Katube2025 vs Katube2026: https://www.notion.so/Alcateia-Katube-30ec77fe3fa08054ae70c3493eed2817
 
 ---
