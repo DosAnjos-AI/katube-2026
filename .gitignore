@@ -1,0 +1,73 @@
+# =============================================================================
+# VARIAVEIS DE AMBIENTE
+# =============================================================================
+.env
+.env.*
+env/
+venv/
+.venv/
+
+# =============================================================================
+# AUDIOS (formatos de audio)
+# =============================================================================
+*.flac
+*.wav
+*.mp3
+*.m4a
+*.opus
+*.ogg
+*.aac
+
+# =============================================================================
+# PASTAS DO PIPELINE (manter estrutura, ignorar conteudo)
+# =============================================================================
+
+# audios brutos
+arquivos/audios/*
+!arquivos/audios/.gitkeep
+
+# temporarios
+arquivos/temp/*
+!arquivos/temp/.gitkeep
+
+# segmentos aprovados
+dataset/audio_dataset/*
+!dataset/audio_dataset/.gitkeep
+
+# historico de processamento (jsons)
+dataset/historico_dataset/*
+!dataset/historico_dataset/.gitkeep
+
+# logs de processamento
+dataset/log/*.log
+!dataset/log/.gitkeep
+
+# dataset consolidado
+dataset/dataset.csv
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =============================================================================
+# JUPYTER
+# =============================================================================
+.ipynb_checkpoints/
+
+# =============================================================================
+# IDEs E SISTEMA OPERACIONAL
+# =============================================================================
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,39 @@
+import torch
+import torchaudio
+from pathlib import Path
+
+# Load SHEET predictor
+print("Loading SHEET predictor...")
+predictor = torch.hub.load("unilight/sheet:v0.1.0", "default", trust_repo=True)
+predictor.model.cuda()
+
+# Test audio - CAMINHO RELATIVO
+audio_path = Path("../audios/EhzSC3LWez4/EhzSC3LWez4.flac")
+print(f"Audio exists: {audio_path.exists()}")
+
+# Load audio and move to GPU
+waveform, sr = torchaudio.load(str(audio_path))
+print(f"Original - Shape: {waveform.shape}, SR: {sr}, Device: {waveform.device}")
+
+# Convert to mono if stereo
+if waveform.shape[0] > 1:
+    waveform = waveform.mean(dim=0, keepdim=True)
+    print(f"After mono - Shape: {waveform.shape}")
+
+# Move to GPU
+waveform = waveform.cuda()
+print(f"After GPU - Device: {waveform.device}")
+
+# TEST: predict() with wav= argument
+try:
+    score = predictor.predict(wav=waveform)
+    print(f"\n✅ SUCCESS! MOS Score: {score:.2f}")
+except Exception as e:
+    print(f"\n❌ FAILED: {e}")
+    
+    # Try with dict
+    try:
+        score = predictor.predict(wav={"wav": waveform, "sr": sr})
+        print(f"✅ SUCCESS with dict! MOS Score: {score:.2f}")
+    except Exception as e2:
+        print(f"❌ Dict also failed: {e2}")

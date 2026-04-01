@@ -1,0 +1,30 @@
+# FASE 3: Pyannote Audio e Dependencias Especificas
+# Instalar DEPOIS das bibliotecas de audio core
+# ATENCAO: Esta e a parte mais sensivel a conflitos
+
+# Lightning (necessario antes do pyannote)
+pytorch-lightning==2.1.0
+lightning==2.1.0
+torchmetrics==1.2.0
+
+# Pyannote stack (ordem importa!)
+pyannote.core==5.0.0
+pyannote.database==5.1.0
+pyannote.metrics==3.2.1
+
+# IMPORTANTE: pyannote.audio versao compativel com PyTorch 2.5.1
+pyannote.audio==3.3.2
+
+# Pyannote pipeline
+pyannote.pipeline==3.0.1
+
+# Dependencias especificas do pyannote
+asteroid-filterbanks==0.4.0
+speechbrain==1.0.0
+einops==0.7.0
+omegaconf==2.3.0
+hydra-core==1.3.2
+
+# Metrics de audio
+torch-audiomentations==0.11.1
+julius==0.2.7
