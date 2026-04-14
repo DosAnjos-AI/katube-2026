@@ -1,0 +1,16 @@
+{
+  "bf21d659e9b9c0a8e267602bab21d0b5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:19.144",
+    "duracao": 19.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3965671062469482,
+    "mos_stoi": 0.903925359249115,
+    "mos_si_sdr": 5.3103790283203125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quer dizer, não se trata de estar enganar ninguém. Quer dizer, se tu vais pedir crédito ao meu banco, eu sei que o banco B tem melhores spreades, eu não te vou dizer, ao Mery, vai lá o banco B, pá, esquece lá que o outro banco está melhor. E na altura eu tinha que, obviamente, defender a minha instituição, aquela que não estava a pagar o Arnado. Hoje em dia eu não tenho essa preocupação. Eu tenho contratos com quase todos os bancos,"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "11debe9bdf7515862895d4952464f44d_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:15.964",
+    "duracao": 15.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.649125814437866,
+    "mos_stoi": 0.9861012101173401,
+    "mos_si_sdr": 22.14910125732422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "cientistas de dados, engenheiros de dados, arquitetos, todos eles trabalhando focados em criar valor para o cliente, não só para a própria Elo, como também para os clientes da Elo, de como a gente consegue dar cada vez mais voz.",
+    "stt_wav2vec": "CIENTISTAS DE DADOS ENGENHEIROS DE DADOS ARQUITECTOS TODOS ELLES TRABALHANDO FOCADOS ENCRIA VALOR POR CLIENTE NÃO SÓ PARA A PRÓPRIA ELO COMO TAMBÉM PELOS CLIENTES DA HELLA DE COMAENTE CONSEGUE DÁ CADA VEZ MAIS VOS"
+  },
+  "11debe9bdf7515862895d4952464f44d_002.ogg": {
+    "tempo_inicio": "00:00:16.132",
+    "tempo_fim": "00:00:27.772",
+    "duracao": 11.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.254199981689453,
+    "mos_stoi": 0.9311894178390503,
+    "mos_si_sdr": 2.8128528594970703,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a todo o feedback que os clientes da Elo dão para a empresa. Então, esse foi um projeto muito especial que a gente vai comentar agora aqui. Oi, Aline, oi, Alexandre. Obrigada pela oportunidade.",
+    "stt_wav2vec": "A TODO FIDEBEQUE QUE OS CLIENTES DA HELO DÃO POR EMPRESA ENTÃO ESTE FOI UM PROJETO MUITO ESPECIAL QUE ENTE VAI COMENTAR AGORA AQUI OIALINE O ALEXANDRE OBRIGADO PELA OPORTUNIDADE"
+  },
+  "11debe9bdf7515862895d4952464f44d_003.ogg": {
+    "tempo_inicio": "00:00:27.844",
+    "tempo_fim": "00:00:31.646",
+    "duracao": 3.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.624044418334961,
+    "mos_stoi": 0.9715615510940552,
+    "mos_si_sdr": 21.124305725097656,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que a gente possa ter bastante troca aqui de conhecimento hoje.",
+    "stt_wav2vec": "QUE A GENTE POSSA TER BASTANTE E TROCA AQUI DE CONHECIMENTO HOJE"
+  }
+}

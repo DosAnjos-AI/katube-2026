@@ -1,0 +1,16 @@
+{
+  "b52c4b272d6f407fcaace87f1b53b5f6_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:05.470",
+    "duracao": 5.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.969322681427002,
+    "mos_stoi": 0.7960530519485474,
+    "mos_si_sdr": 9.29704761505127,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E quer saber se você concorda com isso e o que para você caracteriza o teatro de grupo?"
+  }
+}

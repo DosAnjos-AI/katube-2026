@@ -1,0 +1,32 @@
+{
+  "455f3bfa3e7358848489a36e830ec632_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.588",
+    "duracao": 6.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4234580993652344,
+    "mos_stoi": 0.9319314956665039,
+    "mos_si_sdr": 7.279192924499512,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Bom, hoje eu trouxe mais provocações do que respostas, porque contexto não tem resposta pronta.",
+    "stt_wav2vec": "BOM HOJE EU TROUXE MAIS PROVOCAÇÕES DO QUE RESPOSTAS POR QUE CONTEXTO NÃO TEM RESPOSTA PRONTA"
+  },
+  "455f3bfa3e7358848489a36e830ec632_002.ogg": {
+    "tempo_inicio": "00:00:06.916",
+    "tempo_fim": "00:00:17.214",
+    "duracao": 10.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2001291513442993,
+    "mos_stoi": 0.8767653107643127,
+    "mos_si_sdr": 5.631465911865234,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É só atenção. E é aqui que chegamos ao fim de mais um episódio que tudo comunica. Lembre-se, o contexto tem poder. Não o ignore.",
+    "stt_wav2vec": "É SUA ATENÇÃO E É AQUI QUE CHEGAMOS AO FIM DEMAIS UM EPISÓDIO DO TUDO COMUNICA LEMBRE-SE O CONTEXTO TEM PODER NÃO O IGNORE"
+  }
+}

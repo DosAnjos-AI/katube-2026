@@ -1,0 +1,44 @@
+{
+  "a83999f974d288213ddc456d4968d24d_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.684",
+    "duracao": 14.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1795578002929688,
+    "mos_stoi": 0.9750422239303589,
+    "mos_si_sdr": 14.250528335571289,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Que conselho vocês dariam para quem está pensando em se inscrever no programa Somos Líderes? Olha, é evidente o quanto o cooperativismo cresceu nos últimos anos e tem crescido. E as pessoas têm percebido o valor no cooperativismo."
+  },
+  "a83999f974d288213ddc456d4968d24d_002.ogg": {
+    "tempo_inicio": "00:00:14.916",
+    "tempo_fim": "00:00:20.956",
+    "duracao": 6.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3769567012786865,
+    "mos_stoi": 0.9691238403320312,
+    "mos_si_sdr": 24.200958251953125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Falando de mercado de trabalho para quem deseja galgar os passos numa cooperativa,"
+  },
+  "a83999f974d288213ddc456d4968d24d_003.ogg": {
+    "tempo_inicio": "00:00:21.348",
+    "tempo_fim": "00:00:30.248",
+    "duracao": 8.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.329779863357544,
+    "mos_stoi": 0.9706906080245972,
+    "mos_si_sdr": 14.721162796020508,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "cada vez mais tem sido exigido mão de obra, pessoas principalmente, esse é o ideal de ser, é o motivo de existir"
+  }
+}

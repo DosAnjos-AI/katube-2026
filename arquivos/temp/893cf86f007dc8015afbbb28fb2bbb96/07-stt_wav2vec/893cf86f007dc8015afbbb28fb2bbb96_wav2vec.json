@@ -1,0 +1,17 @@
+{
+  "893cf86f007dc8015afbbb28fb2bbb96_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.652",
+    "duracao": 6.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8258830308914185,
+    "mos_stoi": 0.9080765843391418,
+    "mos_si_sdr": 10.985221862792969,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Você também tem um senso de intitulment, que eu nem sei tudo isso, gente, desculpa, parece ser metido, mas não, é que o meu português é bemzinho mesmo.",
+    "stt_wav2vec": "SE TAMBÉM TEM UM CENSO DE INTAITILMENTE CARENCIRODOZISSE GENTE DISCULPADO PARA ESSE METTIDO MAIS NERICO NUM MEU PORTUGUES A RINZINEO"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "2b9eeae1b0a163f8bc0969f05b0a3982_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:15.292",
+    "duracao": 15.19,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.194887399673462,
+    "mos_stoi": 0.7901548743247986,
+    "mos_si_sdr": 1.8161007165908813,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "2b9eeae1b0a163f8bc0969f05b0a3982_002.ogg": {
+    "tempo_inicio": "00:00:15.396",
+    "tempo_fim": "00:00:25.726",
+    "duracao": 10.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.409428596496582,
+    "mos_stoi": 0.8514504432678223,
+    "mos_si_sdr": 10.50904655456543,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cara, se vocês acham que o jogo foi preguiçoso, se o Barcelona tava com desfalco e disso daquilo, foda-se, meu velho. Se o Woody Johnson jogava quando o Barcelona em 2006..."
+  }
+}

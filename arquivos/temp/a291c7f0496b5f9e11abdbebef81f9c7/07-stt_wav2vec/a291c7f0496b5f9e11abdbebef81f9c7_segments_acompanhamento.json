@@ -1,0 +1,17 @@
+{
+  "a291c7f0496b5f9e11abdbebef81f9c7_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.916",
+    "duracao": 5.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2195721864700317,
+    "mos_stoi": 0.7327117919921875,
+    "mos_si_sdr": 0.08243069052696228,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Por isso que tens mais soluções de escolha. E também consigo estar atendendo ao preços das viagens.",
+    "stt_wav2vec": "PORCE TEZ MAIÍES CALÇÕES DA ESCOLHA GUE TAMBÉM CONSETE TARAPI LOPRESSOS DOS AS VIAGENS"
+  }
+}

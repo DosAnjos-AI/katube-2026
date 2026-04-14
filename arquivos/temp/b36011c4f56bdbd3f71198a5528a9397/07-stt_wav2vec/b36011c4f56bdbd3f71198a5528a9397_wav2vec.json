@@ -1,0 +1,17 @@
+{
+  "b36011c4f56bdbd3f71198a5528a9397_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.568",
+    "duracao": 4.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.157201051712036,
+    "mos_stoi": 0.9704046845436096,
+    "mos_si_sdr": 21.015403747558594,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "aliás, esses mil euros podem se transformar facilmente em 20 mil euros.",
+    "stt_wav2vec": "PORCENTO ALEASGESTAS MILEURAS PODEM-SE TRANSFORMAR FACILMENTE EM VINTE"
+  }
+}

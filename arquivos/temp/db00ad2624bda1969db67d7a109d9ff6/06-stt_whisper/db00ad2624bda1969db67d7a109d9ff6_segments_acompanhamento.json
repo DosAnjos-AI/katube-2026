@@ -1,0 +1,16 @@
+{
+  "db00ad2624bda1969db67d7a109d9ff6_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:07.100",
+    "duracao": 7.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.275489330291748,
+    "mos_stoi": 0.9823747277259827,
+    "mos_si_sdr": 26.547447204589844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Segundo a teoria das janelas quebradas, o contexto permite que todo mundo repita o que foi feito ali."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "d13af7f9762865b388c95938548b32cb_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.372",
+    "duracao": 9.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.133474826812744,
+    "mos_stoi": 0.9517958760261536,
+    "mos_si_sdr": 16.219606399536133,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Repetir a pergunta. Qual alimento é colocado no molho de tomate para tirar a acidez? Ah, o açúcar, para tirar a acidez, o açúcar.",
+    "stt_wav2vec": "PEDE A PERGUNTA QUAL ALIMENTO É COLOCADO NO MOLHE DE TOMATE PARA TIRAR A CIDEZ AO AÇUCA PARA TIRASSE DESOS A U AÇÚCAR"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "ae146439e5381914e029f450499a43f4_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.628",
+    "duracao": 5.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6610755920410156,
+    "mos_stoi": 0.9518772959709167,
+    "mos_si_sdr": 20.589298248291016,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de moderação entre esses dois segmentos e torna a política pública mais eficiente.",
+    "stt_wav2vec": "DE MODERAÇÃO ENTRE ESTES DOIS SEGUIMENTOS SE TORNA A POLÍTICA PUBLICA MAIS EFICIENTE"
+  },
+  "ae146439e5381914e029f450499a43f4_002.ogg": {
+    "tempo_inicio": "00:00:05.924",
+    "tempo_fim": "00:00:20.828",
+    "duracao": 14.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9550669193267822,
+    "mos_stoi": 0.9356482625007629,
+    "mos_si_sdr": 15.878886222839355,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "não só a política pública, mas como ação é como um todo. Então, o que eu vejo? Finalizando aqui, Lia, o cooperativismo de crédito no Brasil, nos próximos 10 a 20 anos, se equiparando ao cooperativismo de crédito,",
+    "stt_wav2vec": "NÃO SÓ A POLÍTICA PÚBLICA EXCLUMAÇÃO É COMO TODO ENTOUQUE QUEU EU VEJO FINALIZANDO AQUE LIA O COPERATIVISMO DE CRÉDITO NO BRASIL NOS PRÓXIMOS DEZ A VINTE ANOS SE EQUIPARANDO AO COPERATIVISMO DE CRÉDITO"
+  },
+  "ae146439e5381914e029f450499a43f4_003.ogg": {
+    "tempo_inicio": "00:00:20.932",
+    "tempo_fim": "00:00:25.116",
+    "duracao": 4.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3367972373962402,
+    "mos_stoi": 0.9411100745201111,
+    "mos_si_sdr": 16.335800170898438,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que atua historicamente nos países desenvolvidos.",
+    "stt_wav2vec": "NOS E CCATUA HISTORICAMENTE NOS PAÍSES DESENVOLVIDOS"
+  },
+  "ae146439e5381914e029f450499a43f4_004.ogg": {
+    "tempo_inicio": "00:00:25.508",
+    "tempo_fim": "00:00:32.920",
+    "duracao": 7.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.048365592956543,
+    "mos_stoi": 0.9812406897544861,
+    "mos_si_sdr": 21.963937759399414,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E o lugar reservado para esse modelo de negócio dos países envolvidos é algo em torno de 20% a 30% do total.",
+    "stt_wav2vec": "O LUGAR RESERVADO PRESSE MODELO DE NEGÓCIO DOS PAÍSES ENVOLVIDOS É ALGO EM TORNO DE VINTE A TRINTA POR CENTO DO TOTAL"
+  }
+}

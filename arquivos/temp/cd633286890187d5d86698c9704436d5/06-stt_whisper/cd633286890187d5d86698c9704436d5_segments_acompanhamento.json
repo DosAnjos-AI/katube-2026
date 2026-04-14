@@ -1,0 +1,44 @@
+{
+  "cd633286890187d5d86698c9704436d5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.692",
+    "duracao": 5.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.21771240234375,
+    "mos_stoi": 0.8638335466384888,
+    "mos_si_sdr": 5.0468902587890625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "um pouquinho mais problema devido toda aquela gestão do FIFA e tal, mas vem retomando também."
+  },
+  "cd633286890187d5d86698c9704436d5_002.ogg": {
+    "tempo_inicio": "00:00:05.956",
+    "tempo_fim": "00:00:11.100",
+    "duracao": 5.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.553711175918579,
+    "mos_stoi": 0.7149659991264343,
+    "mos_si_sdr": -1.5721906423568726,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tem a dupla, tem o Flamengo, obviamente, que é o time mais rico e quem contrata ainda."
+  },
+  "cd633286890187d5d86698c9704436d5_003.ogg": {
+    "tempo_inicio": "00:00:11.460",
+    "tempo_fim": "00:00:18.428",
+    "duracao": 6.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9989081621170044,
+    "mos_stoi": 0.8966783285140991,
+    "mos_si_sdr": 7.05116081237793,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tem o Palmeiras com todo o dinheiro da Crefisa. Mas é só, cara. Outros clubes como São Paulo, por exemplo, sempre foi um clube grande..."
+  }
+}

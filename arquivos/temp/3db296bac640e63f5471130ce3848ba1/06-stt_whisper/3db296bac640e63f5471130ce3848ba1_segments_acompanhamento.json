@@ -1,0 +1,44 @@
+{
+  "3db296bac640e63f5471130ce3848ba1_001.ogg": {
+    "tempo_inicio": "00:00:01.060",
+    "tempo_fim": "00:00:13.724",
+    "duracao": 12.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4345189332962036,
+    "mos_stoi": 0.8979119658470154,
+    "mos_si_sdr": 4.671687602996826,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pra mim, o melhor do jogo e craque do campeonato é o Diego Souza, o homem tem... Achei ele o melhor do jogo? Achei ele o melhor do jogo. Na chance que teve, ele foi lá e fez. Ele não é um cara que..."
+  },
+  "3db296bac640e63f5471130ce3848ba1_002.ogg": {
+    "tempo_inicio": "00:00:13.892",
+    "tempo_fim": "00:00:27.708",
+    "duracao": 13.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.202908992767334,
+    "mos_stoi": 0.9420098662376404,
+    "mos_si_sdr": 19.53989028930664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele não é um cara que erra, que prejudica a tática do Grêmio e que perde bolas bobas. Eu acho que ele é um cara muito inteligente."
+  },
+  "3db296bac640e63f5471130ce3848ba1_003.ogg": {
+    "tempo_inicio": "00:00:27.972",
+    "tempo_fim": "00:00:32.792",
+    "duracao": 4.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.391805648803711,
+    "mos_stoi": 0.9478121995925903,
+    "mos_si_sdr": 18.792634963989258,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sempre gostei dele e não esperava que ele ia ir tão bem assim."
+  }
+}

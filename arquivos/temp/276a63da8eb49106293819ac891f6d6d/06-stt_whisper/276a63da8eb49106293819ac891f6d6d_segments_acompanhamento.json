@@ -1,0 +1,16 @@
+{
+  "276a63da8eb49106293819ac891f6d6d_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:09.038",
+    "duracao": 8.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.851955771446228,
+    "mos_stoi": 0.9436813592910767,
+    "mos_si_sdr": 10.778936386108398,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "está a mudar, ainda bem, ainda bem, porque eu não quero ter a mesma perspectiva da vida que os meus pais têm."
+  }
+}

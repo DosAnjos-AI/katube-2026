@@ -1,0 +1,32 @@
+{
+  "0d215e91702afc37032eb59adc9ad21e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.868",
+    "duracao": 3.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2996801137924194,
+    "mos_stoi": 0.6392943263053894,
+    "mos_si_sdr": 1.1197242736816406,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, se calhar é melhor viver na periferia.",
+    "stt_wav2vec": "ENTÃO O TIPOS QUEDAR É MELHOR VIVER NA VERIFORIA"
+  },
+  "0d215e91702afc37032eb59adc9ad21e_002.ogg": {
+    "tempo_inicio": "00:00:04.164",
+    "tempo_fim": "00:00:10.236",
+    "duracao": 6.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2778252363204956,
+    "mos_stoi": 0.6226865649223328,
+    "mos_si_sdr": 1.9644230604171753,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Comprar um carro, ter um passo de comboio, mesmo de metro, de todo o carro.",
+    "stt_wav2vec": "NÃO É COMPRAR O UM CARRO TER UM PASSO DE DE COMBÓI O MESMO DE METRO OU DOOTOTOCAR"
+  }
+}

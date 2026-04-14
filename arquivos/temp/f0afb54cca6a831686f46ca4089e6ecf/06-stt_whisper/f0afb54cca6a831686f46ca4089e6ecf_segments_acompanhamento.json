@@ -1,0 +1,16 @@
+{
+  "f0afb54cca6a831686f46ca4089e6ecf_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.870",
+    "duracao": 5.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.796260118484497,
+    "mos_stoi": 0.9264179468154907,
+    "mos_si_sdr": 5.083150863647461,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho que é diferente, cara. Eu acho que é diferente, acho que são profissionais diferentes. O Douglas é um cara que..."
+  }
+}

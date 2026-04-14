@@ -1,0 +1,16 @@
+{
+  "5764dcccd408755d94e6d5a430668a6f_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.894",
+    "duracao": 6.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4205816984176636,
+    "mos_stoi": 0.6691312789916992,
+    "mos_si_sdr": -0.017786536365747452,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "também, que fica assim, esse Grêmio, eu vejo, eu sinto uma falta no time do Grêmio, o Grêmio quando teve esses melhores momentos,"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "3a4484b6138844224de8dd8df4d01d27_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:09.276",
+    "duracao": 9.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0582289695739746,
+    "mos_stoi": 0.923342764377594,
+    "mos_si_sdr": 15.06779670715332,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para isso é importante que a gente crie programas que dê espaços, oportunidades, que ajude a formar jovens líderes"
+  },
+  "3a4484b6138844224de8dd8df4d01d27_002.ogg": {
+    "tempo_inicio": "00:00:09.796",
+    "tempo_fim": "00:00:15.056",
+    "duracao": 5.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6682162284851074,
+    "mos_stoi": 0.835346519947052,
+    "mos_si_sdr": 9.440352439880371,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para estarem participando e transformando esse movimento cooperativista."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "0766d0d7b724ed1e5497da434098037d_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:03.662",
+    "duracao": 3.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Ele vai até confirmar sobre essa..."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "1a73760f76ec11ccb9a96a15610cdb34_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.588",
+    "duracao": 14.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.570030927658081,
+    "mos_stoi": 0.9104309678077698,
+    "mos_si_sdr": 3.7884743213653564,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vale a pena renovar para o ano que vem ou não? No Inter. No lado do Inter também temos o caso do D'Alessandro, que a gente já comentou. Tem o Rodinei, que fanelis trouxe. Tem o lateral Saravia, que pouco jogou, mas já tem contatos encerrando no dezembro. E tem o Musto queridinho do nosso poder aí.",
+    "stt_wav2vec": "VALE A PERNA RANOAPROBO DE VEN OU NÃO NUINTENUADO INTE TAMBÉM TEMOS O CASO DO TALECEU DO QUINTIAFOMENTOR TENHO RODINECE FANEIS PROUXE TENHO LATERAL SARÁVIA QUE POUCO JOGOU MAS JÁ TEM CONTADO SE CERRANDO DEZEMBRO E TEM O MUSTO QUE LIDINHAM DO NOSSO NOSSO CODE"
+  },
+  "1a73760f76ec11ccb9a96a15610cdb34_002.ogg": {
+    "tempo_inicio": "00:00:14.724",
+    "tempo_fim": "00:00:19.150",
+    "duracao": 4.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1731711626052856,
+    "mos_stoi": 0.69137042760849,
+    "mos_si_sdr": -2.1221652030944824,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que também tem seu contrato encerrando ali, contrato em empréstimo em dezembro. Então vamos falar",
+    "stt_wav2vec": "TAMBÉM ENTENO SEU CONTATO DEM CERRA DO LI PUTARCOM EMPRÉSTIMOS EM DEZEMBRO NÃO VAMOS FALAR"
+  }
+}

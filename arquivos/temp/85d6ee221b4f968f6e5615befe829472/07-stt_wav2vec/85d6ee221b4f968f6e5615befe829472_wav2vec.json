@@ -1,0 +1,17 @@
+{
+  "85d6ee221b4f968f6e5615befe829472_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:30.070",
+    "duracao": 30.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5158625841140747,
+    "mos_stoi": 0.9459869265556335,
+    "mos_si_sdr": 11.026793479919434,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Semanas em casa, eu não aguentava mais. E sabe que ali em Gaúcha ZH, Rodrigo Adams, tem uma entrevista muito legal que está na capa do site, lembrando que Gaúcha ZH está com todo o site, essas matérias sobre o coronavírus estão abertas para quem não é assinante, então é só entrar lá em gaúcha ZH.com. E daí, no caso, essa entrevista é com a presidente da Internacional, Stress Management do Brasil. Uma coisa muito louca.",
+    "stt_wav2vec": "SEMCASA GRAPAVA MARS E SABE QUE A LINGA UXAZÉAGA RODRIGOADONS TEM UMA ENTREVISTA MUITO LEGAL QUE ESTÁ NA CAPA DO SAIT LEMBRANDO QUE GAUXAZEGA ESTÁ COM TODO O SAITIO ESAS MATERIAS SOBRE O CORONAR VIRUS ESTÃO ABERTAS PARA QUEM NÃO É ASSINANTE ENTÃO E SÓ ENTRALÁ EM GAÚXAS EAGAPONTCOM E DAHÍ NO CASO ESSA ENTREVISTA É COM A PRESIDENTE DA INTERNAINTERNACIONAL SRAZ MADDMAN ASSCEIX BRASEOLA UMA COISA MUITO LOA"
+  }
+}

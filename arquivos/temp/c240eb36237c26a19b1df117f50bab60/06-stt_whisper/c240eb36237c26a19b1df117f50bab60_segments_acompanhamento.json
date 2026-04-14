@@ -1,0 +1,58 @@
+{
+  "c240eb36237c26a19b1df117f50bab60_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.156",
+    "duracao": 4.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.295586109161377,
+    "mos_stoi": 0.9375530481338501,
+    "mos_si_sdr": 18.9522762298584,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, esse foi meu doutorado. Eu fiquei 18 anos..."
+  },
+  "c240eb36237c26a19b1df117f50bab60_002.ogg": {
+    "tempo_inicio": "00:00:04.644",
+    "tempo_fim": "00:00:08.380",
+    "duracao": 3.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.906320333480835,
+    "mos_stoi": 0.8660716414451599,
+    "mos_si_sdr": 7.0592827796936035,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "trabalhando com essa meninada, a maioria dela é muito pobre,"
+  },
+  "c240eb36237c26a19b1df117f50bab60_003.ogg": {
+    "tempo_inicio": "00:00:08.804",
+    "tempo_fim": "00:00:13.116",
+    "duracao": 4.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5136494636535645,
+    "mos_stoi": 0.747890055179596,
+    "mos_si_sdr": 0.22861507534980774,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "De periferia. Campo feito. Campo feito de sonhos. Campo feito de sonhos."
+  },
+  "c240eb36237c26a19b1df117f50bab60_004.ogg": {
+    "tempo_inicio": "00:00:13.412",
+    "tempo_fim": "00:00:20.062",
+    "duracao": 6.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.988044261932373,
+    "mos_stoi": 0.9455498456954956,
+    "mos_si_sdr": 16.313053131103516,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É porque o SESI tinha, posso já falar no passado, cursos gratuitos de teatro."
+  }
+}

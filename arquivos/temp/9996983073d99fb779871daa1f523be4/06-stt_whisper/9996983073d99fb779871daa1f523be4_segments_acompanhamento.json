@@ -1,0 +1,16 @@
+{
+  "9996983073d99fb779871daa1f523be4_001.ogg": {
+    "tempo_inicio": "00:00:00.964",
+    "tempo_fim": "00:00:05.550",
+    "duracao": 4.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8271403312683105,
+    "mos_stoi": 0.7885000705718994,
+    "mos_si_sdr": 5.786927700042725,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Maravilhosa, empalhadas pela mãe, de um lado, pela professora, do outro, pelo mundo."
+  }
+}

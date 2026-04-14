@@ -1,0 +1,17 @@
+{
+  "e0bac0b8d58a8430c99e6df2649ef334_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:04.104",
+    "duracao": 4.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.343064308166504,
+    "mos_stoi": 0.9372360706329346,
+    "mos_si_sdr": 16.72505760192871,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "se fez abrir os olhos, mas que se pudessem ter feito a cama",
+    "stt_wav2vec": "FEZABRE OS ODHOS MAS SE  PUVESSE TER FEITO OACAMA"
+  }
+}

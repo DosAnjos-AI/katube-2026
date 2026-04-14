@@ -1,0 +1,17 @@
+{
+  "0cb4098e169cc4e4f35f7c66f88dd947_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.720",
+    "duracao": 3.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.895596504211426,
+    "mos_stoi": 0.9823979735374451,
+    "mos_si_sdr": 19.752355575561523,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "gosto que me faço juntando cursos com suções, não é?",
+    "stt_wav2vec": "GOSTO COM FALSO É JUNTANDO CURSOS CONSUSOI NÃO É"
+  }
+}

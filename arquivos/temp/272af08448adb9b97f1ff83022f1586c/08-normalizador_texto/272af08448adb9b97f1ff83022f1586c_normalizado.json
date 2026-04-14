@@ -1,0 +1,38 @@
+{
+  "272af08448adb9b97f1ff83022f1586c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.572",
+    "duracao": 4.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8332682847976685,
+    "mos_stoi": 0.8835011124610901,
+    "mos_si_sdr": -4.647671699523926,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Talvez na próxima casa. Pensou José. Toque, toque.",
+    "stt_wav2vec": "TALVEZ NA PRÓXIMA CASA PENSOU JOSÉ OQ",
+    "stt_leg_normalizado": null,
+    "stt_whisper_normalizado": "talvez na proxima casa pensou jose toque toque",
+    "stt_wav2vec_normalizado": "talvez na proxima casa pensou jose oq"
+  },
+  "272af08448adb9b97f1ff83022f1586c_002.ogg": {
+    "tempo_inicio": "00:00:05.764",
+    "tempo_fim": "00:00:10.504",
+    "duracao": 4.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0875611305236816,
+    "mos_stoi": 0.9205451011657715,
+    "mos_si_sdr": 22.4091796875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Lamento, lotação completa, disse a velhinha.",
+    "stt_wav2vec": "LAMENTO LOTAÇÃO COMPLETA DISSE A VELHINHA",
+    "stt_leg_normalizado": null,
+    "stt_whisper_normalizado": "lamento lotacao completa disse a velhinha",
+    "stt_wav2vec_normalizado": "lamento lotacao completa disse a velhinha"
+  }
+}

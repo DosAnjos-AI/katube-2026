@@ -1,0 +1,44 @@
+{
+  "08bf3b4f292081fa65fdd012a8729760_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.108",
+    "duracao": 6.11,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5033619403839111,
+    "mos_stoi": 0.8413388133049011,
+    "mos_si_sdr": 8.435212135314941,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pensar no filme agora seria a animação à viagem de Shihiro. Nele conseguimos ver bem a relação da menina Shihiro com os outros."
+  },
+  "08bf3b4f292081fa65fdd012a8729760_002.ogg": {
+    "tempo_inicio": "00:00:06.372",
+    "tempo_fim": "00:00:13.020",
+    "duracao": 6.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.738768458366394,
+    "mos_stoi": 0.9199115633964539,
+    "mos_si_sdr": 9.992987632751465,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Uma cena legal que demonstra esse meu pensamento é a cena dos operários, que são bolas de pelos que vocês estão carregando em costas e jogando em uma fornalha."
+  },
+  "08bf3b4f292081fa65fdd012a8729760_003.ogg": {
+    "tempo_inicio": "00:00:13.412",
+    "tempo_fim": "00:00:17.742",
+    "duracao": 4.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9511160850524902,
+    "mos_stoi": 0.8912231922149658,
+    "mos_si_sdr": 9.995040893554688,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "No primeiro momento em que Cheiro ver eles, ela usasse ela. No primeiro momento que Cheiro..."
+  }
+}

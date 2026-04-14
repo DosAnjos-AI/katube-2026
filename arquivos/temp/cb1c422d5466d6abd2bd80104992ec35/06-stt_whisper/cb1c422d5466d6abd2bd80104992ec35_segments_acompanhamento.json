@@ -1,0 +1,44 @@
+{
+  "cb1c422d5466d6abd2bd80104992ec35_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.532",
+    "duracao": 9.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2314095497131348,
+    "mos_stoi": 0.9541365504264832,
+    "mos_si_sdr": 13.472146987915039,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Presidente, seja muito bem-vindo. Muito obrigado por ter aceitado o nosso convite. Espero que você curta aí o nosso papo de hoje. Ah, com certeza. Muito obrigado, Luiz."
+  },
+  "cb1c422d5466d6abd2bd80104992ec35_002.ogg": {
+    "tempo_inicio": "00:00:09.956",
+    "tempo_fim": "00:00:13.468",
+    "duracao": 3.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2541142702102661,
+    "mos_stoi": 0.6555868983268738,
+    "mos_si_sdr": 0.7647334337234497,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É uma honra para mim estar aqui com você."
+  },
+  "cb1c422d5466d6abd2bd80104992ec35_003.ogg": {
+    "tempo_inicio": "00:00:13.732",
+    "tempo_fim": "00:00:20.028",
+    "duracao": 6.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6975677013397217,
+    "mos_stoi": 0.8186038732528687,
+    "mos_si_sdr": 7.391882419586182,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e falando para esse público, essa nossa agente cooperativista, falando sobre esse tema."
+  }
+}

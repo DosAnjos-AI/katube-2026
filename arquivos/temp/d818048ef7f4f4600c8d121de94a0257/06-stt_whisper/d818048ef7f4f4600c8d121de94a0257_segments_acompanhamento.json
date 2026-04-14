@@ -1,0 +1,30 @@
+{
+  "d818048ef7f4f4600c8d121de94a0257_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:13.884",
+    "duracao": 13.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7511367797851562,
+    "mos_stoi": 0.9370649456977844,
+    "mos_si_sdr": 18.851329803466797,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quem vai garantir que um homem não vai usar todos os dados hoje que já existem sobre pessoas, sobre governo, sobre tudo? Quem vai garantir que isso vai ser usado para o bem, vai ser usado para a humanidade e que isso não pode cair em mãos erradas?"
+  },
+  "d818048ef7f4f4600c8d121de94a0257_002.ogg": {
+    "tempo_inicio": "00:00:14.148",
+    "tempo_fim": "00:00:21.496",
+    "duracao": 7.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9638069868087769,
+    "mos_stoi": 0.9106690883636475,
+    "mos_si_sdr": 18.456920623779297,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Só garantindo que as habilidades humanas sejam desenvolvidas é que nós garantiremos, inclusive o futuro da humanidade."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "10f4d59dbea933e4d43f4cb701b2a8aa_001.ogg": {
+    "tempo_inicio": "00:00:03.428",
+    "tempo_fim": "00:00:22.716",
+    "duracao": 19.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3251469135284424,
+    "mos_stoi": 0.9191746711730957,
+    "mos_si_sdr": 1.9655262231826782,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tirando o GPR botão de Thiago Neves. Cara, o Thiago Neves não dá mais. Não dá pra jogar no Grêmio. Não dá. Chega do Thiago Neves. Não é que ele entra... Não é que ele entra... Não é que ele entra e erra as coisas. Ele não erra porque ele nem tenta. Ele não faz nada. Cara, ele não faz nada. O Thiago Neves chega de Thiago Neves no Grêmio.",
+    "stt_wav2vec": "TIRANDO JE FERRE BOTÃO E TIAGO NEVES CARO TEAV NEVES NÃO DÁ MAIS NÃO DÁ PARA JOGAR NO GRÊMIO NÃO DÁ CHEIGO DE CHAGO NEVAS O CARANICO MEO AOBIA NNÃO É QUE  NÃO É QUE LH ENTRAS E LÃO COMEÇOU JA GAERA NÃO É QUE LHE ENTRA IERRAS COISAS ELLE NÃO ERRA QUE NINTENGA E NÃO FAZ NADA A NÃOFAZ NADA CHAPO NEVES CHEGA DE CHEGA O CHAVO NEVES NO GRÊMIO"
+  },
+  "10f4d59dbea933e4d43f4cb701b2a8aa_002.ogg": {
+    "tempo_inicio": "00:00:22.980",
+    "tempo_fim": "00:00:30.014",
+    "duracao": 7.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7540357112884521,
+    "mos_stoi": 0.91119384765625,
+    "mos_si_sdr": 8.536940574645996,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

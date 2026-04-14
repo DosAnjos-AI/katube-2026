@@ -1,0 +1,16 @@
+{
+  "f69fe9c64e329c92ba93c2f3556dd327_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.118",
+    "duracao": 9.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.169416666030884,
+    "mos_stoi": 0.9751048684120178,
+    "mos_si_sdr": 23.58946990966797,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "do temor é fundamental fazer muito barulho, bastante tiroteio, incitar confrontos armados e distribuir balas perdidas por aí."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "08ca7f7568fae5c538e417caac345c0e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:31.388",
+    "duracao": 31.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5503060817718506,
+    "mos_stoi": 0.9232267141342163,
+    "mos_si_sdr": 16.537845611572266,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": "A PRODUÇÃO DEM SEGURANÇA CORRESPONDE A UM PROJETO DE PODER SERVE COMO UM A MALGAMA QUE EMPRESTA PARA INTINIDADE DE SINTILDO AS EXPERIMENTAÇÕES SINGULARES DAS VIOLAÇÕES VIVIDAS PELOS SUJEITOS NAS FALTA NA FAVELA INFUNÇÃO DES SEUS DISTINTOS MARCADORES SÓCIO E IDENTITARIOS ESSES SUJEITOS RELABORADOS NOS DISCURSOS NEOLIBERAIS DE CONTROLE DO CRIME SÃO DESEJADOS COMO ENTE AS AVULSOS E SOLITRES ALIENADOS DE SUAS REDES DE APOIO ENTREGUES AO CÁLCULO UTILITÁRIO DAS RACIONALIDADES DO LIVRE MERCADO"
+  },
+  "08ca7f7568fae5c538e417caac345c0e_002.ogg": {
+    "tempo_inicio": "00:00:31.588",
+    "tempo_fim": "00:00:37.150",
+    "duracao": 5.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3220908641815186,
+    "mos_stoi": 0.9278988242149353,
+    "mos_si_sdr": 18.51863670349121,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

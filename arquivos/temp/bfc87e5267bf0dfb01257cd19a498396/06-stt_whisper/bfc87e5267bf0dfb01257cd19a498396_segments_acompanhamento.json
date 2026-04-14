@@ -1,0 +1,16 @@
+{
+  "bfc87e5267bf0dfb01257cd19a498396_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:11.664",
+    "duracao": 11.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0183465480804443,
+    "mos_stoi": 0.9931232333183289,
+    "mos_si_sdr": 25.38326072692871,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Conversando com o Aldo, que é uruguaio, ficou claro para mim que é também responsabilidade das empresas investir na formação humana dos seus colaboradores. Ouça isso para ver se você também nos convence."
+  }
+}

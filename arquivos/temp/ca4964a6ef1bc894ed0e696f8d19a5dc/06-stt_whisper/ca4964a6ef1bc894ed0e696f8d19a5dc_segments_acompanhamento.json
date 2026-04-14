@@ -1,0 +1,16 @@
+{
+  "ca4964a6ef1bc894ed0e696f8d19a5dc_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.262",
+    "duracao": 9.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9708200693130493,
+    "mos_stoi": 0.9280251860618591,
+    "mos_si_sdr": 15.420721054077148,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "no tal sentido crítico, aquilo que tu falaste agora mesmo, tu vais começar a ouvir ouvindo vários tipos de assuntos, todos eles a bater ao mesmo,"
+  }
+}

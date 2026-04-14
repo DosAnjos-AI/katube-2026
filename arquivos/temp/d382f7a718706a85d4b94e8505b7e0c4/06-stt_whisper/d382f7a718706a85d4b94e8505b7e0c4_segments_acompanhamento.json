@@ -1,0 +1,16 @@
+{
+  "d382f7a718706a85d4b94e8505b7e0c4_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.568",
+    "duracao": 6.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.922539710998535,
+    "mos_stoi": 0.9933865666389465,
+    "mos_si_sdr": 19.043773651123047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "galhardo na frente, dando esse sprint, tendo essa armação mais ofensiva, eu acho que o Inter ganharia com esse quarteto aí."
+  }
+}

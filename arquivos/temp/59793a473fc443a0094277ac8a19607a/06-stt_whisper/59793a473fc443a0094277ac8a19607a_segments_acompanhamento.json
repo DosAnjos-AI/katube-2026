@@ -1,0 +1,16 @@
+{
+  "59793a473fc443a0094277ac8a19607a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.174",
+    "duracao": 14.17,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5638298988342285,
+    "mos_stoi": 0.9312966465950012,
+    "mos_si_sdr": 11.80893325805664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vai fazer o mesmo processo, o Pedro volta a repetir o processo, até que vai chegar a um ponto em que vocês vão sentir que o gripe está excessivamente grosso e que já não estão a conseguir manusear bem a cabeça da raquete, já vos está a prender um pouco os movimentos e já não estou a sentir da mesma forma."
+  }
+}

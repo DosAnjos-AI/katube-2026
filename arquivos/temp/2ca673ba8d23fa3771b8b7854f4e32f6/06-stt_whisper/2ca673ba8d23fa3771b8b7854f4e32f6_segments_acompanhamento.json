@@ -1,0 +1,30 @@
+{
+  "2ca673ba8d23fa3771b8b7854f4e32f6_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:13.244",
+    "duracao": 13.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4798551797866821,
+    "mos_stoi": 0.7968485355377197,
+    "mos_si_sdr": 5.627872467041016,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho que ele poderia ter, por exemplo, que foi tirado da Alessandro e ter posto Marcos Guilherme naquele momento. Deixar alguém para os caras se preocupar. O Galhardo estava cansado já. O Marcos Guilherme perdeu aquele gol. Preocupado que o Marcos Guilherme não faz aquele gol."
+  },
+  "2ca673ba8d23fa3771b8b7854f4e32f6_002.ogg": {
+    "tempo_inicio": "00:00:13.316",
+    "tempo_fim": "00:00:20.542",
+    "duracao": 7.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3872054815292358,
+    "mos_stoi": 0.8200221657752991,
+    "mos_si_sdr": 1.4594041109085083,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

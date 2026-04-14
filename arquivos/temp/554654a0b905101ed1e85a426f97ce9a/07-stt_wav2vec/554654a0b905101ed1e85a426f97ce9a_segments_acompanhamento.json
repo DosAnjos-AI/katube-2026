@@ -1,0 +1,17 @@
+{
+  "554654a0b905101ed1e85a426f97ce9a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.022",
+    "duracao": 6.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.706488013267517,
+    "mos_stoi": 0.8816734552383423,
+    "mos_si_sdr": -0.9602426290512085,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "4 milhões do Eric, 1,300 da parcela do Parede.",
+    "stt_wav2vec": "QUATRO OFORMAGO É QUATRO MILHÕES DO ÉRIC UM E TREZENTOS DA PARCELA DO PAREDE"
+  }
+}

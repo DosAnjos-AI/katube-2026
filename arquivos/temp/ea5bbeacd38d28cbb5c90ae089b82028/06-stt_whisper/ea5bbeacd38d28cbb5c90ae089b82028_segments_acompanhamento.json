@@ -1,0 +1,16 @@
+{
+  "ea5bbeacd38d28cbb5c90ae089b82028_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.440",
+    "duracao": 4.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5715649127960205,
+    "mos_stoi": 0.8506214022636414,
+    "mos_si_sdr": 3.8955135345458984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas eu não sei se é Bernardinos Sarolas."
+  }
+}

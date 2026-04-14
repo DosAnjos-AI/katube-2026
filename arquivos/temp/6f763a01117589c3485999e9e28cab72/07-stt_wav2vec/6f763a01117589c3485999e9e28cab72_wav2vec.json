@@ -1,0 +1,17 @@
+{
+  "6f763a01117589c3485999e9e28cab72_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.028",
+    "duracao": 4.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2276289463043213,
+    "mos_stoi": 0.5948643088340759,
+    "mos_si_sdr": -6.279226779937744,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pode ser com álcool em gel, mas é melhor sabão.",
+    "stt_wav2vec": "PODE SER CUM ALG NGEL VACÊ NA MENAR SABÃO"
+  }
+}

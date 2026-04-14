@@ -1,0 +1,16 @@
+{
+  "041c1d5e6a724e1673e7df0bdc0e904e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.862",
+    "duracao": 6.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1225414276123047,
+    "mos_stoi": 0.9383951425552368,
+    "mos_si_sdr": 9.122565269470215,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "preciso oxigenar as coisas e se atualizar com esse novo maneira de pensar da sociedade."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "cfb3bb017baf2caca9097f5062fc944f_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.156",
+    "duracao": 4.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8298890590667725,
+    "mos_stoi": 0.913668692111969,
+    "mos_si_sdr": 12.63952922821045,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí a gente coloca, o objetivo do core é estabilizar o tronco."
+  },
+  "cfb3bb017baf2caca9097f5062fc944f_002.ogg": {
+    "tempo_inicio": "00:00:04.516",
+    "tempo_fim": "00:00:08.540",
+    "duracao": 4.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8267388343811035,
+    "mos_stoi": 0.9199756979942322,
+    "mos_si_sdr": 13.937287330627441,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, se o objetivo do core é estabilizar o tronco, vocês vão ter que procurar"
+  },
+  "cfb3bb017baf2caca9097f5062fc944f_003.ogg": {
+    "tempo_inicio": "00:00:08.804",
+    "tempo_fim": "00:00:17.820",
+    "duracao": 9.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.936858892440796,
+    "mos_stoi": 0.9188459515571594,
+    "mos_si_sdr": 13.294398307800293,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Colocar exercícios que desestabilizem. Então, por exemplo, o exemplo básico, o exercício chave, o básico de colo é a prancha."
+  },
+  "cfb3bb017baf2caca9097f5062fc944f_004.ogg": {
+    "tempo_inicio": "00:00:18.148",
+    "tempo_fim": "00:00:25.358",
+    "duracao": 7.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8925292491912842,
+    "mos_stoi": 0.9127580523490906,
+    "mos_si_sdr": 9.391297340393066,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Você coloca a prancha ali, no começo tá todo se tremendo, né? Parece aquela máquina de lavar antiga. E aí..."
+  }
+}

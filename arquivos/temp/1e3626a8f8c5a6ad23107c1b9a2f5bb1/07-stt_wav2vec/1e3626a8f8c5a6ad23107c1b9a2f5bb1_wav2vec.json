@@ -1,0 +1,13 @@
+{
+  "1e3626a8f8c5a6ad23107c1b9a2f5bb1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.620",
+    "duracao": 14.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Exatamente, se calhar, é claro que clientes que toda hora nos ligam e mandam e-mails para o amor da santa, longe, não é? Porque nós não temos capacidade para nada coisa. Mas se tu é de uma pessoa tranquila, se achas que nunca chateaste, ele não vai lá nada levar a malo",
+    "stt_wav2vec": "EXATEMENTES QUELHANUNA E SIM CLARO CA CLIANTECA TODA A AURA NOS LIGAM E MANUIMENTOS PORA MORVA SANTA VA GOES NÃO ÉGUA CO NOME DEMOS DE CAPACIDADO PERNDEND DA COIVA MAXESUSTUESMA UMA PESSOA TRANQILLA SACXAS PNUNCA CHAPIARTE OU NÃO VA LÁ NADA LARAMALO"
+  }
+}

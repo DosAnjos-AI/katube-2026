@@ -1,0 +1,17 @@
+{
+  "7213865c88bfe283a4c4bb2c474208fa_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.246",
+    "duracao": 5.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3511197566986084,
+    "mos_stoi": 0.9902552962303162,
+    "mos_si_sdr": 23.249141693115234,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Beleza então, minha gente. Feitoria. Mais um episódio de alto nível.",
+    "stt_wav2vec": "VELEZE COME A GENTE FEITORIA MAISUELÓDIO DE ALTO NÍVEL"
+  }
+}

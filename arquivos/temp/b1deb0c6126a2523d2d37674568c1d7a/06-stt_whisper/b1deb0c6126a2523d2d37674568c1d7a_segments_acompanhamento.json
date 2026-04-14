@@ -1,0 +1,30 @@
+{
+  "b1deb0c6126a2523d2d37674568c1d7a_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:13.500",
+    "duracao": 13.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0743353366851807,
+    "mos_stoi": 0.8974555134773254,
+    "mos_si_sdr": 11.630249977111816,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho que é isso. Se você lava a louça percebendo a força com que você pega as coisas, o peso das coisas, a fragilidade de uma taça,"
+  },
+  "b1deb0c6126a2523d2d37674568c1d7a_002.ogg": {
+    "tempo_inicio": "00:00:13.604",
+    "tempo_fim": "00:00:19.484",
+    "duracao": 5.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.448367118835449,
+    "mos_stoi": 0.8736034035682678,
+    "mos_si_sdr": 13.647148132324219,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ou o peso de uma panela, se você lida com isso durante o dia,"
+  }
+}

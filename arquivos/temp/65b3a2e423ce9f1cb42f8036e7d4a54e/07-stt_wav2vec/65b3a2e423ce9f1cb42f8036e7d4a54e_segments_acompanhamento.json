@@ -1,0 +1,17 @@
+{
+  "65b3a2e423ce9f1cb42f8036e7d4a54e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.126",
+    "duracao": 9.13,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1266591548919678,
+    "mos_stoi": 0.6787309050559998,
+    "mos_si_sdr": -2.246756076812744,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas tem coisas de um dia, e um outro dia, acabou. Porque você foi na consultora, ele mandou aumentar, né, meu amigo? É triste.",
+    "stt_wav2vec": "AATULERO NAMBEIOS E DIA ACAVOU NO PORQUE EU MELO ME TEA SANGO QUE TERIA ESTAR ENTRENBOR QEM VOCÊ FOI NA COSTUREIRO MANDOU OMENTADE A VERDENT"
+  }
+}

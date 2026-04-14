@@ -1,0 +1,17 @@
+{
+  "3f28cec7f9610a2e9e980530241bbcf9_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:28.892",
+    "duracao": 28.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2447338104248047,
+    "mos_stoi": 0.9492765665054321,
+    "mos_si_sdr": 15.78685474395752,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas antes, eu gostaria de fazer aí a pergunta derradeira, uma última pergunta super especial para o nosso convidado. Presidente, quais os caminhos que o cooperativismo pode oferecer para a nossa juventude? E já que é uma via de mão dupla, como essa juventude pode contribuir para fortalecer, para disseminar ainda mais o movimento aqui no nosso país e continuar contribuindo aí para uma sociedade mais cópia, uma sociedade mais justa, pautada pela cooperação? Pois é, Lia.",
+    "stt_wav2vec": "MAS ANTES GOSTARIA DE FAZER A PERGUNTA DERRADEIRA UMA ÚLTIMA PERGUNTA SUPER ESPECIAL PARA O NOSSO CONVIDADO PRESIDENTE QUAIS OS CAMINHOS QUE O COPERATIVISMO PODE OFFERECER PARA NOSSA JUVENTUDE E JÁ QUE É UMA VIA DE MONDUPLA COMO ESSA JUVENTUDE PODE CONTRIBUIR PARA FORTALECER PARA DISSEMINAR AINDA MAIS UM MOVIMENTO AQUE NO NOSSO PAÍS E CONTINUAR CONTRIBUINDO AI POR UMA SOCIEDADE MAIS CÓPRIONA É UMA SOCIEDADE MAIS JUSTA PALTADA PELA COPERAÇÃO"
+  }
+}

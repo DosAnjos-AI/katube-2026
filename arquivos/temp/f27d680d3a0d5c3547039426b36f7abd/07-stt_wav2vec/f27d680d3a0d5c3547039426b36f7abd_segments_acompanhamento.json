@@ -1,0 +1,47 @@
+{
+  "f27d680d3a0d5c3547039426b36f7abd_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.876",
+    "duracao": 10.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7388598918914795,
+    "mos_stoi": 0.9361230731010437,
+    "mos_si_sdr": 10.810372352600098,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mais alguma coisa aí, Rodrigo Adams? Não recebi mais nada, não. Então tá, eu tenho mais aqui. Vai firme. A Gisele Giordani. Oi, Carol. Adoro tudo nosso. Anima nossas...",
+    "stt_wav2vec": "MAIS ALGUMA COISA AHI RODRIGUAZEMS NÃO RONÃO RECEBI MAIS NADEONTAIRA LEGO MAIS AQUIA VAI FIRMO A GIZÉLE GIORDANI R OICAROL ADOR O TU DO NOSSO ANIMA A NOSSAS"
+  },
+  "f27d680d3a0d5c3547039426b36f7abd_002.ogg": {
+    "tempo_inicio": "00:00:10.980",
+    "tempo_fim": "00:00:23.068",
+    "duracao": 12.09,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5401184558868408,
+    "mos_stoi": 0.9198949933052063,
+    "mos_si_sdr": 4.818427085876465,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "f27d680d3a0d5c3547039426b36f7abd_003.ogg": {
+    "tempo_inicio": "00:00:23.300",
+    "tempo_fim": "00:00:34.110",
+    "duracao": 10.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.335970878601074,
+    "mos_stoi": 0.9825516939163208,
+    "mos_si_sdr": 19.684783935546875,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

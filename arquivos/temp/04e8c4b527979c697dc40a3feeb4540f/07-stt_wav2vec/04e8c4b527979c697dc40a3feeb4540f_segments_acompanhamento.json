@@ -1,0 +1,32 @@
+{
+  "04e8c4b527979c697dc40a3feeb4540f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.236",
+    "duracao": 14.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.647775650024414,
+    "mos_stoi": 0.9052624106407166,
+    "mos_si_sdr": 6.564199924468994,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não conseguiu, ainda não teve. Não temos nada com o Rodinei, pelo amor de Deus. Não, não, não, não. Mas é que é os dois laterais que eu tenho. Só que eu penso assim, o Rodinei estava no São Paulo. Estava no Flamengo e ele era a reserva do Rafinha e pouco jogava.",
+    "stt_wav2vec": "NÃO CONSEGUIU NAI DA NÃO TEVE NÃO TEMPO NÃO NÃ NÃO NÃO O QUE EU EUS EU MAS É QUE O AOS DOIS LATERAIS QUE EU TENHO SÓ QUE EU PENSO ASSIM O RODINESTAVA NO SÃO PAULO TAVANO SÃO PALTAVA NO FLAMENGO E ELE ERA A RESERVA DO RAFINHA E POUCO JOGAVA"
+  },
+  "04e8c4b527979c697dc40a3feeb4540f_002.ogg": {
+    "tempo_inicio": "00:00:14.308",
+    "tempo_fim": "00:00:18.872",
+    "duracao": 4.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8922934532165527,
+    "mos_stoi": 0.9889141917228699,
+    "mos_si_sdr": 20.108901977539062,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele não veio pro Inter pra ser reserva de alguém. Ele veio pro Inter pra poder jogar. Creio eu, entende?",
+    "stt_wav2vec": "ELE NÃO VEI PRUINTRA PARA SER RESERVA DE ALGUÉM ELE VEIO PORINTR PAPA DE JOGAR CREIO EU ENTENDE"
+  }
+}

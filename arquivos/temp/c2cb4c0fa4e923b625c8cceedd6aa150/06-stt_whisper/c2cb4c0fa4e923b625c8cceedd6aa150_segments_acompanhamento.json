@@ -1,0 +1,16 @@
+{
+  "c2cb4c0fa4e923b625c8cceedd6aa150_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:05.934",
+    "duracao": 5.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4346885681152344,
+    "mos_stoi": 0.8204994797706604,
+    "mos_si_sdr": 3.69512939453125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olha, olha, está aqui eu estou a cantar, estão a ver, ele já está aqui a pé. Pode ser ele também."
+  }
+}

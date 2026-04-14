@@ -1,0 +1,16 @@
+{
+  "b95d8e7043ea8dcc9e775745e55a35ad_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.880",
+    "duracao": 13.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6075416803359985,
+    "mos_stoi": 0.959466278553009,
+    "mos_si_sdr": 11.514634132385254,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E daí, tipo, sempre que eles apagavam a luz apareceu uma entidade na casa, só que entidade, tipo, interagir, tipo, fisicamente, que as coisas deixava a marca de mão, não dava pra entender o que tava acontecendo. Aí, no final, não lembro o que acontece, ou misturamos."
+  }
+}

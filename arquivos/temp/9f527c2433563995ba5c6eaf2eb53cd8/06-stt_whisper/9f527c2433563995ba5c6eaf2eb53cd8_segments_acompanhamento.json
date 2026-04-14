@@ -1,0 +1,30 @@
+{
+  "9f527c2433563995ba5c6eaf2eb53cd8_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.140",
+    "duracao": 10.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.019664764404297,
+    "mos_stoi": 0.9786927103996277,
+    "mos_si_sdr": 22.025083541870117,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e vou tirar ali o PPR dali e andando a ganhar com isto. E se sou preciso, não estás a ganhar nada, estás a perder porque aquilo é que estava com uma rentabilidade perfeita, 10% ou 15%, que é ótimo."
+  },
+  "9f527c2433563995ba5c6eaf2eb53cd8_002.ogg": {
+    "tempo_inicio": "00:00:10.340",
+    "tempo_fim": "00:00:15.560",
+    "duracao": 5.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5778398513793945,
+    "mos_stoi": 0.9548051953315735,
+    "mos_si_sdr": 16.530834197998047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e na prática vais tirar para depois o dinheiro que não investiste a pagar a prestação, não fazes nada com ele"
+  }
+}

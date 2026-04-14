@@ -1,0 +1,30 @@
+{
+  "e0315f73acee57b6c92d590718b69e43_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:11.196",
+    "duracao": 11.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1584765911102295,
+    "mos_stoi": 0.6501245498657227,
+    "mos_si_sdr": -3.8194377422332764,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Jeff Soul serve muito bem com o centroavante no time do Grêmio hoje. E tenho a certeza que ele consegue jogar mais um ano, querendo jogar futebol como ele veio pra cá, tá fininho, tá bem fisicamente."
+  },
+  "e0315f73acee57b6c92d590718b69e43_002.ogg": {
+    "tempo_inicio": "00:00:11.524",
+    "tempo_fim": "00:00:17.838",
+    "duracao": 6.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1896495819091797,
+    "mos_stoi": 0.5611319541931152,
+    "mos_si_sdr": -7.9810895919799805,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

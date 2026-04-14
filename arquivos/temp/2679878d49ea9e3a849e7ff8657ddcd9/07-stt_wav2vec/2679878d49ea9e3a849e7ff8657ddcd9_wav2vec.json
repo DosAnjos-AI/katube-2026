@@ -1,0 +1,17 @@
+{
+  "2679878d49ea9e3a849e7ff8657ddcd9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:16.508",
+    "duracao": 16.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2284398078918457,
+    "mos_stoi": 0.7620567083358765,
+    "mos_si_sdr": 3.577157497406006,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o Bruno doente mental me falar que o Cudeu e o Clube da Zamex largar o Liverpool na mão do Cudeu. É só dar tempo pra ele. O Cudeu foi campeão argentino com o Racing, né? Que nem o Clube foi do alemão com o Burussia.",
+    "stt_wav2vec": "NOE O BRUNO DOENTE MENTTAL ME PALAR ODEU LHE FINCLOFE DAS AMEQES LAGAL OLÍGRAFO NA MÃO DO PODELHO BASTODA O PRA ELE É QUEMARA O COCOQEVEFECOSPIDÃO O CODE FOI CAMPEÕ ARGENTINO COM RACIM NA ANELE AREQUEMEU LBFO FOI DO ALEMÃO COBURÚCI"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "b14680262b0dd594fd7353aa0a4dce80_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.848",
+    "duracao": 3.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.312049150466919,
+    "mos_stoi": 0.9693081378936768,
+    "mos_si_sdr": 14.202414512634277,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Está no ar mais um podcast O Corpo Criador."
+  }
+}

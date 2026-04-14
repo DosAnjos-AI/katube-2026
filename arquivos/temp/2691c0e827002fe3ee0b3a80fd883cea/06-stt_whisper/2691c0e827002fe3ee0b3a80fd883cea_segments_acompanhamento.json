@@ -1,0 +1,44 @@
+{
+  "2691c0e827002fe3ee0b3a80fd883cea_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:03.772",
+    "duracao": 3.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.956360101699829,
+    "mos_stoi": 0.9472916126251221,
+    "mos_si_sdr": 20.525848388671875,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "2691c0e827002fe3ee0b3a80fd883cea_002.ogg": {
+    "tempo_inicio": "00:00:04.068",
+    "tempo_fim": "00:00:18.108",
+    "duracao": 14.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4339146614074707,
+    "mos_stoi": 0.9718648791313171,
+    "mos_si_sdr": 23.135112762451172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "do que quando é orelha. E daí, até no jogo, eu comentei que eu tava vendo com a minha cunhada junto o jogo, e eu comentei com ela e falei assim, no último programa, o Danny até falou que é fato que isso vai acontecer."
+  },
+  "2691c0e827002fe3ee0b3a80fd883cea_003.ogg": {
+    "tempo_inicio": "00:00:18.212",
+    "tempo_fim": "00:00:31.550",
+    "duracao": 13.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8472247123718262,
+    "mos_stoi": 0.9391462206840515,
+    "mos_si_sdr": 17.301044464111328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque quando o Alisson está com o Orejoela, ele se preocupa muito mais em só atacar do que defender. Porque o Orejoela vai 100% e ele volta o 100% para marcar. O Vitor Ferraz já tem que se preocupar na volta."
+  }
+}

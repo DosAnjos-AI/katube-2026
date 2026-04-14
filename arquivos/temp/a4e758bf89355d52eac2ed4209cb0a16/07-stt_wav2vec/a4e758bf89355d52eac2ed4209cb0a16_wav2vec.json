@@ -1,0 +1,47 @@
+{
+  "a4e758bf89355d52eac2ed4209cb0a16_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.924",
+    "duracao": 4.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2871181964874268,
+    "mos_stoi": 0.9638606905937195,
+    "mos_si_sdr": 20.840744018554688,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Isso, no caso do teatro, me parece que é...",
+    "stt_wav2vec": "ISSO NO CASO DO THEATRO É ME PARECE QUE É"
+  },
+  "a4e758bf89355d52eac2ed4209cb0a16_002.ogg": {
+    "tempo_inicio": "00:00:05.476",
+    "tempo_fim": "00:00:11.868",
+    "duracao": 6.39,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.313462257385254,
+    "mos_stoi": 0.888441264629364,
+    "mos_si_sdr": 14.001171112060547,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "não apenas uma necessidade, mas talvez exija...",
+    "stt_wav2vec": "ELA NÃO APENAS UMA NECESSIDADE MAS TALVEZ A EXIJA"
+  },
+  "a4e758bf89355d52eac2ed4209cb0a16_003.ogg": {
+    "tempo_inicio": "00:00:12.228",
+    "tempo_fim": "00:00:21.352",
+    "duracao": 9.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.906784772872925,
+    "mos_stoi": 0.9402627944946289,
+    "mos_si_sdr": 20.418010711669922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "refletir, pensar um pouco sobre o que nós estamos chamando, por exemplo, de um teatro negro neste momento no Brasil.",
+    "stt_wav2vec": "REFLETI PENSAR UM POUCO SOBRE O QUE NÓS ESTAMOS CHAMANDO POR EXEMPLO DE UM TEATRO NEGRO NESTE MOMENTO NO BRASIL"
+  }
+}

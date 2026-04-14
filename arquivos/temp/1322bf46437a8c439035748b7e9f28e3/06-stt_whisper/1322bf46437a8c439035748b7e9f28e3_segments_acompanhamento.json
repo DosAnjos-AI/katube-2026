@@ -1,0 +1,58 @@
+{
+  "1322bf46437a8c439035748b7e9f28e3_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.660",
+    "duracao": 5.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5960614681243896,
+    "mos_stoi": 0.7865753173828125,
+    "mos_si_sdr": 5.03596305847168,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E os músicos e jazz que apareceram com The Connection, que eu já mencionei."
+  },
+  "1322bf46437a8c439035748b7e9f28e3_002.ogg": {
+    "tempo_inicio": "00:00:05.956",
+    "tempo_fim": "00:00:13.052",
+    "duracao": 7.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.826598882675171,
+    "mos_stoi": 0.8239306211471558,
+    "mos_si_sdr": 11.105225563049316,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, tudo isso criou o que veio depois a se consagrar como contracultura."
+  },
+  "1322bf46437a8c439035748b7e9f28e3_003.ogg": {
+    "tempo_inicio": "00:00:13.412",
+    "tempo_fim": "00:00:18.524",
+    "duracao": 5.11,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4321482181549072,
+    "mos_stoi": 0.7125343680381775,
+    "mos_si_sdr": 3.2060065269470215,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "uma cultura, claro, um construto de uma coisa que aconteceu naquela época."
+  },
+  "1322bf46437a8c439035748b7e9f28e3_004.ogg": {
+    "tempo_inicio": "00:00:18.884",
+    "tempo_fim": "00:00:28.766",
+    "duracao": 9.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3933327198028564,
+    "mos_stoi": 0.8196399211883545,
+    "mos_si_sdr": 5.737863063812256,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E o Living era um desses centros de contracultura em Nova York. Principalmente o primeiro imóvel que realmente eles estabeleceram"
+  }
+}

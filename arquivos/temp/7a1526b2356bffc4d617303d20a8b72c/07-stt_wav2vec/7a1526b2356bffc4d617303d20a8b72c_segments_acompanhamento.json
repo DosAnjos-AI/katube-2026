@@ -1,0 +1,17 @@
+{
+  "7a1526b2356bffc4d617303d20a8b72c_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.912",
+    "duracao": 5.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.290309429168701,
+    "mos_stoi": 0.9725102782249451,
+    "mos_si_sdr": 22.829383850097656,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vamos falar do Tricolor, então, que mais um empate do Grêmio, o quarto seguido.",
+    "stt_wav2vec": "VAMOS FALAR DO TRICOLOR ENTÃO QUE MAIS UM EMPATE DO GRÊMIO QUARTO SENIDO"
+  }
+}

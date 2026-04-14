@@ -1,0 +1,32 @@
+{
+  "d9ba0bb9f2e141fb3402a7f45238ebae_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.772",
+    "duracao": 7.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6935484409332275,
+    "mos_stoi": 0.9619699716567993,
+    "mos_si_sdr": 18.02176284790039,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A manchete parcial do conforto do futebol, então é que o Grêmio é campeão e venceu o Caxias fazendo três gols em dois jogos.",
+    "stt_wav2vec": "A MANCHETE PARCIAL DO COFRO DO FUTEBOL INTÃO É QUE O GREME É CAMPEÃO E VENCEU O CAICXE FAZENDO TRÊS GOROS EM DOIS JOGOS"
+  },
+  "d9ba0bb9f2e141fb3402a7f45238ebae_002.ogg": {
+    "tempo_inicio": "00:00:08.196",
+    "tempo_fim": "00:00:20.316",
+    "duracao": 12.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6515662670135498,
+    "mos_stoi": 0.9409834742546082,
+    "mos_si_sdr": 6.140387058258057,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Agora, indo mais pra realidade, a manchete imparcial é que o Grêmio passou um trabalho desgraçado pra ser campeão, perdeu por dois a um de virada dentro de casa pro Caxias.",
+    "stt_wav2vec": "AGORA INDO MAIS PARA REALIDADE A MANCHETE IMPARCIAL É QUE O GRÊMIO PASSOU UM TRABALHO DESGRAÇADO PARA SSE CAMPEÃO PERDEU POR DOIS AUNDE GIRARA DENTRO DE CASA POR CAXIAS"
+  }
+}

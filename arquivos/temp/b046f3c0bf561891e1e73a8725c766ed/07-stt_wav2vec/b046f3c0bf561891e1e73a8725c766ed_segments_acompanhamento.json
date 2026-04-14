@@ -1,0 +1,32 @@
+{
+  "b046f3c0bf561891e1e73a8725c766ed_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.836",
+    "duracao": 7.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.316155195236206,
+    "mos_stoi": 0.905792236328125,
+    "mos_si_sdr": 10.812806129455566,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A professora universitária, Sandra Rigato, fez esse caminho de autodesenvolvimento, depois de enfrentar a dor da rejeição.",
+    "stt_wav2vec": "A PROFESSOR UNIVERSITÁRIA SANDRA RIGATO FEZ ESSE CAMINHO DE ALTO DESENVOLVIMENTO DEPOIS DE ENFRENTAR A DOR DA REGENÇÃO"
+  },
+  "b046f3c0bf561891e1e73a8725c766ed_002.ogg": {
+    "tempo_inicio": "00:00:08.132",
+    "tempo_fim": "00:00:21.182",
+    "duracao": 13.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5157461166381836,
+    "mos_stoi": 0.9395021200180054,
+    "mos_si_sdr": 17.540969848632812,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ela aceitou meu convite para contar a própria história sobre o medo do julgamento e disse que cresceu, sendo incentivada a acentuar as próprias imperfeições. A minha irmã é uma mulher branca,",
+    "stt_wav2vec": "ELA ACEITOU MEU CONVITE PARA CONTAR A PRÓPRIA HISTORIA SOBRE O MEDO DO JULGAMENTO E DISSE QUE CRESCEU SENDO INCENTIVADA A ACENTUAR AS PRÓPRIAS IMPERFEIÇÕES A MINHA MÃE É UMA MULHER BRANCA"
+  }
+}

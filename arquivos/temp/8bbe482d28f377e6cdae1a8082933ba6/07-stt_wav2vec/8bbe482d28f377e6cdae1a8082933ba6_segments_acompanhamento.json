@@ -1,0 +1,62 @@
+{
+  "8bbe482d28f377e6cdae1a8082933ba6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.652",
+    "duracao": 6.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.669142723083496,
+    "mos_stoi": 0.8240451216697693,
+    "mos_si_sdr": 8.41554069519043,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Oi, Anny, muitos dos que consumimos atualmente, principalmente a batata, o arroz, o feijão, etc.",
+    "stt_wav2vec": "OIANE MUITO DOS QUE A CONSUMIMOS ATUALMENTE PRINCIPALMENTE A VATATA ARROS O FEIJÃO"
+  },
+  "8bbe482d28f377e6cdae1a8082933ba6_002.ogg": {
+    "tempo_inicio": "00:00:06.916",
+    "tempo_fim": "00:00:13.532",
+    "duracao": 6.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7141828536987305,
+    "mos_stoi": 0.8433449268341064,
+    "mos_si_sdr": 10.462668418884277,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nessa perspectiva, o autor mostra que ela falasse a considerarmos que o homem domesticou as expressas alimentícias.",
+    "stt_wav2vec": "NESSA PERSPECTIVA O AUTOR MOSTRA QUE AMA FALASSE CONSIDERARMOS QUE O HOMEM DOMISTICOU AS ESPÉCIAS ALIMENTÍCIAS"
+  },
+  "8bbe482d28f377e6cdae1a8082933ba6_003.ogg": {
+    "tempo_inicio": "00:00:13.796",
+    "tempo_fim": "00:00:19.868",
+    "duracao": 6.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5563709735870361,
+    "mos_stoi": 0.862411379814148,
+    "mos_si_sdr": 8.851715087890625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tomemos como exemplo o trigo. Domesticar, do latim, domésticos, significa casa.",
+    "stt_wav2vec": null
+  },
+  "8bbe482d28f377e6cdae1a8082933ba6_004.ogg": {
+    "tempo_inicio": "00:00:20.164",
+    "tempo_fim": "00:00:30.424",
+    "duracao": 10.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.633143424987793,
+    "mos_stoi": 0.8856214284896851,
+    "mos_si_sdr": 12.302489280700684,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pensando na lógica agrícola, quem passou a viver em uma casa foi o trigo e não o sapiens. Uma vez que o sapiens alimentava o trigo com humus, irrigavam",
+    "stt_wav2vec": null
+  }
+}

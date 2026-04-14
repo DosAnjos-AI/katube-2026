@@ -1,0 +1,20 @@
+{
+  "0f8edeeb7fe7c75403ce659ac1355bd6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.912",
+    "duracao": 3.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2075576782226562,
+    "mos_stoi": 0.9884372353553772,
+    "mos_si_sdr": 24.22066879272461,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu creio para mim que a construção de sociedade é um desafio para toda.",
+    "stt_wav2vec": "TEIO PARA MIM QUE A CUÇÃO DOCIEDADE É UM DESAFIO PARA TODA",
+    "stt_leg_normalizado": null,
+    "stt_whisper_normalizado": "eu creio para mim que a construcao de sociedade e um desafio para toda",
+    "stt_wav2vec_normalizado": "teio para mim que a cucao dociedade e um desafio para toda"
+  }
+}

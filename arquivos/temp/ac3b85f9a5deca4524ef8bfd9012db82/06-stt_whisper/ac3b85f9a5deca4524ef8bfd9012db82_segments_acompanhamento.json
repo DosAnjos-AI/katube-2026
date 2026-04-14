@@ -1,0 +1,16 @@
+{
+  "ac3b85f9a5deca4524ef8bfd9012db82_001.ogg": {
+    "tempo_inicio": "00:00:00.484",
+    "tempo_fim": "00:00:08.476",
+    "duracao": 7.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5306859016418457,
+    "mos_stoi": 0.9125671982765198,
+    "mos_si_sdr": 6.114981651306152,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Vettel fica tão psicando pela Xelotti, o amor dele é tão grande, que a saída que ele encontrou foi a morte. Ele acaba se matando no final do livro."
+  }
+}

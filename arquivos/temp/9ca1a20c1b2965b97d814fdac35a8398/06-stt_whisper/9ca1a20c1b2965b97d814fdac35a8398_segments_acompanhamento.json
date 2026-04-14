@@ -1,0 +1,58 @@
+{
+  "9ca1a20c1b2965b97d814fdac35a8398_001.ogg": {
+    "tempo_inicio": "00:00:02.820",
+    "tempo_fim": "00:00:11.612",
+    "duracao": 8.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0508432388305664,
+    "mos_stoi": 0.986224889755249,
+    "mos_si_sdr": 24.088960647583008,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O elefante vem me falou. A raposa é legal, mas se você tentar ser igual a ela, você é quem vai se dar mal."
+  },
+  "9ca1a20c1b2965b97d814fdac35a8398_002.ogg": {
+    "tempo_inicio": "00:00:11.972",
+    "tempo_fim": "00:00:18.076",
+    "duracao": 6.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7507679462432861,
+    "mos_stoi": 0.8843547701835632,
+    "mos_si_sdr": 4.230055809020996,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "9ca1a20c1b2965b97d814fdac35a8398_003.ogg": {
+    "tempo_inicio": "00:00:18.500",
+    "tempo_fim": "00:00:23.868",
+    "duracao": 5.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.145771026611328,
+    "mos_stoi": 0.9713828563690186,
+    "mos_si_sdr": 20.781963348388672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pare de copiar tudo que ela faça, não. A zebra veio e me falou."
+  },
+  "9ca1a20c1b2965b97d814fdac35a8398_004.ogg": {
+    "tempo_inicio": "00:00:24.228",
+    "tempo_fim": "00:00:30.392",
+    "duracao": 6.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.715996742248535,
+    "mos_stoi": 0.9764015078544617,
+    "mos_si_sdr": 20.00600242614746,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A raposa é legal, mas você está chato. Pare de imitar a raposa e seja você mesmo de imediato."
+  }
+}

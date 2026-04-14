@@ -1,0 +1,17 @@
+{
+  "48c6dabc585a3ed475ba6391f5c806a5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.468",
+    "duracao": 5.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2529046535491943,
+    "mos_stoi": 0.9946960210800171,
+    "mos_si_sdr": 23.432804107666016,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O governo, qual que é a participação dele para criar a crise ou para tirar a gente da crise? É só ele que atua nisso?",
+    "stt_wav2vec": "É O GOVERNO COQUE A PARTICIPAÇÃO DE PRCRIAR CRISOPA TIRÁ GENTE DA CRISE É SÓ ELE QUE ATUA NISSO"
+  }
+}

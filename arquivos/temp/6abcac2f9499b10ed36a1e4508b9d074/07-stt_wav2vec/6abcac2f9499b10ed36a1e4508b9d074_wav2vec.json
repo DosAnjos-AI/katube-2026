@@ -1,0 +1,17 @@
+{
+  "6abcac2f9499b10ed36a1e4508b9d074_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.286",
+    "duracao": 6.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.332541584968567,
+    "mos_stoi": 0.8090362548828125,
+    "mos_si_sdr": 6.810464859008789,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Você acha-te aí um bocadinho e os senhores das finanças têm tratado. Isso é quanto mais o anexo, já não podes simular mais.",
+    "stt_wav2vec": "VIANEIRA BOSTRADEUM QEDEINHUM E QUE OS SENHORES DAS FEIRANÇAS PIANTROTAREM E SEE CORTIMATOR NESSE JORTAS JÁ NÃO PODOSSIMUA MAIS"
+  }
+}

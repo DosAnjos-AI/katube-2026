@@ -1,0 +1,17 @@
+{
+  "bf8a77f0d640405eed62b1574d57e9a9_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:04.542",
+    "duracao": 4.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.181622266769409,
+    "mos_stoi": 0.9326490163803101,
+    "mos_si_sdr": 12.156190872192383,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ficou muito mais barato, eu tenho ficado em casa dele e pagar as alimentações,",
+    "stt_wav2vec": "FOU MUITO MAIS BARATO E EU TEIO FICADO EM CASADELO E PAGAR AS ALIMENTAÇÕES"
+  }
+}

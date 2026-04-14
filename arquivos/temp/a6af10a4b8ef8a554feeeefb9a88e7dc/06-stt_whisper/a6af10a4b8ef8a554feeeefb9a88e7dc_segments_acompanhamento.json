@@ -1,0 +1,16 @@
+{
+  "a6af10a4b8ef8a554feeeefb9a88e7dc_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:12.462",
+    "duracao": 12.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8169784545898438,
+    "mos_stoi": 0.9418315291404724,
+    "mos_si_sdr": 9.080214500427246,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Até tínhamos feito qualquer coisa assim. Acho que estava logo 24 mil ou 26 mil euros à cabeça, com os esforços e tudo mais. 26 mil euros. Tendo em conta que o pessoal que nos chega aqui é entre os 26 e os 34..."
+  }
+}

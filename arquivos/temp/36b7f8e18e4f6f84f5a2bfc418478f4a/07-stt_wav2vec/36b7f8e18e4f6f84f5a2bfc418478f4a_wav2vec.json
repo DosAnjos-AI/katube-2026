@@ -1,0 +1,47 @@
+{
+  "36b7f8e18e4f6f84f5a2bfc418478f4a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.452",
+    "duracao": 11.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7514351606369019,
+    "mos_stoi": 0.9038732647895813,
+    "mos_si_sdr": 10.719767570495605,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e também no árvore. E há um vínculo muito forte do cooperativismo de crédito com as cooperativas de produção. E sem falar também",
+    "stt_wav2vec": "E TAMBÉM É LULUADO E AUM VÍNCULO MUITO FORTE DO COBRATIVISMO DE CRÉDITO COM AS COPERATIVAS DE PRODUÇÃO E SEM FALAR TAMBÉM"
+  },
+  "36b7f8e18e4f6f84f5a2bfc418478f4a_002.ogg": {
+    "tempo_inicio": "00:00:11.524",
+    "tempo_fim": "00:00:21.820",
+    "duracao": 10.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3440499305725098,
+    "mos_stoi": 0.9551887512207031,
+    "mos_si_sdr": 17.229141235351562,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a importância logística das cooperativas de transporte agora na pandemia das cooperativas de saúde. Então, o cooperativismo tem se mostrado",
+    "stt_wav2vec": "A IMPORTÂNCIA LOGÍSTICA DAS COMPERATIVOS DE TRANSPORTE AGORA NA BAREMIA DAS COMPERATIVOS DE SAÚDE TÃO O COPERATIVISMO ELE TEM SE MOSTRADO"
+  },
+  "36b7f8e18e4f6f84f5a2bfc418478f4a_003.ogg": {
+    "tempo_inicio": "00:00:22.180",
+    "tempo_fim": "00:00:27.708",
+    "duracao": 5.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2400612831115723,
+    "mos_stoi": 0.8461194634437561,
+    "mos_si_sdr": 10.74903678894043,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "protagonista nas crises que o Brasil tem passado, são muitas. Foi o grande...",
+    "stt_wav2vec": "PROTAGONISTA NAS CRISES QUE O BRASIL TEM PASSADO ESSÃO MUITAS FOI O GRANDE"
+  }
+}

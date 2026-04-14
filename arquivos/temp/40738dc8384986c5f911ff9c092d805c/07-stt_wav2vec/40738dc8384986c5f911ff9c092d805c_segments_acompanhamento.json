@@ -1,0 +1,17 @@
+{
+  "40738dc8384986c5f911ff9c092d805c_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.456",
+    "duracao": 4.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8213369846343994,
+    "mos_stoi": 0.8762019872665405,
+    "mos_si_sdr": 11.833081245422363,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Portanto, eu quando vou, só se a gente disser para o Pedro, ganho X, como é que é? Consegui",
+    "stt_wav2vec": "TAMVIOU VOVIO EOU QUANDO VOOU SSÓ SEJA DE SEREFÃO PEDRO GANTISCO MEQUE O"
+  }
+}

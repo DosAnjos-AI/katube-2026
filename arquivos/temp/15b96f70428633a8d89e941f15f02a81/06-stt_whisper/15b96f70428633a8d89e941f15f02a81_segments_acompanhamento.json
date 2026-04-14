@@ -1,0 +1,16 @@
+{
+  "15b96f70428633a8d89e941f15f02a81_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:08.952",
+    "duracao": 8.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4706439971923828,
+    "mos_stoi": 0.8005369305610657,
+    "mos_si_sdr": 12.247109413146973,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se, por exemplo, se nós investir, nós temos mil euros para investir e às vezes perguntam-me se, por exemplo, ao investir 500€ numa ETF e 500 euros noutro,"
+  }
+}

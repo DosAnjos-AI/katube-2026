@@ -1,0 +1,44 @@
+{
+  "63413ce149ad57f74fe67730f4bce3cc_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.508",
+    "duracao": 8.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3897769451141357,
+    "mos_stoi": 0.8446387052536011,
+    "mos_si_sdr": 4.82672643661499,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a faxineira também é, é oportunidade de comunicação e engajamento. Então, essa ideia do management by walking around é, cara, vá,"
+  },
+  "63413ce149ad57f74fe67730f4bce3cc_002.ogg": {
+    "tempo_inicio": "00:00:08.772",
+    "tempo_fim": "00:00:17.660",
+    "duracao": 8.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8865783214569092,
+    "mos_stoi": 0.9151224493980408,
+    "mos_si_sdr": 13.109721183776855,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Veja com seus próprios olhos, observe, chame a atenção das pessoas. Uma coisa que sempre incomodou, falando que toda organização tem as chamadas pessoas invisíveis, né?"
+  },
+  "63413ce149ad57f74fe67730f4bce3cc_003.ogg": {
+    "tempo_inicio": "00:00:18.116",
+    "tempo_fim": "00:00:21.688",
+    "duracao": 3.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4553720951080322,
+    "mos_stoi": 0.7408472299575806,
+    "mos_si_sdr": -1.0994139909744263,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "As pessoas que ninguém presta atenção, que colocam valor, né?"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "2ab8b3acbcb1fcde12334486b3cda75a_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:10.862",
+    "duracao": 10.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3173885345458984,
+    "mos_stoi": 0.9748820066452026,
+    "mos_si_sdr": 16.594058990478516,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Já no segundo jogo já está aparentando jogar bem o Luiz Fernando, sinceramente, não consegui ver nada dele, só que ele fez uma falta imbecil e tomou o cartão amarelo.",
+    "stt_wav2vec": "JÁ NO NO SEGUNDO JOGO JÁ JÁTÁ APARENTANDO JOGAR BEM OU LUIZ FERNANDOS SINCERAMENTE NÃO CONSEGUI VER NADA DELLE SÓ QUE ELE FEZ UMA FALTA EMBECIL E TOMOU CARTÃO AMARELO"
+  }
+}

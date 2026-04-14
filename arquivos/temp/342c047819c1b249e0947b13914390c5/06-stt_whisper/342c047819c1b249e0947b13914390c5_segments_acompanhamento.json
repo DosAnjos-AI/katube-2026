@@ -1,0 +1,16 @@
+{
+  "342c047819c1b249e0947b13914390c5_001.ogg": {
+    "tempo_inicio": "00:00:00.548",
+    "tempo_fim": "00:00:11.352",
+    "duracao": 10.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1240122318267822,
+    "mos_stoi": 0.771675705909729,
+    "mos_si_sdr": 1.5785290002822876,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tá na Atlântida, todo mundo tá ouvindo o melhor som da FIA, 18 horas, 12 minutos. Sexta-feira, dia 6 de março de 2020. Tá chegando na área o Tudo Nosso."
+  }
+}

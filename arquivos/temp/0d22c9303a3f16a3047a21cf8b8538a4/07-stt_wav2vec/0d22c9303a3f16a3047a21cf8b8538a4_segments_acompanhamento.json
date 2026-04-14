@@ -1,0 +1,17 @@
+{
+  "0d22c9303a3f16a3047a21cf8b8538a4_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.814",
+    "duracao": 6.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8257300853729248,
+    "mos_stoi": 0.9064201712608337,
+    "mos_si_sdr": 10.288044929504395,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu agradeço demais mesmo a sua participação, meu lindo. Bora sorbar no Natal. Amo você e obrigado de novo, Mano.",
+    "stt_wav2vec": "AREEEDE MAIS MESMO A SUA PARTICIPAÇÃO MOLINO BORASTROBANDO O NATAL AMO VOCÊ BRIGADO DE NOVO MAE"
+  }
+}

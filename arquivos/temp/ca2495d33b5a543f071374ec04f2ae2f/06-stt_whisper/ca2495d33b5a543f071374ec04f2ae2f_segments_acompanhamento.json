@@ -1,0 +1,44 @@
+{
+  "ca2495d33b5a543f071374ec04f2ae2f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.532",
+    "duracao": 13.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.128472089767456,
+    "mos_stoi": 0.9536615014076233,
+    "mos_si_sdr": 20.855701446533203,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então a sensação que eu tenho é que a gente vive um momento em que a ideia de confinamento aparece quase como uma estilização de uma experiência que é generalizada na sociedade brasileira. De repente a morte se tornou algo próximo."
+  },
+  "ca2495d33b5a543f071374ec04f2ae2f_002.ogg": {
+    "tempo_inicio": "00:00:13.988",
+    "tempo_fim": "00:00:20.988",
+    "duracao": 7.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.261718273162842,
+    "mos_stoi": 0.9640626311302185,
+    "mos_si_sdr": 23.029804229736328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "De repente a morte se tornou algo da ordem do tátil. Eu posso te tocar e ao te tocar..."
+  },
+  "ca2495d33b5a543f071374ec04f2ae2f_003.ogg": {
+    "tempo_inicio": "00:00:21.156",
+    "tempo_fim": "00:00:30.280",
+    "duracao": 9.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3416783809661865,
+    "mos_stoi": 0.9717409014701843,
+    "mos_si_sdr": 22.26213264465332,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "você morre. No entanto, essa experiência da proximidade da morte, essa experiência do cerco, essa experiência do toque de recolher,"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "e22a13ce3286e560ea0b86136ac83629_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.916",
+    "duracao": 13.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1913012266159058,
+    "mos_stoi": 0.7560978531837463,
+    "mos_si_sdr": 1.8476616144180298,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Gabriel, olha a pergunta que extremamente imbecil que tu fez. Tava indo bem, tava indo bem, mas tem que falar guerreiro. Mas o guerreiro já fez algum governal, né? Tu tinha que falar do Yurgen Klopp.",
+    "stt_wav2vec": "GABRIEL ALHA PERGUNTA A QUE EXTREMAMENTE UMBECIUTOFEZ FOLALHA ABÉM OUAVA INDO BEM PORQUEDEOAR O REEIRO GUENHA VITAA FACO MAS A GUERRER A QUERERSE APESA COMA ALGUM DERUMGRENALDA TEU TINHA QUE FALADO IUGENCLO"
+  }
+}

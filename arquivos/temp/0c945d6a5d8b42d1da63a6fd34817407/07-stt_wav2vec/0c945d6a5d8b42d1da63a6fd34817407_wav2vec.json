@@ -1,0 +1,17 @@
+{
+  "0c945d6a5d8b42d1da63a6fd34817407_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.584",
+    "duracao": 8.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.647847890853882,
+    "mos_stoi": 0.9507986307144165,
+    "mos_si_sdr": 20.03653335571289,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "isso eu penso que se você está num ambiente propício a você se expressar",
+    "stt_wav2vec": "ISSO E EU EU PENSO QUE SE VOCÊ TÁ NO AMBIENTE PROPÍCIO A VOCÊ SE EXPRESSAR"
+  }
+}

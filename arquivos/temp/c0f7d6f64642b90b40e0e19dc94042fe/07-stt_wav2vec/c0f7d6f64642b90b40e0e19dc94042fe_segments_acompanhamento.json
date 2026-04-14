@@ -1,0 +1,17 @@
+{
+  "c0f7d6f64642b90b40e0e19dc94042fe_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.070",
+    "duracao": 7.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1647093296051025,
+    "mos_stoi": 0.950901448726654,
+    "mos_si_sdr": 20.782306671142578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "eu não consigo saber o que é que tu queres fazer daqui a 10 anos, quais é que são os seus objetivos, quais é que são as suas tolerâncias ao risco, tipo,",
+    "stt_wav2vec": "COSERCEER O QUE QTUKUES FAZE DEQUER AEXANTES COISA QUE SES SEOS OBJETIVES COM A DECXÃO AS SUAS CURAÇAS AO RISCO T"
+  }
+}

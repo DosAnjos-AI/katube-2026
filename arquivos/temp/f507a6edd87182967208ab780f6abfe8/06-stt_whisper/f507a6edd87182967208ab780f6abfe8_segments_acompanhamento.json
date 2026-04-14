@@ -1,0 +1,30 @@
+{
+  "f507a6edd87182967208ab780f6abfe8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.716",
+    "duracao": 14.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.663279414176941,
+    "mos_stoi": 0.9580939412117004,
+    "mos_si_sdr": 11.66872787475586,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e amedrontada e incolida, que a corrida amarmentista deixa o cidadão armado cada vez mais vulnerável porque ele está obrigado a reagir sozinho a produzir respostas desvantajosas limitadas aos meios desiguais que cada um de nós dispomos."
+  },
+  "f507a6edd87182967208ab780f6abfe8_002.ogg": {
+    "tempo_inicio": "00:00:14.788",
+    "tempo_fim": "00:00:28.380",
+    "duracao": 13.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9816462993621826,
+    "mos_stoi": 0.9673407673835754,
+    "mos_si_sdr": 19.633066177368164,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Diante de uma situação de violência, a defesa armada da vítima está sempre em desvantagem diante do agressor armado, que inicia o ato violento e que, por isso, tem o tempo e os recursos a seu favor. Na verdade,"
+  }
+}

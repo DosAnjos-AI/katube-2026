@@ -1,0 +1,30 @@
+{
+  "7234c3a3adb81d74e259758850a0875c_001.ogg": {
+    "tempo_inicio": "00:00:01.636",
+    "tempo_fim": "00:00:25.916",
+    "duracao": 24.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7976102828979492,
+    "mos_stoi": 0.9645791053771973,
+    "mos_si_sdr": 11.264421463012695,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "nos balanços, nos brinquedos, eles não estão sendo limpos. Ou seja, a tua criança pode passar, não é muito higiênico, né? Normalmente umas crianças, elas se esquecem de algumas coisas de higiene, vai passar na boca, vai passar pra alguém. Então, no modo geral, a gente precisa ficar em casa o maior tempo possível e todo mundo. O inimigo é invisível, né, Carol? E a gente não sabe onde ele tá..."
+  },
+  "7234c3a3adb81d74e259758850a0875c_002.ogg": {
+    "tempo_inicio": "00:00:26.116",
+    "tempo_fim": "00:00:34.958",
+    "duracao": 8.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.205102801322937,
+    "mos_stoi": 0.7789613008499146,
+    "mos_si_sdr": -0.12063348293304443,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

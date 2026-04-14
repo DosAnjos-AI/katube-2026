@@ -1,0 +1,32 @@
+{
+  "02a4952016670fa841c7b9d2cc20c7e8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.924",
+    "duracao": 12.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1845017671585083,
+    "mos_stoi": 0.8148952126502991,
+    "mos_si_sdr": 1.764784574508667,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A gente já sabe. Ele não tá aqui porque ele não quer. Essa é a verdade. Ele não... Ele ir pra pra praia, quer dizer que ele ir pra praia, ele não tem nenhum desses problemas. Cara, tu não consegue. Não adianta. Não adianta. Não, mas o dia que ele fez de coração não discutiu, por exemplo, essas coisas.",
+    "stt_wav2vec": "NÁSABE MOTO NAQUIPO QUE ELLE NÃO QUER ES É VERDADE ELLE NÃO E ELE IR PARA PRAR E QUER DIZER QUE ELE I PARA A PRAIA ELE NÃO TEM NENHUM DOSSES PROBLEMADOS DO EBACIONAL NÃO ADIANTA FRECOMA EI NO DIA QUE LHE FEZ COARANAO GIU POR EXEMPLO SAS COISAS"
+  },
+  "02a4952016670fa841c7b9d2cc20c7e8_002.ogg": {
+    "tempo_inicio": "00:00:13.060",
+    "tempo_fim": "00:00:21.352",
+    "duracao": 8.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2147310972213745,
+    "mos_stoi": 0.7541336417198181,
+    "mos_si_sdr": -2.2122302055358887,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não, é verdade. Ele tá nadando, né? Mas a vida dele já retomou, entendeu? A vida dele já retomou. 99%.",
+    "stt_wav2vec": "FREVE NOAD A NADÂNPOMA ELITANADANGLO INDICRAELES Á EXPLICAR CORRENDO NA VASARARIDA ELES JÁ RETOMBOU INTUEM LEVAR A VIDA DEIJA RETOM LÁ NOVENTO E NAOO"
+  }
+}

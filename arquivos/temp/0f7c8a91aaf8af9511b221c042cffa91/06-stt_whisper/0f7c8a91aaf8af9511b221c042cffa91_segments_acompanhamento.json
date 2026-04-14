@@ -1,0 +1,30 @@
+{
+  "0f7c8a91aaf8af9511b221c042cffa91_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:06.844",
+    "duracao": 6.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.582493782043457,
+    "mos_stoi": 0.9778552055358887,
+    "mos_si_sdr": 20.314008712768555,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olá, primos e primas, sejam bem-vindos ao novo episódio do Conversas de Chuveiro, o podcast oficial dos primos."
+  },
+  "0f7c8a91aaf8af9511b221c042cffa91_002.ogg": {
+    "tempo_inicio": "00:00:07.172",
+    "tempo_fim": "00:00:11.528",
+    "duracao": 4.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.674163341522217,
+    "mos_stoi": 0.9593421816825867,
+    "mos_si_sdr": 14.83055591583252,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Conosco é que temos a maravilhosa Mary Popins. Olá!"
+  }
+}

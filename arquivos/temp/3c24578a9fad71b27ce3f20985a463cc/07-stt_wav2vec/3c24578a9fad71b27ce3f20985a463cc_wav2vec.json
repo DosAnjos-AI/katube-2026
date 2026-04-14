@@ -1,0 +1,32 @@
+{
+  "3c24578a9fad71b27ce3f20985a463cc_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.564",
+    "duracao": 9.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2557475566864014,
+    "mos_stoi": 0.7709784507751465,
+    "mos_si_sdr": -1.3242470026016235,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não tem esse ano. Se não parasse a pandemia era nós, né? Agora nos atrasou um pouco. Mas tá tudo menos. É, mas eu ainda tenho muita curiosidade de ver o...",
+    "stt_wav2vec": "NÃO TENHO ESSE ANER SE NÃO PARASSE A PANDEMIER ANORME AGORA NOS ATRASOOPO NATATLI NÉBEA EUINDA EA CUIDA CURIOSIDADE VEUO"
+  },
+  "3c24578a9fad71b27ce3f20985a463cc_002.ogg": {
+    "tempo_inicio": "00:00:09.828",
+    "tempo_fim": "00:00:14.684",
+    "duracao": 4.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6058690547943115,
+    "mos_stoi": 0.8458352088928223,
+    "mos_si_sdr": -0.13249972462654114,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "principalmente o Flamengo e o Palmeiras, que tem os números mais velozes junto com o Grêmio.",
+    "stt_wav2vec": "PINCIPALMENTE FLAMENGO E PALMEIRAS NECTINHAS DO MERICA MAS PAZ VELOZ E SINGEME COMO GRÊNIO"
+  }
+}

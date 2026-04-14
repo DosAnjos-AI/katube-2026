@@ -1,0 +1,58 @@
+{
+  "f0aec16b695a3258abe2f6737714b1dd_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.876",
+    "duracao": 6.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.442723035812378,
+    "mos_stoi": 0.9008496999740601,
+    "mos_si_sdr": 19.26897430419922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "estão comentando que o Everton Cebolinha pode ir por 20 milhões de euros que o Romildo Boza já aceita"
+  },
+  "f0aec16b695a3258abe2f6737714b1dd_002.ogg": {
+    "tempo_inicio": "00:00:07.268",
+    "tempo_fim": "00:00:13.916",
+    "duracao": 6.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1113829612731934,
+    "mos_stoi": 0.9058541655540466,
+    "mos_si_sdr": 13.577027320861816,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pensar que o Bruno Fuxo vai por 7, tem que levantar a mão pro céu, agradecer a Deus, porque o Cebolinha é o melhor jogador."
+  },
+  "f0aec16b695a3258abe2f6737714b1dd_003.ogg": {
+    "tempo_inicio": "00:00:14.180",
+    "tempo_fim": "00:00:24.092",
+    "duracao": 9.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3236585855484009,
+    "mos_stoi": 0.7586311101913452,
+    "mos_si_sdr": -1.5699806213378906,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "brasileiro em atividade, não futebol brasileiro, eu quero dizer. Ele é o melhor jogador do futebol brasileiro hoje, na minha opinião, é o Cebolinha antes da parada."
+  },
+  "f0aec16b695a3258abe2f6737714b1dd_004.ogg": {
+    "tempo_inicio": "00:00:24.740",
+    "tempo_fim": "00:00:29.726",
+    "duracao": 4.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5272417068481445,
+    "mos_stoi": 0.8119734525680542,
+    "mos_si_sdr": 4.142706871032715,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E se pensar que um gurizão que ainda não provou nada, tem muito potencial."
+  }
+}

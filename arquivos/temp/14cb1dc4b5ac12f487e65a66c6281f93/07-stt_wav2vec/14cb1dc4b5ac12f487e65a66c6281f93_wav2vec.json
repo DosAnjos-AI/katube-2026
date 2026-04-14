@@ -1,0 +1,47 @@
+{
+  "14cb1dc4b5ac12f487e65a66c6281f93_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.764",
+    "duracao": 4.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.366117000579834,
+    "mos_stoi": 0.8932996392250061,
+    "mos_si_sdr": 13.008326530456543,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Todo mundo tem a mesma opinião. JPM é titular absoluto. É, unanimidade. Desculpa, fugiu a palavra.",
+    "stt_wav2vec": "TODO MUNDO TEM A MESMA OPINIÃO JÁME RECATULAR ABSOLUTO NOVRÉL UNANIMIDADE E DESCULPA FUGIU A PALAVRA"
+  },
+  "14cb1dc4b5ac12f487e65a66c6281f93_002.ogg": {
+    "tempo_inicio": "00:00:05.092",
+    "tempo_fim": "00:00:15.036",
+    "duracao": 9.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2946219444274902,
+    "mos_stoi": 0.9749525785446167,
+    "mos_si_sdr": 23.503061294555664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se ele fosse fazer uma troca drástica hoje pra ter o Jean Pierre no meio campo, eu ainda acho que ele tiraria o Lucas Silva e manteria o Michael porque...",
+    "stt_wav2vec": "SE ELE FOSSE FAZER UMA TROCA DRÁSTICA HOJE PRATEIRO JE PIERRE NO MEIO CAMPO EU AINDA ACHO QUE ELE TIRARIA O LUCA SILVA E MANTERIA O MAICO PORQUE"
+  },
+  "14cb1dc4b5ac12f487e65a66c6281f93_003.ogg": {
+    "tempo_inicio": "00:00:15.300",
+    "tempo_fim": "00:00:25.052",
+    "duracao": 9.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.432343006134033,
+    "mos_stoi": 0.9811133146286011,
+    "mos_si_sdr": 22.34685516357422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Indo no que tu falou dele. É um meio campo que já jogou junto. E ele começaria a testar devagar o Lucas Silva no meio campo. O Lucas Silva veio para ser o cara.",
+    "stt_wav2vec": "INDO NO QUE TU FALODEN É UM MEIO CAMPO QUE JÁ JOGOU JUNTO E ELLE COMEÇARIA ATESTAR DE VAGAR O LUCA SILVA NO MEIO CAMPO E O LUCA SILVA VEIO PARA SER O CARA"
+  }
+}

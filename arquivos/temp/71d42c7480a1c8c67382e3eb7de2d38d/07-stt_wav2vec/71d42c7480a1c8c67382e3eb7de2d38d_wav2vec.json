@@ -1,0 +1,32 @@
+{
+  "71d42c7480a1c8c67382e3eb7de2d38d_001.ogg": {
+    "tempo_inicio": "00:00:00.900",
+    "tempo_fim": "00:00:06.332",
+    "duracao": 5.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6608762741088867,
+    "mos_stoi": 0.9932650327682495,
+    "mos_si_sdr": 23.182571411132812,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Matheus Henrique por dentro, o Jean Pierre bem mais participativo do que o normal, mas parece que...",
+    "stt_wav2vec": "MATEZHENRIQUE POR DENTRO J O JEUJAMPIERRE BEM MAIS PARTICIPATIVO DO QUE O NORMAL MAS PARECE QUE"
+  },
+  "71d42c7480a1c8c67382e3eb7de2d38d_002.ogg": {
+    "tempo_inicio": "00:00:06.660",
+    "tempo_fim": "00:00:14.920",
+    "duracao": 8.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.604764461517334,
+    "mos_stoi": 0.9705735445022583,
+    "mos_si_sdr": 14.006824493408203,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Faltava opção pra ele, sabe? Ele pegava aquela bola, olhava pra frente e não tinha pra quem tocar, não tinha opção. Aí ele, aquela piada de bola",
+    "stt_wav2vec": "FALTAVA OPÇÃO PARA ELE SABE ELE PEGAVA AQUELA BOLA OLHAVA PARA A FRENTE  NÃO TINHA PARA QUEM TOCAR NÃO TINHA OPÇÃO A ELE A TEADA DE BA"
+  }
+}

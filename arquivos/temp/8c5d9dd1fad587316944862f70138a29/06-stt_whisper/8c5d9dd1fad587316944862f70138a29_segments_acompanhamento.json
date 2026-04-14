@@ -1,0 +1,44 @@
+{
+  "8c5d9dd1fad587316944862f70138a29_001.ogg": {
+    "tempo_inicio": "00:00:00.228",
+    "tempo_fim": "00:00:14.428",
+    "duracao": 14.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6899569034576416,
+    "mos_stoi": 0.8574023246765137,
+    "mos_si_sdr": 7.824264049530029,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vou falar de Grenal então, semana Grenal, confronto 425, que vai acontecer no Centenário, tivemos uma confusão, desgraçada durante a semana para ver o local do jogo. Primeiramente é ser no Beira-Rio, teve o verso da prefeitura de Porto Alegre."
+  },
+  "8c5d9dd1fad587316944862f70138a29_002.ogg": {
+    "tempo_inicio": "00:00:14.500",
+    "tempo_fim": "00:00:23.036",
+    "duracao": 8.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.602942705154419,
+    "mos_stoi": 0.7931934595108032,
+    "mos_si_sdr": 5.769325256347656,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o Inter solicitou que o jogo fosse em Novo Hamburgo, teve o Beto da Prefeitura de Novo Hamburgo, e o jogo foi confirmado para Caxias do Sul, no Centenário,"
+  },
+  "8c5d9dd1fad587316944862f70138a29_003.ogg": {
+    "tempo_inicio": "00:00:23.364",
+    "tempo_fim": "00:00:28.366",
+    "duracao": 5.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2100064754486084,
+    "mos_stoi": 0.5078996419906616,
+    "mos_si_sdr": -11.738411903381348,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quarta-feira, dia 22 de julho, às 21h30, teremos o clássico"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "096a7ca2e81056cce190787655457b9d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.268",
+    "duracao": 10.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7756879329681396,
+    "mos_stoi": 0.9725069999694824,
+    "mos_si_sdr": 23.21761703491211,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Era uma galinha cor-de-rosa, metida chique, toda orgulhosa, que detestava pisar no chão cheio de lama do galinheiro. Ficava no alto do puleiro...",
+    "stt_wav2vec": "ERA UMA GALINHA COR DE ROSA METIDA A CHIQUE TODO ORGULHOSA QUE DETESTAVA PISAR NO CHÃO CHEIO DE LAMA DO GALINHEIRO FICAVA NO ALTO DO PULEIRO"
+  },
+  "096a7ca2e81056cce190787655457b9d_002.ogg": {
+    "tempo_inicio": "00:00:10.340",
+    "tempo_fim": "00:00:16.360",
+    "duracao": 6.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7509536743164062,
+    "mos_stoi": 0.9777712821960449,
+    "mos_si_sdr": 23.916603088378906,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E quando saía do lugar, batia as asas para voar, mas seus pés acabavam na lâmpada.",
+    "stt_wav2vec": "E QUANDO SAÍA DO LUGAR BATIA VAVA PARA VOAR MAS EUS PESACA BAVAM NALÃO"
+  }
+}

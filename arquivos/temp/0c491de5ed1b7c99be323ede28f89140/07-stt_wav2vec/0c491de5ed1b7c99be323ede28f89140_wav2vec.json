@@ -1,0 +1,17 @@
+{
+  "0c491de5ed1b7c99be323ede28f89140_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:04.348",
+    "duracao": 4.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1002161502838135,
+    "mos_stoi": 0.9440297484397888,
+    "mos_si_sdr": 21.57533836364746,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho que o Lucifer não foi um personagem que me cativou.",
+    "stt_wav2vec": "EU ACHO QUE O LÚCIFER NÃO FOI UM PERSONAGEM QUE ME CATIVOU"
+  }
+}

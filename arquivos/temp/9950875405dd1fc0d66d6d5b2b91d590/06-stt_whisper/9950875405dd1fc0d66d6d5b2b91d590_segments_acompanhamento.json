@@ -1,0 +1,44 @@
+{
+  "9950875405dd1fc0d66d6d5b2b91d590_001.ogg": {
+    "tempo_inicio": "00:00:01.220",
+    "tempo_fim": "00:00:07.452",
+    "duracao": 6.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5660572052001953,
+    "mos_stoi": 0.9232321381568909,
+    "mos_si_sdr": 6.226982116699219,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Bom dia, galera. Bom dia, Carol. Bom dia, Adam. E aí? Eu vim aqui pra passar um álcool aqui no..."
+  },
+  "9950875405dd1fc0d66d6d5b2b91d590_002.ogg": {
+    "tempo_inicio": "00:00:07.684",
+    "tempo_fim": "00:00:25.820",
+    "duracao": 18.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3173887729644775,
+    "mos_stoi": 0.8727570176124573,
+    "mos_si_sdr": 5.667715072631836,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Na bancada. Ah, é muito importante. O estúdio tem que ficar todo higienizado. Que bom que tu tá cuidando da nossa saúde. Mandar um beijo pra nossa querida, Wagner, mandar um beijo pra nossa querida Cátia. Ela é maravilhosa. Ela cuida da nossa limpeza aí no estúdio. Ela me deu um álcool e um paninho."
+  },
+  "9950875405dd1fc0d66d6d5b2b91d590_003.ogg": {
+    "tempo_inicio": "00:00:26.020",
+    "tempo_fim": "00:00:29.752",
+    "duracao": 3.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4854214191436768,
+    "mos_stoi": 0.8191355466842651,
+    "mos_si_sdr": 3.948547124862671,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

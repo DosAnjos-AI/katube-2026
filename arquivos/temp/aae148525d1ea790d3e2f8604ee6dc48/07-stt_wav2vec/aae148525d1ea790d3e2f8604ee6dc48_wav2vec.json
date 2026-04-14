@@ -1,0 +1,47 @@
+{
+  "aae148525d1ea790d3e2f8604ee6dc48_002.ogg": {
+    "tempo_inicio": "00:00:09.796",
+    "tempo_fim": "00:00:15.548",
+    "duracao": 5.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.19608998298645,
+    "mos_stoi": 0.9501929879188538,
+    "mos_si_sdr": 17.370567321777344,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não é curioso, pode dizer. Não, porque assim, é...",
+    "stt_wav2vec": "PNÃO É CURIOSO PODE DIZER NÃO É PORQUE SIM É"
+  },
+  "aae148525d1ea790d3e2f8604ee6dc48_003.ogg": {
+    "tempo_inicio": "00:00:15.876",
+    "tempo_fim": "00:00:22.940",
+    "duracao": 7.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.407762050628662,
+    "mos_stoi": 0.9772183895111084,
+    "mos_si_sdr": 20.16197967529297,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O primeiro momento do games com vocês, por exemplo, o Mix foi o computador, a Maria já foi console.",
+    "stt_wav2vec": "VOCÊS AO PRIMEIRO MOMENTO DO D DOGUEMES COM VOCÊS PRESENTOU MISFOYA O COMPUTADOR COAMARI JÁ FI COM  SOELE"
+  },
+  "aae148525d1ea790d3e2f8604ee6dc48_004.ogg": {
+    "tempo_inicio": "00:00:23.204",
+    "tempo_fim": "00:00:33.174",
+    "duracao": 9.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.785280704498291,
+    "mos_stoi": 0.9516761898994446,
+    "mos_si_sdr": 7.737420082092285,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E eu tinha meio que essa ideia, assim, tipo, eu sou muito do console, aliás, eu era muito do console, mas do contrário, agora tem muito tempo, que eu tenho meses que eu não ligo.",
+    "stt_wav2vec": "EU TINHA-ME QUE SEI DEIAS SINTE O É EU EU SOU MUITO DO CONSOLEU ALIÁS EU ERA MUITO DO CONSOLE MAS O DOPONTRARIO AGORA TEM MUITO TEMPO DEU TEM MESES CANOLIGO"
+  }
+}

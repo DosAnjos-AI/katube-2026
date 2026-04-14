@@ -1,0 +1,17 @@
+{
+  "0d0cd513ef974aa57b3a581018f5f491_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.550",
+    "duracao": 9.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2727113962173462,
+    "mos_stoi": 0.6568077206611633,
+    "mos_si_sdr": 1.708184838294983,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E o Juliano devia de bicos com o aparelhar vitrines em Nova York, uma coisa que ele fazia com muita arte, com...",
+    "stt_wav2vec": "U JURANDE DIA DE BICOS COM O A APARELHA EVE TRINES EM E NOVAIOR QUE UMA COISA QUE LE FAZER COMMUITAASSE COM"
+  }
+}

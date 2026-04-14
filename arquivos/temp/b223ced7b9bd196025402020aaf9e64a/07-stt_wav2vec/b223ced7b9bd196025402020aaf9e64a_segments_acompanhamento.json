@@ -1,0 +1,32 @@
+{
+  "b223ced7b9bd196025402020aaf9e64a_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:17.532",
+    "duracao": 17.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2212979793548584,
+    "mos_stoi": 0.836883008480072,
+    "mos_si_sdr": -1.4344974756240845,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de Paquetá e Vinicius Jr. teriam sido vendidos acima de 40 milhões e o Everton, que já mostrou muito mais do que eles mostraram no Brasil, receber proposta de 15. Só que lá é enche o Rio-São Paulo. É mais velho. É mais velho, concordo. Só que o Grêmio também estava com uma saúde financeira boa.",
+    "stt_wav2vec": "DE PAQUETAI VENICOSINHOR TRENCEDO VENDIDOS ACIMA DE QUARENTA MILHÕES E O EVER COM QUE JÁ MOSTROU MUITO MAIS DO QUE ELLES MOSTRARAM NO BRASIL RECEBE PROPOSTA DE QUINZE AA VEO GESOQUE LA  ENCHO O RIU S REMALONE MAS QUE É MAIS VELHO É MAIS VELHO É MAIS VELHO COMPORTO SUA QUE O GRÊMIE TAMBÉM ETAVA COMO A SAÚDE FINANCEIRA BOA"
+  },
+  "b223ced7b9bd196025402020aaf9e64a_002.ogg": {
+    "tempo_inicio": "00:00:17.924",
+    "tempo_fim": "00:00:28.230",
+    "duracao": 10.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3328135013580322,
+    "mos_stoi": 0.8146149516105652,
+    "mos_si_sdr": 4.442927360534668,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

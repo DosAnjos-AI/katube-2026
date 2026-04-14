@@ -1,0 +1,17 @@
+{
+  "917e96380dd144e7c97cedb35bac6898_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:12.440",
+    "duracao": 12.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6303327083587646,
+    "mos_stoi": 0.8888218998908997,
+    "mos_si_sdr": 8.26996898651123,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "em que há ali uns patamares que nos jogaram por corte de cabeça, mas tem a ver também com as idades, mas nós conseguimos tirar um benefício fiscal no IRS investindo no PPR.",
+    "stt_wav2vec": "Q S NOSSA ALIUS PATAMATICANJARAO DE CORDE CABEÇA MAS  TATEM VETAEM QUASIDADE MAS NÓS CONSEGUIMOS TIR Á UM BUNFICIO FISCAL NO IAREAS ENIVISTINDO OM NOPEPE"
+  }
+}

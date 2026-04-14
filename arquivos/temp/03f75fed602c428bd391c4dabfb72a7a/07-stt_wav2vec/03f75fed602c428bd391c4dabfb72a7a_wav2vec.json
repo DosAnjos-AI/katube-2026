@@ -1,0 +1,32 @@
+{
+  "03f75fed602c428bd391c4dabfb72a7a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.004",
+    "duracao": 7.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.314873456954956,
+    "mos_stoi": 0.7461579442024231,
+    "mos_si_sdr": 3.304943799972534,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Meu Deus do céu. Esse nome deve ser recusado a ser menção. Ah, esse nome é. Esse é um cara.",
+    "stt_wav2vec": "EU EDEU DO CEU SENADAESTE NÃO ME DEVE SER RECUSADA A SEGUNÇAAIO FALO -MEIO E SÃO CARO É ALFREDE"
+  },
+  "03f75fed602c428bd391c4dabfb72a7a_002.ogg": {
+    "tempo_inicio": "00:00:07.428",
+    "tempo_fim": "00:00:14.488",
+    "duracao": 7.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.274498462677002,
+    "mos_stoi": 0.7307590246200562,
+    "mos_si_sdr": -0.45950838923454285,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Segundo ele. Cara, vale mais a pena 5x0. Cara, olha só... Ridículo, né, meu? Ridículo. Não, pra mim, eu acho que...",
+    "stt_wav2vec": "SEGUNDO ELE VALE MAIS GARREDO CINCO ASERVOS CARA NESSA FITO  RIDÍCULO NARA ME AI DE MEU AV"
+  }
+}

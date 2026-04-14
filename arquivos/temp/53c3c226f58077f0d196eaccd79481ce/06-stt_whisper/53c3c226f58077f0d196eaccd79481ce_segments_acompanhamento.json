@@ -1,0 +1,44 @@
+{
+  "53c3c226f58077f0d196eaccd79481ce_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.692",
+    "duracao": 5.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4150032997131348,
+    "mos_stoi": 0.9170106649398804,
+    "mos_si_sdr": 16.25912857055664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então não teve tempo de jogo para ter essa solução de quem é que ia cobrir."
+  },
+  "53c3c226f58077f0d196eaccd79481ce_002.ogg": {
+    "tempo_inicio": "00:00:05.732",
+    "tempo_fim": "00:00:22.396",
+    "duracao": 16.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.304335355758667,
+    "mos_stoi": 0.802149772644043,
+    "mos_si_sdr": 6.280127048492432,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Claro que não ia no Everton, quer descer, o Alisson já comprou uma função tática no Grêmio, mas não teve esse tempo pra ver de quem ia ser o volante que ia fechar ali, fazer essa caída. Então, cara, eu acho que pro Grêmio foi uma perda significativa, eu acho sim o Cortezo furdo de time do Grêmio."
+  },
+  "53c3c226f58077f0d196eaccd79481ce_003.ogg": {
+    "tempo_inicio": "00:00:22.564",
+    "tempo_fim": "00:00:29.640",
+    "duracao": 7.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7215814590454102,
+    "mos_stoi": 0.888952374458313,
+    "mos_si_sdr": 7.3611321449279785,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sempre achei. Eu acho que o Breno perdeu muito com o Caio Henrique. Com a saída do Caio Henrique."
+  }
+}

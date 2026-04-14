@@ -1,0 +1,44 @@
+{
+  "9cc61f8878e6129646f800cb3ce0aef0_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.028",
+    "duracao": 8.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8852524757385254,
+    "mos_stoi": 0.9869562387466431,
+    "mos_si_sdr": 22.132217407226562,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É isso. Tem um ouvinte aqui me perguntando se isso não é crime. Deixa eu pegar aqui a pergunta do Marcos. Falso acusação não caracteriza crime?"
+  },
+  "9cc61f8878e6129646f800cb3ce0aef0_002.ogg": {
+    "tempo_inicio": "00:00:08.804",
+    "tempo_fim": "00:00:20.380",
+    "duracao": 11.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1834027767181396,
+    "mos_stoi": 0.748814046382904,
+    "mos_si_sdr": -2.2446489334106445,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Perfeito, veja bem, o crime de falsa acusação seria se eles tivessem ido até a polícia. Veja que os tipos penais que eu discuti foi injúria racial, racismo."
+  },
+  "9cc61f8878e6129646f800cb3ce0aef0_003.ogg": {
+    "tempo_inicio": "00:00:20.452",
+    "tempo_fim": "00:00:29.864",
+    "duracao": 9.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5225954055786133,
+    "mos_stoi": 0.8882291316986084,
+    "mos_si_sdr": 10.808259010314941,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e exercício arbitrário. Existe um crime de falsa acusação que, na verdade, é denunciação caluniosa. Seria se eles tivessem ido até a polícia e provocado a instauração."
+  }
+}

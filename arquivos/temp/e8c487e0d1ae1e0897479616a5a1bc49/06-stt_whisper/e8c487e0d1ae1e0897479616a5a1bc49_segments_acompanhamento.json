@@ -1,0 +1,44 @@
+{
+  "e8c487e0d1ae1e0897479616a5a1bc49_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.964",
+    "duracao": 11.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9962244033813477,
+    "mos_stoi": 0.9768247008323669,
+    "mos_si_sdr": 16.157859802246094,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vamos lá para os jogos dessa rodada do nosso campeonato de Palpites. Como eu adiantei anteriormente, Palmeiras e Inter, que fazem a melhor partida do meio da semana aí."
+  },
+  "e8c487e0d1ae1e0897479616a5a1bc49_002.ogg": {
+    "tempo_inicio": "00:00:12.324",
+    "tempo_fim": "00:00:18.364",
+    "duracao": 6.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.759892702102661,
+    "mos_stoi": 0.9705821871757507,
+    "mos_si_sdr": 20.297592163085938,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E vamos falar também de Santos e Vasco, da Gama, o Vascão que permanece..."
+  },
+  "e8c487e0d1ae1e0897479616a5a1bc49_003.ogg": {
+    "tempo_inicio": "00:00:18.660",
+    "tempo_fim": "00:00:24.222",
+    "duracao": 5.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.543646812438965,
+    "mos_stoi": 0.9730592966079712,
+    "mos_si_sdr": 16.893774032592773,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "No G4 do Campeonato Brasileiro, está em terceiro lugar, foi ultrapassado pelo São Paulo, que venceu o Corinthians."
+  }
+}

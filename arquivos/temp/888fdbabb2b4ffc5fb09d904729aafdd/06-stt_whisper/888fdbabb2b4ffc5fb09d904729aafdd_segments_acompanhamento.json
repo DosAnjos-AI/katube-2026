@@ -1,0 +1,16 @@
+{
+  "888fdbabb2b4ffc5fb09d904729aafdd_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.612",
+    "duracao": 3.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.110581874847412,
+    "mos_stoi": 0.9944518208503723,
+    "mos_si_sdr": 15.679755210876465,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "nós falamos aqui é como é que os primos então"
+  }
+}

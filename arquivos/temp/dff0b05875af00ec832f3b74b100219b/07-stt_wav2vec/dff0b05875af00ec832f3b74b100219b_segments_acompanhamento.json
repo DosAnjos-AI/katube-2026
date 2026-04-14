@@ -1,0 +1,17 @@
+{
+  "dff0b05875af00ec832f3b74b100219b_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.550",
+    "duracao": 3.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9625968933105469,
+    "mos_stoi": 0.8183051943778992,
+    "mos_si_sdr": 8.269118309020996,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Falta tirar o Marcos Guilherme agora.",
+    "stt_wav2vec": "EVADO ELE FALTA TEAL MARCO GILHERME AGGO ELEVADO ELE NÃO ESTAVA FERRADO"
+  }
+}

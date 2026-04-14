@@ -1,0 +1,17 @@
+{
+  "c408940d25cc69b3859c22b5fd860638_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:11.022",
+    "duracao": 11.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3851757049560547,
+    "mos_stoi": 0.9322677850723267,
+    "mos_si_sdr": 15.807451248168945,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "The Experience Centric Organização também é muito legal, que é como você vai conseguir mudar o foco da sua empresa para o usuário e aí, consequentemente, ir mudando essas coisas.",
+    "stt_wav2vec": "PERSENTICO ORGANIZEI ETNÃO TAMBÉM É MUITO LEGAL QUE É COMO VOCÊ VA CONSEGUIR MUDAL O FOCO DA SUA EMPRESA PRO USUÁRIO E AHI CONSEQUENTEMENTE IA MUDANDO ESTAS COISAS"
+  }
+}

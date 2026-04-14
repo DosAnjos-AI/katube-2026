@@ -1,0 +1,16 @@
+{
+  "20c665490e8b3172bba9f5a5cc986dc4_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:25.502",
+    "duracao": 25.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4624543190002441,
+    "mos_stoi": 0.9390626549720764,
+    "mos_si_sdr": 11.869913101196289,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olha lá, it a coisa me deu mais medo do que a Anabelle, cara, sério. E tipo, eu dei risada, pelo menos, fiquei com medo. A gente sentiu no cinema, junto? Não lembro se foi eu, você ou Guilherme, um, um desse filme insistiu. Eu sei que, cara, é muito melhor. Porque, tipo, a qualidade do filme é tão boa que você dá risada de verdade, porque tem graça. E você fica com medo de verdade, cara. Eu fiquei, me assustei, cara."
+  }
+}

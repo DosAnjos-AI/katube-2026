@@ -1,0 +1,16 @@
+{
+  "02eda238b1ec94fab9d44f05c0f4dd98_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.376",
+    "duracao": 14.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1814727783203125,
+    "mos_stoi": 0.7819421291351318,
+    "mos_si_sdr": -0.9521620273590088,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E fora de casa foi 4x3. É, tipo assim, 4x3 pro Valencia. Eu não me recordo do Valencia. Atalanta vem de atalva. A Alanta venceu em dois jogos. O primeiro por 4x0 em casa e o segundo por 4x3, Flores."
+  }
+}

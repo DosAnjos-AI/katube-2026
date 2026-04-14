@@ -1,0 +1,58 @@
+{
+  "4574507151c9569830c3b7858288ae00_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.828",
+    "duracao": 4.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.784547805786133,
+    "mos_stoi": 0.9416980743408203,
+    "mos_si_sdr": 20.16952133178711,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, também definido a posição dele."
+  },
+  "4574507151c9569830c3b7858288ae00_002.ogg": {
+    "tempo_inicio": "00:00:05.188",
+    "tempo_fim": "00:00:19.932",
+    "duracao": 14.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.262356996536255,
+    "mos_stoi": 0.9620551466941833,
+    "mos_si_sdr": 21.060850143432617,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O que me preocupa foi a queda de rendimento no segundo tempo, cara. A queda de rendimento do Grêmio de novo no segundo tempo, se tornando um jogo pesado, lento e por muitas vezes chato de ver. Teve horas que eu fiquei com sono no jogo, velho. Sono, sono."
+  },
+  "4574507151c9569830c3b7858288ae00_003.ogg": {
+    "tempo_inicio": "00:00:20.324",
+    "tempo_fim": "00:00:31.964",
+    "duracao": 11.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3136868476867676,
+    "mos_stoi": 0.9811117053031921,
+    "mos_si_sdr": 21.372882843017578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu não queria mais ver o jogo, tava chato. E aí, até os 20 do segundo tempo, o Caxias tava dominando o jogo. Dominando, tanto que fez o gol, bem anulado pelo Jean Pierre Lima. Muito bem anulado."
+  },
+  "4574507151c9569830c3b7858288ae00_004.ogg": {
+    "tempo_inicio": "00:00:32.132",
+    "tempo_fim": "00:00:36.700",
+    "duracao": 4.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2968201637268066,
+    "mos_stoi": 0.9177284836769104,
+    "mos_si_sdr": 6.67274808883667,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

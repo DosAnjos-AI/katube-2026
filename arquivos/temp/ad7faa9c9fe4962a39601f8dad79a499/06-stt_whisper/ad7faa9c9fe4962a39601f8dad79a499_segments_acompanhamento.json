@@ -1,0 +1,16 @@
+{
+  "ad7faa9c9fe4962a39601f8dad79a499_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.376",
+    "duracao": 12.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.224364995956421,
+    "mos_stoi": 0.9489975571632385,
+    "mos_si_sdr": 15.669920921325684,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu tenho lá as minhas coisas, quando vim para aqui, deixei-lá algumas coisas, e ela aproveita e mete lá o carro de Portugal. E nós aproveitámos para partilhar o carro. Ela, por norma, só pega nele duas vezes por ano e eu assim posso pegar nele."
+  }
+}

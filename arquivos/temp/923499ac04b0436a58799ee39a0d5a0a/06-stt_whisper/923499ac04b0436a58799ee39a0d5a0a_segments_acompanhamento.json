@@ -1,0 +1,30 @@
+{
+  "923499ac04b0436a58799ee39a0d5a0a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:23.004",
+    "duracao": 23.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7244162559509277,
+    "mos_stoi": 0.9925466179847717,
+    "mos_si_sdr": 22.989391326904297,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Para espalhar essa inspiração para a empatia, o pesquisador inglês Roman Snatic criou o Museu da Empatia em Londres, com a proposta de que as pessoas calcem os sapatos do outro. Roman é autor de oito livros traduzidos para vinte idiomas e um dos títulos mais famosos é o Poder da Empatia, a arte de se colocar no lugar do outro para transformar o mundo."
+  },
+  "923499ac04b0436a58799ee39a0d5a0a_002.ogg": {
+    "tempo_inicio": "00:00:23.364",
+    "tempo_fim": "00:00:31.288",
+    "duracao": 7.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7396411895751953,
+    "mos_stoi": 0.9914122819900513,
+    "mos_si_sdr": 21.240093231201172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Em 2017, o Inter Museus, que é uma associação civil sem fins lucrativos, que promove ações para gerar transformação social."
+  }
+}

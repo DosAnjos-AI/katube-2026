@@ -1,0 +1,16 @@
+{
+  "9e4f986f9f808e5cee6e610c4dbb3e3a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.446",
+    "duracao": 4.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.170783519744873,
+    "mos_stoi": 0.9103202819824219,
+    "mos_si_sdr": 12.273097038269043,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nem autoridade tributária. Nem autoridade tributária. No entanto..."
+  }
+}

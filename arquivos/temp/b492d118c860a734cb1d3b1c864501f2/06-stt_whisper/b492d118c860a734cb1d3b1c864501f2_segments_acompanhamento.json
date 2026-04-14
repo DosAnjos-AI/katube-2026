@@ -1,0 +1,30 @@
+{
+  "b492d118c860a734cb1d3b1c864501f2_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.236",
+    "duracao": 14.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8499221801757812,
+    "mos_stoi": 0.9553091526031494,
+    "mos_si_sdr": 13.227326393127441,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Feliz Natal, gente. Tudo de bom. Adorei, clarinho. E o e-mail? A gente vai ter que criar um e-mail. Depois eu vou colocar na descrição aí o e-mail que é pra vocês mandarem. Combinado? Combinado. Um beijo. Tchau, tchau, gente. Beijão!"
+  },
+  "b492d118c860a734cb1d3b1c864501f2_002.ogg": {
+    "tempo_inicio": "00:00:14.308",
+    "tempo_fim": "00:00:27.772",
+    "duracao": 13.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5101804733276367,
+    "mos_stoi": 0.9372466802597046,
+    "mos_si_sdr": 10.997246742248535,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "895e900028a01dc92b8f991072b723d6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.268",
+    "duracao": 6.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1723198890686035,
+    "mos_stoi": 0.8683868050575256,
+    "mos_si_sdr": 10.33150577545166,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho linda a imagem, eu acho lindo o cinema, mas a pessoa inteira para mim era o que eu queria.",
+    "stt_wav2vec": "EU ACHO LINDA A IMAGEM EU ACHO LINDO SINEMA MAS A PESSOA INTEIRA PARA MIM ERA O QUE ERA O QUE EU QUERIA"
+  },
+  "895e900028a01dc92b8f991072b723d6_002.ogg": {
+    "tempo_inicio": "00:00:06.532",
+    "tempo_fim": "00:00:12.476",
+    "duracao": 5.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.173083543777466,
+    "mos_stoi": 0.9263769388198853,
+    "mos_si_sdr": 18.8193359375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A pessoa com suor, cheiro, toque, temperatura e carnes.",
+    "stt_wav2vec": "A PESSOA COM SUAR CHEIRO TOQUE TEMPERATURA E CARNES"
+  },
+  "895e900028a01dc92b8f991072b723d6_003.ogg": {
+    "tempo_inicio": "00:00:12.772",
+    "tempo_fim": "00:00:17.500",
+    "duracao": 4.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9749500751495361,
+    "mos_stoi": 0.8992125988006592,
+    "mos_si_sdr": 12.244519233703613,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, o Lava Notation para mim foi um capítulo na minha vida que foi muito rápido.",
+    "stt_wav2vec": "ENTÃO LADO NOTEIXE O PARA MIM FOI UM CAPÍTULO NA MINHA VIDA QUE FOI MUITO RÁPIDO"
+  }
+}

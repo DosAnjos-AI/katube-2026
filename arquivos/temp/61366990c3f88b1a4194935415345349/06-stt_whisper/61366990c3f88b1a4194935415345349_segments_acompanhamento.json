@@ -1,0 +1,30 @@
+{
+  "61366990c3f88b1a4194935415345349_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:17.596",
+    "duracao": 17.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8759039640426636,
+    "mos_stoi": 0.8881085515022278,
+    "mos_si_sdr": 9.118073463439941,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ela mandou uma dúvida, eu recebi a dúvida no tins, a notificação, eu recebi pelo salário, fui no meu computador, foi quando eu abri, não, estava mais a dúvida. Aí eu apagou, aí ela disse, não, professora, porque estava errado. Então essa questão, veja, da insegurança, do medo de estar errado, não quer nem mostrar que está errado."
+  },
+  "61366990c3f88b1a4194935415345349_002.ogg": {
+    "tempo_inicio": "00:00:17.732",
+    "tempo_fim": "00:00:29.912",
+    "duracao": 12.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8512520790100098,
+    "mos_stoi": 0.9362943768501282,
+    "mos_si_sdr": 11.954596519470215,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "porque não quer pedir ajuda, se sente segura, tem vergonha, né, enfim, e aí eu não, mostra aqui e tal, e depois ela mostrou e disse, não, olha aqui, tá quase tudo certo, vamos lá, queria que você entendesse e tal, e você tá ok"
+  }
+}

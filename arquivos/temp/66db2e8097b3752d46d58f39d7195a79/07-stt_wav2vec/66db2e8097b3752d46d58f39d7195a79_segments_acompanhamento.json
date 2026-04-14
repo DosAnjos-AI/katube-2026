@@ -1,0 +1,17 @@
+{
+  "66db2e8097b3752d46d58f39d7195a79_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.208",
+    "duracao": 9.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3728359937667847,
+    "mos_stoi": 0.8833269476890564,
+    "mos_si_sdr": 3.7660837173461914,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sim. Só tem um delay, mas a gente está te ouvindo. Vocês não, acho que pode ser arriscado como foi com o Gabriel, com o Grêmio, só fazendo um gancho disso, Dani.",
+    "stt_wav2vec": "INÃO ESTÁ CER CADO DELEI MAS NÃO ESTÁ CHOVENDO TA A VERCÊS NÃO AS QUE PODE SER ARRIS CADO COMO FOI COM GABRIEL CO O GRENIO SÓ FAZENDO UM GANCHO DISSO DENE"
+  }
+}

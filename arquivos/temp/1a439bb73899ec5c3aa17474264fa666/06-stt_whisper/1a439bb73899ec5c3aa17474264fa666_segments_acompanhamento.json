@@ -1,0 +1,16 @@
+{
+  "1a439bb73899ec5c3aa17474264fa666_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:14.102",
+    "duracao": 14.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.400484323501587,
+    "mos_stoi": 0.7479546666145325,
+    "mos_si_sdr": 5.608382225036621,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "chave, que o melhor zagueiro do mundo tem mais gol que os dois, que é o Sérgio Ramos. Pode continuar a falar. Obrigado, Bruno. Alguém concorda comigo, velho. Sérgio, vamos, o melhor zagueiro do mundo, mas isso é um assunto contra o outro dia. Discutivelmente o melhor zagueiro do mundo."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "2cd452e17c29f645a770113f55661ed7_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.112",
+    "duracao": 7.11,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9529919624328613,
+    "mos_stoi": 0.9866693019866943,
+    "mos_si_sdr": 20.703580856323242,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "porque nós sabemos que para nós ganharmos mais temos que arriscar alguma coisa e o fundo de emergência é suposto estar para se o amanhã precisar e mexer"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "6d64da7501ab7208da4f1583f25f9327_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:08.188",
+    "duracao": 8.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0895395278930664,
+    "mos_stoi": 0.9562265276908875,
+    "mos_si_sdr": 15.205475807189941,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sim, eu acho que há aquela frase que todos nós sabemos e lemos que não ponha todos os ovos no mesmo cesto."
+  },
+  "6d64da7501ab7208da4f1583f25f9327_002.ogg": {
+    "tempo_inicio": "00:00:08.548",
+    "tempo_fim": "00:00:17.448",
+    "duracao": 8.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2896485328674316,
+    "mos_stoi": 0.949991762638092,
+    "mos_si_sdr": 17.374650955200195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E, de facto, isso é uma frase que fica assim. É um bocadinho como o Pagas a ti primeiro. É aquela frase que, pum, cai ali, mas depois não se sabe muito bem, ok..."
+  }
+}

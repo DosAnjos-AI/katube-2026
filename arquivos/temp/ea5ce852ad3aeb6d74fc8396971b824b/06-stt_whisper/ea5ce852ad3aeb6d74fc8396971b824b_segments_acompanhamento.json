@@ -1,0 +1,16 @@
+{
+  "ea5ce852ad3aeb6d74fc8396971b824b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.716",
+    "duracao": 6.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9312273263931274,
+    "mos_stoi": 0.8514413833618164,
+    "mos_si_sdr": 11.068316459655762,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E esses temas que eram projetos de um autor austríaco Leopoldo,"
+  }
+}

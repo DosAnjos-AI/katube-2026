@@ -1,0 +1,30 @@
+{
+  "f20730811ba2b96ee9f786e37c5adb27_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.460",
+    "duracao": 14.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.554650068283081,
+    "mos_stoi": 0.9026567935943604,
+    "mos_si_sdr": 9.984484672546387,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "caso aí, ele é um acessório, né? Ai, meu Deus do céu, não gostei disso. É, o Gurida... É, é verdade. O Gurida Mortadela, tu que é um cara de garbo e elegância, um cara de palavras doces?"
+  },
+  "f20730811ba2b96ee9f786e37c5adb27_002.ogg": {
+    "tempo_inicio": "00:00:14.564",
+    "tempo_fim": "00:00:26.812",
+    "duracao": 12.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2913929224014282,
+    "mos_stoi": 0.8978707790374756,
+    "mos_si_sdr": 7.827777862548828,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "cb2fdf20f54b9503e8a70d174e02eaf9_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.956",
+    "duracao": 4.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8419703245162964,
+    "mos_stoi": 0.9607374668121338,
+    "mos_si_sdr": 11.826401710510254,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Amor é saber que você tem um porto seguro dentro do abraço de outra pessoa."
+  },
+  "cb2fdf20f54b9503e8a70d174e02eaf9_002.ogg": {
+    "tempo_inicio": "00:00:05.636",
+    "tempo_fim": "00:00:10.396",
+    "duracao": 4.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9578083753585815,
+    "mos_stoi": 0.9619698524475098,
+    "mos_si_sdr": 14.866801261901855,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A amor também é feita de liberdade, pois mesmo diante a tantas opções..."
+  },
+  "cb2fdf20f54b9503e8a70d174e02eaf9_003.ogg": {
+    "tempo_inicio": "00:00:10.660",
+    "tempo_fim": "00:00:16.200",
+    "duracao": 5.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3311822414398193,
+    "mos_stoi": 0.9097331166267395,
+    "mos_si_sdr": 7.070857048034668,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Você continua fazendo a mesma escolha todos os dias e não se arrepende disso."
+  }
+}

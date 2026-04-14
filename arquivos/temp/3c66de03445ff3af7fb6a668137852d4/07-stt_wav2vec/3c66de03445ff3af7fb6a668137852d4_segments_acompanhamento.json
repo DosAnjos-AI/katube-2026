@@ -1,0 +1,32 @@
+{
+  "3c66de03445ff3af7fb6a668137852d4_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.732",
+    "duracao": 12.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.135462999343872,
+    "mos_stoi": 0.9860169291496277,
+    "mos_si_sdr": 22.189228057861328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e fazia uma comparação exagerada com pessoas que estavam numa jornada por mais tempo. A comparação é normal do ser humano, mas em excesso ela te deixa frustrado e rouba muita energia.",
+    "stt_wav2vec": "FAZI UMA COMPARAÇÃO EXAGERADA COM PESSOAS QUE ESTAVAM NUMA JORNADA POR MAIS TEMPO É COMPARAÇÃO ENORMAL É DO SER HUMANO MAS EM EXCESSO ELLA TE DEIXA FRUSTRADO E ROUBA MUITA ENERGIA"
+  },
+  "3c66de03445ff3af7fb6a668137852d4_002.ogg": {
+    "tempo_inicio": "00:00:13.092",
+    "tempo_fim": "00:00:20.284",
+    "duracao": 7.19,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.040926933288574,
+    "mos_stoi": 0.970876157283783,
+    "mos_si_sdr": 23.74449920654297,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E a comparação, como a gente sabe, é uma das formas mais rápidas e mais fáceis de ser infeliz.",
+    "stt_wav2vec": null
+  }
+}

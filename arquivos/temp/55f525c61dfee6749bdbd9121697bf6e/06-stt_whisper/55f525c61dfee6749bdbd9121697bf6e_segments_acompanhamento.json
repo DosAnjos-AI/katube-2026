@@ -1,0 +1,16 @@
+{
+  "55f525c61dfee6749bdbd9121697bf6e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.302",
+    "duracao": 10.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.288860321044922,
+    "mos_stoi": 0.9764570593833923,
+    "mos_si_sdr": 22.80423355102539,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Neste podcast nós falamos de finanças pessoais, empreendedorismo e investimentos em português. Connosco temos a maravilhosa Mary Pottins."
+  }
+}

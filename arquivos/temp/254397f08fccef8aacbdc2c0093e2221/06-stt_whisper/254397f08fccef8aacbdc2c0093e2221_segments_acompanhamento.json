@@ -1,0 +1,44 @@
+{
+  "254397f08fccef8aacbdc2c0093e2221_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:19.420",
+    "duracao": 19.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.997142791748047,
+    "mos_stoi": 0.9496225714683533,
+    "mos_si_sdr": 20.25008773803711,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O visitante escolhe um sapato, descalça seus próprios sapatos e calça aquele que foi doado por um depoente, coloca um fone de ouvido com este depoimento que está em torno de 10 minutos e sai caminhando fora desse container só concentrada nessa história."
+  },
+  "254397f08fccef8aacbdc2c0093e2221_002.ogg": {
+    "tempo_inicio": "00:00:19.556",
+    "tempo_fim": "00:00:26.812",
+    "duracao": 7.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.211454391479492,
+    "mos_stoi": 0.9453120231628418,
+    "mos_si_sdr": 17.510944366455078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, na hora que ele faz este processo, ele vai se desvestindo os seus preconceitos..."
+  },
+  "254397f08fccef8aacbdc2c0093e2221_003.ogg": {
+    "tempo_inicio": "00:00:27.076",
+    "tempo_fim": "00:00:30.672",
+    "duracao": 3.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.418078899383545,
+    "mos_stoi": 0.9559519290924072,
+    "mos_si_sdr": 22.7076358795166,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A pessoa que ouviu aquilo, independente da posição que ela continue,"
+  }
+}

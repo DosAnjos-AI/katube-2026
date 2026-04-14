@@ -1,0 +1,16 @@
+{
+  "18fbca035bfe2717a6ef336c0015c77a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.256",
+    "duracao": 7.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5534298419952393,
+    "mos_stoi": 0.9605960845947266,
+    "mos_si_sdr": 19.123565673828125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Portanto, eu diria que as corretoras à partida seriam uma melhor opção, mas provavelmente vocês até diminuem isso mais do que eu."
+  }
+}

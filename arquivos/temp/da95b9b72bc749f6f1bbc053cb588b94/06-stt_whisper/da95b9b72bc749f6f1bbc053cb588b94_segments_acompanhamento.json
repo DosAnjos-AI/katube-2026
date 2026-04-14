@@ -1,0 +1,44 @@
+{
+  "da95b9b72bc749f6f1bbc053cb588b94_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.636",
+    "duracao": 12.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4223127365112305,
+    "mos_stoi": 0.9478647708892822,
+    "mos_si_sdr": 19.853755950927734,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de uso de machine learning, de análise de sentimentos, de tratamento de dados avançados, de tomadas de decisões de negócios e Customer Centric."
+  },
+  "da95b9b72bc749f6f1bbc053cb588b94_002.ogg": {
+    "tempo_inicio": "00:00:12.932",
+    "tempo_fim": "00:00:18.556",
+    "duracao": 5.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.067056655883789,
+    "mos_stoi": 0.93855881690979,
+    "mos_si_sdr": 19.481258392333984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "com base no machine learning, e toda essa experiência ela pode ser aplicada e ampliada."
+  },
+  "da95b9b72bc749f6f1bbc053cb588b94_003.ogg": {
+    "tempo_inicio": "00:00:18.852",
+    "tempo_fim": "00:00:33.166",
+    "duracao": 14.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.596691370010376,
+    "mos_stoi": 0.96957927942276,
+    "mos_si_sdr": 22.32328224182129,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para demais clientes e demais indústrias. Então, é cada vez mais aprimorar, acumulando várias experiências, vários cases e se posicionando na indústria como um grande player estratégico na utilização de machine learning."
+  }
+}

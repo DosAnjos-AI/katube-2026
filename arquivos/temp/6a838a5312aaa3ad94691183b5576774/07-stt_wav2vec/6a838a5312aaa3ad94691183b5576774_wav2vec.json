@@ -1,0 +1,17 @@
+{
+  "6a838a5312aaa3ad94691183b5576774_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.564",
+    "duracao": 13.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3641479015350342,
+    "mos_stoi": 0.7128324508666992,
+    "mos_si_sdr": 6.590184211730957,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Até ali sobre ele ali que ele estudou, né? Os caras estavam comentando, entrevistar, o empresário dele, que ele assistia, quando o Kudepa é anunciado, que seria a contratação, seria o treinador muito a parada seguinte, o empresário dele fez o que se espera de um empresário.",
+    "stt_wav2vec": "ELE SOBRE ELE LE QUE ELLE TUBOAMEO CARASTAVAM FOMENTANDO ENTREVISTARM EMPRESARIO DELLES QUE ELLE ASSISTIA QUANDO QUANDO CUDERPO E ANUNCIADO QUE SERIA CONTRASTAÇÃO O TERCEIRO TREINADOR DO NGADNAPARADA SEGUINTE O EMPRESÁRIO DELLE FEZ O QUE SE ESPERA DE EMPRESARIO"
+  }
+}

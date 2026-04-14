@@ -1,0 +1,16 @@
+{
+  "be0d2fddc53c850fbbe8b511d4d1231e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.764",
+    "duracao": 12.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.548187494277954,
+    "mos_stoi": 0.8671057224273682,
+    "mos_si_sdr": 6.618525981903076,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "LGBTKIA+, que foi a mulher que agrediu um funcionário da agência de viagens. Vocês ficaram sabendo? Sim, eu vi o vídeo."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "f65e25da701ee7face0f7741ff210cd0_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:09.720",
+    "duracao": 9.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2869755029678345,
+    "mos_stoi": 0.8590769171714783,
+    "mos_si_sdr": 7.661426544189453,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas percebi que não era isso que nos causa. Queria entender o amor romântico, aquele que te causa efeitos físicos, as tais borboletas no estômago, frio na barriga, coração disparado."
+  }
+}

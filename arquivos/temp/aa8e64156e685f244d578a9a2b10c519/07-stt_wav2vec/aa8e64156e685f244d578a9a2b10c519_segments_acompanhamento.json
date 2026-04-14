@@ -1,0 +1,17 @@
+{
+  "aa8e64156e685f244d578a9a2b10c519_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.198",
+    "duracao": 4.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.60856556892395,
+    "mos_stoi": 0.9097010493278503,
+    "mos_si_sdr": 11.622390747070312,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Comecei uma empresa de moda, entretanto via uma revista",
+    "stt_wav2vec": "COMO SEMEI PRESAS MOLA ENTRETANTO VI UMA REEVISTA"
+  }
+}

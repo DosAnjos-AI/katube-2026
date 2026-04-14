@@ -1,0 +1,16 @@
+{
+  "ce44241cea0cea7d1781e9d5ad20fbfc_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.886",
+    "duracao": 5.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.943347454071045,
+    "mos_stoi": 0.9849407076835632,
+    "mos_si_sdr": 17.759920120239258,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nunca usei por acaso o rolofato, mas posso colocar. Agora, outra coisa que também faço muito..."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "49cf538540f52f4c0ef977adade2b79a_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.164",
+    "duracao": 7.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.363348960876465,
+    "mos_stoi": 0.9809932708740234,
+    "mos_si_sdr": 18.0546817779541,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É isso que está acontecendo nos veículos de mídia. Os grandes grupos, no mundo inteiro, eles estão diminuindo de tamanho.",
+    "stt_wav2vec": "É ISSO QUE ESTÁ ACONTECENDO NOS VEÍCULOS DE MÍDIA OS GRANDES GRUPOS NO MUNDO INTEIRO ELE ESTÃO DIMINUINDO DE TAMANHO"
+  },
+  "49cf538540f52f4c0ef977adade2b79a_002.ogg": {
+    "tempo_inicio": "00:00:07.492",
+    "tempo_fim": "00:00:18.556",
+    "duracao": 11.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.5017402172088623,
+    "mos_stoi": 0.977104127407074,
+    "mos_si_sdr": 16.16546058654785,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Veja o caso da editora Abril em recuperação judicial. Ao mesmo tempo, todos os dias surgem novas empresas de mídia com estruturas mais leves e novos modelos de negócio.",
+    "stt_wav2vec": "VEJO O CASO DO EDITOR ABRIL EM RECUPERAÇÃO JUDICIAL AO MESMO TEMPO TODOS OS DIAS SURGEM NOVAS EMPRESAS DE MÍDIA COM ESTRUTURAS MAIS LEVES E NOVOS MODELOS DE NEGÓCIO"
+  },
+  "49cf538540f52f4c0ef977adade2b79a_003.ogg": {
+    "tempo_inicio": "00:00:19.012",
+    "tempo_fim": "00:00:23.452",
+    "duracao": 4.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2926347255706787,
+    "mos_stoi": 0.9901224970817566,
+    "mos_si_sdr": 20.414281845092773,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Enquanto uns perdem espaço, outros ganham. É uma tendência natural.",
+    "stt_wav2vec": "ENQUANTO UNS PERDEM ESPAÇO OUTROS GANHAM É UMA TENDÊNCIA NATURAL"
+  },
+  "49cf538540f52f4c0ef977adade2b79a_004.ogg": {
+    "tempo_inicio": "00:00:23.812",
+    "tempo_fim": "00:00:30.712",
+    "duracao": 6.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1821603775024414,
+    "mos_stoi": 0.9956865310668945,
+    "mos_si_sdr": 25.003429412841797,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí, nesse contexto, o jornalismo, a difusão responsável e qualificada de notícias, ela continua sendo importante.",
+    "stt_wav2vec": "E AÍ NESSE CONTEXTO O JORNALISMO A DIFUSÃO RESPONSÁVEL E QUALIFICADA DE NOTÍCIAS ELA CONTINUA SENDO IMPORTANTE"
+  }
+}

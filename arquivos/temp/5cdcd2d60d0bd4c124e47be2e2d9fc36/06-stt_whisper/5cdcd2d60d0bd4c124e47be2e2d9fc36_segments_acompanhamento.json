@@ -1,0 +1,16 @@
+{
+  "5cdcd2d60d0bd4c124e47be2e2d9fc36_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.916",
+    "duracao": 5.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4192118644714355,
+    "mos_stoi": 0.9780812859535217,
+    "mos_si_sdr": 23.55400848388672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nós chegamos a trabalhar com a Michael Oliveira e tudo, portanto, com 16 anos não está mal."
+  }
+}

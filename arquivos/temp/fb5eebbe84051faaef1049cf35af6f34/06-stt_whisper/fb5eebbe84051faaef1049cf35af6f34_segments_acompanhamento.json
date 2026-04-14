@@ -1,0 +1,58 @@
+{
+  "fb5eebbe84051faaef1049cf35af6f34_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.772",
+    "duracao": 3.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8586605787277222,
+    "mos_stoi": 0.8374003767967224,
+    "mos_si_sdr": 8.382858276367188,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O pessoal estudava muito treinamento esportivo e tinha..."
+  },
+  "fb5eebbe84051faaef1049cf35af6f34_002.ogg": {
+    "tempo_inicio": "00:00:04.036",
+    "tempo_fim": "00:00:14.076",
+    "duracao": 10.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2805752754211426,
+    "mos_stoi": 0.9030625820159912,
+    "mos_si_sdr": 10.336139678955078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "muito conhecimento. E aí, quando o Brasil quis evoluir nesse ponto, o que ele fez? Ele pegou os melhores alunos ali e fez intercâmbio, mandou para fora. Então, foi estudar fora."
+  },
+  "fb5eebbe84051faaef1049cf35af6f34_003.ogg": {
+    "tempo_inicio": "00:00:14.468",
+    "tempo_fim": "00:00:18.140",
+    "duracao": 3.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0329718589782715,
+    "mos_stoi": 0.8091819286346436,
+    "mos_si_sdr": 6.4263153076171875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E isso foi isso da fora, normalmente outra língua, por exemplo,"
+  },
+  "fb5eebbe84051faaef1049cf35af6f34_004.ogg": {
+    "tempo_inicio": "00:00:18.404",
+    "tempo_fim": "00:00:23.288",
+    "duracao": 4.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.761829137802124,
+    "mos_stoi": 0.7909172773361206,
+    "mos_si_sdr": 4.089782238006592,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Os usos são muito avançados em termos de treinamento, pesquisa sobre treinamento físico,"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "7739b4cdba61d58bd1904f5d68aa214f_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:05.016",
+    "duracao": 4.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4985620975494385,
+    "mos_stoi": 0.9620338678359985,
+    "mos_si_sdr": 24.56639862060547,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "capaz do esforço agrícola e ele é obrigado a esse regime de trabalho."
+  }
+}

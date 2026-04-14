@@ -1,0 +1,32 @@
+{
+  "9f6f99626f8a8f6edff1d0850ff7f306_001.ogg": {
+    "tempo_inicio": "00:00:00.356",
+    "tempo_fim": "00:00:14.300",
+    "duracao": 13.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.130011558532715,
+    "mos_stoi": 0.9109709858894348,
+    "mos_si_sdr": 15.020310401916504,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Gilberto Fe e tinha outro ambiente histórico, ele estava em outro ambiente histórico, ele estava em outro contexto também intelectual, em outras palavras, ele estava com uma nova metodologia e uma nova estratégia política justamente para",
+    "stt_wav2vec": "GILBERTO FTINHA OUTRO AMOUTRO AMBIENTE HISTÓRICO NO ELITAVA EM OUTRO AMBIENTE HISTÓRICO TAVA EM OUTRO CONTEXTO TAMBÉM INTELECTUAL NEM OUTRAS PALAVRAS ELTAVAM COM UMA NOVA METODOLOGIA E UMA NOVA ESTRADEJIA POLITICA JUSTAMENTE PARA"
+  },
+  "9f6f99626f8a8f6edff1d0850ff7f306_002.ogg": {
+    "tempo_inicio": "00:00:14.564",
+    "tempo_fim": "00:00:19.320",
+    "duracao": 4.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8673276901245117,
+    "mos_stoi": 0.9046264290809631,
+    "mos_si_sdr": 13.82608699798584,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "construção dessa colonização, uma nova visão sobre essa colonização.",
+    "stt_wav2vec": null
+  }
+}

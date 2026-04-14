@@ -1,0 +1,62 @@
+{
+  "dedd5a220b4acff3942c4443f4e47d3b_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.804",
+    "duracao": 3.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4397475719451904,
+    "mos_stoi": 0.9133443236351013,
+    "mos_si_sdr": 13.197358131408691,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "as pesquisas que eles têm feito, porque eu acho que é muito...",
+    "stt_wav2vec": "AS PESQUISAS QUE ELES TÊM FEITO PORQUE É ACHO QUE É MUITO"
+  },
+  "dedd5a220b4acff3942c4443f4e47d3b_002.ogg": {
+    "tempo_inicio": "00:00:04.036",
+    "tempo_fim": "00:00:15.068",
+    "duracao": 11.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8821258544921875,
+    "mos_stoi": 0.881792426109314,
+    "mos_si_sdr": 13.806903839111328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eles falam sobre design de uma forma muito profissional, sabe? E nós, designers, a gente tem um background muito estético e é muito importante que a gente passe...",
+    "stt_wav2vec": "SIM ELES FALAM SOBRE O ISA DE UMA FARMA MUITO PROFISSIONAL SÁBIO E NÓS DIZAE NEQUE ESSA GENTE TEM UM BECROODE MUITO ESTÉTICO E E É MUITO IMPORTANTE QUE A GENTE PASSE"
+  },
+  "dedd5a220b4acff3942c4443f4e47d3b_003.ogg": {
+    "tempo_inicio": "00:00:15.268",
+    "tempo_fim": "00:00:22.396",
+    "duracao": 7.13,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4914321899414062,
+    "mos_stoi": 0.9157437086105347,
+    "mos_si_sdr": 15.248404502868652,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a falar também tecnicamente sobre o nosso trabalho, sabe? Então, eu acho isso, assim, e...",
+    "stt_wav2vec": "A FALAR TAMBÉM TECNICAMENTE SOBRE OS NOSSOS TRABALHOS HABE ENTÃO EU ACHO ISSO SIM E"
+  },
+  "dedd5a220b4acff3942c4443f4e47d3b_004.ogg": {
+    "tempo_inicio": "00:00:22.692",
+    "tempo_fim": "00:00:26.844",
+    "duracao": 4.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.250572681427002,
+    "mos_stoi": 0.8643881678581238,
+    "mos_si_sdr": 13.550878524780273,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nem sempre a gente tem tempo de fazer pesquisa, então eu queria indicar um site que chama Good UI.",
+    "stt_wav2vec": "NEM SEMPRE AGIS TEM TEMPO DE FAZER PESQUISA ENTÃO QUE LE INDICAR UM SAITE QUE CHAMA GUD YUWAY"
+  }
+}

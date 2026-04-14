@@ -1,0 +1,30 @@
+{
+  "ec5223119279756f1871129972cc7ae9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.092",
+    "duracao": 4.09,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3609503507614136,
+    "mos_stoi": 0.622947096824646,
+    "mos_si_sdr": -2.2604284286499023,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas depois lá é tudo muito mais barato."
+  },
+  "ec5223119279756f1871129972cc7ae9_002.ogg": {
+    "tempo_inicio": "00:00:04.452",
+    "tempo_fim": "00:00:17.692",
+    "duracao": 13.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9090750217437744,
+    "mos_stoi": 0.9123191833496094,
+    "mos_si_sdr": 9.753023147583008,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

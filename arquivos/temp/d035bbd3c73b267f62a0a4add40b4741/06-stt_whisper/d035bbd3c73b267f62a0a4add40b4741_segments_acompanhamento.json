@@ -1,0 +1,16 @@
+{
+  "d035bbd3c73b267f62a0a4add40b4741_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.712",
+    "duracao": 8.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.55806827545166,
+    "mos_stoi": 0.9695681929588318,
+    "mos_si_sdr": 22.607099533081055,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "embora com referências históricas determinantes, mas estamos falando do momento bizarro que estamos vivendo hoje."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "e4b87c2a3bd5cfef1d6c7cd8ae504436_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:13.980",
+    "duracao": 13.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6472102403640747,
+    "mos_stoi": 0.8968513011932373,
+    "mos_si_sdr": 6.717077255249023,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Você vai ter que manter um... Um... Como é que fala o relatório disso. Pra você saber, tipo... E também não vale... Não é necessário fazer com tudo, né? Você tem as suas hipóteses de design. Porque design é hipótese, né?",
+    "stt_wav2vec": "LETE QUE MANTEU UM UM TEMOBALMENTE RALO RELATÓRIO DISTA MIM PRO VOCÊ SA ABETE CUL E TAMBÉM NÃO VALLES NUN NANECESSACIO TODER COMTUDO NEN SÊ TEM AS SUAS HIPOTESES DE DIZAREM PORQUE DESANE A ICOTESE NEN"
+  }
+}

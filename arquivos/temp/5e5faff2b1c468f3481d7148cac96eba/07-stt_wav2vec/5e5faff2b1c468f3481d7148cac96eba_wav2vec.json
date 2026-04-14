@@ -1,0 +1,17 @@
+{
+  "5e5faff2b1c468f3481d7148cac96eba_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.566",
+    "duracao": 3.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.386526346206665,
+    "mos_stoi": 0.8299471139907837,
+    "mos_si_sdr": 6.385672092437744,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Isto vai também um bocadinho de encontro, pronto.",
+    "stt_wav2vec": "ISSO VAIEVAITAMENTE CAVENHODE ENQUANTOO ALCANSE PRONTO"
+  }
+}

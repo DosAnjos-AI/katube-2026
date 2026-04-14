@@ -1,0 +1,30 @@
+{
+  "a120177a7781351946334f73b080dc70_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.604",
+    "duracao": 4.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.567553758621216,
+    "mos_stoi": 0.9966428279876709,
+    "mos_si_sdr": 29.022621154785156,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que a gente vive hoje. Todo mundo quer as mensagens na hora."
+  },
+  "a120177a7781351946334f73b080dc70_002.ogg": {
+    "tempo_inicio": "00:00:04.964",
+    "tempo_fim": "00:00:09.336",
+    "duracao": 4.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8122403621673584,
+    "mos_stoi": 0.9844880700111389,
+    "mos_si_sdr": 25.369075775146484,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E lembra daquele ditado? Quem conta um conto aumenta um ponto?"
+  }
+}

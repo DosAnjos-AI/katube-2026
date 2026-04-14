@@ -1,0 +1,17 @@
+{
+  "b194682a1846b4bc73d86d2a0b97fd61_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:16.796",
+    "duracao": 16.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0279719829559326,
+    "mos_stoi": 0.9572940468788147,
+    "mos_si_sdr": 13.019320487976074,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque lá estão, são coisas em que eu não tenho que estar muito preocupado. É uma gestão passiva. Enquanto quando estamos a falar ali em ações, nós temos uma prestação ativa, acompanhar a carteira, acompanhar os balanços trimestralmente, pelo menos ou semestralmente.",
+    "stt_wav2vec": "CLAÇÃO SÃO COISAS EM QUE NÃO TEM QUE ESTAR MUITO PROCPASAND É UMA ESTÃO PASSIVA NO ENQUANTO QUANO STAMOS O FALAR ALI ENHAÇÕES NÃO SE STUMA A POSTAÇÃO MATIVA NÃO É ACOMPANHAR O A CARTEIRA ACOMPANHARA OS BALANÇOS TREMISTRALMENTE PLOMENOS OU SIMSTRALMENTO"
+  }
+}

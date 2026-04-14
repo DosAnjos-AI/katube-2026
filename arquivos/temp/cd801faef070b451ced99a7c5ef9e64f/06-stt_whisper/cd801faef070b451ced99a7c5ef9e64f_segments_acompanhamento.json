@@ -1,0 +1,16 @@
+{
+  "cd801faef070b451ced99a7c5ef9e64f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.350",
+    "duracao": 10.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2119905948638916,
+    "mos_stoi": 0.6955608129501343,
+    "mos_si_sdr": -1.2675200700759888,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "um pouquinho maior, assim, que a Bahia já foi assim. Pega aí, sei lá, um Goiás, uma vida, um esporte, um esporte. Um esporte. Mas em Grêmio não tem"
+  }
+}

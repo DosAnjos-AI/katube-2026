@@ -1,0 +1,72 @@
+{
+  "35db9e52cd93514299e9bf71270042ba_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.204",
+    "duracao": 6.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4596041440963745,
+    "mos_stoi": 0.8709258437156677,
+    "mos_si_sdr": 6.471611022949219,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Isso é uma demonstração de amor, respeitar você mesmo, permitir coisas novas, vibes novas, isso é amor."
+  },
+  "35db9e52cd93514299e9bf71270042ba_002.ogg": {
+    "tempo_inicio": "00:00:06.756",
+    "tempo_fim": "00:00:10.556",
+    "duracao": 3.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4514174461364746,
+    "mos_stoi": 0.8918187022209167,
+    "mos_si_sdr": 6.14259147644043,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É como se você continuasse amando uma outra pessoa, mas essa outra pessoa é você mesmo."
+  },
+  "35db9e52cd93514299e9bf71270042ba_003.ogg": {
+    "tempo_inicio": "00:00:10.948",
+    "tempo_fim": "00:00:21.052",
+    "duracao": 10.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4544649124145508,
+    "mos_stoi": 0.928107738494873,
+    "mos_si_sdr": 7.223445892333984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O amor já foi e continua sendo representado em tudo que a gente consome. Seja a sua série favorita do Netflix, a novela que assistiu no filme aleatório que você colocou a chegar chapado em casa, qualquer coisa."
+  },
+  "35db9e52cd93514299e9bf71270042ba_004.ogg": {
+    "tempo_inicio": "00:00:21.444",
+    "tempo_fim": "00:00:28.124",
+    "duracao": 6.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9675393104553223,
+    "mos_stoi": 0.936892032623291,
+    "mos_si_sdr": 11.580513954162598,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas a pergunta é, de todo o conteúdo que a gente já consumiu sobre o amor. Algum deles realmente já demonstrou o amor realmente como ele é."
+  },
+  "35db9e52cd93514299e9bf71270042ba_005.ogg": {
+    "tempo_inicio": "00:00:28.516",
+    "tempo_fim": "00:00:32.936",
+    "duracao": 4.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7099390029907227,
+    "mos_stoi": 0.911000669002533,
+    "mos_si_sdr": 10.70070743560791,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Será que algum... Ou será que cada um tem uma visão diferente do amor? Ninguém está certo e errado?"
+  }
+}

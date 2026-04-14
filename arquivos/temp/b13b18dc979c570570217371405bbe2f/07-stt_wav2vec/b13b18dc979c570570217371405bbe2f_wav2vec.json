@@ -1,0 +1,17 @@
+{
+  "b13b18dc979c570570217371405bbe2f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.670",
+    "duracao": 6.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3394044637680054,
+    "mos_stoi": 0.756416380405426,
+    "mos_si_sdr": -1.6638621091842651,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "no jogo, eu comecei a rir e li como ganho pro Barcelona, mas eu saio o gol, eu vou ganhar o jogo.",
+    "stt_wav2vec": "DO JOGO EU COMECEI A RIR E E DICO MEOGANFO BARCELANA MAS ARAMICAO EOSOLGA NO UNO PORAENELHASOO"
+  }
+}

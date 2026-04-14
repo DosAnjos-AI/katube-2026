@@ -1,0 +1,32 @@
+{
+  "4a7daf007398e1bc52b162dd71b3a40a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.268",
+    "duracao": 10.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.318399667739868,
+    "mos_stoi": 0.8940588235855103,
+    "mos_si_sdr": 15.310715675354004,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele foi reconstruído e reabriu com a estreia do oficino. Então, já tem essa espécie de índice, de símbolo de um renascimento.",
+    "stt_wav2vec": "ELE FOI RECONSTRUÍDO E FOI E REABRIU COM A ESTÉIA DO OFICINIENTA ONDE Á TEMHA A PÉCIE DE INDISINELEO SÍMBOLO DE UMA NOVE DE UMA O DE UM RENASCIMENTO"
+  },
+  "4a7daf007398e1bc52b162dd71b3a40a_002.ogg": {
+    "tempo_inicio": "00:00:10.628",
+    "tempo_fim": "00:00:20.030",
+    "duracao": 9.4,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1670210361480713,
+    "mos_stoi": 0.9430882930755615,
+    "mos_si_sdr": 20.749557495117188,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E vários aspectos contribuíam para essa ideia de renascimento. No programa do espetáculo tinha um texto que é um tipo de manifesto dos Acelos.",
+    "stt_wav2vec": "EVÁRIOS ASPECTOS A CONTRIBUÍAM PRCEDE DE RENASCIMENTO NÉ NO PROGRAMA DO ESPETÁCULO TINHA UM TEXTO QUE É UM TIPO DE MANIFESTO DOS ACEUS"
+  }
+}

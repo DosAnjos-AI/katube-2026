@@ -1,0 +1,30 @@
+{
+  "d71b30dbe6beb39720614490766d02f1_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.812",
+    "duracao": 6.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8935097455978394,
+    "mos_stoi": 0.9661968350410461,
+    "mos_si_sdr": 14.87460994720459,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Um dia um dos seus amigos vai se mudar pra outra cidade, depois compõe a bicicleta do amigo e decidir a Akashima com o Aiko pedalando."
+  },
+  "d71b30dbe6beb39720614490766d02f1_002.ogg": {
+    "tempo_inicio": "00:00:07.140",
+    "tempo_fim": "00:00:11.880",
+    "duracao": 4.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6199939250946045,
+    "mos_stoi": 0.9834309816360474,
+    "mos_si_sdr": 17.391738891601562,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "No dia em que sua mãe receberia alta, ela se joga da escada de emergência só para não voltar para casa."
+  }
+}

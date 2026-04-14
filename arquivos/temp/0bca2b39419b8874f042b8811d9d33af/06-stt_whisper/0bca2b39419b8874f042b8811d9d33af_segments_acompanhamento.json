@@ -1,0 +1,16 @@
+{
+  "0bca2b39419b8874f042b8811d9d33af_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.992",
+    "duracao": 6.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.610625982284546,
+    "mos_stoi": 0.9092571139335632,
+    "mos_si_sdr": 2.1988627910614014,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não, pensando no Gustavo, aquele que foi vendido, após estar jogando e tal. Mas daí depende como vai acontecer..."
+  }
+}

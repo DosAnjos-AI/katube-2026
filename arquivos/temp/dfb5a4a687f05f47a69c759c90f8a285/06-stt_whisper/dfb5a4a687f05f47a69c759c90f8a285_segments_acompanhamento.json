@@ -1,0 +1,16 @@
+{
+  "dfb5a4a687f05f47a69c759c90f8a285_001.ogg": {
+    "tempo_inicio": "00:00:00.964",
+    "tempo_fim": "00:00:29.966",
+    "duracao": 29.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1382904052734375,
+    "mos_stoi": 0.8456979393959045,
+    "mos_si_sdr": 6.453719615936279,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "da rádio da tua vida, todo mundo tá ouvindo, esse é o Tudo Nosso, que tá chegando às oito dessa manhã, porque eu dei uma leve estendida no despertador, mas tá tudo certo, né, Wagner? A gente pode fazer isso de vez em quando, né? Se tu diz que tá, é porque tá, né, Carol? Ah, de repente uma música mais, uma música menos, assim, tá tranquilo, não? Ah, o importante é que a gente tá aí, né? A gente tá aqui, sempre na Lida. Temos chegando aí. Temos chegando com o The Morning Show das manhãs da Rádio Atlântica."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "0a1343fb6176a906dd6cd511b76f0ce1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.864",
+    "duracao": 3.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.087340831756592,
+    "mos_stoi": 0.8836007714271545,
+    "mos_si_sdr": 8.894684791564941,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E só através desse caminho, que por sinal é bem longo e bem amplo,",
+    "stt_wav2vec": "E SÓ ATRAVÉS DESSE CAMINHO QUE POR SINAL É BEM LONGO E BEM AMPLO",
+    "stt_leg_normalizado": null,
+    "stt_whisper_normalizado": "e so atraves desse caminho que por sinal e bem longo e bem amplo",
+    "stt_wav2vec_normalizado": "e so atraves desse caminho que por sinal e bem longo e bem amplo"
+  }
+}

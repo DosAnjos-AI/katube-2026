@@ -1,0 +1,17 @@
+{
+  "9d59c8e7ff927d99b0f09f042079d5ca_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.760",
+    "duracao": 4.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.814085006713867,
+    "mos_stoi": 0.9264367818832397,
+    "mos_si_sdr": 13.9157075881958,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "No ultimamente, tudo é mensurável, mas você precisa entender o que é relevante para a sua organização.",
+    "stt_wav2vec": "ANDO ULTIMAMENTE TUDO É MISSURÁVEL MAS CEPRESIS ENTENDER O QUE QUER RE LEVANTE PESSA ORGANIZAÇÃO"
+  }
+}

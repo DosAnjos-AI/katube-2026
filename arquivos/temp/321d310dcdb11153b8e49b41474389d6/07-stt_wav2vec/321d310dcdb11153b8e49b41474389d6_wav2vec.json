@@ -1,0 +1,32 @@
+{
+  "321d310dcdb11153b8e49b41474389d6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.124",
+    "duracao": 4.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.638754367828369,
+    "mos_stoi": 0.8706594705581665,
+    "mos_si_sdr": 17.758773803710938,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "da sociedade brasileira, quer dizer, as cooperativas têm essa capilaridade",
+    "stt_wav2vec": "DA SOCIEDADE BRASILEIRA QUE A DIZER AS FODERATIVOS TÊM ESSA CAPILARIDADE"
+  },
+  "321d310dcdb11153b8e49b41474389d6_002.ogg": {
+    "tempo_inicio": "00:00:04.388",
+    "tempo_fim": "00:00:08.348",
+    "duracao": 3.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.560250997543335,
+    "mos_stoi": 0.9303968548774719,
+    "mos_si_sdr": 10.323206901550293,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "podem chegar e chegar de uma forma justa no interior",
+    "stt_wav2vec": "PODEM CHEGAR E CHEGAR DE UMA FORMA JUSTA NO INTERIOR"
+  }
+}

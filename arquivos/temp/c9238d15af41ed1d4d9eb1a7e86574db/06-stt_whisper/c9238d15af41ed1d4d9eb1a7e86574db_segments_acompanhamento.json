@@ -1,0 +1,16 @@
+{
+  "c9238d15af41ed1d4d9eb1a7e86574db_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.576",
+    "duracao": 3.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3794708251953125,
+    "mos_stoi": 0.9709149599075317,
+    "mos_si_sdr": 27.36886215209961,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sim, e acho que é isso que é o importante. Engane-se."
+  }
+}

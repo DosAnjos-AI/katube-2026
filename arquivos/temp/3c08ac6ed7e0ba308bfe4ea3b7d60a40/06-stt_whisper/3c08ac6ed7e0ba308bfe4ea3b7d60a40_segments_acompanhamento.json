@@ -1,0 +1,16 @@
+{
+  "3c08ac6ed7e0ba308bfe4ea3b7d60a40_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.942",
+    "duracao": 3.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0551915168762207,
+    "mos_stoi": 0.8839466571807861,
+    "mos_si_sdr": 11.67549991607666,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nós estamos todos aqui. Nisso tem que esfregar as coisas."
+  }
+}

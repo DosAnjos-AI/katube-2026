@@ -1,0 +1,17 @@
+{
+  "4b0a7bb40bab7e033476371058e05f74_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.854",
+    "duracao": 9.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2697510719299316,
+    "mos_stoi": 0.7487741112709045,
+    "mos_si_sdr": 2.512010335922241,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Isso é uma coisa em que se pode gastar dinheiro sem estar a contar. Se por algum motivo não consegue, tens de pagar depois na hora, que é para isso, sei lá, 50 euros ou 60 euros.",
+    "stt_wav2vec": "A UMA COISA EM QUE SO POBRE GASTÁ DINHEIRO TENTARA CONTAR QUEEGORIPES POR ALGUM TIPO NUNCA OSETE NES PAGAR DEPOISD NA ORRA QUE PAIÇE TELÁ CINCENTAIORES OU SE SANTENA"
+  }
+}

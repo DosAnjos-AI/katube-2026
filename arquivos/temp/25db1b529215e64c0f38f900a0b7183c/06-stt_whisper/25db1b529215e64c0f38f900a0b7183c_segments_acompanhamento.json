@@ -1,0 +1,44 @@
+{
+  "25db1b529215e64c0f38f900a0b7183c_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:12.892",
+    "duracao": 12.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4785513877868652,
+    "mos_stoi": 0.9452410936355591,
+    "mos_si_sdr": 11.067790031433105,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele tá confundindo as coisas. O problema não é a live em si. É o gesto do tomar um tragoleu. Ele tomou um foguete. Tomou um foguetão. E tem uma responsabilidade social quando tu faz isso."
+  },
+  "25db1b529215e64c0f38f900a0b7183c_002.ogg": {
+    "tempo_inicio": "00:00:13.060",
+    "tempo_fim": "00:00:25.212",
+    "duracao": 12.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.615185022354126,
+    "mos_stoi": 0.9597195386886597,
+    "mos_si_sdr": 15.48330020904541,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então não é uma crítica. Pelo amor de Deus, as doações, tá louco. O cara fazendo um baita trabalho social ali. E outra, ele é um dos caras mais legais na música brasileira. Ele não pode pegar esse peso de achar que é um ranço contra ele."
+  },
+  "25db1b529215e64c0f38f900a0b7183c_003.ogg": {
+    "tempo_inicio": "00:00:25.444",
+    "tempo_fim": "00:00:30.920",
+    "duracao": 5.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2554073333740234,
+    "mos_stoi": 0.9605919122695923,
+    "mos_si_sdr": 17.221263885498047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque ele é um dos mais legais, ele é um dos mais promissores artistas."
+  }
+}

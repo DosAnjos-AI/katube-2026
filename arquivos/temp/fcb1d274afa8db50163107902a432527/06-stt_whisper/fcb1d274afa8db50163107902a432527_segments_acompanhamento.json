@@ -1,0 +1,44 @@
+{
+  "fcb1d274afa8db50163107902a432527_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.276",
+    "duracao": 5.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0676422119140625,
+    "mos_stoi": 0.8520393967628479,
+    "mos_si_sdr": 16.752744674682617,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de vez em quando eu abro vagas e na grande maioria das vezes as vagas estão fechadas."
+  },
+  "fcb1d274afa8db50163107902a432527_002.ogg": {
+    "tempo_inicio": "00:00:05.540",
+    "tempo_fim": "00:00:20.156",
+    "duracao": 14.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.113908290863037,
+    "mos_stoi": 0.9617616534233093,
+    "mos_si_sdr": 16.403934478759766,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, por exemplo, a cada oito semanas eu passo, sei lá, quatro dias com vagas abertas e paro. Então, só a cada dois meses que normalmente eu abro vagas. Agora, agora, agora, dia 20 de abril, as vagas estão fechadas. Estou planejando para abrir..."
+  },
+  "fcb1d274afa8db50163107902a432527_003.ogg": {
+    "tempo_inicio": "00:00:20.452",
+    "tempo_fim": "00:00:29.788",
+    "duracao": 9.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7894701957702637,
+    "mos_stoi": 0.9477033019065857,
+    "mos_si_sdr": 13.686602592468262,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "no próximo mês de maio. E aí quem me segue lá, só ficar atento, ativa as notificações de publicação lá no Instagram, arroba Renato Finaski."
+  }
+}

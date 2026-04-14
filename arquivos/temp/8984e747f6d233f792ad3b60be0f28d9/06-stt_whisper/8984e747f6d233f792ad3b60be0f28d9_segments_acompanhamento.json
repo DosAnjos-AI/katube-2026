@@ -1,0 +1,30 @@
+{
+  "8984e747f6d233f792ad3b60be0f28d9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:19.612",
+    "duracao": 19.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1696734428405762,
+    "mos_stoi": 0.8376649618148804,
+    "mos_si_sdr": 4.552779674530029,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ô, mestre. Mestre. É capagodinho. E aí, Carolzinha, bom dia? Bom dia, rádio Atlântida. Bom dia, coleguinhas. Doceado com a gente contigo. Eu te pergunto. Então, está acontecendo umas obras na Avenida Ipiranga que não estão só afetando a Avenida Ipiranga, estão reverberando para as outras ruas."
+  },
+  "8984e747f6d233f792ad3b60be0f28d9_002.ogg": {
+    "tempo_inicio": "00:00:19.748",
+    "tempo_fim": "00:00:31.502",
+    "duracao": 11.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2796257734298706,
+    "mos_stoi": 0.9170789122581482,
+    "mos_si_sdr": 8.243807792663574,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

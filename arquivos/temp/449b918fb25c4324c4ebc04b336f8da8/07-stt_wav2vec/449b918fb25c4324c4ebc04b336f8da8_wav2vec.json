@@ -1,0 +1,17 @@
+{
+  "449b918fb25c4324c4ebc04b336f8da8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.436",
+    "duracao": 5.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8048913478851318,
+    "mos_stoi": 0.8711502552032471,
+    "mos_si_sdr": 6.8693742752075195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, você tem que colocar exercícios que ele tem essa tarefa e que seja difícil de chegar nessa tarefa.",
+    "stt_wav2vec": "VOCETEM QUE COLOCAR EXERCÍCIOS QUE ELE TEM ESSA TAREFA QUE SEJA DIFÍCIL DE CHEGAR DESTA TAREFA"
+  }
+}

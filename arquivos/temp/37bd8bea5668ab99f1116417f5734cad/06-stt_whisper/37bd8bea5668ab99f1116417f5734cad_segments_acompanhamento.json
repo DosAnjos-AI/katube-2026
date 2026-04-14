@@ -1,0 +1,30 @@
+{
+  "37bd8bea5668ab99f1116417f5734cad_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.340",
+    "duracao": 5.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3041293621063232,
+    "mos_stoi": 0.9618768692016602,
+    "mos_si_sdr": 18.04918670654297,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E nessa de resistir, ela apanha ainda mais, ela pede para que ele não"
+  },
+  "37bd8bea5668ab99f1116417f5734cad_002.ogg": {
+    "tempo_inicio": "00:00:05.700",
+    "tempo_fim": "00:00:17.544",
+    "duracao": 11.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.56870174407959,
+    "mos_stoi": 0.9518449902534485,
+    "mos_si_sdr": 15.631882667541504,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "não bata, ela está sem ar, ela pede socorro, e ele diz, ele não para de bater e ela diz que está grávida."
+  }
+}

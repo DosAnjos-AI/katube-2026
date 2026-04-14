@@ -1,0 +1,17 @@
+{
+  "ce7a1857b1ddde5ffbcb7748758e5eff_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.126",
+    "duracao": 4.13,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4172017574310303,
+    "mos_stoi": 0.9924618601799011,
+    "mos_si_sdr": 24.17812156677246,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o fundo de emergência preparado, as nossas dívidas organizadas",
+    "stt_wav2vec": "O FUNDO DEMUGENCA É POPARADO AS NOSSAS LÍVIDAS ORGANIZADAS"
+  }
+}

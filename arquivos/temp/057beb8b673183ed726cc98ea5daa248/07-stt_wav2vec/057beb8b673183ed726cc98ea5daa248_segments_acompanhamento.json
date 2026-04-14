@@ -1,0 +1,47 @@
+{
+  "057beb8b673183ed726cc98ea5daa248_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.500",
+    "duracao": 5.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9386773109436035,
+    "mos_stoi": 0.930904746055603,
+    "mos_si_sdr": 19.0118465423584,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mesma ideia da festa e o teatro e que fossem um sindicato e que",
+    "stt_wav2vec": "MISME DELA PIESTA E E O TEATRO E QUE FOSSEM NUM SINDICATO E QUE"
+  },
+  "057beb8b673183ed726cc98ea5daa248_002.ogg": {
+    "tempo_inicio": "00:00:05.764",
+    "tempo_fim": "00:00:10.300",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8849480152130127,
+    "mos_stoi": 0.7482275366783142,
+    "mos_si_sdr": 1.2445420026779175,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "produzia, digamos, uma mudança bastante radical.",
+    "stt_wav2vec": "E TROUXE LIGAD NUMUM UMA MUDANÇA MATANTEVALICA"
+  },
+  "057beb8b673183ed726cc98ea5daa248_003.ogg": {
+    "tempo_inicio": "00:00:10.628",
+    "tempo_fim": "00:00:15.592",
+    "duracao": 4.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8114404678344727,
+    "mos_stoi": 0.9039401412010193,
+    "mos_si_sdr": 11.337251663208008,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele é um nome jovem, 60 anos, por aí.",
+    "stt_wav2vec": "E U NOME JOVEN BON JOVEN SESSENTAR NOS POR AÍ"
+  }
+}

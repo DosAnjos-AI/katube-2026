@@ -1,0 +1,17 @@
+{
+  "bddd7477fa6370745876879ef11add24_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:04.190",
+    "duracao": 4.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1902806758880615,
+    "mos_stoi": 0.9331995248794556,
+    "mos_si_sdr": 18.220722198486328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "se está a escrever um livro nova porque tem um ponto de vista diferente ou outra coisa qualquer,",
+    "stt_wav2vec": "STÁL ESCREVER UM LIVRO NOVEL PORTEME UM PONTURISTA LIPRENÇA OU OUTRA COISA QUALQUER"
+  }
+}

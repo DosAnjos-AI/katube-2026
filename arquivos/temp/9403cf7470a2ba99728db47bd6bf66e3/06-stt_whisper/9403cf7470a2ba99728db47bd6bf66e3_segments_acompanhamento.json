@@ -1,0 +1,30 @@
+{
+  "9403cf7470a2ba99728db47bd6bf66e3_001.ogg": {
+    "tempo_inicio": "00:00:03.748",
+    "tempo_fim": "00:00:15.452",
+    "duracao": 11.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.110095739364624,
+    "mos_stoi": 0.8926634192466736,
+    "mos_si_sdr": 3.982149600982666,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quando olhamos para a comunicação e seus desafios contemporâneos, não dá para deixar a emoção e a paixão em casa. Essas palavrinhas vão com a gente para o trabalho, pelo menos deveriam ir."
+  },
+  "9403cf7470a2ba99728db47bd6bf66e3_002.ogg": {
+    "tempo_inicio": "00:00:15.556",
+    "tempo_fim": "00:00:21.532",
+    "duracao": 5.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1772258281707764,
+    "mos_stoi": 0.8330715298652649,
+    "mos_si_sdr": 2.6721363067626953,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e são ingredientes riquíssimos para a prática da comunicação nas empresas, tanto para dentro,"
+  }
+}

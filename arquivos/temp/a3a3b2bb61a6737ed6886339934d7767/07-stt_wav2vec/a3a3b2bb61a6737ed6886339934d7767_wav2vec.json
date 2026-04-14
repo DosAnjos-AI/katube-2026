@@ -1,0 +1,17 @@
+{
+  "a3a3b2bb61a6737ed6886339934d7767_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.244",
+    "duracao": 5.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.691485643386841,
+    "mos_stoi": 0.8426770567893982,
+    "mos_si_sdr": 10.40848445892334,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "na saúde natural e estava lá e ao início eu fui trabalhar para uma linha de produção",
+    "stt_wav2vec": "NOSAO NATURAL EA TABOLA E O INÍCIO FUI PAR TRABALHAR POR UMA LINHA DE PRODUÇÃO"
+  }
+}

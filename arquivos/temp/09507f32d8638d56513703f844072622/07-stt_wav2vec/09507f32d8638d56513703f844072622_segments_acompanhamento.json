@@ -1,0 +1,17 @@
+{
+  "09507f32d8638d56513703f844072622_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.582",
+    "duracao": 3.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.7245101928710938,
+    "mos_stoi": 0.9780488014221191,
+    "mos_si_sdr": 17.18777847290039,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ela pergunta que nós, imagina, nós pagávamos uma avença mensal,",
+    "stt_wav2vec": "ELA PERGUNTA QUE O QUE NÓS IMAGINA NÓS PAGÁVAMOS UMA AVENÇA MENSAL"
+  }
+}

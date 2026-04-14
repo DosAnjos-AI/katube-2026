@@ -1,0 +1,12 @@
+{
+  "3f1a6487bb3ec5581e2dd4ead21d82f9_001.ogg": {
+    "tempo_inicio": "00:00:00.580",
+    "tempo_fim": "00:00:04.120",
+    "duracao": 3.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "de criar um ciclo de peças."
+  }
+}

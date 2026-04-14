@@ -1,0 +1,32 @@
+{
+  "46bc5003d430c833d8be1e533b8df1b0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.764",
+    "duracao": 4.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.121297836303711,
+    "mos_stoi": 0.7936967611312866,
+    "mos_si_sdr": 10.396093368530273,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, daí em diante, os gigantes foram ficando menos gananciosos.",
+    "stt_wav2vec": "EM TALDEZ EM DIANTE OS VIGIGANTES FORAM FICANDO MENOS GNAFIOVA"
+  },
+  "46bc5003d430c833d8be1e533b8df1b0_002.ogg": {
+    "tempo_inicio": "00:00:05.060",
+    "tempo_fim": "00:00:09.468",
+    "duracao": 4.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2868151664733887,
+    "mos_stoi": 0.8063075542449951,
+    "mos_si_sdr": 13.088286399841309,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aprenderam a desacelerar e ficar mais tranquilos.",
+    "stt_wav2vec": "E APREENDERAM A DIZESELERÁREI FICAR MAIS TRANQUILOS"
+  }
+}

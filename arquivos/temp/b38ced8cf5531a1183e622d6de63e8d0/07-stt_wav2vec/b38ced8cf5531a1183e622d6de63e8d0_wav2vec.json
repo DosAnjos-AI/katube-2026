@@ -1,0 +1,17 @@
+{
+  "b38ced8cf5531a1183e622d6de63e8d0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.292",
+    "duracao": 11.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6792573928833008,
+    "mos_stoi": 0.8898067474365234,
+    "mos_si_sdr": 0.35417965054512024,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Todo desencantado. Tem uma foto na sua tese que eu estava lendo. Aí eu olhei e falei, ué, isso é uma oficina? Será que de outro ângulo? Aí eu fiquei procurando e falei, não, na verdade...",
+    "stt_wav2vec": "TODO DESENCANTADO TENHO UMA FOTO NA SUA TESE QUE ESTAVA LENDO AI OLEFLEWÉ E SEU OFICINA NESETRATO DE OUTRO ANGULO A EFQUIPPOCURANDO FLINÃO NA VERDADE"
+  }
+}

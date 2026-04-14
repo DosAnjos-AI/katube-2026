@@ -1,0 +1,17 @@
+{
+  "75c4cf35532d57a4bd6764d319e0ff24_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.232",
+    "duracao": 4.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5070979595184326,
+    "mos_stoi": 0.7181346416473389,
+    "mos_si_sdr": -1.8861656188964844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E queria perguntar se dava para você deixar por um tipo",
+    "stt_wav2vec": "E QUERIA PERGUNTAR ASSI DAVAPAR VOCÊ DEIXAR POR UNTIMO"
+  }
+}

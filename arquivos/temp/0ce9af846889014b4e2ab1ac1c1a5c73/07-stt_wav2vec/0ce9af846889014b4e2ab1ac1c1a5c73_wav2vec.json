@@ -1,0 +1,17 @@
+{
+  "0ce9af846889014b4e2ab1ac1c1a5c73_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:06.204",
+    "duracao": 6.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9669398069381714,
+    "mos_stoi": 0.871595025062561,
+    "mos_si_sdr": 10.705535888671875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Para isso, nós precisamos resgatar, então, nas nossas cooperativas, que tem por cultura.",
+    "stt_wav2vec": "PARA ISSO MAAMO RESGATAR ENTÃO NAS NOSSAS COMPERATIVAS QUE TEM POU CULTURA"
+  }
+}

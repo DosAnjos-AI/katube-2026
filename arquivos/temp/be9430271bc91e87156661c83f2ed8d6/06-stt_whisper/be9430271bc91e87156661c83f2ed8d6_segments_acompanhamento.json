@@ -1,0 +1,16 @@
+{
+  "be9430271bc91e87156661c83f2ed8d6_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.846",
+    "duracao": 4.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.757457733154297,
+    "mos_stoi": 0.9692869782447815,
+    "mos_si_sdr": 18.011812210083008,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Os antigos, e eles na altura já, os surpresos novos naquela altura eram de 4%, para quem quisesse fazer crédito, não é?"
+  }
+}

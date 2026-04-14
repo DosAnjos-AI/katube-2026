@@ -1,0 +1,17 @@
+{
+  "f62725004adb7dd0dcbe457afb703be6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.772",
+    "duracao": 3.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.526454210281372,
+    "mos_stoi": 0.9376298785209656,
+    "mos_si_sdr": 13.617572784423828,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pela certa forma, melhorar no meu dia. E isso.",
+    "stt_wav2vec": "PELA MCERTA FORMA MELHORAR O MEU DIA UM EI"
+  }
+}

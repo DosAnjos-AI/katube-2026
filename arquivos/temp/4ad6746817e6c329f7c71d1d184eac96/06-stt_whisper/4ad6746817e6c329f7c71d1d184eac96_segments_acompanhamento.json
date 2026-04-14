@@ -1,0 +1,30 @@
+{
+  "4ad6746817e6c329f7c71d1d184eac96_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.852",
+    "duracao": 5.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.375505208969116,
+    "mos_stoi": 0.9899148941040039,
+    "mos_si_sdr": 26.759929656982422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "No episódio de hoje, episódio número 17, falaremos sobre a final da Champions League."
+  },
+  "4ad6746817e6c329f7c71d1d184eac96_002.ogg": {
+    "tempo_inicio": "00:00:06.148",
+    "tempo_fim": "00:00:15.838",
+    "duracao": 9.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.019749641418457,
+    "mos_stoi": 0.9896809458732605,
+    "mos_si_sdr": 24.893375396728516,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a final antecipada do Brasileirão que ocorreu no sábado e mais uma rodada de empatite do Grêmio, que eu não aguento mais, o Grêmio empatou de novo."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "5ea2f334a97a0356ea7a989c83ffc6b5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.980",
+    "duracao": 13.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2985498905181885,
+    "mos_stoi": 0.9845825433731079,
+    "mos_si_sdr": 19.68661117553711,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu aplico uma ferramenta que eu chamo de lista de alto poder. É um convite para que o participante enumere o que tem de bom. Alguns têm mais dificuldade, demoram para preencher, para outros. É mais fácil, mas no final..."
+  },
+  "5ea2f334a97a0356ea7a989c83ffc6b5_002.ogg": {
+    "tempo_inicio": "00:00:14.052",
+    "tempo_fim": "00:00:20.966",
+    "duracao": 6.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1130638122558594,
+    "mos_stoi": 0.9737926125526428,
+    "mos_si_sdr": 17.45149040222168,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Todos se surpreendem. Eu sugiro que você faça essa lista também. Você vai ver a transformação que isso provoca."
+  }
+}

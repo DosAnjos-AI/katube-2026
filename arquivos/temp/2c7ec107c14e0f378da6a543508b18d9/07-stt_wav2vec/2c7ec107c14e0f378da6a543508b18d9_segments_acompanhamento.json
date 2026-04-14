@@ -1,0 +1,17 @@
+{
+  "2c7ec107c14e0f378da6a543508b18d9_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:06.686",
+    "duracao": 6.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2831660509109497,
+    "mos_stoi": 0.7897100448608398,
+    "mos_si_sdr": 0.6933035254478455,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se o Inter não renova com o Rodinei, é nas comemorações do Dous, né? Quem é que vai estar ali pra ela?",
+    "stt_wav2vec": "SE O INTERAR NÃO RENOVA COM RODINEI E NAS COMEMORAÇÕES DOS GOSMER QUER QUE VAI TALIR PESSAO OFOEADO"
+  }
+}

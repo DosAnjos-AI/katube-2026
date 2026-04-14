@@ -1,0 +1,72 @@
+{
+  "8e99bff84e296d5196bc32759b275f6d_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.612",
+    "duracao": 3.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2920284271240234,
+    "mos_stoi": 0.4389396011829376,
+    "mos_si_sdr": -6.588489055633545,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que a gente vai flagrar elas, pegar elas no pulo, fazendo bagunça."
+  },
+  "8e99bff84e296d5196bc32759b275f6d_002.ogg": {
+    "tempo_inicio": "00:00:04.196",
+    "tempo_fim": "00:00:14.620",
+    "duracao": 10.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3325989246368408,
+    "mos_stoi": 0.8596985936164856,
+    "mos_si_sdr": 4.0154523849487305,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "8e99bff84e296d5196bc32759b275f6d_003.ogg": {
+    "tempo_inicio": "00:00:14.884",
+    "tempo_fim": "00:00:19.036",
+    "duracao": 4.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4061851501464844,
+    "mos_stoi": 0.8638617396354675,
+    "mos_si_sdr": 17.80727767944336,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Que esse é o nosso décimo primeiro episódio."
+  },
+  "8e99bff84e296d5196bc32759b275f6d_004.ogg": {
+    "tempo_inicio": "00:00:19.492",
+    "tempo_fim": "00:00:28.988",
+    "duracao": 9.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6341378688812256,
+    "mos_stoi": 0.8256361484527588,
+    "mos_si_sdr": 7.796091079711914,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Você está achando importante, né, Clarice, seu décimo primeiro? Legal, a gente já fez muitos, né? Espero que todo mundo esteja gostando. Pessoal, vocês já sabem o nosso e-mail."
+  },
+  "8e99bff84e296d5196bc32759b275f6d_005.ogg": {
+    "tempo_inicio": "00:00:29.412",
+    "tempo_fim": "00:00:33.598",
+    "duracao": 4.19,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9208564758300781,
+    "mos_stoi": 0.8936126232147217,
+    "mos_si_sdr": 7.756516456604004,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que é contato.caconta.coconta.gmail.com"
+  }
+}

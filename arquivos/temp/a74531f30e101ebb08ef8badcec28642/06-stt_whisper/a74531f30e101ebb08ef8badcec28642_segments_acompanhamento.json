@@ -1,0 +1,16 @@
+{
+  "a74531f30e101ebb08ef8badcec28642_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.734",
+    "duracao": 6.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6362903118133545,
+    "mos_stoi": 0.791505753993988,
+    "mos_si_sdr": 6.691729545593262,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Aí os atores começaram a fazer certas ações que você não sabia bem do que se tratava, o maluco estava..."
+  }
+}

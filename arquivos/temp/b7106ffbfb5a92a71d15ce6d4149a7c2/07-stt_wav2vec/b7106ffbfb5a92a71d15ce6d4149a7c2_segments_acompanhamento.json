@@ -1,0 +1,17 @@
+{
+  "b7106ffbfb5a92a71d15ce6d4149a7c2_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.152",
+    "duracao": 8.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3656113147735596,
+    "mos_stoi": 0.8985096216201782,
+    "mos_si_sdr": 4.433254718780518,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Antigamente nós tínhamos os CDs, os top 10. Exatamente. Podemos olhar para o ATF como se fosse um top 10. O verão de 2004.",
+    "stt_wav2vec": "ATIGAMENTO NÓS TIAMOS O CHERES O ESTOPETENO ELESADE AVIANTO PODEMOS OLHA A BOA ADEER COMO SE SUASS M TOPTENA O BRAODO DA ELEQUADO"
+  }
+}

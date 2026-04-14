@@ -1,0 +1,16 @@
+{
+  "d2d22794b25dab9fc50cf3030cf63f61_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.158",
+    "duracao": 8.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.868316173553467,
+    "mos_stoi": 0.9681842923164368,
+    "mos_si_sdr": 22.607723236083984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nós passamos para a atribuição das metas, neste caso, que é, ok, eu sei que me sobro 200 euros todos os meses,"
+  }
+}

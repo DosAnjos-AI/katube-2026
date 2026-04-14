@@ -1,0 +1,17 @@
+{
+  "85503dac4db7cdd418df09419cab0a50_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:12.796",
+    "duracao": 12.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6590248346328735,
+    "mos_stoi": 0.893427312374115,
+    "mos_si_sdr": 8.629886627197266,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E eu falei, nem sua mãe, a Ruth escobar, podia fazer esse milagre. E ela disse, não, não, mas até que a minha mãe teria conseguido fazer isso e eu falei,",
+    "stt_wav2vec": "FLEMENTO A MÃE PRA RUTICOBAR ODIA FAZER ASSE MILAGREA E ELA DISSE NÃO NÃO MAS A ATÉ QUE A MINHA MÃE TERIA CONSEGUIDO FAZEIR SE OPE"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "dbb82d681883259adf980c932327b39d_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.328",
+    "duracao": 6.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.118980884552002,
+    "mos_stoi": 0.9577690958976746,
+    "mos_si_sdr": 10.91642951965332,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que tens que liquidar este empréstimo e fazer outro, vais ter que pagar quatro vezes mais de comissão para quem estás a defender a 40 anos"
+  }
+}

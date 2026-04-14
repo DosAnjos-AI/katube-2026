@@ -1,0 +1,16 @@
+{
+  "4732cb32fa9cdce9848b69ee15b85a28_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.406",
+    "duracao": 9.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4545761346817017,
+    "mos_stoi": 0.8549773693084717,
+    "mos_si_sdr": 6.1691484451293945,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu queria o Ricardo Fiveira, eu já tinha separado uma enfermeira no lado de lato para ele. É que o nosso atravante é grupo de risco, ele está isolado no momento."
+  }
+}

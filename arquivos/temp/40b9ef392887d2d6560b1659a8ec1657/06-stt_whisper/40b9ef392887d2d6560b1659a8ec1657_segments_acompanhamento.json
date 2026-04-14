@@ -1,0 +1,16 @@
+{
+  "40b9ef392887d2d6560b1659a8ec1657_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.456",
+    "duracao": 6.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4733033180236816,
+    "mos_stoi": 0.9346802830696106,
+    "mos_si_sdr": 25.44373321533203,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "sendo substituído pelo Abelado II. Ou seja, tem uma estrutura de circular, de repetição eterna,"
+  }
+}

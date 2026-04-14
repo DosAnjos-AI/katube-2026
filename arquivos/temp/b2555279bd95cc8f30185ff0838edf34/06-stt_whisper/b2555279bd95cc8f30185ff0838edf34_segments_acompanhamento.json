@@ -1,0 +1,58 @@
+{
+  "b2555279bd95cc8f30185ff0838edf34_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.604",
+    "duracao": 8.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.041673183441162,
+    "mos_stoi": 0.9929906129837036,
+    "mos_si_sdr": 21.34752082824707,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Para Carla Tieto, é necessário ter um incentivo para usar a capacidade empática e ser uma pessoa construtiva, colaborativa."
+  },
+  "b2555279bd95cc8f30185ff0838edf34_002.ogg": {
+    "tempo_inicio": "00:00:08.772",
+    "tempo_fim": "00:00:17.852",
+    "duracao": 9.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4031487703323364,
+    "mos_stoi": 0.8045288324356079,
+    "mos_si_sdr": 6.869489669799805,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Boa parte da responsabilidade que as pessoas serem ou não empáticas e agirem de forma empática empática é a construção ambiental, é como o ambiente está."
+  },
+  "b2555279bd95cc8f30185ff0838edf34_003.ogg": {
+    "tempo_inicio": "00:00:18.148",
+    "tempo_fim": "00:00:22.460",
+    "duracao": 4.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9565658569335938,
+    "mos_stoi": 0.8658609390258789,
+    "mos_si_sdr": 11.000330924987793,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, quando a gente vai para os ambientes corporativos, isso é uma das coisas que a gente bate muito."
+  },
+  "b2555279bd95cc8f30185ff0838edf34_004.ogg": {
+    "tempo_inicio": "00:00:22.724",
+    "tempo_fim": "00:00:28.764",
+    "duracao": 6.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.587576150894165,
+    "mos_stoi": 0.8286694884300232,
+    "mos_si_sdr": 1.0465725660324097,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "nessa tecla, de dizer, o ambiente que você propõe é o ambiente que vai selecionar"
+  }
+}

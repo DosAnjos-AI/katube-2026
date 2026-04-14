@@ -1,0 +1,32 @@
+{
+  "389769eef882b061661745498229d3b4_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:12.252",
+    "duracao": 12.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4716626405715942,
+    "mos_stoi": 0.9188941121101379,
+    "mos_si_sdr": 9.057120323181152,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "389769eef882b061661745498229d3b4_002.ogg": {
+    "tempo_inicio": "00:00:12.292",
+    "tempo_fim": "00:00:30.510",
+    "duracao": 18.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7701596021652222,
+    "mos_stoi": 0.9637081027030945,
+    "mos_si_sdr": 14.699929237365723,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "todas, e de todos os estilos e tipos, sendo que ele é patrocinado por uma marca de cerveja, e além da cerveja, ele tomou todos os destilados que ele tinha na casa dele. Ele tomou uísque, eu vi ali um dos trechos da live, ele tomou uísque, ele tomou uma hora peral spritz, que a patroa levou, ele tomou gin tônica.",
+    "stt_wav2vec": "TODAS E DE TODOS OS ESTILOS E TIPOS SENDO QUE ELLE É PATROCINADO POR UMA MARCA DE CERVEJA E ALÉM DA CERVEJA ELE TOMOU TODOS OS DESTILADOS QUE ELLE ATOMOU ISQU EU VIA-LE UM DOS TRECHOS DA LAIVE LE TOMOU IS QUE ELE TOMENR EETOMOU MORAPERAL ESPRITQUE A PATROA LEVOU ELLE TAMO GINTÔNICA"
+  }
+}

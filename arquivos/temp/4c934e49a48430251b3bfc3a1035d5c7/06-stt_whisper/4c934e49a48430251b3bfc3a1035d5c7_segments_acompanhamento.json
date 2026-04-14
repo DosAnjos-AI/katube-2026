@@ -1,0 +1,44 @@
+{
+  "4c934e49a48430251b3bfc3a1035d5c7_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.884",
+    "duracao": 9.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3370537757873535,
+    "mos_stoi": 0.9913669228553772,
+    "mos_si_sdr": 23.10333824157715,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Falamos até agora sobre governança e risco. E tem uma terceira palavra que a gente usa no inglês mesmo que é muito importante para a blindagem das marcas."
+  },
+  "4c934e49a48430251b3bfc3a1035d5c7_002.ogg": {
+    "tempo_inicio": "00:00:10.212",
+    "tempo_fim": "00:00:14.908",
+    "duracao": 4.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1927990913391113,
+    "mos_stoi": 0.9787260293960571,
+    "mos_si_sdr": 13.276272773742676,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vou repetir uma frase que eu falei lá no começo do episódio."
+  },
+  "4c934e49a48430251b3bfc3a1035d5c7_003.ogg": {
+    "tempo_inicio": "00:00:15.172",
+    "tempo_fim": "00:00:18.808",
+    "duracao": 3.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.482736349105835,
+    "mos_stoi": 0.9810923933982849,
+    "mos_si_sdr": 24.32251739501953,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "nenhum negócio a uma ilha. Aliás, não vivemos"
+  }
+}

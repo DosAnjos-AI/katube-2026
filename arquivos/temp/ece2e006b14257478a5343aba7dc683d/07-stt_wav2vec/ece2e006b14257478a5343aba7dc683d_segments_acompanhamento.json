@@ -1,0 +1,32 @@
+{
+  "ece2e006b14257478a5343aba7dc683d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.820",
+    "duracao": 5.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6655845642089844,
+    "mos_stoi": 0.9481657147407532,
+    "mos_si_sdr": 19.819795608520508,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Deixa eu só fazer uma última pergunta antes de provavelmente o Biel querer mudar de assunto.",
+    "stt_wav2vec": "DEIXEU-O SÓ FAZEO UMA ÚLTIMA PERGUNTA DE PROVAVELMENTE O BIEL TEREMUDADE DE ASSUMO"
+  },
+  "ece2e006b14257478a5343aba7dc683d_002.ogg": {
+    "tempo_inicio": "00:00:06.180",
+    "tempo_fim": "00:00:11.694",
+    "duracao": 5.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.257828950881958,
+    "mos_stoi": 0.9458863139152527,
+    "mos_si_sdr": 17.874347686767578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vocês acham que agora a gente vai ficar todos nós influenciados porque o Galhardo fez o gol?",
+    "stt_wav2vec": null
+  }
+}

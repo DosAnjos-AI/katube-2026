@@ -1,0 +1,16 @@
+{
+  "d8fb6a03d74abf0ae1718d14ddf2ccc5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.310",
+    "duracao": 13.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6497251987457275,
+    "mos_stoi": 0.9350633025169373,
+    "mos_si_sdr": 14.169305801391602,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Para muitos governadores, pelas posturas que têm adotado, sabe? De preservação da vida humana, que é a nossa grande guerra agora nesse momento, né? Então, assim..."
+  }
+}

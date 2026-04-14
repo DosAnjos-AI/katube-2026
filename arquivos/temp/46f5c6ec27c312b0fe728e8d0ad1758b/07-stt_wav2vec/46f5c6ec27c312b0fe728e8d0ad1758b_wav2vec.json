@@ -1,0 +1,17 @@
+{
+  "46f5c6ec27c312b0fe728e8d0ad1758b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.364",
+    "duracao": 14.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.142451763153076,
+    "mos_stoi": 0.9064139127731323,
+    "mos_si_sdr": 12.78553295135498,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E acho que é isso, sem total razão. Mas, de fato, aqui no Brasil se criou um pouco esse problema, porque essa vontade que você bem coloca, que é necessária a ideia de também trabalhar com essas pulsões desejantes na cena, de mobilizar.",
+    "stt_wav2vec": "ASQUEÉ ISSA SINTA TAL RAZÃO MAS DE FATO QUE NONDRA ASILSECRIO UM POUCO EXPLANA PORQUE ESSA VONTADE QUE VOCÊ BEM COLOQUE QUE É NECESSÁRIA A IDEIA DE TAMBÉM TRABALHAR COM ESSAS POLSÕES DESEJANTES NA CENA MÉ DE MOBILIZAR"
+  }
+}

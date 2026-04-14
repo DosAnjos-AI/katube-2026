@@ -1,0 +1,44 @@
+{
+  "952c44a6e1fc77f819c5732a86788d7e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.300",
+    "duracao": 10.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4870277643203735,
+    "mos_stoi": 0.9019317030906677,
+    "mos_si_sdr": 9.10686206817627,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "então ele vai lá e ele não tem essa necessidade de se provar enquanto que a gente tem, porque parece que naturalmente a sociedade espera que a gente não saiba, então a gente precisa dar 150% do que"
+  },
+  "952c44a6e1fc77f819c5732a86788d7e_002.ogg": {
+    "tempo_inicio": "00:00:10.340",
+    "tempo_fim": "00:00:20.508",
+    "duracao": 10.17,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.551201820373535,
+    "mos_stoi": 0.9505872130393982,
+    "mos_si_sdr": 15.192187309265137,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para provar que a gente sabe alguma coisa, né? Então acaba que a gente entra realmente nesse eixo aí, vida profissional e vida pessoal, né? Será que se eu me dedicar profissionalmente, eu vou ter que me dedicar"
+  },
+  "952c44a6e1fc77f819c5732a86788d7e_003.ogg": {
+    "tempo_inicio": "00:00:20.676",
+    "tempo_fim": "00:00:30.888",
+    "duracao": 10.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4591081142425537,
+    "mos_stoi": 0.9393882155418396,
+    "mos_si_sdr": 11.335335731506348,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ficar mais, naturalmente, por ser mulher, e vou ter que me afastar da minha família, naturalmente eu vou perder final de semana que eu não voltar no encontro com a minha família, se eu tiver filhos, eu vou ser ausente"
+  }
+}

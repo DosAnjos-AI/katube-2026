@@ -1,0 +1,32 @@
+{
+  "093445520dd2a90803e6a9bf157e640e_001.ogg": {
+    "tempo_inicio": "00:00:01.956",
+    "tempo_fim": "00:00:15.836",
+    "duracao": 13.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4479222297668457,
+    "mos_stoi": 0.8587818145751953,
+    "mos_si_sdr": 6.809535026550293,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas ele, tipo, é um sonho dele jogar normal. Cara, ele vai sair. Igor, antes de tudo que é gremista comentar e, por obviedade, colocar o teu lado mais passional o torcedor, deixa eu fazer um comentário que é totalmente foda.",
+    "stt_wav2vec": "MAS ELE ETÉ UM SONHO DELLE PROVANORAL OEGOERTARA HELENA LHES VAIS INAIORNO EGUARNO ANTES DE TUDO QUE A GRENISTA COMENTAR E POR OBVIEDADE COLOCAL TELADO MAIS PASCIONAL TORCEDOR DEIXA EU FAZE A UM COMENTÁRIO QUE É TOTALMENTE FONICO"
+  },
+  "093445520dd2a90803e6a9bf157e640e_003.ogg": {
+    "tempo_inicio": "00:00:28.484",
+    "tempo_fim": "00:00:32.014",
+    "duracao": 3.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9283150434494019,
+    "mos_stoi": 0.8436009883880615,
+    "mos_si_sdr": 5.5392045974731445,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vale 20 tantos milhões na conta do Bruno, cara.",
+    "stt_wav2vec": "VALE VINTE E TANTOS MILÕES NA CONTA DOMÍNUCA"
+  }
+}

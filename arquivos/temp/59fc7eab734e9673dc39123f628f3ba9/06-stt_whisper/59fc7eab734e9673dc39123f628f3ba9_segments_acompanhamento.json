@@ -1,0 +1,44 @@
+{
+  "59fc7eab734e9673dc39123f628f3ba9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.492",
+    "duracao": 10.49,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.25656795501709,
+    "mos_stoi": 0.9094979763031006,
+    "mos_si_sdr": 12.815536499023438,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Existem vários tipos de pesquisa que você pode aplicar Se esse for um valor para o seu time Que vai fazer você ganhar tempo E isso você já consegue perceber De uma semana para outra, por exemplo"
+  },
+  "59fc7eab734e9673dc39123f628f3ba9_002.ogg": {
+    "tempo_inicio": "00:00:10.852",
+    "tempo_fim": "00:00:21.948",
+    "duracao": 11.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1478538513183594,
+    "mos_stoi": 0.9135462045669556,
+    "mos_si_sdr": 12.196094512939453,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas assim, eu percebo que é uma combinação de diversas práticas. O que tem funcionado muito pra mim na CIT e foi muito legal no trabalho da VLI, foram testes"
+  },
+  "59fc7eab734e9673dc39123f628f3ba9_003.ogg": {
+    "tempo_inicio": "00:00:22.212",
+    "tempo_fim": "00:00:32.894",
+    "duracao": 10.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.864037036895752,
+    "mos_stoi": 0.8676593899726868,
+    "mos_si_sdr": 12.734651565551758,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O design envolvido realmente como parte da equipe. Sabe, Felipe? Então, por exemplo, o designer participa dos ritos. O designer cria ritos junto com o time."
+  }
+}

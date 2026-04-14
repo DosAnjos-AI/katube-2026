@@ -1,0 +1,47 @@
+{
+  "d8877e55e77dec049cf72c32e46ea72b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.516",
+    "duracao": 3.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.681313991546631,
+    "mos_stoi": 0.9852355718612671,
+    "mos_si_sdr": 22.408302307128906,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É aí que a comunicação entra com linguagem.",
+    "stt_wav2vec": "É AÍ QUE A COMUNICAÇÃO ENTRA COM LINGUAGEM"
+  },
+  "d8877e55e77dec049cf72c32e46ea72b_002.ogg": {
+    "tempo_inicio": "00:00:03.908",
+    "tempo_fim": "00:00:10.684",
+    "duracao": 6.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.762087821960449,
+    "mos_stoi": 0.9724478125572205,
+    "mos_si_sdr": 25.16284942626953,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "porque a linguagem cria experiência e as experiências estimulam o engajamento. Lembre-se sempre.",
+    "stt_wav2vec": "PORQUE A LINGUAGEM CRIA EXPERIÊNCIA E AS EXPERIÊNCIAS ESTIMULAM O ENGAJAMENTO LEMBRE-SE SEMPRE"
+  },
+  "d8877e55e77dec049cf72c32e46ea72b_003.ogg": {
+    "tempo_inicio": "00:00:11.076",
+    "tempo_fim": "00:00:14.872",
+    "duracao": 3.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.144073963165283,
+    "mos_stoi": 0.9753022789955139,
+    "mos_si_sdr": 22.53644371032715,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Toda organização é uma fogueira sempre acesa.",
+    "stt_wav2vec": null
+  }
+}

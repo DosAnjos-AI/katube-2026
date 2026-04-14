@@ -1,0 +1,32 @@
+{
+  "9c26bdf6dd8f92ab6aa09ab70a47474e_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:19.132",
+    "duracao": 19.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0022878646850586,
+    "mos_stoi": 0.9218773245811462,
+    "mos_si_sdr": 12.31907844543457,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E finalizando, porque a gente está aqui, todos nós somos profissionais, né, dentro de empresas com expectativas super altas, somos profissionistas com barras super altas também. E falando do mundo profissional e pegando o ponto que a Nancy falou sobre validação, hoje é muito comum a gente ver o nosso senso, né, e...",
+    "stt_wav2vec": "FINALIZANDO PORQUEIJO ESTÁ AQUI TODOS NÓSSIMOS PROFISSIONAES NA DENTRO DE EMPRESAS COM EXPECTATIVAS SUPERALTAS SOMOS PROFISSIONAES PERFECCIONISTAS COMBARRAS SUPERALTAS TAMBÉM E FALANDO DO MUNDO PROFISSIONAL E PEGANDO UM PONTO QUE A NAOSI FALOU SOBRVALIDAÇÃO HOJE É MUITO COMUM A GENTEVE É O NOSSO SENSO N"
+  },
+  "9c26bdf6dd8f92ab6aa09ab70a47474e_002.ogg": {
+    "tempo_inicio": "00:00:19.204",
+    "tempo_fim": "00:00:30.022",
+    "duracao": 10.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9804526567459106,
+    "mos_stoi": 0.9252683520317078,
+    "mos_si_sdr": 7.418557643890381,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "nosso senso de validação e está muito ligado com quem nós somos no trabalho. Há muitos anos já que a vida pessoal é profissional se misturam. Então, na pandemia, acho que ficou isso",
+    "stt_wav2vec": "NOSSO CESSO DE VALIDAÇÃO E ITÁ MUITO ELIGADO COM QUEM NÓS SOMOS NOU TRABALHO É HA MUITOS ANNOS JÁ QUE A VIDA PESSOAL PROFISSIONAL SE MISTURAM NA ENTÃO NA PANDEMIA"
+  }
+}

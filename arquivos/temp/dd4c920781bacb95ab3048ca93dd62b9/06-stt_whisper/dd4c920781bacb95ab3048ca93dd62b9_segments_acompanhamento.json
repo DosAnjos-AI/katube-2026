@@ -1,0 +1,30 @@
+{
+  "dd4c920781bacb95ab3048ca93dd62b9_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.372",
+    "duracao": 9.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5468950271606445,
+    "mos_stoi": 0.9662795662879944,
+    "mos_si_sdr": 12.89242172241211,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "No entanto, antes terminarmos, eu tenho aqui um anúncio para fazer, que é o seguinte, a Bruno, não sei se sabes ou não, mas pronto, nós aqui no podcast temos umas faturas que nós enviamos no final."
+  },
+  "dd4c920781bacb95ab3048ca93dd62b9_002.ogg": {
+    "tempo_inicio": "00:00:09.508",
+    "tempo_fim": "00:00:16.220",
+    "duracao": 6.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1183156967163086,
+    "mos_stoi": 0.9890596866607666,
+    "mos_si_sdr": 17.754337310791016,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para as empresas que nós falámos. Este podcast não teve o patrocínio de..."
+  }
+}

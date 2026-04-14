@@ -1,0 +1,16 @@
+{
+  "d54b96bb80ddfca4173c726087c812b5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.726",
+    "duracao": 5.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2363831996917725,
+    "mos_stoi": 0.9383572340011597,
+    "mos_si_sdr": 5.835745811462402,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nós apenas ajudámos no processo porque nos pediam dados, mas o interesse é..."
+  }
+}

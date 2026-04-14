@@ -1,0 +1,17 @@
+{
+  "346ddf2848e4b43b3713d8bbcdef05b0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.644",
+    "duracao": 3.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8514211177825928,
+    "mos_stoi": 0.8544421792030334,
+    "mos_si_sdr": 10.56929874420166,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não há nenhum investimento que te diga, doutor 20%",
+    "stt_wav2vec": "NÃO HÁ NENHUM INVESTIMENTO QUE TE DEIGADOU TRINTE POR CENTO"
+  }
+}

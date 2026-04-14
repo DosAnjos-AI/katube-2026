@@ -1,0 +1,16 @@
+{
+  "c5b7b4a1456cb7de04b9e05b395f73da_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.592",
+    "duracao": 13.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.167486548423767,
+    "mos_stoi": 0.6874462366104126,
+    "mos_si_sdr": -2.005035877227783,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sim, sim. É no cochila de 40 litros, ou que é da década, aquele ano que custou tipo 5€ e já foi comigo para todo lado. É o melhor, mesmo para andar de avião, não tenho essa preocupação das medidas nem nada, porque aquilo empurra sempre e cá sempre debaixo do banco."
+  }
+}

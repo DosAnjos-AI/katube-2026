@@ -1,0 +1,17 @@
+{
+  "647de6f5e9725735611dae910408f317_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.358",
+    "duracao": 7.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5485403537750244,
+    "mos_stoi": 0.8663860559463501,
+    "mos_si_sdr": 6.532021999359131,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Hoje está bom de assistir essa live, porque o Igor está trancando e o Flanés está de máscara. Está perfeito. Não vê nenhum dos dois.",
+    "stt_wav2vec": "HOJE TABONLHA ASSISTIA A SALAIV QUE O IGORTA TRANCANDO E O FANESTA DE MASCAS APERVE BEGÃO VER NENHUM DOS DOIS"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "f193467efbc54ae78236036a7f427690_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:06.876",
+    "duracao": 6.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1727325916290283,
+    "mos_stoi": 0.958968460559845,
+    "mos_si_sdr": 15.640564918518066,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "f193467efbc54ae78236036a7f427690_002.ogg": {
+    "tempo_inicio": "00:00:06.948",
+    "tempo_fim": "00:00:20.636",
+    "duracao": 13.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6573193073272705,
+    "mos_stoi": 0.9341438412666321,
+    "mos_si_sdr": 11.233519554138184,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Aqui a gente abre o aplicativo tem todos os gostos, assim, em 24 horas praticamente. Se você abrir o aplicativo 3 horas da manhã, você vai encontrar um monte de opção ali. É curioso, é interessante, mas assim, Joa."
+  },
+  "f193467efbc54ae78236036a7f427690_003.ogg": {
+    "tempo_inicio": "00:00:20.772",
+    "tempo_fim": "00:00:24.336",
+    "duracao": 3.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.538268804550171,
+    "mos_stoi": 0.828488290309906,
+    "mos_si_sdr": 0.5467455983161926,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

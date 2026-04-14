@@ -1,0 +1,30 @@
+{
+  "c337baf8b78d7a68525c782453b9e41e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.812",
+    "duracao": 14.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2859623432159424,
+    "mos_stoi": 0.8890358209609985,
+    "mos_si_sdr": 7.9459919929504395,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Alô, alô, minha gente! Sejam muito, bem-vindos e bem-vindas ao podcast Confraria do Futebol. Eu sou o Gabriel Amaral e você acabou de dar play no nosso episódio número 17."
+  },
+  "c337baf8b78d7a68525c782453b9e41e_002.ogg": {
+    "tempo_inicio": "00:00:15.140",
+    "tempo_fim": "00:00:22.680",
+    "duracao": 7.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.024261713027954,
+    "mos_stoi": 0.9912459254264832,
+    "mos_si_sdr": 25.558975219726562,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Como você já sabe, temos a parceria da You Factory. Se você ainda não entrou no site deles, vai lá agora. Aproveita."
+  }
+}

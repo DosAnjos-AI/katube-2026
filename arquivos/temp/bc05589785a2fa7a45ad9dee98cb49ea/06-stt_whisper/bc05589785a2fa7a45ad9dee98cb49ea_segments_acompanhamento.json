@@ -1,0 +1,16 @@
+{
+  "bc05589785a2fa7a45ad9dee98cb49ea_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:11.708",
+    "duracao": 11.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7950304746627808,
+    "mos_stoi": 0.9394198656082153,
+    "mos_si_sdr": 6.642435073852539,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "por aqui as manchetes principais da semana, tá? A gente vai debateando e vai resenhando sobre esses assuntos. Beleza. Bom, vamos começar então com o Gregion, principalmente pra ti e oi."
+  }
+}

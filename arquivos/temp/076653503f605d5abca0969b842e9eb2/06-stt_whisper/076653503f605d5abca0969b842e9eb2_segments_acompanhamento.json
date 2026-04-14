@@ -1,0 +1,16 @@
+{
+  "076653503f605d5abca0969b842e9eb2_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.622",
+    "duracao": 10.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3828728199005127,
+    "mos_stoi": 0.9829227924346924,
+    "mos_si_sdr": 15.148427963256836,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quanto é que vai custar quando tiver daqui a 40 anos se tiver algum problema? Porque uma das tendências que acontece é que a partir dos 30, e eu falei dos 40, mas a partir dos 30, começa a aparecer."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "e575c40e9d22e38aab197152cb7b3bf2_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.468",
+    "duracao": 5.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3874595165252686,
+    "mos_stoi": 0.8357570767402649,
+    "mos_si_sdr": 8.723189353942871,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "autocuidado também, mas essa é um pouquinho da minha história com síndrome do impostor. Por mais que a gente ache que"
+  },
+  "e575c40e9d22e38aab197152cb7b3bf2_002.ogg": {
+    "tempo_inicio": "00:00:05.636",
+    "tempo_fim": "00:00:31.528",
+    "duracao": 25.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3867413997650146,
+    "mos_stoi": 0.9454494714736938,
+    "mos_si_sdr": 12.309189796447754,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não, isso não é comigo, isso não faz. Nem vocês falaram antes também, enquanto a gente deixou de ver alguma oportunidade para não acreditar na gente, mas também enquanto a gente está parando de fazer isso, querendo muito se comparar, olhar para os outros. E acho que como a gente estava falando, tem espaço para todo mundo. Você falou aí, e eu queria complementar, mas você já terminou falando, a gente fica se comparando, é como se a síndrome do impostelo andasse muito colado com o senso de pertencimento. A gente procura se pertencer."
+  }
+}

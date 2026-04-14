@@ -1,0 +1,17 @@
+{
+  "742d0b31226c4eec2f12da38dfb22813_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:08.860",
+    "duracao": 8.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.12582266330719,
+    "mos_stoi": 0.7773097157478333,
+    "mos_si_sdr": -4.329339981079102,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "inundou o coração dos pastores. Quando parecia que o coração ia rasgar o peito e sair voando por aí.",
+    "stt_wav2vec": "INUNDOU O CORAÇÃO DOS PASTORESGO QUANDO PARECIA DE O CORAÇÃO IARRASGAR O BEIVIDO E SAIR VOANDO POR AÍ"
+  }
+}

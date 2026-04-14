@@ -1,0 +1,17 @@
+{
+  "fb8149ecd39260484393cdd6bbc8404c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.436",
+    "duracao": 13.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5314364433288574,
+    "mos_stoi": 0.922581136226654,
+    "mos_si_sdr": 14.650983810424805,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É isso mesmo, é isso aí. Parece essa frissão de época. Isso tem a ver um pouco que uma passagem do show de opinião foi censurada, uma breve passagem. E aí essa passagem, que era que muitos...",
+    "stt_wav2vec": "ISSO MESMO NEM SEI MEER UM PRESE ESSE FRIÇOO NER DE ÉPOCA TENTO EU ESTENHA VER POUCO QUE UMA PASSAGEM DO HOOPINIÃO FOI CENSURADA UMA BREVE PASSAGEM E AÍ ESSA PASSAGEM QUE ERA AQUI MUITAS"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "d06b7e3aa70524e01d664ca0ef0664e4_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.536",
+    "duracao": 6.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2216286659240723,
+    "mos_stoi": 0.6183037757873535,
+    "mos_si_sdr": -4.015989780426025,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "um valor estipulado para as férias, que normalmente é tipo 2 mil euros, no meu caso."
+  }
+}

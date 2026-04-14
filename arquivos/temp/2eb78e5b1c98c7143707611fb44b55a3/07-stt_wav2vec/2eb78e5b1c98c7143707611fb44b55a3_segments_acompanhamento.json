@@ -1,0 +1,32 @@
+{
+  "2eb78e5b1c98c7143707611fb44b55a3_001.ogg": {
+    "tempo_inicio": "00:00:01.060",
+    "tempo_fim": "00:00:29.724",
+    "duracao": 28.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2737016677856445,
+    "mos_stoi": 0.9439191818237305,
+    "mos_si_sdr": 9.31265926361084,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "2eb78e5b1c98c7143707611fb44b55a3_002.ogg": {
+    "tempo_inicio": "00:00:29.892",
+    "tempo_fim": "00:00:40.344",
+    "duracao": 10.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3478466272354126,
+    "mos_stoi": 0.8838448524475098,
+    "mos_si_sdr": 2.5329856872558594,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Só nas col. Só nas col, com certeza. E disse minha mãe que hoje, quando eu abri o despertador, o George levantou a orelhinha. Ai, fofura.",
+    "stt_wav2vec": "NASCOL SSO NASCOL COM CERTEZA E DISSE-ME A MÃE QUE HOJE QUANDO EU ABRIU O DESPERTADOR O DIODE LEVANTOU ARELINHAS"
+  }
+}

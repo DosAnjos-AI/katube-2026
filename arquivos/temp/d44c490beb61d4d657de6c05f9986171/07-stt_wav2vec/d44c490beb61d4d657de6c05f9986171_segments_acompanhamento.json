@@ -1,0 +1,17 @@
+{
+  "d44c490beb61d4d657de6c05f9986171_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.696",
+    "duracao": 8.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0361812114715576,
+    "mos_stoi": 0.978086531162262,
+    "mos_si_sdr": 22.97740364074707,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "eu acho que as pessoas depois acham que quem responde até até um bocadinho arrogante tipo não te vou dizer não posso mas é mesmo a verdade",
+    "stt_wav2vec": "ISTO A PAIO AS QUE OS FESSOAS POIS ACHAM QUE RESPONDA DA TEMCA LINHARRUGAR NES TIPO NÃOT VOLISIER NUM POSS MADA É MESMO GLADO"
+  }
+}

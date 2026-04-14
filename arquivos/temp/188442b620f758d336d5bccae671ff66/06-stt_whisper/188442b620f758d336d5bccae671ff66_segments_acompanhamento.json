@@ -1,0 +1,16 @@
+{
+  "188442b620f758d336d5bccae671ff66_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.244",
+    "duracao": 5.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7985560894012451,
+    "mos_stoi": 0.8828743696212769,
+    "mos_si_sdr": 10.33193302154541,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É uma coisa que também... Eu acho que aquele que na conta então não reparas."
+  }
+}

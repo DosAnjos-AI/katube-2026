@@ -1,0 +1,17 @@
+{
+  "6adb3371f1d7b0f309fca35024ec6118_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.998",
+    "duracao": 5.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.495181918144226,
+    "mos_stoi": 0.8207796216011047,
+    "mos_si_sdr": 1.0298185348510742,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "no final do jogo hoje, né? Tu acha muito louco eu botar 5x1? Não.",
+    "stt_wav2vec": "FINALJOGERNA E O PENA DEBOZERIANO PRESTE TU ACHA MUITO LOURO BOTA CINCO A UM NÃO"
+  }
+}

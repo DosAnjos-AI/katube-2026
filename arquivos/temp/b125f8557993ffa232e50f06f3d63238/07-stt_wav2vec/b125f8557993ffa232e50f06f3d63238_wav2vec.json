@@ -1,0 +1,17 @@
+{
+  "b125f8557993ffa232e50f06f3d63238_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.220",
+    "duracao": 8.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.055147171020508,
+    "mos_stoi": 0.9502686858177185,
+    "mos_si_sdr": 17.599254608154297,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nada a ver. Nada a ver. Mas a gente... Tem outra pessoa que eu fiquei pensando aqui que poderia fazer uma live de repente com bacon.",
+    "stt_wav2vec": "NADA VE NADA VÊ MAS A GENTE TEM OUTRA PESSOA QUE E EU FIQUEI PENSANDO AQUI QUE PODERIA FAZER UMA LAIVE DE REPENTE COM BEICON"
+  }
+}

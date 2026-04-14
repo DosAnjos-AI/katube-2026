@@ -1,0 +1,32 @@
+{
+  "ce84d6f1aff53d04e454da20cb1c2781_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:13.372",
+    "duracao": 13.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1245261430740356,
+    "mos_stoi": 0.767611563205719,
+    "mos_si_sdr": 0.5233734250068665,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É isso aí. Vem, Cosminha. Vem. O seguinte, ó. Tem uma crítica que aconteceu. Por que é Wagner? Ah, não. O Bonita Mortadela. Ah, tu acha que o Wagner também. É, Lika? Ah, tu acha que o Wagner também. É, Lika? Ah!",
+    "stt_wav2vec": "MITE VEM CO AS FINHA BENHASAR A C ITIOTA E UMAQIVAGNA ASABE TEMI UMA CRÍTICA E RUQUEZA AITA NÃO MOURIDA MAL ALÉRIA OVAGUEDEA GATA AS QUE O VAGNARTANÉ"
+  },
+  "ce84d6f1aff53d04e454da20cb1c2781_002.ogg": {
+    "tempo_inicio": "00:00:15.076",
+    "tempo_fim": "00:00:30.478",
+    "duracao": 15.4,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3067126274108887,
+    "mos_stoi": 0.8873645067214966,
+    "mos_si_sdr": 5.8164381980896,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Fica aí a notícia, né? Vem, Cosminha. Aconteceu uma coisa, tá? O Babu lá do Big Brother, que fez o Tim Maia, etc. Ele falou que fez 14 novelas, 40 e poucos filmes e tal, né? E aí eles foram atrás dos...",
+    "stt_wav2vec": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "f19d95edeedb4a32f1ec12b518c16aae_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.460",
+    "duracao": 14.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.376380205154419,
+    "mos_stoi": 0.7525030970573425,
+    "mos_si_sdr": 4.527677536010742,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E fez, né? Até me surpreendeu. Mas eu tava analisando isso, e se a gente for pegar os anos em que a dupla vence títulos grandes, nenhum dos dois foi campeão estadual, né? O Inter em 2006 não é campeão estadual e vence Libertadores no Mundial.",
+    "stt_wav2vec": "FEZME ATÉNDO SERPREENDEU MAS FATAVA ANALIZANDO ISSO EM SEGENTE SOSTEGAL OS ANNOS EM QUE ADUPA VENCE TÍTULOS GRANDES NENHUM DOS DOIS PORQUE CAMPEÃ ESTADUANA O ÍNTER EM DOIS MI E SEIS NÃO É CAMPEÃ ESTADUAL E VENCEM LIBERTADORES MUNDIAL"
+  }
+}

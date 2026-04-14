@@ -1,0 +1,30 @@
+{
+  "69b3abb07d5dbb5df6e443564c1bd66f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.044",
+    "duracao": 6.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8747426271438599,
+    "mos_stoi": 0.8991101980209351,
+    "mos_si_sdr": 9.010947227478027,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Posso contar sobre tudo. Mas uma coisa importante é essa exposição que foi feita..."
+  },
+  "69b3abb07d5dbb5df6e443564c1bd66f_002.ogg": {
+    "tempo_inicio": "00:00:06.436",
+    "tempo_fim": "00:00:14.268",
+    "duracao": 7.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4267706871032715,
+    "mos_stoi": 0.8401641249656677,
+    "mos_si_sdr": -0.9931974411010742,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e que foi organizada realmente pela André Caruso Satumino e uma bela equipe,"
+  }
+}

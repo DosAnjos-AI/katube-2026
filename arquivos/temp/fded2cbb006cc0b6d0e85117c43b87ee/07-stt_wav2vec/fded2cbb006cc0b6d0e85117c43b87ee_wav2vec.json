@@ -1,0 +1,32 @@
+{
+  "fded2cbb006cc0b6d0e85117c43b87ee_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.988",
+    "duracao": 4.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.355945110321045,
+    "mos_stoi": 0.9623731374740601,
+    "mos_si_sdr": 18.790281295776367,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Essa história me lembrou bastante o filme Parasita.",
+    "stt_wav2vec": "ESSA HISTÓRIA ME LEMBROU BASTANTE O FILME PARASITA"
+  },
+  "fded2cbb006cc0b6d0e85117c43b87ee_002.ogg": {
+    "tempo_inicio": "00:00:05.444",
+    "tempo_fim": "00:00:17.020",
+    "duracao": 11.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9220373630523682,
+    "mos_stoi": 0.9554442167282104,
+    "mos_si_sdr": 18.207138061523438,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Acho que pelas referências de desigualdade social e de famílias diferentes. Acho que foi isso que ficou bastante marcado sobre esse caso.",
+    "stt_wav2vec": "ACHO QUE PELAS REFERÊNCIAS DESIGUALDADE SOCIAL E DE FAMÍLIAS DIFERENTES ACHO QUE FOI ESE QUE FICOU BASTANTE MARCADO SOBRE ESSE CASO"
+  }
+}

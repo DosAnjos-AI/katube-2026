@@ -1,0 +1,16 @@
+{
+  "4e830cb2b081c7d93149534bad577ac3_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.644",
+    "duracao": 7.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0337345600128174,
+    "mos_stoi": 0.8622254729270935,
+    "mos_si_sdr": 11.302536964416504,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É claro que a abordagem é uma abordagem por isso que tem o dano moral, por isso que tem a possibilidade. Mas criminalmente..."
+  }
+}

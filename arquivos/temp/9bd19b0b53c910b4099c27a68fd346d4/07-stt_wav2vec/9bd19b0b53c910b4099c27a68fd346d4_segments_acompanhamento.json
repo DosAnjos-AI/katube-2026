@@ -1,0 +1,62 @@
+{
+  "9bd19b0b53c910b4099c27a68fd346d4_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.052",
+    "duracao": 5.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4252417087554932,
+    "mos_stoi": 0.7938793301582336,
+    "mos_si_sdr": 4.521811008453369,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se você não participa, não adianta ficar lá de fora criticando.",
+    "stt_wav2vec": "PARTICIPAÇÃO EVOCÊ NÃO PARTICIPA NÃO ADIANTA FICALADE FORA DEO TICANO"
+  },
+  "9bd19b0b53c910b4099c27a68fd346d4_002.ogg": {
+    "tempo_inicio": "00:00:05.444",
+    "tempo_fim": "00:00:10.844",
+    "duracao": 5.4,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0508005619049072,
+    "mos_stoi": 0.8713505268096924,
+    "mos_si_sdr": 8.520081520080566,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vai lá para dentro. Vai participar, vai conhecer. Vai virar cooperado da cooperativa.",
+    "stt_wav2vec": "ARAPA DENTRO VAI PARTICIPAR VAI CONHECER AGIRÁCOOPERADO DA COPERATIVA"
+  },
+  "9bd19b0b53c910b4099c27a68fd346d4_003.ogg": {
+    "tempo_inicio": "00:00:11.268",
+    "tempo_fim": "00:00:15.676",
+    "duracao": 4.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7857707738876343,
+    "mos_stoi": 0.8681129813194275,
+    "mos_si_sdr": 11.241673469543457,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "presta um serviço na sua região, vai conhecer melhor esse trabalho.",
+    "stt_wav2vec": "PRESTA UM SERVIÇO NA SUA REGIÃO VAI CONHECER MELHOR ESSE TRABALHO"
+  },
+  "9bd19b0b53c910b4099c27a68fd346d4_004.ogg": {
+    "tempo_inicio": "00:00:16.036",
+    "tempo_fim": "00:00:22.620",
+    "duracao": 6.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1980438232421875,
+    "mos_stoi": 0.8658405542373657,
+    "mos_si_sdr": 4.238336086273193,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a participar de uma cooperativa de crédito, uma cooperativa setorial onde você está engajado,",
+    "stt_wav2vec": "É PARTICIPAR UMA COPERATIVA DE CRÉDITO UMA COPERATIVA SETORIAL ONDE VOCÊ TE ENGAJADO"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "fc0edb7c46566afadb712256eb9ac142_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:12.028",
+    "duracao": 12.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.633237600326538,
+    "mos_stoi": 0.8711130023002625,
+    "mos_si_sdr": 8.002317428588867,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas eu acho assim, eu acho que ele realmente não está pronto. Acho que ele ainda precisa de mais cancha. Alguns lances do Grenal, principalmente, que eu acho que foi o melhor adversário que ele enfrentou.",
+    "stt_wav2vec": "NEGOCIAÇÃO SETE OITO MILHODES MAS EU EU ACHO ASSIM EU ACHO PUELE REALMENTE NÃO TÁ PRONTO ACHO QUE LINDA PRECISA DE MAIS CANCHA NE ALGUNS LANCES DO DGRENAL PRINCIPALMENTE QAT FOI O MELHOR ADVERSÁRIO QUE ELE ENTRÃTO"
+  },
+  "fc0edb7c46566afadb712256eb9ac142_002.ogg": {
+    "tempo_inicio": "00:00:12.068",
+    "tempo_fim": "00:00:21.916",
+    "duracao": 9.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5710806846618652,
+    "mos_stoi": 0.8699085116386414,
+    "mos_si_sdr": 8.961198806762695,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "fc0edb7c46566afadb712256eb9ac142_003.ogg": {
+    "tempo_inicio": "00:00:22.468",
+    "tempo_fim": "00:00:30.784",
+    "duracao": 8.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.483573317527771,
+    "mos_stoi": 0.8331555128097534,
+    "mos_si_sdr": 5.344902515411377,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "439b9259ef654b79968c113127398bd5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.374",
+    "duracao": 9.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2076916694641113,
+    "mos_stoi": 0.918964147567749,
+    "mos_si_sdr": 16.308862686157227,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Exato, se a comissão for 50 centímetros na compra, mais 50 centímetros na venda, tira ali um euro nas mais valias, ou seja, só pagas 28% dos 9€.",
+    "stt_wav2vec": "EXATOS COMPRAR SA COMISSÃO FOA DE CINQENTACENT NUS DA COMPRA MAIS CINQUENTAA NO E NOVENDA TIRÁ LE UM EURANAS MAIS VOLEIAS OU SEJA SAPAGA DE VINTE OITOPOR CENTODUNOEOOS"
+  }
+}

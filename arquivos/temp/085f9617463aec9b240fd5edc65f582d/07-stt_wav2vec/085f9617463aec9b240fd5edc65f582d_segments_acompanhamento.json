@@ -1,0 +1,32 @@
+{
+  "085f9617463aec9b240fd5edc65f582d_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:06.332",
+    "duracao": 6.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.174497604370117,
+    "mos_stoi": 0.8534303307533264,
+    "mos_si_sdr": 13.064864158630371,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Bom, eu antes desse resumo, vou te falar algumas coisas e eu espero ser breve.",
+    "stt_wav2vec": "BO EU ERA ANTES DESSE RESUMO VOTE FALAR ALGUMAS COISAS E EU ESPERO SER BREVE"
+  },
+  "085f9617463aec9b240fd5edc65f582d_002.ogg": {
+    "tempo_inicio": "00:00:06.820",
+    "tempo_fim": "00:00:12.654",
+    "duracao": 5.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8429019451141357,
+    "mos_stoi": 0.9220547676086426,
+    "mos_si_sdr": 19.253559112548828,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ao longo da minha vida eu sou uma mulher de sorte antes de qualquer coisa",
+    "stt_wav2vec": "AO LONGO DA MINHA VIDA EU SOU UMA MULHER DE SORTE ANTES DE QUALQUER COISA"
+  }
+}

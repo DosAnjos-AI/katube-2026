@@ -1,0 +1,17 @@
+{
+  "085242dfbaa7d9ae46c0b2bd2863db74_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.918",
+    "duracao": 3.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2500383853912354,
+    "mos_stoi": 0.9161101579666138,
+    "mos_si_sdr": 13.227804183959961,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que no Chile há uma presença",
+    "stt_wav2vec": "AJO QUE NO CHILE E HA UMA PRECENÇA"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "2dbd585bbbed4ecdea237dbeb4cbbb92_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.028",
+    "duracao": 8.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.808316230773926,
+    "mos_stoi": 0.9269103407859802,
+    "mos_si_sdr": 14.652924537658691,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí os aplicativos têm o Jump Power, que é o que eu usei por mais de três anos, que eu usava lá no meu estúdio de treinamento."
+  },
+  "2dbd585bbbed4ecdea237dbeb4cbbb92_002.ogg": {
+    "tempo_inicio": "00:00:08.388",
+    "tempo_fim": "00:00:14.076",
+    "duracao": 5.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7277445793151855,
+    "mos_stoi": 0.8401694297790527,
+    "mos_si_sdr": 6.260989189147949,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "2dbd585bbbed4ecdea237dbeb4cbbb92_003.ogg": {
+    "tempo_inicio": "00:00:14.340",
+    "tempo_fim": "00:00:27.388",
+    "duracao": 13.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.018606185913086,
+    "mos_stoi": 0.8973982930183411,
+    "mos_si_sdr": 12.159790992736816,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que é o My Jump 2. Então, esse é um aplicativo muito bom. Só que esses aplicativos são pagos. E aí, na joga BR, para democratizar, para não exigir que os alunos comprem aplicativos,"
+  }
+}

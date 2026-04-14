@@ -1,0 +1,16 @@
+{
+  "bd1e8d75d764fbfb42be58f6f323a968_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:06.190",
+    "duracao": 6.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.435309648513794,
+    "mos_stoi": 0.8742634057998657,
+    "mos_si_sdr": 9.174302101135254,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "SamapChats, o podcast que está sempre com você, trazendo as curiosidades e novidades que acontecem na Samap."
+  }
+}

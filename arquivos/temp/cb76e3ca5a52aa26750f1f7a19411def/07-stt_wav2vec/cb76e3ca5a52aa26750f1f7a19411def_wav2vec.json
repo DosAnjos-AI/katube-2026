@@ -1,0 +1,32 @@
+{
+  "cb76e3ca5a52aa26750f1f7a19411def_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.868",
+    "duracao": 7.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.413820505142212,
+    "mos_stoi": 0.8673130869865417,
+    "mos_si_sdr": 7.1396403312683105,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "as pessoas mandavam perguntas pontuais e ele foi respondendo. Eu mandei também a minha. É, é verdade. Então, assim, foi muito bacana.",
+    "stt_wav2vec": "AS COSÇAS MANDAVAM PERGUNTAS PONTUAIS E LINAS LENHA MIM É É VERDADE   ENTÃO ASSIM FOI MUITO BACANA"
+  },
+  "cb76e3ca5a52aa26750f1f7a19411def_002.ogg": {
+    "tempo_inicio": "00:00:08.292",
+    "tempo_fim": "00:00:19.996",
+    "duracao": 11.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4597489833831787,
+    "mos_stoi": 0.9244629144668579,
+    "mos_si_sdr": 11.417482376098633,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Por dois motivos. Um essa conexão com o amigo, tentar fortalecer o negócio dele, o business dele, a profissão dele. E a outra é essa coisa da gente se manter em atividade. Foi muito bacana. E olha, eu vou te dizer.",
+    "stt_wav2vec": "POR DOIS MOTIVOS UM ESSA CONEXÃO COM O AMIGO NET TENTAR FORTALECEU O NEGÓCIO DELE O BISNAS DELE A PROFISSÃO DELLE E A OUTRA ESSA COISA DA GENTE SE MANTÉM ATIVIDADE COR MUITO BACANA E OLHA VOTI DEZER"
+  }
+}

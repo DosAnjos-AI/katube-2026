@@ -1,0 +1,44 @@
+{
+  "9f2a858e587e7c62c85a929070500c27_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:07.132",
+    "duracao": 7.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9746880531311035,
+    "mos_stoi": 0.9629935622215271,
+    "mos_si_sdr": 15.937024116516113,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho que esse podcast surgiu dessa ideia de conversar mesmo, né? De levar..."
+  },
+  "9f2a858e587e7c62c85a929070500c27_002.ogg": {
+    "tempo_inicio": "00:00:07.684",
+    "tempo_fim": "00:00:17.852",
+    "duracao": 10.17,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.127376914024353,
+    "mos_stoi": 0.7049770355224609,
+    "mos_si_sdr": -2.4909467697143555,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E sensibilizar, né? Porque a gente pode passar a vida inteira Cato no lixo na praia. Toda vida que eu for, eu sempre vou estar cato no lixo, vou estar juntando tudo que está ao meu redor."
+  },
+  "9f2a858e587e7c62c85a929070500c27_003.ogg": {
+    "tempo_inicio": "00:00:17.988",
+    "tempo_fim": "00:00:25.848",
+    "duracao": 7.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.290562629699707,
+    "mos_stoi": 0.7281796336174011,
+    "mos_si_sdr": -1.6890196800231934,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas se as pessoas não entenderem que elas não podem jogar o lixo em primeiro lugar, a gente vai passar o resto da vida e jogar os gelos."
+  }
+}

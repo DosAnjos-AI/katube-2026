@@ -1,0 +1,32 @@
+{
+  "2532b2053eec81b0cdbcb01e66005fbc_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.516",
+    "duracao": 11.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.159613013267517,
+    "mos_stoi": 0.6459515690803528,
+    "mos_si_sdr": -4.230180740356445,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E o que ele fez com o time do nível, pegando um time mediano lá em 2015, transformando o meu melhor time do mundo hoje, com tantas peças importantes para o futebol mundial, tendo o trio de ataque, com o Salamané,",
+    "stt_wav2vec": "OQUE ELE FIZCUTIVEL O LIVRO PEGANO UM TINIMEDEANO VAIND AS MINQUINSTRATORANDO MEMEILHOTES DO MUNDO HOJE COM TANTAS PEÇAS IMPORTANTES PR O FUTEBOL MUNDIAL TENDO-A AUMVIU GENAQCE COM SALÁ MANÉ"
+  },
+  "2532b2053eec81b0cdbcb01e66005fbc_002.ogg": {
+    "tempo_inicio": "00:00:11.620",
+    "tempo_fim": "00:00:15.838",
+    "duracao": 4.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3024137020111084,
+    "mos_stoi": 0.6475521922111511,
+    "mos_si_sdr": -3.9841012954711914,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E Firmino, se eu não queria um dos três reais estrela antes do Klopp começar a cairar eles,",
+    "stt_wav2vec": "E FEMNINO SENTRE QUE EM UM DOS TÊS REAIS ESTRELA ANTES DO COBRE COMEÇAR EM NAREES"
+  }
+}

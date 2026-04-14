@@ -1,0 +1,58 @@
+{
+  "3e1f73a58aaec43ed1f167fbc6fcef76_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.036",
+    "duracao": 7.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1218302249908447,
+    "mos_stoi": 0.9266722798347473,
+    "mos_si_sdr": 11.729994773864746,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pedro é um menino assim. Gosta de dinossauro, de brincar com amigos, de venhar e ganhar carinho."
+  },
+  "3e1f73a58aaec43ed1f167fbc6fcef76_002.ogg": {
+    "tempo_inicio": "00:00:07.332",
+    "tempo_fim": "00:00:12.540",
+    "duracao": 5.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8538703918457031,
+    "mos_stoi": 0.8918275237083435,
+    "mos_si_sdr": 14.438590049743652,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas às vezes de repente sem a brisa e sem de mansinho."
+  },
+  "3e1f73a58aaec43ed1f167fbc6fcef76_003.ogg": {
+    "tempo_inicio": "00:00:13.028",
+    "tempo_fim": "00:00:17.180",
+    "duracao": 4.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.743257522583008,
+    "mos_stoi": 0.9381327629089355,
+    "mos_si_sdr": 17.584365844726562,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pedro vira porco espinho. Mas muito pequena berra."
+  },
+  "3e1f73a58aaec43ed1f167fbc6fcef76_004.ogg": {
+    "tempo_inicio": "00:00:17.508",
+    "tempo_fim": "00:00:25.704",
+    "duracao": 8.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2565298080444336,
+    "mos_stoi": 0.9575154185295105,
+    "mos_si_sdr": 18.363842010498047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cachorrinho latirroso. E ele perde seu carrinho. Pedro vira porco espinho. Se a mamãe chegar"
+  }
+}

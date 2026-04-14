@@ -1,0 +1,44 @@
+{
+  "da948a5b600cfb3d7b4d0ed3ca711b44_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.308",
+    "duracao": 13.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.02109956741333,
+    "mos_stoi": 0.9449543952941895,
+    "mos_si_sdr": 14.270398139953613,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "importante de como o cooperativismo gera emprego, gera renda e pode mudar o cenário de um país. Nós estamos falando só do estado do Paraná, no ano 2020, se eu não me engano, aumento de 40%."
+  },
+  "da948a5b600cfb3d7b4d0ed3ca711b44_002.ogg": {
+    "tempo_inicio": "00:00:13.412",
+    "tempo_fim": "00:00:28.188",
+    "duracao": 14.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.757768988609314,
+    "mos_stoi": 0.9247062802314758,
+    "mos_si_sdr": 11.266949653625488,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "do faturamento das cooperativas algo em torno de 100 bilhões de reais. Então, efetivamente, é um aumento significativo e os cooperados do Estado são em torno de 200 mil, ou seja,"
+  },
+  "da948a5b600cfb3d7b4d0ed3ca711b44_003.ogg": {
+    "tempo_inicio": "00:00:28.292",
+    "tempo_fim": "00:00:33.584",
+    "duracao": 5.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5602202415466309,
+    "mos_stoi": 0.8089361190795898,
+    "mos_si_sdr": 7.079058647155762,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nós temos uma grande força de trabalho e uma grande parcela da sociedade representada."
+  }
+}

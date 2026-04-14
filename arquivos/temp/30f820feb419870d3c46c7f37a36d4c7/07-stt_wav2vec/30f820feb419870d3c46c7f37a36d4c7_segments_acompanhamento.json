@@ -1,0 +1,47 @@
+{
+  "30f820feb419870d3c46c7f37a36d4c7_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:12.476",
+    "duracao": 12.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.190983772277832,
+    "mos_stoi": 0.9112302660942078,
+    "mos_si_sdr": 10.938657760620117,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "sem precisar colocar tanta velocidade assim no movimento, movimento mais controlado, muito no começo a gente controla muito o Valgo de Joelho, acerta a primeira qualidade do movimento. Então, depois que eu garanto que",
+    "stt_wav2vec": "SEMSEM PRECISAR COLOCAR TANTA VELOCIDADE ASSIM UM MOVIMENTO UM MOVIMENTO MAIS CONTROADO UNA COME ESTE A GENTE CONTROLA MUITO O ALGO DE JOELHO ACERTA A PRIMEIRA QUALIDADE DO MOVIMENTO AO DEPOIS QUE É O GARANTO QUE"
+  },
+  "30f820feb419870d3c46c7f37a36d4c7_002.ogg": {
+    "tempo_inicio": "00:00:12.644",
+    "tempo_fim": "00:00:20.988",
+    "duracao": 8.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.558915615081787,
+    "mos_stoi": 0.8848474621772766,
+    "mos_si_sdr": 8.730855941772461,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "30f820feb419870d3c46c7f37a36d4c7_003.ogg": {
+    "tempo_inicio": "00:00:21.252",
+    "tempo_fim": "00:00:27.598",
+    "duracao": 6.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9307060241699219,
+    "mos_stoi": 0.8830167651176453,
+    "mos_si_sdr": 6.804989814758301,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então é assim que eu faço. Precisa sim, ter um trabalho antes e a gente precisa fazer ele através da força.",
+    "stt_wav2vec": null
+  }
+}

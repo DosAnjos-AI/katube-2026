@@ -1,0 +1,17 @@
+{
+  "25298ab2bd7b4bb0273b03330ea8df9c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.998",
+    "duracao": 4.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3204560279846191,
+    "mos_stoi": 0.6947118639945984,
+    "mos_si_sdr": -0.9115521907806396,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas, claro, implica custos, se calhar, maiores.",
+    "stt_wav2vec": "MADIPLOTADO IMPLICA CUSTOSTOS CARAR MAIORES"
+  }
+}

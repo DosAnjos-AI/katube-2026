@@ -1,0 +1,17 @@
+{
+  "d42ee38817e0d274e5605b8e5c556253_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:13.404",
+    "duracao": 13.4,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1389309167861938,
+    "mos_stoi": 0.6079741716384888,
+    "mos_si_sdr": -0.7528232932090759,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu vou de 2 a 1 a 1 para mim. Beleza, fechamos os nossos palpites. Lembrem de ficar ligados na nossa página no Instagram, nosso perfil, arroba a compra do futebol. Na quarta-feira vai ter o post.",
+    "stt_wav2vec": "EU VODI DOIS AO ALMALETADOIS O RELMADETANINO ELESO PECHORDO NOS PAUVIS LEMBREM FICAR LIGADOS NA NOSSA PÁGINA ENTAGRELA R NOSSO CERVIL A RO BA COMPRA DO FUTEBOL NA QUARTAFERA VA E"
+  }
+}

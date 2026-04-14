@@ -1,0 +1,17 @@
+{
+  "5a5148938d3d64a625982ba6f6561ead_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:03.772",
+    "duracao": 3.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1737232208251953,
+    "mos_stoi": 0.9402878880500793,
+    "mos_si_sdr": 17.06683921813965,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Primeiramente, quero agradecer a presença do Samuel aqui, do Renato.",
+    "stt_wav2vec": "PRIMEIRA MENTE QUERA AGRADECER A PRESENÇA DO SAMUEL AQUI DO RENATO TU"
+  }
+}

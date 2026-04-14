@@ -1,0 +1,32 @@
+{
+  "f0b60afb7b40e44ce6a9666ec11dc8f3_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.196",
+    "duracao": 11.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6830368041992188,
+    "mos_stoi": 0.9530945420265198,
+    "mos_si_sdr": 20.31821060180664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "faz com que ela soe como parte desse discurso. Ao colocar aqui nos cenários do Helio Ashbauer, um cenário mega carnavalizante, então que ao mesmo tempo é...",
+    "stt_wav2vec": "FAZ COM QUE ELA SOE COMO PARTE DESSE DISCURSO AO COLOCAR AQUE MUCENÁRIOS DO EGOET BALER AQUELA UMCENÁRIO MEGA CARNAVALIZANTE NTÃO QUE AO MESMO NO TEMPO É"
+  },
+  "f0b60afb7b40e44ce6a9666ec11dc8f3_002.ogg": {
+    "tempo_inicio": "00:00:11.428",
+    "tempo_fim": "00:00:21.800",
+    "duracao": 10.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0043785572052,
+    "mos_stoi": 0.9509722590446472,
+    "mos_si_sdr": 17.372127532958984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "diagnóstico da nossa tragédia, ao mesmo tempo é samba, a vontade de se movimentar, de dançar. Pra quem assistiu a remontagem é um pouco isso, dá vontade de dançar com eles, né, de não sei o que,",
+    "stt_wav2vec": "DIAGNÓSTICO DA NOSSA TRAGÉDIA AO MESMO TEMPO É SANDO É VONTADE DE SE MOVIMENTAR DE DANÇAR PARA QUEM ASSISTIU A REMONTAGEM NUM POUCOISSO DA VONTADE DE DANÇAR COM ELES NEDE NÃO SE"
+  }
+}

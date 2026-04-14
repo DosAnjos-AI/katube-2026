@@ -1,0 +1,16 @@
+{
+  "15973b430b2c87d9af66cf9a525aee8b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.572",
+    "duracao": 4.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.854651927947998,
+    "mos_stoi": 0.8317584991455078,
+    "mos_si_sdr": 7.732775688171387,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Depois aconteceu uma pulsão de cenas embaixo em que aparecia a mãe dos sonhos,"
+  }
+}

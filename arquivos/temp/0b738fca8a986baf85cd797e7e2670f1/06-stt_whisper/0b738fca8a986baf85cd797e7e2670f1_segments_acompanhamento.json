@@ -1,0 +1,16 @@
+{
+  "0b738fca8a986baf85cd797e7e2670f1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.320",
+    "duracao": 7.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3223795890808105,
+    "mos_stoi": 0.9279968738555908,
+    "mos_si_sdr": 12.627179145812988,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tem lá uma das informações, que é bruna Fernandes.pt E também no meu e-mail, que é geral, arroba brunafenandes.pt"
+  }
+}

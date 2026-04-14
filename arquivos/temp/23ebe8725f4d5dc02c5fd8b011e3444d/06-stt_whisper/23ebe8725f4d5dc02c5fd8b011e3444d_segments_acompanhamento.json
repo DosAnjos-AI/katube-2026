@@ -1,0 +1,30 @@
+{
+  "23ebe8725f4d5dc02c5fd8b011e3444d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.308",
+    "duracao": 5.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2561686038970947,
+    "mos_stoi": 0.9114233255386353,
+    "mos_si_sdr": 13.02968692779541,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Só para ilustrar isso que você acaba de citar, mais de 50 milhões de jovens,"
+  },
+  "23ebe8725f4d5dc02c5fd8b011e3444d_002.ogg": {
+    "tempo_inicio": "00:00:05.828",
+    "tempo_fim": "00:00:14.030",
+    "duracao": 8.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8185865879058838,
+    "mos_stoi": 0.8597729802131653,
+    "mos_si_sdr": 7.973659038543701,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E a gente tem visto aí no noticiário e isso nos orgulha muito. O cooperativismo brasileiro nasceu muito dentro do setor agro-rural."
+  }
+}

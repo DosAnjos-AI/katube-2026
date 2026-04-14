@@ -1,0 +1,58 @@
+{
+  "b9836445224bc5635d70233e30df0a1a_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:13.180",
+    "duracao": 13.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1896511316299438,
+    "mos_stoi": 0.8600080609321594,
+    "mos_si_sdr": 4.326347827911377,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null
+  },
+  "b9836445224bc5635d70233e30df0a1a_002.ogg": {
+    "tempo_inicio": "00:00:16.548",
+    "tempo_fim": "00:00:33.532",
+    "duracao": 16.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3901358842849731,
+    "mos_stoi": 0.9420000910758972,
+    "mos_si_sdr": 12.128769874572754,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null
+  },
+  "b9836445224bc5635d70233e30df0a1a_003.ogg": {
+    "tempo_inicio": "00:00:36.836",
+    "tempo_fim": "00:00:43.868",
+    "duracao": 7.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.650475025177002,
+    "mos_stoi": 0.9399921298027039,
+    "mos_si_sdr": 10.788250923156738,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null
+  },
+  "b9836445224bc5635d70233e30df0a1a_004.ogg": {
+    "tempo_inicio": "00:00:44.004",
+    "tempo_fim": "00:01:25.102",
+    "duracao": 41.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2973259687423706,
+    "mos_stoi": 0.9293994307518005,
+    "mos_si_sdr": 11.58334732055664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null
+  }
+}

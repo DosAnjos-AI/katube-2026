@@ -1,0 +1,58 @@
+{
+  "999550df00ec19f2d41bcb8795dd8789_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.428",
+    "duracao": 10.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5383282899856567,
+    "mos_stoi": 0.8958829641342163,
+    "mos_si_sdr": 6.087503910064697,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Inicamose? Esse aí? Esse aí? Esse aí. E Nicamose, claro, velho. É isso aqui, ó. Esse aqui, ó. Esse balanço aqui, ó. E tu já viu o novo disco do Steve Wonder?"
+  },
+  "999550df00ec19f2d41bcb8795dd8789_002.ogg": {
+    "tempo_inicio": "00:00:10.788",
+    "tempo_fim": "00:00:14.940",
+    "duracao": 4.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.446658968925476,
+    "mos_stoi": 0.8899464011192322,
+    "mos_si_sdr": -1.1759146451950073,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não, ele também não."
+  },
+  "999550df00ec19f2d41bcb8795dd8789_003.ogg": {
+    "tempo_inicio": "00:00:16.676",
+    "tempo_fim": "00:00:21.308",
+    "duracao": 4.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2425442934036255,
+    "mos_stoi": 0.675381064414978,
+    "mos_si_sdr": -2.320467472076416,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "999550df00ec19f2d41bcb8795dd8789_004.ogg": {
+    "tempo_inicio": "00:00:21.604",
+    "tempo_fim": "00:00:31.384",
+    "duracao": 9.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1390172243118286,
+    "mos_stoi": 0.8514112830162048,
+    "mos_si_sdr": 2.8003671169281006,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

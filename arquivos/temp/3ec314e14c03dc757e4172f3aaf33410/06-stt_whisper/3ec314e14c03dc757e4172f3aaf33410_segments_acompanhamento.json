@@ -1,0 +1,16 @@
+{
+  "3ec314e14c03dc757e4172f3aaf33410_001.ogg": {
+    "tempo_inicio": "00:00:01.860",
+    "tempo_fim": "00:00:22.672",
+    "duracao": 20.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.946972370147705,
+    "mos_stoi": 0.9764022827148438,
+    "mos_si_sdr": 19.08534812927246,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tem um livro que eu gosto demais, do John Maxwell, se chama Todos Se Comunicam, Poucos Se Conectam, que diz exatamente isso. Se comunicar bem, não é só falar bem, não é só trabalhar oratória. Eu tenho dito que para se comunicar bem é preciso se conhecer primeiro. É o autoconhecimento que vai ajudar a trabalhar vulnerabilidade."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "f7dfc79df37403937d9c6dbb8e9bac73_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.684",
+    "duracao": 6.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7415783405303955,
+    "mos_stoi": 0.8975569605827332,
+    "mos_si_sdr": 5.056212425231934,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É porque a saída da de bola é do tiro de meta, né? Então, ele desce até a linha da área. Mas se tu avança toda a linha...",
+    "stt_wav2vec": "É PORQUE A SAÍDO DA DEBOLA DO TILO DE METANA ENTÃO ELE DESCE ATÉ A LINHA DA ÁREA MAS QUANDO"
+  },
+  "f7dfc79df37403937d9c6dbb8e9bac73_002.ogg": {
+    "tempo_inicio": "00:00:06.948",
+    "tempo_fim": "00:00:12.444",
+    "duracao": 5.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1656452417373657,
+    "mos_stoi": 0.5342133045196533,
+    "mos_si_sdr": -3.285773754119873,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu entendo que até o Flamengo faz mais isso, avança mais a linha, sabe? Não começa tão de trás.",
+    "stt_wav2vec": "EU A PIOR NÃO ENTENDO QUE O MEU LATELFANÃO FAZ MAS ISSO AVANÇA MAIS A LINHA SABE NÃO COMEÇA TÃO DE TRAS"
+  },
+  "f7dfc79df37403937d9c6dbb8e9bac73_003.ogg": {
+    "tempo_inicio": "00:00:12.740",
+    "tempo_fim": "00:00:17.468",
+    "duracao": 4.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.218411922454834,
+    "mos_stoi": 0.5030389428138733,
+    "mos_si_sdr": -10.564870834350586,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

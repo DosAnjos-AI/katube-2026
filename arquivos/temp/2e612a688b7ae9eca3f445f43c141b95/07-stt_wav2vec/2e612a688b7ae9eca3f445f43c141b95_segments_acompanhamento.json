@@ -1,0 +1,17 @@
+{
+  "2e612a688b7ae9eca3f445f43c141b95_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.672",
+    "duracao": 11.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7584357261657715,
+    "mos_stoi": 0.9853624105453491,
+    "mos_si_sdr": 22.87970733642578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "comprar a casa, normalmente faz depois a dois, ou mesmo, lá está, para médio prazo, pode planear uma viagem, tipo a América do Sul, de não sei quantos, tipo,",
+    "stt_wav2vec": "COMPRAR A CASA NORMALMENTO FAZ POIS A DOIS OU MESMO RASTRATO PROMEDE O PRAZO POSSO PLANEAR UMA VIAGEM TIPO AMERICA DO SUL DE NÃO SE QUANT TIPO"
+  }
+}

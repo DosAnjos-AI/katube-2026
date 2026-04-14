@@ -1,0 +1,22 @@
+{
+  "1bc8a79635903dd6c5fb4d657ed5576f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.092",
+    "duracao": 8.09,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Eles foram objeto de repressão imediata, não só eles, como também todos os movimentos culturais que buscavam contato."
+  },
+  "1bc8a79635903dd6c5fb4d657ed5576f_002.ogg": {
+    "tempo_inicio": "00:00:08.388",
+    "tempo_fim": "00:00:18.076",
+    "duracao": 9.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "com o campo do trabalho. Esses movimentos foram interrompidos. Em contrapartida, grupos de esquerda, artísticos, não foram imediatamente reprimidos, censurados."
+  }
+}

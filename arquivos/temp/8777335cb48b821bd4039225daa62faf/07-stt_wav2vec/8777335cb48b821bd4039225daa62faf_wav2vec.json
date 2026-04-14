@@ -1,0 +1,32 @@
+{
+  "8777335cb48b821bd4039225daa62faf_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.228",
+    "duracao": 7.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.454158067703247,
+    "mos_stoi": 0.7727618217468262,
+    "mos_si_sdr": 5.55201530456543,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vamos lá então, galera. Acompanha aí o nosso podcast, que é o final, a resenha vai estar boa. Vamos começar então com as renovações de contrato.",
+    "stt_wav2vec": "VOAITANLERCO ACOMPANHAO NOS PORTESTRA OFINAL A RESERVA AE TABOA VÃO COMEÇAR ENTÃO COM AS RENOVAÇÕES DE COMCRATO"
+  },
+  "8777335cb48b821bd4039225daa62faf_002.ogg": {
+    "tempo_inicio": "00:00:07.460",
+    "tempo_fim": "00:00:20.734",
+    "duracao": 13.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1112995147705078,
+    "mos_stoi": 0.6762697100639343,
+    "mos_si_sdr": -1.5291293859481812,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Bom, já que tá só eu de Gremista e vocês florados, vamos começar com o Inter hoje. Esplora mais essa renovação do Rodinei pra nossa rede. O Rodinei tem 28 anos já, é um jogador pertencial ao Flamengo, tá emprestado pro Inter.",
+    "stt_wav2vec": "O JÁ JÁ QUE TASAEU DE GRENISTA E VOCÊS PLORADOS VÃO UM COEEM SECUL MINTER HOJE AN ESFORA MARRES ESSA RENOVAÇÃO DO OSO RODINEITO RA NOSSA AS GORDNETE EM VINTE E OITO ANOS JÁ É UM JOGADOR PERTENCIAL FOAMENGO TEMTESTADO COUICA"
+  }
+}

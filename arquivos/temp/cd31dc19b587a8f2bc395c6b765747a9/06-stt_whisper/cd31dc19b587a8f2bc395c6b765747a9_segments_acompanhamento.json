@@ -1,0 +1,30 @@
+{
+  "cd31dc19b587a8f2bc395c6b765747a9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.276",
+    "duracao": 9.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.205894947052002,
+    "mos_stoi": 0.9420355558395386,
+    "mos_si_sdr": 18.356569290161133,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ela é composta bastante desses mesmos dados estruturados e não estruturados também, né? Tratando de otimizar e correlacionar variáveis"
+  },
+  "cd31dc19b587a8f2bc395c6b765747a9_002.ogg": {
+    "tempo_inicio": "00:00:09.636",
+    "tempo_fim": "00:00:13.752",
+    "duracao": 4.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2232003211975098,
+    "mos_stoi": 0.9372354745864868,
+    "mos_si_sdr": 22.396278381347656,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e prever para o próximo evento ou a melhoração para um determinado assunto."
+  }
+}

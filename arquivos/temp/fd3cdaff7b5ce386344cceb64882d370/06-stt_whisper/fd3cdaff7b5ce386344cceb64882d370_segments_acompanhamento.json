@@ -1,0 +1,58 @@
+{
+  "fd3cdaff7b5ce386344cceb64882d370_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:04.988",
+    "duracao": 4.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9591535329818726,
+    "mos_stoi": 0.8822404742240906,
+    "mos_si_sdr": 6.512378215789795,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Como você falou, são muitos caminhos, eu chamar assim, né?"
+  },
+  "fd3cdaff7b5ce386344cceb64882d370_002.ogg": {
+    "tempo_inicio": "00:00:05.316",
+    "tempo_fim": "00:00:10.300",
+    "duracao": 4.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0293655395507812,
+    "mos_stoi": 0.8081538677215576,
+    "mos_si_sdr": 9.411908149719238,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para você estudar e praticar tudo que o Laban deixou."
+  },
+  "fd3cdaff7b5ce386344cceb64882d370_003.ogg": {
+    "tempo_inicio": "00:00:10.756",
+    "tempo_fim": "00:00:14.300",
+    "duracao": 3.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2954645156860352,
+    "mos_stoi": 0.7650511860847473,
+    "mos_si_sdr": -4.842982292175293,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele falava muito da qualidade do movimento, de interiorizar"
+  },
+  "fd3cdaff7b5ce386344cceb64882d370_004.ogg": {
+    "tempo_inicio": "00:00:14.564",
+    "tempo_fim": "00:00:19.478",
+    "duracao": 4.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3891297578811646,
+    "mos_stoi": 0.8134852051734924,
+    "mos_si_sdr": 1.1804563999176025,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

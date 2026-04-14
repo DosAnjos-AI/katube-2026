@@ -1,0 +1,16 @@
+{
+  "752f361b1f38e01248bb7bdf397f8186_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.526",
+    "duracao": 7.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2208251953125,
+    "mos_stoi": 0.9869885444641113,
+    "mos_si_sdr": 25.620607376098633,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ajudamos a dormir descansados, a bovar, a saber a eficiência fiscal, isso tudo. E às vezes é difícil nós vendermos,"
+  }
+}

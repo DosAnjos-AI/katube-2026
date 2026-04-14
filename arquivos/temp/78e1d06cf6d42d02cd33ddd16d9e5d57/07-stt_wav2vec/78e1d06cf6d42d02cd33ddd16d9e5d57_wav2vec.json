@@ -1,0 +1,17 @@
+{
+  "78e1d06cf6d42d02cd33ddd16d9e5d57_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.144",
+    "duracao": 9.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1424702405929565,
+    "mos_stoi": 0.5400643348693848,
+    "mos_si_sdr": -11.998771667480469,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Hoje a gente tá falando em Nápia, a gente tá falando em Lester, que hoje é um time que ficou aqui em cima da tabela da Premier League, já se falou em Mila,",
+    "stt_wav2vec": "OSVINHOS GAERLE NAMORELE VINSTAFANA INGLESSA TRIE O JORNAL DEVIDIEQES COLISSIMO NA CAPELDO DA PRAMERVEGE JÁ SE FALE EM MILLA"
+  }
+}

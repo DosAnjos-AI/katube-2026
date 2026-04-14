@@ -1,0 +1,32 @@
+{
+  "fdb81e1f1fdc47c4183234101005a8a7_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.748",
+    "duracao": 6.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0903327465057373,
+    "mos_stoi": 0.9061235189437866,
+    "mos_si_sdr": 10.820528030395508,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "um assunto mais geral, ele vamos tratar, do Cavani e do Thiago Silva, que estão saídos do PSG, também por termos de contrato.",
+    "stt_wav2vec": "UM ASSUNTO MAIS GERAL LHE VAMOS TRATADO DO CASOANIO DE THAVO SILBORT STÃDE SAÍDA TO DO PESSIGEN TAMBÉM POR TERNAO DESCUNDRAR"
+  },
+  "fdb81e1f1fdc47c4183234101005a8a7_002.ogg": {
+    "tempo_inicio": "00:00:07.108",
+    "tempo_fim": "00:00:11.886",
+    "duracao": 4.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.292595386505127,
+    "mos_stoi": 0.8785147666931152,
+    "mos_si_sdr": 7.231060981750488,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então hoje vai ser um podcast mais focado em contratos, tanto das notícias de Grêmio, Inter.",
+    "stt_wav2vec": null
+  }
+}

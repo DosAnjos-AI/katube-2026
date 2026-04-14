@@ -1,0 +1,30 @@
+{
+  "f71c240676a793778b4d64d289aed1d2_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:12.188",
+    "duracao": 12.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8417470455169678,
+    "mos_stoi": 0.919108510017395,
+    "mos_si_sdr": 10.853205680847168,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu era brava, eu era intensa demais. Então, eu acho que o trabalho com o corpo foi me dando a dimensão dessa maluquice que eu era, dessa intensidade enorme que eu ainda tenho."
+  },
+  "f71c240676a793778b4d64d289aed1d2_002.ogg": {
+    "tempo_inicio": "00:00:12.612",
+    "tempo_fim": "00:00:17.148",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.481951951980591,
+    "mos_stoi": 0.9401183128356934,
+    "mos_si_sdr": 17.980667114257812,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mas que eu conheço melhor e, portanto, lido melhor."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "d4477aeeac663b61041b0a060dd5d257_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.924",
+    "duracao": 8.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1759157180786133,
+    "mos_stoi": 0.6561883091926575,
+    "mos_si_sdr": -8.176626205444336,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ecuperar, vai jogar do robôzão, o robôzão vai dar dois tapa na cara dele, vai dizer, vem fazer a pandemia comigo sem virar. Eu fui pra cá pra jogar bola, vagabundo."
+  },
+  "d4477aeeac663b61041b0a060dd5d257_002.ogg": {
+    "tempo_inicio": "00:00:09.124",
+    "tempo_fim": "00:00:19.054",
+    "duracao": 9.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1379870176315308,
+    "mos_stoi": 0.6234639286994934,
+    "mos_si_sdr": -4.162357807159424,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "vagabundo sem vergonha. Ele vai virar um dos top 10 meia do mundo, de novo. De novo, mas ele vai virar. Ele vai ser o... Foi pra Juventus."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "5ceb2ad660b0796f0c4dbc998b0db7c3_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.928",
+    "duracao": 9.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.536149024963379,
+    "mos_stoi": 0.9579800367355347,
+    "mos_si_sdr": 18.531967163085938,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "as cooperativas de crédito na agenda do Banco Central como os principais agentes de bancarização e interiorização."
+  }
+}

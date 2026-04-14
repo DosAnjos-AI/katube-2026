@@ -1,0 +1,16 @@
+{
+  "0b2e768a7bb14e3c9ef9f05e1095e491_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:08.566",
+    "duracao": 8.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.15266752243042,
+    "mos_stoi": 0.9549800753593445,
+    "mos_si_sdr": 10.848194122314453,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Aqui em França, cheguei a Portugal a querer mandar para cá, tenho que pagar 28 euros. Disse, ah, mas eu paguei 8 euros. Ah, mas isto mudou há uma semana atrás."
+  }
+}

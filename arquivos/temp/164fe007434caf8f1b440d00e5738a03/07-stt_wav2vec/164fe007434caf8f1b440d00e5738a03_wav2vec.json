@@ -1,0 +1,17 @@
+{
+  "164fe007434caf8f1b440d00e5738a03_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.230",
+    "duracao": 8.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0359349250793457,
+    "mos_stoi": 0.9371117353439331,
+    "mos_si_sdr": 14.721338272094727,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se eu não começar a planear agora, eu posso chegar à altura do próximo ano e pensar, agora não tenho dinheiro, vou ter de pagar com o cartão de crédito.",
+    "stt_wav2vec": "SEEU NÃO CONSAGO A PLANEAR AGORA EU POSSOCHEGAR À ALTURA DO PRÓXIMO AR LEPESAR E AGORA NÃO TEM DINHEIRO VOTE VO PAGAR COM O CARTOCRÉDITO"
+  }
+}

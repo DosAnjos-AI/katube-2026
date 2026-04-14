@@ -1,0 +1,62 @@
+{
+  "46bc5003d430c833d8be1e533b8df1b0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.764",
+    "duracao": 4.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.121297836303711,
+    "mos_stoi": 0.7936967611312866,
+    "mos_si_sdr": 10.396093368530273,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, daí em diante, os gigantes foram ficando menos gananciosos.",
+    "stt_wav2vec": "EM TALDEZ EM DIANTE OS VIGIGANTES FORAM FICANDO MENOS GNAFIOVA"
+  },
+  "46bc5003d430c833d8be1e533b8df1b0_002.ogg": {
+    "tempo_inicio": "00:00:05.060",
+    "tempo_fim": "00:00:09.468",
+    "duracao": 4.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2868151664733887,
+    "mos_stoi": 0.8063075542449951,
+    "mos_si_sdr": 13.088286399841309,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aprenderam a desacelerar e ficar mais tranquilos.",
+    "stt_wav2vec": "E APREENDERAM A DIZESELERÁREI FICAR MAIS TRANQUILOS"
+  },
+  "46bc5003d430c833d8be1e533b8df1b0_003.ogg": {
+    "tempo_inicio": "00:00:09.860",
+    "tempo_fim": "00:00:23.548",
+    "duracao": 13.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8553956747055054,
+    "mos_stoi": 0.8986955881118774,
+    "mos_si_sdr": 11.13122272491455,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pararam de trabalhar o tempo todo e começaram a se dedicar ao lazer. Pararam de derrubar a avônia, aprenderam a fazer jardins e respeitaram a floresta.",
+    "stt_wav2vec": null
+  },
+  "46bc5003d430c833d8be1e533b8df1b0_004.ogg": {
+    "tempo_inicio": "00:00:23.876",
+    "tempo_fim": "00:00:29.212",
+    "duracao": 5.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7041728496551514,
+    "mos_stoi": 0.8524879217147827,
+    "mos_si_sdr": 14.393189430236816,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Começaram a cozinhar e fazer concertos e compartilhar e reciclar as coisas.",
+    "stt_wav2vec": null
+  }
+}

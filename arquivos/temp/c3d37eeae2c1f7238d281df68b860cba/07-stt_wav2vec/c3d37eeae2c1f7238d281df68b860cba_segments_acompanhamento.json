@@ -1,0 +1,62 @@
+{
+  "c3d37eeae2c1f7238d281df68b860cba_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.628",
+    "duracao": 9.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.449652910232544,
+    "mos_stoi": 0.8408581018447876,
+    "mos_si_sdr": 2.9345970153808594,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vamos falar do Inter agora, então, pra manter o Rua no nosso episódio. Cara, pra puxar o Inter, eu queria falar o seguinte, o jogo começou muito para ele, começou bom o jogo, os dois times jogando bem.",
+    "stt_wav2vec": "EO FALADO INTERAGUARIA TEOVRAMANTELRUE NO NOSSA EVIZADE CAIO PARA PUXAR O ÍNTER O CRIA FAL SEGUINTE O JOGO COMEÇOU MUITO PAR ELE COMEÇOU BOM JOGO OS DOIS TIMES JOGANDO BEM"
+  },
+  "c3d37eeae2c1f7238d281df68b860cba_002.ogg": {
+    "tempo_inicio": "00:00:09.732",
+    "tempo_fim": "00:00:15.804",
+    "duracao": 6.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.17470383644104,
+    "mos_stoi": 0.9689958691596985,
+    "mos_si_sdr": 19.384994506835938,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "com uma proposta parecida, de marcação mais alta, de posse de bola, tentando chegar ao ataque, trocando passes.",
+    "stt_wav2vec": "UMA PROPOSTA PARECIDA DE MARCAÇÃO MAIS ALTA DE FOCE DE BOA TENTANDO CHEGAR O ATAQUE TROCANDO PASSES"
+  },
+  "c3d37eeae2c1f7238d281df68b860cba_003.ogg": {
+    "tempo_inicio": "00:00:16.132",
+    "tempo_fim": "00:00:23.132",
+    "duracao": 7.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.172111988067627,
+    "mos_stoi": 0.9123175740242004,
+    "mos_si_sdr": 13.070486068725586,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Fum, eu sou parei do jogo até uns 30 do primeiro tempo, depois o Grêmio me deu já uma melhorada, criando alguma chance de gol, principalmente com o Everton ali.",
+    "stt_wav2vec": "FOI OMESOPAREIRO JOGO ATÉ OS TRINTA DO PRIMEIRO TEMPO E DEPOIS DO GREME DEU JÁUMA UMA MELHORADA CRIANDO ALGUMA CHANCE DE GOL PRINCIMENTE COM UM ÉBERTO ALI"
+  },
+  "c3d37eeae2c1f7238d281df68b860cba_004.ogg": {
+    "tempo_inicio": "00:00:23.492",
+    "tempo_fim": "00:00:31.352",
+    "duracao": 7.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.312401533126831,
+    "mos_stoi": 0.9098131060600281,
+    "mos_si_sdr": 12.475264549255371,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas o que aconteceu com o Inter que começou o jogo bem e não conseguiu manter o nível? Foi o Grêmio que cresceu ou o Inter se atrapalhou em algum sentido?",
+    "stt_wav2vec": "MAS QUE CONTECEU COM INTERQUE COMERÇOU O JOGO BEM E NÃO CONSEGUIU MANTER O NÍVEL FOI O GRÊMIO CRESCEU O INTERANTE SE ATRAFALHOU ALGUM SENTIDO"
+  }
+}

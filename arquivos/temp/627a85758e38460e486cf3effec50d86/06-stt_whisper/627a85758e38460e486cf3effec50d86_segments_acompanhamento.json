@@ -1,0 +1,16 @@
+{
+  "627a85758e38460e486cf3effec50d86_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.782",
+    "duracao": 4.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8469982147216797,
+    "mos_stoi": 0.9641655087471008,
+    "mos_si_sdr": 23.56780242919922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O meu irmão pesava 25 na escola. Mesmo ao período, eu pesava 40, pesava 25."
+  }
+}

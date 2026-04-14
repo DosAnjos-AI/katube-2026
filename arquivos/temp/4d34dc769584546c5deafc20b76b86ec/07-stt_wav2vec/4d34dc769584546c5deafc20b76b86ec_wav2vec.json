@@ -1,0 +1,17 @@
+{
+  "4d34dc769584546c5deafc20b76b86ec_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.420",
+    "duracao": 11.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.397094964981079,
+    "mos_stoi": 0.986166775226593,
+    "mos_si_sdr": 23.159542083740234,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o machine learning propriamente com o processamento de linguagem natural, foi justamente pelo fato de que no decorrer desse processo do desenvolvimento do projeto, a gente conseguiu aprender",
+    "stt_wav2vec": "MAHANLERNE PROPRIAMENTE COM UM PROCESSAMENTO DE LINGUAGEM NATURAL FOI JUSTAMENTE PELO FATO DE QUE NO DECORRER DESSE PROCESSO DO DESENVOLVIMENTO DO PROJETO A GENTE CONSEGUIU APREENDER"
+  }
+}

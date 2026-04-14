@@ -1,0 +1,17 @@
+{
+  "91eaf08896be30e0ef9587c8b6bf1add_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.204",
+    "duracao": 10.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4249539375305176,
+    "mos_stoi": 0.9123072028160095,
+    "mos_si_sdr": 16.50060272216797,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "por vocês estarem participando do convite não. Vocês são os nossos convidados. Desculpa. Muito obrigado pela presença de vocês.",
+    "stt_wav2vec": "PLO PELO POECÊ ESTAR EM PARTE TICIPANTOO DO CONVINTE E NOVNEA VOCÊS SÃO OS NOSSOS COLIDADES ESTE CULPA MUITO OBREGADO PELA PESENÇA DE VOCESTE NE"
+  }
+}

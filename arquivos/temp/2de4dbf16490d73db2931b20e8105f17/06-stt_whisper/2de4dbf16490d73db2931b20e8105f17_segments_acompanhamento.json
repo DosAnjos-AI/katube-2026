@@ -1,0 +1,30 @@
+{
+  "2de4dbf16490d73db2931b20e8105f17_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:13.500",
+    "duracao": 13.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.665487051010132,
+    "mos_stoi": 0.9885382652282715,
+    "mos_si_sdr": 23.220748901367188,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas a revolução para mim é nesse sentido. De deixar de ser um time defensivo e ser um time mais ofensivo. Acho que isso ele atingiu. Claro que sempre tem a melhorar. Futebol nunca está perfeito. Sempre tem coisa a melhorar."
+  },
+  "2de4dbf16490d73db2931b20e8105f17_002.ogg": {
+    "tempo_inicio": "00:00:16.004",
+    "tempo_fim": "00:00:31.774",
+    "duracao": 15.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.313131809234619,
+    "mos_stoi": 0.970595121383667,
+    "mos_si_sdr": 12.5918550491333,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ainda não, acho que o Inter ainda tem algumas falhas defensivas ali que ele tem que ajustar. Acho que o Inter ainda, apesar de ser um time que ataca mais, também vai ser um time que vai sofrer um pouco mais lá atrás, mas ainda deixa muito espaço para o adversário jogar. Então, eu acho que isso ele deve melhorar, essa questão da retomada da bola."
+  }
+}

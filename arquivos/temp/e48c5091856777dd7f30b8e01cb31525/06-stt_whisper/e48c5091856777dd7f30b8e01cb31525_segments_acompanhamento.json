@@ -1,0 +1,44 @@
+{
+  "e48c5091856777dd7f30b8e01cb31525_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:10.876",
+    "duracao": 10.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.093846082687378,
+    "mos_stoi": 0.9590047001838684,
+    "mos_si_sdr": 13.978466987609863,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olá, sejam bem-vindos ao nosso podcast de contação de histórias. Eu sou a Clara. E eu sou o Leandro. Este é o nosso..."
+  },
+  "e48c5091856777dd7f30b8e01cb31525_002.ogg": {
+    "tempo_inicio": "00:00:11.012",
+    "tempo_fim": "00:00:24.188",
+    "duracao": 13.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.811224102973938,
+    "mos_stoi": 0.9505541324615479,
+    "mos_si_sdr": 15.920926094055176,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "13º episódio de um podcast em que nós contamos histórias para vocês. É o nosso podcast de contação de histórias simpatísticas. Cacá conta."
+  },
+  "e48c5091856777dd7f30b8e01cb31525_003.ogg": {
+    "tempo_inicio": "00:00:24.644",
+    "tempo_fim": "00:00:29.742",
+    "duracao": 5.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5752954483032227,
+    "mos_stoi": 0.9188557267189026,
+    "mos_si_sdr": 17.196678161621094,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E hoje nós vamos contar uma história muito legal."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "7ec15ae749468a8df5d357fa6cd292bd_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.588",
+    "duracao": 6.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9830329418182373,
+    "mos_stoi": 0.967538058757782,
+    "mos_si_sdr": 17.928478240966797,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "dinheiro e tudo mais. E aí eu tava na organização do evento, assim, eu era uma das cabeças da organização do evento,"
+  },
+  "7ec15ae749468a8df5d357fa6cd292bd_002.ogg": {
+    "tempo_inicio": "00:00:06.628",
+    "tempo_fim": "00:00:15.900",
+    "duracao": 9.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.71602725982666,
+    "mos_stoi": 0.9671316742897034,
+    "mos_si_sdr": 16.993877410888672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E o pessoal, assim, ó, o que a gente vai fazer pra arrecadar dinheiro e tudo mais? Ah, no semestre passado a galera fez brownie. Eu ficava, gente, mas eu não sei fazer brownie."
+  },
+  "7ec15ae749468a8df5d357fa6cd292bd_003.ogg": {
+    "tempo_inicio": "00:00:16.004",
+    "tempo_fim": "00:00:28.208",
+    "duracao": 12.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5641025304794312,
+    "mos_stoi": 0.9489316344261169,
+    "mos_si_sdr": 9.500732421875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Aí eu, não sei o quê, fez, no tal período fez não sei o quê. E todo mundo assim, eu falei, gente, eu sei fazer... Aí eu vou pra minha mãe, porque eu e minha mãe, a gente é muito amiga, né? Aí eu fui pra minha mãe, mãe, me ajuda. O que a gente pode fazer? Ela falou, Ju."
+  }
+}

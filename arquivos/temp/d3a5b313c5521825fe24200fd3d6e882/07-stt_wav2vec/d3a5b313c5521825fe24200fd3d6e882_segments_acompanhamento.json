@@ -1,0 +1,17 @@
+{
+  "d3a5b313c5521825fe24200fd3d6e882_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.652",
+    "duracao": 10.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4911402463912964,
+    "mos_stoi": 0.8565624356269836,
+    "mos_si_sdr": 7.698795795440674,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Adorámos falar sobre finanças. Eu e tu também adorámos este formato de podcast, que também adoro os vídeos, eu não gosto muito de aparecer.",
+    "stt_wav2vec": "DRAMOS POLAR SUBRER FINANÇAS E U E TU TAMBÉM É DURARO UM GESTO POR MATO POD CASSOE TOMENHAS OR OS RUÍDAS ONDE ENTANTO NÃO GOSTO MUITO DACOERCIAR"
+  }
+}

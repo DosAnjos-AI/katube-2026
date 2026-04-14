@@ -1,0 +1,58 @@
+{
+  "ed71331495a0c3aa0221ad73cfab2f61_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.372",
+    "duracao": 9.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9291647672653198,
+    "mos_stoi": 0.7807461023330688,
+    "mos_si_sdr": 11.32490348815918,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Acho que isso é também além da característica dos jogadores, né? Pra analisar o time do Inter, eu acho que todos os jogadores, com exceção do Bosquilha e do Zé Gabriel..."
+  },
+  "ed71331495a0c3aa0221ad73cfab2f61_002.ogg": {
+    "tempo_inicio": "00:00:09.636",
+    "tempo_fim": "00:00:19.228",
+    "duracao": 9.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5667784214019775,
+    "mos_stoi": 0.7419123649597168,
+    "mos_si_sdr": 6.668890953063965,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "ed71331495a0c3aa0221ad73cfab2f61_003.ogg": {
+    "tempo_inicio": "00:00:19.492",
+    "tempo_fim": "00:00:26.140",
+    "duracao": 6.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8753079175949097,
+    "mos_stoi": 0.7495900988578796,
+    "mos_si_sdr": 9.522871017456055,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Thiago Galhardo já tem seus 30, Patrick já tem já defitalista, 29, 30, Edenilson 30 e poucos."
+  },
+  "ed71331495a0c3aa0221ad73cfab2f61_004.ogg": {
+    "tempo_inicio": "00:00:26.404",
+    "tempo_fim": "00:00:33.038",
+    "duracao": 6.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.712662935256958,
+    "mos_stoi": 0.6983974575996399,
+    "mos_si_sdr": 8.598109245300293,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O D'Alessandro já tinha saído, entrou o musto no lugar dele e também já tem 30 e pouco. O em 12 deve estar beirando os 30."
+  }
+}

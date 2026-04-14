@@ -1,0 +1,17 @@
+{
+  "beef5bdddd62a601e1667943d9069968_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.006",
+    "duracao": 5.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6274614334106445,
+    "mos_stoi": 0.9796854853630066,
+    "mos_si_sdr": 20.571208953857422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu posso dizer que consigo poupar 200 euros por mês. Exatamente. E com esses 200 euros...",
+    "stt_wav2vec": "EU POSSO ALIVIAR COM SES POUPADOS ONE CERAS POR MIAS EXATAMENTE E CAM ESTES ENTOS ERAS"
+  }
+}

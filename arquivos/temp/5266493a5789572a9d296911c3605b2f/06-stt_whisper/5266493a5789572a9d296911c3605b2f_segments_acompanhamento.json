@@ -1,0 +1,16 @@
+{
+  "5266493a5789572a9d296911c3605b2f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.768",
+    "duracao": 7.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1859813928604126,
+    "mos_stoi": 0.7949079275131226,
+    "mos_si_sdr": 2.9014501571655273,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu tenho dicas de vida não ética. Dicas de vida não ética, sim. Duas leves."
+  }
+}

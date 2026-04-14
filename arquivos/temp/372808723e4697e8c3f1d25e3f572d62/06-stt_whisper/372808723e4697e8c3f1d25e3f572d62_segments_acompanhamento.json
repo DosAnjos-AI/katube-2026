@@ -1,0 +1,58 @@
+{
+  "372808723e4697e8c3f1d25e3f572d62_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.020",
+    "duracao": 9.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.594878911972046,
+    "mos_stoi": 0.9631774425506592,
+    "mos_si_sdr": 24.67154884338379,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ele associa aquela figura à figura de um anúncio, porque nas horas vagas ou nos momentos limites, ele..."
+  },
+  "372808723e4697e8c3f1d25e3f572d62_002.ogg": {
+    "tempo_inicio": "00:00:09.156",
+    "tempo_fim": "00:00:23.612",
+    "duracao": 14.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.876559257507324,
+    "mos_stoi": 0.964527428150177,
+    "mos_si_sdr": 23.022998809814453,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ganhava dinheiro capturando escravos fugidos. Então, ele tem um anúncio de uma escrava fugida no bolso, ele compara o anúncio àquela figura e percebe que pode ser a figura do anúncio. E ele grita o nome do anúncio, Arminda,"
+  },
+  "372808723e4697e8c3f1d25e3f572d62_003.ogg": {
+    "tempo_inicio": "00:00:23.940",
+    "tempo_fim": "00:00:34.748",
+    "duracao": 10.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1356215476989746,
+    "mos_stoi": 0.9610939621925354,
+    "mos_si_sdr": 21.289003372192383,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E a mulher atende. Quando a mulher atende, ele diz, bom, é ela, ele deixa o filho numa farmácia, havia uma farmácia no meio do caminho, ele deixa o filho lá e ele sai atrás da mulher."
+  },
+  "372808723e4697e8c3f1d25e3f572d62_004.ogg": {
+    "tempo_inicio": "00:00:35.492",
+    "tempo_fim": "00:00:39.166",
+    "duracao": 3.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.776101589202881,
+    "mos_stoi": 0.9317644238471985,
+    "mos_si_sdr": 15.538968086242676,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Aí o Machado descreve uma cena que é a cena que me interessa."
+  }
+}

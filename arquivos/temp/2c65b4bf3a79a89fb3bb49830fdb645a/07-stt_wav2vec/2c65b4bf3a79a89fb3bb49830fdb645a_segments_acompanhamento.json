@@ -1,0 +1,17 @@
+{
+  "2c65b4bf3a79a89fb3bb49830fdb645a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.212",
+    "duracao": 9.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6885881423950195,
+    "mos_stoi": 0.9602228999137878,
+    "mos_si_sdr": 18.361480712890625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Instagram é um bocado injusto, como acho que se estamos a falar sobre isso também. Eu penso que o Instagram é um bocado injusto relativamente a outras plataformas.",
+    "stt_wav2vec": "O CEGRA É UM CARI INJUSTO COMO AS CESSEMOS OFLASOBRIS TAMBÉM É E EU PENSO QUE INTEGRAR MEM UM CASA INJUSTO RELATIVAMENTE OUTRAS PLATAFORMAS"
+  }
+}

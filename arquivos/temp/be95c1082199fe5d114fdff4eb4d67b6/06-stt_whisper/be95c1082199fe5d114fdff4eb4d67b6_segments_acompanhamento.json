@@ -1,0 +1,16 @@
+{
+  "be95c1082199fe5d114fdff4eb4d67b6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.776",
+    "duracao": 9.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0302963256835938,
+    "mos_stoi": 0.947429358959198,
+    "mos_si_sdr": 18.56708526611328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É ali que vão derivar as grandes passeatas, em 67, 68. Movimento estudantil cresce e se torna uma força importante no jogo político."
+  }
+}

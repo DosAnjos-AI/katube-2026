@@ -1,0 +1,16 @@
+{
+  "6067709559ed7007edea8acffd0799ce_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.990",
+    "duracao": 4.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1357502937316895,
+    "mos_stoi": 0.8544753789901733,
+    "mos_si_sdr": 14.781414031982422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Exatamente. Ou contas remunuradas e tudo mais."
+  }
+}

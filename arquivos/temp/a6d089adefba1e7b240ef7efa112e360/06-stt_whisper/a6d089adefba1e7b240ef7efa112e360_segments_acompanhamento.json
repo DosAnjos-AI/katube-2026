@@ -1,0 +1,30 @@
+{
+  "a6d089adefba1e7b240ef7efa112e360_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.356",
+    "duracao": 7.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.76863431930542,
+    "mos_stoi": 0.9205074906349182,
+    "mos_si_sdr": 13.188691139221191,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "estás a demonstrar que tens capacidade financeira para se alguma coisa correr mal. Portanto, se calhar ele empresta-te mais facilmente."
+  },
+  "a6d089adefba1e7b240ef7efa112e360_002.ogg": {
+    "tempo_inicio": "00:00:07.396",
+    "tempo_fim": "00:00:15.032",
+    "duracao": 7.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9143402576446533,
+    "mos_stoi": 0.9632937908172607,
+    "mos_si_sdr": 15.751444816589355,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Os, por exemplo, 180 mil num cenário de 200 mil euros de compra. Os estados de 20 mil de entrada são os 10%. Se calhar emprestam-te mais facilmente, 180 mil,"
+  }
+}

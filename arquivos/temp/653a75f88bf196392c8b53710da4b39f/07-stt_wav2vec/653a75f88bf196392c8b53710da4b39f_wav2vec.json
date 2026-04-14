@@ -1,0 +1,17 @@
+{
+  "653a75f88bf196392c8b53710da4b39f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.446",
+    "duracao": 6.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.567598342895508,
+    "mos_stoi": 0.940872848033905,
+    "mos_si_sdr": 16.793521881103516,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu tenho um objetivo de atingir o Fire em 10 anos porque é o tempo mínimo possível com base no que eu consigo investir.",
+    "stt_wav2vec": "O CASEROTO TENH UM OBJETIVO DATE DE U FAAR EM DEZ ARMAS PORQUE É O TEMPOMINA IMPOSSÍVEL COMBADE NO CONSEGUINTE TIO"
+  }
+}

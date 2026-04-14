@@ -1,0 +1,17 @@
+{
+  "35b4fc7df3689da123527242f1e89143_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.142",
+    "duracao": 6.11,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.119347095489502,
+    "mos_stoi": 0.9381367564201355,
+    "mos_si_sdr": 16.258983612060547,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E daí ele resolveu cortar isso aí porque não dava. Com o avanço do coronavírus, vamos tirar os bancos das praças.",
+    "stt_wav2vec": "A ELE RESOLVEU CORTAS AI PO QUE NÃO DAVA COM UM AVANÇO DO CORONA VIRUS VAMOS TIRAR OS BANCOS DAS PRAÇAS"
+  }
+}

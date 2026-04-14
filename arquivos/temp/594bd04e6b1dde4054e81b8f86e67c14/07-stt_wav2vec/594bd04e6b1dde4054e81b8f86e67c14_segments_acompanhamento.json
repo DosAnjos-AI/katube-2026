@@ -1,0 +1,32 @@
+{
+  "594bd04e6b1dde4054e81b8f86e67c14_001.ogg": {
+    "tempo_inicio": "00:00:00.260",
+    "tempo_fim": "00:00:05.404",
+    "duracao": 5.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4025473594665527,
+    "mos_stoi": 0.7634788751602173,
+    "mos_si_sdr": 4.1014604568481445,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, o cooperativismo se posiciona dentro desse bombeiro de transformação",
+    "stt_wav2vec": "ENTÃO O COBERATIVISMO SE POSICIONA DENTRO DESSE BANDELO DE TRANSFORMAÇÃO"
+  },
+  "594bd04e6b1dde4054e81b8f86e67c14_002.ogg": {
+    "tempo_inicio": "00:00:05.796",
+    "tempo_fim": "00:00:09.534",
+    "duracao": 3.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0718257427215576,
+    "mos_stoi": 0.8675881028175354,
+    "mos_si_sdr": 11.065481185913086,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "como uma ferramenta muito adequada, muito atualizada.",
+    "stt_wav2vec": null
+  }
+}

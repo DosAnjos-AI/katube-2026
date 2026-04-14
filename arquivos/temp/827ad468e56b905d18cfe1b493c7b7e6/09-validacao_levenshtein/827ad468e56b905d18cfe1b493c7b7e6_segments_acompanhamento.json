@@ -1,0 +1,26 @@
+{
+  "827ad468e56b905d18cfe1b493c7b7e6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.192",
+    "duracao": 5.19,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2025607824325562,
+    "mos_stoi": 0.591688334941864,
+    "mos_si_sdr": -8.530674934387207,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E é divertido. E temos uma coisa para dizer, batemos mais um recorde, mas nós depois falamos sobre isso.",
+    "stt_wav2vec": "QUERE VO CEMO ÉNICE E DAOTE NO PELA PARA DIZER BATEMOS MAIS UM RECORDO NOS NÓS P FALAMOS EOURICO",
+    "stt_leg_normalizado": null,
+    "stt_whisper_normalizado": "e e divertido e temos uma coisa para dizer batemos mais um recorde mas nos depois falamos sobre isso",
+    "stt_wav2vec_normalizado": "quere vo cemo enice e daote no pela para dizer batemos mais um recordo nos nos p falamos eourico",
+    "sim_leg_whisper": null,
+    "sim_leg_wav2vec": null,
+    "sim_whisper_wav2vec": 0.6,
+    "nota_similaridade": 0.6,
+    "status_similaridade": "aprovado",
+    "metrica_similaridade": "wer"
+  }
+}

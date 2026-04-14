@@ -1,0 +1,17 @@
+{
+  "a2f01c77ad5c26c421d086646f95978c_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:04.078",
+    "duracao": 4.01,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0181736946105957,
+    "mos_stoi": 0.9356868863105774,
+    "mos_si_sdr": 12.692421913146973,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Conta. Um podcast de contação de histórias infantis.",
+    "stt_wav2vec": "CONTA UM PÓDE QUECHO DE CONTAÇÃO DE HISTÓRIAS INFANTIS"
+  }
+}

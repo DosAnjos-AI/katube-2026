@@ -1,0 +1,44 @@
+{
+  "eacd49ec2b32ac221018046e176e6755_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:10.268",
+    "duracao": 10.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0779566764831543,
+    "mos_stoi": 0.9013110995292664,
+    "mos_si_sdr": 9.447613716125488,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "corpo ajustadinho, movimento com qualidade, aí sim a gente passa treino, passa treino com peso, passa treino de carga. Eu tenho um atleta aqui, esse ano ele fez 14."
+  },
+  "eacd49ec2b32ac221018046e176e6755_002.ogg": {
+    "tempo_inicio": "00:00:10.628",
+    "tempo_fim": "00:00:15.964",
+    "duracao": 5.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.896732211112976,
+    "mos_stoi": 0.8520221710205078,
+    "mos_si_sdr": 8.160015106201172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ano passado ele tinha 13 e estava comigo há dois anos. Aí a gente arrebentava de pôr carga nele."
+  },
+  "eacd49ec2b32ac221018046e176e6755_003.ogg": {
+    "tempo_inicio": "00:00:16.324",
+    "tempo_fim": "00:00:30.798",
+    "duracao": 14.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0723769664764404,
+    "mos_stoi": 0.8987318873405457,
+    "mos_si_sdr": 5.616994857788086,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas é um atleta que eu tô com ele há dois anos. Então, pô, fazia muita coisa. Então, eu até postei vídeos dele ano passado, ele treinando, com os autérios dele, com as anilhas dele, e arrebentando. Então, pode treinar força sim, tá? Desde que... Primeiro passo..."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "aad00f8a2fca2f8a0f81b30c19c0ed10_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.908",
+    "duracao": 14.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.399454116821289,
+    "mos_stoi": 0.9294697642326355,
+    "mos_si_sdr": 13.462947845458984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E eu tenho os meus cadernos, né? E eu tenho uma página dos meus cadernos anuais onde eu escrevo o que eu sei sobre mim e o que as pessoas falam sobre mim. E ali eu escrevo tudo que eu vou descobrindo sobre mim, eu percebo que é uma qualidade, tudo que eu...",
+    "stt_wav2vec": "EU EU TENHO MEUS OS MEUS CADERNOS NEY E EU TENHO UMA PÁGINA S MEUS CADERNOS ANUAIS ONDE EU ESCREVO O QUE EU SEI SOBRE MIM E O QUE AS PESSOAS FALAM SOBRE MIM E ALI EU ESCREVO TUDO O QUE EU ADESCOBRINO SOBRE MIM EU PERCEBO QUE É UMA QUALIDADE TUDO QUE EU"
+  }
+}

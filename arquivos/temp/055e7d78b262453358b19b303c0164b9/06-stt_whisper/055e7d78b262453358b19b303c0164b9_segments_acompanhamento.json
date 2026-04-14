@@ -1,0 +1,44 @@
+{
+  "055e7d78b262453358b19b303c0164b9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.124",
+    "duracao": 12.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2012786865234375,
+    "mos_stoi": 0.9770246744155884,
+    "mos_si_sdr": 16.893592834472656,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olha só, mandar um beijo também para a Glaucia Shodes. Ela é terapeuta ocupacional e trabalha com atendimento pediátrico a crianças com transtorno de espectro do autismo."
+  },
+  "055e7d78b262453358b19b303c0164b9_002.ogg": {
+    "tempo_inicio": "00:00:12.708",
+    "tempo_fim": "00:00:22.908",
+    "duracao": 10.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5761613845825195,
+    "mos_stoi": 0.9702250957489014,
+    "mos_si_sdr": 19.054431915283203,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Hoje estamos com nossos atendimentos suspensos em clínica e a domicílio duvida da pandemia do Covid-19. Ela tem um Instagram profissional que ela está passando aqui, que é o..."
+  },
+  "055e7d78b262453358b19b303c0164b9_003.ogg": {
+    "tempo_inicio": "00:00:23.012",
+    "tempo_fim": "00:00:29.704",
+    "duracao": 6.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5665435791015625,
+    "mos_stoi": 0.9794908165931702,
+    "mos_si_sdr": 21.82950210571289,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "T-O, de terapia ocupacional, Glaucia Schaudz. O Shaudz é com D, Z no final."
+  }
+}

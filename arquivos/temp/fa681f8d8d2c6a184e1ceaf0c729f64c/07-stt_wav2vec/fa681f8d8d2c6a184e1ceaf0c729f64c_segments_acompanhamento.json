@@ -1,0 +1,17 @@
+{
+  "fa681f8d8d2c6a184e1ceaf0c729f64c_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:03.832",
+    "duracao": 3.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.597654342651367,
+    "mos_stoi": 0.9548192024230957,
+    "mos_si_sdr": 10.39065170288086,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Em quanto tempo é que, por exemplo, eles conseguem duplicar o seu dinheiro?",
+    "stt_wav2vec": "EM QUANTO TEMPO ÉQUE POR EXEMPLO NOS CONSEGUEM DUPLICAR O SEU DINHEIRO"
+  }
+}

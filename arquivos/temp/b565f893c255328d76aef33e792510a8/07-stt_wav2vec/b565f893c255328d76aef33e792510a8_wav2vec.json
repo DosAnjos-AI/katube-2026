@@ -1,0 +1,17 @@
+{
+  "b565f893c255328d76aef33e792510a8_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:03.736",
+    "duracao": 3.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8384580612182617,
+    "mos_stoi": 0.8927256464958191,
+    "mos_si_sdr": 18.644441604614258,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "vamos tentar resolvê-lo a perguntar, olha, o que é que eu o posso fazer para tu ficares",
+    "stt_wav2vec": "OSPENTAR VEUVÊ-LO OU POR UM DAROLHA EU QUECA O POTSA DEPOTUFICA"
+  }
+}

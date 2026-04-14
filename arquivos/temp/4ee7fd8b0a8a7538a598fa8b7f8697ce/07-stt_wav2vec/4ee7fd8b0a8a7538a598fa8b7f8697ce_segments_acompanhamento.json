@@ -1,0 +1,17 @@
+{
+  "4ee7fd8b0a8a7538a598fa8b7f8697ce_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.446",
+    "duracao": 6.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.326846122741699,
+    "mos_stoi": 0.9589582085609436,
+    "mos_si_sdr": 12.072039604187012,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A minha referência de flambar é aquele episódio de um maluco no pedaço que o Will Smith coloca fogo na casa inteira.",
+    "stt_wav2vec": "A MINHA REFERÊNCIA DE FLAMBÁ É AQUELE EPISÓDIO DE UM MALUCO NO PEDAÇO QUE O ESMITE COORCAFOGO NA CASA INTEIRA"
+  }
+}

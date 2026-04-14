@@ -1,0 +1,44 @@
+{
+  "99d5f405e570c2de7d002c5513f92d71_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.644",
+    "duracao": 7.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2284932136535645,
+    "mos_stoi": 0.9507655501365662,
+    "mos_si_sdr": 9.635594367980957,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olá, primos e primas, sejam bem-vindos ao podcast Conversas de Chuveiro, o podcast oficial dos primos."
+  },
+  "99d5f405e570c2de7d002c5513f92d71_002.ogg": {
+    "tempo_inicio": "00:00:07.940",
+    "tempo_fim": "00:00:14.172",
+    "duracao": 6.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.60880708694458,
+    "mos_stoi": 0.9453901052474976,
+    "mos_si_sdr": 10.5693998336792,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Neste podcast nós falávamos de finanças pessoais, empreendedorismo e negócios em português."
+  },
+  "99d5f405e570c2de7d002c5513f92d71_003.ogg": {
+    "tempo_inicio": "00:00:14.500",
+    "tempo_fim": "00:00:18.696",
+    "duracao": 4.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2557766437530518,
+    "mos_stoi": 0.9191610813140869,
+    "mos_si_sdr": 10.412480354309082,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

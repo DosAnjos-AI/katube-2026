@@ -1,0 +1,32 @@
+{
+  "446df71e1e2a1c12842c4d26fd4f40cf_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:04.700",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1413192749023438,
+    "mos_stoi": 0.8870150446891785,
+    "mos_si_sdr": 11.448933601379395,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "fazendo compras, os pequenos produtores, coisas assim.",
+    "stt_wav2vec": "COMFAZENDO COMPRAS OS PEQUENOS PRODUTORES COISAS ASSIM"
+  },
+  "446df71e1e2a1c12842c4d26fd4f40cf_002.ogg": {
+    "tempo_inicio": "00:00:05.156",
+    "tempo_fim": "00:00:10.600",
+    "duracao": 5.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.170243740081787,
+    "mos_stoi": 0.9058729410171509,
+    "mos_si_sdr": 7.928523540496826,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O método de reinvenção, de revisar tudo mesmo, de revisar esse mundo.",
+    "stt_wav2vec": "OMETO DE REINVENÇÃO DDE RERIVIZA TUDO MESMO NA DE REVIZAR ESSE MUNDO"
+  }
+}

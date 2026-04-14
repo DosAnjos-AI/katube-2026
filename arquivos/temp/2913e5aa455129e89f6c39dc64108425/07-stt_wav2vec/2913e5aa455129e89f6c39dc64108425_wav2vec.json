@@ -1,0 +1,47 @@
+{
+  "2913e5aa455129e89f6c39dc64108425_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.828",
+    "duracao": 4.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3754262924194336,
+    "mos_stoi": 0.7416816353797913,
+    "mos_si_sdr": 0.3302234709262848,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tudo bom, Maria? Aqui estamos na pandemia...",
+    "stt_wav2vec": "OETO DO BAMARIA AQUE ESTAMOS NA PANDENIA"
+  },
+  "2913e5aa455129e89f6c39dc64108425_002.ogg": {
+    "tempo_inicio": "00:00:05.220",
+    "tempo_fim": "00:00:09.756",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0438437461853027,
+    "mos_stoi": 0.8533003330230713,
+    "mos_si_sdr": 7.459418296813965,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "versão americana, que é meio da pesada como aí no Brasil, né?",
+    "stt_wav2vec": "VERSÃO AMERICANA QUE É MEIU DAPESADA COMO A EMO BRASINA"
+  },
+  "2913e5aa455129e89f6c39dc64108425_003.ogg": {
+    "tempo_inicio": "00:00:10.148",
+    "tempo_fim": "00:00:14.588",
+    "duracao": 4.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6977391242980957,
+    "mos_stoi": 0.7755002379417419,
+    "mos_si_sdr": 3.5224080085754395,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas que bom que a gente está se comunicando por outros meios, né?",
+    "stt_wav2vec": "MAS QUE BOM QUE A GENTE ESTÁ SE COMUNICANDO POR OUTROS MEIOS"
+  }
+}

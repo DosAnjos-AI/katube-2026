@@ -1,0 +1,17 @@
+{
+  "aeadfff0c26c7bf34f52aee6c9422402_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:04.238",
+    "duracao": 4.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.960686445236206,
+    "mos_stoi": 0.8459307551383972,
+    "mos_si_sdr": 14.144128799438477,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Depois está-me entrando um bocadinho do que é o que eu fico. Exatamente.",
+    "stt_wav2vec": "DE POISTÁ MAITO PERNO U CADINHO DO REUKFIL EXALTAMENTO"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "f6a132ac09678b7571a91a234b598bb3_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.604",
+    "duracao": 8.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.665018081665039,
+    "mos_stoi": 0.9161388278007507,
+    "mos_si_sdr": 7.035473823547363,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas também acho que é importante nós dêmos aos prémios que eles não têm que ser exaustivos, se calhar numa fase inicial, no que toque os registros."
+  }
+}

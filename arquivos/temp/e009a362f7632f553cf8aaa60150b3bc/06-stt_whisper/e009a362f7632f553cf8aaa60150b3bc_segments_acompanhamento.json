@@ -1,0 +1,44 @@
+{
+  "e009a362f7632f553cf8aaa60150b3bc_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.644",
+    "duracao": 7.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7562787532806396,
+    "mos_stoi": 0.9144259691238403,
+    "mos_si_sdr": 8.878418922424316,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "notícias dela, né? E eu fiquei muito feliz dela ter me respondido. Eu não pude ouvir os áudios dela porque a gente está aqui na gravação."
+  },
+  "e009a362f7632f553cf8aaa60150b3bc_002.ogg": {
+    "tempo_inicio": "00:00:07.876",
+    "tempo_fim": "00:00:25.564",
+    "duracao": 17.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3949451446533203,
+    "mos_stoi": 0.9121357798576355,
+    "mos_si_sdr": 8.158647537231445,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas teve momentos em que meu olho enceu de lágrima e deu tudo certo. Não consegui transparecer nada, graças a Deus. Mas eu fiquei muito feliz de saber que ela está bem, a família dela, que está tudo bem, no meio de toda a turbulência que está acontecendo, de tudo o que aconteceu lá."
+  },
+  "e009a362f7632f553cf8aaa60150b3bc_003.ogg": {
+    "tempo_inicio": "00:00:25.636",
+    "tempo_fim": "00:00:29.544",
+    "duracao": 3.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4849284887313843,
+    "mos_stoi": 0.8201928734779358,
+    "mos_si_sdr": 4.869865417480469,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu fiquei bem aliviada um pouco, sabe? Foi muito bom."
+  }
+}

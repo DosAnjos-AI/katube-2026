@@ -1,0 +1,44 @@
+{
+  "e8333c17fe9f561955010dbd02f5c6ee_001.ogg": {
+    "tempo_inicio": "00:00:00.804",
+    "tempo_fim": "00:00:12.444",
+    "duracao": 11.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.057497262954712,
+    "mos_stoi": 0.9448856711387634,
+    "mos_si_sdr": 16.486454010009766,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu espero rápido que o Renato comece a mudar isso, que o Grêmio volte a ser um time com mais velocidade, mais ofensivo, mais agressivo durante os 90 minutos. E não um tempo que no segundo tempo morra, que é o que vem acontecendo."
+  },
+  "e8333c17fe9f561955010dbd02f5c6ee_002.ogg": {
+    "tempo_inicio": "00:00:12.612",
+    "tempo_fim": "00:00:21.404",
+    "duracao": 8.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.683870315551758,
+    "mos_stoi": 0.9850820302963257,
+    "mos_si_sdr": 23.35708236694336,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Uma coisa importante para hoje, que eu acho que vale a pena destacar, é a atuação do Jean Pierre e do Matheus Henrique. Os dois já começaram o jogo mais ligados."
+  },
+  "e8333c17fe9f561955010dbd02f5c6ee_003.ogg": {
+    "tempo_inicio": "00:00:21.540",
+    "tempo_fim": "00:00:31.704",
+    "duracao": 10.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5711045265197754,
+    "mos_stoi": 0.977985143661499,
+    "mos_si_sdr": 17.50636863708496,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Matheus, mesmo com o Maicon do lado, que a gente critica bastante, atuou melhor, e aí quando o Maicon saiu também, ele cresceu, como é natural. Mas os dois já entraram mais ligados no jogo hoje."
+  }
+}

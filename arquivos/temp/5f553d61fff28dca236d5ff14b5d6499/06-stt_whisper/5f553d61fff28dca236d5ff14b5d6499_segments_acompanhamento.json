@@ -1,0 +1,30 @@
+{
+  "5f553d61fff28dca236d5ff14b5d6499_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.260",
+    "duracao": 7.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5570030212402344,
+    "mos_stoi": 0.9244279861450195,
+    "mos_si_sdr": 9.504805564880371,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A DST tem em consideração a taxa de esforço, mais uma previsão da subida da Euribor, no caso de taxa variável."
+  },
+  "5f553d61fff28dca236d5ff14b5d6499_002.ogg": {
+    "tempo_inicio": "00:00:07.524",
+    "tempo_fim": "00:00:11.272",
+    "duracao": 3.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8755065202713013,
+    "mos_stoi": 0.9188265800476074,
+    "mos_si_sdr": 10.744970321655273,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mais um valor médio de encargos em função do mercado familiar."
+  }
+}

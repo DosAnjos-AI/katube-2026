@@ -1,0 +1,44 @@
+{
+  "27596de54579787538b4e1b5788f366d_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.428",
+    "duracao": 14.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5365910530090332,
+    "mos_stoi": 0.741343080997467,
+    "mos_si_sdr": 7.591801643371582,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cara, eu gostei muito do início do Inter também. Só acho que quando... Eu acho que vale a estratégia de tu baixar as linhas quando tu tem um resultado tranquilo, seguro, como é o 2x0, e buscar os espaços que o adversário vai te dar."
+  },
+  "27596de54579787538b4e1b5788f366d_002.ogg": {
+    "tempo_inicio": "00:00:14.820",
+    "tempo_fim": "00:00:18.364",
+    "duracao": 3.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4867501258850098,
+    "mos_stoi": 0.7901697754859924,
+    "mos_si_sdr": 7.727382183074951,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Só acho que quando o Inter baixa as linhas tem que ser um pouco mais firme na marcação."
+  },
+  "27596de54579787538b4e1b5788f366d_003.ogg": {
+    "tempo_inicio": "00:00:18.660",
+    "tempo_fim": "00:00:26.222",
+    "duracao": 7.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.674865484237671,
+    "mos_stoi": 0.6935372948646545,
+    "mos_si_sdr": 7.641939163208008,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o primeiro lance ali do gol, o primeiro gol anulado, que foi no detalhe, foi no detalhe, o cara tava com uma perna só na frente."
+  }
+}

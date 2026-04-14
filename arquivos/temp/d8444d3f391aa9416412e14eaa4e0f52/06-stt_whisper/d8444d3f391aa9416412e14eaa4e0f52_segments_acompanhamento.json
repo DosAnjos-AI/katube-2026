@@ -1,0 +1,16 @@
+{
+  "d8444d3f391aa9416412e14eaa4e0f52_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.190",
+    "duracao": 6.19,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3425261974334717,
+    "mos_stoi": 0.9714235663414001,
+    "mos_si_sdr": 24.339677810668945,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ficava 1.900, uma cena assim, eu disse logo meu irmão, ou eu te pago o enterro, ou eu te pago o caixão."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "0c412ae6f17084e62c49c465a30a1a64_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:09.212",
+    "duracao": 9.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0063652992248535,
+    "mos_stoi": 0.9552002549171448,
+    "mos_si_sdr": 21.452007293701172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "consperado discenso sobre a factualidade e sua veracidade. O fato é mesmo um fato a despeito de sua ocorrência? Registro e relato?"
+  },
+  "0c412ae6f17084e62c49c465a30a1a64_002.ogg": {
+    "tempo_inicio": "00:00:09.572",
+    "tempo_fim": "00:00:22.652",
+    "duracao": 13.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3013153076171875,
+    "mos_stoi": 0.9416002035140991,
+    "mos_si_sdr": 21.855056762695312,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tal desconfiança fundante possibilita a proliferação de conjecturas e elocubrações desvinculadas da realidade dos fatos, mas vinculadas às moralidades dos sujeitos envolvidos na disputa pela verdade."
+  },
+  "0c412ae6f17084e62c49c465a30a1a64_003.ogg": {
+    "tempo_inicio": "00:00:22.820",
+    "tempo_fim": "00:00:31.758",
+    "duracao": 8.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.228259325027466,
+    "mos_stoi": 0.9643919467926025,
+    "mos_si_sdr": 23.98249053955078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Constrói-se, então, uma dissociação entre a empiria e a sua demonstração, ou entre a evidência e a sua evidenciação."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "b162f47d248da50fe59f42bc5ca1e03b_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:05.948",
+    "duracao": 5.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.774035930633545,
+    "mos_stoi": 0.9850497841835022,
+    "mos_si_sdr": 23.35295867919922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se tu tem volante que só quebram, que só racham, tu não vai ficar com a posse da bola."
+  },
+  "b162f47d248da50fe59f42bc5ca1e03b_002.ogg": {
+    "tempo_inicio": "00:00:06.372",
+    "tempo_fim": "00:00:11.036",
+    "duracao": 4.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9604134559631348,
+    "mos_stoi": 0.9784704446792603,
+    "mos_si_sdr": 17.961402893066406,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, eu não tô dizendo que eles são bons, o que eu tô dizendo é que com eles..."
+  },
+  "b162f47d248da50fe59f42bc5ca1e03b_003.ogg": {
+    "tempo_inicio": "00:00:11.140",
+    "tempo_fim": "00:00:23.484",
+    "duracao": 12.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2531498670578003,
+    "mos_stoi": 0.7788710594177246,
+    "mos_si_sdr": 4.049399375915527,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o Grêmio consegue trocar a base, consegue ter uma... Mas, ó, se tu tem um integrante da mesa... E lembrando que em 2017 era o Arthur de volante, não era o valor. Olha, Nilson, pensa comigo. Se tu tem um integrante da mesa..."
+  },
+  "b162f47d248da50fe59f42bc5ca1e03b_004.ogg": {
+    "tempo_inicio": "00:00:23.716",
+    "tempo_fim": "00:00:27.356",
+    "duracao": 3.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7725772857666016,
+    "mos_stoi": 0.9522919058799744,
+    "mos_si_sdr": 12.808813095092773,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

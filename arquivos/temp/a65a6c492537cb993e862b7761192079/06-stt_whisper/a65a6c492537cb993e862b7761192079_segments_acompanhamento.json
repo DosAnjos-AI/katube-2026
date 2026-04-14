@@ -1,0 +1,30 @@
+{
+  "a65a6c492537cb993e862b7761192079_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.740",
+    "duracao": 11.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4047714471817017,
+    "mos_stoi": 0.9132471680641174,
+    "mos_si_sdr": 9.759037971496582,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A diferença era só tipo oitocentos ou uma coisa assim. Sim, mas claro que se nós formos puxar isto, tu puxar... Eu puxei para cortar, porque quanto mais se eu for estar, depois eu juro composto..."
+  },
+  "a65a6c492537cb993e862b7761192079_002.ogg": {
+    "tempo_inicio": "00:00:12.388",
+    "tempo_fim": "00:00:25.016",
+    "duracao": 12.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6382832527160645,
+    "mos_stoi": 0.9536778926849365,
+    "mos_si_sdr": 11.23987865447998,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

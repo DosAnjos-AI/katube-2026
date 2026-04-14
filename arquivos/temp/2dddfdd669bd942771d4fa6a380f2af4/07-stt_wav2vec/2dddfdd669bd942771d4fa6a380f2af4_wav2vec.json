@@ -1,0 +1,17 @@
+{
+  "2dddfdd669bd942771d4fa6a380f2af4_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.364",
+    "duracao": 6.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0635268688201904,
+    "mos_stoi": 0.9522942900657654,
+    "mos_si_sdr": 16.739559173583984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "restritivas, discriminatórias e excludentes de insegurança. Tem-se a aceitação do direito",
+    "stt_wav2vec": "RESTRITIVAS DISCRIMINATÓRIAS E ESCLUDENTES DEM SEGURANÇA TEM-SE A ACEITAÇÃO DO DIREITO"
+  }
+}

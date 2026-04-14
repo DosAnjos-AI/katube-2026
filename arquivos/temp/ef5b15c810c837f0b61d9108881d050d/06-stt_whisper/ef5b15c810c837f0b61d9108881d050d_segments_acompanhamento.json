@@ -1,0 +1,16 @@
+{
+  "ef5b15c810c837f0b61d9108881d050d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.830",
+    "duracao": 4.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4661664962768555,
+    "mos_stoi": 0.9830625057220459,
+    "mos_si_sdr": 23.880794525146484,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quando eu quisesse, conseguia comprar uns de lado e vi que os meus colegas que, por norma,"
+  }
+}

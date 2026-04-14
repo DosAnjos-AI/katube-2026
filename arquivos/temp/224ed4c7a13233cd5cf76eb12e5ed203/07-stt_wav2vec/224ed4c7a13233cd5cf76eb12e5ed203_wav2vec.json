@@ -1,0 +1,17 @@
+{
+  "224ed4c7a13233cd5cf76eb12e5ed203_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.080",
+    "duracao": 5.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6027861833572388,
+    "mos_stoi": 0.8576902151107788,
+    "mos_si_sdr": 0.46027642488479614,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "negocinho pra ele, né? Aí ele botou ali um cabelinho...",
+    "stt_wav2vec": "VOCEMFRESNA CECECEALE POTOLE UM CABELINHO"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "b99cd4673972a487861eb689d3b25e06_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.712",
+    "duracao": 12.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.812725305557251,
+    "mos_stoi": 0.9420046806335449,
+    "mos_si_sdr": 10.467540740966797,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Para quê? Tu queres fazer uma taxa fixa há 40 anos, se a tua ambição, a tua expectativa é daqui a 5 ou 10 anos, se comprares uma casa maior, liquidares este empréstimo, não é? Porque tu não podes transferir um empréstimo para o outro, que é outra pergunta que me fazem.",
+    "stt_wav2vec": "QETO QUERS FAZER UMA TAXA FIXA A QUARENTA ANNOS SETUAR BICÃO A PERSPECTATIVA É DA QUE A CINCO AGEZANDES COMPRASS UMA CASA MANIOR LIQUIDAS ESTE EMPRESTIM NÃO ÉPORTU NÃO POSTO TRANSPRIR UM IMPRESTAO PAOTO QUE A OUTRA PERGUNTA COFAZEM"
+  }
+}

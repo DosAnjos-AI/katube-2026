@@ -1,0 +1,17 @@
+{
+  "f31be44adfa9d91f9d86fd2ac359a7e3_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.100",
+    "duracao": 7.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.242604970932007,
+    "mos_stoi": 0.9616904258728027,
+    "mos_si_sdr": 16.93631362915039,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "já conhece a Maria, já sabe quem ela é, fala um pouco de você, o que você faz no seu dia a dia para nós.",
+    "stt_wav2vec": "CONHECE MARIA NEJA FABEQENHELA É OLA UM POUCO DIVOS CHEIQUE QUE SE FAZ NO SEU DIA ANTIGA PARA NÓS"
+  }
+}

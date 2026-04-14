@@ -1,0 +1,62 @@
+{
+  "1f8804b2e2935cf9026e0163799885ae_001.ogg": {
+    "tempo_inicio": "00:00:01.668",
+    "tempo_fim": "00:00:08.252",
+    "duracao": 6.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.233585834503174,
+    "mos_stoi": 0.8765561580657959,
+    "mos_si_sdr": 19.533287048339844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Meu pai foi rápido. Ele achou o quê? Tinha explodido uma bomba.",
+    "stt_wav2vec": "MEU PAI FOI RÁPIDO ELE ACHOUQUE TUZ PODE NUMA BOMBA"
+  },
+  "1f8804b2e2935cf9026e0163799885ae_002.ogg": {
+    "tempo_inicio": "00:00:08.516",
+    "tempo_fim": "00:00:15.196",
+    "duracao": 6.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2231454849243164,
+    "mos_stoi": 0.9000208377838135,
+    "mos_si_sdr": 21.880653381347656,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E quando ele chegou na sala, ele viu eu e minha mãe com...",
+    "stt_wav2vec": "E QUANDO ELE CHEGOU NA SALA ELE VIU EU MINHA MÃE"
+  },
+  "1f8804b2e2935cf9026e0163799885ae_003.ogg": {
+    "tempo_inicio": "00:00:15.876",
+    "tempo_fim": "00:00:22.364",
+    "duracao": 6.49,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.105037212371826,
+    "mos_stoi": 0.8984086513519287,
+    "mos_si_sdr": 18.483932495117188,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu estava no caso da minha mãe quando meu pai viu uma coisa vermelha saindo.",
+    "stt_wav2vec": "EU EU TRAVA NO CANO DA MINHA MÃE QUANDO MEU PAI VI UMA COISA VERMELHA SAINDO"
+  },
+  "1f8804b2e2935cf9026e0163799885ae_005.ogg": {
+    "tempo_inicio": "00:00:31.236",
+    "tempo_fim": "00:00:38.512",
+    "duracao": 7.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1104722023010254,
+    "mos_stoi": 0.9174622893333435,
+    "mos_si_sdr": 22.99797821044922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu estava muito assustada quando minha mãe pensou uma coisa e teve uma ideia.",
+    "stt_wav2vec": "EU ESTAVA MUITO AFISTADA VOANDO MINHA MÃE PENSA UMA COISA QUEJE UMA IDÉI"
+  }
+}

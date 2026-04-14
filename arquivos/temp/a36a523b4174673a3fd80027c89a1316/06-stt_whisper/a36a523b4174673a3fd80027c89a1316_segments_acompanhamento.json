@@ -1,0 +1,30 @@
+{
+  "a36a523b4174673a3fd80027c89a1316_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.876",
+    "duracao": 10.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.227596402168274,
+    "mos_stoi": 0.7753177285194397,
+    "mos_si_sdr": 2.163604974746704,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Theong já veio depois. O Theong veio depois do Arthur. O Theong veio depois do Arthur. Era Busquete, Raquitit e Arthur. Porra, o Arthur tava bem, meu. Tava bem."
+  },
+  "a36a523b4174673a3fd80027c89a1316_002.ogg": {
+    "tempo_inicio": "00:00:11.044",
+    "tempo_fim": "00:00:17.678",
+    "duracao": 6.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7628445625305176,
+    "mos_stoi": 0.941719114780426,
+    "mos_si_sdr": 21.362590789794922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Esse kick, eu não acho ele o bicho de treinador, sinceramente. Acho que o Barcelona, como um todo..."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "a4ef1879ebccca1e46be39ba6642b47d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.276",
+    "duracao": 9.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0530452728271484,
+    "mos_stoi": 0.8786479234695435,
+    "mos_si_sdr": 8.149128913879395,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Por que o Soteudo é muito bom na mudança de direção? O Soteudo é muito baixinho, o centro de gravidade dele está muito próximo do chão, então ele consegue mudar a direção mais rápido.",
+    "stt_wav2vec": "POQUE QUE O SOTEU DO É MUITO BOM NA MUDANÇA DE DIREÇÃO QUE O SOTEU DELE É MUITO BAHINHO CENTRO DE GRAVIDADE DE LITAR MUITO PRÓXIMO DO CHÃO UE U LHE CONSEGUE MUDAR M DIREÇÃO MAIS RÁPIDA"
+  }
+}

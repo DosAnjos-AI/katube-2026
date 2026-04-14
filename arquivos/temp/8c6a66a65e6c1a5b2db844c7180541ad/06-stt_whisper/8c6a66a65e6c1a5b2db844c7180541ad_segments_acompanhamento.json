@@ -1,0 +1,16 @@
+{
+  "8c6a66a65e6c1a5b2db844c7180541ad_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.676",
+    "duracao": 3.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8053812980651855,
+    "mos_stoi": 0.9828773140907288,
+    "mos_si_sdr": 22.145536422729492,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu cheguei aos 8 anos e tive acesso a uma conta com 5 mil euros."
+  }
+}

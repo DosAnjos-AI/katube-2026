@@ -1,0 +1,17 @@
+{
+  "abd66a5829706820637d4ca375120d74_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.908",
+    "duracao": 14.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5034334659576416,
+    "mos_stoi": 0.9595171809196472,
+    "mos_si_sdr": 18.34648895263672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Fala, mãe. Spotify, Deezer. Spotify, Deezer. Apple Podcast. Google Podcast. Entrem lá. Compartilhe com seus amigos. Compartilhe com todo mundo.",
+    "stt_wav2vec": "AMÃE VOTE FAI BIVER AS BOTE FAI BIZER ÉPOPA DE CER TIM RUGO OU PODE QUESTES ENTRA EM LÁ COMPARTIR-LHE COM S SEUS AMIGOS ÃO PARQUIRE COM TODO MUNDO"
+  }
+}

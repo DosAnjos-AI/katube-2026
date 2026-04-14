@@ -1,0 +1,44 @@
+{
+  "260da0540bab22b46cb84dc347aa35c1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.660",
+    "duracao": 13.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7121776342391968,
+    "mos_stoi": 0.9427971243858337,
+    "mos_si_sdr": 12.294414520263672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Acho que é uma pessoa... Ah, como que é o nome dela, gente? Eu não vou lembrar. Ela tem alguns livros e tal. Até o final do programa eu lembro. Eu vi ela ensinando que praticamente tudo você aproveita do alimento."
+  },
+  "260da0540bab22b46cb84dc347aa35c1_002.ogg": {
+    "tempo_inicio": "00:00:13.924",
+    "tempo_fim": "00:00:24.252",
+    "duracao": 10.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.525209665298462,
+    "mos_stoi": 0.9235837459564209,
+    "mos_si_sdr": 7.950368404388428,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "260da0540bab22b46cb84dc347aa35c1_003.ogg": {
+    "tempo_inicio": "00:00:24.356",
+    "tempo_fim": "00:00:31.688",
+    "duracao": 7.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.601177930831909,
+    "mos_stoi": 0.9271755814552307,
+    "mos_si_sdr": 12.198220252990723,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

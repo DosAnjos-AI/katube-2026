@@ -1,0 +1,58 @@
+{
+  "cfd4fcd47fb57465cb1132539ccf6ae4_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.452",
+    "duracao": 7.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0308125019073486,
+    "mos_stoi": 0.8949216604232788,
+    "mos_si_sdr": 16.253456115722656,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Era uma casa, muito engraçada, não tinha teto, não tinha nada. Ninguém podia entrar nela ou não."
+  },
+  "cfd4fcd47fb57465cb1132539ccf6ae4_002.ogg": {
+    "tempo_inicio": "00:00:07.844",
+    "tempo_fim": "00:00:20.444",
+    "duracao": 12.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.489534854888916,
+    "mos_stoi": 0.9388207197189331,
+    "mos_si_sdr": 23.30722427368164,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque na casa não tinha chão. Ninguém podia dormir na rede. Porque a casa não tinha parede. Ninguém podia fazer pipi."
+  },
+  "cfd4fcd47fb57465cb1132539ccf6ae4_003.ogg": {
+    "tempo_inicio": "00:00:20.964",
+    "tempo_fim": "00:00:25.948",
+    "duracao": 4.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5639915466308594,
+    "mos_stoi": 0.9296035766601562,
+    "mos_si_sdr": 20.449068069458008,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "porque Peníaco não tinha ali, mas era feita com muita esmero."
+  },
+  "cfd4fcd47fb57465cb1132539ccf6ae4_004.ogg": {
+    "tempo_inicio": "00:00:26.404",
+    "tempo_fim": "00:00:36.030",
+    "duracao": 9.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.431959867477417,
+    "mos_stoi": 0.7688912153244019,
+    "mos_si_sdr": 4.0147271156311035,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

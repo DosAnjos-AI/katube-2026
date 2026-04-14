@@ -1,0 +1,17 @@
+{
+  "28b28666da1baae978665df9701d155f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.248",
+    "duracao": 4.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7748444080352783,
+    "mos_stoi": 0.8055945038795471,
+    "mos_si_sdr": 7.45759391784668,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Junto. Bernardinho, podes performar este ano?",
+    "stt_wav2vec": "JUNTO VERNARDINE MOTE PE FOWARDA BIZIERR"
+  }
+}

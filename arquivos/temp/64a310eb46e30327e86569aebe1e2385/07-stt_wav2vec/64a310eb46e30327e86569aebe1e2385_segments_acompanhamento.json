@@ -1,0 +1,32 @@
+{
+  "64a310eb46e30327e86569aebe1e2385_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.636",
+    "duracao": 8.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6582227945327759,
+    "mos_stoi": 0.8865408301353455,
+    "mos_si_sdr": 8.00428581237793,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a gente fez uma aula virtual eu convidei o meu amigo Matheus Xadec um personal trainer aqui de Porto Alegre formado em Educação Física",
+    "stt_wav2vec": "NTSTEZA UMA AULA VIRTUAL A O CONVIDEI O MEU AMIGO MATEU XADEQUE UM PERSONAL TREINER AQUI O DE PORTO ALEGRE NA FORMADA EM EDUCAÇÃO FÍSICA"
+  },
+  "64a310eb46e30327e86569aebe1e2385_002.ogg": {
+    "tempo_inicio": "00:00:08.804",
+    "tempo_fim": "00:00:33.390",
+    "duracao": 24.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6641886234283447,
+    "mos_stoi": 0.9306666851043701,
+    "mos_si_sdr": 12.345648765563965,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Xadec está passando por um momento que muita gente está passando, muitos autônomos estão passando, que são caras que literalmente tu vende o almoço para comprar a janta, ou seja, tu tem tua agenda ali para fazer o teu corre da semana. E aí, obviamente, por ele ser um cara que é personal trainer, ele dá aula para as pessoas e tem muitos nesse caso, a gente recebe muitos recados.",
+    "stt_wav2vec": null
+  }
+}

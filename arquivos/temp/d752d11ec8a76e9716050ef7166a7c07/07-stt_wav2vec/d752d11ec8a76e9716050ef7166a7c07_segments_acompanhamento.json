@@ -1,0 +1,17 @@
+{
+  "d752d11ec8a76e9716050ef7166a7c07_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.764",
+    "duracao": 12.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.461749315261841,
+    "mos_stoi": 0.9809771180152893,
+    "mos_si_sdr": 12.388297080993652,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Diogo, olha, antes de começar a falar um bocadinho mais sobre ti, eu quero te dizer que foi com alguma tristeza, enorme tristeza, não é alguma, é uma enorme tristeza que vi que tu és jogador de pádio do Benfica.",
+    "stt_wav2vec": "DI LOIER ANTESMAIS ANTES COMESAR FALARMO QUE DEM MAIS CHOBRE TI EU QUER DIZER QUE FOI COM ALGUMA TRISTEZA ENORME TRISTEA NÃO É ALGUMA É UMA ENORME TRISTEZA QUE VIQUE TU É JUSGUEDOR TE PADAUBENFICA"
+  }
+}

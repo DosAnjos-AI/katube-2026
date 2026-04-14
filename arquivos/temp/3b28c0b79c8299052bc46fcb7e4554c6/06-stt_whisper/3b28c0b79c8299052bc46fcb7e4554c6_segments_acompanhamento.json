@@ -1,0 +1,16 @@
+{
+  "3b28c0b79c8299052bc46fcb7e4554c6_001.ogg": {
+    "tempo_inicio": "00:00:00.356",
+    "tempo_fim": "00:00:08.104",
+    "duracao": 7.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.889514446258545,
+    "mos_stoi": 0.9271822571754456,
+    "mos_si_sdr": 17.316173553466797,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Muito obrigado por estar nos ouvindo aí. O meu destaque hoje vai para o próprio episódio 11, que é o que a gente está fazendo agora."
+  }
+}

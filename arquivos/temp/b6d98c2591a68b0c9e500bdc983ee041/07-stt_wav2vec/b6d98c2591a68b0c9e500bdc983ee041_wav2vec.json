@@ -1,0 +1,17 @@
+{
+  "b6d98c2591a68b0c9e500bdc983ee041_001.ogg": {
+    "tempo_inicio": "00:00:00.196",
+    "tempo_fim": "00:00:04.668",
+    "duracao": 4.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4769504070281982,
+    "mos_stoi": 0.9547922611236572,
+    "mos_si_sdr": 19.570453643798828,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "um monte de espetáculo que são praticamente dois espetáculos em guerra na mesma peça.",
+    "stt_wav2vec": "MONTA O ESPETÁCULO QUE SÃO PRATICAMENTE DOIS ESPETÁCULOS EM GUERRA NA MESMA PESSE"
+  }
+}

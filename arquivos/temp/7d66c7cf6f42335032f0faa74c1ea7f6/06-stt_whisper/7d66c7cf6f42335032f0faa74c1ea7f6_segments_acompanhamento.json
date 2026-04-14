@@ -1,0 +1,16 @@
+{
+  "7d66c7cf6f42335032f0faa74c1ea7f6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.686",
+    "duracao": 4.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2673715353012085,
+    "mos_stoi": 0.7552053928375244,
+    "mos_si_sdr": -3.465369462966919,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "até na realidade não é o nosso papel dizer que tens de comprar ações de empresa"
+  }
+}

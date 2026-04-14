@@ -1,0 +1,26 @@
+{
+  "224ff35954d54d12d5853c90c0cc4a54_001.ogg": {
+    "tempo_inicio": "00:00:00.196",
+    "tempo_fim": "00:00:06.494",
+    "duracao": 6.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2230417728424072,
+    "mos_stoi": 0.9611091613769531,
+    "mos_si_sdr": 13.132037162780762,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Antes de ir para a cama, ou há de ser um iogurta, ou há de ser umas panquecas, uma peça de fruto, uma coisa assim, ou é.",
+    "stt_wav2vec": "ANTES DE PACAMA OU ATO RERMUNI AUGURTO HÁ DE SER UMAS PANQUEQUES UMA PESTEÇÃO DE FRUTOS COMO COSACINHORA",
+    "stt_leg_normalizado": null,
+    "stt_whisper_normalizado": "antes de ir para a cama ou ha de ser um iogurta ou ha de ser umas panquecas uma peca de fruto uma coisa assim ou e",
+    "stt_wav2vec_normalizado": "antes de pacama ou ato rermuni augurto ha de ser umas panqueques uma pestecao de frutos como cosacinhora",
+    "sim_leg_whisper": null,
+    "sim_leg_wav2vec": null,
+    "sim_whisper_wav2vec": 0.631578947368421,
+    "nota_similaridade": 0.631578947368421,
+    "status_similaridade": "aprovado",
+    "metrica_similaridade": "wer"
+  }
+}

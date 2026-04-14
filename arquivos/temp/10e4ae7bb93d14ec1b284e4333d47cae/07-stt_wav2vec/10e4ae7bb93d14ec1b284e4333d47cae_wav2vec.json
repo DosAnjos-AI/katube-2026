@@ -1,0 +1,17 @@
+{
+  "10e4ae7bb93d14ec1b284e4333d47cae_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.172",
+    "duracao": 14.17,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7097764015197754,
+    "mos_stoi": 0.9857036471366882,
+    "mos_si_sdr": 21.79201889038086,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Enfim, além dos jogos da Champions League, quartas de final, só jogamos, vamos falar um pouco dos gigantes que caíram aí nas oitavas, vai ter bastante conteúdo legal no episódio de hoje. Bom, na ausência do tropeço,",
+    "stt_wav2vec": "ENFIM ALÉM DOS JOGOS DA TA DA TIMPIÃNS LIGA E QUARTAS DE FINAL SÓ JOGÃO UM FAVALÃU POUCO DOS GIGANTES QUE CAÍRAM A IR NAS OITAVAS VAI TEM BASTANTE COMTEUDO LEGAL NO EPISÓDIO E HOJE BOM NA AUSÊNCIA DO TROPEÇO"
+  }
+}

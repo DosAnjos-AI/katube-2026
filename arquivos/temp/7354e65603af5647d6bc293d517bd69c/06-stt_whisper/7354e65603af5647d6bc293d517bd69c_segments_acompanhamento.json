@@ -1,0 +1,30 @@
+{
+  "7354e65603af5647d6bc293d517bd69c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.716",
+    "duracao": 14.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7206178903579712,
+    "mos_stoi": 0.9160664081573486,
+    "mos_si_sdr": 10.209511756896973,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "eu só concluí. Tanto o Inter quanto o Grêmio, quando foram campeões, foram vencedores, foram com presidentes que unificaram a política do clube. O Romildo Bolzan não tinha concorrente, o Fernando Carvalho não tinha concorrente. Esses caras chegaram lá por causa disso, unificaram a política. Assim como o Flamengo fez também."
+  },
+  "7354e65603af5647d6bc293d517bd69c_002.ogg": {
+    "tempo_inicio": "00:00:14.948",
+    "tempo_fim": "00:00:20.904",
+    "duracao": 5.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6591496467590332,
+    "mos_stoi": 0.8351662755012512,
+    "mos_si_sdr": 1.731721043586731,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, sempre tu vai ter a oposição querendo tirar o lugar. Que é o que derrubar."
+  }
+}

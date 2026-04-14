@@ -1,0 +1,30 @@
+{
+  "5557aabcf82a5a1f8e62ee87bb557de5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.292",
+    "duracao": 7.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.619654893875122,
+    "mos_stoi": 0.9705233573913574,
+    "mos_si_sdr": 22.09396743774414,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que saiam do palco, que entrava no meio da plateia e dançava, e eles formulavam a saída para a negatividade da peça."
+  },
+  "5557aabcf82a5a1f8e62ee87bb557de5_002.ogg": {
+    "tempo_inicio": "00:00:07.748",
+    "tempo_fim": "00:00:18.798",
+    "duracao": 11.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.105994939804077,
+    "mos_stoi": 0.9367407560348511,
+    "mos_si_sdr": 18.710208892822266,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho que é uma coisa muito curiosa e que mostra muito da força de encenação dos exceus. É como se a dramaturgia tivesse um discurso e a encenação entrojetasse outro ali."
+  }
+}

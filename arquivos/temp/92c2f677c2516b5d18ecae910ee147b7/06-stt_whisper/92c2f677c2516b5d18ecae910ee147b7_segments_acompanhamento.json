@@ -1,0 +1,30 @@
+{
+  "92c2f677c2516b5d18ecae910ee147b7_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:21.372",
+    "duracao": 21.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4748973846435547,
+    "mos_stoi": 0.9030649065971375,
+    "mos_si_sdr": 10.130939483642578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Bem enfaiadas... Porque parecia coisas reais... Porque ele cortava... Voava sangue lá... E eu não gosto de todas essas coisas assim... Mas eu achei... A cena de luta... Muito bem trabalhadas... E tal... As magias... Não era aquela coisa assim... Tosca... Eu gostei... E o monstro... Pelo menos eu assisti... Sei lá... Os 20 primeiros minutos... Do primeiro episódio..."
+  },
+  "92c2f677c2516b5d18ecae910ee147b7_002.ogg": {
+    "tempo_inicio": "00:00:21.636",
+    "tempo_fim": "00:00:31.358",
+    "duracao": 9.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5504400730133057,
+    "mos_stoi": 0.9032275080680847,
+    "mos_si_sdr": 3.5164008140563965,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu achei, assim, um monstro feito, tal, bem interessante. Eu não continuei porque não é um tipo de seriado que eu curto, assim, mas eu acho interessante, cara. Não, existe que é a primeira temporada."
+  }
+}

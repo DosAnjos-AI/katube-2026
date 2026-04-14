@@ -1,0 +1,32 @@
+{
+  "70bbac4505a28eb8fde25a61952060ac_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.620",
+    "duracao": 6.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5907113552093506,
+    "mos_stoi": 0.878155529499054,
+    "mos_si_sdr": -3.7807345390319824,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Incesto, o Ian Eduardo da Silva. Deixa eu procurar aqui o Igor. O Igor estava indo...",
+    "stt_wav2vec": "AESA QUEREU OIÃ EDUARDO DA SILVA POIXE EU PROCURAR QUE O ÍGOR AQUI O IGORTAVA AINDA"
+  },
+  "70bbac4505a28eb8fde25a61952060ac_002.ogg": {
+    "tempo_inicio": "00:00:06.660",
+    "tempo_fim": "00:00:24.220",
+    "duracao": 17.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1830335855484009,
+    "mos_stoi": 0.7940797805786133,
+    "mos_si_sdr": 0.19837141036987305,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

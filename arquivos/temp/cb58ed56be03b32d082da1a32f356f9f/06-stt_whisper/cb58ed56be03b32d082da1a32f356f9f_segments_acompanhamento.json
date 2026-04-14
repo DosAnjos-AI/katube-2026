@@ -1,0 +1,58 @@
+{
+  "cb58ed56be03b32d082da1a32f356f9f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.092",
+    "duracao": 4.09,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0804848670959473,
+    "mos_stoi": 0.8760510087013245,
+    "mos_si_sdr": 8.046459197998047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas sempre tem que ser ele, né? Seis títulos gaúchos..."
+  },
+  "cb58ed56be03b32d082da1a32f356f9f_002.ogg": {
+    "tempo_inicio": "00:00:04.484",
+    "tempo_fim": "00:00:12.060",
+    "duracao": 7.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5496790409088135,
+    "mos_stoi": 0.9657791256904602,
+    "mos_si_sdr": 19.559654235839844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ganhou a Libertadores 2010, ganhou a Recopa São Americana em 2011, ganhou lá a São Americana, que foi o primeiro título dele com o Inter em 2008."
+  },
+  "cb58ed56be03b32d082da1a32f356f9f_003.ogg": {
+    "tempo_inicio": "00:00:12.772",
+    "tempo_fim": "00:00:17.308",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.619084358215332,
+    "mos_stoi": 0.9438301920890808,
+    "mos_si_sdr": 16.66579818725586,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Rei da América, tu esqueceu de falar. Ah, o Juan não podia ser e o da Alessandro Código."
+  },
+  "cb58ed56be03b32d082da1a32f356f9f_004.ogg": {
+    "tempo_inicio": "00:00:18.756",
+    "tempo_fim": "00:00:22.990",
+    "duracao": 4.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.211371421813965,
+    "mos_stoi": 0.8843890428543091,
+    "mos_si_sdr": 8.50139331817627,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

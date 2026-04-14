@@ -1,0 +1,44 @@
+{
+  "db86e48cd0d59a05592ac33b3ee3b864_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:07.516",
+    "duracao": 7.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.289804220199585,
+    "mos_stoi": 0.9425260424613953,
+    "mos_si_sdr": 12.009740829467773,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Denilson Barreiros. E aí, pessoal, bom dia, boa tarde, boa noite, seja lá o horário que vocês estão nos ouvindo."
+  },
+  "db86e48cd0d59a05592ac33b3ee3b864_002.ogg": {
+    "tempo_inicio": "00:00:07.588",
+    "tempo_fim": "00:00:16.764",
+    "duracao": 9.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.688472270965576,
+    "mos_stoi": 0.9729697108268738,
+    "mos_si_sdr": 18.34016227722168,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O meu destaque, meu destaque vai para a bela vitória do Esporte Clube Internacional hoje, que com 30 minutos de jogo já tinha resolvido a parada, já estava classificado para a final."
+  },
+  "db86e48cd0d59a05592ac33b3ee3b864_003.ogg": {
+    "tempo_inicio": "00:00:17.156",
+    "tempo_fim": "00:00:26.478",
+    "duracao": 9.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.154956340789795,
+    "mos_stoi": 0.9870584607124329,
+    "mos_si_sdr": 24.297239303588867,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E eu vou destacar isso aí. Bela partida do Inter, dentro do Beira-Rio voltando ao seu estádio. E é isso aí. Vamos para mais uma. Bruno Fanesi."
+  }
+}

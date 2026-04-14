@@ -1,0 +1,16 @@
+{
+  "61ad53ec911864ac55697258bf513558_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:04.510",
+    "duracao": 4.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5241036415100098,
+    "mos_stoi": 0.729680061340332,
+    "mos_si_sdr": 2.112318515777588,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E é uma coisa, por acaso,"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "e24584f708f136f85a7683988ee97c4d_001.ogg": {
+    "tempo_inicio": "00:00:00.420",
+    "tempo_fim": "00:00:05.116",
+    "duracao": 4.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.329021453857422,
+    "mos_stoi": 0.9560337066650391,
+    "mos_si_sdr": 20.33646011352539,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cada coisa tem um jeito de começar. Todo mundo sabe."
+  },
+  "e24584f708f136f85a7683988ee97c4d_002.ogg": {
+    "tempo_inicio": "00:00:05.572",
+    "tempo_fim": "00:00:11.452",
+    "duracao": 5.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7959027290344238,
+    "mos_stoi": 0.8651230931282043,
+    "mos_si_sdr": 8.337786674499512,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E as frases começam com palavras. E as palavras começam com letras."
+  },
+  "e24584f708f136f85a7683988ee97c4d_003.ogg": {
+    "tempo_inicio": "00:00:11.780",
+    "tempo_fim": "00:00:18.184",
+    "duracao": 6.4,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1806302070617676,
+    "mos_stoi": 0.9461807012557983,
+    "mos_si_sdr": 18.650772094726562,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Muitas histórias começam com... Era uma vez. Na escola tem o primeiro dia de aula."
+  }
+}

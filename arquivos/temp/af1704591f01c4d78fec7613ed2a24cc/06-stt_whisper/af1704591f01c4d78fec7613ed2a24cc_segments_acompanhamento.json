@@ -1,0 +1,16 @@
+{
+  "af1704591f01c4d78fec7613ed2a24cc_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.216",
+    "duracao": 14.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1694347858428955,
+    "mos_stoi": 0.9621429443359375,
+    "mos_si_sdr": 20.17841339111328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Assim que desaparece o CPC, o MCP, duas siglas que contém o P de Popular, elas desaparecem e dão lugar, são suplantadas por uma outra sigla que vai operar até hoje, que é MPB."
+  }
+}

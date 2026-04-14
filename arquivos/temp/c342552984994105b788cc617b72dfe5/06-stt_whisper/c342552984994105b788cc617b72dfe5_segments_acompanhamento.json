@@ -1,0 +1,16 @@
+{
+  "c342552984994105b788cc617b72dfe5_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:04.174",
+    "duracao": 4.11,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.160287380218506,
+    "mos_stoi": 0.9471328854560852,
+    "mos_si_sdr": 13.371058464050293,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Como é que eles podem montar um portfólio de maneira a..."
+  }
+}

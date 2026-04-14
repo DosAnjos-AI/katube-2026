@@ -1,0 +1,16 @@
+{
+  "9793a4cfc6db102ee25a4ac0f19dadf7_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:21.272",
+    "duracao": 21.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2663769721984863,
+    "mos_stoi": 0.8301994204521179,
+    "mos_si_sdr": 3.2169322967529297,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele é um bom de grupo, mas não vai jogar. Ele é um bom reserva para o Inter. Ele é um bom reserva. A renovação dele é justamente essa. Ele é um cara que precisar entrar ali um, dois jogos que alguém está suspensa. Ou pegar um período de judezão de alguém. Cara, ele supre muito bem. Exatamente. Que é o caso do Cortez no Grêmio. O Cortez é um baita lateral reserva para o Grêmio."
+  }
+}

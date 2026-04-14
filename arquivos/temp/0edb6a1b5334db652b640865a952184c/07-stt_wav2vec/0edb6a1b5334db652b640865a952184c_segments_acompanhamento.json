@@ -1,0 +1,47 @@
+{
+  "0edb6a1b5334db652b640865a952184c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.172",
+    "duracao": 10.17,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4397165775299072,
+    "mos_stoi": 0.9815086722373962,
+    "mos_si_sdr": 19.119518280029297,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Grêmio é muito difícil. Muito difícil que o Grêmio brigar por esse título. Agora tem as finais contra o Caxias. Cara, se o Renato tirou o Alisson, pra poupar, pra ganhar do Caxias...",
+    "stt_wav2vec": "EGREM O GREMIO MUITO DIFÍCIL MUITO FICE GREME O BRIGAR POR ESSE TÍTULO AGORA TEM AS FINAIS COM DO CAIXIAS QUE CARA SE O RENATO TIROU O ALHO A POUCACA PARA GANHAR O CAIXIAS"
+  },
+  "0edb6a1b5334db652b640865a952184c_002.ogg": {
+    "tempo_inicio": "00:00:10.468",
+    "tempo_fim": "00:00:16.860",
+    "duracao": 6.39,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3082261085510254,
+    "mos_stoi": 0.9608021378517151,
+    "mos_si_sdr": 11.775167465209961,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "0edb6a1b5334db652b640865a952184c_003.ogg": {
+    "tempo_inicio": "00:00:17.188",
+    "tempo_fim": "00:00:27.278",
+    "duracao": 10.09,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4300504922866821,
+    "mos_stoi": 0.8269839882850647,
+    "mos_si_sdr": 0.8455624580383301,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque agora ele cria pra ele uma obrigação de ganhar um jogo que não vai caber. É obrigação. É obrigação do Grêmio vencer o Caxias. É obrigação total do Grêmio. Vai ganhar os dois jogos.",
+    "stt_wav2vec": null
+  }
+}

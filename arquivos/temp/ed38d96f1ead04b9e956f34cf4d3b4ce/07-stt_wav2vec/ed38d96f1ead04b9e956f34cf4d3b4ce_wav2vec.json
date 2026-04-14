@@ -1,0 +1,17 @@
+{
+  "ed38d96f1ead04b9e956f34cf4d3b4ce_001.ogg": {
+    "tempo_inicio": "00:00:00.484",
+    "tempo_fim": "00:00:08.476",
+    "duracao": 7.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0301928520202637,
+    "mos_stoi": 0.8965729475021362,
+    "mos_si_sdr": 17.892169952392578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Outra questão é que o decreto do rio permite somente atividades dentro do mar.",
+    "stt_wav2vec": "OUTRA OUTRA QUESTÃO É QUE O DECRETO DO RIO ELE PERMITE SOMENTE ATIVIDADES DENTRO DO MAR"
+  }
+}

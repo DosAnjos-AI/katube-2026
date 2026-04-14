@@ -1,0 +1,30 @@
+{
+  "2ddbcccf74b6bbcffe3fd956d1f9523b_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:13.116",
+    "duracao": 13.11,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5209589004516602,
+    "mos_stoi": 0.8879039287567139,
+    "mos_si_sdr": 5.305126667022705,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o questionamento a partir da descoberta da América, ou devo falar de descoberta, porque já estava descoberta há muito tempo, mas enfim, da chegada dos espanhóis ao Chile."
+  },
+  "2ddbcccf74b6bbcffe3fd956d1f9523b_002.ogg": {
+    "tempo_inicio": "00:00:13.444",
+    "tempo_fim": "00:00:18.748",
+    "duracao": 5.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6023054122924805,
+    "mos_stoi": 0.9346941709518433,
+    "mos_si_sdr": 12.890843391418457,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "os grupos indígenas, o que aconteceu com eles, a luta deles."
+  }
+}

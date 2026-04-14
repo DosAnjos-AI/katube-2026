@@ -1,0 +1,17 @@
+{
+  "6a1e03cc786ba57b6fbdc8e7de53d562_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.736",
+    "duracao": 7.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.785067081451416,
+    "mos_stoi": 0.966354250907898,
+    "mos_si_sdr": 22.575227737426758,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "acaba por ser chato e não é necessária. Mas acho que ali duas semanas focadas, duas semanas em investimentos, duas semanas em IRF, duas semanas",
+    "stt_wav2vec": "AGABA BOCÊR CHAPENO É NECESSÁRIA MAS Á QUE CALI DUAS TMANIAS FUCADAS DUAS SMANAZANE A INVESTIMENTE DO SMANA DEERRE DOS"
+  }
+}

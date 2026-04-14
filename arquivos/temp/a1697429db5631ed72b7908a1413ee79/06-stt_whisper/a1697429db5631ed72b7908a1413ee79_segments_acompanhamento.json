@@ -1,0 +1,16 @@
+{
+  "a1697429db5631ed72b7908a1413ee79_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.352",
+    "duracao": 9.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4447319507598877,
+    "mos_stoi": 0.9003317356109619,
+    "mos_si_sdr": 7.571910858154297,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Para o filósofo Penhauer, amor é um sentimento que nada mais é do que o impulso da própria espécie humana, ou seja, algo utilizado para que as pessoas possam encontrar um par para dar continuidade à espécie."
+  }
+}

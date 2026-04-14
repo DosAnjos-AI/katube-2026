@@ -1,0 +1,16 @@
+{
+  "11a8dee44c9b9cf6220421ae5f85cb53_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.748",
+    "duracao": 6.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8090944290161133,
+    "mos_stoi": 0.9303851127624512,
+    "mos_si_sdr": 17.895700454711914,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É o que você quiser, é o que você desejar. É uma investigação. Você sabe, você fez um pouco."
+  }
+}

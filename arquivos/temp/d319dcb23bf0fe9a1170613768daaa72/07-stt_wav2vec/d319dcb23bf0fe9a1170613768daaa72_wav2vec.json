@@ -1,0 +1,17 @@
+{
+  "d319dcb23bf0fe9a1170613768daaa72_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.174",
+    "duracao": 8.17,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3931080102920532,
+    "mos_stoi": 0.8635132312774658,
+    "mos_si_sdr": -0.2498396337032318,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ah, ele voltou de lesão. E meteu aquela boost. O povo sabe que vai vender o Pedro Raul ano que vem, o Potker não vende.",
+    "stt_wav2vec": "AEVOU FOTELESÃO EU METEU AQUELA BUTO DIZ UM GOLANO  LUGO SABE QUE VAI VENDER O PEDRO RAANO QUE VEM EOU PÓTECA NÃO VENDE"
+  }
+}

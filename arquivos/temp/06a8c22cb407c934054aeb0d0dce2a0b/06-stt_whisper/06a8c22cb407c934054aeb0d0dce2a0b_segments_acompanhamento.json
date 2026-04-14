@@ -1,0 +1,30 @@
+{
+  "06a8c22cb407c934054aeb0d0dce2a0b_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:07.612",
+    "duracao": 7.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.536966323852539,
+    "mos_stoi": 0.9026031494140625,
+    "mos_si_sdr": 15.673139572143555,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "acredita nisso, e só um comentário que o Danny fez, que não entendeu o direito da vinda de Saravia, o Inter tentou primeiro o Saravia"
+  },
+  "06a8c22cb407c934054aeb0d0dce2a0b_002.ogg": {
+    "tempo_inicio": "00:00:07.940",
+    "tempo_fim": "00:00:22.334",
+    "duracao": 14.39,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.711942195892334,
+    "mos_stoi": 0.9613668918609619,
+    "mos_si_sdr": 12.772713661193848,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a pedido do Kudê, e não conseguiu, porque o Porto não tinha liberado, porque parece, sei lá, se mudou técnico, talvez esperava contar com o cara. No fim, o Porto acabou caindo da nível Europa, ele não estava jogando muito, e aí sim..."
+  }
+}

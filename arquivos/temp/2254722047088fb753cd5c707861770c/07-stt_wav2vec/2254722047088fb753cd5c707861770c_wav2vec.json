@@ -1,0 +1,47 @@
+{
+  "2254722047088fb753cd5c707861770c_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:03.996",
+    "duracao": 3.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.6006367206573486,
+    "mos_stoi": 0.9963239431381226,
+    "mos_si_sdr": 27.83913803100586,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O grande desafio do líder é fazer a informação correta circular.",
+    "stt_wav2vec": "O GRANDE DESAFIO DO LÍDER É FAZER A INFORMAÇÃO CORRETA CIRCULAR"
+  },
+  "2254722047088fb753cd5c707861770c_002.ogg": {
+    "tempo_inicio": "00:00:04.260",
+    "tempo_fim": "00:00:10.876",
+    "duracao": 6.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.407867908477783,
+    "mos_stoi": 0.9834780097007751,
+    "mos_si_sdr": 26.084482192993164,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A notícia boa precisa descer pela estrutura. Se isso não acontece, a notícia ruim domina.",
+    "stt_wav2vec": "A NOTÍCIA BOA PRECISA DESCER PELA ESTRUTURA SE ISSO NÃO ACONTECE A NOTÍCIA RUIM DOMINA"
+  },
+  "2254722047088fb753cd5c707861770c_003.ogg": {
+    "tempo_inicio": "00:00:11.236",
+    "tempo_fim": "00:00:19.166",
+    "duracao": 7.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.522144317626953,
+    "mos_stoi": 0.991729199886322,
+    "mos_si_sdr": 25.517683029174805,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Gente, vamos lembrar. É muito confortável mandar o outro fazer aquilo que é uma obrigação nossa.",
+    "stt_wav2vec": "GNTE VAMO LEMBRAR É MUITO CONFORTÁVEL MANDAR O OUTRO FAZER AQUILO QUE É UMA OBRIGAÇÃO NOSSA"
+  }
+}

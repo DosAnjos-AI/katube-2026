@@ -1,0 +1,62 @@
+{
+  "2dc27a839f53d6be846e497a9f5f9b47_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.804",
+    "duracao": 11.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.174946904182434,
+    "mos_stoi": 0.7409715056419373,
+    "mos_si_sdr": 0.9484648108482361,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E mesmo assim, ele conseguiu se firmar e claro que o poder está dando uma força para ele, porque se for botar preto no branco, o Moledo hoje é melhor que ele.",
+    "stt_wav2vec": "PIMEIRO PAR ESPERO ENORME ELLE CONSEGUIU ELE CONSEGUIU-SE FIRMAR E ENCLAVE PE O CODETA DE NUVO ENQUERANDO NÃO UMA FORÇA FRATELA PORQUESTE FOLATA  BOTATO PRETO NO BRANCO O MOLEDO HOJE VELHOR DO QUE ELLE"
+  },
+  "2dc27a839f53d6be846e497a9f5f9b47_002.ogg": {
+    "tempo_inicio": "00:00:12.068",
+    "tempo_fim": "00:00:18.620",
+    "duracao": 6.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.571929693222046,
+    "mos_stoi": 0.8054357171058655,
+    "mos_si_sdr": 6.522878646850586,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "na minha opinião, assim, de questão de estar pronto, de vamos jogar uma final, quem tu estala, entendeu?",
+    "stt_wav2vec": "NA MINHA OPINIÃO É ASSIM DE QUESTÃO DETÁ PRONTO DE LEVAMOS JAGAL MAFINAL QUENTES FALA TONEU"
+  },
+  "2dc27a839f53d6be846e497a9f5f9b47_003.ogg": {
+    "tempo_inicio": "00:00:18.980",
+    "tempo_fim": "00:00:25.532",
+    "duracao": 6.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2857774496078491,
+    "mos_stoi": 0.767349123954773,
+    "mos_si_sdr": -0.8320276141166687,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Goledos? Sem pensar. Mas eu acho que a gente tem que pensar no futuro também, que ele é um gole bom.",
+    "stt_wav2vec": "MONEDOS SEM PENSAS MAS EU ACHO QUE A GENTE TEM PENSADO NO FUTURO TAMBÉM QUE ELE É UM GULIBOL"
+  },
+  "2dc27a839f53d6be846e497a9f5f9b47_004.ogg": {
+    "tempo_inicio": "00:00:25.860",
+    "tempo_fim": "00:00:32.360",
+    "duracao": 6.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8589861392974854,
+    "mos_stoi": 0.8632393479347229,
+    "mos_si_sdr": 13.483450889587402,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E eu não gosto disso da dupla queimar os caras. É uma coisa que eu admiro muito, por exemplo, no tipo do Santos, é que eles lançam",
+    "stt_wav2vec": null
+  }
+}

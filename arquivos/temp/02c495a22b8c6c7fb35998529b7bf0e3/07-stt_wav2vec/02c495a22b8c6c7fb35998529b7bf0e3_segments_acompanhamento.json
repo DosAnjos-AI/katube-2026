@@ -1,0 +1,17 @@
+{
+  "02c495a22b8c6c7fb35998529b7bf0e3_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.768",
+    "duracao": 4.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.433462142944336,
+    "mos_stoi": 0.9251777529716492,
+    "mos_si_sdr": 10.217019081115723,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu só me lembro de quando era a vida, ver meu primo a jogar e era tipo, estava sapato pela pessoa.",
+    "stt_wav2vec": "OUDO SÃO LEMBRO QUANDO ERA VIVA VER MEU PRIMA ASGALHA E ERA SEPOUO TAL SABAFOS COL APESSOAS"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "2a241c88a0ac0e2eb5779ddca88959c2_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:08.024",
+    "duracao": 7.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2512145042419434,
+    "mos_stoi": 0.9195919632911682,
+    "mos_si_sdr": 21.795557022094727,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Corpo, mente, não existe. Muito menos a supremacia de alguma coisa chamada mente sobre o corpo.",
+    "stt_wav2vec": "CORPOMENTE NÃO EXISTE MUITO MENOS A SUPREMACIA DE ALGUMA COISA CHAMADAMENTE SOBRE O CORPO"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "91a10a46446223476cf69b5263e952f0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.518",
+    "duracao": 5.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.722621202468872,
+    "mos_stoi": 0.9584421515464783,
+    "mos_si_sdr": 17.86928939819336,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu teria rentabilizado muito mais porque já hoje eu consigo rentalizar esse dinheiro.",
+    "stt_wav2vec": "OUTRRRANTELUIZADO MUITO MAIS POQUE OI JÁ HOE CONSEGUIO CENTAUSAR ESSE DINHEIRO"
+  }
+}

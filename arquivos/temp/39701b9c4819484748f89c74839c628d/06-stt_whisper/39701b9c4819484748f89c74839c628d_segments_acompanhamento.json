@@ -1,0 +1,16 @@
+{
+  "39701b9c4819484748f89c74839c628d_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:04.856",
+    "duracao": 4.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7090332508087158,
+    "mos_stoi": 0.9053441286087036,
+    "mos_si_sdr": 8.16910457611084,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vamos lá, a segunda perguntinha para vocês. Vamos ver se vocês estão inteiradas aí do assunto."
+  }
+}

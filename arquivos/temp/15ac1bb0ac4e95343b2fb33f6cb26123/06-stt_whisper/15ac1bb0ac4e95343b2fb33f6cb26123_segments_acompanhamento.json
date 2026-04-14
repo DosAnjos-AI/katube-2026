@@ -1,0 +1,44 @@
+{
+  "15ac1bb0ac4e95343b2fb33f6cb26123_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.036",
+    "duracao": 7.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8096110820770264,
+    "mos_stoi": 0.9760432839393616,
+    "mos_si_sdr": 15.028787612915039,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "dos processos de luta e um momento muito significativo vai ocorrer em 1983"
+  },
+  "15ac1bb0ac4e95343b2fb33f6cb26123_002.ogg": {
+    "tempo_inicio": "00:00:07.396",
+    "tempo_fim": "00:00:13.724",
+    "duracao": 6.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2901036739349365,
+    "mos_stoi": 0.9858435988426208,
+    "mos_si_sdr": 18.477893829345703,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o movimento que foi nacional e que se chamou diretas já."
+  },
+  "15ac1bb0ac4e95343b2fb33f6cb26123_003.ogg": {
+    "tempo_inicio": "00:00:14.244",
+    "tempo_fim": "00:00:25.608",
+    "duracao": 11.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.679107189178467,
+    "mos_stoi": 0.9767904281616211,
+    "mos_si_sdr": 18.92890739440918,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O movimento das diretas já levou grande quantidade de gente à rua e aquilo que se chama de recrudescimento do movimento diretor."
+  }
+}

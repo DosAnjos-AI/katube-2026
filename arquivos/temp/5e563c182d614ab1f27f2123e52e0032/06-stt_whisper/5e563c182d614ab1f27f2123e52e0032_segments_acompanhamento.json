@@ -1,0 +1,72 @@
+{
+  "5e563c182d614ab1f27f2123e52e0032_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.660",
+    "duracao": 5.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.460538387298584,
+    "mos_stoi": 0.9133907556533813,
+    "mos_si_sdr": 11.99066162109375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí algumas delas, elas vão adaptar o jogador para alguma coisa que..."
+  },
+  "5e563c182d614ab1f27f2123e52e0032_002.ogg": {
+    "tempo_inicio": "00:00:06.148",
+    "tempo_fim": "00:00:10.460",
+    "duracao": 4.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1216959953308105,
+    "mos_stoi": 0.8237929940223694,
+    "mos_si_sdr": 4.918437957763672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "coisas diferentes, vão gerar adaptações diferentes. Então, é o seguinte."
+  },
+  "5e563c182d614ab1f27f2123e52e0032_003.ogg": {
+    "tempo_inicio": "00:00:10.724",
+    "tempo_fim": "00:00:14.812",
+    "duracao": 4.09,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.681896686553955,
+    "mos_stoi": 0.9260220527648926,
+    "mos_si_sdr": 10.850743293762207,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se eu faço exercícios com muita velocidade..."
+  },
+  "5e563c182d614ab1f27f2123e52e0032_004.ogg": {
+    "tempo_inicio": "00:00:15.236",
+    "tempo_fim": "00:00:20.476",
+    "duracao": 5.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3735623359680176,
+    "mos_stoi": 0.881354808807373,
+    "mos_si_sdr": 7.7789506912231445,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e poucas repetições eu estou fazendo um tipo de trabalho de força e aí para deixar"
+  },
+  "5e563c182d614ab1f27f2123e52e0032_005.ogg": {
+    "tempo_inicio": "00:00:20.740",
+    "tempo_fim": "00:00:30.776",
+    "duracao": 10.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.260554790496826,
+    "mos_stoi": 0.9391416907310486,
+    "mos_si_sdr": 10.263312339782715,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para o pessoal um pouco mais resumido e mais didático dos meus alunos aprender, a gente chama ali de potência, tá bom? Então, força rápida, força explosiva, potência, são tudo a mesma coisa."
+  }
+}

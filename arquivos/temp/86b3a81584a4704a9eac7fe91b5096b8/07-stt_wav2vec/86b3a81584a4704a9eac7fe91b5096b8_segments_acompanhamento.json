@@ -1,0 +1,32 @@
+{
+  "86b3a81584a4704a9eac7fe91b5096b8_001.ogg": {
+    "tempo_inicio": "00:00:00.420",
+    "tempo_fim": "00:00:07.260",
+    "duracao": 6.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2694895267486572,
+    "mos_stoi": 0.6996753811836243,
+    "mos_si_sdr": -5.667962551116943,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E também o clássico em São Paulo, Corinthians e Palmeiras. Quarta-feira, promete. Em quarta-feira, nove e meia da noite.",
+    "stt_wav2vec": "IPEMENT MAS QE OM SÃO PAULO GORISTO DE PALMEIRAS VUAR DA FERA FLUNENTE ENQUANTA AVELA NOVENEIR DA NOITE"
+  },
+  "86b3a81584a4704a9eac7fe91b5096b8_002.ogg": {
+    "tempo_inicio": "00:00:07.652",
+    "tempo_fim": "00:00:11.694",
+    "duracao": 4.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.173076629638672,
+    "mos_stoi": 0.9571574330329895,
+    "mos_si_sdr": 21.34688949584961,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Teremos tanto o clássico Grenal quanto o clássico Corinthians Palmeiras.",
+    "stt_wav2vec": null
+  }
+}

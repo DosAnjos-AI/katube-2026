@@ -1,0 +1,16 @@
+{
+  "a74ced860ac26220d4e303cfa6cb29e6_001.ogg": {
+    "tempo_inicio": "00:00:01.028",
+    "tempo_fim": "00:00:05.928",
+    "duracao": 4.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3871355056762695,
+    "mos_stoi": 0.9557169675827026,
+    "mos_si_sdr": 17.70745086669922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ficou pra mim muito explícito a importância do D'Alessandro no time do Inter, né?"
+  }
+}

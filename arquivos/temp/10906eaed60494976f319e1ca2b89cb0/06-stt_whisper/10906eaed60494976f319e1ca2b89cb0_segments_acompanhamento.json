@@ -1,0 +1,30 @@
+{
+  "10906eaed60494976f319e1ca2b89cb0_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.644",
+    "duracao": 3.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5678906440734863,
+    "mos_stoi": 0.9250954389572144,
+    "mos_si_sdr": 10.399353981018066,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas essa seria uma diferença somente..."
+  },
+  "10906eaed60494976f319e1ca2b89cb0_002.ogg": {
+    "tempo_inicio": "00:00:04.068",
+    "tempo_fim": "00:00:09.496",
+    "duracao": 5.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.399360179901123,
+    "mos_stoi": 0.8659816980361938,
+    "mos_si_sdr": 13.833786964416504,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "quantitativa e não qualitativa. Não seria qualitativa por..."
+  }
+}

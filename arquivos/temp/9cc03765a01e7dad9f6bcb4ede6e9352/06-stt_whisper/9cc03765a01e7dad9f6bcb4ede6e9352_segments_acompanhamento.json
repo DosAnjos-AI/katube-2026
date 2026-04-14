@@ -1,0 +1,44 @@
+{
+  "9cc03765a01e7dad9f6bcb4ede6e9352_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.428",
+    "duracao": 10.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8113985061645508,
+    "mos_stoi": 0.9201246500015259,
+    "mos_si_sdr": 12.19367504119873,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "coisa que eu aprendi nesse processo de entender a síndrome do impostor e foi com uma amiga, inclusive a amiga que está aí na Samarca agora, é que quando a gente começa a se comparar com as pessoas, a gente faz..."
+  },
+  "9cc03765a01e7dad9f6bcb4ede6e9352_002.ogg": {
+    "tempo_inicio": "00:00:10.756",
+    "tempo_fim": "00:00:15.932",
+    "duracao": 5.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.057856559753418,
+    "mos_stoi": 0.9150786399841309,
+    "mos_si_sdr": 9.771641731262207,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A gente faz comparações irrealistas, porque a gente pega assim, nossa..."
+  },
+  "9cc03765a01e7dad9f6bcb4ede6e9352_003.ogg": {
+    "tempo_inicio": "00:00:16.068",
+    "tempo_fim": "00:00:31.448",
+    "duracao": 15.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7103724479675293,
+    "mos_stoi": 0.9507914781570435,
+    "mos_si_sdr": 9.789019584655762,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A Nancy, ela é ótima em programação. A programação dela é excelente, gente. Nunca vou chegar. E o Eric, ele é na parte de design, eu junto todas as qualidades, a Marcela nisso, a Renata naquilo. Eu pego cada qualidade de cada um."
+  }
+}

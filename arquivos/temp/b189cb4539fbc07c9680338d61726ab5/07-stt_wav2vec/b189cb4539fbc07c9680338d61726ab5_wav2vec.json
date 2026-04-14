@@ -1,0 +1,17 @@
+{
+  "b189cb4539fbc07c9680338d61726ab5_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.044",
+    "duracao": 14.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.710179328918457,
+    "mos_stoi": 0.9844588041305542,
+    "mos_si_sdr": 22.758100509643555,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E ouvir essa liderança, ouvir dela o que é mais importante, seja por meio de um vídeo, de uma palestra ou de uma breve apresentação para grupos, traz muito mais clareza para as equipes.",
+    "stt_wav2vec": "E OUVI ESSA LIDERANÇA OUVIDELA O QUE A MAIS IMPORTANTE SEJA POR MEIO DE UM VÍDEO DE UMA PALESTRA OU DE UMA BREVE APRESENTAÇÃO PARA GRUPOS TRAZ MUITO MAIS CLAREZA PARA AS EQUIPES"
+  }
+}

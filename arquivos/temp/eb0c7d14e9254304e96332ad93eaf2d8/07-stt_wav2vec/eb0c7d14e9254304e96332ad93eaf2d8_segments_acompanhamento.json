@@ -1,0 +1,32 @@
+{
+  "eb0c7d14e9254304e96332ad93eaf2d8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.724",
+    "duracao": 9.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.203051805496216,
+    "mos_stoi": 0.950334906578064,
+    "mos_si_sdr": 11.565825462341309,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para quem não conhece o formato. Exatamente. Pronto. Na primeira edição eu foquei-me mais naquilo que é realmente, não a parte teórica, ok?",
+    "stt_wav2vec": "QUE NÃO CONHEÇO O PORMATO EXATE MEMPRONTO MINHA PRIMEIRA EDIÇÃO E OFOQUEI MA MAIS NAQUILLO QUE É REALMENTE NÃO UMA PARTE TIÓRICA A QUEI"
+  },
+  "eb0c7d14e9254304e96332ad93eaf2d8_002.ogg": {
+    "tempo_inicio": "00:00:09.860",
+    "tempo_fim": "00:00:16.312",
+    "duracao": 6.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.354910135269165,
+    "mos_stoi": 0.9808318018913269,
+    "mos_si_sdr": 26.102325439453125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu não abordei tanto aquela parte inicial que se houve muita gente a falar sobre...",
+    "stt_wav2vec": null
+  }
+}

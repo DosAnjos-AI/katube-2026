@@ -1,0 +1,22 @@
+{
+  "75ba06b0cc56d2d2934521d3ff36eba9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:26.076",
+    "duracao": 26.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Muito diferente de férias e as pessoas não podem ter essa noção, ai, estou liberado do trabalho, vou trabalhar em casa, mas não, mas é tipo férias, posso assistir uma série aqui. Uma coisa é tu pegar teu par e dizer, vamos viajar, vamos viajar, beleza? Dá um estressezinho uma hora ou outra na viagem. É, dá. Sabe? Ah, eu tô mostrando uma coisa, outra coisa é normal, é tradicional isso. Só que agora essa coisa da reclusão, desenvolve uma outra coisa no..."
+  },
+  "75ba06b0cc56d2d2934521d3ff36eba9_002.ogg": {
+    "tempo_inicio": "00:00:26.148",
+    "tempo_fim": "00:00:30.224",
+    "duracao": 4.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "nos pares, né? E eu acho isso legal também pra conhecer um pouco mais,"
+  }
+}

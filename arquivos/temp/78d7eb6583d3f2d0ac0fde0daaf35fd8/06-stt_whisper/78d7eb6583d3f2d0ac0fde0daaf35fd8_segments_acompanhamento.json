@@ -1,0 +1,16 @@
+{
+  "78d7eb6583d3f2d0ac0fde0daaf35fd8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:22.044",
+    "duracao": 22.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.478858232498169,
+    "mos_stoi": 0.9426994323730469,
+    "mos_si_sdr": 6.0692338943481445,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A gente lembra que tem uma congelada, a gente descongela e come de novo, sabe? Pra não ir pro lixo, nada. Acho que nesse hábito, talvez, entra essa questão de também utilizar algumas partes de alimentos que as pessoas costumam jogar fora, sei lá. Então, é isso que eu ia falar. A questão da minha sustentabilidade na cozinha, talvez..."
+  }
+}

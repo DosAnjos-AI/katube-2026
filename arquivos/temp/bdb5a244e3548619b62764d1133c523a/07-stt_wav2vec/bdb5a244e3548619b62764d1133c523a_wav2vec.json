@@ -1,0 +1,47 @@
+{
+  "bdb5a244e3548619b62764d1133c523a_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.436",
+    "duracao": 9.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2641384601593018,
+    "mos_stoi": 0.9913996458053589,
+    "mos_si_sdr": 24.98457908630371,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que a polícia estava procurando. Ele era um bom pai, um homem excelente. A polícia questionou o Dennis sobre o DNA dele ser compatível com o do BTC.",
+    "stt_wav2vec": "A POLÍCIA ESTAVA PROCURANDO ELLE ERA UM BOM PAI UM HOMEM EXCELLENTE A POLÍCIA QUESTIONOU DENS SOBRE O DENIÁDEDE SER COMPATÍVEL COM DO BETECÁ"
+  },
+  "bdb5a244e3548619b62764d1133c523a_002.ogg": {
+    "tempo_inicio": "00:00:09.860",
+    "tempo_fim": "00:00:17.148",
+    "duracao": 7.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.260319948196411,
+    "mos_stoi": 0.9905539155006409,
+    "mos_si_sdr": 26.031803131103516,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Dennis então respondeu que estaria aprovado. Os policiais confrontaram o Raider com o disquete enviado pelo BTK,",
+    "stt_wav2vec": "DENES ENTÃO RESPONDEU QUE ESTARIA APROVADO OS POLICIAES CONFRONTARAM O REIDER COM UM DISQUETE ENVIADO PELE BETEC"
+  },
+  "bdb5a244e3548619b62764d1133c523a_003.ogg": {
+    "tempo_inicio": "00:00:17.540",
+    "tempo_fim": "00:00:32.092",
+    "duracao": 14.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0373432636260986,
+    "mos_stoi": 0.9850992560386658,
+    "mos_si_sdr": 24.74810791015625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E ele disse que não tinha como escapar. Raider se preocupou se a prisão seria um problema por BTK ter matado algumas crianças e confessou, em seguida, ser o BTK. Raider recontou os assassinatos dos zotérios com encenações.",
+    "stt_wav2vec": "ELE DISSE QUE NÃO TINHA COMO ESCAPAR REIDE SE PREOCUPOU SE A PRISÃO SERIA UM PROBLEMA POR BETECATA ÉM MATADO ALGUMAS CRIANÇAS E CONFESSOU EM SEGUIDA SER O BETECA REIDE RECONTOU OS ASSASSINATOS DOS ZOTEROS COM ENSENAÇÕES"
+  }
+}

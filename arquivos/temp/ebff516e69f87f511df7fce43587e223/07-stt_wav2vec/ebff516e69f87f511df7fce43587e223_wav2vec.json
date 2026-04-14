@@ -1,0 +1,17 @@
+{
+  "ebff516e69f87f511df7fce43587e223_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.758",
+    "duracao": 3.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6246533393859863,
+    "mos_stoi": 0.9117152094841003,
+    "mos_si_sdr": 10.323418617248535,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "No futebol de alto nível hoje, eles têm um tapete.",
+    "stt_wav2vec": "NANA NO FUTEBOL DE ALTO MIVRO HOJE ELES TÊM UM TAPETE"
+  }
+}

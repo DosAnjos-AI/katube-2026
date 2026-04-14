@@ -1,0 +1,44 @@
+{
+  "821e38e95cc0552e1966ade3f829f65a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.604",
+    "duracao": 12.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7031371593475342,
+    "mos_stoi": 0.8784171342849731,
+    "mos_si_sdr": 8.122825622558594,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É um bom jogador, sim. Mas é um cara com 30 anos já e chega um ponto dos 30 para frente que já começa a ter uma queda de rendimento."
+  },
+  "821e38e95cc0552e1966ade3f829f65a_002.ogg": {
+    "tempo_inicio": "00:00:12.676",
+    "tempo_fim": "00:00:26.780",
+    "duracao": 14.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7257423400878906,
+    "mos_stoi": 0.8835415840148926,
+    "mos_si_sdr": 8.668744087219238,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Enquanto o Arthur, com 23 anos, tu pode ainda trabalhar muito. A gente até teve essa discussão no nosso grupo, onde tu pode sim, com 23 anos, lapidar um cara desse, desenvolver ele para jogar melhor e mostrar para ele que ele tem um outro estilo de jogo que ele pode trabalhar."
+  },
+  "821e38e95cc0552e1966ade3f829f65a_003.ogg": {
+    "tempo_inicio": "00:00:26.820",
+    "tempo_fim": "00:00:30.334",
+    "duracao": 3.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4901680946350098,
+    "mos_stoi": 0.8240125775337219,
+    "mos_si_sdr": 10.478250503540039,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Por exemplo, o que eu, Igor, na minha visão leiga, é óbvio,"
+  }
+}

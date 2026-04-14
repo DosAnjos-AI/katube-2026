@@ -1,0 +1,44 @@
+{
+  "585bd783abd3dfcd1107677b61ab23af_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:13.116",
+    "duracao": 13.11,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6117891073226929,
+    "mos_stoi": 0.9211021661758423,
+    "mos_si_sdr": 7.914750576019287,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E também... Tá rolando essa pressão aí, né? Também pra quem não nos segue ainda no Instagram, arroba confra do futebol, acompanhe nosso conteúdo, interajam conosco. E, aliás..."
+  },
+  "585bd783abd3dfcd1107677b61ab23af_002.ogg": {
+    "tempo_inicio": "00:00:13.412",
+    "tempo_fim": "00:00:25.756",
+    "duracao": 12.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6017303466796875,
+    "mos_stoi": 0.9816361665725708,
+    "mos_si_sdr": 23.50615692138672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vale ressaltar aqui, nosso Instagram bateu a marca de 300 seguidores nesse final de semana. Já passamos, estamos quase em uns 350. Muito obrigado a todos vocês que nos seguem."
+  },
+  "585bd783abd3dfcd1107677b61ab23af_003.ogg": {
+    "tempo_inicio": "00:00:25.796",
+    "tempo_fim": "00:00:30.942",
+    "duracao": 5.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.935722827911377,
+    "mos_stoi": 0.9717810153961182,
+    "mos_si_sdr": 19.542755126953125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Curtem o nosso conteúdo e interagem conosco. Seja comentando ou respondendo."
+  }
+}

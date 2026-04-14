@@ -1,0 +1,30 @@
+{
+  "5342dfde82fde2f6a474a7a8de08b4d4_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:18.012",
+    "duracao": 18.01,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.824542760848999,
+    "mos_stoi": 0.9594840407371521,
+    "mos_si_sdr": 9.774491310119629,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É, mas a minha atuação foi estilo telecurso 2000, né? Eu adorei. Só faltava dizer assim, agora vamos ver uma fórmula de Bhaskara em que você pode aplicar nas compras na sua padaria. Daí tu pega um pão e começa a arriscar a fórmula de Bhaskara no pão, assim, ensinar pro coleguinha no meio do pão."
+  },
+  "5342dfde82fde2f6a474a7a8de08b4d4_002.ogg": {
+    "tempo_inicio": "00:00:18.244",
+    "tempo_fim": "00:00:25.992",
+    "duracao": 7.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.848271131515503,
+    "mos_stoi": 0.932868480682373,
+    "mos_si_sdr": 7.239563465118408,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vai fazer muito sentido isso aí. Né, Wagner? Aham, meu pai. Eu tava pensando agora, viajando, sabe, aqui... Na Bhaskara."
+  }
+}

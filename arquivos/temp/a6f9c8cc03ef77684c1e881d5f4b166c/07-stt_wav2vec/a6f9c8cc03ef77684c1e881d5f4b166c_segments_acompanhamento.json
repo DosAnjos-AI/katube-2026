@@ -1,0 +1,17 @@
+{
+  "a6f9c8cc03ef77684c1e881d5f4b166c_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.934",
+    "duracao": 14.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.538949489593506,
+    "mos_stoi": 0.9729858040809631,
+    "mos_si_sdr": 19.286773681640625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "conteúdo de hoje, não se esqueça, compartilhe, recomende, manda pros amigos, eu tenho certeza que vai todo mundo aproveitar demais o conteúdo dos nossos podcasts e aprender um pouquinho a cada dia com os nossos episódios, beleza?",
+    "stt_wav2vec": "CONTEODO DE HOJE NÃO SE ESQUEÇA COMPARTIRLHE RECOMENDE MANDA PAR OS AMIGOS EU TENHO CERTEZA QUE VAI TODO O MUNDO APROVEITAR DEMAIS O CONTEO DOS NOSSOS POU DE QUECHES E APRENDER UM POUQUINHO A CADA DIA COM OS NOSSOS EPISÓDIOS DE EESA"
+  }
+}

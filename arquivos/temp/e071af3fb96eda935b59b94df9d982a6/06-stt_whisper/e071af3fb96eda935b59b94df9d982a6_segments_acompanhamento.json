@@ -1,0 +1,44 @@
+{
+  "e071af3fb96eda935b59b94df9d982a6_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:04.732",
+    "duracao": 4.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9398045539855957,
+    "mos_stoi": 0.8649961352348328,
+    "mos_si_sdr": 14.554686546325684,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí eu ouvi cadasneira, cara. Eu ouvi, teve gente que não colocou a dupla Grenal no top 5."
+  },
+  "e071af3fb96eda935b59b94df9d982a6_002.ogg": {
+    "tempo_inicio": "00:00:05.028",
+    "tempo_fim": "00:00:19.484",
+    "duracao": 14.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3600410223007202,
+    "mos_stoi": 0.8092694282531738,
+    "mos_si_sdr": 1.1187772750854492,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Teve gente que colocou o Santos acima do Grêmio. Teve gente que colocou o Palmeiras e o Corinthians acima do Inter. Não, chega, vamos pro debate. É, não. Os caras que não botam esse cara."
+  },
+  "e071af3fb96eda935b59b94df9d982a6_003.ogg": {
+    "tempo_inicio": "00:00:19.940",
+    "tempo_fim": "00:00:29.822",
+    "duracao": 9.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4048700332641602,
+    "mos_stoi": 0.8852756023406982,
+    "mos_si_sdr": -1.3392733335494995,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

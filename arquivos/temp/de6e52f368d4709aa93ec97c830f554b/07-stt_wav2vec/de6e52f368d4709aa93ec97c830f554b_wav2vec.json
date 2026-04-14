@@ -1,0 +1,17 @@
+{
+  "de6e52f368d4709aa93ec97c830f554b_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.942",
+    "duracao": 4.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.023502826690674,
+    "mos_stoi": 0.9341437220573425,
+    "mos_si_sdr": 13.042519569396973,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Isto tem tudo a ver com a idade das pessoas, com o valor do financiamento que estamos a pedir, quer dizer, um crédito 400 mil euros.",
+    "stt_wav2vec": "ESTE TUTAVÊ COIDAD DAS PESSOAS COM O VOLOR DO FINANCIAMENTO TANDZEPLITO ASCASIÃO CREDITO QUATROCENTOS MES"
+  }
+}

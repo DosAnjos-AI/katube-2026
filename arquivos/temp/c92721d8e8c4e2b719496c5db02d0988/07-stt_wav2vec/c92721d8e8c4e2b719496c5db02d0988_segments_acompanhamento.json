@@ -1,0 +1,62 @@
+{
+  "c92721d8e8c4e2b719496c5db02d0988_001.ogg": {
+    "tempo_inicio": "00:00:00.260",
+    "tempo_fim": "00:00:07.228",
+    "duracao": 6.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5543360710144043,
+    "mos_stoi": 0.9568164348602295,
+    "mos_si_sdr": 19.404401779174805,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "uma condição justa e impeça o agente privado de fixar preços",
+    "stt_wav2vec": "UMA CONDIÇÃO JUSTA E EMPESSA O AGENTE PRIVADO DE FIXAR PREÇOS"
+  },
+  "c92721d8e8c4e2b719496c5db02d0988_002.ogg": {
+    "tempo_inicio": "00:00:07.524",
+    "tempo_fim": "00:00:11.356",
+    "duracao": 3.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.367373466491699,
+    "mos_stoi": 0.941386878490448,
+    "mos_si_sdr": 18.36395835876465,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que são injustos. Porque se ele fizer isso...",
+    "stt_wav2vec": "É QUE SÃO INJUSTOS PORQUE SE ELE FIZER ISSO"
+  },
+  "c92721d8e8c4e2b719496c5db02d0988_003.ogg": {
+    "tempo_inicio": "00:00:11.684",
+    "tempo_fim": "00:00:24.796",
+    "duracao": 13.11,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4137845039367676,
+    "mos_stoi": 0.9775851368904114,
+    "mos_si_sdr": 23.456695556640625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o nosso espaço cresce e ele vai reagir ao nosso posicionamento. Quando isso acontece, Lia, há o melhor equilíbrio no sistema financeiro. Se vocês...",
+    "stt_wav2vec": "O NOSSO ESPAÇO CRESCE E ELE VAE SE ELE VAI REAGIRA A NAO NOSSO POSICIONAMENTO QUANDO ISSO ACONTECE LIA HA O MELHOR EQUILÍBRIO NO SISTEMA FINANCEIRO SE VOCÊS"
+  },
+  "c92721d8e8c4e2b719496c5db02d0988_004.ogg": {
+    "tempo_inicio": "00:00:24.836",
+    "tempo_fim": "00:00:30.360",
+    "duracao": 5.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4583892822265625,
+    "mos_stoi": 0.9393088817596436,
+    "mos_si_sdr": 16.82917594909668,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "quiserem gastar um tempinho, ouçam os discursos do Roberto Campos Neto.",
+    "stt_wav2vec": "QUE E QUISEREM GASTAR OM TEPINHO OU SÃO OS DISCURSOS DO ROBERTO CAMPOS NETO"
+  }
+}

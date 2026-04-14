@@ -1,0 +1,16 @@
+{
+  "1c621b826117cd4ccc6cfc632f205816_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.880",
+    "duracao": 8.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5999507904052734,
+    "mos_stoi": 0.9530512094497681,
+    "mos_si_sdr": 16.446887969970703,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Estou agora a dizer uma sorte, não é o que eu faço, mas imagina, é a maior a probabilidade de eu atingir o meu objetivo investindo 100%"
+  }
+}

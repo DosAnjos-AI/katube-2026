@@ -1,0 +1,47 @@
+{
+  "3b515104c789434beb19c960a3d72db1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.804",
+    "duracao": 3.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.06190824508667,
+    "mos_stoi": 0.9717812538146973,
+    "mos_si_sdr": 18.717742919921875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "eu acho que ele não é mais o Vanderlei",
+    "stt_wav2vec": "EU ACHO QUE ELE NÃO É MAIS O VANDERLE"
+  },
+  "3b515104c789434beb19c960a3d72db1_002.ogg": {
+    "tempo_inicio": "00:00:04.388",
+    "tempo_fim": "00:00:13.596",
+    "duracao": 9.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7484326362609863,
+    "mos_stoi": 0.9527859091758728,
+    "mos_si_sdr": 20.218408584594727,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "daquele 2018 do Santos, principalmente, onde ele, ou 2017, não me recordo que ele foi eleito o melhor goleiro do Campeonato Brasileiro, ele não é mais mesmo.",
+    "stt_wav2vec": "DAQUELE DOIS MIL E E DEZOITO NU SANTOS PRINCIPALMENTE NÉ ONDE ELI OU DOIS MINDES E SETE NO MIN NÃO ME RECORDO QUE LHE FOI ELEITO MELHOR GOLEDO CAMATO GAS DELA NÃO É MAIS O MERRO"
+  },
+  "3b515104c789434beb19c960a3d72db1_003.ogg": {
+    "tempo_inicio": "00:00:13.668",
+    "tempo_fim": "00:00:20.552",
+    "duracao": 6.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0356998443603516,
+    "mos_stoi": 0.9767102599143982,
+    "mos_si_sdr": 21.633262634277344,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas hoje ele foi bem, ele fez boas defesas, o Fluminense, apesar de ser jogado a menos que o Grêmio,",
+    "stt_wav2vec": "MAS HOJE ELE FOI BEM ELE FEZ BOAS DEFESAS O FLUMINENSE APESAR DE SER JOGADO ABO MENOS QUE O GRÊMIO"
+  }
+}

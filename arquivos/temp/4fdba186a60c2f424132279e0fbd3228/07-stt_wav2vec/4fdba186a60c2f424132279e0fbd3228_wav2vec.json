@@ -1,0 +1,47 @@
+{
+  "4fdba186a60c2f424132279e0fbd3228_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:07.676",
+    "duracao": 7.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4976232051849365,
+    "mos_stoi": 0.9272313117980957,
+    "mos_si_sdr": 12.177302360534668,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, toda vez que vier o sentimento da síndrome do impostor, a gente não deixar que isso crie raiz,",
+    "stt_wav2vec": "ENTÃO TODA VEZ QUE A GENTE QUEA QUIVIER O SENTIMENTO É DA SINDRAMUIDO IMPOSTOU A GENTE NÃO DEIXAR QUE SOCRIR RAIZ"
+  },
+  "4fdba186a60c2f424132279e0fbd3228_003.ogg": {
+    "tempo_inicio": "00:00:17.476",
+    "tempo_fim": "00:00:29.212",
+    "duracao": 11.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2785463333129883,
+    "mos_stoi": 0.9533354043960571,
+    "mos_si_sdr": 12.991833686828613,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a liberdade de sermos nós mesmos. Não é nada mais libertador e mais poderoso do que a gente ter essa oportunidade de a gente ser a gente mesmo. E saber que a gente não está sozinho. Eu acho que é o último ponto.",
+    "stt_wav2vec": "A LIBERDADE DE SERMOS NÓS MESMOS NÃO ANADA NÁNO NADA MAIS LIBERTADOR E MAIS E MAIS PODEROSO DO QUE AS GENTE TEIAS OPORTUGARES DA GENTE SE A GENTE MESMA E SABE QUE AESTANTA SOZINHO É AS QUE É UM ÚLTIMO PONTO"
+  },
+  "4fdba186a60c2f424132279e0fbd3228_004.ogg": {
+    "tempo_inicio": "00:00:29.316",
+    "tempo_fim": "00:00:33.118",
+    "duracao": 3.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1664023399353027,
+    "mos_stoi": 0.8038550019264221,
+    "mos_si_sdr": 10.55802059173584,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que tem muita relação até com a auto-compaixão.",
+    "stt_wav2vec": "QUE TEM MUITA RELAÇÃO É TEB É COM ALTO COMPAIXÃO"
+  }
+}

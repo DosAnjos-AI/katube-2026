@@ -1,0 +1,17 @@
+{
+  "8967b31cd0aeb3dea7a9e14486498d1e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:13.692",
+    "duracao": 13.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9686603546142578,
+    "mos_stoi": 0.9519796967506409,
+    "mos_si_sdr": 17.759302139282227,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "sociedades hierárquicas e desiguais como a nossa sociedade, a verdade não precisa ser justa, imparcial e transparente. A verdade é naturalmente má e tem sempre um lado, aquele de quem tem poder...",
+    "stt_wav2vec": "SOCIEDADES IARÁRQUICAS E DESIGUAES COM A NOSSA SOCIEDADE A VERDADE NÃO PRECISA SER JUSTA IMPACIAL E TRANSPARENTE A VERDADE É NATURALMENTE MÁ E TEM SEMPRE UM LADO AQUELLE DE QUEM TEM PODER"
+  }
+}

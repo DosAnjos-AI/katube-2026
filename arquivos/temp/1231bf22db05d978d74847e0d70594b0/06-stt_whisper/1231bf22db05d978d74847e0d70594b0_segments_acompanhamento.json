@@ -1,0 +1,16 @@
+{
+  "1231bf22db05d978d74847e0d70594b0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:30.014",
+    "duracao": 30.01,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3413724899291992,
+    "mos_stoi": 0.935684084892273,
+    "mos_si_sdr": 8.954642295837402,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "por conta da pandemia do coronavírus. E aí agora, ó, ficou sério. A ESPM em Porto Alegre também já havia se pronunciado na sexta-feira também que cancelaria as suas aulas. A gente está na eminência de que outras universidades anunciem isso. Sim, sim. E aí a gente fica no aguardo. Você daqui a pouco está chegando na faculdade, vai ter uma determinação, sei lá, pode compartilhar conosco aí. E também nesse final de semana, Gaúcha ZH noticiou que o Colégio Israelita aqui de Porto Alegre, que é um dos primeiros, é o primeiro colégio particular."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "809b2b7daf927f038715b1ccd03e8709_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.300",
+    "duracao": 14.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.401301860809326,
+    "mos_stoi": 0.9883769154548645,
+    "mos_si_sdr": 20.737140655517578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "no momento em que isso toma cada vez mais o espaço das nossas vidas. Eu conversei sobre esse tema com o executivo da área de educação, Jane Ribeiro, que escreveu o livro Empatia. Por que as pessoas empáticas serão os líderes do futuro?"
+  },
+  "809b2b7daf927f038715b1ccd03e8709_002.ogg": {
+    "tempo_inicio": "00:00:14.372",
+    "tempo_fim": "00:00:25.180",
+    "duracao": 10.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8707385063171387,
+    "mos_stoi": 0.9917558431625366,
+    "mos_si_sdr": 21.22994613647461,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "No vídeo que ele gravou comigo no ano passado, dentro da livraria Martins Fontes em São Paulo, e que está lá no meu canal do YouTube, na playlist Prazer em Conhecer, o Jaime faz uma provocação interessante."
+  },
+  "809b2b7daf927f038715b1ccd03e8709_003.ogg": {
+    "tempo_inicio": "00:00:25.636",
+    "tempo_fim": "00:00:34.558",
+    "duracao": 8.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.530663013458252,
+    "mos_stoi": 0.9071283936500549,
+    "mos_si_sdr": 15.700728416442871,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se realmente os robôs e a inteligência artificial assumirem um papel de protagonismo daqui a 5 anos, como os especialistas dizem, e mais de 50%"
+  }
+}

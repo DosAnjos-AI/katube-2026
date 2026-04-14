@@ -1,0 +1,17 @@
+{
+  "218ba1e48859ca6480b5c449ce3df560_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.544",
+    "duracao": 3.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8571863174438477,
+    "mos_stoi": 0.9635118842124939,
+    "mos_si_sdr": 18.544950485229492,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "é como a francesinha, a francesinha é sempre igual, o que muda o molho, não é?",
+    "stt_wav2vec": "UMA FRANZINHA A FRANCINHA SEMPA IGUAL FOCMUDA AO MOLHO L"
+  }
+}

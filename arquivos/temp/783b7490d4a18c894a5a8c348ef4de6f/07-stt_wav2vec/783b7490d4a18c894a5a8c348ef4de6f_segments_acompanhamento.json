@@ -1,0 +1,32 @@
+{
+  "783b7490d4a18c894a5a8c348ef4de6f_001.ogg": {
+    "tempo_inicio": "00:00:00.260",
+    "tempo_fim": "00:00:13.372",
+    "duracao": 13.11,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2024242877960205,
+    "mos_stoi": 0.9542471170425415,
+    "mos_si_sdr": 20.5758056640625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele é bom. O Olaf, se fosse só o Olaf. O Olaf é os Bodeler. Mas eu acho que os coadjuvantes cagaram tudo, tudo. Eu parei de assistir quando tem uma parte lá que tem uma menininha ruivinha, que ela sepateia. Assistiu?",
+    "stt_wav2vec": "ELE É BOM OA LAFE SE FOSS SÓ OLAFE TERÉ ÓTIMO OU ALAFEUS BODELER MAS EU ASSIM QUE OS CODJUVANTE CAGADO TUDO TUDO EU PAREIDE ASSISTI QUANDO TEI UMA PARTE A LACRI UMA MENINNHA RUIVIN AQUELLA SAPATEIA ASSISTIU"
+  },
+  "783b7490d4a18c894a5a8c348ef4de6f_002.ogg": {
+    "tempo_inicio": "00:00:13.700",
+    "tempo_fim": "00:00:17.934",
+    "duracao": 4.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9210901260375977,
+    "mos_stoi": 0.9184814691543579,
+    "mos_si_sdr": 15.757466316223145,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "57ee2818d5932097d7d6eef1e9c38174_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.284",
+    "duracao": 4.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2629711627960205,
+    "mos_stoi": 0.5670843124389648,
+    "mos_si_sdr": -6.3409833908081055,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A medida precisa, sim, de um prazo muito maior do seu foi dado,"
+  },
+  "57ee2818d5932097d7d6eef1e9c38174_002.ogg": {
+    "tempo_inicio": "00:00:04.388",
+    "tempo_fim": "00:00:18.960",
+    "duracao": 14.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.632507085800171,
+    "mos_stoi": 0.9527477025985718,
+    "mos_si_sdr": 0.6120598912239075,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para que ela possa ter, de fato, a sua implementação. Bom, você citou o Chile, como um dos países que usa já a figura do juiz de garantias, tem Alemanha, tem Argentina, a Itália, onde teve a operação Mãos Limpas, que foi até..."
+  }
+}

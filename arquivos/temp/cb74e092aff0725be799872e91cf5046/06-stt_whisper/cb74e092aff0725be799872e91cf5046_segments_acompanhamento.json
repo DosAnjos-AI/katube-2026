@@ -1,0 +1,30 @@
+{
+  "cb74e092aff0725be799872e91cf5046_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.036",
+    "duracao": 7.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8961939811706543,
+    "mos_stoi": 0.8411209583282471,
+    "mos_si_sdr": 11.370926856994629,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, tá? Essa rodada tá chata, hein? Essa rodada tá lá. Essa rodada foi de cara."
+  },
+  "cb74e092aff0725be799872e91cf5046_002.ogg": {
+    "tempo_inicio": "00:00:07.140",
+    "tempo_fim": "00:00:19.784",
+    "duracao": 12.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5236642360687256,
+    "mos_stoi": 0.9105937480926514,
+    "mos_si_sdr": 5.097033977508545,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho que eu vou sair dos quadragésimos. Elme, fala aí o que tu quer que eu traga de antemão no Cartola e o que vai ficar por isso. Fala aí que é contigo. Só me dá o top 3, então, quem mais está pontuando."
+  }
+}

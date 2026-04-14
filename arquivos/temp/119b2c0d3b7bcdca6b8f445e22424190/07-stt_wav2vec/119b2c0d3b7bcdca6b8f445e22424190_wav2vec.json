@@ -1,0 +1,32 @@
+{
+  "119b2c0d3b7bcdca6b8f445e22424190_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.108",
+    "duracao": 10.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.606508255004883,
+    "mos_stoi": 0.9910621643066406,
+    "mos_si_sdr": 24.637451171875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Viemos de novo, novamente, como sempre, de novo, novamente é bom, né? Vemos como sempre com a parceria da You Factory. Lembre lá, de seguir o arroba gorosfia no Instagram.",
+    "stt_wav2vec": "VIEMOS DE NOVO NOVAMENTE COMO SEMPRE DE NOVO NOVAMENTE É BONA VEMOS COMO SEMPRE COM A PARCERIA DAI O FECTRE LEMBELATE SEGUIU A ROUBAS GORO O ARROUBA GORRO DE AHIANO TAGRA"
+  },
+  "119b2c0d3b7bcdca6b8f445e22424190_002.ogg": {
+    "tempo_inicio": "00:00:10.276",
+    "tempo_fim": "00:00:15.806",
+    "duracao": 5.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.5808398723602295,
+    "mos_stoi": 0.997989296913147,
+    "mos_si_sdr": 26.39926528930664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E vamos lá, vamos falar do jogo, vamos falar do Grenal. Tivemos outras finais aí rolando pelo Brasil também.",
+    "stt_wav2vec": "E VAMO LÁ VAMOS FALAR DO JOGO VÃO FADO GRENAL TIVEMOS OUTRAS NAIS AIR ROLANDO PELO BRASIL TAMBÉM"
+  }
+}

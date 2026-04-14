@@ -1,0 +1,16 @@
+{
+  "eff12c0f9079415c642c7cf45ef4a212_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.390",
+    "duracao": 4.39,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2268617153167725,
+    "mos_stoi": 0.9816911816596985,
+    "mos_si_sdr": 25.70659637451172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E ele não entrega o nosso conteúdo da maneira que seria justo, não é?"
+  }
+}

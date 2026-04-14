@@ -1,0 +1,30 @@
+{
+  "12641e957bfbd93c1c1b3a01b4ea608a_001.ogg": {
+    "tempo_inicio": "00:00:03.396",
+    "tempo_fim": "00:00:21.468",
+    "duracao": 18.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1288362741470337,
+    "mos_stoi": 0.8844727277755737,
+    "mos_si_sdr": 5.065305709838867,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Comunicação não é tarefa simplesmente das equipes de comunicação. Independente de onde você está, ela também é sua tarefa. Sempre que possível, na sua rotina de líder, de profissional de qualquer área, saia do piloto automático. Permita-se colocar uma dose de emoção."
+  },
+  "12641e957bfbd93c1c1b3a01b4ea608a_002.ogg": {
+    "tempo_inicio": "00:00:21.508",
+    "tempo_fim": "00:00:29.532",
+    "duracao": 8.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1366498470306396,
+    "mos_stoi": 0.8460850715637207,
+    "mos_si_sdr": 3.785971164703369,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para romper as bolhas e gerar engajamento. Se você acredita, entre de cabeça e contoração aberto."
+  }
+}

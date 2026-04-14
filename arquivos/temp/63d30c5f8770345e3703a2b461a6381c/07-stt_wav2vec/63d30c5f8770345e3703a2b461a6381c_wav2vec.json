@@ -1,0 +1,47 @@
+{
+  "63d30c5f8770345e3703a2b461a6381c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.420",
+    "duracao": 7.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.175973892211914,
+    "mos_stoi": 0.9439089894294739,
+    "mos_si_sdr": 19.978031158447266,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele precisa ser revitalizado pela juventude, se profissionalizando, trazendo novos conceitos.",
+    "stt_wav2vec": "ESER REVITALIZADO PELA JUVENTUDE AH SE PROFISSIONALIZANDO TRAZENDO NOVOS CONCEITOS"
+  },
+  "63d30c5f8770345e3703a2b461a6381c_002.ogg": {
+    "tempo_inicio": "00:00:07.684",
+    "tempo_fim": "00:00:22.652",
+    "duracao": 14.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.5305137634277344,
+    "mos_stoi": 0.9820422530174255,
+    "mos_si_sdr": 22.62409210205078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "já da nossa sociedade contemporânea, né? Então, somos líderes, SESCOP, vem para aliar essa força da juventude, a toda essa vitalidade, a capacitação técnica profissional voltada para esse segmento.",
+    "stt_wav2vec": "J DA NOSSA SOCIEDADE CONTEMPORÂNEA NA ENTÃO O SOMOS LIDERE CESCOPE VÊM PARA ALIAR ESS A FORÇA DA JUVENTUDE A TODA ESSA VITALIDADE A CAPACITAÇÃO TÉCNICA PROFISSIONAL VOLTADA PARA ESSE SEGUIMENTO"
+  },
+  "63d30c5f8770345e3703a2b461a6381c_003.ogg": {
+    "tempo_inicio": "00:00:22.788",
+    "tempo_fim": "00:00:28.412",
+    "duracao": 5.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.5520198345184326,
+    "mos_stoi": 0.9845209717750549,
+    "mos_si_sdr": 25.55543327331543,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e nós tivemos a grata satisfação de conhecer um grupo seleto de várias regiões do país.",
+    "stt_wav2vec": "NEM NÓS TIVEMOS AÍ A GRATA SATISFAÇÃO DE CONHECER UM GRUPO SELETO E DE VÁRIAS REGIÕES DO PAÍS"
+  }
+}

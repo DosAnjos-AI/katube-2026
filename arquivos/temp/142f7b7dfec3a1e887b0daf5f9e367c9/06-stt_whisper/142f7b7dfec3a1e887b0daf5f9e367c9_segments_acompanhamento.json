@@ -1,0 +1,22 @@
+{
+  "142f7b7dfec3a1e887b0daf5f9e367c9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.908",
+    "duracao": 14.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Dentre as centenas de colaboradores próprios e terceirizados, um chama a atenção em especial. Boa noite, pessoal. Por aqui iniciando mais uma rádio ZAP. A partir de agora com vocês, Valnada Profissional. Levando para você o melhor da música."
+  },
+  "142f7b7dfec3a1e887b0daf5f9e367c9_002.ogg": {
+    "tempo_inicio": "00:00:14.980",
+    "tempo_fim": "00:00:27.324",
+    "duracao": 12.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "O grande amigo de vocês voltou, rapaz. Lembra? Tava parada aí a rádio ZAP, igual o meu amigo Alan. Falava, rapaz, pra mim, a rádio está em manutenção geral. Valeu, Alan!"
+  }
+}

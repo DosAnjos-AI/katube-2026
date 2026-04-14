@@ -1,0 +1,17 @@
+{
+  "2ed451caabd257374f98d6f687ab129c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.340",
+    "duracao": 5.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.507019519805908,
+    "mos_stoi": 0.9446797370910645,
+    "mos_si_sdr": 18.190290451049805,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tudo bem, Renan? Boa noite, Brasada. Um momento mais esperado do domingo. Bora pra mais uma.",
+    "stt_wav2vec": "DO BENRE NA RO UA NOITE BRIZADA UM MOMENTO MAIS ESPERADO DOMINGO EMBORA VA MAIS UMA"
+  }
+}

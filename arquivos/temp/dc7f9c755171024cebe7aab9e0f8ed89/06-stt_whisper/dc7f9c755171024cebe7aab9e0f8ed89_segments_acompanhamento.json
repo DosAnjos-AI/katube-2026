@@ -1,0 +1,30 @@
+{
+  "dc7f9c755171024cebe7aab9e0f8ed89_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.428",
+    "duracao": 14.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6945288181304932,
+    "mos_stoi": 0.9385958909988403,
+    "mos_si_sdr": 7.8730082511901855,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas também agora tem, tipo, cada console, tem uma coisa de 4K, Fogadeia, não sei o quê. Mas eu acho que a TV já mostra uma tela muito boa, entendeu? E nem todo monitor de computador é assim. Então eu..."
+  },
+  "dc7f9c755171024cebe7aab9e0f8ed89_002.ogg": {
+    "tempo_inicio": "00:00:14.532",
+    "tempo_fim": "00:00:27.672",
+    "duracao": 13.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5445668697357178,
+    "mos_stoi": 0.9170641899108887,
+    "mos_si_sdr": 6.520205497741699,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

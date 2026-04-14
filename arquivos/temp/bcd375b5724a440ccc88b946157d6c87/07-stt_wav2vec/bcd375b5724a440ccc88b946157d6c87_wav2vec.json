@@ -1,0 +1,17 @@
+{
+  "bcd375b5724a440ccc88b946157d6c87_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.302",
+    "duracao": 10.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2765939235687256,
+    "mos_stoi": 0.9494832158088684,
+    "mos_si_sdr": 19.530656814575195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "uma força barulhenta que se faz notar e que se exibe fazendo zoeira e esquentando a chapa do tiro porra de bomba. A guerra contra o crime é, antes, uma ficção real.",
+    "stt_wav2vec": "UMA FORÇA BARULHENTA QUE SE FAZ NOTAR QUE SE EXIBE FAZENDO ZOEIRA E ESQUENTANDO A CHAPA DO TIRO PORRADEBOMBA A GUERRA CONTO CRIME É ANTES UMA FICÇÃO REAL"
+  }
+}

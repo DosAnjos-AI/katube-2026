@@ -1,0 +1,32 @@
+{
+  "6c1948932ec2608e651b56aef88af4a2_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:13.948",
+    "duracao": 13.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6578590869903564,
+    "mos_stoi": 0.9741463661193848,
+    "mos_si_sdr": 21.020050048828125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A final da Champions varia a participação para o nosso programa 21, se eu não me engano. Exato. É isso aí. Então, vai demorar um pouquinho, mas é para o 21 já ficar garantido. Duas semanas, duas semanas.",
+    "stt_wav2vec": "DO TAL É AFINAL DA TEMPO OSVARIA A PARTICIPAÇÃO PORA O NOSSO PROGRAMA VINTE UM SE EU NÃO ENGANO DIRE EXATO É ISSO ÉIINTÃO ENTÃO VAI DEMORAR UM POQUIM MAIS É PROVINTE UM JÁ FICAR GARANTIDO COMO NINGUA SERÁAS DUAS SEMANAS"
+  },
+  "6c1948932ec2608e651b56aef88af4a2_002.ogg": {
+    "tempo_inicio": "00:00:17.316",
+    "tempo_fim": "00:00:31.742",
+    "duracao": 14.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.059628486633301,
+    "mos_stoi": 0.9509637355804443,
+    "mos_si_sdr": 9.903508186340332,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

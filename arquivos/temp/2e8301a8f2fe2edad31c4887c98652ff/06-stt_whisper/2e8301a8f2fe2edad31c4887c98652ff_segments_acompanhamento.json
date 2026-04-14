@@ -1,0 +1,30 @@
+{
+  "2e8301a8f2fe2edad31c4887c98652ff_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.892",
+    "duracao": 4.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4438109397888184,
+    "mos_stoi": 0.9022502899169922,
+    "mos_si_sdr": 9.506705284118652,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mas que possam trazer esse choque de atualidade."
+  },
+  "2e8301a8f2fe2edad31c4887c98652ff_002.ogg": {
+    "tempo_inicio": "00:00:05.348",
+    "tempo_fim": "00:00:10.108",
+    "duracao": 4.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2447147369384766,
+    "mos_stoi": 0.7990326285362244,
+    "mos_si_sdr": 9.317911148071289,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para dentro do nosso movimento e precisa estar sempre atualizado."
+  }
+}

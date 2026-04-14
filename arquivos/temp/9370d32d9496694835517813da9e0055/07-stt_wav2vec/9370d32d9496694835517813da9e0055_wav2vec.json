@@ -1,0 +1,17 @@
+{
+  "9370d32d9496694835517813da9e0055_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.558",
+    "duracao": 14.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.134499192237854,
+    "mos_stoi": 0.8085032105445862,
+    "mos_si_sdr": 7.010400772094727,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Está na Atlântida, rádio da tua vida! Esse é o Tudo Nosso que está no ar para Snowland, neve de verdade. Agora faltam 11 minutinhos para as 8 horas. Adam está por aí? Está me ouvindo?",
+    "stt_wav2vec": "ST NA PLÂNTIDA RÁDIODA TUA VIDA ESSE É O TUDO NOSSE QUE ESTÁ NO R PARAESNOLENO NEVE DE VERDADE AGORA FALTAM ONZE MINANTINHOS PARA AS OITO HORAS AS NÃO ESTÁ POR AÍ TAMINHA VINDO"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "b09117fbc886e21812ecccb19a83c44c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.372",
+    "duracao": 13.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9432010650634766,
+    "mos_stoi": 0.983191192150116,
+    "mos_si_sdr": 25.332120895385742,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E nem com água potável. O pai Gil casou-se com uma mulher que abusava dele e de seus irmãos e era bastante violenta com eles. Então, Iu resolveu fugir com sua irmã mais nova para viverem com sua mãe."
+  },
+  "b09117fbc886e21812ecccb19a83c44c_002.ogg": {
+    "tempo_inicio": "00:00:13.924",
+    "tempo_fim": "00:00:27.260",
+    "duracao": 13.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.931346893310547,
+    "mos_stoi": 0.9881187081336975,
+    "mos_si_sdr": 25.1247501373291,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A questão financeira continuou sendo uma dificuldade na vida de Yu, mas ele cursou a escola primária e secundária. Ele era um bom aluno na escola e se interessava bastante por arte, mas sofria bastante bullying dos seus colegas."
+  }
+}

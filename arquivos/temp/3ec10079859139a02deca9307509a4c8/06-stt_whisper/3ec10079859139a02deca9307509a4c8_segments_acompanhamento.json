@@ -1,0 +1,44 @@
+{
+  "3ec10079859139a02deca9307509a4c8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:16.060",
+    "duracao": 16.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3807995319366455,
+    "mos_stoi": 0.9167638421058655,
+    "mos_si_sdr": 10.34577751159668,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas tu viu que não é só fazer uma saboada assim na mão, né? Não, tem que ser bem feitinho, né? Exato, tem que esfregar. Tem no Instagram de Esportes Gaúcha ZH, Esportes GZH, eles estão ensinando a lavar as mãos e passar a álcool gel a..."
+  },
+  "3ec10079859139a02deca9307509a4c8_002.ogg": {
+    "tempo_inicio": "00:00:16.196",
+    "tempo_fim": "00:00:19.772",
+    "duracao": 3.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.460742473602295,
+    "mos_stoi": 0.9476582407951355,
+    "mos_si_sdr": 15.398428916931152,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a parte colorada do estado e a parte gremista, cada um..."
+  },
+  "3ec10079859139a02deca9307509a4c8_003.ogg": {
+    "tempo_inicio": "00:00:20.068",
+    "tempo_fim": "00:00:30.072",
+    "duracao": 10.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5171977281570435,
+    "mos_stoi": 0.9254109859466553,
+    "mos_si_sdr": 9.337971687316895,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

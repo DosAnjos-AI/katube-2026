@@ -1,0 +1,17 @@
+{
+  "3ba77eea9901a0b3e71f74f6372e347c_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:04.118",
+    "duracao": 4.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9581894874572754,
+    "mos_stoi": 0.9519221186637878,
+    "mos_si_sdr": 6.587436676025391,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vamos lá. Vai no comentário que ela marcou a Ana e a Mari.",
+    "stt_wav2vec": "MA NO COMENTÁRIO QUE ELA MARCOU A ANA EÁ JAMAR"
+  }
+}

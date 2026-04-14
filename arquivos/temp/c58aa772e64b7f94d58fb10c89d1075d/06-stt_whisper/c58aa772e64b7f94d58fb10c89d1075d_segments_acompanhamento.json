@@ -1,0 +1,16 @@
+{
+  "c58aa772e64b7f94d58fb10c89d1075d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:29.704",
+    "duracao": 29.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.310556173324585,
+    "mos_stoi": 0.9455044269561768,
+    "mos_si_sdr": 18.971187591552734,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Milícias são governos autônomos, ilegais que operam nos territórios populares, exploram a vida econômica e regulam a vida social dos moradores. Para existirem e exercerem o seu domínio armado, com fins lucrativos, elas precisam contar com a tolerância à vista grossa dos poderes públicos e as costas quentes de setores políticos. As milícias saem de dentro do Estado. Elas são compostas na sua maioria por agentes da lei. Milicianos não estão escondidos e nem são invisíveis."
+  }
+}

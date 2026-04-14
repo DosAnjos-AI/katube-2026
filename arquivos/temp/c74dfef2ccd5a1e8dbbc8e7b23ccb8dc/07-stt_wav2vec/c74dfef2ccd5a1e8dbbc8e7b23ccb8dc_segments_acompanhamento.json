@@ -1,0 +1,17 @@
+{
+  "c74dfef2ccd5a1e8dbbc8e7b23ccb8dc_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.238",
+    "duracao": 8.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5158753395080566,
+    "mos_stoi": 0.9131084084510803,
+    "mos_si_sdr": 14.14889144897461,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu nunca tinha percebido. A luz do sol, o momento em que o sol atravessa a sala, o momento em que",
+    "stt_wav2vec": "EU NUNCA TINHA PERCEBIDO A A A LUZ DO SOL O MOMENTO EM QUE O SOL ATRAVESSA A SALA O MOMENTO EM QUE"
+  }
+}

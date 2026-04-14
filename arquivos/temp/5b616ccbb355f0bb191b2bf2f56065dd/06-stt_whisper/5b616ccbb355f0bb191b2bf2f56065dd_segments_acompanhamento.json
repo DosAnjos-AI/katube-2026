@@ -1,0 +1,44 @@
+{
+  "5b616ccbb355f0bb191b2bf2f56065dd_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.844",
+    "duracao": 10.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6353563070297241,
+    "mos_stoi": 0.8732645511627197,
+    "mos_si_sdr": 6.50994348526001,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "já esteve em todos os lugares no teatro, no palco, direção, bastidores. Muito da sua pesquisa tem o Rudolf Flaban como guia, como inspiração, não sei se eu posso dizer."
+  },
+  "5b616ccbb355f0bb191b2bf2f56065dd_002.ogg": {
+    "tempo_inicio": "00:00:11.236",
+    "tempo_fim": "00:00:23.868",
+    "duracao": 12.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.150579810142517,
+    "mos_stoi": 0.6108933687210083,
+    "mos_si_sdr": -10.300642967224121,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, como o Labanista que você é, eu queria que você falasse um pouco para a gente começar. Quem foi o Laban, sobre essa pluralidade, que é o método dele, né?"
+  },
+  "5b616ccbb355f0bb191b2bf2f56065dd_003.ogg": {
+    "tempo_inicio": "00:00:24.036",
+    "tempo_fim": "00:00:30.200",
+    "duracao": 6.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2940936088562012,
+    "mos_stoi": 0.8204384446144104,
+    "mos_si_sdr": -0.8301934003829956,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "essa pesquisa que influencia tanto o teatro e a dança até os dias de hoje e como que também..."
+  }
+}

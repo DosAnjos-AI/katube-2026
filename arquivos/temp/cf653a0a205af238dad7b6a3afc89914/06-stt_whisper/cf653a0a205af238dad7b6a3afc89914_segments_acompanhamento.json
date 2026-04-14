@@ -1,0 +1,16 @@
+{
+  "cf653a0a205af238dad7b6a3afc89914_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.536",
+    "duracao": 6.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8443846702575684,
+    "mos_stoi": 0.9902278184890747,
+    "mos_si_sdr": 27.174949645996094,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Você sabe o que é graça? Graça é quando a gente ganha algo que nunca teria por conta própria."
+  }
+}

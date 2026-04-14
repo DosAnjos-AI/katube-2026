@@ -1,0 +1,17 @@
+{
+  "a58afc3bd252daca0b63a815204ff536_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.428",
+    "duracao": 6.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.120384454727173,
+    "mos_stoi": 0.9763111472129822,
+    "mos_si_sdr": 26.982559204101562,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Lançando promoções, gerando memes. Algumas marcas mandam super bem. Outras.",
+    "stt_wav2vec": "LANÇANDO PROMOÇÕES GERANDO MEMIS ALGUMAS MARCAS MANDAM SUPERBEN OUTRAS"
+  }
+}

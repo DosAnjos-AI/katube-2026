@@ -1,0 +1,32 @@
+{
+  "37e358790160b35daa014fc41d4686df_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.620",
+    "duracao": 6.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.113041877746582,
+    "mos_stoi": 0.9039531946182251,
+    "mos_si_sdr": 9.242640495300293,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "foi a sua experiência também em ver o crescimento dessa cultura e como que o design em si começou a ser afetado",
+    "stt_wav2vec": "FO SUA EXPERIENCIA TAMBÉM EM VEIO O CRESCIMENTO DESSA CULTURA E COMO QUE O DEZAINE EM SI COMEÇOU A SER AFETADO"
+  },
+  "37e358790160b35daa014fc41d4686df_002.ogg": {
+    "tempo_inicio": "00:00:06.884",
+    "tempo_fim": "00:00:16.120",
+    "duracao": 9.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5737857818603516,
+    "mos_stoi": 0.9216316342353821,
+    "mos_si_sdr": 13.0617036819458,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "por essa cultura, o que foi mudando e sendo moldado dentro do design a partir dessa modificação da indústria de tecnologia?",
+    "stt_wav2vec": "POR ESSA CULTURA NA EOQUIQUE FOI MMUDANDO EM SER O MOLDADO DENTRO DO DESANE A PARTIR DESSA DESSA MODIFICAÇÃO DA INDÚSTRIA DE TECNOLOGIA"
+  }
+}

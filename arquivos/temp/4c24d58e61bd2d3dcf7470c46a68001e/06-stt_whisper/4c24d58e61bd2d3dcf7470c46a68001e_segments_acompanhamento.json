@@ -1,0 +1,16 @@
+{
+  "4c24d58e61bd2d3dcf7470c46a68001e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:13.374",
+    "duracao": 13.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.311530351638794,
+    "mos_stoi": 0.9056734442710876,
+    "mos_si_sdr": 7.195737838745117,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ela solta o pum assim? Ela solta o pum. Mas esse pum é o quê, Clarinha? É um cachorro, é um cachorrinho laranja. Será que todo mundo entendeu que era um cachorro? Será que alguém estava achando que era o pum mesmo?"
+  }
+}

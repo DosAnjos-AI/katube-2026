@@ -1,0 +1,30 @@
+{
+  "b42bc365ffa7265107f6c696bb940ded_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:07.772",
+    "duracao": 7.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.376300573348999,
+    "mos_stoi": 0.954249382019043,
+    "mos_si_sdr": 21.21787452697754,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "um cara, muito bacana. Olha, Renatão, já que você falou aí que é um assunto muito extenso, né? Você quer dar continuidade, eu, você quer..."
+  },
+  "b42bc365ffa7265107f6c696bb940ded_002.ogg": {
+    "tempo_inicio": "00:00:08.068",
+    "tempo_fim": "00:00:13.374",
+    "duracao": 5.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.742391347885132,
+    "mos_stoi": 0.94109708070755,
+    "mos_si_sdr": 18.300594329833984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Parar agora e a gente volta no outro dia, né? Que topõe a parte 2."
+  }
+}

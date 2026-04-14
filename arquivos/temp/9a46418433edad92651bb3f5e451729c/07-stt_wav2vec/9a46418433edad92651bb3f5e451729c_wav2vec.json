@@ -1,0 +1,17 @@
+{
+  "9a46418433edad92651bb3f5e451729c_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.310",
+    "duracao": 9.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.161701202392578,
+    "mos_stoi": 0.9154752492904663,
+    "mos_si_sdr": 12.429588317871094,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas, ok, eu só quero reformar-me aos 50 anos e para isso só preciso investir 300 euros por mês e podiam investir 400, mas então vou pegar entre 100 euros e vou passear.",
+    "stt_wav2vec": "MAS ALKUEIA SÓ QUERO FORMAR MAS CHINCOTANES E PARAISE SA PRECISE IM VISTIRO DE TREZENTOS EROSO POR MENTOS E PLIANDE CINQUATRO CIANTOS MAS ENTÃO VOPOGARESE SENHORS E RO PASSIARE"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "746ccb8fc2dcb3387ad4802995810ccc_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:12.382",
+    "duracao": 12.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.283381938934326,
+    "mos_stoi": 0.9667510390281677,
+    "mos_si_sdr": 17.49423599243164,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Edenilson, o Galhardo, estamos jogando muita bola, né? Os dois vêm muito bem. O Edenilson vem jogando há dois, três anos já, muita bola. Ele vem e já resolve o meu problema. Quando ele chega em 2017, ele já..."
+  }
+}

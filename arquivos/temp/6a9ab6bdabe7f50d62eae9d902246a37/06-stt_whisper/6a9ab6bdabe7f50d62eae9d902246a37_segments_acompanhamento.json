@@ -1,0 +1,44 @@
+{
+  "6a9ab6bdabe7f50d62eae9d902246a37_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.988",
+    "duracao": 8.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.942302703857422,
+    "mos_stoi": 0.9550992250442505,
+    "mos_si_sdr": 17.368968963623047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mais precisamente a Pecó, mas eu mudei ainda criança para uma cidade próxima chamada São Miguel do Oeste. Fiquei até os 17 anos lá."
+  },
+  "6a9ab6bdabe7f50d62eae9d902246a37_002.ogg": {
+    "tempo_inicio": "00:00:09.060",
+    "tempo_fim": "00:00:19.612",
+    "duracao": 10.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9513559341430664,
+    "mos_stoi": 0.9364625811576843,
+    "mos_si_sdr": 15.471640586853027,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E depois mudei para São Paulo. Aí em São Paulo eu prestei vestibular para desenho de animação. E na hora de cursar eu vi que não era o que eu queria. Aí eu fiquei um ano lá."
+  },
+  "6a9ab6bdabe7f50d62eae9d902246a37_003.ogg": {
+    "tempo_inicio": "00:00:19.908",
+    "tempo_fim": "00:00:32.536",
+    "duracao": 12.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2897968292236328,
+    "mos_stoi": 0.871728241443634,
+    "mos_si_sdr": 3.003783702850342,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E voltei. Só que dessa vez eu voltei pro Rio Grande do Sul, que é onde minha mãe mora atualmente. Nos meus 19 anos, eu mudei pra Florianópolis, que foi onde eu morei dois anos antes de mudar pra São Paulo de novo."
+  }
+}

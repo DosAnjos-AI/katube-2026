@@ -1,0 +1,44 @@
+{
+  "c086a6d7ad1b6c2ce296369961d9c9fb_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.276",
+    "duracao": 9.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.774641513824463,
+    "mos_stoi": 0.9862093329429626,
+    "mos_si_sdr": 25.44093894958496,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e aos valores de qualquer organização. Para a gente encerrar, eu quero trazer algumas dicas que valem para qualquer empresa hoje, amanhã."
+  },
+  "c086a6d7ad1b6c2ce296369961d9c9fb_002.ogg": {
+    "tempo_inicio": "00:00:09.636",
+    "tempo_fim": "00:00:18.908",
+    "duracao": 9.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.149582862854004,
+    "mos_stoi": 0.980786919593811,
+    "mos_si_sdr": 21.74466323852539,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "todos os dias, em que eu acho que pode fazer sentido para você. Primeiro, uma coisa é culpa, intenção, outra é responsabilidade."
+  },
+  "c086a6d7ad1b6c2ce296369961d9c9fb_003.ogg": {
+    "tempo_inicio": "00:00:19.012",
+    "tempo_fim": "00:00:26.328",
+    "duracao": 7.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.436358690261841,
+    "mos_stoi": 0.9790605306625366,
+    "mos_si_sdr": 25.908098220825195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Muitas crises nascem da não aceitação das empresas de que algo estranho está acontecendo nas organizações..."
+  }
+}

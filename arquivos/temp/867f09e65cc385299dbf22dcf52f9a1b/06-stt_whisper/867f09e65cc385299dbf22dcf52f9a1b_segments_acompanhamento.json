@@ -1,0 +1,30 @@
+{
+  "867f09e65cc385299dbf22dcf52f9a1b_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:03.996",
+    "duracao": 3.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.328094005584717,
+    "mos_stoi": 0.9043921232223511,
+    "mos_si_sdr": 12.458100318908691,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Bem-vindos ao segundo episódio aqui do Traguer Falei. É..."
+  },
+  "867f09e65cc385299dbf22dcf52f9a1b_002.ogg": {
+    "tempo_inicio": "00:00:04.324",
+    "tempo_fim": "00:00:12.718",
+    "duracao": 8.39,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6363439559936523,
+    "mos_stoi": 0.9246593117713928,
+    "mos_si_sdr": 10.767325401306152,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A brisa de hoje é qual a sua definição do amor. Bom, eu não sei qual é a minha definição do amor, então bora precisar, meu Google."
+  }
+}

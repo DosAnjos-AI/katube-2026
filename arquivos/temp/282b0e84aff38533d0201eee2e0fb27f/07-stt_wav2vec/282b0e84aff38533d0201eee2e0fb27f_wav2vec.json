@@ -1,0 +1,32 @@
+{
+  "282b0e84aff38533d0201eee2e0fb27f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.100",
+    "duracao": 11.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3111863136291504,
+    "mos_stoi": 0.9242982864379883,
+    "mos_si_sdr": 16.867036819458008,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Os gigantes tinham andado tão ocupado, os brindos difíceis de fazendas, e nem ligavam para a floresta para o que estava acontecendo com os animais que moravam lá.",
+    "stt_wav2vec": "OS GIGANTES TINHAM ANDADO TOO ACUPADO VOZEMENDE DIFÍCIO DE VAVEZAS E NEM LIGAVAM PARA FLORESSE PARA O QUE ESTAVA ACONTUECENDO COM OS ANIMAIS QUE BUNAVAM Á"
+  },
+  "282b0e84aff38533d0201eee2e0fb27f_002.ogg": {
+    "tempo_inicio": "00:00:11.556",
+    "tempo_fim": "00:00:15.388",
+    "duracao": 3.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8820558786392212,
+    "mos_stoi": 0.8387026190757751,
+    "mos_si_sdr": 11.378471374511719,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Os gigantes se sentiram muito mal. Desculpem.",
+    "stt_wav2vec": "OS DIGANTES SICENTEIRAM MUITO MAL OS DESCULPEM"
+  }
+}

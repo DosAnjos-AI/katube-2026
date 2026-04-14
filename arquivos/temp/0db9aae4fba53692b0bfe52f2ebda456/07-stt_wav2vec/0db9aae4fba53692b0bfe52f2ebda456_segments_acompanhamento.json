@@ -1,0 +1,17 @@
+{
+  "0db9aae4fba53692b0bfe52f2ebda456_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.056",
+    "duracao": 4.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8155866861343384,
+    "mos_stoi": 0.8870421051979065,
+    "mos_si_sdr": 6.82445764541626,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A probabilidade de eu atingir este objetivo é muito maior",
+    "stt_wav2vec": "APROBOBAD DIL ATINGIRASSAVJETIVO É MUITO MAIOR"
+  }
+}

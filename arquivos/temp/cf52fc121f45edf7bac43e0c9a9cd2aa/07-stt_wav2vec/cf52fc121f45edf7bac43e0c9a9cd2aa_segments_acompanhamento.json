@@ -1,0 +1,32 @@
+{
+  "cf52fc121f45edf7bac43e0c9a9cd2aa_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.596",
+    "duracao": 13.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7361352443695068,
+    "mos_stoi": 0.9785568118095398,
+    "mos_si_sdr": 14.13549518585205,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Imaginemos ter 50 empresas que sejam expostas à tecnologia alemã, podemos ter empresas que só sigam, por exemplo, energias verdas, são empresas só do setor da Iágua.",
+    "stt_wav2vec": "IMAGINEMOS TE A CINQUENTA EMPRESAS QUE QUE SEJAM EMPOSTO E EXFORÇAS DA TECNILOGIAL MA PODEMOS TER EMPRESAS SÓ SIGAM POR EXEMPLO ENERGIAS VERDAS SÓ EM EMPRESAS SÓ DO SETOR DAE ÁGUA"
+  },
+  "cf52fc121f45edf7bac43e0c9a9cd2aa_002.ogg": {
+    "tempo_inicio": "00:00:13.636",
+    "tempo_fim": "00:00:22.782",
+    "duracao": 9.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.497560739517212,
+    "mos_stoi": 0.9399726986885071,
+    "mos_si_sdr": 13.106144905090332,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "empresas um pouco todo mundo. Ou então, aqueles indícios mais generalistas em que estás exposto a empresas de todo mundo, de todos os fatores e...",
+    "stt_wav2vec": "EMPRESAS O POUCO TODO MONRO OU ENTÃO CUIS AQUELOS ENDISCI MAIS INRALLISTAS ENTRAS A EXPOSTA EMPRESAS TODO O MUNDO TODO ATOE"
+  }
+}

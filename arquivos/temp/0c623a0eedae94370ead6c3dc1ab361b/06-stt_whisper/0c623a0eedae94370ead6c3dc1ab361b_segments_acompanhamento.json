@@ -1,0 +1,30 @@
+{
+  "0c623a0eedae94370ead6c3dc1ab361b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.340",
+    "duracao": 9.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5859320163726807,
+    "mos_stoi": 0.9151742458343506,
+    "mos_si_sdr": 15.263031959533691,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não é momento de debater nada que não seja a gente preservar a nossa saúde. E preservar a nossa saúde também passa..."
+  },
+  "0c623a0eedae94370ead6c3dc1ab361b_002.ogg": {
+    "tempo_inicio": "00:00:09.380",
+    "tempo_fim": "00:00:30.334",
+    "duracao": 20.95,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.696683645248413,
+    "mos_stoi": 0.933046817779541,
+    "mos_si_sdr": 15.949073791503906,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "por não estar brigando em rede social, por não estar encaminhando coisa ruim em grupo de WhatsApp e daqui a pouco brigar com aquela tia, com aquele tio, com aquele sobrinho mais aforado, não é hora pra gente pegar e romper essa corrente, essa egrégora que está sendo montada, sabe, gente? Eu acho que o grande legado que a gente pode deixar pro mundo, além de..."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "f7a180db77c2691e9f5a578f1cefffda_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:07.160",
+    "duracao": 7.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.514094829559326,
+    "mos_stoi": 0.9248814582824707,
+    "mos_si_sdr": 21.639984130859375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas você falou do Lívio, é curioso, porque eu acho que o Lívio é um grupo fantástico, adoro. Eu acho que o Lívio é um dos grupos que conseguiu conjugar isso de forma melhor."
+  }
+}

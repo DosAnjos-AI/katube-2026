@@ -1,0 +1,30 @@
+{
+  "55ecc7cc40bcbf316fe362dffaaea56b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.492",
+    "duracao": 10.49,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.190535545349121,
+    "mos_stoi": 0.9191214442253113,
+    "mos_si_sdr": 19.119590759277344,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Meu pai pintou a casa toda de alaranjado brilhante. Por muito tempo moramos numa casa, como ele mesmo de dia..."
+  },
+  "55ecc7cc40bcbf316fe362dffaaea56b_002.ogg": {
+    "tempo_inicio": "00:00:10.756",
+    "tempo_fim": "00:00:18.136",
+    "duracao": 7.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.233365058898926,
+    "mos_stoi": 0.9162268042564392,
+    "mos_si_sdr": 11.295995712280273,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

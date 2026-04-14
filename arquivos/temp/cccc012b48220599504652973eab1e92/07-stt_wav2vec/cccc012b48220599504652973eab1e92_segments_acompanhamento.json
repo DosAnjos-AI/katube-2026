@@ -1,0 +1,47 @@
+{
+  "cccc012b48220599504652973eab1e92_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.060",
+    "duracao": 4.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.978482484817505,
+    "mos_stoi": 0.9727104306221008,
+    "mos_si_sdr": 25.376853942871094,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "amigos, negócios à parte já por causa desse...",
+    "stt_wav2vec": "ÉMEIOS AMIGOS NE GOCIOS TAV PARTE DE CAPITAL DA LESTA É"
+  },
+  "cccc012b48220599504652973eab1e92_002.ogg": {
+    "tempo_inicio": "00:00:04.324",
+    "tempo_fim": "00:00:13.500",
+    "duracao": 9.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3254146575927734,
+    "mos_stoi": 0.9605166912078857,
+    "mos_si_sdr": 18.680252075195312,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Disso, não é? Porque acaba sempre, às vezes, por haver alguma chatice. Então, às vezes, eu gosto de separar. Se estiver no café, falar com amigos, tudo bem. Eu vou dando dicas e vou ajudando. Agora...",
+    "stt_wav2vec": "DISSE NÃO ÉPOCA CAVA SEMPRE AS VEZ POR POR HAVER ALGUMAS CHATITA ENTÃO ASVIDAS EOU GOSTODUS PARARTRENO CAFÉ FOLA COM AMIGASESTODO BANH EU VÃ NDANDO DICAS E VO JUDANDO AGORA"
+  },
+  "cccc012b48220599504652973eab1e92_003.ogg": {
+    "tempo_inicio": "00:00:13.988",
+    "tempo_fim": "00:00:18.238",
+    "duracao": 4.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.24992299079895,
+    "mos_stoi": 0.9879151582717896,
+    "mos_si_sdr": 16.951505661010742,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tente muitas vezes não dar demasiado porque sinto que gera problemas.",
+    "stt_wav2vec": "TENTO MUITAS VEZES NÃO NÃO DAR DOMASIADO PORQUE SINTO QUE GERA PROBLEMAS"
+  }
+}

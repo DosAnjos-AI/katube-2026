@@ -1,0 +1,17 @@
+{
+  "8ae73b5c2661ec9390b714017a404555_003.ogg": {
+    "tempo_inicio": "00:00:25.636",
+    "tempo_fim": "00:00:33.768",
+    "duracao": 8.13,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4689794778823853,
+    "mos_stoi": 0.8894086480140686,
+    "mos_si_sdr": 7.263612270355225,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vamos falando aí que eu vou desconectar e conectar. Wagner, estagiário. Se você fosse fazer uma live mostrando algo...",
+    "stt_wav2vec": "AMAS ESSOALNO QUE ESCLAM VÃO FALANDO ECA VOTAR MECTAIGONECA VAGNER ESTAGIÁRIO E VOCÊ FACE FAZER UMA LAIVE MOSTRANDO ALGO"
+  }
+}

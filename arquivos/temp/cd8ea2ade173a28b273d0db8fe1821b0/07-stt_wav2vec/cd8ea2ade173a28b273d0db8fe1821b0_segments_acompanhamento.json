@@ -1,0 +1,17 @@
+{
+  "cd8ea2ade173a28b273d0db8fe1821b0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.518",
+    "duracao": 3.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.624190330505371,
+    "mos_stoi": 0.9896826148033142,
+    "mos_si_sdr": 21.37149429321289,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Braga aqui, o Michel Braga, botou o seguinte, mano...",
+    "stt_wav2vec": "O BRAGA QUE O MICHEL BRAGA BOTOU SEGUINTE MANO"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "d7a25b207fe1d58d54a8aa633f4b7439_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.868",
+    "duracao": 3.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.669365882873535,
+    "mos_stoi": 0.9371514916419983,
+    "mos_si_sdr": 20.81893539428711,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Todas as dívidas que estão acima desse valor, matematicamente,",
+    "stt_wav2vec": "TODAS AS LIVIDAS QUE TÃO ACIMA DASSE VALOAR MATEMATICAMENTO"
+  },
+  "d7a25b207fe1d58d54a8aa633f4b7439_002.ogg": {
+    "tempo_inicio": "00:00:04.132",
+    "tempo_fim": "00:00:08.366",
+    "duracao": 4.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8264763355255127,
+    "mos_stoi": 0.9834312796592712,
+    "mos_si_sdr": 18.502307891845703,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "faz mais sentido pagá-las primeiro, porque o teu retorno maior nas dívidas",
+    "stt_wav2vec": "FAZO MAIS QUE ANTIRDAS PAGÁ-LAS PRIMEIRO POR COOUTEU FUTORO MAIOR NAS DÍVIDAS"
+  }
+}

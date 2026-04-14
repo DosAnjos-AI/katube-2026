@@ -1,0 +1,17 @@
+{
+  "8b9fce75fc43305f8fc710ec4c1a0214_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.120",
+    "duracao": 4.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3689985275268555,
+    "mos_stoi": 0.9863377213478088,
+    "mos_si_sdr": 18.162841796875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "preferias ficar no escritório só assinar papéis",
+    "stt_wav2vec": "FRIAS FICADO S ESCRITORIOES SÓ ASSINAR PAPÉIS"
+  }
+}

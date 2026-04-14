@@ -1,0 +1,16 @@
+{
+  "864a7fd48197600ffd35540bd27f82c5_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.968",
+    "duracao": 4.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6903815269470215,
+    "mos_stoi": 0.9457001090049744,
+    "mos_si_sdr": 17.539966583251953,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ponto vista, tu agora disseste que estás à procura também de uma pessoa do Moracete para te ajudar, mas não..."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "3b0a36a361d422995bd7631c9a7900b3_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.678",
+    "duracao": 11.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.751140832901001,
+    "mos_stoi": 0.9683197140693665,
+    "mos_si_sdr": 10.623431205749512,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "da ciclista que andava de bicicleta, tinha o quadro da telefonista, tinha vários quadros de várias profissões diferentes, né? E quando ele chegou no Brasil, ele viu aquelas"
+  }
+}

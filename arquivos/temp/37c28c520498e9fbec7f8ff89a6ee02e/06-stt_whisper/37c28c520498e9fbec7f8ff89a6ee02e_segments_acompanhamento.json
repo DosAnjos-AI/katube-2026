@@ -1,0 +1,30 @@
+{
+  "37c28c520498e9fbec7f8ff89a6ee02e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.316",
+    "duracao": 4.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.476231336593628,
+    "mos_stoi": 0.9833435416221619,
+    "mos_si_sdr": 25.0443058013916,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "eu vi que ficou certinho parecendo uma rádio se eu pegasse"
+  },
+  "37c28c520498e9fbec7f8ff89a6ee02e_002.ogg": {
+    "tempo_inicio": "00:00:04.644",
+    "tempo_fim": "00:00:08.412",
+    "duracao": 3.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2162718772888184,
+    "mos_stoi": 0.9668640494346619,
+    "mos_si_sdr": 21.24915313720703,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e trabalhasse mais um pouco nela, ajustasse mais um pouquinho"
+  }
+}

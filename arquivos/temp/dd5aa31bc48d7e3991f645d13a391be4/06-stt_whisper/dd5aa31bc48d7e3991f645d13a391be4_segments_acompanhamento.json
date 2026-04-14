@@ -1,0 +1,44 @@
+{
+  "dd5aa31bc48d7e3991f645d13a391be4_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.724",
+    "duracao": 9.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1931838989257812,
+    "mos_stoi": 0.949255645275116,
+    "mos_si_sdr": 20.660114288330078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, para a gente começar a pensar o que estava em jogo naquele período, escutar esse podcast da Iná falando CPCs é super legal, porque ali mostra uma das questões que estava em jogo."
+  },
+  "dd5aa31bc48d7e3991f645d13a391be4_002.ogg": {
+    "tempo_inicio": "00:00:10.148",
+    "tempo_fim": "00:00:13.724",
+    "duracao": 3.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.519111156463623,
+    "mos_stoi": 0.9176328778266907,
+    "mos_si_sdr": 10.406501770019531,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas quando a gente já pensa assim, na metade final da década de 60..."
+  },
+  "dd5aa31bc48d7e3991f645d13a391be4_003.ogg": {
+    "tempo_inicio": "00:00:14.116",
+    "tempo_fim": "00:00:23.096",
+    "duracao": 8.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.580082893371582,
+    "mos_stoi": 0.9274275302886963,
+    "mos_si_sdr": 13.386548042297363,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "era algo que todo esse grande movimento de popularização, experimentalismo, de tentar outra forma de pensar cultura socialmente,"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "3a6ec190698498ef68a68c1feb087489_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.622",
+    "duracao": 4.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.163832902908325,
+    "mos_stoi": 0.9863735437393188,
+    "mos_si_sdr": 23.94198989868164,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas nos últimos dois anos, meu LinkedIn passou a me apresentar de uma outra forma."
+  }
+}

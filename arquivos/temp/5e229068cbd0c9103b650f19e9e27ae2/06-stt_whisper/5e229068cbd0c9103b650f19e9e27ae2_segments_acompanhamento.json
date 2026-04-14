@@ -1,0 +1,16 @@
+{
+  "5e229068cbd0c9103b650f19e9e27ae2_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.958",
+    "duracao": 4.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8682289123535156,
+    "mos_stoi": 0.8376030325889587,
+    "mos_si_sdr": 3.977810859680176,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que vai dar São Paulo 2x1. 2x1, São Paulo para o Fanesse Denilson."
+  }
+}

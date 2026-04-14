@@ -1,0 +1,16 @@
+{
+  "315b6539b27ce4c9f76f13e72e99a4f2_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.720",
+    "duracao": 7.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0129952430725098,
+    "mos_stoi": 0.9370514154434204,
+    "mos_si_sdr": 18.360374450683594,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "pelos laços de amizade que eu criei aí com pessoas do Brasil inteiro, né? Foram mais 34 jovens aí, além de mim."
+  }
+}

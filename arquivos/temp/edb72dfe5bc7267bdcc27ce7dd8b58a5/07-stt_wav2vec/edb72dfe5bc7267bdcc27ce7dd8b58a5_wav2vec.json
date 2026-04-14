@@ -1,0 +1,17 @@
+{
+  "edb72dfe5bc7267bdcc27ce7dd8b58a5_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.292",
+    "duracao": 7.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0170819759368896,
+    "mos_stoi": 0.9546229839324951,
+    "mos_si_sdr": 13.558884620666504,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, o seguinte, ele trabalha com sistemas de segurança, alarmes e automação industrial.",
+    "stt_wav2vec": "ENTÃO O SEGUINTE ELE TRABALHA COM SISTEMA SEGURANÇA ALARMES E AUTOMAÇÃO INDUSTRIAL"
+  }
+}

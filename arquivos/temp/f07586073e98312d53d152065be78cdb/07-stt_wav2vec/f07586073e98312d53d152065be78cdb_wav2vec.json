@@ -1,0 +1,32 @@
+{
+  "f07586073e98312d53d152065be78cdb_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:03.708",
+    "duracao": 3.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4574055671691895,
+    "mos_stoi": 0.78431236743927,
+    "mos_si_sdr": -1.8903697729110718,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Como sabes também, eu faço o registro todo na minha folha de despesas.",
+    "stt_wav2vec": "COMO SABES TAMÃE EU FAÇO O REGI EDITOVNA NA MINHA VORAAS DESPESA"
+  },
+  "f07586073e98312d53d152065be78cdb_002.ogg": {
+    "tempo_inicio": "00:00:04.068",
+    "tempo_fim": "00:00:10.696",
+    "duracao": 6.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3809407949447632,
+    "mos_stoi": 0.7720507979393005,
+    "mos_si_sdr": 4.305797100067139,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e tudo o que é despesas associadas, imagina-se para o supermercado nas férias, eu coloco isso em férias e não em supermercado.",
+    "stt_wav2vec": "E TUDO O QUE É DESPELOS ASSOCIADOS E MAJAN SUPORAM SUPERMMERCADO NAS FAREAS EUCOLOCOIS EM FÉRIAS E NÃO EPERCADO"
+  }
+}

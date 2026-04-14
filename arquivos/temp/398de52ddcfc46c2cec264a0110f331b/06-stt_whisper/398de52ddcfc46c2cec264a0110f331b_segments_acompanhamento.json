@@ -1,0 +1,44 @@
+{
+  "398de52ddcfc46c2cec264a0110f331b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.684",
+    "duracao": 6.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3417741060256958,
+    "mos_stoi": 0.9497612118721008,
+    "mos_si_sdr": 8.24127197265625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "deixar marcas boas no trânsito. É o objetivo da diretora institucional do Detran Gaúcho, Disa Gonzaga."
+  },
+  "398de52ddcfc46c2cec264a0110f331b_002.ogg": {
+    "tempo_inicio": "00:00:06.788",
+    "tempo_fim": "00:00:19.612",
+    "duracao": 12.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3765329122543335,
+    "mos_stoi": 0.9602753520011902,
+    "mos_si_sdr": -3.4716315269470215,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que inaugurou a fundação Tiago Gonzaga em 1996, depois de perder o filho, o Thiago, com apenas 18 anos, num acidente de trânsito. Trânsito é vida, que circulam nas avenidas, nas ruas."
+  },
+  "398de52ddcfc46c2cec264a0110f331b_003.ogg": {
+    "tempo_inicio": "00:00:19.908",
+    "tempo_fim": "00:00:29.276",
+    "duracao": 9.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7675385475158691,
+    "mos_stoi": 0.9049180150032043,
+    "mos_si_sdr": 6.55518913269043,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nas estradas não são máquinas, né? São vidas. E a gente tem feito um trabalho, né? Que iniciou com um grito de uma mãe e conseguimos, né?"
+  }
+}

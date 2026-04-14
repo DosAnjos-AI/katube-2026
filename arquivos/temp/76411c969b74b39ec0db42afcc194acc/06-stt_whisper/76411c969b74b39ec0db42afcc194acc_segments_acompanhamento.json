@@ -1,0 +1,16 @@
+{
+  "76411c969b74b39ec0db42afcc194acc_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.880",
+    "duracao": 13.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5365355014801025,
+    "mos_stoi": 0.951004147529602,
+    "mos_si_sdr": 15.190011024475098,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Percie Jackson é aquela coisa que você tem que descer parado. Você assiste os filmes e separar dos livros. Não, é outra coisa. Você não pode comparar. Se você for comparar, é uma tristeza, entendeu? O Percy Jackson devia ter sido feito na mesma fórmula de Harry Potter."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "f36c5daba8f0a1e805ad08fe6ae77781_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.756",
+    "duracao": 9.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6612200736999512,
+    "mos_stoi": 0.8788397312164307,
+    "mos_si_sdr": 10.422618865966797,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ele se posiciona pra dentro da área, com o corpo, projeto assim, e chapa ela pra trás, assim, na diagonal, e aí o o Mbappé errou, né?"
+  },
+  "f36c5daba8f0a1e805ad08fe6ae77781_002.ogg": {
+    "tempo_inicio": "00:00:10.052",
+    "tempo_fim": "00:00:17.660",
+    "duracao": 7.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6562005281448364,
+    "mos_stoi": 0.8460032939910889,
+    "mos_si_sdr": 7.6608452796936035,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E achei o Neymar, assim, muito mal mesmo, muito mal. Fiz a flauta no início do podcast ali, mas..."
+  },
+  "f36c5daba8f0a1e805ad08fe6ae77781_003.ogg": {
+    "tempo_inicio": "00:00:18.020",
+    "tempo_fim": "00:00:28.918",
+    "duracao": 10.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9189002513885498,
+    "mos_stoi": 0.939120352268219,
+    "mos_si_sdr": 17.604923248291016,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Achei ele, assim, até comentei, meu pai tava aqui assistindo comigo, que o Balnemar não veio, parece estar sem vontade, assim, tipo, o Mbappé tava com mais, parece que tava com mais gana, mas..."
+  }
+}

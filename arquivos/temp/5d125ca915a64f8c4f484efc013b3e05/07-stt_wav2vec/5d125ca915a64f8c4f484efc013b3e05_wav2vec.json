@@ -1,0 +1,17 @@
+{
+  "5d125ca915a64f8c4f484efc013b3e05_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.118",
+    "duracao": 9.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4154350757598877,
+    "mos_stoi": 0.9762059450149536,
+    "mos_si_sdr": 22.459630966186523,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu estava pela manhã numa reunião do Fomento, que é um processo, também uma conquista histórica, como a situação dos grupos atualmente em São Paulo",
+    "stt_wav2vec": "TAMBÉM OTAVA PELA MANHÃ NUMA REUNIÃO DO FOMENTO E HA UM PROCESSO NE TAMBÉM UMA CONQUISTA HISTÓRICA COMO A SITUAÇÃO DOS GRUPOS ATUALMENTE EM SÃO PAULO"
+  }
+}

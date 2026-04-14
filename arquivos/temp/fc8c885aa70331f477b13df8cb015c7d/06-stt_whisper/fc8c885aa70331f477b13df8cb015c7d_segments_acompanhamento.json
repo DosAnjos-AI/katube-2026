@@ -1,0 +1,16 @@
+{
+  "fc8c885aa70331f477b13df8cb015c7d_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:11.992",
+    "duracao": 11.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3116745948791504,
+    "mos_stoi": 0.9603716135025024,
+    "mos_si_sdr": 17.940404891967773,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "apá, não dá para continuar nada assim. Isso é a mesma coisa que tu desejas que queres emagrecer não sei quantos quilos até o verão e não teres uma balança em casa. Exatamente. Ou não saberes quanto é que tu usava no início"
+  }
+}

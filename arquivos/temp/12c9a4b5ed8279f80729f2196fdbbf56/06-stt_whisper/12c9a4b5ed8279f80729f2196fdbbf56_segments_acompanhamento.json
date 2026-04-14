@@ -1,0 +1,16 @@
+{
+  "12c9a4b5ed8279f80729f2196fdbbf56_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.544",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6556422710418701,
+    "mos_stoi": 0.888217568397522,
+    "mos_si_sdr": 8.255545616149902,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A única preocupação que eu quero é que o hotel tem que não mostro mais nada."
+  }
+}

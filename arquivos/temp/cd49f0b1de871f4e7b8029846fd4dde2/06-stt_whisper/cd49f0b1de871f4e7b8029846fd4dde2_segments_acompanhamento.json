@@ -1,0 +1,16 @@
+{
+  "cd49f0b1de871f4e7b8029846fd4dde2_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.840",
+    "duracao": 4.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2731196880340576,
+    "mos_stoi": 0.953678548336029,
+    "mos_si_sdr": 23.1612491607666,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É meio que ela se perde nos outros. E o último é um canteiro de memórias"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "0d8a03a799fbedf34c56c46e9deabd59_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.272",
+    "duracao": 5.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7451894283294678,
+    "mos_stoi": 0.7782378792762756,
+    "mos_si_sdr": 6.403656959533691,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu cravei. Os brasileiros todos aí, na zero. Aí, assim, o jogo..."
+  }
+}

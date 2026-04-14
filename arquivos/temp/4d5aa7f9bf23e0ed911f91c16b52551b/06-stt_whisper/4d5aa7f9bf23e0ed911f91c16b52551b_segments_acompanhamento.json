@@ -1,0 +1,72 @@
+{
+  "4d5aa7f9bf23e0ed911f91c16b52551b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.660",
+    "duracao": 13.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.079380750656128,
+    "mos_stoi": 0.980553388595581,
+    "mos_si_sdr": 16.942697525024414,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "esse dinamismo simultaneamente material e imaginário, que expressa a potência do princípio criativo e pode resultar em concepções e práticas inovadoras de vida. Para ele, a dança."
+  },
+  "4d5aa7f9bf23e0ed911f91c16b52551b_002.ogg": {
+    "tempo_inicio": "00:00:13.988",
+    "tempo_fim": "00:00:18.236",
+    "duracao": 4.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2956228256225586,
+    "mos_stoi": 0.9680109620094299,
+    "mos_si_sdr": 19.549022674560547,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A nossa dança pessoal é a expressão de nossas vidas."
+  },
+  "4d5aa7f9bf23e0ed911f91c16b52551b_003.ogg": {
+    "tempo_inicio": "00:00:18.532",
+    "tempo_fim": "00:00:23.004",
+    "duracao": 4.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3229331970214844,
+    "mos_stoi": 0.994691789150238,
+    "mos_si_sdr": 14.83126163482666,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "não apenas a graciosidade do gesto, mas também a liberdade."
+  },
+  "4d5aa7f9bf23e0ed911f91c16b52551b_004.ogg": {
+    "tempo_inicio": "00:00:23.364",
+    "tempo_fim": "00:00:27.196",
+    "duracao": 3.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.07118558883667,
+    "mos_stoi": 0.9609267711639404,
+    "mos_si_sdr": 13.804348945617676,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que possibilita a pessoa se expor por meio do seu próprio movimento."
+  },
+  "4d5aa7f9bf23e0ed911f91c16b52551b_005.ogg": {
+    "tempo_inicio": "00:00:27.652",
+    "tempo_fim": "00:00:31.214",
+    "duracao": 3.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9287976026535034,
+    "mos_stoi": 0.9494161605834961,
+    "mos_si_sdr": 13.977169036865234,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nossa convidada de hoje é Sônia Machado de Azevedo."
+  }
+}

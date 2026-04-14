@@ -1,0 +1,30 @@
+{
+  "dfa2d6311159bb25b99804de4aa256e4_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.668",
+    "duracao": 4.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9360690116882324,
+    "mos_stoi": 0.9303393959999084,
+    "mos_si_sdr": 16.957969665527344,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nós temos opção 1, Alemanha, 2, Itália, 3."
+  },
+  "dfa2d6311159bb25b99804de4aa256e4_002.ogg": {
+    "tempo_inicio": "00:00:04.996",
+    "tempo_fim": "00:00:09.502",
+    "duracao": 4.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4955496788024902,
+    "mos_stoi": 0.9343207478523254,
+    "mos_si_sdr": 12.274476051330566,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Portugal, 4, Malta e 5, Eslováquia."
+  }
+}

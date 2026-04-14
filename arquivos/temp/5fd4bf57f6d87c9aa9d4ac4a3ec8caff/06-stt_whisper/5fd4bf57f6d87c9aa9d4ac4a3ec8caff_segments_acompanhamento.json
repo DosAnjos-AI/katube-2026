@@ -1,0 +1,44 @@
+{
+  "5fd4bf57f6d87c9aa9d4ac4a3ec8caff_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.220",
+    "duracao": 8.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8422832489013672,
+    "mos_stoi": 0.8842359185218811,
+    "mos_si_sdr": 7.5511932373046875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Trote, trote, trote. Eles foram trotando juntos. Uau! Disse Berta. Olha, desapareceu tudo."
+  },
+  "5fd4bf57f6d87c9aa9d4ac4a3ec8caff_002.ogg": {
+    "tempo_inicio": "00:00:08.292",
+    "tempo_fim": "00:00:19.868",
+    "duracao": 11.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.327927827835083,
+    "mos_stoi": 0.8838951587677002,
+    "mos_si_sdr": 5.860591888427734,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Essas são as flores mais raras do mundo, disse Blue sorrindo. Então... Galope, galope, galope. Viva! Estou me sentindo tão livre! gritou Berta."
+  },
+  "5fd4bf57f6d87c9aa9d4ac4a3ec8caff_003.ogg": {
+    "tempo_inicio": "00:00:20.292",
+    "tempo_fim": "00:00:25.526",
+    "duracao": 5.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.722743511199951,
+    "mos_stoi": 0.9462791085243225,
+    "mos_si_sdr": 13.49897289276123,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Você é livre, amiga, disse Blue. Foi um dia maravilhoso."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "7c55b9d359a111287243b6e74ae2ec74_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.134",
+    "duracao": 5.13,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5380816459655762,
+    "mos_stoi": 0.7565293312072754,
+    "mos_si_sdr": 4.937572002410889,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Dúvidas. Eu sei dizer. Nossa Senhora. Ele foi secar.",
+    "stt_wav2vec": "DOBENGAÁS TARES VER E MINHA NOSSA SENHORA AO PRINZAR EULE FOFOI SECAR"
+  }
+}

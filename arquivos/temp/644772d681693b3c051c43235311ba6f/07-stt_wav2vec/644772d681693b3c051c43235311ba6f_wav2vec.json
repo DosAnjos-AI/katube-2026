@@ -1,0 +1,17 @@
+{
+  "644772d681693b3c051c43235311ba6f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.020",
+    "duracao": 9.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.391754150390625,
+    "mos_stoi": 0.8945829272270203,
+    "mos_si_sdr": 12.558981895446777,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí na hora que ele virou pra mim e falou isso, eu pensei assim, cara, não veio de mim. Então isso tá se tornando uma cultura, mas é...",
+    "stt_wav2vec": "AINNAHODA QUE ELLE VIROU PARA MIM FALOUIMSE EU PENSERSE EM CARA É NÃO VEIO DE MIM ENTÃO ISSO PÁ SE TORNANDO UMA CULTURA MAS É"
+  }
+}

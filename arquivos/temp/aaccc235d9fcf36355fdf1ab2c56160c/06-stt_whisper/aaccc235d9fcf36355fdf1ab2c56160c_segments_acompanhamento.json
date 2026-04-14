@@ -1,0 +1,30 @@
+{
+  "aaccc235d9fcf36355fdf1ab2c56160c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.420",
+    "duracao": 11.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9350621700286865,
+    "mos_stoi": 0.9591904878616333,
+    "mos_si_sdr": 21.209285736083984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, você já vê que aí já tem um pedaço do carnaval entrando, porque o rei Momo nosso é o rei do carnaval, né? E aí, esse rei Momo..."
+  },
+  "aaccc235d9fcf36355fdf1ab2c56160c_002.ogg": {
+    "tempo_inicio": "00:00:11.460",
+    "tempo_fim": "00:00:29.712",
+    "duracao": 18.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0430266857147217,
+    "mos_stoi": 0.909436821937561,
+    "mos_si_sdr": 9.637530326843262,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "No teatro de revista, na primeira manifestação de revista que teve na França, ele era o apresentador, ele era o Comper, ele era aquele que fazia a ligação dos quadros e eles passaram em revista o teatro da França, que foi muito engraçado, o teatro daquele ano."
+  }
+}

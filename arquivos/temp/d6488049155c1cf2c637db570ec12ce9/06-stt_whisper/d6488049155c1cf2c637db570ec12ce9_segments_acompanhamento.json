@@ -1,0 +1,16 @@
+{
+  "d6488049155c1cf2c637db570ec12ce9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.756",
+    "duracao": 5.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.536625862121582,
+    "mos_stoi": 0.970008373260498,
+    "mos_si_sdr": 22.615802764892578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e eu estou numa situação em que tenho uma renda baixa e enquanto poder continuar aqui tudo bem porque é..."
+  }
+}

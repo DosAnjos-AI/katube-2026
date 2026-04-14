@@ -1,0 +1,16 @@
+{
+  "b85c1f61089fe69c23b0e3e594356262_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.724",
+    "duracao": 9.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5956367254257202,
+    "mos_stoi": 0.9149889945983887,
+    "mos_si_sdr": 8.19064998626709,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Até a porta do público. Vai ficar tudo bem, você vai ver. Mas ao levantar os olhos, via a placa na porta. Proibido aos elefantes."
+  }
+}

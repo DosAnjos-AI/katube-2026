@@ -1,0 +1,17 @@
+{
+  "04de5443fcafcc94de7671cfd5134f4c_001.ogg": {
+    "tempo_inicio": "00:00:01.060",
+    "tempo_fim": "00:00:16.744",
+    "duracao": 15.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3784546852111816,
+    "mos_stoi": 0.9535921216011047,
+    "mos_si_sdr": 18.663087844848633,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "fui para a raça de Orkshire, nunca tinha tido, não ligava nenhum, mesmo quando via na rua, não achava piada nenhuma ao cão de ter aquele pelo com preso e, olhem, agora que tenho, é inexplicável, há grupos de Orkshire, de bens, dos homens de Orkshire, é assim uma coisa, é mesmo",
+    "stt_wav2vec": "FUI PARAÇAEORQUE CXAIAR NUNCA TINHA TIDO NÃO LIGAVA NENHUM MEM QUANDO BINARA NA RUA NÃO ACHAVA PIADA NENHUMA AOCÃO VETERQUELLO PELO COMPREVE OLHEN AGORA TRANHO E EINEXPLICAVEL LÁ GRUPOS DE ORQE HAIAR  PÁGINAS DO DONOS DE ORQE XAIAR DSSES COISA"
+  }
+}

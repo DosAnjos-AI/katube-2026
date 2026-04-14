@@ -1,0 +1,30 @@
+{
+  "215d02d021134d3b4d756368cc2ace7c_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.796",
+    "duracao": 4.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1382193565368652,
+    "mos_stoi": 0.9586983919143677,
+    "mos_si_sdr": 13.799666404724121,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "215d02d021134d3b4d756368cc2ace7c_002.ogg": {
+    "tempo_inicio": "00:00:05.380",
+    "tempo_fim": "00:00:12.662",
+    "duracao": 7.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.710235834121704,
+    "mos_stoi": 0.8977811932563782,
+    "mos_si_sdr": 13.280549049377441,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E voltou pro Brasil pra comandar aí com o Fluminense e ganhar um monte de título, bater o recorde de gol e tudo mais, foi o Fred, né?"
+  }
+}

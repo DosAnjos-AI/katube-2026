@@ -1,0 +1,16 @@
+{
+  "e30e45fe2407475af49bde7f06eb27ae_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.878",
+    "duracao": 6.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1646777391433716,
+    "mos_stoi": 0.6670097708702087,
+    "mos_si_sdr": -1.9866911172866821,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É porque eu estava falando sério, que eu sou atriz da Globo."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "838fcad445b5e6fd4eebce734348579d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.892",
+    "duracao": 8.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.609287977218628,
+    "mos_stoi": 0.8283756971359253,
+    "mos_si_sdr": 8.215998649597168,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sem dúvida, mas eu acho que isso faz parte daquilo que são as pessoas e não daquilo que não rege o..."
+  },
+  "838fcad445b5e6fd4eebce734348579d_002.ogg": {
+    "tempo_inicio": "00:00:09.188",
+    "tempo_fim": "00:00:13.788",
+    "duracao": 4.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9286051988601685,
+    "mos_stoi": 0.8752699494361877,
+    "mos_si_sdr": 6.013758182525635,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o que as pessoas pretendem. Quer dizer, o projeto da gente, a gente sabe que é"
+  },
+  "838fcad445b5e6fd4eebce734348579d_003.ogg": {
+    "tempo_inicio": "00:00:14.052",
+    "tempo_fim": "00:00:20.014",
+    "duracao": 5.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9699015617370605,
+    "mos_stoi": 0.8188857436180115,
+    "mos_si_sdr": 9.103362083435059,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "um projeto que fere os interesses das pessoas que"
+  }
+}

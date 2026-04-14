@@ -1,0 +1,30 @@
+{
+  "2f0913ed209f5178aeaab171b1c63fd0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.676",
+    "duracao": 3.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2737460136413574,
+    "mos_stoi": 0.5167281031608582,
+    "mos_si_sdr": -11.189825057983398,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Depois nunca mais."
+  },
+  "2f0913ed209f5178aeaab171b1c63fd0_002.ogg": {
+    "tempo_inicio": "00:00:03.780",
+    "tempo_fim": "00:00:25.902",
+    "duracao": 22.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2209047079086304,
+    "mos_stoi": 0.7691161632537842,
+    "mos_si_sdr": 1.3255298137664795,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

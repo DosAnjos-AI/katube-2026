@@ -1,0 +1,30 @@
+{
+  "9c52e802c2ca115e10694954504e2163_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.868",
+    "duracao": 3.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5504000186920166,
+    "mos_stoi": 0.9006864428520203,
+    "mos_si_sdr": 16.272064208984375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vai, pera aí, alguém acode a Laura ali."
+  },
+  "9c52e802c2ca115e10694954504e2163_002.ogg": {
+    "tempo_inicio": "00:00:04.420",
+    "tempo_fim": "00:00:18.876",
+    "duracao": 14.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.98997962474823,
+    "mos_stoi": 0.9564406275749207,
+    "mos_si_sdr": 12.310931205749512,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Uma possível saída do D'Alessandro, que tem seu contrato sendo encerrado agora no final do ano, não sabe ainda se vai renovar o não, ele deu uma entrevista durante a semana. Depois vamos falar também sobre o André, a situação do centroavante Andréia no Grêmio, também tem sua situação indefinida."
+  }
+}

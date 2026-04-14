@@ -1,0 +1,30 @@
+{
+  "e8496200478324f870324727149ccd5e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:21.052",
+    "duracao": 21.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3651394844055176,
+    "mos_stoi": 0.920459508895874,
+    "mos_si_sdr": 8.53223705291748,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele pegou, por exemplo, em uns filmes mudos, ele pegou umas pessoas pra ficar narrando, lembro os lábios e falando mais ou menos o que eles estavam falando. Só que no fundo também, na frente, e aí também é colorido e bonitaço, assim, parece que você tá vendo uma parada que foi filmada ontem, bem legal. E ele vai fazer o mesmo com esse dos Beatles, tá? Intitulado The Beatles Get Beck. O projeto promete mostrar os bastidores do álbum Leti Be."
+  },
+  "e8496200478324f870324727149ccd5e_002.ogg": {
+    "tempo_inicio": "00:00:21.220",
+    "tempo_fim": "00:00:31.544",
+    "duracao": 10.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.277156949043274,
+    "mos_stoi": 0.9154869914054871,
+    "mos_si_sdr": 8.100895881652832,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Jackson retirou as cenas em estúdio de uma filmagem de quase 55 horas feita por Michael Leeds e Rock no ano de 69. Como se isso já não bastasse."
+  }
+}

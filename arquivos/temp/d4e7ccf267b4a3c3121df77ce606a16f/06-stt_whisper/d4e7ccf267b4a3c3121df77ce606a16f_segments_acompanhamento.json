@@ -1,0 +1,30 @@
+{
+  "d4e7ccf267b4a3c3121df77ce606a16f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.988",
+    "duracao": 4.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2743539810180664,
+    "mos_stoi": 0.9291462898254395,
+    "mos_si_sdr": 13.103022575378418,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "embelezando mais essa cultura. Outra coisa muito importante que ele vai..."
+  },
+  "d4e7ccf267b4a3c3121df77ce606a16f_002.ogg": {
+    "tempo_inicio": "00:00:05.252",
+    "tempo_fim": "00:00:18.616",
+    "duracao": 13.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.817861557006836,
+    "mos_stoi": 0.9590077996253967,
+    "mos_si_sdr": 12.859062194824219,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "vai comparar da obra de Gilberto Freire com a do Van Rage, né? Diferente de Van Rage, o Gilberto Freire, ele pensava mais o Brasil em termos, além de raciais, o Vanragem,"
+  }
+}

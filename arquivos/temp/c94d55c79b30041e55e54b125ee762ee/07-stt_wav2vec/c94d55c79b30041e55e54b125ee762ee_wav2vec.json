@@ -1,0 +1,17 @@
+{
+  "c94d55c79b30041e55e54b125ee762ee_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:04.600",
+    "duracao": 4.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9933243989944458,
+    "mos_stoi": 0.9197551012039185,
+    "mos_si_sdr": 13.168282508850098,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "K. Conta. Um podcast de contação de histórias infantis.",
+    "stt_wav2vec": "CÁ CONTA NUO PODE QUECTO DE CONTAÇÃO DE HISTÓRIAS INFANTIS"
+  }
+}

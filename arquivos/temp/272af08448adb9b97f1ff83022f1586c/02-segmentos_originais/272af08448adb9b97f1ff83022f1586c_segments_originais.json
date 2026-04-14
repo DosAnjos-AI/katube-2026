@@ -1,0 +1,18 @@
+{
+  "272af08448adb9b97f1ff83022f1586c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.572",
+    "duracao": 4.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "272af08448adb9b97f1ff83022f1586c_002.ogg": {
+    "tempo_inicio": "00:00:05.764",
+    "tempo_fim": "00:00:10.504",
+    "duracao": 4.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  }
+}

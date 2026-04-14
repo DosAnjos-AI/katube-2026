@@ -1,0 +1,17 @@
+{
+  "242d98a9c1e356d98e409544f44708fc_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.228",
+    "duracao": 11.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.229238510131836,
+    "mos_stoi": 0.7918853759765625,
+    "mos_si_sdr": 6.022660255432129,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pois bem, no capítulo 6 da obra intitulada A Maior Fraude da História, Noah Hari inicia a discussão apresentando a transição do modo de vida passador coletor para o meio sedentário.",
+    "stt_wav2vec": "POIS BEM NO CAPITULO EI DA OBRA INTITULADA A MAIOR FRAUDE DA HISTÓRIA NÃO HA RARAINICIA SCUÇÃO APRESENTANDO A TRANSIÇÃO DO MODO DE VIDA CANÇA DO COLETOR PARA O MEIO SEDENTÁRIO"
+  }
+}

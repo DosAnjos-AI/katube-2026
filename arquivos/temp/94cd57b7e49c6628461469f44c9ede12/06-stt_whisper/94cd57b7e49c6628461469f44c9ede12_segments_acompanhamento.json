@@ -1,0 +1,30 @@
+{
+  "94cd57b7e49c6628461469f44c9ede12_001.ogg": {
+    "tempo_inicio": "00:00:00.420",
+    "tempo_fim": "00:00:09.308",
+    "duracao": 8.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5163122415542603,
+    "mos_stoi": 0.918918251991272,
+    "mos_si_sdr": 8.473968505859375,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "94cd57b7e49c6628461469f44c9ede12_002.ogg": {
+    "tempo_inicio": "00:00:09.540",
+    "tempo_fim": "00:00:28.636",
+    "duracao": 19.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3353642225265503,
+    "mos_stoi": 0.880330502986908,
+    "mos_si_sdr": 5.044794082641602,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Por que será? E o pessoal pode mandar charadinhas lá no meu Instagram, no meu direct. Ah, eles podem? Qual é o teu Instagram? Aliás, não só podem como devem, né? Ah, o ouvinte pode colaborar e a gente dá o crédito aqui no nosso. Importante, importante dar o crédito. Essa aqui quem mandou foi o Jefferson Júnior."
+  }
+}

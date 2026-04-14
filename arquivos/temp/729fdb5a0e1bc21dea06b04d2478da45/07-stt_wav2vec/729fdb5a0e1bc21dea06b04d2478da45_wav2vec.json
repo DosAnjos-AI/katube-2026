@@ -1,0 +1,17 @@
+{
+  "729fdb5a0e1bc21dea06b04d2478da45_001.ogg": {
+    "tempo_inicio": "00:00:00.388",
+    "tempo_fim": "00:00:09.384",
+    "duracao": 9.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.377105236053467,
+    "mos_stoi": 0.9027366638183594,
+    "mos_si_sdr": 17.055814743041992,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "eu que, quando Isadora Duncan começou a procurar os primeiros impulsos para o movimento, quando Laban viu Isadora Duncan dançar,",
+    "stt_wav2vec": "EU QUE QUANDO ESADORA DANCAN COMEÇOU A PROCURAR OS PRIMEIROS IMPULSOS PRO MOVIMENTO QUANDO LABA VIU ES ADORA DENCANANÇAR"
+  }
+}

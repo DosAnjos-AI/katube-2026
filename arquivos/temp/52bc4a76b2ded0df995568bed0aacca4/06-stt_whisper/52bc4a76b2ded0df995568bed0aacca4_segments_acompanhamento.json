@@ -1,0 +1,16 @@
+{
+  "52bc4a76b2ded0df995568bed0aacca4_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.972",
+    "duracao": 6.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.467061996459961,
+    "mos_stoi": 0.7500247359275818,
+    "mos_si_sdr": 0.17956197261810303,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "embora desprezado pela classe média, pela classe alta, de qualquer país da América Latina,"
+  }
+}

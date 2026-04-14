@@ -1,0 +1,16 @@
+{
+  "b2d241088a27ebdd730c850a23a6dd98_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.808",
+    "duracao": 8.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0431008338928223,
+    "mos_stoi": 0.9210821390151978,
+    "mos_si_sdr": 13.443219184875488,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Exatamente. E não digam que o Aldeolibus não é ler, porque ler é absorver conhecimento e tanto faz se te leem ou se leste o U."
+  }
+}

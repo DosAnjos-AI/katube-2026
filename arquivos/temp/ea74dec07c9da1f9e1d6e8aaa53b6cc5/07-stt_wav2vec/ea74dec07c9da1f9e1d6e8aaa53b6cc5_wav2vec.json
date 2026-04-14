@@ -1,0 +1,17 @@
+{
+  "ea74dec07c9da1f9e1d6e8aaa53b6cc5_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:18.172",
+    "duracao": 18.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5595827102661133,
+    "mos_stoi": 0.903735339641571,
+    "mos_si_sdr": 7.385902404785156,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Do Renato e o Vitor Ferraz. Teve a mesma atuação, o mesmo jeito de jogar. Muda bastante. O lado direito muda bastante justamente para aquilo que a gente já comentou. Do Ruella fazer as jogadas de linha de fundo, que o Vitor Ferraz não faz. Mas o Vitor Ferraz dá uma qualidade muito grande. Mas o cruzamento foi dele hoje. Então, ele é...",
+    "stt_wav2vec": "DO REA PROFISSOR FERRA OTILO TEVE A MESMA ATUAÇÃO O MESMO JEITO DROGAR ENONUM CARTORODA BASTANTE ONDA BASTANTE O LADO DIREITO MUNDA BASTANTE JUSTAMENTE PORA QUILO GENTE ACOMENTOU DORERROELA FAZI AS JOGADAS DE LIENTE FUNDO QUE O VITOR FERRAZ NÃO FAZ MAS O VITOR PENRAS NÁ UMA QUALIDADE MUITO GRANDE MAS O CRUZAMENTO FOI DELE OLHO ENTÃO ELE DÁ E"
+  }
+}

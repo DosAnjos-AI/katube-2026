@@ -1,0 +1,44 @@
+{
+  "4c20bdc542c82161f4eb99e2f8c82ac6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.380",
+    "duracao": 4.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1944334506988525,
+    "mos_stoi": 0.9574745893478394,
+    "mos_si_sdr": 19.034273147583008,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "verdade expressa o mundo das ovelhas desgarradas dos cercados da fé."
+  },
+  "4c20bdc542c82161f4eb99e2f8c82ac6_002.ogg": {
+    "tempo_inicio": "00:00:04.452",
+    "tempo_fim": "00:00:27.900",
+    "duracao": 23.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2462446689605713,
+    "mos_stoi": 0.9295632839202881,
+    "mos_si_sdr": 18.173065185546875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "cega e das facas amoladas dos profetas do medo. Bem, mesmo com a pandemia, em curso, as cobranças de taxas pela milícia não pararam. Ela tem obrigado os comerciantes a abrir as portas, moradores a pagar as taxas de proteção. Sem arrecadação, a milícia enfraquece, perde poder no território e influência política por cair sua contribuição para o caixador de campanhas políticas."
+  },
+  "4c20bdc542c82161f4eb99e2f8c82ac6_003.ogg": {
+    "tempo_inicio": "00:00:27.940",
+    "tempo_fim": "00:00:55.710",
+    "duracao": 27.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4354007244110107,
+    "mos_stoi": 0.9666376113891602,
+    "mos_si_sdr": 19.8026123046875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A milícia é a polícia dos bens que tenha coado e tirado das ruas a polícia do bem, deixando os moradores reféns do Estado duplamente, da polícia miliciana e da polícia de operações que não é capaz de policiar territórios e população. Por vezes elas trabalham juntas e misturadas, suplementando seus efetivos. Há relatos de que certas operações policiais são realizadas em domínios do tráfego para preparar o terreno para uma vindoa ocupação miliciana."
+  }
+}

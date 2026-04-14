@@ -1,0 +1,17 @@
+{
+  "b3d5b304c98f8e695488f38b1b98116f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.892",
+    "duracao": 12.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.16838800907135,
+    "mos_stoi": 0.859993040561676,
+    "mos_si_sdr": 4.881111145019531,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Deixa aí, gente, um link, alguma coisa pro pessoal que tá chegando agora. E ainda não ouviu o primeiro, gente, tá massa. Tem uma pessoa maravilhosa, chamada Maria Marluz. Maravilha.",
+    "stt_wav2vec": "DEIXA I ZENTE UM LINQUE ALGUMA CORRES A PROPENÇUAL QUE TÁCEGANDO AGORA UM RIA AINDA NÃO OUVIU O PRIMEIRO GENTE TA MASTO QUEMCETETOU A MARAVILHOSO CHAMANDO MARIA BARLUZ FUCHAVA BOER"
+  }
+}

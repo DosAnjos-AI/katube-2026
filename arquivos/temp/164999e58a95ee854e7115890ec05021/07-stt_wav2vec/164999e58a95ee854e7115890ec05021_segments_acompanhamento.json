@@ -1,0 +1,17 @@
+{
+  "164999e58a95ee854e7115890ec05021_001.ogg": {
+    "tempo_inicio": "00:00:00.804",
+    "tempo_fim": "00:00:09.788",
+    "duracao": 8.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4632468223571777,
+    "mos_stoi": 0.9538429379463196,
+    "mos_si_sdr": 22.526718139648438,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então eu quero, eu vou férias daqui a três meses e as minhas férias vão custar 600 euros. E eu poupo os tais 200 euros por mês.",
+    "stt_wav2vec": "ENTÃO EU QUEIRO E VOFERIASDS AQUI A TRÊS MESES E AS MINHAS FERIAS VÃO COSTAASSISTINTOERONS E O POUPO OS TAES DUZENTES HORAS POR MES"
+  }
+}

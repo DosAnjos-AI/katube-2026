@@ -1,0 +1,16 @@
+{
+  "034fc8b2f0b5c59053014fbf13c6e590_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.992",
+    "duracao": 5.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0443854331970215,
+    "mos_stoi": 0.9056815505027771,
+    "mos_si_sdr": 12.057862281799316,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Parece, lá está, há um maior, sempre uma maior segurança ao investir através do banco, mas lá está."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "23a36813494ee307c4d65326fb833541_001.ogg": {
+    "tempo_inicio": "00:00:00.452",
+    "tempo_fim": "00:00:05.916",
+    "duracao": 5.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1702070236206055,
+    "mos_stoi": 0.9789367914199829,
+    "mos_si_sdr": 18.187536239624023,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque é óbvio que a pergunta, o que pode um corpo, ela é decisiva?",
+    "stt_wav2vec": "PORQUE É ÓBVIO QUE  A PERGUNTA O QUE PODE UM CORPO ELA É DECISIVA"
+  },
+  "23a36813494ee307c4d65326fb833541_002.ogg": {
+    "tempo_inicio": "00:00:06.436",
+    "tempo_fim": "00:00:10.062",
+    "duracao": 3.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.6049716472625732,
+    "mos_stoi": 0.9586105346679688,
+    "mos_si_sdr": 23.374906539916992,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas ela pressupõe da perspectiva...",
+    "stt_wav2vec": "MAS ELA PRESOPÕE DA PERSPECTIVA"
+  }
+}

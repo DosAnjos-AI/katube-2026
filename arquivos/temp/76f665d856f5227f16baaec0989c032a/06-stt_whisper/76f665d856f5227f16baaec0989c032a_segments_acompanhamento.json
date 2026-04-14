@@ -1,0 +1,16 @@
+{
+  "76f665d856f5227f16baaec0989c032a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.102",
+    "duracao": 9.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.783387303352356,
+    "mos_stoi": 0.9236452579498291,
+    "mos_si_sdr": 14.123499870300293,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas o que eu acho é, se tiveres direito ao reembolso de RS, pelo menos esse valor vale a pena, porque 20% diretos não consegues ir lá ninguém."
+  }
+}

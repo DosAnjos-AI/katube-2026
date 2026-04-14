@@ -1,0 +1,58 @@
+{
+  "7e971c2da9573a5ffd6adccc7504896a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.780",
+    "duracao": 6.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.7661399841308594,
+    "mos_stoi": 0.9858895540237427,
+    "mos_si_sdr": 26.82971954345703,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas eles também têm aí outros jovens, né? Darius Garland, que tem problemas com o físico e ainda não mostrou o que pode fazer."
+  },
+  "7e971c2da9573a5ffd6adccc7504896a_002.ogg": {
+    "tempo_inicio": "00:00:07.108",
+    "tempo_fim": "00:00:11.452",
+    "duracao": 4.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.8764243125915527,
+    "mos_stoi": 0.9942319989204407,
+    "mos_si_sdr": 25.853721618652344,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eles têm o Dylan Whindler, que foi Red Shirt, não jogou nessa temporada."
+  },
+  "7e971c2da9573a5ffd6adccc7504896a_003.ogg": {
+    "tempo_inicio": "00:00:11.748",
+    "tempo_fim": "00:00:20.540",
+    "duracao": 8.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.381694793701172,
+    "mos_stoi": 0.9758839011192322,
+    "mos_si_sdr": 24.056201934814453,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E tem o Kevin Potter Jr., que é um jovem de muito talento, não encaixou na faculdade, foi a pique de número 30 do draft."
+  },
+  "7e971c2da9573a5ffd6adccc7504896a_004.ogg": {
+    "tempo_inicio": "00:00:20.836",
+    "tempo_fim": "00:00:30.414",
+    "duracao": 9.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4028496742248535,
+    "mos_stoi": 0.9649418592453003,
+    "mos_si_sdr": 22.00702667236328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mas teve jogos muito bons aí de mais de 30 pontos como o Hulk e pode mostrar alguma coisa aí pra gente na próxima temporada"
+  }
+}

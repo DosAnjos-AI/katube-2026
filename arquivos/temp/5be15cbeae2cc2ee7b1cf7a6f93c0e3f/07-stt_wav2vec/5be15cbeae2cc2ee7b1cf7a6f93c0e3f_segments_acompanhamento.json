@@ -1,0 +1,62 @@
+{
+  "5be15cbeae2cc2ee7b1cf7a6f93c0e3f_001.ogg": {
+    "tempo_inicio": "00:00:00.388",
+    "tempo_fim": "00:00:08.156",
+    "duracao": 7.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8218460083007812,
+    "mos_stoi": 0.9509112238883972,
+    "mos_si_sdr": 18.037139892578125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho que você como indivíduo, mesmo que você não seja um líder técnico, eu acho que você pode começar lendo Lean UX,",
+    "stt_wav2vec": "GAL EU ACHO QUE VOCÊ COMO O INDIVÍDUO MESMO QUE VOCÊ NÃO SEJA UM LIDER TÉCNICO EU ACHO QUE VOCÊ PODE COMEÇAR LENDO LINHO E"
+  },
+  "5be15cbeae2cc2ee7b1cf7a6f93c0e3f_002.ogg": {
+    "tempo_inicio": "00:00:08.420",
+    "tempo_fim": "00:00:13.692",
+    "duracao": 5.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6865296363830566,
+    "mos_stoi": 0.9253204464912415,
+    "mos_si_sdr": 16.742101669311523,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Que é um livro que tem uma leitura mega fácil, super rápido. No fim de semana, se você começar a ler...",
+    "stt_wav2vec": "QUE É UM LIVRO QUE TEM UMA LEITURA MEGA FACO TUPERRÁPIDO SE NO FIN SERMANAS VOCÊ COMEÇAR A LER"
+  },
+  "5be15cbeae2cc2ee7b1cf7a6f93c0e3f_003.ogg": {
+    "tempo_inicio": "00:00:14.052",
+    "tempo_fim": "00:00:26.684",
+    "duracao": 12.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.963599681854248,
+    "mos_stoi": 0.8918042778968811,
+    "mos_si_sdr": 13.811718940734863,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sexta-feira, domingo você acabou. E ele vai te ajudar muito a começar a entender a relação entre UX e Agile. Então, eu começaria por aí. Mas, do ponto de vista organizacional, o livro fantástico que eu...",
+    "stt_wav2vec": "CESTAFEIRA DOMINGO BASCACABOU E ELLE BATIJUDAR MUITO A COMEÇAR A ENTENDER A RELAÇÃO ENTRE IUEX E ADAIO ENTÃO COMEÇARIA POR ANI MAS DO PONTO DE VISSO ORGANIZACIONAL O LIVRO PFANTASC"
+  },
+  "5be15cbeae2cc2ee7b1cf7a6f93c0e3f_004.ogg": {
+    "tempo_inicio": "00:00:26.884",
+    "tempo_fim": "00:00:31.806",
+    "duracao": 4.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6829261779785156,
+    "mos_stoi": 0.9061480164527893,
+    "mos_si_sdr": 11.621419906616211,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que eu li quando eu comecei a estudar esse assunto, é Design OOps Enterprise, do Samir Dash,",
+    "stt_wav2vec": null
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "5630f2fb729f58d6bd0df814ab99fea5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.276",
+    "duracao": 5.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1655526161193848,
+    "mos_stoi": 0.9005399346351624,
+    "mos_si_sdr": 11.459174156188965,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mesmo pela coletora das criptomoedas está-me em paz"
+  },
+  "5630f2fb729f58d6bd0df814ab99fea5_002.ogg": {
+    "tempo_inicio": "00:00:05.636",
+    "tempo_fim": "00:00:12.424",
+    "duracao": 6.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0056328773498535,
+    "mos_stoi": 0.9095808863639832,
+    "mos_si_sdr": 13.761473655700684,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e agora estou a experimentar a Trading Toon Tool, mas não vai sair, ainda não comprei lá, ainda estou a ver a plataforma em si."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "b390a63a2bda07c8fd2b1413b1517c27_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.332",
+    "duracao": 6.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9860520362854004,
+    "mos_stoi": 0.9858511090278625,
+    "mos_si_sdr": 20.098812103271484,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "As bolhas que ainda persistem nas empresas acabam criando miopia de gestão e isso é um perigo."
+  },
+  "b390a63a2bda07c8fd2b1413b1517c27_002.ogg": {
+    "tempo_inicio": "00:00:06.692",
+    "tempo_fim": "00:00:34.958",
+    "duracao": 28.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.977811574935913,
+    "mos_stoi": 0.9847857356071472,
+    "mos_si_sdr": 22.291732788085938,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A primeira pessoa que me mostrou e me fez sentir essa importância da conexão à qual eu estou me referindo agora é o professor Rivadávedo Drummond. Ele é uma das referências em gestão do conhecimento e inovação, autor de diversos livros relevantes sobre esses dois temas. Hoje ele mora nos Estados Unidos, onde leciona na Universidade do estado do Arizona. Ele também atuou por muitos anos na Fundação Cabral como professor e também foi presidente da HSM Educação Corporativa."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "a18b483e9e426ad330c3a210ece5ecc1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.228",
+    "duracao": 11.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.693070888519287,
+    "mos_stoi": 0.9521188735961914,
+    "mos_si_sdr": 24.328777313232422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu não concordo. Eu acho que não tenho porquê desfazer uma dupla assim. Ainda mais com o Musto jogando como quase um zagueiro. Então...",
+    "stt_wav2vec": "EU NÃO CONCORDO NÃO ACHO QUE NÃO TENHO POR QUE DES FAZER UMA DUPLA ASSIM AINDA MAIS QUE U MUSTO JOGANDO COMO QUAIS UM ZAIGUER ENTÃO"
+  }
+}

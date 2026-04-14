@@ -1,0 +1,44 @@
+{
+  "f5bafa9db8b784ecf03d0e447fd6927a_001.ogg": {
+    "tempo_inicio": "00:00:00.356",
+    "tempo_fim": "00:00:05.628",
+    "duracao": 5.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2045462131500244,
+    "mos_stoi": 0.45157894492149353,
+    "mos_si_sdr": -14.204468727111816,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "f5bafa9db8b784ecf03d0e447fd6927a_002.ogg": {
+    "tempo_inicio": "00:00:05.892",
+    "tempo_fim": "00:00:13.276",
+    "duracao": 7.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9596164226531982,
+    "mos_stoi": 0.8812300562858582,
+    "mos_si_sdr": 13.614042282104492,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Teremos nosso primeiro episódio durante a semana com a bola do futebol. Quinta-feira vai ao ar, episódio especial, repercutir no Grenal."
+  },
+  "f5bafa9db8b784ecf03d0e447fd6927a_003.ogg": {
+    "tempo_inicio": "00:00:13.732",
+    "tempo_fim": "00:00:18.526",
+    "duracao": 4.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3747668266296387,
+    "mos_stoi": 0.7451325058937073,
+    "mos_si_sdr": -2.6203179359436035,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "4,2, 5. Vamos para o campeonato de convite, então, chamar a nossa amiga aqui? Olá, ouvintes."
+  }
+}

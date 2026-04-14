@@ -1,0 +1,30 @@
+{
+  "729f81f3df1a37465feede50e8792d4a_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:06.556",
+    "duracao": 6.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.98262095451355,
+    "mos_stoi": 0.9778637290000916,
+    "mos_si_sdr": 21.987009048461914,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ouvindo o Riva falar, vale lembrar do John Cotter, que é o professor de Harvard que fala de gestão de mudança."
+  },
+  "729f81f3df1a37465feede50e8792d4a_002.ogg": {
+    "tempo_inicio": "00:00:06.628",
+    "tempo_fim": "00:00:20.062",
+    "duracao": 13.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7060983180999756,
+    "mos_stoi": 0.9856772422790527,
+    "mos_si_sdr": 24.237836837768555,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele cita as características de líderes eficazes, que são aqueles que deixam seu entusiasmo natural inspirarem as outras pessoas da equipe e, consequentemente, encontrem a solução para um problema."
+  }
+}

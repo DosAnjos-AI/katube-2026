@@ -1,0 +1,30 @@
+{
+  "e15b8c3041f969468e57a20de4cf6a4c_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.332",
+    "duracao": 14.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1577922105789185,
+    "mos_stoi": 0.8612528443336487,
+    "mos_si_sdr": 1.3674529790878296,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "fazendo doce, cara. Eu também, assim, nunca fui de tentar muito. Mas eu não tenho vontade, não, assim, eu acho que eu não sei muito bem. Até porque eu acho que também não tem muito interesse. Eu não gosto, porque realmente o salgado, gosta. Se der uma torta com frango e..."
+  },
+  "e15b8c3041f969468e57a20de4cf6a4c_002.ogg": {
+    "tempo_inicio": "00:00:14.500",
+    "tempo_fim": "00:00:19.438",
+    "duracao": 4.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3026210069656372,
+    "mos_stoi": 0.8513651490211487,
+    "mos_si_sdr": 0.7389214038848877,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

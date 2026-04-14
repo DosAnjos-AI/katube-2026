@@ -1,0 +1,16 @@
+{
+  "ed44f8f820a8bb1073d62332d7d26f09_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:11.166",
+    "duracao": 11.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.542853355407715,
+    "mos_stoi": 0.9110666513442993,
+    "mos_si_sdr": 15.636465072631836,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vanagem, portanto, ele mesmo sendo dos principais grandes defensores dessa colonização portuguesa, ele lamentava que teria sido latifundiária e escravista."
+  }
+}

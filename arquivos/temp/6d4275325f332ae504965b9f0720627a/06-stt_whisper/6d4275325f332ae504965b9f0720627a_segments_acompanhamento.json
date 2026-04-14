@@ -1,0 +1,30 @@
+{
+  "6d4275325f332ae504965b9f0720627a_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.828",
+    "duracao": 8.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3907523155212402,
+    "mos_stoi": 0.9289036989212036,
+    "mos_si_sdr": 19.12411880493164,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "argumentos de autoridades, tem uma dinâmica peculiar que faz a brasa da sardinha ser puxada para um certo e exclusivo lado social."
+  },
+  "6d4275325f332ae504965b9f0720627a_002.ogg": {
+    "tempo_inicio": "00:00:08.900",
+    "tempo_fim": "00:00:28.316",
+    "duracao": 19.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.506924629211426,
+    "mos_stoi": 0.9501314759254456,
+    "mos_si_sdr": 23.088260650634766,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Primeiro, institui que as evidências empíricas não são propriamente evidentes ou reconhecidas como provas. Elas, por sua vez, passam a ser tratadas como eventos naturalmente duvidosos, sob sustentas, desmoralizáveis, segundo a condição socioeconômica dos sujeitos que participam de sua constituição."
+  }
+}

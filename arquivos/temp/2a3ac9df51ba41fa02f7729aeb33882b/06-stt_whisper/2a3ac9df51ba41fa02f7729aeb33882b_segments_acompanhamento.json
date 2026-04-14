@@ -1,0 +1,58 @@
+{
+  "2a3ac9df51ba41fa02f7729aeb33882b_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:12.188",
+    "duracao": 12.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.634145498275757,
+    "mos_stoi": 0.991233766078949,
+    "mos_si_sdr": 22.84027671813965,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "sem falar na demora para divulgar as coisas. Um texto mínimo precisa passar por 50 aprovações, revisões, e aí quando a informação oficial é circulada, todo mundo já sabe."
+  },
+  "2a3ac9df51ba41fa02f7729aeb33882b_002.ogg": {
+    "tempo_inicio": "00:00:12.740",
+    "tempo_fim": "00:00:17.148",
+    "duracao": 4.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2283897399902344,
+    "mos_stoi": 0.9977073669433594,
+    "mos_si_sdr": 26.522865295410156,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E ela ainda vira chacota. Por quê? Porque ficou velho."
+  },
+  "2a3ac9df51ba41fa02f7729aeb33882b_003.ogg": {
+    "tempo_inicio": "00:00:17.412",
+    "tempo_fim": "00:00:23.388",
+    "duracao": 5.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.838625192642212,
+    "mos_stoi": 0.9663183689117432,
+    "mos_si_sdr": 23.535747528076172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí as pessoas comparam. Isso é um perigo. A gente também precisa ser empático, sabe?"
+  },
+  "2a3ac9df51ba41fa02f7729aeb33882b_004.ogg": {
+    "tempo_inicio": "00:00:23.652",
+    "tempo_fim": "00:00:28.734",
+    "duracao": 5.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2314493656158447,
+    "mos_stoi": 0.9911640882492065,
+    "mos_si_sdr": 22.814008712768555,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "entender como é que as relações funcionam e usar esse entendimento a nosso favor."
+  }
+}

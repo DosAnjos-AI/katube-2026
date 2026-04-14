@@ -1,0 +1,32 @@
+{
+  "ae6fd8a7777d7a42074db444f3675e0b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.348",
+    "duracao": 12.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6441339254379272,
+    "mos_stoi": 0.9380797147750854,
+    "mos_si_sdr": 12.792052268981934,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ainda tem muita gente na praia. As escolas estão fechadas por, no mínimo, oito semanas. Existe a possibilidade de o governo reabrir o país. Acho muito cedo para isso. Abraços.",
+    "stt_wav2vec": "AINDA TEM MUITA GENTE NA PRAIA ASTÃO FECHADAS POR NO MÍNIMO OITO SEMANAS EXISTE A POSSIBILIDADE DE O GOVERNO REABRIR O PAIS ACHO MUITO SEDO PARA ISSO ABRAÇOS"
+  },
+  "ae6fd8a7777d7a42074db444f3675e0b_002.ogg": {
+    "tempo_inicio": "00:00:12.548",
+    "tempo_fim": "00:00:30.590",
+    "duracao": 18.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6230566501617432,
+    "mos_stoi": 0.9468824863433838,
+    "mos_si_sdr": 11.345338821411133,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É, a grande questão é que se liberar... É que se liberar pras pessoas andarem na rua e o vírus continuar na rua, as pessoas vão pegar e vão transmitir para outras e daí vai seguir acontecendo, vai prejudicar o sistema de saúde, alguns vão ser priorizados.",
+    "stt_wav2vec": "É A GRANDE QUESTÃO É QUE SE LIBERÁ AGEM O ABRAÇO É QUE SE LIBERÁ PARA AS PESSOAS ANDAREM NA RUA E O VIROS CONTINUAR NA RUA AS PESSOAS VÃO PEGAR E VÃO TRANSMITIR PARA OUTRAS E DAÍ VAE SEGUIR ACONTECENDO VAI PREJUDICAR OS TEMA DE SAÚDE ALGUNS VÃO SER PREVÃO SER PRIORIZADOS"
+  }
+}

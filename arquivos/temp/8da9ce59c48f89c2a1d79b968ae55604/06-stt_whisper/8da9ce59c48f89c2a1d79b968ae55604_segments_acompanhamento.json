@@ -1,0 +1,16 @@
+{
+  "8da9ce59c48f89c2a1d79b968ae55604_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:09.424",
+    "duracao": 9.39,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0701887607574463,
+    "mos_stoi": 0.9801093339920044,
+    "mos_si_sdr": 26.12130355834961,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a justiça precisa ser feita. Lembre-se, a justiça das ruas é mais rápida e bem mais cruel que a justiça dos tribunais."
+  }
+}

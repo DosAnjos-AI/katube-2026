@@ -1,0 +1,44 @@
+{
+  "7c30f5ca7f2b46209d2772c28723556e_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:09.372",
+    "duracao": 9.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2625787258148193,
+    "mos_stoi": 0.9920951724052429,
+    "mos_si_sdr": 25.810237884521484,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O maior desafio hoje não é a embalagem, o acabamento, mas sim a relevância. E isso não cabe mais somente aos profissionais de comunicação."
+  },
+  "7c30f5ca7f2b46209d2772c28723556e_002.ogg": {
+    "tempo_inicio": "00:00:09.796",
+    "tempo_fim": "00:00:16.796",
+    "duracao": 7.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.924389600753784,
+    "mos_stoi": 0.9875854253768921,
+    "mos_si_sdr": 23.71678924560547,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É responsabilidade de todos da gestão. Para isso, é preciso passar tempo analisando o contexto."
+  },
+  "7c30f5ca7f2b46209d2772c28723556e_003.ogg": {
+    "tempo_inicio": "00:00:17.316",
+    "tempo_fim": "00:00:22.398",
+    "duracao": 5.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5563411712646484,
+    "mos_stoi": 0.9662162065505981,
+    "mos_si_sdr": 13.891358375549316,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O que está acontecendo? Na sua empresa, na sua cidade, no mundo?"
+  }
+}

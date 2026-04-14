@@ -1,0 +1,32 @@
+{
+  "4dedf3ef0a8381cda44c94befb45446f_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:08.028",
+    "duracao": 7.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5723111629486084,
+    "mos_stoi": 0.8563417196273804,
+    "mos_si_sdr": 6.24137544631958,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "4dedf3ef0a8381cda44c94befb45446f_002.ogg": {
+    "tempo_inicio": "00:00:08.484",
+    "tempo_fim": "00:00:20.796",
+    "duracao": 12.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9711822271347046,
+    "mos_stoi": 0.9694485068321228,
+    "mos_si_sdr": 18.37613296508789,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Com licença, é meu momento. Tirando o Bruno, estava com saudade de todo mundo. Então, vamos para mais um episódio aí. Graças a Deus, com o futebol gaúcho voltando na quarta-feira e o Grêmio vai brocar.",
+    "stt_wav2vec": "LICENSA CO LICENÇA É MEU MOMENTO TIRANDO O BRUNO TAVACO SAUDADES TODO O MUNDO ENTÃO VÃO PRA MAIS UM EPISÓDIO E GRAÇAS A DEUS COM O FUTEBOL GAÚHO VOLTANDO NA QUARTA-FEIRA E O GRÊMIO VAI BROCAR"
+  }
+}

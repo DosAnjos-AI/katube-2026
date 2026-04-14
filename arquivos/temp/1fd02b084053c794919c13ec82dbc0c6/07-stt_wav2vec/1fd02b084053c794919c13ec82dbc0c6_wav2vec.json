@@ -1,0 +1,17 @@
+{
+  "1fd02b084053c794919c13ec82dbc0c6_001.ogg": {
+    "tempo_inicio": "00:00:03.076",
+    "tempo_fim": "00:00:17.240",
+    "duracao": 14.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5523734092712402,
+    "mos_stoi": 0.9657543301582336,
+    "mos_si_sdr": 15.224700927734375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cara, eu vou ser sincero contigo, eu acho que na partida de hoje o Grêmio foi muito bem taticamente. Eu acho que até isso pode ser uma característica desse novo Grêmio, talvez até sem o Everton.",
+    "stt_wav2vec": "CARAVOCÊ CERO CONSIGO ACHO QUE NA PARTIDA DE HOJE O GRÊMIO FOI MUITO BEM TATICAMENTE SA EU ACHO QUE ATÉ ISSO PODE SER UUMA CARACTERÍSTICA DO GRÊMIO DESSE NOVO GRÊMIO TALVEZ ATÉ SEM O OET"
+  }
+}

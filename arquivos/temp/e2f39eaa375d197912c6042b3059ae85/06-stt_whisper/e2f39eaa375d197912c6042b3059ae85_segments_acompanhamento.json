@@ -1,0 +1,16 @@
+{
+  "e2f39eaa375d197912c6042b3059ae85_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.408",
+    "duracao": 6.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5180654525756836,
+    "mos_stoi": 0.9173563122749329,
+    "mos_si_sdr": 6.484045028686523,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "quais são as soluções onde tu consegues ter propostas mais competitivas. E a questão dos seguros."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "0c095e998ffc40accbc711a7f6078c41_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.414",
+    "duracao": 6.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2631813287734985,
+    "mos_stoi": 0.6262167096138,
+    "mos_si_sdr": -2.525845527648926,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "tudo que ele fez, mas não. Se ele quiser vir no cargo de diretoria no Grêmio."
+  }
+}

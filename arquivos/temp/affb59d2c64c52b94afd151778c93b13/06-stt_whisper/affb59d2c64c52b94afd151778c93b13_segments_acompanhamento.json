@@ -1,0 +1,16 @@
+{
+  "affb59d2c64c52b94afd151778c93b13_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.984",
+    "duracao": 12.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4957118034362793,
+    "mos_stoi": 0.9071668386459351,
+    "mos_si_sdr": 2.686998128890991,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E é uma saída de bola que nem tu falou, tu acha que deixa longe, mas na verdade a ideia é que a tua defesa saia de trás, né? Pois é, exatamente, mas tu não acha que o movimento do musto, ele é muito recuado? Ele desce demais."
+  }
+}

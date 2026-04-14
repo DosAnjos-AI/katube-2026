@@ -1,0 +1,17 @@
+{
+  "91c7bcddfcf1eb780dfa5ff5e2e56558_001.ogg": {
+    "tempo_inicio": "00:00:00.228",
+    "tempo_fim": "00:00:13.852",
+    "duracao": 13.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2170696258544922,
+    "mos_stoi": 0.8790591955184937,
+    "mos_si_sdr": 9.203606605529785,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Lembrar do nosso e-mail do nosso Instagram. O meu e-mail é contato.caconta.com. Isso mesmo. E o Instagram... Instagram é arroba...",
+    "stt_wav2vec": "BRA TRAS MESGA NASCINDSAGREDO O MEU OIMEIO É CONTATO COM TO CACACONTA A ROBAS DE MEIO PANDO COMPES EO INFAGUIRAN ISTAGRANE É A ROBA"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eaed36e03831ea43d24c40c7a11dc06b_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.758",
+    "duracao": 3.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6978979110717773,
+    "mos_stoi": 0.968735933303833,
+    "mos_si_sdr": 16.01140022277832,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "entubada e não consegue se comunicar mais.",
+    "stt_wav2vec": "ENTUBADA E NÃO CONSEGUE SE COMUNICAR MAIS"
+  }
+}

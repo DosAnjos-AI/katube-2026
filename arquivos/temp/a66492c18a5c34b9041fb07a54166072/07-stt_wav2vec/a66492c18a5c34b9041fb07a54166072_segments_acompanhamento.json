@@ -1,0 +1,47 @@
+{
+  "a66492c18a5c34b9041fb07a54166072_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.820",
+    "duracao": 5.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9799957275390625,
+    "mos_stoi": 0.9165781140327454,
+    "mos_si_sdr": 16.15695571899414,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Menino que tinha visto Greta também fez uma placa e veio se sentar perto dela.",
+    "stt_wav2vec": "MENINO QUE TINHA VISTO GRECA TAMBÉM FEZ UMA PLACA E VELA-SE SENTAR PETRODELA"
+  },
+  "a66492c18a5c34b9041fb07a54166072_002.ogg": {
+    "tempo_inicio": "00:00:06.180",
+    "tempo_fim": "00:00:09.884",
+    "duracao": 3.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.119246006011963,
+    "mos_stoi": 0.8557292819023132,
+    "mos_si_sdr": 13.248141288757324,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele quase não disse nada mais direito e entendeu o que ele sentia.",
+    "stt_wav2vec": null
+  },
+  "a66492c18a5c34b9041fb07a54166072_003.ogg": {
+    "tempo_inicio": "00:00:10.468",
+    "tempo_fim": "00:00:18.062",
+    "duracao": 7.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.097752809524536,
+    "mos_stoi": 0.9645459651947021,
+    "mos_si_sdr": 20.540706634521484,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Outras pessoas e animais viram aquilo e viram logo a se juntar a eles. Salvem as florestas!",
+    "stt_wav2vec": null
+  }
+}

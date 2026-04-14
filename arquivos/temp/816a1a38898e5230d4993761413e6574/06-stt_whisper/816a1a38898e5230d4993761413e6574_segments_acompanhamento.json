@@ -1,0 +1,16 @@
+{
+  "816a1a38898e5230d4993761413e6574_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.062",
+    "duracao": 6.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7619071006774902,
+    "mos_stoi": 0.9257946610450745,
+    "mos_si_sdr": 9.932398796081543,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de certeza alternativas mais competitivas agora não há propriamente um limite para isso"
+  }
+}

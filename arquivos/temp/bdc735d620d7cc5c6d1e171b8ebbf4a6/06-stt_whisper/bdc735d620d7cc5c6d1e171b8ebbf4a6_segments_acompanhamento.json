@@ -1,0 +1,44 @@
+{
+  "bdc735d620d7cc5c6d1e171b8ebbf4a6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.788",
+    "duracao": 13.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.432276487350464,
+    "mos_stoi": 0.982370138168335,
+    "mos_si_sdr": 20.655977249145508,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu sempre sou sincera, isso não funciona, porque você só vai se sentir mais confortável quando entender como parar de sofrer para se expor. E é um sofrimento absurdo, as pessoas sofrem muito com isso, bloqueia demais."
+  },
+  "bdc735d620d7cc5c6d1e171b8ebbf4a6_002.ogg": {
+    "tempo_inicio": "00:00:14.212",
+    "tempo_fim": "00:00:20.348",
+    "duracao": 6.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2660651206970215,
+    "mos_stoi": 0.9214110374450684,
+    "mos_si_sdr": 14.498543739318848,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Parece uma coisa simples, mas não é, traz muito sofrimento para quem vive mesmo a patologia em si."
+  },
+  "bdc735d620d7cc5c6d1e171b8ebbf4a6_003.ogg": {
+    "tempo_inicio": "00:00:20.612",
+    "tempo_fim": "00:00:28.096",
+    "duracao": 7.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4451913833618164,
+    "mos_stoi": 0.9866331815719604,
+    "mos_si_sdr": 18.505062103271484,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A patologia, a que se refere, a psicóloga Patrícia Renaldo, é a alodoxafobia, o medo de ser confrontado"
+  }
+}

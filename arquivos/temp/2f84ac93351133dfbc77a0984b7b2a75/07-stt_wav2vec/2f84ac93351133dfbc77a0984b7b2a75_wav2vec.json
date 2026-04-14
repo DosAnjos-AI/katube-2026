@@ -1,0 +1,17 @@
+{
+  "2f84ac93351133dfbc77a0984b7b2a75_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.758",
+    "duracao": 7.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8817243576049805,
+    "mos_stoi": 0.9536641240119934,
+    "mos_si_sdr": 12.165604591369629,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu posso precisar de usar o teorema de Pitágoras e tu podes precisar de saber as capitais dos países na pela profissão.",
+    "stt_wav2vec": "EU POSSO PRECISAR DUSAR DO TER AMAPITAGORAS E DO BOTO PRECISADO SABER A OS PAELAS D AS CAPITAIS DOS PAÍSES NA DUA PROFISSÃO"
+  }
+}

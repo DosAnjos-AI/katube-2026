@@ -1,0 +1,17 @@
+{
+  "1d9ff84238167118dcd52fd938e17cef_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.240",
+    "duracao": 11.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.998295307159424,
+    "mos_stoi": 0.9839269518852234,
+    "mos_si_sdr": 22.216087341308594,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu costumo dizer, vivemos em sociedade e temos que ter cuidado com aquilo que dizemos. Mas há formas de sermos verdadeiros, sentemos que magoar a outra pessoa. Quem vem para trabalhar comigo...",
+    "stt_wav2vec": "COSTUME DE BEVEMOSD ENCIEDADO E TEMOS TER CUIDADO COM AQUILO A CRISIAMOS MAS DAR A FORMAS SEMOS MORDALEIROS SENTEMOS CAMA GUARDA  OU TRAPSSAANA ECAEM VÃM PARA TRABALHAR COMIGO"
+  }
+}

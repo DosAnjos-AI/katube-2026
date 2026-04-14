@@ -1,0 +1,16 @@
+{
+  "c5710cac4bc6a39445a2093bc74ef168_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:13.686",
+    "duracao": 13.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1252117156982422,
+    "mos_stoi": 0.5748834013938904,
+    "mos_si_sdr": -4.8638176918029785,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Para Barcelona Atlético de Madrid. Lembrando que o Barcelona é segundo colocado, 69 pontos, está atrás do Rio por dois pontos, ainda na briga pelo título. O Atlético está em terceiro, 58 brigando para garantir a vaga na Champions League."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "e5945fe5b9209cf6c770147b627ed832_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.348",
+    "duracao": 8.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6589857339859009,
+    "mos_stoi": 0.9697195291519165,
+    "mos_si_sdr": 11.454184532165527,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pois bem, na nossa aula de hoje, vamos começar falando sobre a abordagem etimológica. Vocês devem saber que etimologia se refere a..."
+  },
+  "e5945fe5b9209cf6c770147b627ed832_002.ogg": {
+    "tempo_inicio": "00:00:08.612",
+    "tempo_fim": "00:00:23.324",
+    "duracao": 14.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3375499248504639,
+    "mos_stoi": 0.931168794631958,
+    "mos_si_sdr": 10.310986518859863,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O origem das palavras. A palavra comunicação, ela provém do latim comunice, que significa tornar comum estabelecer comunhão. Então, no ponto de vista etimológico, comunicação significa estabelecer comunhão, tornar algo incomum."
+  },
+  "e5945fe5b9209cf6c770147b627ed832_003.ogg": {
+    "tempo_inicio": "00:00:23.748",
+    "tempo_fim": "00:00:27.992",
+    "duracao": 4.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.856957197189331,
+    "mos_stoi": 0.9387575387954712,
+    "mos_si_sdr": 15.646169662475586,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Certo? Se trata da sintonização entre o que se recebe"
+  }
+}

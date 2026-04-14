@@ -1,0 +1,47 @@
+{
+  "a4791e945b6fb90f6db7466b58afb230_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.996",
+    "duracao": 7.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3369078636169434,
+    "mos_stoi": 0.8528454899787903,
+    "mos_si_sdr": 5.651402473449707,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não entra ninguém. Não entra ninguém. Uma coisa muito bonita. Eu acho que vocês devem ter vindo no final de semana. Reverberou bastante.",
+    "stt_wav2vec": "NÃO ENDRA NINGUÉM MAWA NÃO E  ELA NINGUÉM AH É MUITO BONITA U ACHO QUE VOCÊS DEVEM TER VENDO NA FINAL DE SEMANA REVER O BERO BASTANTE"
+  },
+  "a4791e945b6fb90f6db7466b58afb230_002.ogg": {
+    "tempo_inicio": "00:00:08.068",
+    "tempo_fim": "00:00:15.324",
+    "duracao": 7.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.238025665283203,
+    "mos_stoi": 0.9538478255271912,
+    "mos_si_sdr": 14.45023250579834,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Na Itália, eles se unindo todo dia. Às 6 horas da tarde, eles se unem para cantar.",
+    "stt_wav2vec": null
+  },
+  "a4791e945b6fb90f6db7466b58afb230_003.ogg": {
+    "tempo_inicio": "00:00:15.364",
+    "tempo_fim": "00:00:32.102",
+    "duracao": 16.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4190378189086914,
+    "mos_stoi": 0.9167899489402771,
+    "mos_si_sdr": 9.81483268737793,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

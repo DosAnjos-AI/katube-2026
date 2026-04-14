@@ -1,0 +1,16 @@
+{
+  "b16aab30385b1be886cb73bf104c7e9b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.958",
+    "duracao": 14.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9426977634429932,
+    "mos_stoi": 0.9736043214797974,
+    "mos_si_sdr": 14.594820022583008,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Primos, damos por encerrado. Espero que tenham gostado, espero que tenham tirado notas. Aproveitem para tirar uma foto a esses apontamentos. Se tiverem ouvir o podcast no carro, partilhem-nos também essas fotos. Identifiquem-nos que nós vamos ficar muito contentes em partilharmos. Ok?"
+  }
+}

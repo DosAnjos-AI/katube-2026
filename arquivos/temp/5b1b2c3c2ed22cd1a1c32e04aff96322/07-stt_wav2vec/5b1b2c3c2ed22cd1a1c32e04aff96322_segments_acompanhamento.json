@@ -1,0 +1,62 @@
+{
+  "5b1b2c3c2ed22cd1a1c32e04aff96322_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.820",
+    "duracao": 9.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.471850872039795,
+    "mos_stoi": 0.925368070602417,
+    "mos_si_sdr": 12.12353229522705,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Na verdade, quando lendo o seu trabalho, observando esses movimentos, essa descoberta do transe que o Zé vai utilizar de outra forma, aliás...",
+    "stt_wav2vec": "NA VERDADE QUANDO LENDO SEU TRABALHO OBSERVANDO ESSES MOVIMENTOS ESSA DESCOBERTA DO TRANSI NA QUEO OZÉ VAI UTILIZAR DE OUTRA FORMA LHAS"
+  },
+  "5b1b2c3c2ed22cd1a1c32e04aff96322_002.ogg": {
+    "tempo_inicio": "00:00:10.148",
+    "tempo_fim": "00:00:21.340",
+    "duracao": 11.19,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6549968719482422,
+    "mos_stoi": 0.9029412865638733,
+    "mos_si_sdr": 3.386273145675659,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Li numa entrevista que ele tirou o transe de outra pessoa, na verdade, que ele seguiu na juventude, que também utilizava essa palavra. Mas esse transe...",
+    "stt_wav2vec": null
+  },
+  "5b1b2c3c2ed22cd1a1c32e04aff96322_003.ogg": {
+    "tempo_inicio": "00:00:21.700",
+    "tempo_fim": "00:00:26.620",
+    "duracao": 4.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.387063503265381,
+    "mos_stoi": 0.8400375843048096,
+    "mos_si_sdr": 6.2638654708862305,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a descoberta dele, que eu acho que modifica completamente o panorama...",
+    "stt_wav2vec": null
+  },
+  "5b1b2c3c2ed22cd1a1c32e04aff96322_004.ogg": {
+    "tempo_inicio": "00:00:26.916",
+    "tempo_fim": "00:00:30.670",
+    "duracao": 3.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.173567533493042,
+    "mos_stoi": 0.8045825362205505,
+    "mos_si_sdr": 1.6704901456832886,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "como um salto conceitual, e que",
+    "stt_wav2vec": null
+  }
+}

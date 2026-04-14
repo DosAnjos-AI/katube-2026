@@ -1,0 +1,30 @@
+{
+  "fa18209364e7e00519136a0b40e8c5f0_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:06.460",
+    "duracao": 6.39,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.085684299468994,
+    "mos_stoi": 0.9635859131813049,
+    "mos_si_sdr": 21.660953521728516,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Claro, depois cada um tem essa situação e ver, lá está a comparar as taxas de juros"
+  },
+  "fa18209364e7e00519136a0b40e8c5f0_002.ogg": {
+    "tempo_inicio": "00:00:06.756",
+    "tempo_fim": "00:00:16.216",
+    "duracao": 9.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8661961555480957,
+    "mos_stoi": 0.9864961504936218,
+    "mos_si_sdr": 22.23703384399414,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E pensar que cada coisa que tu estás a... Ou seja, tu ali tens uma rentabilidade garantida ao pagar a dívida, que é o valor da taxa de juros que tu estás a pagar."
+  }
+}

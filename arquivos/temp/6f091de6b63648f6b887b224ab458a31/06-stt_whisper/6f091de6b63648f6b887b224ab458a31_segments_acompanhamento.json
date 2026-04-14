@@ -1,0 +1,30 @@
+{
+  "6f091de6b63648f6b887b224ab458a31_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.996",
+    "duracao": 4.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9664011001586914,
+    "mos_stoi": 0.8389432430267334,
+    "mos_si_sdr": 1.693081259727478,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Queria que você falasse um pouco dessa parte emocional, porque..."
+  },
+  "6f091de6b63648f6b887b224ab458a31_002.ogg": {
+    "tempo_inicio": "00:00:04.356",
+    "tempo_fim": "00:00:09.308",
+    "duracao": 4.95,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.736236810684204,
+    "mos_stoi": 0.8453493714332581,
+    "mos_si_sdr": 0.7347353100776672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "é algo muito forte do pouco que eu conheci do seu trabalho"
+  }
+}

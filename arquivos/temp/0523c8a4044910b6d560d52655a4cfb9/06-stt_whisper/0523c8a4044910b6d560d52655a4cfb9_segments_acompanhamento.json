@@ -1,0 +1,30 @@
+{
+  "0523c8a4044910b6d560d52655a4cfb9_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.716",
+    "duracao": 14.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6986372470855713,
+    "mos_stoi": 0.9540892243385315,
+    "mos_si_sdr": 8.343948364257812,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cara, eu acredito que o Rodinei, não, mas o Saravia tem. Mas pegando esse negócio que o Rua falou, eu acho que vai muito da questão. O Inter tem o Heitor e subiu esse menino aí, o Vinícius Tobias, Vinícius Tobias. Isso é o de 16 anos aquele?"
+  },
+  "0523c8a4044910b6d560d52655a4cfb9_002.ogg": {
+    "tempo_inicio": "00:00:14.756",
+    "tempo_fim": "00:00:27.292",
+    "duracao": 12.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0658953189849854,
+    "mos_stoi": 0.9635984301567078,
+    "mos_si_sdr": 10.432533264160156,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Isso, né? Então, acredito que já tem o Heitor também, que para uma boa reserva serviria. Eu até confesso que não entendi, num primeiro momento, a contratação do Saravia, já que o Inter tinha trazido o Rodinei."
+  }
+}

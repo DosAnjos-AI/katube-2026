@@ -1,0 +1,12 @@
+{
+  "29a732296777c354ab07ba4e97c1e184_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.232",
+    "duracao": 6.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "A piada é que ela me deu o meu primeiro mês, mas a partir do segundo mês não me deu, deixou-me de mudar."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "6285a2cd6c8536c414c0bc3ff4ab6c8d_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:09.404",
+    "duracao": 9.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3956753015518188,
+    "mos_stoi": 0.8964442610740662,
+    "mos_si_sdr": 8.051908493041992,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "6285a2cd6c8536c414c0bc3ff4ab6c8d_002.ogg": {
+    "tempo_inicio": "00:00:09.476",
+    "tempo_fim": "00:00:15.324",
+    "duracao": 5.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5907235145568848,
+    "mos_stoi": 0.907709002494812,
+    "mos_si_sdr": 9.817170143127441,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele foi um que deu negativo, mas assim, né? O mínimo de cuidado poderia ter tido.",
+    "stt_wav2vec": "ELE FOI UM QUIDÃO NEGATIVO MAS ASSIM NAVAS O MÍNIMO DE CUIDADO PODERIA ATETIDO"
+  },
+  "6285a2cd6c8536c414c0bc3ff4ab6c8d_003.ogg": {
+    "tempo_inicio": "00:00:15.364",
+    "tempo_fim": "00:00:30.520",
+    "duracao": 15.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4957375526428223,
+    "mos_stoi": 0.939907431602478,
+    "mos_si_sdr": 10.573904991149902,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Em relação a isso. Bom, então, resumindo, ele descumpriu uma regra básica do isolamento, né? Que é, tipo, foi o encontro, né? Se ele realmente tem alguma coisa ou não. Apertou a mão, deu soquinho. Pode ter comprometido aí. Outro foi o Luan Santana, né?",
+    "stt_wav2vec": null
+  }
+}

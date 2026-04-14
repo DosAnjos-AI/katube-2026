@@ -1,0 +1,30 @@
+{
+  "9ee4bf8bed0568b363e24963975421a6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:20.156",
+    "duracao": 20.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2058113813400269,
+    "mos_stoi": 0.8605433106422424,
+    "mos_si_sdr": 5.91904354095459,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "casado, homem, marido, mulher, fazendo namoro. Daqui a nove meses, gostoso. Daqui a nove meses, rola. Ah, quarentena, né? 8,29. 8,29. Isso vai chegar, vai acontecer. 8,29. Olha só, deixa eu mandar um salve pra galera da Barão Ervamati. Pois, segundo a pesquisa, marcas de quem decide, a Barão Ervamati..."
+  },
+  "9ee4bf8bed0568b363e24963975421a6_002.ogg": {
+    "tempo_inicio": "00:00:20.196",
+    "tempo_fim": "00:00:29.912",
+    "duracao": 9.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0428950786590576,
+    "mos_stoi": 0.9816982746124268,
+    "mos_si_sdr": 15.249749183654785,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "EXaze é a marca preferida e uma das mais lembradas do Rio Grande do Sul. Essa premiação é a certeza de que estamos sempre levando o melhor produto para todos os gaúchos."
+  }
+}

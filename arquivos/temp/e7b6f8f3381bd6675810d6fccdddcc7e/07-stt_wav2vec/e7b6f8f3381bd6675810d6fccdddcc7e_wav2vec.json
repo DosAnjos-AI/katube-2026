@@ -1,0 +1,17 @@
+{
+  "e7b6f8f3381bd6675810d6fccdddcc7e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.710",
+    "duracao": 3.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.188930034637451,
+    "mos_stoi": 0.882127583026886,
+    "mos_si_sdr": 9.506908416748047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "John Cage, que colaborou em algumas...",
+    "stt_wav2vec": "JOÃN KEIDES QUE COLABOROU EM ALGUMAS ELA"
+  }
+}

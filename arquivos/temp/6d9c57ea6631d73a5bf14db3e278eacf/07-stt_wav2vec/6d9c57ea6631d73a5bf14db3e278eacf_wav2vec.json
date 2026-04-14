@@ -1,0 +1,17 @@
+{
+  "6d9c57ea6631d73a5bf14db3e278eacf_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.566",
+    "duracao": 7.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.855559825897217,
+    "mos_stoi": 0.9579209685325623,
+    "mos_si_sdr": 13.130228996276855,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu cheguei ao final do dia, estou errou a estar a falar. E chegar a um ponto que eu começo a ficar sem voz, não é? Portanto, falar. Então, por mais que eu quisesse...",
+    "stt_wav2vec": "CHEGA A FINAL DO DITA ROTA PARA FALLAR E CHEGAR UM PANTO QUE EU COMEÇA A F ICAR COM O SEMVÓRS NÃO É TANTO FALLAR ENTÃO POR MAIS QUE EU QUIS ESTE"
+  }
+}

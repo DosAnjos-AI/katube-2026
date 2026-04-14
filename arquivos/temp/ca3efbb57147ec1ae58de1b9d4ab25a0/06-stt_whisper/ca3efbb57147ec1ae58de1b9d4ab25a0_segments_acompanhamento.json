@@ -1,0 +1,30 @@
+{
+  "ca3efbb57147ec1ae58de1b9d4ab25a0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.340",
+    "duracao": 5.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.924905300140381,
+    "mos_stoi": 0.9759806990623474,
+    "mos_si_sdr": 25.240018844604492,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu tenho só alguém bem clubista mesmo. O Renan conhece bem. Foi a pessoa que..."
+  },
+  "ca3efbb57147ec1ae58de1b9d4ab25a0_002.ogg": {
+    "tempo_inicio": "00:00:05.828",
+    "tempo_fim": "00:00:16.240",
+    "duracao": 10.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.145707368850708,
+    "mos_stoi": 0.969420850276947,
+    "mos_si_sdr": 21.08898162841797,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que eu conheci aqui em São Paulo, a partir do momento que ele começou a morar aqui. E se eu for contar histórias que eu tenho com o meu clube, eu acho que eu ia ficar só esse podcast falando, mas um dos momentos marcantes pra mim."
+  }
+}

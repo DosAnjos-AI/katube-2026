@@ -1,0 +1,17 @@
+{
+  "235b121cb4f54b0c7124e9a1e51ca279_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.628",
+    "duracao": 5.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.239882469177246,
+    "mos_stoi": 0.9932047128677368,
+    "mos_si_sdr": 26.702816009521484,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas por quê? Tem uma máxima que diz informação a poder.",
+    "stt_wav2vec": "MAS POR QUE TEM UMA MÁXIMA QUE DIZ INFORMAÇÃO A PODER"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "95cf4db9865859f0eb986e53328ec29b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.496",
+    "duracao": 5.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.912336826324463,
+    "mos_stoi": 0.9468647241592407,
+    "mos_si_sdr": 18.75200080871582,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A pós comissões se os dois tiverem a mesma rentabilidade, é exatamente igual.",
+    "stt_wav2vec": "OZE IMAGN A PÓ AS COMISSÕES SE OS DOIS DEVARENA ME MARCANTALUIZADO É EXATAMENTE IGUAL"
+  }
+}

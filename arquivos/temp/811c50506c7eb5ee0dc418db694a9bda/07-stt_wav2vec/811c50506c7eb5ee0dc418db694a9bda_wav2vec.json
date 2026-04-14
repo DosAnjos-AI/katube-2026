@@ -1,0 +1,32 @@
+{
+  "811c50506c7eb5ee0dc418db694a9bda_002.ogg": {
+    "tempo_inicio": "00:00:12.644",
+    "tempo_fim": "00:00:17.532",
+    "duracao": 4.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5843536853790283,
+    "mos_stoi": 0.7892487049102783,
+    "mos_si_sdr": 3.3044517040252686,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Pedro surgiu como uma boa aposta lá no Fluminense mesmo.",
+    "stt_wav2vec": "PEGERARO O PEDRO SURGIU COMO UMA MA BOA POSTLADRUE NO FLUMINENSE MESMO"
+  },
+  "811c50506c7eb5ee0dc418db694a9bda_003.ogg": {
+    "tempo_inicio": "00:00:17.796",
+    "tempo_fim": "00:00:28.398",
+    "duracao": 10.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3749938011169434,
+    "mos_stoi": 0.9296294450759888,
+    "mos_si_sdr": 14.647794723510742,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Retornou agora com Flamengo, mas fora isso, a gente está tendo que recorrer aos atletas que fizeram fama e fizeram bastentes gols no início dos anos 2010.",
+    "stt_wav2vec": "RETORNOU BARFAMINGO MAS FORA ISSO A INSTARRA TENTO QUE RECORRER AOS AOS ATLIATES QUE FIZERAM UM FAMEE FIJARAM BASTENTES GOLBAL NA NO INISCIO DOS ANOS DEIDSALE"
+  }
+}

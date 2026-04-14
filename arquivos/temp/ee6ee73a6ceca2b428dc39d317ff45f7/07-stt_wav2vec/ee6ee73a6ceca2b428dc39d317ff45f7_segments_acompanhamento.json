@@ -1,0 +1,47 @@
+{
+  "ee6ee73a6ceca2b428dc39d317ff45f7_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.628",
+    "duracao": 5.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.015591621398926,
+    "mos_stoi": 0.9197778105735779,
+    "mos_si_sdr": 14.54552936553955,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A diversificação que faz é proteger-te contra a volatilidade do mercado.",
+    "stt_wav2vec": "A IMPCIFICAÇÃO FASE É PROTUGIR CONTRA OCILIDADES UM BO CASA ALTARDES"
+  },
+  "ee6ee73a6ceca2b428dc39d317ff45f7_002.ogg": {
+    "tempo_inicio": "00:00:05.924",
+    "tempo_fim": "00:00:20.444",
+    "duracao": 14.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9100191593170166,
+    "mos_stoi": 0.9451860189437866,
+    "mos_si_sdr": 14.813383102416992,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "diversificado e com vários... Com os seus investimentos espalhados por vários sítios. A partir do princípio que eles não se mexem à mesma velocidade, ainda na mesma direção, estás um bocadinho protegido contra as...",
+    "stt_wav2vec": "IPCFICADA E CONVÁRIOS COSTASO DO COSTOZIVOS TIMANTEESPALHADOS POR VÁRIOS CHIFE PARTINDO PRINCÍPIO QUE AOS NÃO SE MEXEM NA MESMA A MESMA GUSTIDADA EM NA MESMA DIREÇÃO TAZ UM CARIMPROSTIGIVEL CONTRASTTANTCONTRA"
+  },
+  "ee6ee73a6ceca2b428dc39d317ff45f7_003.ogg": {
+    "tempo_inicio": "00:00:20.548",
+    "tempo_fim": "00:00:24.152",
+    "duracao": 3.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9274684190750122,
+    "mos_stoi": 0.9201115369796753,
+    "mos_si_sdr": 11.971673965454102,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "as subidas, mas também contra as descidas.",
+    "stt_wav2vec": null
+  }
+}

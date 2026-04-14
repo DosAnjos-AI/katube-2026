@@ -1,0 +1,17 @@
+{
+  "1a61382e04dd7b614093b5efcb8b2614_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.878",
+    "duracao": 6.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3588359355926514,
+    "mos_stoi": 0.9043680429458618,
+    "mos_si_sdr": 14.518593788146973,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas acho que pra iniciar jogando, ele não... Ainda mais pela intensidade que o Inter pretende aplicar, né? E é como o Danny falou...",
+    "stt_wav2vec": "MAS ACHO QUE PARA ME STÁ JOGANDO LE NÃOAINDA MAIS PELA INTENCIDADE QUE O INTERPRETENDE A PLICAR NE E É COMO DENE FALOR"
+  }
+}

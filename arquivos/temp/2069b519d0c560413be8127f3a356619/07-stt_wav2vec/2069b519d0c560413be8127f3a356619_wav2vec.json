@@ -1,0 +1,17 @@
+{
+  "2069b519d0c560413be8127f3a356619_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:05.020",
+    "duracao": 4.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0141544342041016,
+    "mos_stoi": 0.9605252742767334,
+    "mos_si_sdr": 15.744921684265137,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não, se tivesse, não estaria aqui nesse momento, estaria lá em Paris em algum outro lugar.",
+    "stt_wav2vec": "NÃ NÃO SE TIVESSEM E NÃO DARIA AQUI NESSE MOMENTARIA LÁ EM PARIS ALGUM OUTRO LUGAR"
+  }
+}

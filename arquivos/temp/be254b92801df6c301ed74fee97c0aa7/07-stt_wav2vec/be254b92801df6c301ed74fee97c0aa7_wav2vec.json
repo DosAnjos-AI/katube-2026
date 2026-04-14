@@ -1,0 +1,17 @@
+{
+  "be254b92801df6c301ed74fee97c0aa7_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.640",
+    "duracao": 5.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.562286853790283,
+    "mos_stoi": 0.9660040140151978,
+    "mos_si_sdr": 18.28942108154297,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "porque eu também não sou dono do ensino da razão. Eu faço tudo com base na experiência e na formação que tenho.",
+    "stt_wav2vec": "N PORQUE EUTOMBE NÃO SOU DONISTINHA DA RAZÃO A COISA E EU FAZ TUDO COM BAZ NA EXPERIÊNCIA E NA NA NA FURMAÇÃO CE TANHA"
+  }
+}

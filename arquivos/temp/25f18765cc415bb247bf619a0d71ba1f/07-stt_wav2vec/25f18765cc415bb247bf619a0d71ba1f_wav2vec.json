@@ -1,0 +1,17 @@
+{
+  "25f18765cc415bb247bf619a0d71ba1f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.604",
+    "duracao": 12.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3808085918426514,
+    "mos_stoi": 0.915191113948822,
+    "mos_si_sdr": 7.071344375610352,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele, pro meu pai, né? Eles estão dentro de casa de quarentena. E eu passei... Exatamente. Desculpa a mãe, mas são idosos. E daí, no caso...",
+    "stt_wav2vec": "ELA  PARA MEU PAI NELE ESTÃO DENTRO DE CASA DE QUARENTENA E E EU PATREIO EXATAMENTE SÃO DESCULPA AMÃE MAS VONES SÃO IDOSOS E DAÍ NO CASO A"
+  }
+}

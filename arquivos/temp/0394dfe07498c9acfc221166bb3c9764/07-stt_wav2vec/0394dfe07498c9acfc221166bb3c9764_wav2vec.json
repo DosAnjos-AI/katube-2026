@@ -1,0 +1,17 @@
+{
+  "0394dfe07498c9acfc221166bb3c9764_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:13.628",
+    "duracao": 13.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3049875497817993,
+    "mos_stoi": 0.8043972849845886,
+    "mos_si_sdr": 8.133065223693848,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que sejam referências, e aqui me deste a parte, mas acredito que poder ter a possibilidade de receber indicações, dicas, técnicas, seja lá o ful dos jogadores que sejam referências para nós.",
+    "stt_wav2vec": "SEOR FRENCES E QUE EMPESTE UM POUCO VESTE APARTMAS E É CRITO OSEVERE PODE TER APOSERLIDAR DA SVER INDICAÇÕES DICA AS TÉCNICAS TES OLAUFOR DE DE DEJEGADORES UESEJAM FRENÇAS POR NÓS"
+  }
+}

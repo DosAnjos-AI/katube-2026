@@ -1,0 +1,30 @@
+{
+  "7162f1424ed64145ffd284241d796264_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:12.060",
+    "duracao": 12.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4042249917984009,
+    "mos_stoi": 0.8905848264694214,
+    "mos_si_sdr": 6.817766189575195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu não tive quarentena, né, meu amor? Porque meu serviço não parou. Sim. Ele foi argumentado. Eu não tive tempo. Mas teve... Eu acho que foi a terceira temporada de Sex Education que saiu..."
+  },
+  "7162f1424ed64145ffd284241d796264_002.ogg": {
+    "tempo_inicio": "00:00:12.132",
+    "tempo_fim": "00:00:26.364",
+    "duracao": 14.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6693739891052246,
+    "mos_stoi": 0.905856192111969,
+    "mos_si_sdr": 13.112295150756836,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que eu falei, eu vou sentar este popô de ouro do sofá e só saio daqui quando acabar. E assim foi feito, meu amor. Eu pedi uma pizza gigante, um refrigerante imenso."
+  }
+}

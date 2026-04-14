@@ -1,0 +1,44 @@
+{
+  "158b7166f629a651ad15944884a7faaf_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:04.860",
+    "duracao": 4.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.337352991104126,
+    "mos_stoi": 0.7338052988052368,
+    "mos_si_sdr": 11.561432838439941,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tive craques decidindo e jogando muita bola. Foi com o Luan..."
+  },
+  "158b7166f629a651ad15944884a7faaf_002.ogg": {
+    "tempo_inicio": "00:00:05.124",
+    "tempo_fim": "00:00:19.868",
+    "duracao": 14.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1963282823562622,
+    "mos_stoi": 0.7000092267990112,
+    "mos_si_sdr": -1.2230051755905151,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "158b7166f629a651ad15944884a7faaf_003.ogg": {
+    "tempo_inicio": "00:00:20.068",
+    "tempo_fim": "00:00:26.062",
+    "duracao": 5.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5772919654846191,
+    "mos_stoi": 0.7833092212677002,
+    "mos_si_sdr": 7.301793575286865,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pedro Rocha, quando estava muito bem. Então, assim, eu vejo que o Grêmio tem... Falta protagonista."
+  }
+}

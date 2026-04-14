@@ -1,0 +1,17 @@
+{
+  "ea0bc8839dbf9bf3ac9d969983583673_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.252",
+    "duracao": 8.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7586750984191895,
+    "mos_stoi": 0.9716271162033081,
+    "mos_si_sdr": 20.921655654907227,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "tem entrado na bolsa, tem entrado mesmo pelas criptomoedas. Quando nós falamos aqui de diversificação que tem a ver com a defesa...",
+    "stt_wav2vec": "TENTRADO NA VOÇA TEM A ENTRAD A MESMO PORQUE PELA ESCRIPTO A MOEDAS QUANO NOS FALAMOS AQUI DE DIVECIFICAÇÃO TEM ELECOMA DESFIEZA"
+  }
+}

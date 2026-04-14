@@ -1,0 +1,17 @@
+{
+  "7da1f80f89f7a0d371febc2f02711a7f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.846",
+    "duracao": 8.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8056840896606445,
+    "mos_stoi": 0.9347628951072693,
+    "mos_si_sdr": 9.306754112243652,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas não existe tanto como as ações. No entanto, é tal coisa que tem passivo também, porque também não quer estar a... Se um dia me lembrar que já não tenho paciência ou que não tenho tempo...",
+    "stt_wav2vec": "MAS NÃO EXISTENTE COMO AS AÇÕES NÃO ENTENDO E TAL COISA TENHO IMPASSIVE TALMEM PORQUE FAME NUNCA ERTARDA SEONDIAMO LEMBRARQE JÁ NÃO TENH PACIÊNCIA QUE NÃO TEMH TEO"
+  }
+}

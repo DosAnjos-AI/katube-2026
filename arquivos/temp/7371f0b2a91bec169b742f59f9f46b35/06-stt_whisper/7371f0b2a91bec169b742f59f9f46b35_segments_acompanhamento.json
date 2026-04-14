@@ -1,0 +1,16 @@
+{
+  "7371f0b2a91bec169b742f59f9f46b35_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:20.376",
+    "duracao": 20.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1876904964447021,
+    "mos_stoi": 0.9237401485443115,
+    "mos_si_sdr": 6.233001708984375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E que é pedido, não tem problema. Eu tô tirando uma onda aqui do jeito que é pedido, né? Sempre com a plaquinha. Sim. A plaquinha lá me ajude, estou em alguma coisa. Aí, beleza. Aí, tu sai, tu sai da zona sul, tu anda, tu anda, tu vai lá pra canoas. Tá. Aí, lá em canoas, tem a mesma coisa. Sim."
+  }
+}

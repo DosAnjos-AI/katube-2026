@@ -1,0 +1,44 @@
+{
+  "f6cef244fe27c9026d4370f57a9fdd20_001.ogg": {
+    "tempo_inicio": "00:00:00.260",
+    "tempo_fim": "00:00:08.700",
+    "duracao": 8.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9035395383834839,
+    "mos_stoi": 0.8377699255943298,
+    "mos_si_sdr": 7.00892972946167,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então o Grenal 4,25 vai ser a pauta do nosso programa de hoje. Teremos também o botão aguardado do sorteio da Toca, do Confedê Futebol."
+  },
+  "f6cef244fe27c9026d4370f57a9fdd20_002.ogg": {
+    "tempo_inicio": "00:00:08.996",
+    "tempo_fim": "00:00:16.796",
+    "duracao": 7.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5277364253997803,
+    "mos_stoi": 0.7994484901428223,
+    "mos_si_sdr": 7.260678291320801,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "confeccionada pelo pessoal da You Factory, vai ser entregue para uns nossos ouvintes que participaram do sorteio no Alômbia contra o futebol."
+  },
+  "f6cef244fe27c9026d4370f57a9fdd20_003.ogg": {
+    "tempo_inicio": "00:00:17.220",
+    "tempo_fim": "00:00:22.462",
+    "duracao": 5.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2412803173065186,
+    "mos_stoi": 0.5409267544746399,
+    "mos_si_sdr": -6.12774133682251,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E essa pessoa ainda vai ter a chance de participar conosco no programa ou ainda indicar alguém para participar"
+  }
+}

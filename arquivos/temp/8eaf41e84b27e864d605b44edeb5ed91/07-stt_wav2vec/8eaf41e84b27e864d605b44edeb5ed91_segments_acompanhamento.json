@@ -1,0 +1,17 @@
+{
+  "8eaf41e84b27e864d605b44edeb5ed91_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:11.582",
+    "duracao": 11.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7471935749053955,
+    "mos_stoi": 0.9475277066230774,
+    "mos_si_sdr": 9.817769050598145,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "lição aprendida no livro Pai Pai Pai Pobre, podemos ter direito à habitação na mesma e ir poupando, só que em vez de ser 200 euros, pode ser 20. É pouco, mas é melhor que nada.",
+    "stt_wav2vec": "ESTÃO APRENDIDA NO LIVRO BARREI PAI POVRE PODEMOS TER CRETA A HABITAÇÃO NA MESMA E  POUPANDO SÓ QUE ENVE DE SER DUZENTOS ERRAS PÓS SER VINTE É POUCO MAS EMIOCE NADA"
+  }
+}

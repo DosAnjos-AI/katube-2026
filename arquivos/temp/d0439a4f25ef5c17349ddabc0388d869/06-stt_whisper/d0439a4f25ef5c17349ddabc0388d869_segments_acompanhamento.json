@@ -1,0 +1,16 @@
+{
+  "d0439a4f25ef5c17349ddabc0388d869_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.598",
+    "duracao": 3.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9681150913238525,
+    "mos_stoi": 0.9544196128845215,
+    "mos_si_sdr": 19.803619384765625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "10 anos precisados do dinheiro, já não podes ter esta estratégia."
+  }
+}

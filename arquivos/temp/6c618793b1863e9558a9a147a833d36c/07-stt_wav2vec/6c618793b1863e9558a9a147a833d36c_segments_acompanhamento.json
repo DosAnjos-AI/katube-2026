@@ -1,0 +1,17 @@
+{
+  "6c618793b1863e9558a9a147a833d36c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:27.320",
+    "duracao": 27.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3896195888519287,
+    "mos_stoi": 0.9223962426185608,
+    "mos_si_sdr": 9.390464782714844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "atormentado das ideias. Vou ter que conseguir uma aula de teatro pra ti, pra tu te especializar na área. Na escola de maia de atores, é que o Cosma foi. Isso aí, na próxima malhação eu quero o Wagner lá. O que tu acha? Eu não gosto de malhar. Ai, meu Deus do céu, amor. Mas é importante, viu? É muito importante. Por isso que tu tá com esse corpo, um chassi de grilo. Nunca vi. Parece uma vírgula de tão magro. Madro e corcunda, né? É uma vírgula.",
+    "stt_wav2vec": "ATORMENTADO DA VIBÉIA VVOTÊ CONSEGUIR UMA AULA DE TEATRO PRATI PRA TUDE ESPECIALIZAR NA ÁRE AAAIA DE ATORES É QUE O CODAACOI NA ISSA AI NA PRÓXIMA VARIAÇÃO E QUERO VAGNARLÁ QUE TRAXA EU NÃO GOSTO MALHA NÃ A MEU DEUS DO CÉU A MO IRMÃ ASÉDEMEU É MUTEMPRÉMESQUETU TACOSEPORCOHAE DE GRILO NUNCA VI PARECE UMA VÍRGULA DE TÃO DO ABRE CORCUNDA"
+  }
+}

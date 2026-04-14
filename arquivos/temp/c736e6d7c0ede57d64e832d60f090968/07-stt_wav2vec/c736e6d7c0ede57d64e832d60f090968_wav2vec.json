@@ -1,0 +1,62 @@
+{
+  "c736e6d7c0ede57d64e832d60f090968_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.796",
+    "duracao": 12.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1453697681427,
+    "mos_stoi": 0.97159743309021,
+    "mos_si_sdr": 20.06198501586914,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "talvez até o fato de você ter comparado com o Sérgio, é interessante, com o latão. Um teatro que diz, não, só podemos tratar de assuntos gerais com a forma épica.",
+    "stt_wav2vec": "TALVEZ ATÉ O FATO DE VOCÊ TEM COMPARADO COM SEJO INTERESSANTE NÃO É COM UM LATÃO É UM TEATRO QUE DIZ NÃO SÓ PODEMOS TRATAR DE ASSUNTOS GERAIS COM A FORMA ÉPICA"
+  },
+  "c736e6d7c0ede57d64e832d60f090968_002.ogg": {
+    "tempo_inicio": "00:00:13.092",
+    "tempo_fim": "00:00:26.300",
+    "duracao": 13.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1665024757385254,
+    "mos_stoi": 0.9509325623512268,
+    "mos_si_sdr": 11.75661563873291,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Basicamente, uma ideia, estou generalizando, mas seria isso. E um abandono progressivo da cena dialógica ou de certas estruturas do drama.",
+    "stt_wav2vec": "BASICAMENTE MEDEAA ESTOU GENERALIZANDO MAIS SERIA ISSO E E QE UM ABANDONO PROGRESSIVO DA DA CENA DIALÓGICA OU OU DOS DA DE SETAS ESTRUTURAS DO DRAMA"
+  },
+  "c736e6d7c0ede57d64e832d60f090968_003.ogg": {
+    "tempo_inicio": "00:00:26.404",
+    "tempo_fim": "00:00:39.132",
+    "duracao": 12.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6560957431793213,
+    "mos_stoi": 0.9755462408065796,
+    "mos_si_sdr": 16.046186447143555,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí, quando a gente vê uma potência de uma dramaturgia, por exemplo, a do Caldeiron, que é na palavra, é na discussão, mas que ela alcança essa amplidão da questão política, ou...",
+    "stt_wav2vec": "E AÍ QUANDO A GENTE VÊU UMA POTÊNCIA DE UMA DRAMATURGIA A POR EXEMPLO DO CALDEIRON QIER É NA PALAVRA NA DISCUSSÃO MAS QUE ELLA ALCANÇA ESSA ESSA AMPLIDÃO DA QUESTÃO POLÍTICA OU"
+  },
+  "c736e6d7c0ede57d64e832d60f090968_004.ogg": {
+    "tempo_inicio": "00:00:39.236",
+    "tempo_fim": "00:00:44.892",
+    "duracao": 5.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3735547065734863,
+    "mos_stoi": 0.982187807559967,
+    "mos_si_sdr": 17.60101890563965,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a Ailda, que é maravilhosa também, que tenha toda essa sutileza de um monólogo,",
+    "stt_wav2vec": "DAAILDA QUE É MARAVILHOSA TAMBÉM QUE TENHA TODA ESSA SUBTILEZA DE UM MONÓLOGO"
+  }
+}

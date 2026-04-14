@@ -1,0 +1,17 @@
+{
+  "f3f0f778b60498f3973a02753d5111d8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.726",
+    "duracao": 5.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8836772441864014,
+    "mos_stoi": 0.8954301476478577,
+    "mos_si_sdr": 19.5760498046875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele esteve em várias áreas e ele pensou muitas coisas, ele era um artista múltiplo,",
+    "stt_wav2vec": "ELE ESTEVE EM VÁRIAS ÁRIOS E ELE PENSOU MUITAS COISAS ELE ERA UM ARTISTA MÚLTIPLO"
+  }
+}

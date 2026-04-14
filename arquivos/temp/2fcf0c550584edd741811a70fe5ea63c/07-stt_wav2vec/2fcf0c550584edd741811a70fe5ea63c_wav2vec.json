@@ -1,0 +1,17 @@
+{
+  "2fcf0c550584edd741811a70fe5ea63c_002.ogg": {
+    "tempo_inicio": "00:00:08.900",
+    "tempo_fim": "00:00:27.318",
+    "duracao": 18.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4999619722366333,
+    "mos_stoi": 0.9424229860305786,
+    "mos_si_sdr": 11.687666893005371,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí o seguinte, dá três pisadas na rua o troço vai embora, né, cara? É verdade. Fowler ainda contou que algumas suas roupas têm aspecto um pouco esfarrapado. Mas que pra ele é mais importante ser fiel ao que acredita do que se importar com o que as pessoas pensam. Olha, isso é... Claro, isso é bem legal. Personalidade.",
+    "stt_wav2vec": "E AÍ O SEGUINTE DA TREZ PISADA NA RUATRNA EMBORA NA VERDADE FÓLERA AINDA CONTOU QUE ALGUMAS SUAS ROUPASTÊM ASPECTO UM POUCOESFARRAPADO CAPÉ MAS QUE PARA ELE É MAIS IMPORTANTE SER FIEL QUE ACREDITA DO QUE SE IMPORTAR COM QUE AS PESSOAS PENSAOLESSO ÉARO E"
+  }
+}

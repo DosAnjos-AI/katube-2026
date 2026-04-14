@@ -1,0 +1,44 @@
+{
+  "e63f11311a70aa52dea71012f9b91356_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.044",
+    "duracao": 10.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9910128116607666,
+    "mos_stoi": 0.9495083093643188,
+    "mos_si_sdr": 17.788820266723633,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Um ponto positivo é o segundo jogo do Tassiano fora do banco, graças a Deus. Segundo jogo dele já fora do banco. Só falta o Thiago Neves ficar fora do banco para ficar perfeito."
+  },
+  "e63f11311a70aa52dea71012f9b91356_002.ogg": {
+    "tempo_inicio": "00:00:10.404",
+    "tempo_fim": "00:00:17.596",
+    "duracao": 7.19,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.226975917816162,
+    "mos_stoi": 0.9784297943115234,
+    "mos_si_sdr": 17.242027282714844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas, cara, a minha maior preocupação é assim, o nosso time no primeiro tempo ele cria."
+  },
+  "e63f11311a70aa52dea71012f9b91356_003.ogg": {
+    "tempo_inicio": "00:00:17.956",
+    "tempo_fim": "00:00:27.864",
+    "duracao": 9.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9846997261047363,
+    "mos_stoi": 0.9724087715148926,
+    "mos_si_sdr": 19.705257415771484,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele cria, não na intensidade que eu gostaria que criasse, mas eu não sou o dono da verdade para definir quanto que deve criar ou não. E no segundo tempo morre o nosso meio de campo."
+  }
+}

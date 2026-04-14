@@ -1,0 +1,47 @@
+{
+  "c9ada18b8d0b2ce10ff4188e2e7a9c1b_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.772",
+    "duracao": 7.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.86468768119812,
+    "mos_stoi": 0.9829171299934387,
+    "mos_si_sdr": 22.964143753051758,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e hierárquicas, normalmente essas pessoas não têm espaço ou não se sentem motivadas a propor soluções e mudanças",
+    "stt_wav2vec": "ZIERÁRQHICAS NORMALMENTE ESSAS PESSOAS NÃO TÊM ESPAÇO OU NÃO SE SENTEM MOTIVADAS A PROPOR SOLUÇÕES E MUDANÇAS"
+  },
+  "c9ada18b8d0b2ce10ff4188e2e7a9c1b_002.ogg": {
+    "tempo_inicio": "00:00:08.132",
+    "tempo_fim": "00:00:16.508",
+    "duracao": 8.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1770877838134766,
+    "mos_stoi": 0.982995331287384,
+    "mos_si_sdr": 24.14004135131836,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Às vezes essas pessoas nem compreendem que podem e devem ir além do seu dever funcional. Um simples bom dia do líder.",
+    "stt_wav2vec": "ÀS VEZES AS PESSOAS NEM COMPREENDEM QUE PODEM E DEVEM IR ALÉM DO SEU DEVER FUNCIONAL UM SIMPLES BOM DIA DO LIDER"
+  },
+  "c9ada18b8d0b2ce10ff4188e2e7a9c1b_003.ogg": {
+    "tempo_inicio": "00:00:16.804",
+    "tempo_fim": "00:00:30.526",
+    "duracao": 13.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7506461143493652,
+    "mos_stoi": 0.9854629039764404,
+    "mos_si_sdr": 23.554275512695312,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "é quase um convite para que aquela pessoa entre num novo modo de ação. Outra coisa importante que o Riva falou é a aplicação da famosa teoria de Pareto, que é presente na rotina da maioria das empresas.",
+    "stt_wav2vec": "É QUASE UM CONVITE PARA QUE AQUELLA PESSOA ENTRE NUM NOVO MODO DE AÇÃO OUTRA COISA IMPORTANTE QUE O RIVA FALOU É A APLICAÇÃO DA FAMOSA TEORIA DE PARETO QUE É PRESENTE NA ROTINA DA MAIORIA DAS EMPRESAS"
+  }
+}

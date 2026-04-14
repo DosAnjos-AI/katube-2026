@@ -1,0 +1,17 @@
+{
+  "0c0b261cac56fb8471ea0a3ca853040c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.784",
+    "duracao": 3.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0266847610473633,
+    "mos_stoi": 0.9461092948913574,
+    "mos_si_sdr": 18.353546142578125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "sabe qual é que é o número, que é o que é que nós gostávamos ter aprendido na escola.",
+    "stt_wav2vec": "SA DOS COLEQUER O NÚMERO QUE É O QUIACNÓSTICO ESTÁVAMOS TER APRENDIDO NA ESCOLA"
+  }
+}

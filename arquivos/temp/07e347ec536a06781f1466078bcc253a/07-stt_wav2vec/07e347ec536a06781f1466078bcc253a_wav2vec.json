@@ -1,0 +1,17 @@
+{
+  "07e347ec536a06781f1466078bcc253a_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:03.772",
+    "duracao": 3.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2887119054794312,
+    "mos_stoi": 0.8432769775390625,
+    "mos_si_sdr": 2.995849370956421,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Que tu gosta mais disso daqui, né, Wagner? Corta uma coisa mais pra cima. Aí, ó.",
+    "stt_wav2vec": "SE TU GOSTA MAIS DE SER DAQUI NE AVAGNERAR COSTO UMA COISA MAIS PORCIMA A IOR"
+  }
+}

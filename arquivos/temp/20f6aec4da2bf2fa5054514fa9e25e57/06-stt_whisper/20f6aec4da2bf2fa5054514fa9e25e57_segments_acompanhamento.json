@@ -1,0 +1,44 @@
+{
+  "20f6aec4da2bf2fa5054514fa9e25e57_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:07.388",
+    "duracao": 7.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5412797927856445,
+    "mos_stoi": 0.9404353499412537,
+    "mos_si_sdr": 15.479426383972168,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se tiverem outras também podem partilhar e eu comigo e eu ajudo a ver se realmente tem aqui alguma tendência."
+  },
+  "20f6aec4da2bf2fa5054514fa9e25e57_002.ogg": {
+    "tempo_inicio": "00:00:07.556",
+    "tempo_fim": "00:00:20.476",
+    "duracao": 12.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3849154710769653,
+    "mos_stoi": 0.8824129700660706,
+    "mos_si_sdr": 6.163127899169922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Outra coisa dos gripes que gostava de referir, que normalmente não é falado, é o comprimento, não é? Muitas vezes as pessoas colocam o gripe muito curtinho, que quase nem chega ali ao coração da raqueta, ao chamado coração da raqueta, outros..."
+  },
+  "20f6aec4da2bf2fa5054514fa9e25e57_003.ogg": {
+    "tempo_inicio": "00:00:20.612",
+    "tempo_fim": "00:00:26.264",
+    "duracao": 5.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1309022903442383,
+    "mos_stoi": 0.9246474504470825,
+    "mos_si_sdr": 11.801445960998535,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "quase que ultrapassam o coração da raquete, quase que chega à raquete à parte de bater na bola. Aí está..."
+  }
+}

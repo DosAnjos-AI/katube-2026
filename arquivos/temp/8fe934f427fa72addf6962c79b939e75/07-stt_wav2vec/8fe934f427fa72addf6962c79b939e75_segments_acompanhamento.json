@@ -1,0 +1,32 @@
+{
+  "8fe934f427fa72addf6962c79b939e75_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.372",
+    "duracao": 9.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4536895751953125,
+    "mos_stoi": 0.9563385844230652,
+    "mos_si_sdr": 13.134590148925781,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu penso que para grupo e com o andar da carruagem, por tudo que ele representou dentro do grupo do Grêmio nesses últimos anos, que o Grêmio teve aí de títulos,",
+    "stt_wav2vec": "JÁ PENS QUE PARA GRUPO E COM ANDAR DA CARRUAGEM POR TUDO O QUE ELE REPRESENTOU DENTRO DO GRUPO DO GRÊMIO NESSES ÚLTIMOS ANOS QUE O GRÊMIO TEVE AÍ DE TÍTULOS"
+  },
+  "8fe934f427fa72addf6962c79b939e75_002.ogg": {
+    "tempo_inicio": "00:00:09.828",
+    "tempo_fim": "00:00:13.998",
+    "duracao": 4.17,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.644986629486084,
+    "mos_stoi": 0.7920874953269958,
+    "mos_si_sdr": 0.667690634727478,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

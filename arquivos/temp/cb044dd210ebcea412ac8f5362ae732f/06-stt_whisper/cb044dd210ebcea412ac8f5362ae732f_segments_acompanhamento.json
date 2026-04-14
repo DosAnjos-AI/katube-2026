@@ -1,0 +1,30 @@
+{
+  "cb044dd210ebcea412ac8f5362ae732f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.156",
+    "duracao": 12.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2471860647201538,
+    "mos_stoi": 0.7635374069213867,
+    "mos_si_sdr": 1.6762570142745972,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "é antes da Libertadores, né? O Durante, né? Esse jogo, o Inter vai com o time misto lá e vai ser um jogo complicado, já. É que essa que a gente fala ali, ó. Tipo assim, tu pega em comparação, o Inter empatar com o Palmeiras, na minha opinião, é tu ganhar um ponto."
+  },
+  "cb044dd210ebcea412ac8f5362ae732f_002.ogg": {
+    "tempo_inicio": "00:00:12.484",
+    "tempo_fim": "00:00:17.086",
+    "duracao": 4.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0594992637634277,
+    "mos_stoi": 0.7994236350059509,
+    "mos_si_sdr": 5.813676357269287,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Agora, vir em casa e empatar com o Bahia é tu perder dois. Exato."
+  }
+}

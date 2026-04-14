@@ -1,0 +1,17 @@
+{
+  "02c5f8c30bcb13ff32056c64b6c490c1_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.694",
+    "duracao": 5.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4192590713500977,
+    "mos_stoi": 0.9565778374671936,
+    "mos_si_sdr": 18.706775665283203,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Só que isso é preciso fazer contas e as pessoas perceberem, porque nem sempre percebem, e às vezes também não confiam,",
+    "stt_wav2vec": "SÓ QUECÊR PRECISE FAZER CONTAS E AS PESSOAS PRESIVEREM PORQE NEM SEM PRESERVEM E AS VEZES TROENHAM CONFIO"
+  }
+}

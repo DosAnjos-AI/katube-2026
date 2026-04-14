@@ -1,0 +1,16 @@
+{
+  "a0d1e1bfc666240f90ebe100849efeae_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:08.526",
+    "duracao": 8.49,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6929831504821777,
+    "mos_stoi": 0.8958063125610352,
+    "mos_si_sdr": 12.132094383239746,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Relato Paulo, o Guilherme perguntou se seria interessante usar peso, aí já é um outro nível, já é um outro nível, né?"
+  }
+}

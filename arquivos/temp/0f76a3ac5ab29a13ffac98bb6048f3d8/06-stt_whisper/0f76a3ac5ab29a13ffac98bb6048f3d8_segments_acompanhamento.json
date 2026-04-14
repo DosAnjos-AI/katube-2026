@@ -1,0 +1,30 @@
+{
+  "0f76a3ac5ab29a13ffac98bb6048f3d8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.044",
+    "duracao": 14.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.679564952850342,
+    "mos_stoi": 0.9485851526260376,
+    "mos_si_sdr": 14.051715850830078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E como que você acha que operacionalizar esses processos vai contribuir para retirar essa sobrecarga dos times? Você disse muito sobre a questão de todo mundo estar pulverizado,"
+  },
+  "0f76a3ac5ab29a13ffac98bb6048f3d8_002.ogg": {
+    "tempo_inicio": "00:00:14.308",
+    "tempo_fim": "00:00:28.860",
+    "duracao": 14.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.862194538116455,
+    "mos_stoi": 0.9141048789024353,
+    "mos_si_sdr": 7.539336204528809,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

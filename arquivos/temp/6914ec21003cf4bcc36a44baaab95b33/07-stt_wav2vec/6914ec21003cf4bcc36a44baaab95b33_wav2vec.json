@@ -1,0 +1,17 @@
+{
+  "6914ec21003cf4bcc36a44baaab95b33_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.430",
+    "duracao": 4.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4947375059127808,
+    "mos_stoi": 0.7855496406555176,
+    "mos_si_sdr": 1.370932936668396,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Seria que o Renan que tá com um cara de triste, magoado?",
+    "stt_wav2vec": "NÃO SERIMOS DES RESPEITO COM RENAR QUE TAVA  CARA DE CRÍCIO MAGOADO"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "0adb8cf4fd3497351facfe15c08f4d86_001.ogg": {
+    "tempo_inicio": "00:00:00.196",
+    "tempo_fim": "00:00:06.300",
+    "duracao": 6.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Depois eu disparei a escrever. Bom, poesias e contos têm as toneladas, nunca publiquei.",
+    "stt_wav2vec": "POIS EU DESPAREI A ESCREVER BOM POEZIAS E CONTOS TEM AS TONELADAS NUNCA PUBLIQUEI"
+  },
+  "0adb8cf4fd3497351facfe15c08f4d86_002.ogg": {
+    "tempo_inicio": "00:00:06.628",
+    "tempo_fim": "00:00:13.774",
+    "duracao": 7.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": null,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

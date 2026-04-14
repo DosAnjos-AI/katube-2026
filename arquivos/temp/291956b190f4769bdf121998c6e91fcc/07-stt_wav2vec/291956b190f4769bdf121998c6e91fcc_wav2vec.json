@@ -1,0 +1,17 @@
+{
+  "291956b190f4769bdf121998c6e91fcc_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.254",
+    "duracao": 4.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.454012870788574,
+    "mos_stoi": 0.9864382743835449,
+    "mos_si_sdr": 18.575389862060547,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E hoje foi diferente, hein? Hoje o Grêmio não jogou bem nas últimas partidas.",
+    "stt_wav2vec": "E HOJE FOI DIFERENTE HOJE O GREME NÃO JOGOU BEM NAS ÚLTIMAS PARTIDAS"
+  }
+}

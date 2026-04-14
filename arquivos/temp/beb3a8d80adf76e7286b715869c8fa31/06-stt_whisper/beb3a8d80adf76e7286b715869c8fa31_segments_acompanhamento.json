@@ -1,0 +1,16 @@
+{
+  "beb3a8d80adf76e7286b715869c8fa31_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.654",
+    "duracao": 10.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2279863357543945,
+    "mos_stoi": 0.7643347382545471,
+    "mos_si_sdr": -2.8925867080688477,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas, meu, vamos ser bem sinceros. Vamos dizer de futebol, bola no corpo. Só que o Cristiano Ronaldo jogou melhor esse ano. Quem jogou melhor esse ano? Bola no corpo não é título, não é nada. Neymar."
+  }
+}

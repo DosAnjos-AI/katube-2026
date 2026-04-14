@@ -1,0 +1,16 @@
+{
+  "77100bbb1ccdb83fecee49fb739b5a53_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.638",
+    "duracao": 6.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4487295150756836,
+    "mos_stoi": 0.7792890071868896,
+    "mos_si_sdr": 0.1594153344631195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É merda pra vocês, pra nós não é."
+  }
+}

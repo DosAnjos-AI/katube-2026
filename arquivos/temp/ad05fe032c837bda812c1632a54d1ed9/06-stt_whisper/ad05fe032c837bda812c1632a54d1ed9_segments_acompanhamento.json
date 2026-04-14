@@ -1,0 +1,16 @@
+{
+  "ad05fe032c837bda812c1632a54d1ed9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.112",
+    "duracao": 7.11,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0284006595611572,
+    "mos_stoi": 0.9388934373855591,
+    "mos_si_sdr": 16.96942901611328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nós estamos falando de populações confinadas nas periferias, nas favelas, nas margens."
+  }
+}

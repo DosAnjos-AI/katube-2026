@@ -1,0 +1,17 @@
+{
+  "fb2f0eb0808d264517da4ec933777ae8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.700",
+    "duracao": 4.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3097742795944214,
+    "mos_stoi": 0.6704143285751343,
+    "mos_si_sdr": -0.28256791830062866,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Gente, foi um sucesso, sabe? Muito intimidade.",
+    "stt_wav2vec": "ESMENTITRAMAIME TUDO SAIASSE SAELIA PER OS MODEDOS LIGARES E LEGEÚNIA"
+  }
+}

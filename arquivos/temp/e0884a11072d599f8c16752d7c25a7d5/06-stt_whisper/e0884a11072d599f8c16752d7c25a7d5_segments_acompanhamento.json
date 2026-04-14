@@ -1,0 +1,58 @@
+{
+  "e0884a11072d599f8c16752d7c25a7d5_001.ogg": {
+    "tempo_inicio": "00:00:00.260",
+    "tempo_fim": "00:00:05.244",
+    "duracao": 4.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2947258949279785,
+    "mos_stoi": 0.6363521814346313,
+    "mos_si_sdr": -1.3697879314422607,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "e0884a11072d599f8c16752d7c25a7d5_002.ogg": {
+    "tempo_inicio": "00:00:05.636",
+    "tempo_fim": "00:00:14.908",
+    "duracao": 9.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2357016801834106,
+    "mos_stoi": 0.7590270042419434,
+    "mos_si_sdr": 1.6252206563949585,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "e0884a11072d599f8c16752d7c25a7d5_003.ogg": {
+    "tempo_inicio": "00:00:15.172",
+    "tempo_fim": "00:00:21.884",
+    "duracao": 6.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2752128839492798,
+    "mos_stoi": 0.7552876472473145,
+    "mos_si_sdr": -0.058664921671152115,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E como eu gosto de rir dos outros, foi muito feliz de você sair do outro."
+  },
+  "e0884a11072d599f8c16752d7c25a7d5_004.ogg": {
+    "tempo_inicio": "00:00:22.148",
+    "tempo_fim": "00:00:25.864",
+    "duracao": 3.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1895275115966797,
+    "mos_stoi": 0.8758669495582581,
+    "mos_si_sdr": 6.669500350952148,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

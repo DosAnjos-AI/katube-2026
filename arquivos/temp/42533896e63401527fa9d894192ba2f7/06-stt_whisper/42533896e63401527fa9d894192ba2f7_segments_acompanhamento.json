@@ -1,0 +1,22 @@
+{
+  "42533896e63401527fa9d894192ba2f7_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.756",
+    "duracao": 5.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Vamos para os nossos quadros. Vamos lá para o nosso primeiro quadro, gente. Se chama Achei na Bagunça."
+  },
+  "42533896e63401527fa9d894192ba2f7_002.ogg": {
+    "tempo_inicio": "00:00:06.084",
+    "tempo_fim": "00:00:18.792",
+    "duracao": 12.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "que é um quadro de indicações. Pode indicar qualquer coisa aqui. Então, é um ponto de macumba que é indicar, indica. Não precisa ser necessariamente sobre culinários, cozinhos, enfim, o que vocês quiserem."
+  }
+}

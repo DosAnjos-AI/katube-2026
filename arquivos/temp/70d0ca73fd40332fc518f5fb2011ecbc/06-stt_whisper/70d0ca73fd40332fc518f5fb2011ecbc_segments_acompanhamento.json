@@ -1,0 +1,30 @@
+{
+  "70d0ca73fd40332fc518f5fb2011ecbc_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.780",
+    "duracao": 6.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5322213172912598,
+    "mos_stoi": 0.9679598212242126,
+    "mos_si_sdr": 20.798397064208984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, às vezes um pouquinho de silêncio é interessante nessas relações."
+  },
+  "70d0ca73fd40332fc518f5fb2011ecbc_002.ogg": {
+    "tempo_inicio": "00:00:06.852",
+    "tempo_fim": "00:00:30.206",
+    "duracao": 23.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6312015056610107,
+    "mos_stoi": 0.9341422915458679,
+    "mos_si_sdr": 8.268256187438965,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque quando a gente às vezes deixa alguém falando sozinho, o troço vai baixando, vai baixando, e dá uma acalmada. Carolzinha, eu sei que a gente tem que entregar, mas é que tem muita galera mandando ainda de serviço. Deixa eu só mandar um beijo aqui para o Marcos de Almeida, que botou um negócio muito legal aqui. Bom dia, galera do Tudo Nosso. Sou dono de oficina mecânica e não parei de trabalhar sozinho, pois preciso..."
+  }
+}

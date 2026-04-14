@@ -1,0 +1,32 @@
+{
+  "a0e798ca1a6176eb671ba21829eb6389_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:21.916",
+    "duracao": 21.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4600651264190674,
+    "mos_stoi": 0.9129868149757385,
+    "mos_si_sdr": 10.39279842376709,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ronaldo. A prefeitura do município de Marilândia, no noroeste do Espírito Santo, tirou cerca de 50 bancos de uma área pública da cidade nesta segunda-feira. O objetivo é evitar aglomeração de idosos que costumam frequentar o local por causa do avanço do coronavírus.",
+    "stt_wav2vec": "GIDIA A PREFEITURA DO MUNICÍPIO DE MARILÂNDIA NO NORAESTE DO ESPIRITO SANTO TIROU CERCA DE CINQUENTA BANCOS DE UMA ÁREA PÚBLICA DA CIDADE NESTA SEGUNDA-FEIRA O OBJETIVO É VITAR AGLOMERAÇÃO DE IDOSAS QUE COSTUMAM FREQENTAR O LOCAL POR CAUSA DO AVANÇO DO CORONA VIRU"
+  },
+  "a0e798ca1a6176eb671ba21829eb6389_002.ogg": {
+    "tempo_inicio": "00:00:21.988",
+    "tempo_fim": "00:00:32.734",
+    "duracao": 10.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5792865753173828,
+    "mos_stoi": 0.9473780393600464,
+    "mos_si_sdr": 16.779335021972656,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O prefeito dessa cidade disse que os idosos iam ali pra praça, pegavam o seu matizito, encontravam outros idosos, batiam um papo.",
+    "stt_wav2vec": "O PREFEITO DA DESTA CIDADE DISSE QUE OS IDOSOS IAM ALI PARA PRAÇA PEGAVAM O SEU MATIZITO ENCONTRAVAM OTROS IDOSOS BATIAM UM PAPO"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "a2ba8f9e7f8b8b88ce50b26ce7eb5b6a_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.312",
+    "duracao": 8.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.336761713027954,
+    "mos_stoi": 0.9092152118682861,
+    "mos_si_sdr": 9.066252708435059,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "quando se trata da imagem das organizações. Hoje nós vamos falar de prevenção de crises e proteção de marcas.",
+    "stt_wav2vec": "QUADO SE TRATA DA IMAGEM DAS ORGANIZAÇÕES HOJE NÓS VAMOS FALAR DE PREVENÇÃO DE CRISES E PROTEÇÃO DE MARCAS"
+  }
+}

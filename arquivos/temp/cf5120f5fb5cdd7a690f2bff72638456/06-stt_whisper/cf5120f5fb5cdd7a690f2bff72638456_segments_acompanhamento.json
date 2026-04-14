@@ -1,0 +1,30 @@
+{
+  "cf5120f5fb5cdd7a690f2bff72638456_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.764",
+    "duracao": 4.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.587527275085449,
+    "mos_stoi": 0.9692743420600891,
+    "mos_si_sdr": 21.11111068725586,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vai para a renovação necessária do Inter com o Rodilindo."
+  },
+  "cf5120f5fb5cdd7a690f2bff72638456_002.ogg": {
+    "tempo_inicio": "00:00:05.220",
+    "tempo_fim": "00:00:12.136",
+    "duracao": 6.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9434914588928223,
+    "mos_stoi": 0.9262946844100952,
+    "mos_si_sdr": 13.992853164672852,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Que o Inter precisa estar com o grupo unido. Esse cara é essencial pra nossa... Ele é tipo o perdigão. Entendeu?"
+  }
+}

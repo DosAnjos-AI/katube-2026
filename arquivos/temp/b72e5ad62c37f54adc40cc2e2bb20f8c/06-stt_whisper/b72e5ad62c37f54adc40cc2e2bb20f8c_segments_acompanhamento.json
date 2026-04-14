@@ -1,0 +1,30 @@
+{
+  "b72e5ad62c37f54adc40cc2e2bb20f8c_001.ogg": {
+    "tempo_inicio": "00:00:02.884",
+    "tempo_fim": "00:00:19.516",
+    "duracao": 16.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9616889953613281,
+    "mos_stoi": 0.9638322591781616,
+    "mos_si_sdr": 14.200297355651855,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E se você gostou do conteúdo de hoje, não se esqueça, gente. Compartilha, recomenda. Manda pros seus amigos, manda pra galera. Eu tenho certeza que todo mundo vai ficar muito feliz de conhecer a gente e aprender cada vez um pouquinho mais com os nossos episódios aí feitos com muito carinho."
+  },
+  "b72e5ad62c37f54adc40cc2e2bb20f8c_002.ogg": {
+    "tempo_inicio": "00:00:19.652",
+    "tempo_fim": "00:00:27.408",
+    "duracao": 7.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7037135362625122,
+    "mos_stoi": 0.9417580366134644,
+    "mos_si_sdr": 9.48426342010498,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Esse aqui é o podcast do Somos Líderes, um projeto do SESCOP, feito especialmente para falarmos sobre a juventude no cooperativismo."
+  }
+}

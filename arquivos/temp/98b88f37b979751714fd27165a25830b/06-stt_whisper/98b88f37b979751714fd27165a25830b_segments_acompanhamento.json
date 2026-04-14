@@ -1,0 +1,30 @@
+{
+  "98b88f37b979751714fd27165a25830b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.868",
+    "duracao": 11.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1902105808258057,
+    "mos_stoi": 0.9063014984130859,
+    "mos_si_sdr": 4.593471527099609,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sobre os Beatles. Olha, que legal. Ele vai fazer uma coisa que ele já tá fazendo há um tempo, que é o seguinte, ele restaura em filmes antigos muito bem. Por exemplo, ele pegou alguns filmes da Primeira Guerra Mundial."
+  },
+  "98b88f37b979751714fd27165a25830b_002.ogg": {
+    "tempo_inicio": "00:00:11.972",
+    "tempo_fim": "00:00:16.024",
+    "duracao": 4.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.509526014328003,
+    "mos_stoi": 0.8929727077484131,
+    "mos_si_sdr": 7.349277019500732,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E ele colorizou e deixou como se fosse de ontem."
+  }
+}

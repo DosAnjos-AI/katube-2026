@@ -1,0 +1,44 @@
+{
+  "b0861e295c9b5859ccb10b0fa271d860_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.588",
+    "duracao": 10.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3736541271209717,
+    "mos_stoi": 0.9376665949821472,
+    "mos_si_sdr": 19.249116897583008,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu é que não. Disse o rapazinho. Eu ia... Era pegar uma corda gigante e laçar todos os bois. E depois amarrar..."
+  },
+  "b0861e295c9b5859ccb10b0fa271d860_002.ogg": {
+    "tempo_inicio": "00:00:10.884",
+    "tempo_fim": "00:00:15.196",
+    "duracao": 4.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2626070976257324,
+    "mos_stoi": 0.8764587640762329,
+    "mos_si_sdr": 16.206392288208008,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Todos eles são uma cerca. Me espéciem."
+  },
+  "b0861e295c9b5859ccb10b0fa271d860_003.ogg": {
+    "tempo_inicio": "00:00:15.492",
+    "tempo_fim": "00:00:20.408",
+    "duracao": 4.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8825668096542358,
+    "mos_stoi": 0.9005111455917358,
+    "mos_si_sdr": 15.203044891357422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Só, se fossem dois, muito bravos e chifrudos?"
+  }
+}

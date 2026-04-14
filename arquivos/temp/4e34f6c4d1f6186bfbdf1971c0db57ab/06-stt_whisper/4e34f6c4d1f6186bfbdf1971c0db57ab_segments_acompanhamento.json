@@ -1,0 +1,30 @@
+{
+  "4e34f6c4d1f6186bfbdf1971c0db57ab_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.548",
+    "duracao": 11.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4025859832763672,
+    "mos_stoi": 0.8251648545265198,
+    "mos_si_sdr": 3.6152162551879883,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cara, é foda tu chegar lá no Barcelona com 21 anos e na tua apresentação os caras largaram que tá o substituto do INEsta. Ó, mano. Já pegou a 8, né? Mas ele começou bem, cara. Ele começou muito bem no Barcelona."
+  },
+  "4e34f6c4d1f6186bfbdf1971c0db57ab_002.ogg": {
+    "tempo_inicio": "00:00:11.748",
+    "tempo_fim": "00:00:16.088",
+    "duracao": 4.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2333511114120483,
+    "mos_stoi": 0.5792926549911499,
+    "mos_si_sdr": -6.0679473876953125,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

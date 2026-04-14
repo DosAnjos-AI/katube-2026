@@ -1,0 +1,30 @@
+{
+  "98bb4b7e824e78fa651ce10a2e7e0f01_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.868",
+    "duracao": 3.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4778525829315186,
+    "mos_stoi": 0.6956039667129517,
+    "mos_si_sdr": 3.898131847381592,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu tenho 25 anos e vou dizer, ok, eu tenho 40 anos ainda pela frente."
+  },
+  "98bb4b7e824e78fa651ce10a2e7e0f01_002.ogg": {
+    "tempo_inicio": "00:00:04.228",
+    "tempo_fim": "00:00:08.478",
+    "duracao": 4.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5969762802124023,
+    "mos_stoi": 0.9144001007080078,
+    "mos_si_sdr": 13.726971626281738,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não está bem 40 anos, mas ainda tenho 40 anos pela frente. Agora se eu disser..."
+  }
+}

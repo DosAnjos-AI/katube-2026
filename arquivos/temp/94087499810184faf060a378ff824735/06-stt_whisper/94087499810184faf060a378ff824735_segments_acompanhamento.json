@@ -1,0 +1,16 @@
+{
+  "94087499810184faf060a378ff824735_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:23.774",
+    "duracao": 23.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.769268274307251,
+    "mos_stoi": 0.9791696667671204,
+    "mos_si_sdr": 10.519498825073242,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Perfeito, perfeito. A gente já bateu nessa tecla aqui várias e várias vezes. Falamos muito sobre futuro, falamos muito sobre perspectivas para os próximos anos, mas essa construção se começa agora, não é mesmo? Então, você aí que está nos ouvindo, que tem esse desejo de mudança, quer participar, se capacite, se coloque como protagonista dessa história."
+  }
+}

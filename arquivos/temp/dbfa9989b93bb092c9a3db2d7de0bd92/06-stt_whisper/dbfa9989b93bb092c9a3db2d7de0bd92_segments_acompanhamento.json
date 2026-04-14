@@ -1,0 +1,58 @@
+{
+  "dbfa9989b93bb092c9a3db2d7de0bd92_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.796",
+    "duracao": 8.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9442665576934814,
+    "mos_stoi": 0.9646731019020081,
+    "mos_si_sdr": 16.70358657836914,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Muita gente morreu na China, muita gente está morrendo na Espanha. Eu acabei de receber mensagem aqui, por exemplo, no arroba Rodrigo Adams."
+  },
+  "dbfa9989b93bb092c9a3db2d7de0bd92_002.ogg": {
+    "tempo_inicio": "00:00:08.932",
+    "tempo_fim": "00:00:15.772",
+    "duracao": 6.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.763141393661499,
+    "mos_stoi": 0.951784610748291,
+    "mos_si_sdr": 15.160141944885254,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E eu gostaria, só que você que está ouvindo a gente de outros países e está conectado junto com o nosso... Boa!"
+  },
+  "dbfa9989b93bb092c9a3db2d7de0bd92_003.ogg": {
+    "tempo_inicio": "00:00:16.068",
+    "tempo_fim": "00:00:26.396",
+    "duracao": 10.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6528162956237793,
+    "mos_stoi": 0.9681290984153748,
+    "mos_si_sdr": 15.874631881713867,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que mandasse a sua mensagem, muito importante a sua mensagem, para a gente ter um panorama e conseguir mapear e trazer um pouco da rotina de outros países aqui para a nossa audiência. Por exemplo..."
+  },
+  "dbfa9989b93bb092c9a3db2d7de0bd92_004.ogg": {
+    "tempo_inicio": "00:00:26.660",
+    "tempo_fim": "00:00:30.200",
+    "duracao": 3.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7983914613723755,
+    "mos_stoi": 0.9239649772644043,
+    "mos_si_sdr": 6.393367290496826,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu estou recebendo mensagem do Eduardo, Johnny Vinícius."
+  }
+}

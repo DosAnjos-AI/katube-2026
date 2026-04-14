@@ -1,0 +1,30 @@
+{
+  "ffcf4a26462f0443d5441fe4a5afbc1e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.868",
+    "duracao": 7.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6025118827819824,
+    "mos_stoi": 0.9682797193527222,
+    "mos_si_sdr": 13.37665843963623,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "acionado entre a administração central e diferentes instâncias da universidade, com a possibilidade de aplicação da modalidade de trabalho remoto."
+  },
+  "ffcf4a26462f0443d5441fe4a5afbc1e_002.ogg": {
+    "tempo_inicio": "00:00:07.940",
+    "tempo_fim": "00:00:17.598",
+    "duracao": 9.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7084535360336304,
+    "mos_stoi": 0.9632639288902283,
+    "mos_si_sdr": 13.88574504852295,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ou seja, a galera vai fazer home office.Serão mantidas as bancas de qualificação e defesa de dissertação e de tese com indicativo de uso de recursos à distância."
+  }
+}

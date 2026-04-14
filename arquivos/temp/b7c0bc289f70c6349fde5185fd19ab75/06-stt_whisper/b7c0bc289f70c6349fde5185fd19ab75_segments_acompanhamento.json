@@ -1,0 +1,44 @@
+{
+  "b7c0bc289f70c6349fde5185fd19ab75_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.652",
+    "duracao": 14.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1703805923461914,
+    "mos_stoi": 0.9292078614234924,
+    "mos_si_sdr": 11.002945899963379,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cantamos os versos. E era terrível. A gente cantava e chorava, né? Porque... É, então. Mas é um pouco essa abordagem. E a releitura do Roda Viva, a remontagem do Roda Viva, teve essa pegada bem mais positiva ainda, né?"
+  },
+  "b7c0bc289f70c6349fde5185fd19ab75_002.ogg": {
+    "tempo_inicio": "00:00:14.820",
+    "tempo_fim": "00:00:19.772",
+    "duracao": 4.95,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6912388801574707,
+    "mos_stoi": 0.9169843792915344,
+    "mos_si_sdr": 13.114809036254883,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a remontagem do espetáculo pelo oficina."
+  },
+  "b7c0bc289f70c6349fde5185fd19ab75_003.ogg": {
+    "tempo_inicio": "00:00:20.068",
+    "tempo_fim": "00:00:27.480",
+    "duracao": 7.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.54764461517334,
+    "mos_stoi": 0.9596229195594788,
+    "mos_si_sdr": 20.78371238708496,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas o Roda Viva, então, tem essa negatividade, só que o espetáculo de 68, que não é a docina, foi dirigido pelo Zé Celso, fora da docina,"
+  }
+}

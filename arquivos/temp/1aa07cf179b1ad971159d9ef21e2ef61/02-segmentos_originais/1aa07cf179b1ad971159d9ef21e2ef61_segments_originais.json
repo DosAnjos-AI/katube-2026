@@ -1,0 +1,26 @@
+{
+  "1aa07cf179b1ad971159d9ef21e2ef61_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:11.388",
+    "duracao": 11.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "1aa07cf179b1ad971159d9ef21e2ef61_002.ogg": {
+    "tempo_inicio": "00:00:11.972",
+    "tempo_fim": "00:00:15.772",
+    "duracao": 3.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  },
+  "1aa07cf179b1ad971159d9ef21e2ef61_003.ogg": {
+    "tempo_inicio": "00:00:15.908",
+    "tempo_fim": "00:00:30.800",
+    "duracao": 14.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "f530eb3a0eb954a8e0a7d8fb7941a23d_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:12.798",
+    "duracao": 12.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2748732566833496,
+    "mos_stoi": 0.9195811748504639,
+    "mos_si_sdr": 12.940462112426758,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mesmo quando eu invoco com elas e brigo e eu sou... Eu era muito chata. Bom, meus filhos dizem que eu ainda sou. Eu discordo deles. Eu era terrível, assim, com 30 anos."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "83caf43a77b73d18b955b16d72a4c944_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.902",
+    "duracao": 7.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2559685707092285,
+    "mos_stoi": 0.9464558959007263,
+    "mos_si_sdr": 10.025914192199707,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu não tenho estabilidade para isso. Barry, se tu puder traduzir para a nossa linguagem do programa, puder falar, neném.",
+    "stt_wav2vec": "ELEDADE PREBERYSTU PUDER FA TRAZER TRADUZIR PARA NOSSA LINGUAGEM DO PROGRAMA PO PUDER FALAR NENEN"
+  }
+}

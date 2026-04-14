@@ -1,0 +1,24 @@
+{
+  "88f4807c5ba8769b17073b99cef26968_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.060",
+    "duracao": 4.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Nós temos. Peraí, peraí. Vocês sabem? Sem as opções?",
+    "stt_wav2vec": "MOSTELOS PERAIDA PRE SE SABEM SEM SEM EXOPÇÕES"
+  },
+  "88f4807c5ba8769b17073b99cef26968_002.ogg": {
+    "tempo_inicio": "00:00:04.452",
+    "tempo_fim": "00:00:16.254",
+    "duracao": 11.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Eu acho que eu sei. Você está muito errada. É o açúcar? E você, Marielle? Eu não entendi um pouco direito. Se fosse possível, eu poderia ir, por favor, por obviver.",
+    "stt_wav2vec": "EU AS QUE EU SEI UMA MAS ESTÁ NÃO ITERRADA MAÉ O AÇÚCER E VOCÊ MARIEL EU NÃO ENDENDI UM POUCOS DIREITOS DE QUANSO POSSÍVEL PODE DESCULPA"
+  }
+}

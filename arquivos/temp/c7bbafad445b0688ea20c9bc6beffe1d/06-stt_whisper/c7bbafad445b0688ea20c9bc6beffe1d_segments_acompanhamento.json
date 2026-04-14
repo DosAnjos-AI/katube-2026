@@ -1,0 +1,16 @@
+{
+  "c7bbafad445b0688ea20c9bc6beffe1d_001.ogg": {
+    "tempo_inicio": "00:00:01.252",
+    "tempo_fim": "00:00:30.430",
+    "duracao": 29.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1849644184112549,
+    "mos_stoi": 0.9125252962112427,
+    "mos_si_sdr": 7.718155860900879,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Estão abertas às inscrições para a pós da Afevale. São mais de 50 opções de MBA e cursos de especialização em muitas áreas como curso de especialização em estética para biomedicina e farmácia. Um curso único que vai ensinar o aluno a identificar as alterações estéticas e dominar as tecnologias disponíveis, tendo assim um sucesso terapêutico muito maior nas atividades. Além disso, esse curso tem um aprofundamento prático na vivência da estética, deixando o profissional mais preparado"
+  }
+}

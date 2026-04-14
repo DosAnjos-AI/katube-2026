@@ -1,0 +1,17 @@
+{
+  "6285a2cd6c8536c414c0bc3ff4ab6c8d_002.ogg": {
+    "tempo_inicio": "00:00:09.476",
+    "tempo_fim": "00:00:15.324",
+    "duracao": 5.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5907235145568848,
+    "mos_stoi": 0.907709002494812,
+    "mos_si_sdr": 9.817170143127441,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele foi um que deu negativo, mas assim, né? O mínimo de cuidado poderia ter tido.",
+    "stt_wav2vec": "ELE FOI UM QUIDÃO NEGATIVO MAS ASSIM NAVAS O MÍNIMO DE CUIDADO PODERIA ATETIDO"
+  }
+}

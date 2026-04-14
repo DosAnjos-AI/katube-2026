@@ -1,0 +1,30 @@
+{
+  "4dae6095681eb823077906e287dcdd80_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.060",
+    "duracao": 4.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8707003593444824,
+    "mos_stoi": 0.889136016368866,
+    "mos_si_sdr": 10.103111267089844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Qual termo de benefício fiscal é aquilo que se propõe"
+  },
+  "4dae6095681eb823077906e287dcdd80_002.ogg": {
+    "tempo_inicio": "00:00:04.388",
+    "tempo_fim": "00:00:08.126",
+    "duracao": 3.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7161881923675537,
+    "mos_stoi": 0.8994389176368713,
+    "mos_si_sdr": 5.822820663452148,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "é que o PPR seja para levantar na reforma."
+  }
+}

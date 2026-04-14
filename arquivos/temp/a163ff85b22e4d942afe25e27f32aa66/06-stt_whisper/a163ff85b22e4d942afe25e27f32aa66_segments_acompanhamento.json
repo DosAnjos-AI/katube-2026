@@ -1,0 +1,44 @@
+{
+  "a163ff85b22e4d942afe25e27f32aa66_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.900",
+    "duracao": 7.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.330794334411621,
+    "mos_stoi": 0.9911214113235474,
+    "mos_si_sdr": 27.200061798095703,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A possibilidade na escuta, o tom de voz, a postura do corpo dizem muito para as pessoas, voltando à frase lá do começo."
+  },
+  "a163ff85b22e4d942afe25e27f32aa66_002.ogg": {
+    "tempo_inicio": "00:00:08.228",
+    "tempo_fim": "00:00:21.372",
+    "duracao": 13.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2134275436401367,
+    "mos_stoi": 0.9826210141181946,
+    "mos_si_sdr": 22.951641082763672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tudo comunica o tempo todo. Vira e mexe, a gente lê nos jornais uma frase absurda que virou aspas de determinada pessoa sobre um assunto. Aí logo depois vem uma justificativa. A frase foi tirada do contexto."
+  },
+  "a163ff85b22e4d942afe25e27f32aa66_003.ogg": {
+    "tempo_inicio": "00:00:21.604",
+    "tempo_fim": "00:00:26.088",
+    "duracao": 4.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0271365642547607,
+    "mos_stoi": 0.9939946532249451,
+    "mos_si_sdr": 25.340545654296875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "tem sempre o risco de uma fala ser tirada do contexto."
+  }
+}

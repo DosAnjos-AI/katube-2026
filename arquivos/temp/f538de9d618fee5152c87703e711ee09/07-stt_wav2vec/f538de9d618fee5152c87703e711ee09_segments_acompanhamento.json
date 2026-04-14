@@ -1,0 +1,17 @@
+{
+  "f538de9d618fee5152c87703e711ee09_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.744",
+    "duracao": 10.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5356154441833496,
+    "mos_stoi": 0.8767074942588806,
+    "mos_si_sdr": 5.851816177368164,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E eu preparo o jantar nessa altura todas as vezes. E por norma, eu mostro o jantar a mesma boca. E às vezes estás a comer arroz enquanto gravos.",
+    "stt_wav2vec": "EU PREPARO JANTAR NESSA ALTURA PRAS AS VEZES E POR NORMA  EU MOSTRO O JANTARAMERBARQUEEA ÀS VEZES TAS A COMERA ROSSO ENQUANTO PRALAS"
+  }
+}

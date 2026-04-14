@@ -1,0 +1,16 @@
+{
+  "209fbade4b33a943453ff6a90ff4e533_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.196",
+    "duracao": 7.19,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.73732852935791,
+    "mos_stoi": 0.9285518527030945,
+    "mos_si_sdr": 15.536894798278809,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "dez mais complexo, porque, por exemplo, eu acho que se falamos de produção no Brasil, depende dos estados."
+  }
+}

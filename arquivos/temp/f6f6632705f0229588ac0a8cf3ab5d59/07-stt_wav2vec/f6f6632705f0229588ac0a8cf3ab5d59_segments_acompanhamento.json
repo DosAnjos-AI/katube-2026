@@ -1,0 +1,17 @@
+{
+  "f6f6632705f0229588ac0a8cf3ab5d59_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:11.560",
+    "duracao": 11.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.585200786590576,
+    "mos_stoi": 0.981868326663971,
+    "mos_si_sdr": 24.23798942565918,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e durou 15 anos e na altura morreu no início deste ano em janeiro e eu não ia ter cão nenhum só que não aguentei então comecei a procurar em canis de raças que fossem um cão que pudesse ser pequeno",
+    "stt_wav2vec": "HIDROCLISIANOS E E NA ALTURA MORREU NO INICIO DERTANO DE JANEIRO E EU NÃO EPECAL NENHUM SÓ QUE NÃO AGUENTAE ENTÃO COMO SEA PROCUREM CANIS DE RAÇAS QUE FOSSEM UM CANCO PODESCIA PEQUENO"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "179192b50bfc9978baa9c622a091a8df_001.ogg": {
+    "tempo_inicio": "00:00:03.428",
+    "tempo_fim": "00:00:18.428",
+    "duracao": 15.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1598669290542603,
+    "mos_stoi": 0.7077004313468933,
+    "mos_si_sdr": 3.670445442199707,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que a polícia esqueceu, ou com o Ministério Público esqueceu de investigar alguém ou uma prova importante, esse juiz de garantia não vai poder conseguir essa prova em prol da sociedade. A lei coloca que o juiz de garantia só pode atuar em benefício do...",
+    "stt_wav2vec": "AQUE A POLÍCIA ESQUECEU TOUQUE O MINISTÉRIO PUQE ESQUECEU DE INVESTIGAR ALGUÉM OU UMA PROVA IMPORTANTE ESTE JUIZ DE GARANTIA NÃO VAI PODER CONSEGUIR ESSA A PROVA EM PROVO DA SOCIEDADE A LEI COLOCA QUE O JUZ DE GARANTIA SÓ PODE ATUAR EM BENEFÍCIO DO"
+  },
+  "179192b50bfc9978baa9c622a091a8df_002.ogg": {
+    "tempo_inicio": "00:00:18.788",
+    "tempo_fim": "00:00:23.004",
+    "duracao": 4.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2137858867645264,
+    "mos_stoi": 0.42052122950553894,
+    "mos_si_sdr": -13.952878952026367,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "investigado e sempre depois de provocado",
+    "stt_wav2vec": "E INVESTIGADO E SEMPRE DEPOIS DE PROVOCADO"
+  },
+  "179192b50bfc9978baa9c622a091a8df_003.ogg": {
+    "tempo_inicio": "00:00:23.620",
+    "tempo_fim": "00:00:33.998",
+    "duracao": 10.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3231043815612793,
+    "mos_stoi": 0.850610613822937,
+    "mos_si_sdr": 6.43202543258667,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ela não vai poder atuar de ofício. Então, esse é um outro problema. A lei tirou, e aí depois isso é uma discussão grande de poderes e instrutórios do juiz também no processo,",
+    "stt_wav2vec": "ELA NÃO VAI POZER TUAR DE OFÍCIO TÃO ESSE É UM OUTRO PROBLEMA A LEI TIRO E AÍ DEPOIS DESSAA DISCUSSÃO GRANDE DE PODERES INSTRUTÓRIOS DO JUIZ TAMBÉM NO PROCESSO"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "a1e3b958a2ebe2335b1c2cf2d5d0d4b4_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.462",
+    "duracao": 5.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.523507833480835,
+    "mos_stoi": 0.7421369552612305,
+    "mos_si_sdr": 2.2817306518554688,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "da cadeia alimentar. Exato. Na pirâmide ali no topo, isso e que tomas.",
+    "stt_wav2vec": "DAQUELEÉ AOS DENSARO SESDAÇSO NÃO QUERIRÁ MELELENOS OPO ISSO E CRITOU A MOZAS"
+  }
+}

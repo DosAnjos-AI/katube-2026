@@ -1,0 +1,16 @@
+{
+  "f8a3c10d66548429155a810ac08fb496_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.200",
+    "duracao": 7.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.109632730484009,
+    "mos_stoi": 0.9783217310905457,
+    "mos_si_sdr": 13.750018119812012,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tendo em conta que nos certificados, nos pósitos a prazo com o senhor, vocês ganham 10 centímetros."
+  }
+}

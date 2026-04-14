@@ -1,0 +1,17 @@
+{
+  "2b949a97c879edbcd14c2bab2f88836d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.704",
+    "duracao": 7.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.116452932357788,
+    "mos_stoi": 0.9495635628700256,
+    "mos_si_sdr": 15.616466522216797,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "praticamente 30% também bom à vida. Então, nós podemos pensar que lá na frente vamos escolher esse valor ou então...",
+    "stt_wav2vec": "PLACICEMENTETE APRESENTAM EM BOMA VIDA ENTÃO NOSTMO PODEMOS PENSAR QUE   ARRO NA FORIENCA VÃMOS COLHER A SU VALOR OU ENTÃO"
+  }
+}

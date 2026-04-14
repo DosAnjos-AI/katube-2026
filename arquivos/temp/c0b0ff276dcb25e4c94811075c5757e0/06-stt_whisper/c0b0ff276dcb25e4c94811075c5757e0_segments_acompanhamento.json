@@ -1,0 +1,16 @@
+{
+  "c0b0ff276dcb25e4c94811075c5757e0_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:08.316",
+    "duracao": 8.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1589434146881104,
+    "mos_stoi": 0.8522469401359558,
+    "mos_si_sdr": 1.0119051933288574,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quer dizer que Deus proibiu vocês de comer todas as frutas."
+  }
+}

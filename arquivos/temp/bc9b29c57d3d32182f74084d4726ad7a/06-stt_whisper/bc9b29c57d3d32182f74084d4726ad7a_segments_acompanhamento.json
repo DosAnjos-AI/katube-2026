@@ -1,0 +1,58 @@
+{
+  "bc9b29c57d3d32182f74084d4726ad7a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.444",
+    "duracao": 12.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6953994035720825,
+    "mos_stoi": 0.917580783367157,
+    "mos_si_sdr": 11.009879112243652,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tem um texto que eu gosto bastante, mas que, infelizmente, eu não sei o autor. Então, caso você saiba quem é, me manda uma dê-me no Instagram, que eu coloco os caras de descrição. O meu user é arroba musmão, só que lugar do UEV."
+  },
+  "bc9b29c57d3d32182f74084d4726ad7a_002.ogg": {
+    "tempo_inicio": "00:00:12.580",
+    "tempo_fim": "00:00:19.356",
+    "duracao": 6.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9996626377105713,
+    "mos_stoi": 0.9176353812217712,
+    "mos_si_sdr": 10.970168113708496,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Motivados pela sociedade de consumo de bens, materiais ou emocionais, o jovem sai às ruas em busca de quantidade e não de qualidade."
+  },
+  "bc9b29c57d3d32182f74084d4726ad7a_003.ogg": {
+    "tempo_inicio": "00:00:19.716",
+    "tempo_fim": "00:00:26.268",
+    "duracao": 6.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8127577304840088,
+    "mos_stoi": 0.90435391664505,
+    "mos_si_sdr": 8.315572738647461,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Querem contabilizar quantas vezes pegam ou ficam com alguém, traduzindo em números elevados a miséria afetiva de seus corações."
+  },
+  "bc9b29c57d3d32182f74084d4726ad7a_004.ogg": {
+    "tempo_inicio": "00:00:26.660",
+    "tempo_fim": "00:00:30.856",
+    "duracao": 4.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.61893892288208,
+    "mos_stoi": 0.8993164300918579,
+    "mos_si_sdr": 11.71445369720459,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tem medo de amar, de sofrer, de se decepcionar em descobrir que o outro"
+  }
+}

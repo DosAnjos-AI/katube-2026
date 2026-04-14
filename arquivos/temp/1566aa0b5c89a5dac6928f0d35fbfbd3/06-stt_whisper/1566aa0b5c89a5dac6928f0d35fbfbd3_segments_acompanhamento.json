@@ -1,0 +1,30 @@
+{
+  "1566aa0b5c89a5dac6928f0d35fbfbd3_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:15.164",
+    "duracao": 15.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0319581031799316,
+    "mos_stoi": 0.9484778046607971,
+    "mos_si_sdr": 21.563173294067383,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que eu esqueci, que eu tinha pensado em falar, esqueci, primeiro foi isso do Klemmer, o Yoru comentou que realmente, o Klemmer, parecia que em jogo grande ele crescia, até brincando, que a Laura me perguntou quem era o Klemmer, aí eu falei, o Klemmer é o cara que tomava uns perus, mas quando chegava na hora importante, ele..."
+  },
+  "1566aa0b5c89a5dac6928f0d35fbfbd3_002.ogg": {
+    "tempo_inicio": "00:00:15.268",
+    "tempo_fim": "00:00:30.024",
+    "duracao": 14.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2672009468078613,
+    "mos_stoi": 0.7970972061157227,
+    "mos_si_sdr": 3.979132652282715,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Exato. Eu quero acentuar também ali a atuação do índio, cara. Cara, mas não perdeu uma, principalmente por cima, ele foi muito bem no jogo. O bicho é um cavalo, né, meu? E outra, o Yardley, vocês falaram do Yardley. Cara, o Yardley..."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "3b2616df3177482bb6ba26006811b224_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:09.820",
+    "duracao": 9.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7463884353637695,
+    "mos_stoi": 0.9661163091659546,
+    "mos_si_sdr": 22.12380599975586,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Claro, nós aqui definimos então, ou seja, nós temos de definir as metas em objetivos de curto, médio ou longo prazo."
+  },
+  "3b2616df3177482bb6ba26006811b224_002.ogg": {
+    "tempo_inicio": "00:00:10.212",
+    "tempo_fim": "00:00:15.976",
+    "duracao": 5.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1044836044311523,
+    "mos_stoi": 0.8898366093635559,
+    "mos_si_sdr": 8.045952796936035,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nós aqui, curto prazo, considerámos até atrasantes? Exato."
+  }
+}

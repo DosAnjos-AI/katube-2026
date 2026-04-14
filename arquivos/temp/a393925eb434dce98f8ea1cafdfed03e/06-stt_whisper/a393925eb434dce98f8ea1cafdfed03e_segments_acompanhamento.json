@@ -1,0 +1,44 @@
+{
+  "a393925eb434dce98f8ea1cafdfed03e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.628",
+    "duracao": 9.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.210363745689392,
+    "mos_stoi": 0.766599714756012,
+    "mos_si_sdr": -2.9420313835144043,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ah, já esse ano que acaba? Não, acaba em junho. Acaba na metade do ano. Ah, tá. Em dezembro ele pode assinar o próprio contrato com ele. Se a gente deixar o programa de hoje..."
+  },
+  "a393925eb434dce98f8ea1cafdfed03e_002.ogg": {
+    "tempo_inicio": "00:00:09.988",
+    "tempo_fim": "00:00:13.532",
+    "duracao": 3.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1611995697021484,
+    "mos_stoi": 0.8812575936317444,
+    "mos_si_sdr": 11.321452140808105,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vamos falar um pouquinho do Cruzeiro, de toda essa..."
+  },
+  "a393925eb434dce98f8ea1cafdfed03e_003.ogg": {
+    "tempo_inicio": "00:00:14.052",
+    "tempo_fim": "00:00:17.672",
+    "duracao": 3.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.355496883392334,
+    "mos_stoi": 0.7390289306640625,
+    "mos_si_sdr": -0.005574528127908707,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

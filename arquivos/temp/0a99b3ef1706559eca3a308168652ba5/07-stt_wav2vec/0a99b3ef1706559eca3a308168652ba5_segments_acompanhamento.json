@@ -1,0 +1,17 @@
+{
+  "0a99b3ef1706559eca3a308168652ba5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.500",
+    "duracao": 5.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1309030055999756,
+    "mos_stoi": 0.9855569005012512,
+    "mos_si_sdr": 24.08795928955078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Fez um gol numa bola boa trabalhada ali e depois administrou o jogo até o final, né? Foi merecido.",
+    "stt_wav2vec": "FEZ UUM GOL NUMA BOLA BOA TRABALHADA ALI E DEPOIS ADMINISTROU O JOGO ATÉ O FINAL NA FOI MERECIDO"
+  }
+}

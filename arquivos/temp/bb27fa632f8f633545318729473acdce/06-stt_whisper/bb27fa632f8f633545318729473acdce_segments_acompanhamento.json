@@ -1,0 +1,22 @@
+{
+  "bb27fa632f8f633545318729473acdce_001.ogg": {
+    "tempo_inicio": "00:00:01.252",
+    "tempo_fim": "00:00:14.236",
+    "duracao": 12.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "bb27fa632f8f633545318729473acdce_002.ogg": {
+    "tempo_inicio": "00:00:14.308",
+    "tempo_fim": "00:00:19.004",
+    "duracao": 4.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Cumum, entre no nosso site www.wm.com."
+  }
+}

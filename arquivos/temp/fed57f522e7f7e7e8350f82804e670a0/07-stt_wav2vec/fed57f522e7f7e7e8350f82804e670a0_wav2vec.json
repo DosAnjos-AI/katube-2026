@@ -1,0 +1,47 @@
+{
+  "fed57f522e7f7e7e8350f82804e670a0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.204",
+    "duracao": 6.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7604503631591797,
+    "mos_stoi": 0.9662829041481018,
+    "mos_si_sdr": 15.743618965148926,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "uma introdução em um programa que existe, na Universidade Católica, onde foi apresentada,",
+    "stt_wav2vec": "INTRODUCIONE ENUM PROGRAMA QUE CIRPE É NÃO UNINHECIAR CATOLICA ONDE FO APRESSENTÁLA"
+  },
+  "fed57f522e7f7e7e8350f82804e670a0_002.ogg": {
+    "tempo_inicio": "00:00:06.820",
+    "tempo_fim": "00:00:10.588",
+    "duracao": 3.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3066835403442383,
+    "mos_stoi": 0.8642966151237488,
+    "mos_si_sdr": 15.237077713012695,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E eu fiz isso e a PIS era completamente diferente.",
+    "stt_wav2vec": "EDO FIZ ISSO E A PISA ERA COMPLETAMENTE DIFERENTE"
+  },
+  "fed57f522e7f7e7e8350f82804e670a0_003.ogg": {
+    "tempo_inicio": "00:00:10.884",
+    "tempo_fim": "00:00:15.196",
+    "duracao": 4.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8539187908172607,
+    "mos_stoi": 0.9157031178474426,
+    "mos_si_sdr": 10.560787200927734,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Caminhava por o passeiro de trás. Claro, o que fazia...",
+    "stt_wav2vec": "CAMINHAVA POR LE FACERTETRA CLARO GRACIÁ"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "b2fdd4f0b6b40ac416948b31d82523a8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.542",
+    "duracao": 12.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9433149099349976,
+    "mos_stoi": 0.975957453250885,
+    "mos_si_sdr": 17.76492691040039,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Claudemir Ribeiro, que é engenheiro de desenvolvimento de negócios numa multinacional americana e trabalha em São Paulo, confessa que já viveu no piloto automático, sem entender que estava perdendo a naturalidade.",
+    "stt_wav2vec": "O CAUDEMIR RIBEIRO QUE É ENGENHEIRO DE DESENVOLVIMENTO DE NEGÓCIOS NUMA MULTINACIONAL AMERICANA E TRABALHA EM SÃO PAULO CONFESSA QUE JÁ VIVEU NO PILOTO AUTOMÁTICO SEM ENTENDER QUE ESTAVA PERDENDO A NATURALIDADE"
+  }
+}

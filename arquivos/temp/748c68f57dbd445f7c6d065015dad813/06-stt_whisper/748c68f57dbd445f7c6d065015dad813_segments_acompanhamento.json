@@ -1,0 +1,16 @@
+{
+  "748c68f57dbd445f7c6d065015dad813_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.494",
+    "duracao": 8.49,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7209932804107666,
+    "mos_stoi": 0.9640341997146606,
+    "mos_si_sdr": 21.2578125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Aí poderemos falar nisso, mas neste momento ainda tens capacidade e tempo para fazer isto sozinho e perceber exatamente o que estás a fazer..."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "62e58d49658f72ac96ae616ac9f0c861_001.ogg": {
+    "tempo_inicio": "00:00:00.196",
+    "tempo_fim": "00:00:04.636",
+    "duracao": 4.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8442609310150146,
+    "mos_stoi": 0.9779810309410095,
+    "mos_si_sdr": 18.501548767089844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A gente ouve muito falar de uma palavrinha que acabou virando lugar comum.",
+    "stt_wav2vec": "A GENTE HOUVE MUITO FALAR DE UMA PALAVRINHA QUE ACABOU VIRANDO LUGAR COMUM"
+  },
+  "62e58d49658f72ac96ae616ac9f0c861_002.ogg": {
+    "tempo_inicio": "00:00:04.996",
+    "tempo_fim": "00:00:14.524",
+    "duracao": 9.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4226863384246826,
+    "mos_stoi": 0.97735196352005,
+    "mos_si_sdr": 23.1273136138916,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Empatia. Se colocar no lugar do outro, sentir o que o outro sente, escuta aberta, coração e mente também para acolher.",
+    "stt_wav2vec": "IMPATIA SE COLOCAR NO LUGAR DO OUTRO SENTIR O QUE O OUTRO SENTE ESCUTA ABERTA CORAÇÃO E MENTE TAMBÉM PARA COLHER"
+  },
+  "62e58d49658f72ac96ae616ac9f0c861_003.ogg": {
+    "tempo_inicio": "00:00:14.980",
+    "tempo_fim": "00:00:25.384",
+    "duracao": 10.4,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6114518642425537,
+    "mos_stoi": 0.982463002204895,
+    "mos_si_sdr": 23.486221313476562,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para estar com o outro. Por mais que a gente queira ser empático, é bonito dizer que é empático e é feio dizer que não é empático, né? Mas há um longo percurso...",
+    "stt_wav2vec": "PARA ESTAR COM OUTRO POR MAIS QUE A GENTE QUEIRA SER EMPÁTICO É BONITO DIZER QUE É EMPÁTICO E É FEIO DIZER QUE NÃO É EMPÁTICO NE MAS HÁ UM LONGO PERCURSO"
+  }
+}

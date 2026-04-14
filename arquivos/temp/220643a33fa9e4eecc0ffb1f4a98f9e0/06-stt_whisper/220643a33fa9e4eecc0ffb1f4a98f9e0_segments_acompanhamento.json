@@ -1,0 +1,16 @@
+{
+  "220643a33fa9e4eecc0ffb1f4a98f9e0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.964",
+    "duracao": 3.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.780261754989624,
+    "mos_stoi": 0.823539674282074,
+    "mos_si_sdr": 9.392985343933105,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele falou que com esse dinheiro o Grêmio respira até o fim do ano, tranquilo."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "a422dbfc3a0d6b2ee2504ea3ef407dd3_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:04.432",
+    "duracao": 4.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4626052379608154,
+    "mos_stoi": 0.7968858480453491,
+    "mos_si_sdr": -2.68989634513855,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, o PPR, começando aqui um bocadinho para trás,",
+    "stt_wav2vec": "CAENTÃO O PERPEER A DOLTA  CONSANA QUE UM CRIMPATRA"
+  }
+}

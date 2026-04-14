@@ -1,0 +1,16 @@
+{
+  "e317673406ce6a03ad361b54537d9562_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.558",
+    "duracao": 4.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.386411666870117,
+    "mos_stoi": 0.9186961650848389,
+    "mos_si_sdr": 4.883064270019531,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho o que eu acho, tu achas o que tu acha."
+  }
+}

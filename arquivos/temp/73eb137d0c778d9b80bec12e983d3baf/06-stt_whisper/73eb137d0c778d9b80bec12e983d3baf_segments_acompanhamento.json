@@ -1,0 +1,58 @@
+{
+  "73eb137d0c778d9b80bec12e983d3baf_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.444",
+    "duracao": 8.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4979443550109863,
+    "mos_stoi": 0.9826601147651672,
+    "mos_si_sdr": 22.22433853149414,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de Minas, que é incrível, que em São Paulo também tem bastante força, ele se assemelha ao teatro independente no Chile?"
+  },
+  "73eb137d0c778d9b80bec12e983d3baf_002.ogg": {
+    "tempo_inicio": "00:00:08.772",
+    "tempo_fim": "00:00:17.532",
+    "duracao": 8.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4657087326049805,
+    "mos_stoi": 0.9139263033866882,
+    "mos_si_sdr": 15.006830215454102,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não, isso é o que ia falar. Eu acho que tem momentos em que no Chile apareceu um teatro de grupo"
+  },
+  "73eb137d0c778d9b80bec12e983d3baf_003.ogg": {
+    "tempo_inicio": "00:00:17.828",
+    "tempo_fim": "00:00:21.820",
+    "duracao": 3.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.451490879058838,
+    "mos_stoi": 0.9146413803100586,
+    "mos_si_sdr": 7.990767002105713,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de forma mais forte, eu falaria que..."
+  },
+  "73eb137d0c778d9b80bec12e983d3baf_004.ogg": {
+    "tempo_inicio": "00:00:22.532",
+    "tempo_fim": "00:00:26.216",
+    "duracao": 3.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.88896107673645,
+    "mos_stoi": 0.9492736458778381,
+    "mos_si_sdr": 13.447127342224121,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "em um momento democrático do governo de Salvador e Yende."
+  }
+}

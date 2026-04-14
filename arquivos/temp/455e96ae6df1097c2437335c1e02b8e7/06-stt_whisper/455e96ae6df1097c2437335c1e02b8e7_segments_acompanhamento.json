@@ -1,0 +1,58 @@
+{
+  "455e96ae6df1097c2437335c1e02b8e7_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.444",
+    "duracao": 4.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3066349029541016,
+    "mos_stoi": 0.9872503280639648,
+    "mos_si_sdr": 28.70669174194336,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Foi quando eu deixei um emprego que eu amava para me dedicar a um sonho."
+  },
+  "455e96ae6df1097c2437335c1e02b8e7_002.ogg": {
+    "tempo_inicio": "00:00:04.900",
+    "tempo_fim": "00:00:08.444",
+    "duracao": 3.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9587841033935547,
+    "mos_stoi": 0.9717519879341125,
+    "mos_si_sdr": 23.799097061157227,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Aí sim, nasci a árvore à minha empresa."
+  },
+  "455e96ae6df1097c2437335c1e02b8e7_003.ogg": {
+    "tempo_inicio": "00:00:08.708",
+    "tempo_fim": "00:00:12.604",
+    "duracao": 3.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.303175687789917,
+    "mos_stoi": 0.9899904727935791,
+    "mos_si_sdr": 25.725210189819336,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu nunca quis ser empresário, para falar a verdade, eu tinha pavor."
+  },
+  "455e96ae6df1097c2437335c1e02b8e7_004.ogg": {
+    "tempo_inicio": "00:00:13.220",
+    "tempo_fim": "00:00:22.248",
+    "duracao": 9.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3553152084350586,
+    "mos_stoi": 0.989764928817749,
+    "mos_si_sdr": 23.062183380126953,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "por pura falta de conhecimento e modelo mental também. Uma vez eu fiz as contas, eu tenho mais de 300 parentes de primeiro e segundo graus."
+  }
+}

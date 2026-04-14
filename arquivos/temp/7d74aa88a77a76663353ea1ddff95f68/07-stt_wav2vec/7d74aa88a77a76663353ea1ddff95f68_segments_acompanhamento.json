@@ -1,0 +1,17 @@
+{
+  "7d74aa88a77a76663353ea1ddff95f68_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.776",
+    "duracao": 10.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7738122940063477,
+    "mos_stoi": 0.9653832316398621,
+    "mos_si_sdr": 14.750539779663086,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E nós também nos negócios vamos acabando por saber quem são as pessoas com quem realmente nós queremos trabalhar e que vão garantir o nosso sucesso. E cada vez vou aprendendo mais",
+    "stt_wav2vec": "NÓS TAMBÉM NOS NEGÓCIOS VAMOS ACABANDO POR SABER QUEIS SÃO ERTOIS COM QUER REALMENTO NÓS PRIMOS TRABALHAR E QUE VÃO GARANTIR O NOSSO SUCCESSO E CADA VEZ VOU APRENDENDO MAIS"
+  }
+}

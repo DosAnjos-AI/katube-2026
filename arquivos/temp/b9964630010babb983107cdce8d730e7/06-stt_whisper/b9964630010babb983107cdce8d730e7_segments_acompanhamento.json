@@ -1,0 +1,30 @@
+{
+  "b9964630010babb983107cdce8d730e7_001.ogg": {
+    "tempo_inicio": "00:00:00.292",
+    "tempo_fim": "00:00:13.532",
+    "duracao": 13.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0512728691101074,
+    "mos_stoi": 0.9558669328689575,
+    "mos_si_sdr": 13.385132789611816,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o que eu achava que era marido dela que tinha feito alguma coisa, porque eu via ela agarrar ele pela roupa e puxar e bater, sabe? Eu estava vendo meio que ser em áudio, porque eu estava no serviço."
+  },
+  "b9964630010babb983107cdce8d730e7_002.ogg": {
+    "tempo_inicio": "00:00:13.668",
+    "tempo_fim": "00:00:24.350",
+    "duracao": 10.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3685376644134521,
+    "mos_stoi": 0.9183207750320435,
+    "mos_si_sdr": 6.5381245613098145,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tava escutando muito baixo. E eu falei, gente, esse cara traiu ela, aconteceu alguma coisa, entendeu? Mas eu não tinha ciência de que era uma coisa assim..."
+  }
+}

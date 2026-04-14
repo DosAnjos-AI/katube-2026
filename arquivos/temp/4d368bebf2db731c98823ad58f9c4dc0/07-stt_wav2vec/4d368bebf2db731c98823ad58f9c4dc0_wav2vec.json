@@ -1,0 +1,47 @@
+{
+  "4d368bebf2db731c98823ad58f9c4dc0_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:03.772",
+    "duracao": 3.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5126500129699707,
+    "mos_stoi": 0.9336903095245361,
+    "mos_si_sdr": 12.630271911621094,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Boa noite, então galera. Vamos gravar o nosso programa piloto aí.",
+    "stt_wav2vec": "BUANDO ETE STÃO GALHAR AR BÃO UM GRAMAÇO UM CRAMPE BOFE"
+  },
+  "4d368bebf2db731c98823ad58f9c4dc0_002.ogg": {
+    "tempo_inicio": "00:00:04.132",
+    "tempo_fim": "00:00:10.716",
+    "duracao": 6.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6213613748550415,
+    "mos_stoi": 0.8790861964225769,
+    "mos_si_sdr": 7.977409362792969,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "uma resenha de um debate sobre futebol. É uma das coisas que a gente mais acompanha na nossa vida. Vamos falar muito de Grêmio, de Inter.",
+    "stt_wav2vec": "UMA REZENHA DE UM DEBATE SOBRE FUTEBOL SE SÃO DAS COISAS QUE INTIMAIS ACOMPANHA A NOSSA VIDA VÃO PARA MUITO GI GREMIO DE INCA"
+  },
+  "4d368bebf2db731c98823ad58f9c4dc0_003.ogg": {
+    "tempo_inicio": "00:00:11.300",
+    "tempo_fim": "00:00:15.132",
+    "duracao": 3.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7117831707000732,
+    "mos_stoi": 0.8323054909706116,
+    "mos_si_sdr": 5.046011924743652,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mas também vamos falar de futebol brasileiro, futebol europeu em geral.",
+    "stt_wav2vec": "MAS TAMBÉM VAMOS FALAR ASO UE OS BO BRASILEIROS POTIBOEROPEU EM GERAL"
+  }
+}

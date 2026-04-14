@@ -1,0 +1,17 @@
+{
+  "78193c214fd05d5e61e413ac8792f680_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.998",
+    "duracao": 6.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.527214765548706,
+    "mos_stoi": 0.9337170124053955,
+    "mos_si_sdr": 16.555505752563477,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Claro que nós sabemos quanto mais é de melhor. Mas se não começamos ontem, temos que começar hoje. E ponto final.",
+    "stt_wav2vec": "TEPO CLARO QUE NÓS TIVEMOS QUANTO MAS TEDO MELHOR MAS SE NÃO COMIÇAMOS ONTEM TEMOS TE COM SAROJE E PONTO FEINAL"
+  }
+}

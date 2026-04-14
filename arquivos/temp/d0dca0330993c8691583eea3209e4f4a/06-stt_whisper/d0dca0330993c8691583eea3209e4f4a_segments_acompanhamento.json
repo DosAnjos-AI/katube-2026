@@ -1,0 +1,16 @@
+{
+  "d0dca0330993c8691583eea3209e4f4a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.040",
+    "duracao": 10.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.340567111968994,
+    "mos_stoi": 0.9529915452003479,
+    "mos_si_sdr": 16.153886795043945,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "100 mil euros ou 50 mil euros poupados. Enquanto que investindo num atletações ou num outro adivo qualquer, há uma probabilidade do dinheiro."
+  }
+}

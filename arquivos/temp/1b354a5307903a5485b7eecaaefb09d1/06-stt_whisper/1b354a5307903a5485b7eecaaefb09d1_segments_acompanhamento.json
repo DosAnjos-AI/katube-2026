@@ -1,0 +1,30 @@
+{
+  "1b354a5307903a5485b7eecaaefb09d1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.252",
+    "duracao": 4.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8625394105911255,
+    "mos_stoi": 0.7743290066719055,
+    "mos_si_sdr": 10.748623847961426,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele tem uma empatia colossal, quando os atores..."
+  },
+  "1b354a5307903a5485b7eecaaefb09d1_002.ogg": {
+    "tempo_inicio": "00:00:04.708",
+    "tempo_fim": "00:00:11.272",
+    "duracao": 6.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6900041103363037,
+    "mos_stoi": 0.8040414452552795,
+    "mos_si_sdr": 7.933215618133545,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "dava um grito e pulava um da plataforma, o público seguiu atrás."
+  }
+}

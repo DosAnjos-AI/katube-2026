@@ -1,0 +1,58 @@
+{
+  "84ca4785b4ab38a0cf457bfe39ad283e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:13.020",
+    "duracao": 13.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.956897735595703,
+    "mos_stoi": 0.9862276911735535,
+    "mos_si_sdr": 23.17037010192871,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O brasileirão que teve quatro rodadas adiadas, quase metade dos jogos, uma delas bem inusitada, a minutos antes do apito inicial. A gente vai falar sobre isso na sequência. Vamos comentar também sobre um giro da rodada."
+  },
+  "84ca4785b4ab38a0cf457bfe39ad283e_002.ogg": {
+    "tempo_inicio": "00:00:13.508",
+    "tempo_fim": "00:00:18.876",
+    "duracao": 5.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0084633827209473,
+    "mos_stoi": 0.9753290414810181,
+    "mos_si_sdr": 22.93535804748535,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Falar também do pós-grenal para o Inter, que aí causou uma..."
+  },
+  "84ca4785b4ab38a0cf457bfe39ad283e_003.ogg": {
+    "tempo_inicio": "00:00:19.172",
+    "tempo_fim": "00:00:26.140",
+    "duracao": 6.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8792884349823,
+    "mos_stoi": 0.9752557873725891,
+    "mos_si_sdr": 20.17755126953125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "um impacto forte, a gente vai trazer um pouco sobre isso. E sobre a venda do Cebolinha, né? Agora temos aí as viúvas do Cebolinho."
+  },
+  "84ca4785b4ab38a0cf457bfe39ad283e_004.ogg": {
+    "tempo_inicio": "00:00:26.692",
+    "tempo_fim": "00:00:32.206",
+    "duracao": 5.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.150775671005249,
+    "mos_stoi": 0.9580153822898865,
+    "mos_si_sdr": 13.732575416564941,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vai ter também o comentário do Paulistão, que teve um campeão no dia de ontem, no dia 8 de agosto."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "a60c16304962d3a68f4beabdae9cb314_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.636",
+    "duracao": 4.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0106728076934814,
+    "mos_stoi": 0.9443730711936951,
+    "mos_si_sdr": 16.438840866088867,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, tenho a sorte de ter encontrado, não só as pessoas."
+  },
+  "a60c16304962d3a68f4beabdae9cb314_002.ogg": {
+    "tempo_inicio": "00:00:04.932",
+    "tempo_fim": "00:00:09.596",
+    "duracao": 4.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.354153871536255,
+    "mos_stoi": 0.9600909948348999,
+    "mos_si_sdr": 23.068912506103516,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "melhores que eu podia no caminho, professores, mestres, amores."
+  }
+}

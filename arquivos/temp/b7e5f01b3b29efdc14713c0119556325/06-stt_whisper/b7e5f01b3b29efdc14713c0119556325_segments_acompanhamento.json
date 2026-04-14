@@ -1,0 +1,16 @@
+{
+  "b7e5f01b3b29efdc14713c0119556325_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:10.750",
+    "duracao": 10.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1254631280899048,
+    "mos_stoi": 0.821552574634552,
+    "mos_si_sdr": 3.4294662475585938,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Rádio do Planeta, Rádio do Tudo Nosso Papai. Vamos nessa, mais uma semaninha começando. Hoje é dia 16, eu estou certo. 16 de março de 2020."
+  }
+}

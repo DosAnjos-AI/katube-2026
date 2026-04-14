@@ -1,0 +1,30 @@
+{
+  "bb742559109430d94605e76c201b0bb1_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:13.500",
+    "duracao": 13.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3042231798171997,
+    "mos_stoi": 0.8413376808166504,
+    "mos_si_sdr": 1.1918835639953613,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "bb742559109430d94605e76c201b0bb1_002.ogg": {
+    "tempo_inicio": "00:00:13.668",
+    "tempo_fim": "00:00:26.524",
+    "duracao": 12.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.900026798248291,
+    "mos_stoi": 0.9226188063621521,
+    "mos_si_sdr": 11.885517120361328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Alguns deles nem colocaram a dupla no top 10 dos maiores times do Brasil. E a prova de que o futebol gaúcho é muito gigante que no ano, enquanto o Inter estava numa final de Libertadores em 2006, no outro ano,"
+  }
+}

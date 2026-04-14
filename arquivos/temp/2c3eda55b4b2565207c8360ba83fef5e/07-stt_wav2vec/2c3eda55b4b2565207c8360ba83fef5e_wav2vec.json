@@ -1,0 +1,17 @@
+{
+  "2c3eda55b4b2565207c8360ba83fef5e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.200",
+    "duracao": 10.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.557931661605835,
+    "mos_stoi": 0.8887705206871033,
+    "mos_si_sdr": 5.806199550628662,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A 10 anos, a taxa líquida está 0,84, dos certificados da forro, 0,84 milhões a seguir. Ok, pronto, vamos manter os dois.",
+    "stt_wav2vec": "BROSIL COA TEEFANOS FUFA HA DEZ ANOS A TAXA LÍQUIDA TAZER OITENTA E QUATRO DOS CHUTIFICADOS TAFOR ZERO OITENTA E QUATRO MINANSO SINA AOQUEE PRO NOMES MANTEROS DOIS"
+  }
+}

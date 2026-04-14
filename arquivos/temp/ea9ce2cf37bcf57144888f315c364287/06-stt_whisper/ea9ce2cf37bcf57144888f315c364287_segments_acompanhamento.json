@@ -1,0 +1,58 @@
+{
+  "ea9ce2cf37bcf57144888f315c364287_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:11.004",
+    "duracao": 10.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.7105016708374023,
+    "mos_stoi": 0.9955328702926636,
+    "mos_si_sdr": 23.942716598510742,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas qual que era o problema? Ele queria que os colaboradores acompanhassem os resultados da companhia para que quando fossem distribuídos os bônus, as participações de resultado..."
+  },
+  "ea9ce2cf37bcf57144888f315c364287_002.ogg": {
+    "tempo_inicio": "00:00:11.076",
+    "tempo_fim": "00:00:15.612",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4820704460144043,
+    "mos_stoi": 0.99406898021698,
+    "mos_si_sdr": 26.198680877685547,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "os colaboradores entendessem o porquê de receberem mais ou menos."
+  },
+  "ea9ce2cf37bcf57144888f315c364287_003.ogg": {
+    "tempo_inicio": "00:00:15.940",
+    "tempo_fim": "00:00:22.076",
+    "duracao": 6.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2028322219848633,
+    "mos_stoi": 0.9958677291870117,
+    "mos_si_sdr": 23.976858139038086,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É justo, é necessário, mas a gente saiu da reunião com uma grande interrogação na cabeça."
+  },
+  "ea9ce2cf37bcf57144888f315c364287_004.ogg": {
+    "tempo_inicio": "00:00:22.564",
+    "tempo_fim": "00:00:32.380",
+    "duracao": 9.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.6989781856536865,
+    "mos_stoi": 0.9915915727615356,
+    "mos_si_sdr": 25.730106353759766,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Seria mesmo uma revista? Essa resposta não estava dentro da árvore, não estava lá na área de comunicação da empresa, tampouco estava na sala do presidente."
+  }
+}

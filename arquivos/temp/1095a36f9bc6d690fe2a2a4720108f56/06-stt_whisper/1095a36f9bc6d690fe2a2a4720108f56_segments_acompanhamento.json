@@ -1,0 +1,44 @@
+{
+  "1095a36f9bc6d690fe2a2a4720108f56_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.172",
+    "duracao": 14.17,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.057403326034546,
+    "mos_stoi": 0.9779821038246155,
+    "mos_si_sdr": 20.55684471130371,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "As empresas onde os fundadores seguiam atuantes, em média apresentavam três vezes mais resultados do que as demais. Na pesquisa, os autores mapearam os traços das empresas com mentalidade do fundador."
+  },
+  "1095a36f9bc6d690fe2a2a4720108f56_002.ogg": {
+    "tempo_inicio": "00:00:14.372",
+    "tempo_fim": "00:00:22.716",
+    "duracao": 8.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0403246879577637,
+    "mos_stoi": 0.9697977304458618,
+    "mos_si_sdr": 24.35641098022461,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O primeiro deles se chama Missão Insurgente. Empresas onde os fundadores estão presentes tendem a ter missão ousada."
+  },
+  "1095a36f9bc6d690fe2a2a4720108f56_003.ogg": {
+    "tempo_inicio": "00:00:23.108",
+    "tempo_fim": "00:00:28.574",
+    "duracao": 5.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1220223903656006,
+    "mos_stoi": 0.984000027179718,
+    "mos_si_sdr": 25.636695861816406,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "As pessoas sabem a razão da sua existência, o propósito energiza as equipes."
+  }
+}

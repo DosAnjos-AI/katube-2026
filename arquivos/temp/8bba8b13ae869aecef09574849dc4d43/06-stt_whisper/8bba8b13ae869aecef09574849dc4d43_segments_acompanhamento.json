@@ -1,0 +1,30 @@
+{
+  "8bba8b13ae869aecef09574849dc4d43_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.076",
+    "duracao": 14.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2302465438842773,
+    "mos_stoi": 0.9708943963050842,
+    "mos_si_sdr": 18.37957763671875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas as outras seis estão chegando de Maceió. Remengarda! Disse o cachorro latindo. Com você não quero mais casar, pois percebo que está mentindo, e eu vou é me mandar."
+  },
+  "8bba8b13ae869aecef09574849dc4d43_002.ogg": {
+    "tempo_inicio": "00:00:14.372",
+    "tempo_fim": "00:00:28.334",
+    "duracao": 13.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1937692165374756,
+    "mos_stoi": 0.9595643877983093,
+    "mos_si_sdr": 17.693462371826172,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

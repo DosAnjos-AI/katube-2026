@@ -1,0 +1,17 @@
+{
+  "1d178635103b3f8123143d1f87604763_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.652",
+    "duracao": 6.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5780013799667358,
+    "mos_stoi": 0.8443189263343811,
+    "mos_si_sdr": 7.665198802947998,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, aqui no Brasil, eu vou explicar rapidinho por que é meio bagunçado esse assunto.",
+    "stt_wav2vec": "BOTONCHUR AQUI NO BRASIL E VOESPLICAR RAPEDINHO PORQUE QUE É MEO BAGUNÇADO ESSE ASSUMTO"
+  }
+}

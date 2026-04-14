@@ -1,0 +1,30 @@
+{
+  "e916f5c107cea51770ec24d18c9f9591_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.236",
+    "duracao": 10.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2190154790878296,
+    "mos_stoi": 0.7855669856071472,
+    "mos_si_sdr": 6.822345733642578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sobre o estilo de vida dos sábios pré-agrícolas, o escritor destaca o nomadismo e os hábitos de caça e coleta intrínsecos àquelas pessoas. De fato,"
+  },
+  "e916f5c107cea51770ec24d18c9f9591_002.ogg": {
+    "tempo_inicio": "00:00:10.436",
+    "tempo_fim": "00:00:24.392",
+    "duracao": 13.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5240520238876343,
+    "mos_stoi": 0.8342563509941101,
+    "mos_si_sdr": 11.372330665588379,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Com o domínio do fogo e sobretudo com a conquista do topo da cadeia alimentar, após a revolução cognitiva, foram os fatores decisivos para a sedentarização humana. Mas foi o controle da prótese de alimentos, agricultura e pecuária,"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "33b31275c7b60e68e9b3dfef857c9d0a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:16.476",
+    "duracao": 16.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7056159973144531,
+    "mos_stoi": 0.9264971613883972,
+    "mos_si_sdr": 11.94575023651123,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "torcidas organizadas na Argentina. Olha, que legal! Muito sobre o submundo do crime, ligação com tráfico de drogas, ligações internas dentro do clube de futebol. Então, é uma dica de uma série bem interessante aí e chama a atenção até pela..."
+  },
+  "33b31275c7b60e68e9b3dfef857c9d0a_002.ogg": {
+    "tempo_inicio": "00:00:16.708",
+    "tempo_fim": "00:00:31.208",
+    "duracao": 14.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7545524835586548,
+    "mos_stoi": 0.9558982849121094,
+    "mos_si_sdr": 16.218040466308594,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "pela fotografia, assim, por ser uma série argentina produzida aqui do nosso lado, foi muito bem feita pros padrões de quem retrata futebol em série, filme, olha, foi algo que me surpreendeu bastante, assim, eu sempre gostei muito de ver filmes"
+  }
+}

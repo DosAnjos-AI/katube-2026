@@ -1,0 +1,62 @@
+{
+  "b79c0aab2fcf7c12f8ef1b39a1e3f088_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.516",
+    "duracao": 3.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1440577507019043,
+    "mos_stoi": 0.9966675639152527,
+    "mos_si_sdr": 25.910579681396484,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "temo na empresa, quem é a equipe impactada?",
+    "stt_wav2vec": "TEMA NA EMPRESA QUEM É A EQUIPE EMPACTADA"
+  },
+  "b79c0aab2fcf7c12f8ef1b39a1e3f088_002.ogg": {
+    "tempo_inicio": "00:00:03.844",
+    "tempo_fim": "00:00:13.628",
+    "duracao": 9.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9869139194488525,
+    "mos_stoi": 0.9751245975494385,
+    "mos_si_sdr": 23.08896255493164,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quem vai comunicar com essa equipe? Com que frequência e se esse porta-voz está preparado emocionalmente, tudo isso muda o rumo?",
+    "stt_wav2vec": "QUEM VAI COMUNICAR COM ESTA EQUIPE COM QUE FREQUÊNCIA E SE ESSE PORTA A VOZ ESTÁ PREPARADO EMOCIONALMENTE TUDO ISSO MUDA O RUMO"
+  },
+  "b79c0aab2fcf7c12f8ef1b39a1e3f088_003.ogg": {
+    "tempo_inicio": "00:00:13.892",
+    "tempo_fim": "00:00:19.484",
+    "duracao": 5.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.321418285369873,
+    "mos_stoi": 0.9942561984062195,
+    "mos_si_sdr": 21.214561462402344,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de qualquer situação crítica. Uma palavra mal colocada diz muito sobre esse porta-voz.",
+    "stt_wav2vec": "DE QUALQUER SITUAÇÃO CRÍTICA UMA PALAVRA MAL COLOCADA DIZ MUITO SOBRE A EXPORTVOZ"
+  },
+  "b79c0aab2fcf7c12f8ef1b39a1e3f088_004.ogg": {
+    "tempo_inicio": "00:00:19.748",
+    "tempo_fim": "00:00:25.084",
+    "duracao": 5.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0940260887145996,
+    "mos_stoi": 0.9951900243759155,
+    "mos_si_sdr": 24.456371307373047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mas diz ainda mais sobre a empresa. Maturidade para lidar com situações críticas.",
+    "stt_wav2vec": "MAS DIZ AINDA MAIS SOBRE A EMPRESA MATURIDADE PARA LHE DAR COM SITUAÇÕES CRÍTICAS"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "bb1ef2333ecc1896dd1ce012c140cfd4_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.908",
+    "duracao": 6.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.259096622467041,
+    "mos_stoi": 0.9409884214401245,
+    "mos_si_sdr": 10.834830284118652,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Era triste. Quantas e quantas vezes minha mãe já foi me buscar naquela loja. Não vou falar que eu apanhei, fica no ar.",
+    "stt_wav2vec": "ERA TRISE QUANTAS E QUANTAS VEZES MINHA MAECAFODI BUSCAR NAQUELA LOSA NÃO VOU FALAR QUE EU ALPANHEI E FICA NO AR"
+  },
+  "bb1ef2333ecc1896dd1ce012c140cfd4_002.ogg": {
+    "tempo_inicio": "00:00:07.172",
+    "tempo_fim": "00:00:12.252",
+    "duracao": 5.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.230967402458191,
+    "mos_stoi": 0.7159373760223389,
+    "mos_si_sdr": -2.8675777912139893,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "aef064e8c5100d443d0b6317470fdfd2_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:12.446",
+    "duracao": 12.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.644270896911621,
+    "mos_stoi": 0.9373564124107361,
+    "mos_si_sdr": 10.619418144226074,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, fique ligado que nas próximas semanas, meses, talvez surgir a coisa nova. Nós vamos falar com o nosso patrocinador da Goos DAFA. Alô, Gustavo? Pô, te acelera aí, traz mais uma coisa pra gente sortear, que deu bom. Fiquem ligados.",
+    "stt_wav2vec": "ENTÃO FIQUEI LIGADO QUE NAS PRÓXIMAS SEMANAS MEZES TALVEZ SOJA COISA NOVA RAZÃO FALAR COM AOS QUATROSENADOR A GOOS DAQIÁ ALOGO OS CAVO OTE A CELERA I TRAZ MAS MUCES NITSORTEAI QUE DEU O O"
+  }
+}

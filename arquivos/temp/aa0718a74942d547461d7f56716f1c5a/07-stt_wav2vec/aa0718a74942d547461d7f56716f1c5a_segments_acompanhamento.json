@@ -1,0 +1,47 @@
+{
+  "aa0718a74942d547461d7f56716f1c5a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:17.052",
+    "duracao": 17.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5676352977752686,
+    "mos_stoi": 0.9742465019226074,
+    "mos_si_sdr": 13.34444522857666,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": "DIA QUATRO DE ABRIL DAS ONZEAS DEZESSETE NA RUA S MANUEL OIOCENTO E CINQENTA NO BAIRRO RIO BRANCO EM PORTO ALEGRE SIGA A ROUBA INSTITUTO DO CÂNCER INFANTIL QUE TO VEI TER A INFORMAÇÃO SOBRE TODOS OS PARTICIPANTES TÁ TEM AQUI A POR EXEMPLO NOSSAS COLEGAS"
+  },
+  "aa0718a74942d547461d7f56716f1c5a_002.ogg": {
+    "tempo_inicio": "00:00:19.588",
+    "tempo_fim": "00:00:34.364",
+    "duracao": 14.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4252169132232666,
+    "mos_stoi": 0.95122230052948,
+    "mos_si_sdr": 10.961699485778809,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": "TEM TAMBÉM A NOSSA ESCOLEGA QUE A DUDA ESTREVE UMA QUERIDA SEMPRE SIMPÁTICA AMÁRBARO A GENTE TEM AJUJUMACENA TENHA MARIARAÚJO QUELE ATOS TAMBÉNTAQUEELIMADOS TAMBÉM DEIXOVER A BÁRBARA SACOMÓRE TAMBÉM"
+  },
+  "aa0718a74942d547461d7f56716f1c5a_003.ogg": {
+    "tempo_inicio": "00:00:34.468",
+    "tempo_fim": "00:01:32.542",
+    "duracao": 58.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4725607633590698,
+    "mos_stoi": 0.9399349093437195,
+    "mos_si_sdr": 12.457249641418457,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

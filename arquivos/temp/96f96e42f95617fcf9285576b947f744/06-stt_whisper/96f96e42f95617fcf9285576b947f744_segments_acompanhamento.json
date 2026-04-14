@@ -1,0 +1,30 @@
+{
+  "96f96e42f95617fcf9285576b947f744_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.156",
+    "duracao": 8.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6432528495788574,
+    "mos_stoi": 0.9694917798042297,
+    "mos_si_sdr": 23.64946937561035,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Almada, a gente sabe que o modelo de sociedade cooperativa traz bastante referência para a saída dessa atual crise."
+  },
+  "96f96e42f95617fcf9285576b947f744_002.ogg": {
+    "tempo_inicio": "00:00:08.292",
+    "tempo_fim": "00:00:34.902",
+    "duracao": 26.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.696666717529297,
+    "mos_stoi": 0.9701923131942749,
+    "mos_si_sdr": 23.10041046142578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e também incentiva, inclusive, a concepção de um novo modelo econômico, que na verdade não é tão novo assim. Pode ser novidade para algumas pessoas, mas já existe há muito tempo. Então, vislumbrando essa perspectiva para os próximos 10 anos, como você enxerga a importância do movimento das cooperativas e da colaboração dessas cooperativas no desenvolvimento da economia do nosso país. Como é que você imagina esses próximos 10 anos?"
+  }
+}

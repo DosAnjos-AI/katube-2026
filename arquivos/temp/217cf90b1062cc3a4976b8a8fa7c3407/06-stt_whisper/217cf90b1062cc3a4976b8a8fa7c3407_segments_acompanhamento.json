@@ -1,0 +1,16 @@
+{
+  "217cf90b1062cc3a4976b8a8fa7c3407_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.280",
+    "duracao": 14.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5740095376968384,
+    "mos_stoi": 0.9541523456573486,
+    "mos_si_sdr": 8.464639663696289,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "deixaria alguém na base como reserva, mas se for uma negociação lucrativa, mantenha o Rodinei junto, que é uma questão de venda, após, que nem aconteceu agora com quem foi que foi vendido agora mesmo, ah, o Stagol, né?"
+  }
+}

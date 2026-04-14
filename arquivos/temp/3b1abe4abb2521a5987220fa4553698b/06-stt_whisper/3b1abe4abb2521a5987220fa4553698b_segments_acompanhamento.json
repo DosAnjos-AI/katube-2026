@@ -1,0 +1,44 @@
+{
+  "3b1abe4abb2521a5987220fa4553698b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.604",
+    "duracao": 8.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4059369564056396,
+    "mos_stoi": 0.9315961599349976,
+    "mos_si_sdr": 6.463851451873779,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É uma verdade, a gente acaba sentindo saudade de muita coisa que a gente está acostumado a fazer. Ontem eu comentava assim, a gente sempre fala..."
+  },
+  "3b1abe4abb2521a5987220fa4553698b_002.ogg": {
+    "tempo_inicio": "00:00:08.676",
+    "tempo_fim": "00:00:16.156",
+    "duracao": 7.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5291807651519775,
+    "mos_stoi": 0.9156142473220825,
+    "mos_si_sdr": 7.693485260009766,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "3b1abe4abb2521a5987220fa4553698b_003.ogg": {
+    "tempo_inicio": "00:00:16.196",
+    "tempo_fim": "00:00:30.630",
+    "duracao": 14.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5953774452209473,
+    "mos_stoi": 0.9432387351989746,
+    "mos_si_sdr": 11.124207496643066,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ali na frente, quando a gente falar para os nossos filhos, para os nossos netos, quando alguém disser, sabe aquele churrasco de domingo, em que está a família toda reunida, daí é num domingo isso, e aí alguma criança vai dizer, que vontade de ficar em casa a semana inteira."
+  }
+}

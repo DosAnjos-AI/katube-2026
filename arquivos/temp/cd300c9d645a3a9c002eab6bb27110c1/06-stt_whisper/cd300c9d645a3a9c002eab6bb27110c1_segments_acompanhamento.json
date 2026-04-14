@@ -1,0 +1,44 @@
+{
+  "cd300c9d645a3a9c002eab6bb27110c1_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.028",
+    "duracao": 8.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7175917625427246,
+    "mos_stoi": 0.9713427424430847,
+    "mos_si_sdr": 21.15176010131836,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, uma das coisas que nos esquecemos muitas vezes quando estamos aqui a atribuir as metas é que, a maior parte das vezes,"
+  },
+  "cd300c9d645a3a9c002eab6bb27110c1_002.ogg": {
+    "tempo_inicio": "00:00:08.388",
+    "tempo_fim": "00:00:13.148",
+    "duracao": 4.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.5426223278045654,
+    "mos_stoi": 0.9942724704742432,
+    "mos_si_sdr": 24.19189453125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Há primos que começam a jornada já acompanhados, já em casal."
+  },
+  "cd300c9d645a3a9c002eab6bb27110c1_003.ogg": {
+    "tempo_inicio": "00:00:13.508",
+    "tempo_fim": "00:00:17.822",
+    "duracao": 4.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.636929988861084,
+    "mos_stoi": 0.9936944842338562,
+    "mos_si_sdr": 25.358356475830078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas também há primos que começam como solteiros"
+  }
+}

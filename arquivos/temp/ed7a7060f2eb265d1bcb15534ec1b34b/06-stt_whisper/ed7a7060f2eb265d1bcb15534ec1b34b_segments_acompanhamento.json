@@ -1,0 +1,30 @@
+{
+  "ed7a7060f2eb265d1bcb15534ec1b34b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:17.404",
+    "duracao": 17.4,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.644395112991333,
+    "mos_stoi": 0.930730938911438,
+    "mos_si_sdr": 17.46320152282715,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "times de armação rápida, o Abel monta time de força, e tu pode observar que o jogo inteiro o Inter não bateu, mas chegou forte o tempo inteiro, marcação forte, marcação pesada. Então, cara, foi bom relembrar. Sim, vou fugir ali um pouco de creme, índio,"
+  },
+  "ed7a7060f2eb265d1bcb15534ec1b34b_002.ogg": {
+    "tempo_inicio": "00:00:17.796",
+    "tempo_fim": "00:00:31.342",
+    "duracao": 13.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2155258655548096,
+    "mos_stoi": 0.8480364084243774,
+    "mos_si_sdr": 7.1711812019348145,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ceará, Yara, Pato, enfim, os caras que nós mencionamos aí, os grandes nomes, e me chamou muita atenção hoje, revendo o jogo, a partida que o Wellington Monteiro fez. Então, assim, eu até brinco, Pato, pra pensar que o Wellington Monteiro..."
+  }
+}

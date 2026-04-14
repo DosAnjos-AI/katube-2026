@@ -1,0 +1,17 @@
+{
+  "1f003d36c3888c43483376e8c0c62808_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.686",
+    "duracao": 6.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7966623306274414,
+    "mos_stoi": 0.9670988917350769,
+    "mos_si_sdr": 19.06932830810547,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu também adorei a novo. E pode ser que um dia, se esperemos até se estarem bem e, antes de mais, nós temos que pedir.",
+    "stt_wav2vec": "EU TAMINHO ANDREIANÃ E PODE SER QUE ONI ESSOS PRIMOS ETÉIAS SEPUTAREM BEM E ANTES MAIS NÃO SE UM SCUPDIR"
+  }
+}

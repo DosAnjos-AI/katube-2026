@@ -1,0 +1,44 @@
+{
+  "396cc05cc5abc7c3fb0d97f120a6426e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.964",
+    "duracao": 11.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3567240238189697,
+    "mos_stoi": 0.9613587856292725,
+    "mos_si_sdr": 22.613370895385742,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ele é uma testemunha e, de certo modo, ele precisa, não necessariamente convencer, mas ele precisa elaborar essa narrativa de tal modo que ele force..."
+  },
+  "396cc05cc5abc7c3fb0d97f120a6426e_002.ogg": {
+    "tempo_inicio": "00:00:12.132",
+    "tempo_fim": "00:00:16.316",
+    "duracao": 4.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.156909465789795,
+    "mos_stoi": 0.9676754474639893,
+    "mos_si_sdr": 19.80445098876953,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o observador a tomar posição em relação àquilo que está sendo narrado."
+  },
+  "396cc05cc5abc7c3fb0d97f120a6426e_003.ogg": {
+    "tempo_inicio": "00:00:17.572",
+    "tempo_fim": "00:00:23.088",
+    "duracao": 5.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.432403087615967,
+    "mos_stoi": 0.9645731449127197,
+    "mos_si_sdr": 20.11888885498047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, me parece que essa ideia do teatro moderno"
+  }
+}

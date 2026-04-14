@@ -1,0 +1,17 @@
+{
+  "682213c7684e457bf240cb84bffd7dec_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:09.182",
+    "duracao": 9.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9484575986862183,
+    "mos_stoi": 0.9394418597221375,
+    "mos_si_sdr": 17.2341251373291,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Como é que eu posso diversificar? Em que é que eu posso investir? De que forma é que posso distribuir os meus investimentos?",
+    "stt_wav2vec": "COMO É QUE EU POSSO MAS QUE EU POSS DIVOTIFICAR O QUECA EM QUE QUE EU POSSO DO INVESTIR DQUEFORMA É QUE POSSO DISTRIBUIRLA OS MEUS INVESTIMENTOS"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "4a289887b5b24dcf523906bd0a99fed4_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.980",
+    "duracao": 13.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0587849617004395,
+    "mos_stoi": 0.9852908849716187,
+    "mos_si_sdr": 25.20850372314453,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "algo muito grave. Observe que a vizinha só queria tirar uma dúvida. Tava no direito dela, mas ninguém na organização sabia como lidar com uma simples pergunta. Era para o dono atender aquela vizinha naquele momento? Claro que não.",
+    "stt_wav2vec": "ALGO MUITO GRAVE OBSERVE QUE A VIZINHA SÓ QUERIA TIRAR UMA DÚVIDA ESTAVA NO DIREITO DELA MAS NINGUÉM NA ORGANIZAÇÃO SABIA COMO LHE DÁ COM UMA SIMPLES PERGUNTA ERA PRODONO ATENDER AQUELA VIZINHA NAQUELE MOMENTO CLARO QUE NÃO"
+  },
+  "4a289887b5b24dcf523906bd0a99fed4_002.ogg": {
+    "tempo_inicio": "00:00:14.212",
+    "tempo_fim": "00:00:20.412",
+    "duracao": 6.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4574782848358154,
+    "mos_stoi": 0.9882774949073792,
+    "mos_si_sdr": 26.7650146484375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas é papel do dono deixar claro para todos os seus colaboradores que as pessoas são importantes.",
+    "stt_wav2vec": "MAS É PAPEL DO DONO DEIXA CLARO PARA TODOS OS SEUS COLABORADORES QUE AS PESSOAS SÃO IMPORTANTES"
+  },
+  "4a289887b5b24dcf523906bd0a99fed4_003.ogg": {
+    "tempo_inicio": "00:00:20.772",
+    "tempo_fim": "00:00:24.924",
+    "duracao": 4.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2281241416931152,
+    "mos_stoi": 0.9723840951919556,
+    "mos_si_sdr": 21.253433227539062,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que o diálogo faz parte, que é preciso estar aberto à escuta.",
+    "stt_wav2vec": null
+  },
+  "4a289887b5b24dcf523906bd0a99fed4_004.ogg": {
+    "tempo_inicio": "00:00:25.380",
+    "tempo_fim": "00:00:30.190",
+    "duracao": 4.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.072826385498047,
+    "mos_stoi": 0.9921405911445618,
+    "mos_si_sdr": 22.221858978271484,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que aquela empresa respeita as opiniões e que cada pessoa na organização",
+    "stt_wav2vec": null
+  }
+}

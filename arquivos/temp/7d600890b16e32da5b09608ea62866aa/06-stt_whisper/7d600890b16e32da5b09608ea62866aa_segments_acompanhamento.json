@@ -1,0 +1,44 @@
+{
+  "7d600890b16e32da5b09608ea62866aa_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.308",
+    "duracao": 9.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.556817054748535,
+    "mos_stoi": 0.9697408080101013,
+    "mos_si_sdr": 24.6612548828125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E sabe qual que é o resultado disso? Eles conseguem sentir a temperatura, o clima, a cultura da empresa o tempo inteiro."
+  },
+  "7d600890b16e32da5b09608ea62866aa_002.ogg": {
+    "tempo_inicio": "00:00:09.572",
+    "tempo_fim": "00:00:23.484",
+    "duracao": 13.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7561655044555664,
+    "mos_stoi": 0.9882715344429016,
+    "mos_si_sdr": 24.651039123535156,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Isso os leva a tomar melhores decisões. Não sei se você reparou, mas esse é um podcast de comunicação e até agora eu não pronunciei a palavra comunicação. É porque andar pela empresa comunica muito."
+  },
+  "7d600890b16e32da5b09608ea62866aa_003.ogg": {
+    "tempo_inicio": "00:00:23.908",
+    "tempo_fim": "00:00:27.420",
+    "duracao": 3.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.980149269104004,
+    "mos_stoi": 0.9774277806282043,
+    "mos_si_sdr": 23.389802932739258,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Diz sobre valores, essência, credibilidade."
+  }
+}

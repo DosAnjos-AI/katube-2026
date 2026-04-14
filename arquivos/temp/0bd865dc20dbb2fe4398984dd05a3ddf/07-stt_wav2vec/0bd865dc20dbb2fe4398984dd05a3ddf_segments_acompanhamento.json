@@ -1,0 +1,17 @@
+{
+  "0bd865dc20dbb2fe4398984dd05a3ddf_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.520",
+    "duracao": 12.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.594752311706543,
+    "mos_stoi": 0.9291818141937256,
+    "mos_si_sdr": 11.00836181640625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Traduzindo, ele age que o amor é impulso de nós, seres humanos, só usamos para transar e ir a quantidade de raça humana. Ok, eu não concordo muito com esse pensamento. Ainda não sei dizer a minha definição do amor, mas com certeza não é essa.",
+    "stt_wav2vec": "TRADUZINDO ELE HÁ DE CLAMOR A IMPULSE DE NÓS SERES HUMANES SÓ OSAMOS PARA TRANSARI DA CONTINUADE O RACA HUMANA ACHEI EU NÃO CONCORDO MUITO QUESSE PENSAMENTO AINDA NÃO SEI DIZER-MENHA DEFINIÇÃO DO AMOR MAS COM CERTEZA NÃO ÉMOS"
+  }
+}

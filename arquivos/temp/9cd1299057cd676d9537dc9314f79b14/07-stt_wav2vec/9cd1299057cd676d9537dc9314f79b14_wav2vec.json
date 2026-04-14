@@ -1,0 +1,32 @@
+{
+  "9cd1299057cd676d9537dc9314f79b14_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.828",
+    "duracao": 4.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5718154907226562,
+    "mos_stoi": 0.7606433033943176,
+    "mos_si_sdr": 1.1180460453033447,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Canta Glória, Glória, aleluia",
+    "stt_wav2vec": "TAREM CANTA TOTAL EDONECOTEA A GLÓRIA ALELUIA"
+  },
+  "9cd1299057cd676d9537dc9314f79b14_002.ogg": {
+    "tempo_inicio": "00:00:04.964",
+    "tempo_fim": "00:00:19.902",
+    "duracao": 14.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7928798198699951,
+    "mos_stoi": 0.9129425287246704,
+    "mos_si_sdr": 11.000298500061035,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Glória, glória, aleluia, louvemos ao Senhor. Graças a Deus que o André foi embora do Grêmio, é uma dádia de Senhor. Também dá pra cantar aquela. O Senhor é São...",
+    "stt_wav2vec": "GLÓRIA GLÓRIA LELUE A LOUVERMOALSENOR GRAÇAS A DEUS QUE O ANDRÉ FOI EMBORA DO GRAME É OMADADEVO DO SENHOR TAMBÉM TEM HA DÁ PARA CANTAR AQUELLA O SENHOR ESSA"
+  }
+}

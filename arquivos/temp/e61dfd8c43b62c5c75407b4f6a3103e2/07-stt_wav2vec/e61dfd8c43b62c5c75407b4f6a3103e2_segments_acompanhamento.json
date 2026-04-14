@@ -1,0 +1,32 @@
+{
+  "e61dfd8c43b62c5c75407b4f6a3103e2_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:14.588",
+    "duracao": 14.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1999268531799316,
+    "mos_stoi": 0.7064940333366394,
+    "mos_si_sdr": 3.7388529777526855,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "um grupo, uma tribo, que vivia junto, onde viviam juntos, onde tinham filhos, criavam peças juntos e viajavam muito",
+    "stt_wav2vec": "GRUPO COM O MACOMATRÍBUNA QUE VIVIA JUNTTO ONDE VIVIAM JUNTOS ONDE TINHAM FILHOS HONMEE TINHAM AH CRIAVAM PEÇAS JUNTOS E VIAJAVAM MUITO"
+  },
+  "e61dfd8c43b62c5c75407b4f6a3103e2_002.ogg": {
+    "tempo_inicio": "00:00:14.820",
+    "tempo_fim": "00:00:22.510",
+    "duracao": 7.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7314151525497437,
+    "mos_stoi": 0.8376608490943909,
+    "mos_si_sdr": 13.554604530334473,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E tudo isso foi um experimento só possível naqueles anos 60.",
+    "stt_wav2vec": null
+  }
+}

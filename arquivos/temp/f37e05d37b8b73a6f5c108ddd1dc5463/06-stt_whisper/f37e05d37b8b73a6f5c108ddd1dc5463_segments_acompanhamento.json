@@ -1,0 +1,30 @@
+{
+  "f37e05d37b8b73a6f5c108ddd1dc5463_001.ogg": {
+    "tempo_inicio": "00:00:02.212",
+    "tempo_fim": "00:00:19.292",
+    "duracao": 17.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1473021507263184,
+    "mos_stoi": 0.899039626121521,
+    "mos_si_sdr": 7.201112747192383,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tá ali, sabe? Alguém tocou, já pegou e absorveu. Então, isso é muito perigoso. É importante também das empresas e de lugares públicos de estarem sempre limpando esses ambientes. Eu ouvi até notícias ontem, durante o dia, de gente que tá limpando até as maquininhas de cartão, assim, quando as pessoas estão fazendo as compras, né?"
+  },
+  "f37e05d37b8b73a6f5c108ddd1dc5463_002.ogg": {
+    "tempo_inicio": "00:00:19.332",
+    "tempo_fim": "00:00:30.184",
+    "duracao": 10.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5130828619003296,
+    "mos_stoi": 0.965969443321228,
+    "mos_si_sdr": 11.203948020935059,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Outra dica importante, manter os ambientes bem ventilados, né? Deixa a janelinha aberta, hoje está um tempo mais úmido, então é bom ficar atento a isso. E a outra, obviamente, é não compartilhar."
+  }
+}

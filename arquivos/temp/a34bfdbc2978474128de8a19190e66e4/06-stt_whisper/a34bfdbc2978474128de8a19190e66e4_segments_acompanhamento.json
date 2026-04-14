@@ -1,0 +1,16 @@
+{
+  "a34bfdbc2978474128de8a19190e66e4_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.320",
+    "duracao": 11.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1569368839263916,
+    "mos_stoi": 0.7901806235313416,
+    "mos_si_sdr": 0.6791948080062866,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "nem posso. Eu acho que sim, porque eu nunca vi comigo a cara Z no outro campo. Eu sou o vovô no verdadeiro também. É horrível."
+  }
+}

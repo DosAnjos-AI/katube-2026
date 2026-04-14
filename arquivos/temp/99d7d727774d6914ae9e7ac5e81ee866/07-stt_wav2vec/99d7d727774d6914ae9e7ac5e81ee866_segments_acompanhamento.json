@@ -1,0 +1,32 @@
+{
+  "99d7d727774d6914ae9e7ac5e81ee866_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.404",
+    "duracao": 9.4,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4318501949310303,
+    "mos_stoi": 0.8807578086853027,
+    "mos_si_sdr": 13.260717391967773,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "presidente da República foi muito infeliz, muito infeliz, e obviamente isso vai render alguns desdobramentos hoje. A gente nunca...",
+    "stt_wav2vec": "PRESIDENTE DA REPÚBLICA É MUITO INFELIZO MUITO INFELIZ E OBVIAMENTE ISSO VAI RENDER ALGUNS DOBRAMENTOS HOJE A A GENTE NUNCA"
+  },
+  "99d7d727774d6914ae9e7ac5e81ee866_002.ogg": {
+    "tempo_inicio": "00:00:09.444",
+    "tempo_fim": "00:00:30.664",
+    "duracao": 21.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.527825951576233,
+    "mos_stoi": 0.9352961182594299,
+    "mos_si_sdr": 15.295265197753906,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nunca, nunca na história desse programa falou de política e não falaremos. A gente está fazendo uma leitura do que foi dito pelo nosso líder máximo da nossa república, que foi desagregadora. Ele cita o Covid-19 e o coronavírus como uma gripezinha, não é uma gripezinha, a maior prova é",
+    "stt_wav2vec": null
+  }
+}

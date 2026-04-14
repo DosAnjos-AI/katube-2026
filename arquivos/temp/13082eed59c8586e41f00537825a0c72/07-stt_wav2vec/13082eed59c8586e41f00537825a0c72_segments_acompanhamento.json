@@ -1,0 +1,32 @@
+{
+  "13082eed59c8586e41f00537825a0c72_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.612",
+    "duracao": 3.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2156000137329102,
+    "mos_stoi": 0.6405053734779358,
+    "mos_si_sdr": -3.095306873321533,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "envolução dos bichos, tem muita coisa, muita coisa, muita coisa, muita coisa.",
+    "stt_wav2vec": "OÇÃODOS BISTOS TÊM  MUITA QUASE MUITA POISA MUITA POS MUTA COISA"
+  },
+  "13082eed59c8586e41f00537825a0c72_002.ogg": {
+    "tempo_inicio": "00:00:03.940",
+    "tempo_fim": "00:00:08.520",
+    "duracao": 4.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3966206312179565,
+    "mos_stoi": 0.6148738861083984,
+    "mos_si_sdr": -1.7813442945480347,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E pago dois euros e tal. Certo. Diz, diz.",
+    "stt_wav2vec": "E PARVOIDEROSITÁTAMOSA A CERTO ESZEZES"
+  }
+}

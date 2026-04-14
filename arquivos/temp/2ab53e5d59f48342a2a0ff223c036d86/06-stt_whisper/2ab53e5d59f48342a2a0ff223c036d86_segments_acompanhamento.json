@@ -1,0 +1,30 @@
+{
+  "2ab53e5d59f48342a2a0ff223c036d86_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:07.740",
+    "duracao": 7.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4079644680023193,
+    "mos_stoi": 0.737989604473114,
+    "mos_si_sdr": 1.4942446947097778,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "2ab53e5d59f48342a2a0ff223c036d86_002.ogg": {
+    "tempo_inicio": "00:00:08.228",
+    "tempo_fim": "00:00:18.942",
+    "duracao": 10.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.290918231010437,
+    "mos_stoi": 0.8968865871429443,
+    "mos_si_sdr": 6.829995155334473,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E lá se foram eles para Belém, montados em esplêndidos camelos, levando em seu tesouro os presentes mais finos que puderam encontrar."
+  }
+}

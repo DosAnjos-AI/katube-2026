@@ -1,0 +1,17 @@
+{
+  "a7ee59775f23eedc16cc8f9cb9b20412_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.672",
+    "duracao": 3.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.40697979927063,
+    "mos_stoi": 0.950947642326355,
+    "mos_si_sdr": 14.938703536987305,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Existe um risco, existe, é como euro milhões, existe um risco que tu ganhás",
+    "stt_wav2vec": "EXISTE UM RISCO EXISTE É COMO EROMILHÕES EXISTO UM RISCO TO GANHADOS"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "c4db8c949693dc151148ba5a80f5ace0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.020",
+    "duracao": 9.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.473825454711914,
+    "mos_stoi": 0.9745482206344604,
+    "mos_si_sdr": 24.34856414794922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E ele é muito, assim, filme e filme o dia inteiro. A gente tinha o DVD em casa, você comprava ali no Paraguazinho, desculpa, perataria. Aqui tem o Paraguizinho.",
+    "stt_wav2vec": "ELE É MUITO ASSIM FIOU-ME E FILME DE INTEIRA AS NE TEA DEVED EM CASA SE COMPRAVA ALI NO PARAGUAIZINHO DESCULPA PERATARIA DAQUI TEM O PARAGUAIZINHO"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "4524b6769fa7cc5a483a1d7075ded456_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:33.416",
+    "duracao": 33.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Patrocínio Banrisul, o banco que é teu parceiro na telehouse. Você tem mais algum negócio por aí, Rodrigo Adams? Não, acho que fechamos a conta, agradecer a galera."
+  }
+}

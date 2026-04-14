@@ -1,0 +1,30 @@
+{
+  "4de3265916cf831ffa7b810180690db6_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:21.308",
+    "duracao": 21.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7578866481781006,
+    "mos_stoi": 0.9444122910499573,
+    "mos_si_sdr": 11.734228134155273,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que mandou pra gente aqui, Carol. Falando em ajudar, minha esposa e eu estamos ajudando a moça que faz a limpeza aqui no condomínio, pois é só ela que está sustentando a casa, com a pandemia, a irmã dela foi demitida, então ajudamos com o que podemos. Abração, amigos e mais empatia no mundo. Um beijo pro Dario Ortiz e pra esposa dele que tiveram essa atitude tão bonitinha, tão legal, muito bacana."
+  },
+  "4de3265916cf831ffa7b810180690db6_002.ogg": {
+    "tempo_inicio": "00:00:21.604",
+    "tempo_fim": "00:00:27.996",
+    "duracao": 6.39,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8972580432891846,
+    "mos_stoi": 0.9671533107757568,
+    "mos_si_sdr": 23.27784538269043,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ali no Rede Underline Atlântida, a gente tem três ouvintes que mandaram seus negócios para a gente dar um up."
+  }
+}

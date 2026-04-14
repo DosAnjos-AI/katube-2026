@@ -1,0 +1,17 @@
+{
+  "29fcd5fb1024638c998f20197f495b25_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.596",
+    "duracao": 13.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.6443042755126953,
+    "mos_stoi": 0.9885547757148743,
+    "mos_si_sdr": 23.241172790527344,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E para falarmos de forma mais prática de como o machine learning tem sido importante para as empresas do setor financeiro, a gente trouxe duas convidadas da Cartão Elo, a Lillian e a Rebeca, do time de produtos. Elas têm conduzido a agenda de 2021.",
+    "stt_wav2vec": "PARA FALARMOS DE FORMA MAIS PRÁTICA DE COMO MACXINI LANE TEM SIDO IMPORTANTE PARA AS EMPRESAS DO SETOR FINANCEIRO A GENTE TROUXE DUAS CONVIDADAS DA CARTÃO ELLO A LILHEM A REBECA DO TIME DE PRODUCTOS ELAS TÊM CONDUZIDO Á GENTA DE"
+  }
+}

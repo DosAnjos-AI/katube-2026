@@ -1,0 +1,17 @@
+{
+  "597bb6da82c63e5973143f18b9916646_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.414",
+    "duracao": 4.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.208113670349121,
+    "mos_stoi": 0.9630013108253479,
+    "mos_si_sdr": 22.92491340637207,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Essa conexão ajuda muito mais na relação interpessoal.",
+    "stt_wav2vec": "ES ESSA CONEXÃO LÁ AJUDA MUITO MAIS NA RELAÇÃO INTERO PESSOAL"
+  }
+}

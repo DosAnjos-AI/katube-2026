@@ -1,0 +1,44 @@
+{
+  "c248d5463a0e14c06114c223d059dcf9_001.ogg": {
+    "tempo_inicio": "00:00:00.292",
+    "tempo_fim": "00:00:15.836",
+    "duracao": 15.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.18232262134552,
+    "mos_stoi": 0.8681253790855408,
+    "mos_si_sdr": 1.036073088645935,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tirando a parte de colocar o fogo na casa. Exatamente. Flambar é colocar uma bebida alcoólica em uma concha de metal e aquecê-la diretamente no fogo e depois despejar em chamas sobre o ingrediente do prato. Essa vocês aceitaram."
+  },
+  "c248d5463a0e14c06114c223d059dcf9_002.ogg": {
+    "tempo_inicio": "00:00:15.908",
+    "tempo_fim": "00:00:19.868",
+    "duracao": 3.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4263967275619507,
+    "mos_stoi": 0.702574610710144,
+    "mos_si_sdr": 4.219991683959961,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "c248d5463a0e14c06114c223d059dcf9_003.ogg": {
+    "tempo_inicio": "00:00:20.260",
+    "tempo_fim": "00:00:24.296",
+    "duracao": 4.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.585214138031006,
+    "mos_stoi": 0.9291684627532959,
+    "mos_si_sdr": 18.55880355834961,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Qual desses alimentos é colocado no meio?"
+  }
+}

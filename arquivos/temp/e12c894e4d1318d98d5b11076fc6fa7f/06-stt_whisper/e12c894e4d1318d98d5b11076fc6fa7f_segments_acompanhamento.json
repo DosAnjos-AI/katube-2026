@@ -1,0 +1,30 @@
+{
+  "e12c894e4d1318d98d5b11076fc6fa7f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.620",
+    "duracao": 14.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4049142599105835,
+    "mos_stoi": 0.8373395204544067,
+    "mos_si_sdr": 8.609914779663086,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "não estou. E isso que eu só consigo perceber é quando vou pôr para esse lado, perceber, querendo para o outro lado do campo, perceber que se realmente isto faz moça ou se não faz moça. Por isso eu deixo sempre esta ressalva e acho que é muito importante eu espero isso, que vocês devem treinar dos dois lados"
+  },
+  "e12c894e4d1318d98d5b11076fc6fa7f_002.ogg": {
+    "tempo_inicio": "00:00:14.660",
+    "tempo_fim": "00:00:21.576",
+    "duracao": 6.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8412842750549316,
+    "mos_stoi": 0.9015658497810364,
+    "mos_si_sdr": 13.151261329650879,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Claro que devem se especializar no vosso lado, dentro destas características que eu aqui enunciei, mas, acima de tudo, perceber"
+  }
+}

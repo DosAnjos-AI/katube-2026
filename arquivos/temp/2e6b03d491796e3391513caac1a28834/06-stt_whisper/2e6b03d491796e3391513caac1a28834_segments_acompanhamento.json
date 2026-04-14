@@ -1,0 +1,44 @@
+{
+  "2e6b03d491796e3391513caac1a28834_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.372",
+    "duracao": 5.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3901174068450928,
+    "mos_stoi": 0.9952481389045715,
+    "mos_si_sdr": 25.975366592407227,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Além de, claro, você tem que ter do lado um bom advogado e um bom profissional de comunicação."
+  },
+  "2e6b03d491796e3391513caac1a28834_002.ogg": {
+    "tempo_inicio": "00:00:05.924",
+    "tempo_fim": "00:00:17.404",
+    "duracao": 11.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.988668203353882,
+    "mos_stoi": 0.9829180836677551,
+    "mos_si_sdr": 22.79739761352539,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quarto, seja proativo e presente. Não espere sentado à crise acontecer. Vai lá e desarme a bomba, mesmo que ela não seja sua. Quinto, seja rápido."
+  },
+  "2e6b03d491796e3391513caac1a28834_003.ogg": {
+    "tempo_inicio": "00:00:17.764",
+    "tempo_fim": "00:00:24.440",
+    "duracao": 6.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.798335552215576,
+    "mos_stoi": 0.9839450716972351,
+    "mos_si_sdr": 22.61858558654785,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tempo faz diferença sim, gestão de crise. Se você não conduzir a narrativa no lugar que é seu..."
+  }
+}

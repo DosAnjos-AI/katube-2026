@@ -1,0 +1,30 @@
+{
+  "8a7b51ed3d0b12406f11054ae020c5a8_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.332",
+    "duracao": 6.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1886091232299805,
+    "mos_stoi": 0.9541528224945068,
+    "mos_si_sdr": 20.864120483398438,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "me deixava com o coração quentinho antes, era esperada no... Eu não lembro o que era no SBT, Cine alguma coisa."
+  },
+  "8a7b51ed3d0b12406f11054ae020c5a8_002.ogg": {
+    "tempo_inicio": "00:00:07.108",
+    "tempo_fim": "00:00:16.872",
+    "duracao": 9.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.942704200744629,
+    "mos_stoi": 0.9466800093650818,
+    "mos_si_sdr": 15.936188697814941,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cine espetaculares. Passava a chamada do SBT, vai passar Harry Potter e prisão desse cabão. O SBT, Silvio Santos só comprou? É esse filme da saga."
+  }
+}

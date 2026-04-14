@@ -1,0 +1,16 @@
+{
+  "175d7432f95c2c94b32742cca82f269c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.448",
+    "duracao": 7.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7773470878601074,
+    "mos_stoi": 0.9440354108810425,
+    "mos_si_sdr": 8.093621253967285,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Respandemos, manda aí outro, então, a minha cria. Temos aqui um vídeo de dizer que tens um belo ananás. Eu não sei o que é que ele quis dizer, mas isto tens um belo ananás."
+  }
+}

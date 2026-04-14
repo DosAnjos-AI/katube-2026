@@ -1,0 +1,17 @@
+{
+  "410b104863d69b25e9252b1721c9f979_001.ogg": {
+    "tempo_inicio": "00:00:00.740",
+    "tempo_fim": "00:00:05.526",
+    "duracao": 4.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.148210048675537,
+    "mos_stoi": 0.9341100454330444,
+    "mos_si_sdr": 12.835591316223145,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É fácil perceber. E eu tenho uma prestação de 150 euros e vou pedir mais um crédito.",
+    "stt_wav2vec": "CEIO PREFAÇO O PORSEVER E EU TEN MANOSCEÇÃO  SENTE CRITEIRAS E VOU PEDIR MAIS UM CRÉDITO"
+  }
+}

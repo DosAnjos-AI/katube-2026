@@ -1,0 +1,17 @@
+{
+  "4ba3430f59950404307de7127a5315d1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.496",
+    "duracao": 7.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6934809684753418,
+    "mos_stoi": 0.8891962170600891,
+    "mos_si_sdr": 5.754166603088379,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "consortos o frio, não é? Exatamente. Mas compensa muito mais para quem faz muitas mais viagens, porque lá está. Quantas mais viagens nós fizemos,",
+    "stt_wav2vec": "OSOREO FLUINO DIZEFEMILITE MAS COMPENSA MUITO MAIS PARA QUEM FAZ MUITAS MAIS VIAGENS POR FLASTAR QUANTO S MAIS VECES NÃOS FIZERMS"
+  }
+}

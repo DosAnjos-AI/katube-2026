@@ -1,0 +1,17 @@
+{
+  "a99c208bffee7cf14d7fa4c488d8e6ea_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:29.736",
+    "duracao": 29.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.519472360610962,
+    "mos_stoi": 0.96551114320755,
+    "mos_si_sdr": 12.863062858581543,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Isso foi em função do coronavírus. O apresentador ainda explicou que a decisão desvaziar ocorre por uma questão de prevenção. É isso que a gente está falando de prevenção. Ainda ele brincou com a situação dizendo que ele faz parte do grupo de risco da doença. Afinal, ele tem 69 anos. Tem que contar também que a Rede Globo está diminuindo, quer dizer, aumentando a parte jornalística da sua cobertura. Por exemplo, a Ana Maria Braga vai ficar em casa, já que ela também tem câncer. Ela é do grupo de risco. Ela é do grupo de risco. Então ela vai ficar reclusa",
+    "stt_wav2vec": "LOO ISSO FOI EM FUNÇÃO DO CORONA VIROS APRESENTADOR AINDA EXPLICOU QUE A DECISÃO DESVAZIAR OCCORRE POR UMA QUESTÃO DE PREVENÇÃO A ISO QUE AGENTETA FALANDE PREVENÇÃO AINDA BELE BRINCOR QUOATUAÇÃO DIZENDO QUE ELLE FAZ PARTE DO GRUPO DE RISCO DA DOANÇA AFINAL ELE TEM SESSENTA E NOVE ANOS TEM CONDA TAMBÉM QUE A REDE GLOBO ESTÁ DIMINUINDO QUEVE AUMENTANDO A PARTE JORNALISDE COR BERTURA POR EXEPLO NA MARIA BRAGA VAI FICAR EM CASA AQUELA TAMBÉM TEM CANSA NELELLA DO GRUPO DE RIERAS O GE RISCO ENTEL VA FICAR"
+  }
+}

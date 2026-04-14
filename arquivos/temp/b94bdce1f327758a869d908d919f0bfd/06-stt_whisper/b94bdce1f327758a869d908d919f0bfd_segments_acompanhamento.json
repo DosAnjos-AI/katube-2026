@@ -1,0 +1,58 @@
+{
+  "b94bdce1f327758a869d908d919f0bfd_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.148",
+    "duracao": 13.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1406853199005127,
+    "mos_stoi": 0.782328188419342,
+    "mos_si_sdr": -3.838993787765503,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas os próximos dois jogos têm que ganhar 6 pontos. Até porque a Libertadores é duas semanas, é dia 15, né? Eu tava acompanhando a... É 16 Grêmio-Péia Católica."
+  },
+  "b94bdce1f327758a869d908d919f0bfd_002.ogg": {
+    "tempo_inicio": "00:00:13.508",
+    "tempo_fim": "00:00:19.164",
+    "duracao": 5.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4373717308044434,
+    "mos_stoi": 0.9433891773223877,
+    "mos_si_sdr": 15.41829776763916,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu tava acompanhando a live em paralelo, a coletiva do Renato em paralelo aqui no mundo."
+  },
+  "b94bdce1f327758a869d908d919f0bfd_003.ogg": {
+    "tempo_inicio": "00:00:19.812",
+    "tempo_fim": "00:00:24.508",
+    "duracao": 4.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8233667612075806,
+    "mos_stoi": 0.8859575986862183,
+    "mos_si_sdr": 12.718567848205566,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E os comentários dos torcedores geralmente acontecem isso que a gente está falando"
+  },
+  "b94bdce1f327758a869d908d919f0bfd_004.ogg": {
+    "tempo_inicio": "00:00:24.868",
+    "tempo_fim": "00:00:30.296",
+    "duracao": 5.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0395522117614746,
+    "mos_stoi": 0.9378934502601624,
+    "mos_si_sdr": 11.953533172607422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Um título do Alchão vem, mas cara, uma coisa que não tá tão bom e não sei o quê. Mas a torcida de fato tá cobrando"
+  }
+}

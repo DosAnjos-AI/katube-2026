@@ -1,0 +1,44 @@
+{
+  "5e77fd4359f3db4396e03e66ff1db377_001.ogg": {
+    "tempo_inicio": "00:00:00.324",
+    "tempo_fim": "00:00:13.692",
+    "duracao": 13.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9507638216018677,
+    "mos_stoi": 0.9402045011520386,
+    "mos_si_sdr": 9.70818042755127,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sinceramente, cara, sinceramente mesmo, eu acho que o Grêmio não vai ganhar esse primeiro jogo. O Grêmio vai ser campeão, mas não vai ganhar. Só que pensando nos palpites pra eu não tentar ganhar sozinho e eu não pontuar, eu vou de Grêmio, né? Então eu acho que dá..."
+  },
+  "5e77fd4359f3db4396e03e66ff1db377_002.ogg": {
+    "tempo_inicio": "00:00:13.732",
+    "tempo_fim": "00:00:22.908",
+    "duracao": 9.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3292202949523926,
+    "mos_stoi": 0.80865478515625,
+    "mos_si_sdr": 1.1156755685806274,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "5e77fd4359f3db4396e03e66ff1db377_003.ogg": {
+    "tempo_inicio": "00:00:23.332",
+    "tempo_fim": "00:00:28.796",
+    "duracao": 5.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0469138622283936,
+    "mos_stoi": 0.99130779504776,
+    "mos_si_sdr": 24.660472869873047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "2x1 pro Grêmio e pro Renan. Eu vou apostar 2x0 o Grêmio contra o Caxias."
+  }
+}

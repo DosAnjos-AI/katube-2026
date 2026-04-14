@@ -1,0 +1,44 @@
+{
+  "14bc9cc552bec1ab91902635ec8eddcd_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.524",
+    "duracao": 10.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8490962982177734,
+    "mos_stoi": 0.9399799704551697,
+    "mos_si_sdr": 8.686453819274902,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "como se fossem muitos labas. Então, não é uma técnica como você fazer, por exemplo, o clássico. O clássico é uma técnica que em qualquer lugar do mundo"
+  },
+  "14bc9cc552bec1ab91902635ec8eddcd_002.ogg": {
+    "tempo_inicio": "00:00:11.076",
+    "tempo_fim": "00:00:15.996",
+    "duracao": 4.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1827328205108643,
+    "mos_stoi": 0.9336659908294678,
+    "mos_si_sdr": 15.836508750915527,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "tem lá seus cânones, tem seus protocolos, tem suas posições,"
+  },
+  "14bc9cc552bec1ab91902635ec8eddcd_003.ogg": {
+    "tempo_inicio": "00:00:16.260",
+    "tempo_fim": "00:00:23.774",
+    "duracao": 7.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.566603183746338,
+    "mos_stoi": 0.928503155708313,
+    "mos_si_sdr": 13.181635856628418,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E são aquelas, né? Você pode pegar professores melhores, mais exigentes, menos exigentes, mas..."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "4f58b264b5bc9cbeebefbfe05a229e0e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.580",
+    "duracao": 3.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1394786834716797,
+    "mos_stoi": 0.92424476146698,
+    "mos_si_sdr": 13.73867130279541,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "assim, confesso que eu não sou muito mente aberta, não."
+  },
+  "4f58b264b5bc9cbeebefbfe05a229e0e_002.ogg": {
+    "tempo_inicio": "00:00:03.940",
+    "tempo_fim": "00:00:09.116",
+    "duracao": 5.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.428990125656128,
+    "mos_stoi": 0.8305816650390625,
+    "mos_si_sdr": 0.15998508036136627,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "4f58b264b5bc9cbeebefbfe05a229e0e_003.ogg": {
+    "tempo_inicio": "00:00:09.476",
+    "tempo_fim": "00:00:16.412",
+    "duracao": 6.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4224474430084229,
+    "mos_stoi": 0.8109424114227295,
+    "mos_si_sdr": 3.0064327716827393,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "4f58b264b5bc9cbeebefbfe05a229e0e_004.ogg": {
+    "tempo_inicio": "00:00:16.676",
+    "tempo_fim": "00:00:31.544",
+    "duracao": 14.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.823509693145752,
+    "mos_stoi": 0.9245702028274536,
+    "mos_si_sdr": 10.148802757263184,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu vou dar uma receitinha rápida, fácil, que é um bolo de banana. Só que é um bolo simples e rápido para você fazer no seu micro-ondas. 15 minutinhos, 20 minutinhos de micro-ondas já está pronto esse bolo."
+  }
+}

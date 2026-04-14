@@ -1,0 +1,30 @@
+{
+  "2b2aedd073d4a79c1b9a693ea0c28b6f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.980",
+    "duracao": 5.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2971723079681396,
+    "mos_stoi": 0.9451411962509155,
+    "mos_si_sdr": 19.13152313232422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, legenda, pá, vai demorar a pena, mas legenda é isso que as pessoas querem. Hum..."
+  },
+  "2b2aedd073d4a79c1b9a693ea0c28b6f_002.ogg": {
+    "tempo_inicio": "00:00:06.340",
+    "tempo_fim": "00:00:16.680",
+    "duracao": 10.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.695873737335205,
+    "mos_stoi": 0.911801278591156,
+    "mos_si_sdr": 13.180975914001465,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas está, também sei ouvir muito bem o que as pessoas querem. Ainda estava um bocado numa sessão, a pessoa fez uma pergunta e eu, ah, esteve para uma publicação. Já estava aqui a apontar no bloco de notas, esteja para quando for escrever o conteúdo."
+  }
+}

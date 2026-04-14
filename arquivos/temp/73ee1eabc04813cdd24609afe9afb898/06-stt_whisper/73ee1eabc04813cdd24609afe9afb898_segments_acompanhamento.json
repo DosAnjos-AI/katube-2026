@@ -1,0 +1,16 @@
+{
+  "73ee1eabc04813cdd24609afe9afb898_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.374",
+    "duracao": 4.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.858678936958313,
+    "mos_stoi": 0.9502951502799988,
+    "mos_si_sdr": 12.00715160369873,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tive as ações até dezembro do ano passado, valorizaram 60% ou 50%,"
+  }
+}

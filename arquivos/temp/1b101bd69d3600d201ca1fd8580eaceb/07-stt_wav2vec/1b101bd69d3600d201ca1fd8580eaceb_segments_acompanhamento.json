@@ -1,0 +1,32 @@
+{
+  "1b101bd69d3600d201ca1fd8580eaceb_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.636",
+    "duracao": 8.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.318301200866699,
+    "mos_stoi": 0.9429859519004822,
+    "mos_si_sdr": 11.720192909240723,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu posso dizer que já te seguia, mas acho que te comecei a acompanhar mais naquela semana em que tu fizeste...",
+    "stt_wav2vec": "EU EU POSSO EXEQITO COMO SEI JÁ TE SEGUIA MAS ACHO  COMO CEI ACOMPANHAR MAIS NAQUELLA SMANA ENTE FIZESTO"
+  },
+  "1b101bd69d3600d201ca1fd8580eaceb_002.ogg": {
+    "tempo_inicio": "00:00:09.028",
+    "tempo_fim": "00:00:23.260",
+    "duracao": 14.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.564513921737671,
+    "mos_stoi": 0.8984425663948059,
+    "mos_si_sdr": 4.067004203796387,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

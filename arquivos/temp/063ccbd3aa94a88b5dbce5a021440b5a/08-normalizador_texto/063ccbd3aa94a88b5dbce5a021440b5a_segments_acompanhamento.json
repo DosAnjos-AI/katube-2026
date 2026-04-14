@@ -1,0 +1,15 @@
+{
+  "063ccbd3aa94a88b5dbce5a021440b5a_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:09.230",
+    "duracao": 9.19,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": true,
+    "stt_wav2vec": null,
+    "stt_leg_normalizado": null,
+    "stt_whisper_normalizado": null,
+    "stt_wav2vec_normalizado": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "bd818ad9ef4d3ae255e975d590a396b7_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.964",
+    "duracao": 3.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Então, assim, Ronaldinho Gaúcho é o melhor do mundo em 2004 e 2005."
+  },
+  "bd818ad9ef4d3ae255e975d590a396b7_002.ogg": {
+    "tempo_inicio": "00:00:04.260",
+    "tempo_fim": "00:00:16.968",
+    "duracao": 12.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

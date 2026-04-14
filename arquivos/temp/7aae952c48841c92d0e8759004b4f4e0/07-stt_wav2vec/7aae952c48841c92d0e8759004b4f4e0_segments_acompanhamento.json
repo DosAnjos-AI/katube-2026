@@ -1,0 +1,62 @@
+{
+  "7aae952c48841c92d0e8759004b4f4e0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:20.124",
+    "duracao": 20.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.272911548614502,
+    "mos_stoi": 0.8842331171035767,
+    "mos_si_sdr": 7.6747846603393555,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não veio? Eu já vi ele, cara. Não adianta esconder o cara. Até porque tem um pau de vira tripa, né, meu? E ele tá trajetífico. É esperto aí que teu namorado não vai gostar. Que namorado, meu, eu não tenho. Oi, e aí? Bom dia, bom dia, Wagner. Como é que tu tá? Bom dia pra toda audiência na Rede Apontina. Ah, é nóis.",
+    "stt_wav2vec": "NÃO VEIO EU JÁ NÃO E ELE CARA NADE ANTE  ESCANDEU CARA ATÉ TÃO MAL DE VIRAGRIFANEMEU A VI ELE TÁ TRAGITÍFICA ESCERTA E QUTA NAMORADA NÃO REGOS QUE NAMORADO MIU EU NÃO TENHO É OIO BOBOIADANOI E A BOM DIA BOM DIA VAGE ME POMEGA COTAR BON DIA PRA TODA A OUDÊNCIA PAARETE APOSTEBA AIA NOS"
+  },
+  "7aae952c48841c92d0e8759004b4f4e0_002.ogg": {
+    "tempo_inicio": "00:00:20.196",
+    "tempo_fim": "00:00:31.068",
+    "duracao": 10.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6274714469909668,
+    "mos_stoi": 0.9679386019706726,
+    "mos_si_sdr": 13.974651336669922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tudo bem? Boa semana pra ti, tá? Pra ti, pra quem nos ouve agora. A Carol mandando mensagem assim, ó. Rola um storyzito. Deixa eu vou gravar pra ela a mensagem agora aqui, ó.",
+    "stt_wav2vec": "TUDO BEM ADAV BOA FEMANA PARA TITA A UMA UMA PRATI PRA QUEM LUVOVE AGORA ACAROL MANDANDO MENSAGEM ASINHA ROLA UM ISTARISITO TEU VOU GRAVAR PARA ELA MENSAI JE AGORA AQUI HÁ"
+  },
+  "7aae952c48841c92d0e8759004b4f4e0_003.ogg": {
+    "tempo_inicio": "00:00:32.132",
+    "tempo_fim": "00:00:40.156",
+    "duracao": 8.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6202956438064575,
+    "mos_stoi": 0.9419432878494263,
+    "mos_si_sdr": 10.948598861694336,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "7aae952c48841c92d0e8759004b4f4e0_004.ogg": {
+    "tempo_inicio": "00:00:40.516",
+    "tempo_fim": "00:00:57.224",
+    "duracao": 16.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3963154554367065,
+    "mos_stoi": 0.9097093343734741,
+    "mos_si_sdr": 9.526810646057129,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

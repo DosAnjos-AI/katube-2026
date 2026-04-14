@@ -1,0 +1,17 @@
+{
+  "836a4ec14c1cf6eafdde564cdd43a452_001.ogg": {
+    "tempo_inicio": "00:00:00.548",
+    "tempo_fim": "00:00:06.024",
+    "duracao": 5.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9365017414093018,
+    "mos_stoi": 0.9674030542373657,
+    "mos_si_sdr": 14.47411823272705,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O maior presente ofertado naquela noite era o próprio bebê.",
+    "stt_wav2vec": "MAIOR PRESENTE OFERTADO NAQUELA NOITE ERA O PRÓPRIO BEBÊ"
+  }
+}

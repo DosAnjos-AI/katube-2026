@@ -1,0 +1,30 @@
+{
+  "8803cf43296fee968fe9a51663cc3179_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.076",
+    "duracao": 10.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.254441022872925,
+    "mos_stoi": 0.983165979385376,
+    "mos_si_sdr": 22.58032989501953,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Naquele dia, o dono da empresa estava renegociando dívidas, então ele estava numa pilha de nervo. Ele disse para a secretária frase, eu não quero saber disso agora."
+  },
+  "8803cf43296fee968fe9a51663cc3179_002.ogg": {
+    "tempo_inicio": "00:00:10.436",
+    "tempo_fim": "00:00:14.670",
+    "duracao": 4.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0638668537139893,
+    "mos_stoi": 0.9741871953010559,
+    "mos_si_sdr": 24.103055953979492,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O que chegou lá no vigilante? Solta os cachorros nessa velha."
+  }
+}

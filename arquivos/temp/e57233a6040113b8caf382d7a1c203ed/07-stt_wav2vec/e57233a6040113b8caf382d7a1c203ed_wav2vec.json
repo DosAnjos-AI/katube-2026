@@ -1,0 +1,32 @@
+{
+  "e57233a6040113b8caf382d7a1c203ed_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:04.508",
+    "duracao": 4.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4503185749053955,
+    "mos_stoi": 0.911863386631012,
+    "mos_si_sdr": 5.560674667358398,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O que é isso? O conteúdo de referência é pensado para dentro.",
+    "stt_wav2vec": "O QUE QUÊ ISSO O CONTEÚDO DE REFERÊNCIA LHE PENSADO PARA DENTRO"
+  },
+  "e57233a6040113b8caf382d7a1c203ed_002.ogg": {
+    "tempo_inicio": "00:00:04.964",
+    "tempo_fim": "00:00:19.310",
+    "duracao": 14.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.312157392501831,
+    "mos_stoi": 0.9754598140716553,
+    "mos_si_sdr": 11.950277328491211,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para o alinhamento interno do discurso. Ali naquele texto, a gente constrói uma narrativa, a gente organiza os dados, a gente redige as mensagens-chave, colocam as aspas relevantes das pessoas que precisam aparecer.",
+    "stt_wav2vec": "O ALINHAMENTO INTERNO DO DISCURSO ALI NAQUELLE TEXTO A GENTE CONSTROI UMA NARRATIVA A GENTE ORGANIZA OS DADOS A GENTE REDIGE AS MENSAGENS CHAVE COLOCAM AS ASPAS RELEVANTES DAS PESSOAS QUE PRECISAM APARECER"
+  }
+}

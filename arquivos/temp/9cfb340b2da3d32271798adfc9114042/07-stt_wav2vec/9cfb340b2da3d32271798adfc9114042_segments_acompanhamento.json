@@ -1,0 +1,17 @@
+{
+  "9cfb340b2da3d32271798adfc9114042_001.ogg": {
+    "tempo_inicio": "00:00:10.052",
+    "tempo_fim": "00:00:21.720",
+    "duracao": 11.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5039525032043457,
+    "mos_stoi": 0.9888558983802795,
+    "mos_si_sdr": 19.821434020996094,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "histórias é uma maneira deliciosa de aprender verdades profundas e complexas que antes eram frias e distantes ganham vida em narrativas cheias de aventuras e emoções",
+    "stt_wav2vec": "HISTÓRIAS É UMA MANEIRA DELICIOSA DE APRENDER VERDADES PROFUNDAS E COMPLEXAS QUE ANTES ERAM FRIAS E DISTANTES GANHAM VIDA EM NARRATIVAS CHEIAS DE AVENTURAS E EMOÇÕES"
+  }
+}

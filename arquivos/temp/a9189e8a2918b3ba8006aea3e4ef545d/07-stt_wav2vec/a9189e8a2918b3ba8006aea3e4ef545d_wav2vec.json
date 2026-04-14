@@ -1,0 +1,32 @@
+{
+  "a9189e8a2918b3ba8006aea3e4ef545d_002.ogg": {
+    "tempo_inicio": "00:00:14.532",
+    "tempo_fim": "00:00:21.084",
+    "duracao": 6.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0822205543518066,
+    "mos_stoi": 0.9600615501403809,
+    "mos_si_sdr": 14.555245399475098,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Bruno que está aqui conosco hoje não acertou o 8x2, mas foi o primeiro a comentar um placar vitorioso para o Bayern.",
+    "stt_wav2vec": "O GRULO DE TEAEROSCOS NÃO ACERTOU OITO ADOIS MAS FOI O PRIMEIRO A COMENTAR UM PLACARO VITORIOSO PELO O BAIA"
+  },
+  "a9189e8a2918b3ba8006aea3e4ef545d_003.ogg": {
+    "tempo_inicio": "00:00:21.380",
+    "tempo_fim": "00:00:27.164",
+    "duracao": 5.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2398834228515625,
+    "mos_stoi": 0.9364270567893982,
+    "mos_si_sdr": 10.28028392791748,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E assim ganhou a oportunidade de estar aqui conosco participando do nosso episódio número 15.",
+    "stt_wav2vec": "E ASSIM GANHOU A OPORTUNIDADE DE ESTÁ AQUI CONOSCO PARTICIPANDO NOSSO EPISÓDIO NÚMERO QUINZE"
+  }
+}

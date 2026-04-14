@@ -1,0 +1,17 @@
+{
+  "50a009d98944fa20f8bd9f19cbfe6eee_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.640",
+    "duracao": 5.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7030222415924072,
+    "mos_stoi": 0.8746224641799927,
+    "mos_si_sdr": 8.72006893157959,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e levar mal, porque os meus bilhetes de avião costumam custar entre 25 a 33 euros.",
+    "stt_wav2vec": "DELO AMALCIOU OS MEUS VIETOS DE VIAMO COSTU QUE STOMO CUSTAD ENTRE VINTE E VINTE E CINCO É TRINTA ETREZELAS"
+  }
+}

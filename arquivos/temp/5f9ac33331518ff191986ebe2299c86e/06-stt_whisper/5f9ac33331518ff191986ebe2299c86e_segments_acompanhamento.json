@@ -1,0 +1,30 @@
+{
+  "5f9ac33331518ff191986ebe2299c86e_001.ogg": {
+    "tempo_inicio": "00:00:00.228",
+    "tempo_fim": "00:00:07.228",
+    "duracao": 7.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2781577110290527,
+    "mos_stoi": 0.9895276427268982,
+    "mos_si_sdr": 26.648223876953125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Atenção das pessoas, a atenção da minha equipe passou instantaneamente do treinamento para o cardápio da festa."
+  },
+  "5f9ac33331518ff191986ebe2299c86e_002.ogg": {
+    "tempo_inicio": "00:00:07.268",
+    "tempo_fim": "00:00:20.680",
+    "duracao": 13.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2554495334625244,
+    "mos_stoi": 0.9931667447090149,
+    "mos_si_sdr": 24.289470672607422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ninguém mais prestava atenção no que eu estava falando. A gente rendeu na raça e na coragem até as 5 horas da tarde, até que uma pessoa da equipe levantou a mão e propôs terminar a reunião uma hora antes do previsto."
+  }
+}

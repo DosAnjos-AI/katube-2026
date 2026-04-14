@@ -1,0 +1,17 @@
+{
+  "b6f7bdf20ae251a463552952ad3f0c1d_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.692",
+    "duracao": 5.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2893621921539307,
+    "mos_stoi": 0.7315931916236877,
+    "mos_si_sdr": 0.4066471755504608,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E entrou no orçamento das freiras, claro. Pois, e é que foram as 170 horas.",
+    "stt_wav2vec": "ENTROU NO MASSAMAN DAS FEIDA CUDADE DA NOSENCURO COIS E ÉCOROCENTIANTEORA"
+  }
+}

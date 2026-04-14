@@ -1,0 +1,17 @@
+{
+  "8abe597f0d9ca84ce2771676c2dc4ef1_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.678",
+    "duracao": 3.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.378849983215332,
+    "mos_stoi": 0.9074236154556274,
+    "mos_si_sdr": 8.238866806030273,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Bom, essa era uma posição ali forte nos primeiros anos.",
+    "stt_wav2vec": "BOM É SER UMA POSIÇÃO A LIFOT NOS PRIMEIROS ANOS"
+  }
+}

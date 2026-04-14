@@ -1,0 +1,16 @@
+{
+  "2f171cb7e10c0290ba55612fcf093d36_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:09.912",
+    "duracao": 9.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5496573448181152,
+    "mos_stoi": 0.9476109147071838,
+    "mos_si_sdr": 13.53992748260498,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se a nossa atitude for reinvestir os juros gerados, então nós estamos automaticamente a colocar em prática o juro composto, ou seja, a ideia do juro composto."
+  }
+}

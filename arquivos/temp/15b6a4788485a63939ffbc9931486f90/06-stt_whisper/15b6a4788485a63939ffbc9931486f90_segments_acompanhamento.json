@@ -1,0 +1,58 @@
+{
+  "15b6a4788485a63939ffbc9931486f90_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.300",
+    "duracao": 14.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1823650598526,
+    "mos_stoi": 0.7051341533660889,
+    "mos_si_sdr": -2.9917421340942383,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que tu tá chamando o cara do Duro. Aí eu vou chamar o Tonhão de Mundo pra dizer que eu tô com a transageração. É duro? É duro também? É duro? Foi só um comentário e segue. O Bruno Fundo se lião zagueiro de 19 anos, de mais de 1,90."
+  },
+  "15b6a4788485a63939ffbc9931486f90_002.ogg": {
+    "tempo_inicio": "00:00:14.468",
+    "tempo_fim": "00:00:19.196",
+    "duracao": 4.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.329928398132324,
+    "mos_stoi": 0.9147403240203857,
+    "mos_si_sdr": 10.9014310836792,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele é um zagueiro rápido. Ele tem uma velocidade alta para a posição."
+  },
+  "15b6a4788485a63939ffbc9931486f90_003.ogg": {
+    "tempo_inicio": "00:00:19.492",
+    "tempo_fim": "00:00:24.892",
+    "duracao": 5.4,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.396158456802368,
+    "mos_stoi": 0.958198070526123,
+    "mos_si_sdr": 13.994402885437012,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Obviamente eu não acho que ele seja melhor que o Moledo, mas acho que ele é mais técnico do que o Moledo."
+  },
+  "15b6a4788485a63939ffbc9931486f90_004.ogg": {
+    "tempo_inicio": "00:00:25.348",
+    "tempo_fim": "00:00:33.286",
+    "duracao": 7.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.995530366897583,
+    "mos_stoi": 0.8868576884269714,
+    "mos_si_sdr": 13.053982734680176,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

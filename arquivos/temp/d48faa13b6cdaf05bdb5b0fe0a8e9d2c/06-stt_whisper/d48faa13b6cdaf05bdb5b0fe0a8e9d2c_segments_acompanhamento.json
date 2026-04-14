@@ -1,0 +1,44 @@
+{
+  "d48faa13b6cdaf05bdb5b0fe0a8e9d2c_001.ogg": {
+    "tempo_inicio": "00:00:14.116",
+    "tempo_fim": "00:00:21.692",
+    "duracao": 7.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5994148254394531,
+    "mos_stoi": 0.8787764310836792,
+    "mos_si_sdr": 5.316259384155273,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Marie estava grávida de um bebezinho muito especial. Em sua barriga cresceu o rei prometido."
+  },
+  "d48faa13b6cdaf05bdb5b0fe0a8e9d2c_002.ogg": {
+    "tempo_inicio": "00:00:22.148",
+    "tempo_fim": "00:00:28.700",
+    "duracao": 6.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.603527307510376,
+    "mos_stoi": 0.9301555752754211,
+    "mos_si_sdr": 6.824728965759277,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O próprio filho de Deus que salvaria toda a gente. José tinha deixado a casa pronta para recebê-lo."
+  },
+  "d48faa13b6cdaf05bdb5b0fe0a8e9d2c_003.ogg": {
+    "tempo_inicio": "00:00:29.060",
+    "tempo_fim": "00:00:37.214",
+    "duracao": 8.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0812134742736816,
+    "mos_stoi": 0.9766983389854431,
+    "mos_si_sdr": 24.510438919067383,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas, eis que pouco antes do parto, o imperador ordenou que todos viajassem para sua cidade natal para poder contá-los."
+  }
+}

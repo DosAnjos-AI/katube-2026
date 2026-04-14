@@ -1,0 +1,32 @@
+{
+  "7ca9e86fa7f2ba676fd13fabc6bd075f_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:08.252",
+    "duracao": 8.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2682480812072754,
+    "mos_stoi": 0.9205914735794067,
+    "mos_si_sdr": 10.375768661499023,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a trabalhar a prática do Lábano. Não tinha lido nada, não se lia nada, se trabalhava.",
+    "stt_wav2vec": "TRABALHAR A PRÁTICA DO LABANO NÃO TINHA LIDO NADA NÃO NÃO NÃO SELIA NADA SE TRABALHAVA ENTÃO"
+  },
+  "7ca9e86fa7f2ba676fd13fabc6bd075f_002.ogg": {
+    "tempo_inicio": "00:00:08.516",
+    "tempo_fim": "00:00:14.792",
+    "duracao": 6.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.057621955871582,
+    "mos_stoi": 0.8724281787872314,
+    "mos_si_sdr": 15.881861686706543,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Era um curso livre de dança. Na época, eu acho que só existia na Universidade Federal da Bahia, é um curso de...",
+    "stt_wav2vec": "ERA UM CURSO LIVRE DE DANÇA NA ÉPOCA EU ACHO QUE SÓ EXISTIA NA UNIVERSIDADE FEDERAL DA BAHIA AO CURSO DI"
+  }
+}

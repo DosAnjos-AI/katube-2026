@@ -1,0 +1,16 @@
+{
+  "2ddc372f7439ba647a588c73bb5e04bb_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.048",
+    "duracao": 13.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.895479679107666,
+    "mos_stoi": 0.9710057377815247,
+    "mos_si_sdr": 16.474964141845703,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ali, principalmente quando é minha mãe porque chocámos muito, mas são coisas que nós todos devemos aprender isso em dúvida que o IRS é uma delas e o meu objetivo é que pelo menos toda a gente que me segue vai ter que aprender a fazer o IRS e"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ebabdf477fa418df3c6ed3237df620ac_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.844",
+    "duracao": 14.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7936882972717285,
+    "mos_stoi": 0.909423291683197,
+    "mos_si_sdr": 9.824527740478516,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o José Roberto Wright lá naquele jogo. Aí os caras começaram a organizar as coisas, entendeu? Só que tu pega a questão, eu digo a metodologia do futebol brasileiro dessa questão dos clubes serem individualistas, eu acho que prejudica muito, porque tu fica dependente de uma..."
+  },
+  "ebabdf477fa418df3c6ed3237df620ac_002.ogg": {
+    "tempo_inicio": "00:00:16.676",
+    "tempo_fim": "00:00:30.648",
+    "duracao": 13.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4176656007766724,
+    "mos_stoi": 0.8386217355728149,
+    "mos_si_sdr": 4.94609260559082,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

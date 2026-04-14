@@ -1,0 +1,30 @@
+{
+  "578aa6b957f342dee62ca77f49095a4c_001.ogg": {
+    "tempo_inicio": "00:00:00.388",
+    "tempo_fim": "00:00:08.860",
+    "duracao": 8.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8446643352508545,
+    "mos_stoi": 0.9101701974868774,
+    "mos_si_sdr": 15.170703887939453,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "não há um gabarito para a vida, não há uma única forma de ser feliz e espera-se que um dia a gente consiga ter"
+  },
+  "578aa6b957f342dee62ca77f49095a4c_002.ogg": {
+    "tempo_inicio": "00:00:09.060",
+    "tempo_fim": "00:00:18.236",
+    "duracao": 9.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4736623764038086,
+    "mos_stoi": 0.8456213474273682,
+    "mos_si_sdr": 6.9123029708862305,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o bom senso, porque isso é bom senso, isso ofende o mínimo senso de justiça, ninguém é melhor que alguém ou outro para a loteria de ter nascido com uma cor de pele."
+  }
+}

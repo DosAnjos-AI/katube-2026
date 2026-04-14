@@ -1,0 +1,30 @@
+{
+  "b21f79b2a322f57cd81fb90fb24a68a8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.524",
+    "duracao": 14.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1235548257827759,
+    "mos_stoi": 0.7045587301254272,
+    "mos_si_sdr": -1.9718188047409058,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É, pra mim também é coisa. Ele cozinhou, tá quente, tá saindo, eu já fico debaixo d'água, já espero sair tudo de água, já vejo. Eu não falo debaixo d'água, eu tenho medo também. Como você usa, né, Maria, pelo menos. Eu não uso, cara."
+  },
+  "b21f79b2a322f57cd81fb90fb24a68a8_002.ogg": {
+    "tempo_inicio": "00:00:14.788",
+    "tempo_fim": "00:00:21.320",
+    "duracao": 6.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6172935962677002,
+    "mos_stoi": 0.9287428855895996,
+    "mos_si_sdr": 8.14572525024414,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas hoje em dia tem aquelas tecnologias que nas panelas é lentas, de pressão. Ai, não gosto. É, eu não conheço. Então, você não tem."
+  }
+}

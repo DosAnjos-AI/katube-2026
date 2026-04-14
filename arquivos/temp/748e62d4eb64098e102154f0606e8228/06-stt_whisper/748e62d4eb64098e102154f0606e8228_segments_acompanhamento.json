@@ -1,0 +1,30 @@
+{
+  "748e62d4eb64098e102154f0606e8228_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.340",
+    "duracao": 5.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.379796028137207,
+    "mos_stoi": 0.7747442722320557,
+    "mos_si_sdr": 4.088499546051025,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mais barato fica e depois acabas também por não ter gastar muito dinheiro em entretenimento ou assim porque"
+  },
+  "748e62d4eb64098e102154f0606e8228_002.ogg": {
+    "tempo_inicio": "00:00:05.604",
+    "tempo_fim": "00:00:13.814",
+    "duracao": 8.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2568787336349487,
+    "mos_stoi": 0.7231441140174866,
+    "mos_si_sdr": 2.033693552017212,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "As próprias pessoas já são o entretenimento. Levas um jogo de tabuleiro e já não precisas de grandes coisas para passar um bocado."
+  }
+}

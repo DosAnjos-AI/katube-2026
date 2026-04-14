@@ -1,0 +1,17 @@
+{
+  "26875236d8707a87047760ca29132482_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.840",
+    "duracao": 4.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0083696842193604,
+    "mos_stoi": 0.9393609762191772,
+    "mos_si_sdr": 9.207777976989746,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Chabelzinho prometeu ir para as ruas que chegavam até a casa da vovó.",
+    "stt_wav2vec": "XABELZINHO PROMETEU IR PEL AS RUAS QUE CHEGARAM ATÉ À CASA DE ALVOVÔ"
+  }
+}

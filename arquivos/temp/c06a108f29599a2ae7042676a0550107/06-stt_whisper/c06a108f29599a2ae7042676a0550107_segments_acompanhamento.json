@@ -1,0 +1,16 @@
+{
+  "c06a108f29599a2ae7042676a0550107_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.326",
+    "duracao": 7.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1774392127990723,
+    "mos_stoi": 0.9898479580879211,
+    "mos_si_sdr": 26.238147735595703,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eles fizeram uma longa pesquisa com centenas de empresas para observar como que elas cresciam e por que cresciam."
+  }
+}

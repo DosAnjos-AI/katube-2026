@@ -1,0 +1,16 @@
+{
+  "48c0a594e206f00a9b017b6ef958ebf4_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.734",
+    "duracao": 8.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4839318990707397,
+    "mos_stoi": 0.8040868043899536,
+    "mos_si_sdr": 9.091939926147461,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E naquela época, eu acho que essa imposição ficou bem clara quando surgiu o movimento das mulheres, por volta de 68."
+  }
+}

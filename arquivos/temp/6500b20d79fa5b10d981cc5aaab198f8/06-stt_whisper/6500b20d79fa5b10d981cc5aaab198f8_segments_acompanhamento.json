@@ -1,0 +1,16 @@
+{
+  "6500b20d79fa5b10d981cc5aaab198f8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.960",
+    "duracao": 5.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1523423194885254,
+    "mos_stoi": 0.9462853670120239,
+    "mos_si_sdr": 14.10659122467041,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se eu estou no meu banco, estou lá a trabalhar, por muito que eu soubesse que uma corretora possa ser melhor, e eu próprio tivesse lá dinheiro."
+  }
+}

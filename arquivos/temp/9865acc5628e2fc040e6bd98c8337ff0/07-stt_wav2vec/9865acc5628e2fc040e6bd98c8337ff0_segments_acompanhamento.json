@@ -1,0 +1,24 @@
+{
+  "9865acc5628e2fc040e6bd98c8337ff0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.836",
+    "duracao": 3.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "No entanto, no meu caso, eu gosto mesmo de ver os resultados.",
+    "stt_wav2vec": "NÃO ENTENDE NO MEU CASO E EU GOSTO MESMO DE VER OS RESULTADOS"
+  },
+  "9865acc5628e2fc040e6bd98c8337ff0_002.ogg": {
+    "tempo_inicio": "00:00:04.132",
+    "tempo_fim": "00:00:10.318",
+    "duracao": 6.19,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "para sentir pelo menos ali que o investimento está a surgir ou está a...",
+    "stt_wav2vec": "PARA SENTIR PELO MENOS A LEI QUE O UINSTRIMENTO SAFA ESTÁ A SURGIR OSTAO"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "436c859a5a3ebd109a1f9d74ac504164_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.000",
+    "duracao": 7.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3236405849456787,
+    "mos_stoi": 0.7986370921134949,
+    "mos_si_sdr": 2.0352296829223633,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para quem viaja muito, ok? Quem viaja pouco acaba não fazer tanta diferença. Sim, mas também se é grátil, não custa nada e olha, conforto."
+  }
+}

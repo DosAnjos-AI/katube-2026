@@ -1,0 +1,30 @@
+{
+  "baa67e3a74c6830ce679d9b1e0bf9aae_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.516",
+    "duracao": 11.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7425363063812256,
+    "mos_stoi": 0.9624962210655212,
+    "mos_si_sdr": 15.819415092468262,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "especializada em Media Training. Eu confesso para você que eu já me sentia assim também, viu? Na minha adolescência, eu fui muito tímida, passava apertos diante dos colegas na escola."
+  },
+  "baa67e3a74c6830ce679d9b1e0bf9aae_002.ogg": {
+    "tempo_inicio": "00:00:11.716",
+    "tempo_fim": "00:00:18.990",
+    "duracao": 7.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7733325958251953,
+    "mos_stoi": 0.9710908532142639,
+    "mos_si_sdr": 16.245838165283203,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E eu tinha mais ou menos a idade do Mikael quando vivi um conflito. O meu curso na faculdade de jornalismo"
+  }
+}

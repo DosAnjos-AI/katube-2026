@@ -1,0 +1,16 @@
+{
+  "0e5cf52f109eba49f81d615d77fa6065_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.918",
+    "duracao": 7.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7587783336639404,
+    "mos_stoi": 0.8494302034378052,
+    "mos_si_sdr": 9.150490760803223,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nós temos um emprego quando trabalhamos por conta do treino, nós escolhemos uma área ou não e vamos trabalhar para uma determinada área."
+  }
+}

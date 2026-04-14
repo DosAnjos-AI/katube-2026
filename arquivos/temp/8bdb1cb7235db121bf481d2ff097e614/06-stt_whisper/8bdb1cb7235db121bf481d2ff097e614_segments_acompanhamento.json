@@ -1,0 +1,30 @@
+{
+  "8bdb1cb7235db121bf481d2ff097e614_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:05.372",
+    "duracao": 5.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6741490364074707,
+    "mos_stoi": 0.9124855399131775,
+    "mos_si_sdr": 12.242472648620605,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Isso, temos um breve deslumbre de que Tink ou Rui é uma parte extremamente negativa na cabeça de como um alvo de zero."
+  },
+  "8bdb1cb7235db121bf481d2ff097e614_002.ogg": {
+    "tempo_inicio": "00:00:05.764",
+    "tempo_fim": "00:00:12.894",
+    "duracao": 7.13,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.191884756088257,
+    "mos_stoi": 0.9731487035751343,
+    "mos_si_sdr": 18.86064910888672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Diga a verdade. Pensou em voltar pra casa, não? Mas ainda é uma criança. Bom, não seria o pompum se não fosse assim."
+  }
+}

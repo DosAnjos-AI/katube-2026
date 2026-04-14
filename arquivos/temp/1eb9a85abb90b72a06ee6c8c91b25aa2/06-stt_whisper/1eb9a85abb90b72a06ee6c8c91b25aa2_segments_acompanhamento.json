@@ -1,0 +1,44 @@
+{
+  "1eb9a85abb90b72a06ee6c8c91b25aa2_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.380",
+    "duracao": 8.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.403379440307617,
+    "mos_stoi": 0.9744048118591309,
+    "mos_si_sdr": 24.245208740234375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "lembrei de uma cena que o Machado de Assis descreve num conto que é o pai contra a mãe"
+  },
+  "1eb9a85abb90b72a06ee6c8c91b25aa2_002.ogg": {
+    "tempo_inicio": "00:00:08.740",
+    "tempo_fim": "00:00:15.868",
+    "duracao": 7.13,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1568667888641357,
+    "mos_stoi": 0.9551635384559631,
+    "mos_si_sdr": 24.637451171875,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "1eb9a85abb90b72a06ee6c8c91b25aa2_003.ogg": {
+    "tempo_inicio": "00:00:16.292",
+    "tempo_fim": "00:00:29.774",
+    "duracao": 13.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2793262004852295,
+    "mos_stoi": 0.9645581841468811,
+    "mos_si_sdr": 20.266582489013672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O conto narra a trajetória de um homem pobre, branco, muito branco, ele é tão branco que se chama Cândido Neves, casado com uma mulher pobre também, muito branca, ela é tão branca que ela se chama Clara Neves."
+  }
+}

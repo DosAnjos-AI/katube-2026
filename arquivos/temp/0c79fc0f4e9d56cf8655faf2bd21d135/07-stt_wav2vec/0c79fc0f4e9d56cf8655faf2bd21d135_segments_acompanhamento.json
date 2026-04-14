@@ -1,0 +1,32 @@
+{
+  "0c79fc0f4e9d56cf8655faf2bd21d135_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:22.652",
+    "duracao": 22.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4064013957977295,
+    "mos_stoi": 0.9067527055740356,
+    "mos_si_sdr": 9.47885513305664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "na rua por causa dos mais jovens, né? É verdade. É isso aí. Carolzinha, vamos falar de coisa legal, por exemplo. Vamos, tem uma notícia muito legal aqui. Tem a ver um pouquinho com o coronavírus, tá? Mas é bem bonitinha. Tem uma jovem no Chipre, que é na cidade de Lima Sol, segunda maior cidade do país europeu, do Chipre, que sabe como é que ela fez pra passear com o cachorro?",
+    "stt_wav2vec": "NARUDA A NA RUA POR CAUSA DOS MAIS JOVENS N SE CAROZINHA VOU FALADE COISA ALEGAL GAMOS TEM UMA NOTÍCIA MUITO LEGAL AQUI  TEM A BÉ UM BOQUINHO COM CORONA VIRUSTÁ MAS É BEM BONITINHA TEM UMA JOVEM NO CHIPRE QUE NA CIDADE DE LIMASOL SEGUNDO A MAIOR CIDADE DO PAÍS EUROPEU DO CHIPRE QUE SABE COMO É QUE ELA FEZ PARA PASSEAR COM O CACHORRO"
+  },
+  "0c79fc0f4e9d56cf8655faf2bd21d135_002.ogg": {
+    "tempo_inicio": "00:00:22.724",
+    "tempo_fim": "00:00:32.142",
+    "duracao": 9.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7968225479125977,
+    "mos_stoi": 0.9183321595191956,
+    "mos_si_sdr": 11.30795955657959,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

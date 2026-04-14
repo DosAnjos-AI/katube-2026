@@ -1,0 +1,16 @@
+{
+  "29866e91e571a4b969c7b8255b3e0924_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.158",
+    "duracao": 6.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2602548599243164,
+    "mos_stoi": 0.9659522175788879,
+    "mos_si_sdr": 16.778419494628906,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Para responder essa questão, nós trouxemos duas pessoas, uma de 5 anos e uma de 45 para nos responder."
+  }
+}

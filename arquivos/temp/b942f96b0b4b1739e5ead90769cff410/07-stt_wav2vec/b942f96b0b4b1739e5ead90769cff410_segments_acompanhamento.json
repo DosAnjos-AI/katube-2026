@@ -1,0 +1,62 @@
+{
+  "b942f96b0b4b1739e5ead90769cff410_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.300",
+    "duracao": 14.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.715700626373291,
+    "mos_stoi": 0.9693562984466553,
+    "mos_si_sdr": 16.38896942138672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas eu sei que neste momento eu posso me conectar com alguém, que é a pessoa que está me ouvindo aí do outro lado. Então, você que está ouvindo, se eu puder te fazer um pedido só.",
+    "stt_wav2vec": "MAS EU SEI QUE NESTE MOMENTO EU POSSO ME CONECTAR COM ALGUÉM QUE É A PESSOA QUE ESTÁ ME OUVINDO AI OUTRO LADO ENTÃO VOCÊ QUE TÁ O VINDO SE PUDER SE EU PUDESTE FAZER UM PEDIDO SÓ"
+  },
+  "b942f96b0b4b1739e5ead90769cff410_002.ogg": {
+    "tempo_inicio": "00:00:14.372",
+    "tempo_fim": "00:00:22.012",
+    "duracao": 7.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0220892429351807,
+    "mos_stoi": 0.957953155040741,
+    "mos_si_sdr": 19.983440399169922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu me pedindo um pouco grande, mas eu prometo que é só ele. Eu queria te pedir para buscar a consciência.",
+    "stt_wav2vec": "É UME PEQUENO UM POUCO GRANDE MAS EU PROMETO QUE É SÓ ELE AH EU QUERIA TE PEDIR PARA BUSCAR CONSCIÊNCIA"
+  },
+  "b942f96b0b4b1739e5ead90769cff410_003.ogg": {
+    "tempo_inicio": "00:00:22.372",
+    "tempo_fim": "00:00:26.396",
+    "duracao": 4.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0589587688446045,
+    "mos_stoi": 0.9503871202468872,
+    "mos_si_sdr": 20.19408416748047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Como que você pode fazer isso? Existem muitos como.",
+    "stt_wav2vec": "COMO QUE VOCÊ PODE FAZER ISSO EXISTEM MUITOS COMOS"
+  },
+  "b942f96b0b4b1739e5ead90769cff410_004.ogg": {
+    "tempo_inicio": "00:00:26.852",
+    "tempo_fim": "00:00:31.708",
+    "duracao": 4.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.167407512664795,
+    "mos_stoi": 0.959977924823761,
+    "mos_si_sdr": 19.942466735839844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas talvez você pode começar sendo curioso ou curiosa",
+    "stt_wav2vec": null
+  }
+}

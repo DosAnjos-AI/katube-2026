@@ -1,0 +1,17 @@
+{
+  "37210a9ebb25482fb546e3851a1b7886_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.766",
+    "duracao": 4.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9069650173187256,
+    "mos_stoi": 0.8687188625335693,
+    "mos_si_sdr": -0.28856101632118225,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não é tão da pegada, não. Mas o Yuri é, ó, pauleira, filho. Boa.",
+    "stt_wav2vec": "NUMETÃO DA DAMA PEGADA NA UMA UIUREL PÓLERA FINHO DE HORROR"
+  }
+}

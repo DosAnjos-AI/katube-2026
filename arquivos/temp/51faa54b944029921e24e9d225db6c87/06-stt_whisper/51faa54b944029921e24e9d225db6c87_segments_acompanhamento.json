@@ -1,0 +1,16 @@
+{
+  "51faa54b944029921e24e9d225db6c87_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.440",
+    "duracao": 4.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6386115550994873,
+    "mos_stoi": 0.845004141330719,
+    "mos_si_sdr": 6.5655975341796875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "podem ser e que demora tantos anos"
+  }
+}

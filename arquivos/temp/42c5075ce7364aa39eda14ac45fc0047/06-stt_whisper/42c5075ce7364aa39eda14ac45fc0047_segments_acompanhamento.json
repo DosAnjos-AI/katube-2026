@@ -1,0 +1,16 @@
+{
+  "42c5075ce7364aa39eda14ac45fc0047_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.364",
+    "duracao": 6.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.948507785797119,
+    "mos_stoi": 0.9495619535446167,
+    "mos_si_sdr": 18.834819793701172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se eu produzo algo, se eu presta um serviço, se eu vendo alguma coisa, se eu participo da sociedade..."
+  }
+}

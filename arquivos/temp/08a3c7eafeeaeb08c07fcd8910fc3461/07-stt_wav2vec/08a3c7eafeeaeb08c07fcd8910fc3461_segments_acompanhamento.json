@@ -1,0 +1,17 @@
+{
+  "08a3c7eafeeaeb08c07fcd8910fc3461_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.672",
+    "duracao": 7.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.38923978805542,
+    "mos_stoi": 0.9719422459602356,
+    "mos_si_sdr": 15.755875587463379,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para quem está preparado o seu fundo de emergência, e nós já falamos aqui no podcast, os primos podem voltar ali aos primeiros dois ou três episódios,",
+    "stt_wav2vec": "PARA PARA QUEM ESTÁ POPARA O SOFUN DE IMURGÊNCIA SE NÓS JÁ JÁ FALAMOS AQUI NO VOD KUEST E OS PRINOS PODEM VOLTAR A LIO AOS PERMEIROS DOIS OU TRÊS S"
+  }
+}

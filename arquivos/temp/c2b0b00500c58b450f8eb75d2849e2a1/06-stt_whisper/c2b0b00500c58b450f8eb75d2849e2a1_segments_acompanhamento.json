@@ -1,0 +1,30 @@
+{
+  "c2b0b00500c58b450f8eb75d2849e2a1_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:08.124",
+    "duracao": 8.09,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3996076583862305,
+    "mos_stoi": 0.936339259147644,
+    "mos_si_sdr": 12.40710735321045,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "c2b0b00500c58b450f8eb75d2849e2a1_002.ogg": {
+    "tempo_inicio": "00:00:08.164",
+    "tempo_fim": "00:00:15.912",
+    "duracao": 7.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.455667018890381,
+    "mos_stoi": 0.905209481716156,
+    "mos_si_sdr": 13.07133960723877,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A derrota do Galo ontem, pra mim, passa pelo São Paulo. Ele escalou errado. E aí depois que tomou o gol, não conseguiu mais, porque aí o Inter se armou pra não tomar."
+  }
+}

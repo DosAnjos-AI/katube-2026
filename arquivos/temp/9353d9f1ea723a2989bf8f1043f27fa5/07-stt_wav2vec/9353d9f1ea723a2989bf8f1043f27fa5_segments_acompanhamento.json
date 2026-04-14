@@ -1,0 +1,17 @@
+{
+  "9353d9f1ea723a2989bf8f1043f27fa5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.192",
+    "duracao": 7.19,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7346692085266113,
+    "mos_stoi": 0.9043501019477844,
+    "mos_si_sdr": 13.217954635620117,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, por exemplo, tivemos a falar um bocado de ir a ver assim a boa apanhar o avião para Portugalês, mas quando vou...",
+    "stt_wav2vec": "TANO POR EXEMPLO DIGAVIZAR A FALARAM NO CADO DIRA HAVIA SIDO A BOM OPINIÃO A BIÃ POCO FIGÁ LAS MAS E QUANDO VOU"
+  }
+}

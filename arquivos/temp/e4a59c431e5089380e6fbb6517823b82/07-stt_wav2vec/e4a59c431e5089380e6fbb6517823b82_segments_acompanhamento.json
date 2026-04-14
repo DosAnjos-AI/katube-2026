@@ -1,0 +1,17 @@
+{
+  "e4a59c431e5089380e6fbb6517823b82_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:05.206",
+    "duracao": 5.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4654715061187744,
+    "mos_stoi": 0.9403045177459717,
+    "mos_si_sdr": 18.016311645507812,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Claro que, pois quando nós passamos, mudamos escalão, chega uma altura e dói um bocadinho.",
+    "stt_wav2vec": "CLARO QUE POIS QUANDO NÓS PASSARMULAMOS ESCALAO CHEGAM ATURAI TÓEO QERI"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "106ccac2ef667e5599dbc68590374e4b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.284",
+    "duracao": 4.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4055168628692627,
+    "mos_stoi": 0.9412720203399658,
+    "mos_si_sdr": 18.98736572265625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Neste podcast nós falamos sobre empreendedorismo, finanças pessoais"
+  },
+  "106ccac2ef667e5599dbc68590374e4b_002.ogg": {
+    "tempo_inicio": "00:00:04.580",
+    "tempo_fim": "00:00:11.292",
+    "duracao": 6.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5912511348724365,
+    "mos_stoi": 0.920231819152832,
+    "mos_si_sdr": 10.725909233093262,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e investimentos em português. Connosco temos a presença habitual da Mary Poppings, ou mais conhecida por..."
+  },
+  "106ccac2ef667e5599dbc68590374e4b_003.ogg": {
+    "tempo_inicio": "00:00:11.556",
+    "tempo_fim": "00:00:17.406",
+    "duracao": 5.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.616415023803711,
+    "mos_stoi": 0.880346953868866,
+    "mos_si_sdr": 9.953287124633789,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pai, é nosso pipi. Olá! E o meu nome é Pedro Gomes."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "9f6b5d307ffdad563184df7905f67b18_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.644",
+    "duracao": 3.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8855559825897217,
+    "mos_stoi": 0.8273043632507324,
+    "mos_si_sdr": 10.88708209991455,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "inventaram brincadeira de pega, pega ladrão."
+  },
+  "9f6b5d307ffdad563184df7905f67b18_002.ogg": {
+    "tempo_inicio": "00:00:03.972",
+    "tempo_fim": "00:00:10.812",
+    "duracao": 6.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7197215557098389,
+    "mos_stoi": 0.9296755790710449,
+    "mos_si_sdr": 13.672109603881836,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Todas as roupas corriam e brincavam. Nas prateleiras jogavam-se nos cabides."
+  }
+}

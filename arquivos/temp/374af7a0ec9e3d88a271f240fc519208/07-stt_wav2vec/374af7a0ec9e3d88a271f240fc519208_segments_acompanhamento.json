@@ -1,0 +1,17 @@
+{
+  "374af7a0ec9e3d88a271f240fc519208_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.926",
+    "duracao": 6.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0400495529174805,
+    "mos_stoi": 0.9799354672431946,
+    "mos_si_sdr": 26.09991455078125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Todas as mentorias que eu tive tiveram em média 2 horas e meia. Então estás a ver, gastar 2 horas e meia com cada aluno.",
+    "stt_wav2vec": "TODAS AS VENTURIAS QUEOTÍVEL TIVERÃO EM MÉDIA DUAS HORAS DE MEGA ENTANTO AS EBER GASTAR DUAS HORAS E MEIA COM CADALUNO"
+  }
+}

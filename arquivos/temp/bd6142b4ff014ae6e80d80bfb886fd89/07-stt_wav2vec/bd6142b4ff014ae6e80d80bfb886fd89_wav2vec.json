@@ -1,0 +1,17 @@
+{
+  "bd6142b4ff014ae6e80d80bfb886fd89_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.540",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6406259536743164,
+    "mos_stoi": 0.7889428734779358,
+    "mos_si_sdr": 14.937851905822754,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de mudança do eixo de comando",
+    "stt_wav2vec": "DE MUDANÇA DO EXO DE COMANDO"
+  }
+}

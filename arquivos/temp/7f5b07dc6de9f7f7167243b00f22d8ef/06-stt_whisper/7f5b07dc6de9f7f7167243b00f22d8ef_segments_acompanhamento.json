@@ -1,0 +1,58 @@
+{
+  "7f5b07dc6de9f7f7167243b00f22d8ef_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:14.844",
+    "duracao": 14.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.418222188949585,
+    "mos_stoi": 0.9636375904083252,
+    "mos_si_sdr": 14.255559921264648,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu estou falando da jardineira, do jardineiro, da secretária, da faxineira, do eletricista, são as pessoas que fazem parte da organização. E eu fazia a questão de dizer o seguinte, olha, vamos acabar com essa coisa de privilégio aqui para diretor, para gerente,"
+  },
+  "7f5b07dc6de9f7f7167243b00f22d8ef_002.ogg": {
+    "tempo_inicio": "00:00:14.980",
+    "tempo_fim": "00:00:18.684",
+    "duracao": 3.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.660675287246704,
+    "mos_stoi": 0.8461214303970337,
+    "mos_si_sdr": 8.354143142700195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "vaga de estacionamento, isso não pode ser quem a gente é."
+  },
+  "7f5b07dc6de9f7f7167243b00f22d8ef_003.ogg": {
+    "tempo_inicio": "00:00:19.044",
+    "tempo_fim": "00:00:23.228",
+    "duracao": 4.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8195140361785889,
+    "mos_stoi": 0.9160363078117371,
+    "mos_si_sdr": 9.217647552490234,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E eu dizia que essas pessoas todas faziam parte do sucesso de uma escola."
+  },
+  "7f5b07dc6de9f7f7167243b00f22d8ef_004.ogg": {
+    "tempo_inicio": "00:00:23.492",
+    "tempo_fim": "00:00:30.392",
+    "duracao": 6.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7422360181808472,
+    "mos_stoi": 0.9067716598510742,
+    "mos_si_sdr": 11.398239135742188,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a impressão que o cara ia ter da limpeza, do jardim, etc, etc. E foi também conversando com essas pessoas, me comunicando..."
+  }
+}

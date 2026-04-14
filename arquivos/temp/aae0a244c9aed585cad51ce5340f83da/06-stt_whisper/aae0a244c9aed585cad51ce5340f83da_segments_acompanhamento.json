@@ -1,0 +1,16 @@
+{
+  "aae0a244c9aed585cad51ce5340f83da_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.864",
+    "duracao": 9.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.523649215698242,
+    "mos_stoi": 0.97962486743927,
+    "mos_si_sdr": 22.37691879272461,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Exatamente, é uma verdade. E então pronto, passámos aqui as criancinhas e os primos têm agora 18 anos e que vão entrar no mercado de trabalho."
+  }
+}

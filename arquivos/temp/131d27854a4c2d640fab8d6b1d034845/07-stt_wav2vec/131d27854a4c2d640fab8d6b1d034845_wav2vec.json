@@ -1,0 +1,17 @@
+{
+  "131d27854a4c2d640fab8d6b1d034845_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:05.468",
+    "duracao": 5.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.351693630218506,
+    "mos_stoi": 0.9803469181060791,
+    "mos_si_sdr": 25.840396881103516,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a brincar, a brincar com o passar da carruagem, é a saúde que nos leva a maior parte do dinheiro.",
+    "stt_wav2vec": "OBRIGARO A BRINCAR COM O PASSADA CARRUAGEM A ESSAUDE QUE NOS LEVA A MAIOR PARTE DO DINHEIRO"
+  }
+}

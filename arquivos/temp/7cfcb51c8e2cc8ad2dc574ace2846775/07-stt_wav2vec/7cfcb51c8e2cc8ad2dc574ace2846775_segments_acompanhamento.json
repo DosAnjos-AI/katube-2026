@@ -1,0 +1,17 @@
+{
+  "7cfcb51c8e2cc8ad2dc574ace2846775_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.766",
+    "duracao": 8.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.343682289123535,
+    "mos_stoi": 0.9425992369651794,
+    "mos_si_sdr": 16.578033447265625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sim, isso é mesmo muito importante. Aliás, é lendo muito e é tendo várias experiências que nós conseguimos desenvolver",
+    "stt_wav2vec": "SE FRUTA É MES MUITO IMPORTANTE E ALIÁS ENE É LENDO MUITO E É TENDO VÁRIAS CRIANÇAS NÓS CONSIMOS DE ENVOLVER"
+  }
+}

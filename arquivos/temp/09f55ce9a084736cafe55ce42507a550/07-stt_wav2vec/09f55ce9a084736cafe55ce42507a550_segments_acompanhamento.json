@@ -1,0 +1,17 @@
+{
+  "09f55ce9a084736cafe55ce42507a550_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.544",
+    "duracao": 7.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1963276863098145,
+    "mos_stoi": 0.8925746083259583,
+    "mos_si_sdr": 15.56710433959961,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Como? A partir do toque, a partir do corpo, a partir do... Tem um exercício que se faz nos mosteiros que é muito bonito.",
+    "stt_wav2vec": "COMO A PARTIR DO TOQUE A PARTIR DO CORPO A PARTIDA TENS ETEMA EXERCÍCIO QUE SE FAZ NOS MOSTEIROS QUE É MUITO BONITO"
+  }
+}

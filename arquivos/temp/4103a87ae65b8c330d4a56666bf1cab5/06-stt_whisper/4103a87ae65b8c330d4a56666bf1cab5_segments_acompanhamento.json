@@ -1,0 +1,30 @@
+{
+  "4103a87ae65b8c330d4a56666bf1cab5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.732",
+    "duracao": 12.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1277629137039185,
+    "mos_stoi": 0.7776688933372498,
+    "mos_si_sdr": 1.587576985359192,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A gente tem que chamar veganos, né? Porque eu não entendo nada. Eu também não entendo nada. Tem que ter um bifão, uma carnona. Tem que substituir a coisa a tudo, né? A carne, pela carne de salto. Vamos trazer uma pessoa..."
+  },
+  "4103a87ae65b8c330d4a56666bf1cab5_002.ogg": {
+    "tempo_inicio": "00:00:13.028",
+    "tempo_fim": "00:00:22.760",
+    "duracao": 9.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1857740879058838,
+    "mos_stoi": 0.8437178134918213,
+    "mos_si_sdr": 0.20456784963607788,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

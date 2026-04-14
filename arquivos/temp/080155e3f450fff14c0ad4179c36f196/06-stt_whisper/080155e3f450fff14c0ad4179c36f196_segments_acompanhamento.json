@@ -1,0 +1,30 @@
+{
+  "080155e3f450fff14c0ad4179c36f196_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:13.308",
+    "duracao": 13.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.939418077468872,
+    "mos_stoi": 0.9253373742103577,
+    "mos_si_sdr": 6.696516036987305,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu sentiria muito mais a perda de um zagueiro hoje, de um volante, de um meio amador, perder um... Pô, se a gente perde o Jump R de vez, cara, a gente tá ferrado. Cara, mas voltando..."
+  },
+  "080155e3f450fff14c0ad4179c36f196_002.ogg": {
+    "tempo_inicio": "00:00:13.444",
+    "tempo_fim": "00:00:27.420",
+    "duracao": 13.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9504677057266235,
+    "mos_stoi": 0.910470187664032,
+    "mos_si_sdr": 14.341392517089844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Voltando à questão do Kai Henrique, só ali um parênteses, é um jogador de qualidade, é, mas ele não teve tempo de mostrar muita coisa no Grêmio. Acredito que taticamente no Grêmio ele também poderia, de certa forma, mudar o time."
+  }
+}

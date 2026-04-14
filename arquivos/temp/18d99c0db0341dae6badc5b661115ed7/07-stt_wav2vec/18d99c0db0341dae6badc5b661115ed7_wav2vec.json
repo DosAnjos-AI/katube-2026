@@ -1,0 +1,17 @@
+{
+  "18d99c0db0341dae6badc5b661115ed7_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.094",
+    "duracao": 6.09,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4446367025375366,
+    "mos_stoi": 0.7192985415458679,
+    "mos_si_sdr": 1.1652740240097046,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não tem a impressão. Eu não tenho mais diferentes, Gabriel. Tá louco. Vocês já estão jogando bem renal também?",
+    "stt_wav2vec": "NÃO TEM BANJOR E NOITO ERENTES GABRIEL TÁ LOCO E NEO APRESTEA MARO NA BIGA INALTABEM"
+  }
+}

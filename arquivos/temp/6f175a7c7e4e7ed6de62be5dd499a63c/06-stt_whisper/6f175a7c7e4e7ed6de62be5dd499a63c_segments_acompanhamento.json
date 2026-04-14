@@ -1,0 +1,16 @@
+{
+  "6f175a7c7e4e7ed6de62be5dd499a63c_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.158",
+    "duracao": 6.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9928560256958008,
+    "mos_stoi": 0.9222241640090942,
+    "mos_si_sdr": 6.236413478851318,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se eventualmente nós retirarmos esse valor, então nós estamos a colocar em prática o juro síntese."
+  }
+}

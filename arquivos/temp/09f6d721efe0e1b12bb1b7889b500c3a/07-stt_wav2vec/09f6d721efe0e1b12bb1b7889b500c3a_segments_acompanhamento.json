@@ -1,0 +1,32 @@
+{
+  "09f6d721efe0e1b12bb1b7889b500c3a_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:07.132",
+    "duracao": 6.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1581857204437256,
+    "mos_stoi": 0.9870364665985107,
+    "mos_si_sdr": 19.803203582763672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olá, primos e primas, sejam bem-vindos ao podcast Conversas de Chuveiro, o podcast oficial dos primos.",
+    "stt_wav2vec": "APRIMICIPLIMACESO BEMBINDOS A POQUESTE CONVERSAS DE CHUVEIRO O PORQUESTA OFICIAL DOS PRIMOS"
+  },
+  "09f6d721efe0e1b12bb1b7889b500c3a_002.ogg": {
+    "tempo_inicio": "00:00:07.492",
+    "tempo_fim": "00:00:13.950",
+    "duracao": 6.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2901434898376465,
+    "mos_stoi": 0.9828140735626221,
+    "mos_si_sdr": 20.56732177734375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Neste podcast nós falamos de finanças pessoais, empreendedorismo e negócios em português.",
+    "stt_wav2vec": "NISS PORQUE SE NÓS FALARMOS E FINANÇAS PESSOAIS EM PRIENDEDORISMO E NEGÓCIOS EM PORTUGUÊSO"
+  }
+}

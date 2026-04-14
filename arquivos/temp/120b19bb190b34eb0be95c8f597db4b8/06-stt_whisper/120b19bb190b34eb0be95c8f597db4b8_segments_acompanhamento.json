@@ -1,0 +1,44 @@
+{
+  "120b19bb190b34eb0be95c8f597db4b8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:18.204",
+    "duracao": 18.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6385078430175781,
+    "mos_stoi": 0.8901389241218567,
+    "mos_si_sdr": 7.722864151000977,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se tu tem dois caras de nível titular no elenco, tu tá bem demais. Mas o Flamengo tem prazo de validade, a gente já sabe. É que o Flamengo é o Flamengo, entendeu? Os caras tão lá, estão no Rio. Tá de banco do Flamengo hoje, recebendo teu salário em dia, um alto salário. O Flamengo tá pagando um milhão e meio pra banco."
+  },
+  "120b19bb190b34eb0be95c8f597db4b8_002.ogg": {
+    "tempo_inicio": "00:00:18.500",
+    "tempo_fim": "00:00:24.444",
+    "duracao": 5.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4847702980041504,
+    "mos_stoi": 0.9617955684661865,
+    "mos_si_sdr": 19.01360321044922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Entendeu? É diferente. É diferente. Tu vim no Grêmio, tu vim no Inter ganhar 200 mil, pouca visibilidade."
+  },
+  "120b19bb190b34eb0be95c8f597db4b8_003.ogg": {
+    "tempo_inicio": "00:00:24.708",
+    "tempo_fim": "00:00:28.926",
+    "duracao": 4.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0616657733917236,
+    "mos_stoi": 0.9771627187728882,
+    "mos_si_sdr": 19.77416229248047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de mercado, porque o Pedro entra, vira notícia no Brasil inteiro quando ele faz gol."
+  }
+}

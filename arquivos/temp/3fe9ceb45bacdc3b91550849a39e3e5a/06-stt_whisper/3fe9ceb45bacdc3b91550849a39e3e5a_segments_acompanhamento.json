@@ -1,0 +1,16 @@
+{
+  "3fe9ceb45bacdc3b91550849a39e3e5a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.470",
+    "duracao": 11.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7813053131103516,
+    "mos_stoi": 0.9382595419883728,
+    "mos_si_sdr": 14.799256324768066,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mecânica, quer comprar ações do quê da empresa XPTO, está bem, então faço aqui a operação e eu comprei, eu consigo isso agora não fazem mais pequena ideia porque é que estão a comprar se é bom ou se é mau a minha parte da pessoa, a malta que lá está não sabe disso"
+  }
+}

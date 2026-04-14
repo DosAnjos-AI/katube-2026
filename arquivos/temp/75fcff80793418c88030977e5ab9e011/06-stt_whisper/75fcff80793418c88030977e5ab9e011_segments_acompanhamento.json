@@ -1,0 +1,16 @@
+{
+  "75fcff80793418c88030977e5ab9e011_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:03.902",
+    "duracao": 3.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0718135833740234,
+    "mos_stoi": 0.9369903802871704,
+    "mos_si_sdr": 11.87580680847168,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ou migrar para a França, mas gostaria de deixar empresas abertas e tudo mais."
+  }
+}

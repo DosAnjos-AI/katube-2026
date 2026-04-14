@@ -1,0 +1,62 @@
+{
+  "e41f8de060b3326db2e7398e32635069_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.508",
+    "duracao": 4.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.016031503677368,
+    "mos_stoi": 0.9212825298309326,
+    "mos_si_sdr": 8.159214973449707,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Lágrima da rapaziada vai descer, hein? Caramba aí.",
+    "stt_wav2vec": "LÁGRIMA DA RAPAZIADA VAI DESCERM ONDERARRATA CARÃO VAIVES"
+  },
+  "e41f8de060b3326db2e7398e32635069_002.ogg": {
+    "tempo_inicio": "00:00:04.740",
+    "tempo_fim": "00:00:17.660",
+    "duracao": 12.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3710086345672607,
+    "mos_stoi": 0.8202167749404907,
+    "mos_si_sdr": 3.8877320289611816,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "e41f8de060b3326db2e7398e32635069_003.ogg": {
+    "tempo_inicio": "00:00:17.988",
+    "tempo_fim": "00:00:25.564",
+    "duracao": 7.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4200282096862793,
+    "mos_stoi": 0.9111550450325012,
+    "mos_si_sdr": 9.636107444763184,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, vamos falar um pouquinho do Yoru e depois a gente abre para mergulhar um pouco mais a fundo no trabalho de potência também.",
+    "stt_wav2vec": null
+  },
+  "e41f8de060b3326db2e7398e32635069_004.ogg": {
+    "tempo_inicio": "00:00:25.892",
+    "tempo_fim": "00:00:30.744",
+    "duracao": 4.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3423209190368652,
+    "mos_stoi": 0.8962735533714294,
+    "mos_si_sdr": 6.097856521606445,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então o Yoiô foge um pouco do que a gente veio falar hoje.",
+    "stt_wav2vec": null
+  }
+}

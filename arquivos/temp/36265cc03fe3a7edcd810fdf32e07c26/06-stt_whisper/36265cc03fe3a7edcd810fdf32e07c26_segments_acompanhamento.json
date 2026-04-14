@@ -1,0 +1,16 @@
+{
+  "36265cc03fe3a7edcd810fdf32e07c26_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.518",
+    "duracao": 9.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1591092348098755,
+    "mos_stoi": 0.6434431076049805,
+    "mos_si_sdr": -2.9406394958496094,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o que ajuda muito também a conseguir bons preços. Por um lado, também consegue ser bons preços se marcares uma em cima da hora, porque às vezes acontece, mas nem toda a gente tem disponibilidade para ir."
+  }
+}

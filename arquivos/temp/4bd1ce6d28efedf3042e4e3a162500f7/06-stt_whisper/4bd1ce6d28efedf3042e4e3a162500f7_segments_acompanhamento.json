@@ -1,0 +1,44 @@
+{
+  "4bd1ce6d28efedf3042e4e3a162500f7_001.ogg": {
+    "tempo_inicio": "00:00:03.012",
+    "tempo_fim": "00:00:12.060",
+    "duracao": 9.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8317277431488037,
+    "mos_stoi": 0.9188216328620911,
+    "mos_si_sdr": 17.98004913330078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Certas coisas nem sempre começam tendo o que são. Um pintinho começa sendo o ovo, o sapo sendo girindo."
+  },
+  "4bd1ce6d28efedf3042e4e3a162500f7_002.ogg": {
+    "tempo_inicio": "00:00:12.612",
+    "tempo_fim": "00:00:22.300",
+    "duracao": 9.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6630017757415771,
+    "mos_stoi": 0.9039688110351562,
+    "mos_si_sdr": 10.661866188049316,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E a borboleta sendo lagarta. E tem uns começos que não aparecem. A árvore começa embaixo da terra."
+  },
+  "4bd1ce6d28efedf3042e4e3a162500f7_003.ogg": {
+    "tempo_inicio": "00:00:22.724",
+    "tempo_fim": "00:00:27.868",
+    "duracao": 5.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3395962715148926,
+    "mos_stoi": 0.9152011275291443,
+    "mos_si_sdr": 15.511431694030762,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E as nuvens encobrem o começo do céu. Mas e o mar?"
+  }
+}

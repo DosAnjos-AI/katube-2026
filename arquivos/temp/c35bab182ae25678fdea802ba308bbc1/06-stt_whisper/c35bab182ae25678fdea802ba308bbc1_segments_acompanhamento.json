@@ -1,0 +1,44 @@
+{
+  "c35bab182ae25678fdea802ba308bbc1_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.364",
+    "duracao": 10.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0789289474487305,
+    "mos_stoi": 0.9759202003479004,
+    "mos_si_sdr": 20.038002014160156,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Esse adaptador pode atender até três pessoas. Esse adaptador que eles fizeram dê uma máquina respiratória para que possa atender três pessoas."
+  },
+  "c35bab182ae25678fdea802ba308bbc1_002.ogg": {
+    "tempo_inicio": "00:00:10.660",
+    "tempo_fim": "00:00:24.476",
+    "duracao": 13.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6410136222839355,
+    "mos_stoi": 0.9556832313537598,
+    "mos_si_sdr": 16.542064666748047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então isso aconteceu aqui do lado, hein, Canose. Vou dar o nome dos profissionais aqui, que eu acho muito legal ressaltar o nome deles. Deixa eu encontrar aqui que era um médico e dois fisioterapeutas na matéria de gaúcha ZH."
+  },
+  "c35bab182ae25678fdea802ba308bbc1_003.ogg": {
+    "tempo_inicio": "00:00:24.964",
+    "tempo_fim": "00:00:29.566",
+    "duracao": 4.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7312309741973877,
+    "mos_stoi": 0.9755043983459473,
+    "mos_si_sdr": 19.53789520263672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que eu não estou encontrando. Rodrigo Adams, dá uma ajuda aqui."
+  }
+}

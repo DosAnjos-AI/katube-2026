@@ -1,0 +1,17 @@
+{
+  "0e166436c1714656b5809afdaec37f94_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.246",
+    "duracao": 9.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7606807947158813,
+    "mos_stoi": 0.9080864191055298,
+    "mos_si_sdr": 14.319594383239746,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Por isso se usam, mantendo relações em seus níveis mais profissionais, visando apenas o esvaziamento imediato da tensão libidinosa, tendo como objetivo apenas o prazer físico.",
+    "stt_wav2vec": "PORISSO SE USAM MANTENDO RELAÇÃO M OS SEUS NIVEIS MAIS PROFICIAES UZANDO APENAS ESVAZIAMENTE IMEDIATA DA TENÇÃO LIBIDINOSA TENDO COMO OBJETIVO APENAS ROEO"
+  }
+}

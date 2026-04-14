@@ -1,0 +1,44 @@
+{
+  "ed8dd70e0d38878339da233322274950_001.ogg": {
+    "tempo_inicio": "00:00:00.324",
+    "tempo_fim": "00:00:10.396",
+    "duracao": 10.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8066904544830322,
+    "mos_stoi": 0.9247007966041565,
+    "mos_si_sdr": 17.488208770751953,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "ed8dd70e0d38878339da233322274950_002.ogg": {
+    "tempo_inicio": "00:00:10.660",
+    "tempo_fim": "00:00:21.340",
+    "duracao": 10.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3042789697647095,
+    "mos_stoi": 0.8351455926895142,
+    "mos_si_sdr": 4.177762985229492,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "específica de racismo, não tem um tipo para essa questão, que é fazer uma abordagem, o tipo de racismo pela nossa legislação seria se proibisse ele de entrar no shopping,"
+  },
+  "ed8dd70e0d38878339da233322274950_003.ogg": {
+    "tempo_inicio": "00:00:21.444",
+    "tempo_fim": "00:00:31.800",
+    "duracao": 10.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5150986909866333,
+    "mos_stoi": 0.8933293223381042,
+    "mos_si_sdr": 12.922609329223633,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "se excluíssem ele. Não há esta previsão específica para esse fato e direito penal tem a questão da tipicidade. Só é crime se tiver uma lei específica que assim o dica."
+  }
+}

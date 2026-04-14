@@ -1,0 +1,62 @@
+{
+  "fcc299104a4dcc214437add32ea44e86_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.188",
+    "duracao": 4.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3132431507110596,
+    "mos_stoi": 0.9938742518424988,
+    "mos_si_sdr": 27.10881805419922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, nesse momento em que eu comecei a ter esse medo...",
+    "stt_wav2vec": "ENTÃO NESSE MOMENTO EM QUE EU COMECEI A TER SENHIDO"
+  },
+  "fcc299104a4dcc214437add32ea44e86_002.ogg": {
+    "tempo_inicio": "00:00:04.644",
+    "tempo_fim": "00:00:15.900",
+    "duracao": 11.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.548767566680908,
+    "mos_stoi": 0.9525477290153503,
+    "mos_si_sdr": 11.572356224060059,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Foi aí que comecei a perder um pouco da desenvoltura, tanto na minha voz, na minha fala, na minha postura. Quando a expectativa é alta demais. Essa é a psicóloga Cirley Bittu.",
+    "stt_wav2vec": null
+  },
+  "fcc299104a4dcc214437add32ea44e86_003.ogg": {
+    "tempo_inicio": "00:00:16.036",
+    "tempo_fim": "00:00:20.700",
+    "duracao": 4.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6023831367492676,
+    "mos_stoi": 0.8909302353858948,
+    "mos_si_sdr": 9.928563117980957,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E quando a pessoa acredita de alguma forma que a avaliação vai ser sempre negativa,",
+    "stt_wav2vec": null
+  },
+  "fcc299104a4dcc214437add32ea44e86_004.ogg": {
+    "tempo_inicio": "00:00:21.028",
+    "tempo_fim": "00:00:29.976",
+    "duracao": 8.95,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.658705472946167,
+    "mos_stoi": 0.9249414801597595,
+    "mos_si_sdr": 13.622673034667969,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e tem uma dificuldade extrema de lidar com essa rejeição, com essa fantasia de rejeição, porque na maioria das vezes é uma fantasia, a gente caracteriza como uma pessoa tímida.",
+    "stt_wav2vec": null
+  }
+}

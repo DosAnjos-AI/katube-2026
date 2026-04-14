@@ -1,0 +1,72 @@
+{
+  "73b7f85d3fe3b2edbd7fde2306fa8500_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.052",
+    "duracao": 9.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1479039192199707,
+    "mos_stoi": 0.6747193932533264,
+    "mos_si_sdr": -4.2956461906433105,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas eu queria trazer para a mesa para a nossa resenha aí, se realmente o Bruno Fux é um jogador, é um ativo do Inter para ir para a Europa já nesse momento."
+  },
+  "73b7f85d3fe3b2edbd7fde2306fa8500_002.ogg": {
+    "tempo_inicio": "00:00:09.796",
+    "tempo_fim": "00:00:17.052",
+    "duracao": 7.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3457086086273193,
+    "mos_stoi": 0.8923231959342957,
+    "mos_si_sdr": 11.844983100891113,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E se vocês entendem que ele tem futebol para esse nível, para atuar na Europa,"
+  },
+  "73b7f85d3fe3b2edbd7fde2306fa8500_003.ogg": {
+    "tempo_inicio": "00:00:17.348",
+    "tempo_fim": "00:00:22.044",
+    "duracao": 4.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7734794616699219,
+    "mos_stoi": 0.862291157245636,
+    "mos_si_sdr": 5.572148323059082,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E principalmente se ele já atua de forma consistente aqui no Inter."
+  },
+  "73b7f85d3fe3b2edbd7fde2306fa8500_004.ogg": {
+    "tempo_inicio": "00:00:22.372",
+    "tempo_fim": "00:00:25.980",
+    "duracao": 3.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.589869499206543,
+    "mos_stoi": 0.8211615681648254,
+    "mos_si_sdr": 5.200469970703125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "porque ele faz pouco tempo que assumiu a vaga titular no time,"
+  },
+  "73b7f85d3fe3b2edbd7fde2306fa8500_005.ogg": {
+    "tempo_inicio": "00:00:26.372",
+    "tempo_fim": "00:00:31.064",
+    "duracao": 4.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.060716390609741,
+    "mos_stoi": 0.8343650102615356,
+    "mos_si_sdr": 14.284890174865723,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E na minha visão, pelo menos não apresentou aquela saída de bola toda que o..."
+  }
+}

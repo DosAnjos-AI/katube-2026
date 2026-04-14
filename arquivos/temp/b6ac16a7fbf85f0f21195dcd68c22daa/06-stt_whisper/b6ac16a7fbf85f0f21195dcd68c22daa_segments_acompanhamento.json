@@ -1,0 +1,16 @@
+{
+  "b6ac16a7fbf85f0f21195dcd68c22daa_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.984",
+    "duracao": 4.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.960009813308716,
+    "mos_stoi": 0.9638199806213379,
+    "mos_si_sdr": 21.453266143798828,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o shopping. O shopping. Não tem o shopping. Não é o que isso."
+  }
+}

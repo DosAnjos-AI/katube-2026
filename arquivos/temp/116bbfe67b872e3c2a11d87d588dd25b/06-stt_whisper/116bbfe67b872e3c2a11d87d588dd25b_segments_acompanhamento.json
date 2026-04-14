@@ -1,0 +1,22 @@
+{
+  "116bbfe67b872e3c2a11d87d588dd25b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.116",
+    "duracao": 13.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Na ausência dele, acho que o futeal Galhardo é a melhor opção que nós temos hoje. Décimo segundo jogador, né, meu? Hoje no Inter é isso. Eu acredito que ele seja isso. Independente de como se desenha a partida, ele sempre vai ser uma boa opção."
+  },
+  "116bbfe67b872e3c2a11d87d588dd25b_002.ogg": {
+    "tempo_inicio": "00:00:13.476",
+    "tempo_fim": "00:00:18.814",
+    "duracao": 5.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Uma boa opção para uma criatividade maior, uma boa opção para reter a bola, uma boa opção para, enfim..."
+  }
+}

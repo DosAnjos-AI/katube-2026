@@ -1,0 +1,30 @@
+{
+  "1aded5f720f2474ef5d3bb4d432d5fb7_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.396",
+    "duracao": 14.39,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2527856826782227,
+    "mos_stoi": 0.7890645265579224,
+    "mos_si_sdr": -0.9631998538970947,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "11 gols, se eu não estou enganado. 11 ou 12 gols. Não é o cara que joga 10 partidos. Ele joga 10 partidos para fazer um gol. Mas 7 Goianiense ele foi melhor. Ele era do time dos 7 Goianiense que estava o Michel também, quando o Michel veio para o Grêmio."
+  },
+  "1aded5f720f2474ef5d3bb4d432d5fb7_002.ogg": {
+    "tempo_inicio": "00:00:14.468",
+    "tempo_fim": "00:00:29.276",
+    "duracao": 14.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2225456237792969,
+    "mos_stoi": 0.7995969653129578,
+    "mos_si_sdr": -0.16806259751319885,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas ele é um ponto, né? Ele não é um centroavante. Não, ele é ponta. Ele é ponta pela direita. Ele não vai fazer gol, é criar, né? Ele é um cara pra ser opção pro Alisson quando o Alisson não puder jogar. E dizem ele, é um cara que recompõe e tudo mais. Não dá pra esperar que ele venha fazer gol no ver."
+  }
+}

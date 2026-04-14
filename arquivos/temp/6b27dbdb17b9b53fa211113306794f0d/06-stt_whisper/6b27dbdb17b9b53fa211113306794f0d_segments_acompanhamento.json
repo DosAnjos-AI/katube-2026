@@ -1,0 +1,30 @@
+{
+  "6b27dbdb17b9b53fa211113306794f0d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.244",
+    "duracao": 13.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.968170166015625,
+    "mos_stoi": 0.9247753024101257,
+    "mos_si_sdr": 10.74061107635498,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Na Juventus, antes da Juventus jogou muito bem na Roma. Então, claro, em termos de futebol, cara, o Arthur é melhor que o Benic, sim, mas o Benic não fica até abaixo. Ele é muito bom jogador. Só que a questão é..."
+  },
+  "6b27dbdb17b9b53fa211113306794f0d_002.ogg": {
+    "tempo_inicio": "00:00:13.284",
+    "tempo_fim": "00:00:27.868",
+    "duracao": 14.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.265552282333374,
+    "mos_stoi": 0.9427603483200073,
+    "mos_si_sdr": 12.384485244750977,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A questão é, o Arthur ainda tem anos para render futebol e quem sabe gerar frutos financeiros, que o PMG já não gera mais. Então, eu arriscaria em dizer que o motivo da troca foi essa. O Barcelona, que é alguém focado com a oportunidade."
+  }
+}

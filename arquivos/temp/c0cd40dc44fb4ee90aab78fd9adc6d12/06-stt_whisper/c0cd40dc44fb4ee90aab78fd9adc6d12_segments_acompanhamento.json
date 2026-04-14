@@ -1,0 +1,16 @@
+{
+  "c0cd40dc44fb4ee90aab78fd9adc6d12_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.608",
+    "duracao": 5.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5734896659851074,
+    "mos_stoi": 0.9546172022819519,
+    "mos_si_sdr": 17.035634994506836,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a fazer entregas nos PPRs. Quando nós vamos levantar o PPR, eles vão buscar a entrega mais antiga."
+  }
+}

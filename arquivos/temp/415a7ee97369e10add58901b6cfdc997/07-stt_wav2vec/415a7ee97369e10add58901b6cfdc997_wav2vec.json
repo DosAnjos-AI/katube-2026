@@ -1,0 +1,32 @@
+{
+  "415a7ee97369e10add58901b6cfdc997_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.108",
+    "duracao": 6.11,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.233353614807129,
+    "mos_stoi": 0.8979136943817139,
+    "mos_si_sdr": 17.408939361572266,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "não é algo que eu invisto mas lá está mesmo obrigações também é algo que",
+    "stt_wav2vec": "NÃOÉ ALDO QUE O INEVISTO MAS LÁ ESTÁ MINHA MESMO A OBRIGAÇÕES TAMBÉM ALCA"
+  },
+  "415a7ee97369e10add58901b6cfdc997_003.ogg": {
+    "tempo_inicio": "00:00:14.052",
+    "tempo_fim": "00:00:22.620",
+    "duracao": 8.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2248268127441406,
+    "mos_stoi": 0.7306051850318909,
+    "mos_si_sdr": -1.3372770547866821,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Atenção, eu nunca investiria em obrigações do Benfica. Fica aqui, claro. Mas elas estão em promoção. Ok.",
+    "stt_wav2vec": "EU ATIENTÃ EU NUNCA INVESTIRIA A REM ABREÇAES DO BENEFIXA EFIQA QUE CLAITAO MAS ELAS DE EMPROVISÃO PEFELA EA"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "690528ca70c50cc1d508e43da5a11170_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.156",
+    "duracao": 4.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.00114369392395,
+    "mos_stoi": 0.9936845898628235,
+    "mos_si_sdr": 21.392518997192383,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mais pode ser menos quando nós temos uma meta"
+  }
+}

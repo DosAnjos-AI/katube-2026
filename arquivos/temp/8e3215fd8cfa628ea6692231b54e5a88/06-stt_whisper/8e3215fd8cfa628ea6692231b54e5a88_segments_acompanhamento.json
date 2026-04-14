@@ -1,0 +1,30 @@
+{
+  "8e3215fd8cfa628ea6692231b54e5a88_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.556",
+    "duracao": 6.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.192451000213623,
+    "mos_stoi": 0.9866863489151001,
+    "mos_si_sdr": 16.10075569152832,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas é que... Todo jogo tu pode achar a culpa de alguém. A culpa é do Renato. Ele botou o Thiago Neves."
+  },
+  "8e3215fd8cfa628ea6692231b54e5a88_002.ogg": {
+    "tempo_inicio": "00:00:06.852",
+    "tempo_fim": "00:00:18.952",
+    "duracao": 12.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.459991216659546,
+    "mos_stoi": 0.8918891549110413,
+    "mos_si_sdr": 6.255681991577148,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

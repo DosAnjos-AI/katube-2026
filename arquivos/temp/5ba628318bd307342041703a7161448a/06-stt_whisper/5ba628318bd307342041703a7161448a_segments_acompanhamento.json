@@ -1,0 +1,44 @@
+{
+  "5ba628318bd307342041703a7161448a_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.660",
+    "duracao": 5.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.825118064880371,
+    "mos_stoi": 0.9533836245536804,
+    "mos_si_sdr": 16.307292938232422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Agora irei falar sobre a indeterminação intencional do ato de aplicação do direito."
+  },
+  "5ba628318bd307342041703a7161448a_002.ogg": {
+    "tempo_inicio": "00:00:06.212",
+    "tempo_fim": "00:00:20.188",
+    "duracao": 13.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4817991256713867,
+    "mos_stoi": 0.9511409997940063,
+    "mos_si_sdr": 15.78487491607666,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Para Kelsey, o direito é capaz de determinar expressamente hábitos jurídicos na quais têm como aplicador o direito. Entretanto, esses atos podem serem indeterminados."
+  },
+  "5ba628318bd307342041703a7161448a_003.ogg": {
+    "tempo_inicio": "00:00:20.644",
+    "tempo_fim": "00:00:32.584",
+    "duracao": 11.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9300341606140137,
+    "mos_stoi": 0.9686657786369324,
+    "mos_si_sdr": 19.574176788330078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quando se fala de indeterminação, essa pode ser vista de forma intencional, ou seja, ser criada através da intenção de quem criou a norma para aplicá-la."
+  }
+}

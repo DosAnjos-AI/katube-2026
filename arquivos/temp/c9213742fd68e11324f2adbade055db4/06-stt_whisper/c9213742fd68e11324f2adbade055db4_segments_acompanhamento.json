@@ -1,0 +1,30 @@
+{
+  "c9213742fd68e11324f2adbade055db4_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:03.644",
+    "duracao": 3.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.546158790588379,
+    "mos_stoi": 0.9585753679275513,
+    "mos_si_sdr": 20.079723358154297,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ninguém disse aos gigantes que eles deviam parar com aquilo."
+  },
+  "c9213742fd68e11324f2adbade055db4_002.ogg": {
+    "tempo_inicio": "00:00:03.972",
+    "tempo_fim": "00:00:08.200",
+    "duracao": 4.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8668529987335205,
+    "mos_stoi": 0.8402391076087952,
+    "mos_si_sdr": 2.7686619758605957,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "porque todos tinham medo deles. Menos Greta."
+  }
+}

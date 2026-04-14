@@ -1,0 +1,32 @@
+{
+  "806caf37a380111f85e6f1c69cbab99a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.444",
+    "duracao": 12.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.476909637451172,
+    "mos_stoi": 0.9787378907203674,
+    "mos_si_sdr": 20.88431167602539,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vai ser talvez o adversário mais difícil que o Inter vai enfrentar. Teve o Atlético Mineiro também, mas é mais um dos grandes que o Inter enfrenta no campeonato. Fora de casa.",
+    "stt_wav2vec": "VAI SER TALVEZ DO ADVERSÁRIO MAIS DIFÍCIL E QUE O INTERPERNETARTIVO ATLÉTICO MIDER TAMBÉM MAIS O É MAIS UM DOS DOS GRANDES QUE O INTER ENFRENTA NO NO CAMPEONATO FORA DE CASA A"
+  },
+  "806caf37a380111f85e6f1c69cbab99a_002.ogg": {
+    "tempo_inicio": "00:00:12.644",
+    "tempo_fim": "00:00:26.744",
+    "duracao": 14.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8565077781677246,
+    "mos_stoi": 0.9554442763328552,
+    "mos_si_sdr": 15.582929611206055,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Como segue pode projetar aí uma postura de também pressionar o Palmeiras no início e recuar depois como o Juan levantou antes ou vocês acham que ir buscar o empate já serve no Fora de Casa contra o Palmeiras?",
+    "stt_wav2vec": "COMO SEGUE PODE PROJEITAR UMA UMA POS UMA POSTURA DE TAMBÉM IMPRESSIONAL PALMEIRAS MINÍCIO E RECUAR DEPOIS COMO RUA LEVANTOLENTES OU VOCÊS ACHO QUE E BUSCAR O EMPATE JÁ JÁ SERVE NO FORA DE CASA CONTRA O PALMEIRAS"
+  }
+}

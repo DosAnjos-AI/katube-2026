@@ -1,0 +1,30 @@
+{
+  "d906fb5af8618c8d2083de15e0739734_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.524",
+    "duracao": 14.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6296606063842773,
+    "mos_stoi": 0.972299337387085,
+    "mos_si_sdr": 19.104328155517578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Lembrando que para a construção desse podcast estamos embasados no texto, anos 1930, Gilberto Freire, o relogio da colonização portuguesa, da autoria de José Calos Reis, e também no texto de Lília Morit Schwartz, intitulado Gilberto Freire,"
+  },
+  "d906fb5af8618c8d2083de15e0739734_002.ogg": {
+    "tempo_inicio": "00:00:14.564",
+    "tempo_fim": "00:00:19.928",
+    "duracao": 5.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2523536682128906,
+    "mos_stoi": 0.9704248905181885,
+    "mos_si_sdr": 17.288663864135742,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "adaptação, mexeagem, trópicos e privacidade em Novo Mundo nos trópicos."
+  }
+}

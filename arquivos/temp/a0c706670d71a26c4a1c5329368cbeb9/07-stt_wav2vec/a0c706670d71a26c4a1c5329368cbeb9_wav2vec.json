@@ -1,0 +1,17 @@
+{
+  "a0c706670d71a26c4a1c5329368cbeb9_001.ogg": {
+    "tempo_inicio": "00:00:00.708",
+    "tempo_fim": "00:00:05.768",
+    "duracao": 5.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0893325805664062,
+    "mos_stoi": 0.9209524989128113,
+    "mos_si_sdr": 20.10487937927246,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ele escreveria sempre em relação ao espaço,",
+    "stt_wav2vec": "OTAÇÃO ELE ESCREVERIA SEMPRE EM RELAÇÃO AO ESPAÇO"
+  }
+}

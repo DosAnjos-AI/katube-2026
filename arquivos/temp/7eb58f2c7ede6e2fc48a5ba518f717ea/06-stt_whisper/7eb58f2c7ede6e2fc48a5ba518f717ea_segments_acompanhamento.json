@@ -1,0 +1,44 @@
+{
+  "7eb58f2c7ede6e2fc48a5ba518f717ea_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.428",
+    "duracao": 6.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.967594623565674,
+    "mos_stoi": 0.9245898723602295,
+    "mos_si_sdr": 22.683563232421875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "nesse texto que você citou no início, eu me perguntando sobre o que"
+  },
+  "7eb58f2c7ede6e2fc48a5ba518f717ea_002.ogg": {
+    "tempo_inicio": "00:00:06.788",
+    "tempo_fim": "00:00:11.196",
+    "duracao": 4.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.007044553756714,
+    "mos_stoi": 0.9632807374000549,
+    "mos_si_sdr": 21.83005142211914,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o que pode, o teatro, ou como pensar o teatro hoje,"
+  },
+  "7eb58f2c7ede6e2fc48a5ba518f717ea_003.ogg": {
+    "tempo_inicio": "00:00:11.684",
+    "tempo_fim": "00:00:24.508",
+    "duracao": 12.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8750998973846436,
+    "mos_stoi": 0.9344021081924438,
+    "mos_si_sdr": 20.235239028930664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "eu recordei o fato de que uma referência importante para o modo como eu penso o teatro, que é o Brecht, mas não só o Brecht. No texto eu falo também de outros autores,"
+  }
+}

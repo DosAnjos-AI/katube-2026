@@ -1,0 +1,62 @@
+{
+  "e60596e041a751d69eafc6da2cfae9f1_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:11.324",
+    "duracao": 11.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.455470561981201,
+    "mos_stoi": 0.9880996346473694,
+    "mos_si_sdr": 20.71343231201172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "todos conseguiam entender as mensagens importantes. Outro fator de sucesso era a forma como esse cartaz era distribuído, colado no alojamento desses colaboradores.",
+    "stt_wav2vec": "TODOS CONSEGUIAM ENTENDER AS MENSAGENS IMPORTANTES OTRO FATOR DO SUCESSO ERA A FORMA COMO ESCARTAZ ERA DISTRIBUÍDO COLADO NO ALOJAMENTO DESSES COLABORADORES"
+  },
+  "e60596e041a751d69eafc6da2cfae9f1_002.ogg": {
+    "tempo_inicio": "00:00:11.620",
+    "tempo_fim": "00:00:24.508",
+    "duracao": 12.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.747626543045044,
+    "mos_stoi": 0.9945849776268005,
+    "mos_si_sdr": 23.334829330444336,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nada de enviar pelo correio ou pelo malote. Eram os supervisores, aqueles que andavam de caminhonete, que apareciam toda semana, os responsáveis por colar os cartazes e solenemente...",
+    "stt_wav2vec": "NADA DE ENVIAR PELO CORREIO PELO MALOTE ERAM OS SUPERVISORES AQUELES QUE ANDAVAM DE CAMINHONETE QUE APARECIAM TODA A SEMANA OS RESPONSÁVEIS POR COLAR OS CARTAZESES E SOLENEMENTE"
+  },
+  "e60596e041a751d69eafc6da2cfae9f1_003.ogg": {
+    "tempo_inicio": "00:00:24.804",
+    "tempo_fim": "00:00:30.620",
+    "duracao": 5.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.340087890625,
+    "mos_stoi": 0.9937949180603027,
+    "mos_si_sdr": 24.20897674560547,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "fazer a leitura, acompanhadas de um bom bate-papo com o grupo sobre o assunto do cartaz.",
+    "stt_wav2vec": "FAZER A LEITURA ACOMPANHADAS DE UM BOM BATIPAPO COM O GRUPO SOBRE O ASSUNTO DO CARTAS"
+  },
+  "e60596e041a751d69eafc6da2cfae9f1_004.ogg": {
+    "tempo_inicio": "00:00:31.812",
+    "tempo_fim": "00:00:36.216",
+    "duracao": 4.4,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.11318039894104,
+    "mos_stoi": 0.9849023222923279,
+    "mos_si_sdr": 22.79281234741211,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eles foram treinados para isso e eles passaram a fazer isso com muito prazer.",
+    "stt_wav2vec": "ELES FORAM TRENADOS PARA ISSO E ELES PASSARAM A FAZER-LHES COM MUITO PRAZER"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "bff9d50735e4f749f672fbee35759d6d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.372",
+    "duracao": 13.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8067409992218018,
+    "mos_stoi": 0.9234885573387146,
+    "mos_si_sdr": 9.55445384979248,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Acredito que ele possa estar muito mais pela questão da moeda de troca, porque o Inter precisa dessa venda. O sapato apertou ainda mais com essa questão da pandemia, porque tu tem o Cuesta do lado, que é um cara que sabe sair jogando, é um cara que..."
+  },
+  "bff9d50735e4f749f672fbee35759d6d_002.ogg": {
+    "tempo_inicio": "00:00:13.476",
+    "tempo_fim": "00:00:19.624",
+    "duracao": 6.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9806233644485474,
+    "mos_stoi": 0.8832280039787292,
+    "mos_si_sdr": 2.4840316772460938,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ataca a bola lá na frente, ele busca matar a jogada depois da linha do meio de campo."
+  }
+}

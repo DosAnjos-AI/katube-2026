@@ -1,0 +1,32 @@
+{
+  "88e6b973211d23a36f5f2b0aa4dd59a0_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:11.036",
+    "duracao": 11.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.193270683288574,
+    "mos_stoi": 0.9161768555641174,
+    "mos_si_sdr": 20.059722900390625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "dos medos acumulados, uma catarse dos ressentimentos sociais represados diante do excesso de obrigações sociais sentidas pelos indivíduos inseguros e defensivos.",
+    "stt_wav2vec": "MEDOS ACUMULADOS UMA CATARZE DOS RESSENTIMENTOS SOCIAIS REPRESADOS DIANTE DO EXCESSO DE OBRIGAÇÕES SOCIAIS SENTIDAS PELOS INDIVÍDUOS INSEGUROS E DEFENSIVOS"
+  },
+  "88e6b973211d23a36f5f2b0aa4dd59a0_002.ogg": {
+    "tempo_inicio": "00:00:11.076",
+    "tempo_fim": "00:00:32.648",
+    "duracao": 21.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6957268714904785,
+    "mos_stoi": 0.9599637985229492,
+    "mos_si_sdr": 22.220661163330078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Oferta-se como uma compensação da lógica opressiva da insegurança generalizada o chutar o pau da barraca. Chutar o pau da barraca corresponde ao escraço libertário, ao alcance das mãos dos possuidores insatisfeitos com sua acumulação e dos despossuídos revoltados com suas perdas frente à desigualdade social.",
+    "stt_wav2vec": "OFERTA-SE COMO UMA COMPENSAÇÃO DA LÓGICA OPRESSIVA DEENSEGURANÇA GENERALIZADA UXUTAR O PAO DA BARRACA CHUTAR O PAU DA BARRACA CORRESPONDE AO ESCRAXO ELIBERTÁRIO AO ALCANCE DAS MÃOS DOS POSSUIDORES EN SATISFEITOS COM SUA ACUMULAÇÃO E DOS DESPOSSUÍDOS REVOLTADOS COM SUAS PERDAS FRENTE Á DESIGUALDADE SOCIAL"
+  }
+}

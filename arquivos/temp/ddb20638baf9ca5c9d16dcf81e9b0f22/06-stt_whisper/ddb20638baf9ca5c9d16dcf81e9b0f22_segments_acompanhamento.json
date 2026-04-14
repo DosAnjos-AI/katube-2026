@@ -1,0 +1,30 @@
+{
+  "ddb20638baf9ca5c9d16dcf81e9b0f22_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:26.972",
+    "duracao": 26.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.518632411956787,
+    "mos_stoi": 0.9126380085945129,
+    "mos_si_sdr": 10.196996688842773,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "com isso, abraço a todos, um beijo para a galera de Bento Gonçalves, Pinto Bandeira, Catias do Sul, Antônio Prado, enfim, todos os municípios ali daquela região que a gente ama tanto e está orgulhoso com o posicionamento de todo mundo. É um deslize do nosso líder maior, mas que bom que as pessoas seguem adotando as medidas que foram orientadas pelo nosso Ministério da Saúde e por outros países."
+  },
+  "ddb20638baf9ca5c9d16dcf81e9b0f22_002.ogg": {
+    "tempo_inicio": "00:00:27.108",
+    "tempo_fim": "00:00:32.808",
+    "duracao": 5.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0822532176971436,
+    "mos_stoi": 0.9538114070892334,
+    "mos_si_sdr": 16.484725952148438,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que estão se engajando para que a gente possa achatar essa curva de infecção."
+  }
+}

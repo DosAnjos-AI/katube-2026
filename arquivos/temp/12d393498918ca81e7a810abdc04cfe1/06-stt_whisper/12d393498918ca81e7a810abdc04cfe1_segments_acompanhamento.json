@@ -1,0 +1,16 @@
+{
+  "12d393498918ca81e7a810abdc04cfe1_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.206",
+    "duracao": 6.17,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9913768768310547,
+    "mos_stoi": 0.9545108675956726,
+    "mos_si_sdr": 18.618717193603516,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "não necessariamente vai ter os mesmos atores que na próxima dramaturgia do mesmo autor."
+  }
+}

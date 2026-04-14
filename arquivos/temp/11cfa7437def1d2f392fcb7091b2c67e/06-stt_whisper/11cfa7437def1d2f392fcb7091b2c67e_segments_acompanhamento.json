@@ -1,0 +1,16 @@
+{
+  "11cfa7437def1d2f392fcb7091b2c67e_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:07.128",
+    "duracao": 7.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9195990562438965,
+    "mos_stoi": 0.8673235177993774,
+    "mos_si_sdr": 6.847632884979248,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "acham que estabelecer objetivos fáceis, prejudica a dedicação"
+  }
+}

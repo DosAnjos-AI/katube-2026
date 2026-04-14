@@ -1,0 +1,16 @@
+{
+  "f65c68810e23575e524161387d7dca6a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.536",
+    "duracao": 6.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.716815233230591,
+    "mos_stoi": 0.9156045913696289,
+    "mos_si_sdr": 15.655271530151367,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "continuam presentes no debate cultural, social, político do país até hoje."
+  }
+}

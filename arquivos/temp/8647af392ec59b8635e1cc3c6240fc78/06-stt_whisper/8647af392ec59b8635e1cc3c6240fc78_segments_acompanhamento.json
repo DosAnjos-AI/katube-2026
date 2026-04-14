@@ -1,0 +1,16 @@
+{
+  "8647af392ec59b8635e1cc3c6240fc78_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.328",
+    "duracao": 6.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3163979053497314,
+    "mos_stoi": 0.9607252478599548,
+    "mos_si_sdr": 16.278648376464844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Exatamente. Eu, por acaso, eu apoio primeiro, porque sei que faz falta as pessoas, então mantenho, mas claro que"
+  }
+}

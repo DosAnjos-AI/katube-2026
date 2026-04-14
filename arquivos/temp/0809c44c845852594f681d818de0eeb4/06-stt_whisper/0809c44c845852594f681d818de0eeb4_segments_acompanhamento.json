@@ -1,0 +1,16 @@
+{
+  "0809c44c845852594f681d818de0eeb4_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:15.392",
+    "duracao": 15.39,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.413618803024292,
+    "mos_stoi": 0.9889057874679565,
+    "mos_si_sdr": 19.174158096313477,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Saber também o que ele acha bom, né, é gastar a energia dele com uma equipe de produto, né, que vai testar diariamente o produto, vai saber também, trabalho alinhado às duas equipes, né, e deixar, tipo, as demandas, né, acumular as demandas pra jogar isso pra uma terceirização, por exemplo."
+  }
+}

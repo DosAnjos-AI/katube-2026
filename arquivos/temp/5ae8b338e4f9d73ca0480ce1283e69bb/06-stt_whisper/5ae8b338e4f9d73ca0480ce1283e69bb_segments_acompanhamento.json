@@ -1,0 +1,30 @@
+{
+  "5ae8b338e4f9d73ca0480ce1283e69bb_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:16.540",
+    "duracao": 16.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6404550075531006,
+    "mos_stoi": 0.901396632194519,
+    "mos_si_sdr": 4.59526252746582,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho que o Inter entra mais pressionado do que o Grêmio. Não, eu acho que a gente tem que contratar um professor particular. Esse é o meu pensamento. Eu acho que a questão é que o Inter entra mais pressionado. Porque o Inter precisa ganhar um Grêmio. O Inter como um todo. Grupo, treinador, comissão técnica, presidente, todo mundo."
+  },
+  "5ae8b338e4f9d73ca0480ce1283e69bb_002.ogg": {
+    "tempo_inicio": "00:00:16.676",
+    "tempo_fim": "00:00:29.624",
+    "duracao": 12.95,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.256282329559326,
+    "mos_stoi": 0.9893905520439148,
+    "mos_si_sdr": 23.032184600830078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Grêmio já não tanto, mas eu acho que você vai pegar Kudê Renato, eu acho que o resultado em si é mais importante pro Renato do que pro Kudê. Eu acho que o Kudê com uma boa atuação consegue sair lês do Grenal."
+  }
+}

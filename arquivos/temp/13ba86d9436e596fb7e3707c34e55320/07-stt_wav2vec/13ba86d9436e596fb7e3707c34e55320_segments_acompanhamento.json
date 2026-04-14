@@ -1,0 +1,17 @@
+{
+  "13ba86d9436e596fb7e3707c34e55320_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.574",
+    "duracao": 6.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4221529960632324,
+    "mos_stoi": 0.9404186010360718,
+    "mos_si_sdr": 17.607500076293945,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o meu namorado, para de meter a mão aos cair, eles me ferro e eu qualquer cãozinho sempre atrás dele, não é?",
+    "stt_wav2vec": "NAMORADO PAR NO TER A MÃO AS CAI EU DE FERNO E O QUALQUER CAUZINHO A DEXEMPLA A ATRÁS BE"
+  }
+}

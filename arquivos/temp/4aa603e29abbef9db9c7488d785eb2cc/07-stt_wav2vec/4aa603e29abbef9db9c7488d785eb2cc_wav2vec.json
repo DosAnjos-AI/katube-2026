@@ -1,0 +1,17 @@
+{
+  "4aa603e29abbef9db9c7488d785eb2cc_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.262",
+    "duracao": 5.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.237159013748169,
+    "mos_stoi": 0.9594445824623108,
+    "mos_si_sdr": 23.116275787353516,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Certeza. No caso, certeza, são 100%. Não é como se costuma dizer, o que hoje é verdade, amanhã pode ser 100% de mentira.",
+    "stt_wav2vec": "CERTEZA NO CA STO REDETEDOS E CEM POR CENTO NÃO CNO SUMA DIZER O QUE O JÁ CORDADO A MINHA POSSEA SEMPLUCANTE MENTEIRA"
+  }
+}

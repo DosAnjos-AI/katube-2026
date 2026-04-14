@@ -1,0 +1,30 @@
+{
+  "ac3a0c907517c7db39bd7f4a876be1d4_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:11.292",
+    "duracao": 11.13,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3895039558410645,
+    "mos_stoi": 0.9550843238830566,
+    "mos_si_sdr": 10.853256225585938,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A caipirinha é uma das bebidas brasileiras mais conhecidas nacionalmente e internacionalmente também. A caipirinha tem origem em qual estado brasileiro?"
+  },
+  "ac3a0c907517c7db39bd7f4a876be1d4_002.ogg": {
+    "tempo_inicio": "00:00:11.844",
+    "tempo_fim": "00:00:22.268",
+    "duracao": 10.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.311502456665039,
+    "mos_stoi": 0.9566148519515991,
+    "mos_si_sdr": 14.404458045959473,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Opção 1. Acre. Opção 2. Pernambuco. Opção 3. Espírito Santo. Opção 4. São Paulo. Opção 5. Mato Grosso do Sul."
+  }
+}

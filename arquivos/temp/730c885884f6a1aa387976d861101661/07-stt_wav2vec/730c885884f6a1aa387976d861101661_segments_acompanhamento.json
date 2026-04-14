@@ -1,0 +1,17 @@
+{
+  "730c885884f6a1aa387976d861101661_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:08.444",
+    "duracao": 8.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7832369804382324,
+    "mos_stoi": 0.8571814298629761,
+    "mos_si_sdr": 0.7578102350234985,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ai, nossa, que bom te ouvir. Olha só, você também tem vários livros que são uma contribuição.",
+    "stt_wav2vec": "AINOS BOM MONTOVI PALESSO É VOCÊ TAMBÉM TEM VÁRIOS LIVROS QUE SÃO UMA CONTRIBUIÇÃO"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "e18a321e904ecec950cec4bfdf53325f_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:16.700",
+    "duracao": 16.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.218093156814575,
+    "mos_stoi": 0.9630449414253235,
+    "mos_si_sdr": 15.7855863571167,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E o programa Somos Líderes é uma das iniciativas que o sistema OCB tem para intensificar a participação dos jovens nas cooperativas. Ele surgiu motivado pelo desafio de contribuir com a renovação do cooperativismo nacional, propondo a formação de novos líderes para o setor.",
+    "stt_wav2vec": "UE O PROGRAMA SOMOS LIDRES É UMA DAS INICIATIVAS QUE O SISTEMA OCEBE TEM PRAINTESTIFICAR A PARTICIPAÇÃO DOS JOVENS NAS COPERATIVAS ELE SURGIU MOTIVADO PELO DESAFIO DE CONTRIBUIR COM A RENOVAÇÃO DO COPERATIVISMO NACIONAL PROPONDO A FORMAÇÃO DE NOVOS LIDRES PARA O SETOR"
+  },
+  "e18a321e904ecec950cec4bfdf53325f_002.ogg": {
+    "tempo_inicio": "00:00:16.964",
+    "tempo_fim": "00:00:28.904",
+    "duracao": 11.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1805567741394043,
+    "mos_stoi": 0.9569750428199768,
+    "mos_si_sdr": 20.47757339477539,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "presidente Marcio, nosso querido ilustríssimo convidado. Nós gostaríamos de saber aí, gostaríamos que o senhor contasse um pouquinho mais pra gente sobre as motivações pra criação desse programa e também, né,",
+    "stt_wav2vec": "PRESIDENTE MARSE NOSSO QUERIDO E ILUSTRÍSSIMO CONVIDADO NÓS GOSTARÍAMOS DE SABER AI GOSTAREMOS QUE O SENOR CONTASSE UM POUQUINHO MAIS PARA GENTE SOBRE AS MOTIVAÇÕES PARA CRIAÇÃO DESSE PROGRAMA E TAMBÉM A"
+  }
+}

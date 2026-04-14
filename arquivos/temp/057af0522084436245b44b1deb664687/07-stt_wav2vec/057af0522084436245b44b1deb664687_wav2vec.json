@@ -1,0 +1,17 @@
+{
+  "057af0522084436245b44b1deb664687_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.582",
+    "duracao": 3.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3816661834716797,
+    "mos_stoi": 0.9650986194610596,
+    "mos_si_sdr": 21.50092315673828,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que é um limite, eu recomendo logo começar por aí.",
+    "stt_wav2vec": "UM UM IMITE E O ARCUMENDO LOCOMSARE POREI"
+  }
+}

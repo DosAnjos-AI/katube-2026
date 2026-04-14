@@ -1,0 +1,62 @@
+{
+  "50ce3db8eba8c17af8484ff61e9e9d2e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.572",
+    "duracao": 4.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1726083755493164,
+    "mos_stoi": 0.9061945080757141,
+    "mos_si_sdr": 4.300995826721191,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Boa também. Cara, eu não duvido, eu não duvido, não, eu tenho certeza.",
+    "stt_wav2vec": "BORTABÉM CARO EU NÃO DUVIDO EU NÃO E EU NÃO DUVIDO NÃO EU TEM CERTEZA"
+  },
+  "50ce3db8eba8c17af8484ff61e9e9d2e_002.ogg": {
+    "tempo_inicio": "00:00:04.900",
+    "tempo_fim": "00:00:08.476",
+    "duracao": 3.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1386427879333496,
+    "mos_stoi": 0.8558136820793152,
+    "mos_si_sdr": 4.930826187133789,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que ele vai ligar pro Romildo pedindo pra voltar. Já fez isso, né?",
+    "stt_wav2vec": "QUE ELE VAI LIGAR UM ROMILDO PEDINDO PARA VOLTAR JEASEVISTO NE"
+  },
+  "50ce3db8eba8c17af8484ff61e9e9d2e_003.ogg": {
+    "tempo_inicio": "00:00:08.612",
+    "tempo_fim": "00:00:20.572",
+    "duracao": 11.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.291564702987671,
+    "mos_stoi": 0.8117979168891907,
+    "mos_si_sdr": 1.5615402460098267,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele vai ligar de novo, ele vai ligar de novo. Porque o Renato... Sim, ele não veio pro Grêmio, porque o Romildo vetou, porque se fosse pelo Renato, ele tava ali com o Vitora Ferraz no banco pra ele ainda por cima.",
+    "stt_wav2vec": null
+  },
+  "50ce3db8eba8c17af8484ff61e9e9d2e_004.ogg": {
+    "tempo_inicio": "00:00:20.708",
+    "tempo_fim": "00:00:27.246",
+    "duracao": 6.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5557162761688232,
+    "mos_stoi": 0.7907066345214844,
+    "mos_si_sdr": 4.415897846221924,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

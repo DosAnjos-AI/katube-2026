@@ -1,0 +1,32 @@
+{
+  "fac80a6026c01a0e5d825725c095fcc5_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.348",
+    "duracao": 4.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.661094307899475,
+    "mos_stoi": 0.7292994260787964,
+    "mos_si_sdr": 6.368090629577637,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O trabalho do Libre na Europa foi uma contradição atrás da outra.",
+    "stt_wav2vec": "O TRABALHO DO LIVEM NA EUROPA FOI UMA COCONTRADIÇÃO ATRÁS DA OUTRA"
+  },
+  "fac80a6026c01a0e5d825725c095fcc5_002.ogg": {
+    "tempo_inicio": "00:00:04.612",
+    "tempo_fim": "00:00:09.340",
+    "duracao": 4.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7243750095367432,
+    "mos_stoi": 0.8215077519416809,
+    "mos_si_sdr": 9.172415733337402,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e uma conquista atrás da outra em termos de",
+    "stt_wav2vec": "E UMA A CONQUISTA ATRÁS DA OUTRA EM TERMOS DE"
+  }
+}

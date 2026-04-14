@@ -1,0 +1,32 @@
+{
+  "73a8c6f28bc0b499f79b62a24a506bee_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.908",
+    "duracao": 14.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2952929735183716,
+    "mos_stoi": 0.7934731841087341,
+    "mos_si_sdr": -0.2240760326385498,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Como é que a gente faz, então, para encontrar o trabalho da Sônia, sites, redes sociais, como é que a gente acompanha o trabalho? Encontra os livros? Tem algum lugar que a gente pode te acompanhar?",
+    "stt_wav2vec": "QUE A DENTEFAZ ENTÃO DA ENCONTRAR O TRABALHO DA SONIA É SAIDE RETES SOCIAES COMOME QUE GENTIL COMPANHATA O TRABALHO EM OZER SEUS LIVROS TEM ALGUM ALGUM LOGAR QUE A GENTE PODE TE ACOMPANHAR"
+  },
+  "73a8c6f28bc0b499f79b62a24a506bee_002.ogg": {
+    "tempo_inicio": "00:00:15.076",
+    "tempo_fim": "00:00:22.520",
+    "duracao": 7.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7904419898986816,
+    "mos_stoi": 0.9612414240837097,
+    "mos_si_sdr": 12.696179389953613,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olha, a perspectiva, a editora perspectiva, ela tem um site que voltou agora ao ar, semana passada.",
+    "stt_wav2vec": "OLHA A A PERSPECTIVA A EDITORA PERSPECTIVA ELA TEM UM SAITE QUE VOLTOU AGORA AO AR SEMANA PASSADA"
+  }
+}

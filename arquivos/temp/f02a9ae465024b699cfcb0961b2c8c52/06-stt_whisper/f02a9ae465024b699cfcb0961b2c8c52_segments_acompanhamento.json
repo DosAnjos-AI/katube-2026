@@ -1,0 +1,58 @@
+{
+  "f02a9ae465024b699cfcb0961b2c8c52_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.788",
+    "duracao": 5.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1757326126098633,
+    "mos_stoi": 0.988495945930481,
+    "mos_si_sdr": 22.33419418334961,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "teve uma evolução no caso do Ferreira, então é provável que o Ferreira seja reintegrado ao grupo"
+  },
+  "f02a9ae465024b699cfcb0961b2c8c52_002.ogg": {
+    "tempo_inicio": "00:00:06.084",
+    "tempo_fim": "00:00:10.428",
+    "duracao": 4.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3095428943634033,
+    "mos_stoi": 0.98066645860672,
+    "mos_si_sdr": 17.633129119873047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Até hoje não saiu nada. Ontem estava mais quente essa notícia. A gente está gravando hoje no domingo."
+  },
+  "f02a9ae465024b699cfcb0961b2c8c52_003.ogg": {
+    "tempo_inicio": "00:00:10.756",
+    "tempo_fim": "00:00:22.236",
+    "duracao": 11.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.323979377746582,
+    "mos_stoi": 0.9704288244247437,
+    "mos_si_sdr": 16.320436477661133,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "f02a9ae465024b699cfcb0961b2c8c52_004.ogg": {
+    "tempo_inicio": "00:00:22.308",
+    "tempo_fim": "00:00:26.878",
+    "duracao": 4.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6390401124954224,
+    "mos_stoi": 0.9205653071403503,
+    "mos_si_sdr": 2.711669921875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas, cara, tá faltando pro Grêmio, tá faltando alguma coisa e não é o Thiago Neves que vai dar essa..."
+  }
+}

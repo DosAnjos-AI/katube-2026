@@ -1,0 +1,17 @@
+{
+  "f21a7ba878d7dfc9a99a021cf43f1195_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:13.692",
+    "duracao": 13.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.485957145690918,
+    "mos_stoi": 0.9033008217811584,
+    "mos_si_sdr": 4.328444004058838,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "espaço no meio e ajudando o Diego Souza a pressionar na frente e ele fez o papel dele, só que não foi bem. E o Alisson, a gente tem que reconhecer o Alisson, que a gente critica bastante ele e ele foi muito bem hoje. Foi muito bem mesmo.",
+    "stt_wav2vec": "PAÇNO MEIO IA E E AJUDANDO DAG SOUSA A APRESSIONAR NA FRENTE ELE FEZ O PAPEL DELISA AO QUE NÃO FOI BIU AL SO UM A JEITETE QUE RECONHECEU O ALHOS SOVAIS DO BEM CRITICA BASTANTE ELLE E ELE FOI MUITO BEM HOJIO FOI AGAELEMETO BEM"
+  }
+}

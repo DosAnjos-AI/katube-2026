@@ -1,0 +1,16 @@
+{
+  "3d92456b444852fb0df9a4f2bede176c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:20.056",
+    "duracao": 20.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9458789825439453,
+    "mos_stoi": 0.9679329991340637,
+    "mos_si_sdr": 25.803009033203125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nós não paramos, ninguém parou, sempre a trabalhar, muitas horas, a perceber porque não nos facilitam, ainda hoje, já passou mais de um ano da pandemia, ainda hoje, gostam com a nossa cara, a segurança da sociedade e afim, mas é gozar assim, mesmo, porque nós ainda temos o problema, nós não podemos não entregar, porque o problema não vem para nós, vai para o cliente."
+  }
+}

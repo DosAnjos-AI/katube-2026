@@ -1,0 +1,17 @@
+{
+  "c46b9fdd244970fb971f868d9bf3cee7_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.668",
+    "duracao": 4.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5331296920776367,
+    "mos_stoi": 0.9748460650444031,
+    "mos_si_sdr": 18.817363739013672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pega tiro no pé. Sabe aquela história sobre a grama do vizinho ser mais verde?",
+    "stt_wav2vec": "GATIRO NO PÉ SABE AQUELA HISTÓRIA SOBRE A GRAMA DO VIZINHO SE MAIS VERDE"
+  }
+}

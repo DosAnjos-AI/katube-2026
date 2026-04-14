@@ -1,0 +1,16 @@
+{
+  "d4bb3d019765ad14234cf3ebb80c75a5_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:10.142",
+    "duracao": 10.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7124238014221191,
+    "mos_stoi": 0.8063768148422241,
+    "mos_si_sdr": 8.330591201782227,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Saímos com lá dias corpus e o caso foi diretamente para o Supremo Tribunal Federal, que recomendou a expulsão dos estrangeiros."
+  }
+}

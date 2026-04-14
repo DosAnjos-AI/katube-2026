@@ -1,0 +1,30 @@
+{
+  "5f10dc67d3f6a43c7fde8e3353a9a2da_001.ogg": {
+    "tempo_inicio": "00:00:00.324",
+    "tempo_fim": "00:00:08.316",
+    "duracao": 7.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8001350164413452,
+    "mos_stoi": 0.9227771162986755,
+    "mos_si_sdr": 8.22166919708252,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E daí a gente vai conseguir dizer o nome dela. É a Bruna de Carly. Na verdade, aqui está Bru de Carly."
+  },
+  "5f10dc67d3f6a43c7fde8e3353a9a2da_002.ogg": {
+    "tempo_inicio": "00:00:08.452",
+    "tempo_fim": "00:00:28.286",
+    "duracao": 19.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4328378438949585,
+    "mos_stoi": 0.9384286403656006,
+    "mos_si_sdr": 6.774853706359863,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tá, Bru. Eu traduzi que é Bruna. É, deve ser Bruna. Acho que não vai ser Brunete, alguma coisa assim, né? Acho que é Bruna, assim, também. Gostei muito da forma como vai falar. Sorte pra elas, né? Exato, pra Maravilha. Olha que legal. É uma pena que a rouba biscutine. Biscutine. É, com dois textos."
+  }
+}

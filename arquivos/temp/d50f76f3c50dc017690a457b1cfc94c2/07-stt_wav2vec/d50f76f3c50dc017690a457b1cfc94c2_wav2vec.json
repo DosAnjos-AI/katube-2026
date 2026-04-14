@@ -1,0 +1,17 @@
+{
+  "d50f76f3c50dc017690a457b1cfc94c2_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.820",
+    "duracao": 5.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7735049724578857,
+    "mos_stoi": 0.8115749359130859,
+    "mos_si_sdr": 6.1123552322387695,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A ideia é que a cooperativa moderna se responsabilize, Lia.",
+    "stt_wav2vec": "É A IDÉIA É QUE A COPERATIVA MODERNA ELA SE RESPONSABILIZE"
+  }
+}

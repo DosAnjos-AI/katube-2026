@@ -1,0 +1,17 @@
+{
+  "08768052abcb037f8dbae5e111f92822_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.928",
+    "duracao": 7.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3147964477539062,
+    "mos_stoi": 0.8956565260887146,
+    "mos_si_sdr": 9.648469924926758,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cara, eu acho que tem mais chance do Matheus Henrique ser vendido do que o Everton. E aí, o cara que surge agora também é o PT, o próprio PT que seria o substituto do Everton.",
+    "stt_wav2vec": "CAREU ACHO QUE PEM MAIS CHANCE DO MATEUS HENRIQUE SEVENDIDO QUE O AVERTON E O QUE AISDARA O CARA QUE SUJA GUARTABIN AO PETENO ETEQUECEO SO BISTUSDOE"
+  }
+}

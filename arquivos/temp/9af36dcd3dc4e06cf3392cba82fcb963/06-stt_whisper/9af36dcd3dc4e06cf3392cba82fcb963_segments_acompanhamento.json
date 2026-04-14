@@ -1,0 +1,16 @@
+{
+  "9af36dcd3dc4e06cf3392cba82fcb963_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.348",
+    "duracao": 8.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7980799674987793,
+    "mos_stoi": 0.9679855108261108,
+    "mos_si_sdr": 15.11783504486084,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Esse podcast descreve cenas fortes relacionadas à morte. Se esse conteúdo for um gatilho para você, sinta-se à vontade para parar agora."
+  }
+}

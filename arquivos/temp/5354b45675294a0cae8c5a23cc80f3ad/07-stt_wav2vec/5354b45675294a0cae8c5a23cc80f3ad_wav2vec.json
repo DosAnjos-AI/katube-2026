@@ -1,0 +1,17 @@
+{
+  "5354b45675294a0cae8c5a23cc80f3ad_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.832",
+    "duracao": 5.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5591840744018555,
+    "mos_stoi": 0.9170759916305542,
+    "mos_si_sdr": 18.972415924072266,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Um medo, medo, um sentimento. Como é que eu percebo que eu estou com medo?",
+    "stt_wav2vec": "MEDO MEDODE UM SENTIMENTO COMO É QUE EU FICO COMO É QUE EU PERCEBO O QUE EU TOCO MEDO"
+  }
+}

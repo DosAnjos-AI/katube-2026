@@ -1,0 +1,30 @@
+{
+  "37d0db57a58253ae91923aa5cdfbb88a_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.204",
+    "duracao": 14.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8137338161468506,
+    "mos_stoi": 0.9367423057556152,
+    "mos_si_sdr": 10.535493850708008,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí, Nancy, queria que você contasse um pouco da sua história. A gente conversa bastante sobre vários assuntos, mas você agora, como uma mulher mesmo, que já tem mais de 14 anos, como se falou, dentro da área de tecnologia,"
+  },
+  "37d0db57a58253ae91923aa5cdfbb88a_002.ogg": {
+    "tempo_inicio": "00:00:14.468",
+    "tempo_fim": "00:00:34.526",
+    "duracao": 20.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6243245601654053,
+    "mos_stoi": 0.8901405334472656,
+    "mos_si_sdr": 6.071403980255127,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Qual é a sua história como mulher na tecnologia e basicamente lidando com essa síndrome do impostor? Eu ouvindo a Bruna falar e todo mundo aqui concordando, porque a gente vive isso, embora a jornada da gente seja muito diferente, em algum momento da nossa vida a gente passou por situações muito semelhantes. E engraçado é que eu entrei na tecnologia como segunda graduação,"
+  }
+}

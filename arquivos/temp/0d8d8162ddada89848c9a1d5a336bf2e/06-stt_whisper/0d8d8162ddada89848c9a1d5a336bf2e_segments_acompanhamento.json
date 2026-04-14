@@ -1,0 +1,16 @@
+{
+  "0d8d8162ddada89848c9a1d5a336bf2e_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:04.126",
+    "duracao": 4.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7693285942077637,
+    "mos_stoi": 0.9489201903343201,
+    "mos_si_sdr": 19.944168090820312,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "impressionada e maravilhada, que era assim. O trabalho do Lava..."
+  }
+}

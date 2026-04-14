@@ -1,0 +1,32 @@
+{
+  "2a5a731877b33dcc5a8ae5cbade20455_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:11.292",
+    "duracao": 11.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4039928913116455,
+    "mos_stoi": 0.9075999855995178,
+    "mos_si_sdr": 11.647483825683594,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Isso. Eu achei engraçado também no seu trabalho que você colheu uma frase do Zé falando do Galileu, xingando o Galileu, aquele Galileu enganador...",
+    "stt_wav2vec": "ISSO É EU ACHE ENGRAÇADO TAMBÉ NO SEU TRABALHO QUE VOCÊ TOLHEU UMA FRASE DO JOSÉ FALANDO DO GALILEU CHINGANDO GALILEU DA AQUELE GALILEU ENGANADOR"
+  },
+  "2a5a731877b33dcc5a8ae5cbade20455_002.ogg": {
+    "tempo_inicio": "00:00:11.332",
+    "tempo_fim": "00:00:24.622",
+    "duracao": 13.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2417731285095215,
+    "mos_stoi": 0.8890212178230286,
+    "mos_si_sdr": 13.445438385009766,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque o Brecht, dialeticamente, diz, eu sempre guardo isso na cabeça, essa história mais que clara, do telescópio, que o Galileu inventou, que inventaram. Isso deve ser tradução do Peixoto.",
+    "stt_wav2vec": "PORQUE O BRETO DIALETICAMENTE DIZEU EOTEUSEMPRE GUARDO ISSO NA CABEÇA ESSA HISTÓRIA MAIS QUE CLARA DO TELESCÓPIO QUE O GALILEU INVENTOU QUE INVENTARA JUSTO LEVE SER TRADISÃO DO DO D FEO"
+  }
+}

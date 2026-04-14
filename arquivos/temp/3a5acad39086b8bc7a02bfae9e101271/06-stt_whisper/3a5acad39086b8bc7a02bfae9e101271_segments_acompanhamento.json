@@ -1,0 +1,30 @@
+{
+  "3a5acad39086b8bc7a02bfae9e101271_001.ogg": {
+    "tempo_inicio": "00:00:00.772",
+    "tempo_fim": "00:00:07.964",
+    "duracao": 7.19,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4192243814468384,
+    "mos_stoi": 0.8404940366744995,
+    "mos_si_sdr": 2.6244142055511475,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "3a5acad39086b8bc7a02bfae9e101271_002.ogg": {
+    "tempo_inicio": "00:00:08.036",
+    "tempo_fim": "00:00:28.476",
+    "duracao": 20.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5715138912200928,
+    "mos_stoi": 0.9039416909217834,
+    "mos_si_sdr": 7.540656089782715,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí, pessoal, meu destaque pra hoje é a derrota maravilhosa do Grêmio dentro da Arena pro esporte. O que tu tem a ver disso aí, tá colocando, rapaz? Eu tenho o destaque depois. Ué, o Grêmio foi derrotado pelo esporte dentro de casa e esse é meu destaque, a surpresa, né? O Grêmio era favorito aí, acho que todo mundo dava vitória como certa e o Grêmio tropeçou."
+  }
+}

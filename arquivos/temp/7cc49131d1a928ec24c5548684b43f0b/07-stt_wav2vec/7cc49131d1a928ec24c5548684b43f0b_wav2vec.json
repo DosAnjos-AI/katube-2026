@@ -1,0 +1,17 @@
+{
+  "7cc49131d1a928ec24c5548684b43f0b_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.740",
+    "duracao": 7.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4199092388153076,
+    "mos_stoi": 0.9717293381690979,
+    "mos_si_sdr": 18.196914672851562,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vou destacar aí o título, mais um título paulista do Vanderlei Luxemburgo, treinador, mais vitorioso do Campeonato Paulista.",
+    "stt_wav2vec": "VODESTACAIA O TÍTULO MAIS UM TÍTULO PAULISTA DO VANDERLÉM LUXEMBURGO TREINADOR MAIS VITORIOSO DO CAMPEONATO PAULISTA"
+  }
+}

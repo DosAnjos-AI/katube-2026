@@ -1,0 +1,17 @@
+{
+  "bd8d95844d5403a355353ae1172c9a91_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.912",
+    "duracao": 3.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.80859112739563,
+    "mos_stoi": 0.97999507188797,
+    "mos_si_sdr": 19.370792388916016,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e realmente tenho uma coisa muito boa que é ter uma comunidade.",
+    "stt_wav2vec": "E E REALMENTE TEM UMA COISA MUITO BOA QUE TER UMA COMUNIDADE"
+  }
+}

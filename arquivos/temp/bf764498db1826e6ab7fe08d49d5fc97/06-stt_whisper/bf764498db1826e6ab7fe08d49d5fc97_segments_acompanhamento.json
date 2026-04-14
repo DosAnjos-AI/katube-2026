@@ -1,0 +1,16 @@
+{
+  "bf764498db1826e6ab7fe08d49d5fc97_001.ogg": {
+    "tempo_inicio": "00:00:00.292",
+    "tempo_fim": "00:00:08.838",
+    "duracao": 8.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.117119789123535,
+    "mos_stoi": 0.9435114860534668,
+    "mos_si_sdr": 10.90007495880127,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olá, gente. Boa noite. Quem está aqui com vocês, novamente, sou eu. Vou tomar uma bilhada, hein?"
+  }
+}

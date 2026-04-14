@@ -1,0 +1,32 @@
+{
+  "07e954f01bc992f95e651bccc9e71ffa_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.540",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.559689998626709,
+    "mos_stoi": 0.920012354850769,
+    "mos_si_sdr": 18.106414794921875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não, eu pago tipo 80 por ano.",
+    "stt_wav2vec": "DENA MOLARGO NÃO EU PAGO O TIPO OITENTA POR ANO"
+  },
+  "07e954f01bc992f95e651bccc9e71ffa_002.ogg": {
+    "tempo_inicio": "00:00:04.804",
+    "tempo_fim": "00:00:09.038",
+    "duracao": 4.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.536165714263916,
+    "mos_stoi": 0.9344092011451721,
+    "mos_si_sdr": 20.832508087158203,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ou seja, dá 7 a 8 por mês.",
+    "stt_wav2vec": "ÃO SES DE DÁ A SETE OITO POR MÊS BIA EUVO PADE"
+  }
+}

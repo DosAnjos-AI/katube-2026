@@ -1,0 +1,17 @@
+{
+  "57ae64bbef77a3c88836e7ff043d007c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.108",
+    "duracao": 6.11,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.927598476409912,
+    "mos_stoi": 0.9001113176345825,
+    "mos_si_sdr": 10.013470649719238,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Já foi 20, eu acho. Olha aí, meu. Vai botar o Antony no mesmo valor do Everton, cara.",
+    "stt_wav2vec": "JÁ FOI PARA ETADOJA ÁPOIS VINTE HORAS FURINHO OLHA HIMIO E A VAI BOTAR AO ANTO E NO MESMO ALOR DO EVERTUMCARA"
+  }
+}

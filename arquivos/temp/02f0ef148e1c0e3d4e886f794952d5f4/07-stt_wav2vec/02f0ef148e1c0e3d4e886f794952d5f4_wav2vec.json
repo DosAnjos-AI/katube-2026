@@ -1,0 +1,17 @@
+{
+  "02f0ef148e1c0e3d4e886f794952d5f4_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.708",
+    "duracao": 3.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7231895923614502,
+    "mos_stoi": 0.7825262546539307,
+    "mos_si_sdr": 8.801852226257324,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Importante você seguir e compartilhar também o nosso novo perfil.",
+    "stt_wav2vec": "ORTENQUE VOCÊ SEGUIR E COM VACILHAR TAMBÉM O NOSSO NOVO CERFEU"
+  }
+}

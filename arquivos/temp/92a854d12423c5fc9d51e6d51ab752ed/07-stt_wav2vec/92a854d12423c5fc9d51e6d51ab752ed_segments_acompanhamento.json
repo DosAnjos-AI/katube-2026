@@ -1,0 +1,17 @@
+{
+  "92a854d12423c5fc9d51e6d51ab752ed_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.008",
+    "duracao": 3.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8014888763427734,
+    "mos_stoi": 0.9839515686035156,
+    "mos_si_sdr": 18.857769012451172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quando tu começas a investir, por exemplo, começa a correr muito bem",
+    "stt_wav2vec": "QUANTO COMECESENESI POR EXEMPLE OCOMERÇA A CORRER MUITO BEMH"
+  }
+}

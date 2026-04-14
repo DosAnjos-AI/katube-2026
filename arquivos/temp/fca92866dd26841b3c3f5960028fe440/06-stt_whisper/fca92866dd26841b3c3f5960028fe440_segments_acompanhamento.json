@@ -1,0 +1,30 @@
+{
+  "fca92866dd26841b3c3f5960028fe440_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:16.796",
+    "duracao": 16.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1520451307296753,
+    "mos_stoi": 0.6784746646881104,
+    "mos_si_sdr": 0.9472363591194153,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A despeito, outra grande consequente discussão do processo de criação de órgãos imaginadas foi a hierarquia de gênero. Seria um homem superiores a mulheres? Em sua argumentação, o escritor mostra que, assim como o sistema de classes na Índia, ou o sistema racial estadunidense, a divisão entre homens e mulheres é produto da imaginação dos águas."
+  },
+  "fca92866dd26841b3c3f5960028fe440_002.ogg": {
+    "tempo_inicio": "00:00:17.060",
+    "tempo_fim": "00:00:25.564",
+    "duracao": 8.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1982123851776123,
+    "mos_stoi": 0.7412324547767639,
+    "mos_si_sdr": 1.8421525955200195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas homens e mulheres seriam iguais? Não. Como a Lávia explicou, o ator desmistifica esse ideal, mas também não considera homens nem mulheres superiores uns aos outros."
+  }
+}

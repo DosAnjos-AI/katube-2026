@@ -1,0 +1,47 @@
+{
+  "9f57a2d3e70ff479ef9997003cfae5f0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.780",
+    "duracao": 6.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.40535044670105,
+    "mos_stoi": 0.9922124743461609,
+    "mos_si_sdr": 27.352054595947266,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "muito simples, mas normalmente onde a placa com esse tipo de aviso sempre tem um banheiro sujo.",
+    "stt_wav2vec": "MUITO SIMPLES MAS NORMALMENTE ONDE APLACA COM ESSE TIPO DE AVISO SEMPRE TEM UM BANHEIRO SUJO"
+  },
+  "9f57a2d3e70ff479ef9997003cfae5f0_002.ogg": {
+    "tempo_inicio": "00:00:07.044",
+    "tempo_fim": "00:00:12.124",
+    "duracao": 5.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.272142171859741,
+    "mos_stoi": 0.9884568452835083,
+    "mos_si_sdr": 22.958995819091797,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Parece que é até de pirraça. E o pior, e aquelas placas que ainda têm assinatura?",
+    "stt_wav2vec": "PARECE QUE ATÉ DE O PIRRAÇA E O PIOR E AQUELAS PLACAS QUE AINDA TEM ASSINATURA"
+  },
+  "9f57a2d3e70ff479ef9997003cfae5f0_003.ogg": {
+    "tempo_inicio": "00:00:12.548",
+    "tempo_fim": "00:00:18.910",
+    "duracao": 6.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.437800645828247,
+    "mos_stoi": 0.9936164617538452,
+    "mos_si_sdr": 27.4574031829834,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Lixo é na lixeira, assinado à diretoria, à gerência. No banheiro, Carol Vinte.",
+    "stt_wav2vec": "LICHOA NA LICHEIRA ASSINADO À DIRETORIA AGERÊNCIA NO BANHEIRO CAROIN"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "25b8aebf7c24de827c50c1cefc327455_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.352",
+    "duracao": 5.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9747214317321777,
+    "mos_stoi": 0.9492165446281433,
+    "mos_si_sdr": 16.580543518066406,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e há muita coisa que lá está, que é depois aprofundado em cursos pagos.",
+    "stt_wav2vec": "E HÁ MUITA COISA QU LASTITACA LAS DÁ É DEPOIS APROFUNDADA EM CURSOS PAGOS"
+  }
+}

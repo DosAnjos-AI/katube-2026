@@ -1,0 +1,32 @@
+{
+  "91e17e481e32c44a153a1772a7139da2_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.044",
+    "duracao": 14.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5647473335266113,
+    "mos_stoi": 0.9801561832427979,
+    "mos_si_sdr": 17.722429275512695,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Acho que vale trazer aqui alguns dados. O IBGE diz para a gente em 2020, diversos setores como indústria, construção civil, comércio, serviços, tiveram resultados negativos no PIB, o produto interno bruto.",
+    "stt_wav2vec": "ACHO QUE VALE TRAZER AQUI ALGUNS DADOS O IBEGEDES PARA GENTE A EM DOIS MIL E VINTE DIVERSOS SETORES COMO INDÚSTRIA CONSTRUÇÃO CIVIL COMÉRCIOS SERVIÇOS TIVERAM RESULTADOS NEGATIVOS NO PIBE O PRODUTO INTERNO BRUTO"
+  },
+  "91e17e481e32c44a153a1772a7139da2_002.ogg": {
+    "tempo_inicio": "00:00:14.276",
+    "tempo_fim": "00:00:24.302",
+    "duracao": 10.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.527334451675415,
+    "mos_stoi": 0.9778909683227539,
+    "mos_si_sdr": 23.217695236206055,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mas o agro foi o único setor a apresentar em números positivos. Ele foi responsável por 26,6% do total do PIB brasileiro.",
+    "stt_wav2vec": null
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "34a0b40b570462b69ce5ae0c07e56c1a_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.564",
+    "duracao": 9.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.273064613342285,
+    "mos_stoi": 0.9449796676635742,
+    "mos_si_sdr": 16.214262008666992,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pra salvar alguém, então, né? É o que me motiva desde muito tempo. Talvez isso esteja comigo desde criança e eu não sabia. Mas no fim...",
+    "stt_wav2vec": "RA SOVA ALGUÉM ENTÃO MA É O QUE ME MOTIVA DESDE MUITO TEMPO TALVEZ ISSO ESTEJA COMIGO DESDE CRIANÇA EU E EL NÃO SABIA MAS NO FIM"
+  },
+  "34a0b40b570462b69ce5ae0c07e56c1a_002.ogg": {
+    "tempo_inicio": "00:00:09.924",
+    "tempo_fim": "00:00:24.348",
+    "duracao": 14.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.493147373199463,
+    "mos_stoi": 0.9577012658119202,
+    "mos_si_sdr": 13.963232040405273,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Onde eu quero chegar com esse palavreado todo, eu quero muito chegar à consciência. Pra mim, a consciência é a única saída do que a gente tá vivendo. Eu me sinto hoje muito impotente ao tentar me comunicar com o todo.",
+    "stt_wav2vec": "ONDE EU QUERO CHEGAR COMCOM ESSE PALAVREADO TODO A EU QUER MUIO CHEGAR A CONSCIÊNCIA PARA MINHA CONSCIÊNCIA É A ÚNICA SAÍDA DO QUE JIESTÁ VIVENDO EU ME SINTO HOJE MUITO IMPOTENTE AO TENTAR ME COMUNICAR COM TODO"
+  }
+}

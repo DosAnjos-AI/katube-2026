@@ -1,0 +1,30 @@
+{
+  "78c79c2725eb96c86678584da0d07129_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:16.060",
+    "duracao": 16.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.025306224822998,
+    "mos_stoi": 0.9314587712287903,
+    "mos_si_sdr": 13.611679077148438,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "qualquer pergunta que é ativa. Aí eu fiz uma pergunta, será que com 80 anos eu vou lembrar dessa avaliação ou eu vou lembrar que eu tô cortando a maçã de estrelha pra minha filha? E aí foi uma coisa muito mágica, assim, foi quando eu cheguei segunda, eu tava, lógico, ainda fiquei tensa, mas eu não passei mal, não aconteceu nada. Eu tava só tensa normal."
+  },
+  "78c79c2725eb96c86678584da0d07129_002.ogg": {
+    "tempo_inicio": "00:00:16.164",
+    "tempo_fim": "00:00:29.886",
+    "duracao": 13.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9493547677993774,
+    "mos_stoi": 0.9351562857627869,
+    "mos_si_sdr": 11.2078857421875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí, contando pra minha psicóloga, eu falei assim, na próxima você já vai estar bem tranquilona, porque é uma prática, a gente tem que praticar esses exercícios. Então, um exercício que eu fiz foi esse. Será que isso é tão importante mesmo? Uma avaliação que nem tem calibração de 2020, meio de pandemia, eu vou lembrar disso, não."
+  }
+}

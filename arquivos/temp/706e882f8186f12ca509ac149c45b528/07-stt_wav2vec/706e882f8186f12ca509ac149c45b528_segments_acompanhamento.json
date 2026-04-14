@@ -1,0 +1,17 @@
+{
+  "706e882f8186f12ca509ac149c45b528_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.068",
+    "duracao": 7.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.821397066116333,
+    "mos_stoi": 0.9796285033226013,
+    "mos_si_sdr": 19.365825653076172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O antifrágil é o contrário. O antifrágil é que tens, por exemplo, a tua chave e que vem o cão e ela.",
+    "stt_wav2vec": "ANTIFRAGIL AO CONTRÁRIO O ANTIFRASILEI QUE TEM RESPLESENTO A TUA CHAVNA E QUVEM O CÃO E ELA"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "f3344443aba55af84b0457ca3f2d51c8_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.924",
+    "duracao": 4.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5037741661071777,
+    "mos_stoi": 0.9237635135650635,
+    "mos_si_sdr": 18.5939998626709,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Bom, acho que talvez a gente pudesse..."
+  },
+  "f3344443aba55af84b0457ca3f2d51c8_002.ogg": {
+    "tempo_inicio": "00:00:05.316",
+    "tempo_fim": "00:00:12.060",
+    "duracao": 6.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.221710443496704,
+    "mos_stoi": 0.9707770943641663,
+    "mos_si_sdr": 19.22858428955078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A partir do último ponto que você levanta, que é essa ideia, que não é apenas uma ideia, que é..."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "e37d2af9cf0e053db1759d7e891f83d8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.462",
+    "duracao": 7.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8429069519042969,
+    "mos_stoi": 0.9320732355117798,
+    "mos_si_sdr": 8.893366813659668,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e agradecer, agradecer o carinho do meu amigo El Topador. Teve uma hora que eu fiquei na dúvida, quem era quem, ele?"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "555b28b229bdb99f41d46bdfd9b8d256_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.980",
+    "duracao": 9.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3761507272720337,
+    "mos_stoi": 0.8188661932945251,
+    "mos_si_sdr": 0.1369577944278717,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele não... Foi uma baita jogar dessa. Domena de esquerda, domina de esquerda e bate em direita. Ele não se ajeita, ele não faz nada. Cara, ele... E assim...",
+    "stt_wav2vec": "N ELLE NÃO VOI MAN UM VAITA AS VOGAR ELAS MICONADE QUERO GADAMERAVEQUER GEBATE EM POLITICAS ECOMINA VIRA E BATE ELLE NÃO SE AJEITA E NÃO FAZ NADA CARA ELLE  ASSIM"
+  },
+  "555b28b229bdb99f41d46bdfd9b8d256_002.ogg": {
+    "tempo_inicio": "00:00:10.244",
+    "tempo_fim": "00:00:17.126",
+    "duracao": 6.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4810967445373535,
+    "mos_stoi": 0.9238209128379822,
+    "mos_si_sdr": 15.089987754821777,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele vai ser o melhor do mundo, até pela campanha que ele fez, a quantidade de gols, o Neymar é o segundo e o Cristiano Ronaldo terceiro, o Messi vai estar fora do top 3 esse ano.",
+    "stt_wav2vec": "ELE VAI SE MELHOR DO MUNDO ATÉ PELA CAMPANHA QUE RE FEZ QOM ANTIDADE DE GOLS O NEIMÁRIA AO SEGUNDO E O HANO RONALDO TERCEIRO MESSTAFORA DTRCIA"
+  }
+}

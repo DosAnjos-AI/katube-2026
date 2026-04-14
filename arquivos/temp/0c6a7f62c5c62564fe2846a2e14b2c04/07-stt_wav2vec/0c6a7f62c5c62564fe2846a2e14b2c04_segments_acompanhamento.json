@@ -1,0 +1,32 @@
+{
+  "0c6a7f62c5c62564fe2846a2e14b2c04_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.924",
+    "duracao": 4.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6721572875976562,
+    "mos_stoi": 0.8929325342178345,
+    "mos_si_sdr": 13.259602546691895,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Como não retiramos aqueles mil que ganhamos, ao fim de mais sete anos, temos quatro mil,",
+    "stt_wav2vec": "COMO NÓSTIRAMOS AQUE OS MIL QUE GANHAMOS AO FIM DO MAIS CHATARMOS SEMOS QUATRO MIL"
+  },
+  "0c6a7f62c5c62564fe2846a2e14b2c04_002.ogg": {
+    "tempo_inicio": "00:00:05.220",
+    "tempo_fim": "00:00:09.016",
+    "duracao": 3.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.184825897216797,
+    "mos_stoi": 0.8643315434455872,
+    "mos_si_sdr": 10.806038856506348,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ao fim de mais sete anos temos oito mil, ao fim de mais sete anos temos dezesseis mil,",
+    "stt_wav2vec": null
+  }
+}

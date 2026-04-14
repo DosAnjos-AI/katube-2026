@@ -1,0 +1,17 @@
+{
+  "51a1cce00f07188bc4a006f722ee0a67_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.772",
+    "duracao": 7.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.01639986038208,
+    "mos_stoi": 0.977292537689209,
+    "mos_si_sdr": 18.660383224487305,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Denilson e Gabriel, e nós vamos começar agora a fazer o sorteio da Confraria do Futebol. Falou no nosso podcast.",
+    "stt_wav2vec": "ENIUSO E GABRIEL E NÓS ANOS COMEÇAR AGORA A FAZER O SORTEIO DA CONFRARIA DO FUTEBOL FALOU NO NOSS"
+  }
+}

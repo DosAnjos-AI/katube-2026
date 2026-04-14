@@ -1,0 +1,16 @@
+{
+  "7140733cc8d680a058377643c6ecc560_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.232",
+    "duracao": 4.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.316514492034912,
+    "mos_stoi": 0.9304477572441101,
+    "mos_si_sdr": 13.770320892333984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu continuei dança, porque tem que promover a base, né?"
+  }
+}

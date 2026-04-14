@@ -1,0 +1,32 @@
+{
+  "84eaafcecbdbd2906f2c1d0f143dddb8_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:11.228",
+    "duracao": 11.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6648280620574951,
+    "mos_stoi": 0.9534979462623596,
+    "mos_si_sdr": 11.342246055603027,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olá, sejam muito bem-vindos, sejam muito bem-vindas. Esse aqui é o podcast do Somos Líderes, um projeto do SESCOP, feito especialmente para falarmos sobre cooperativismo.",
+    "stt_wav2vec": "OLÁ SEJA MUITO BEM VINDOS SEJAM MUITO BEM VINDAS ESTA QUE EU PODE QUETE DO SOMOS LÍDERES UM PROJETO DO CESCOPE FEITO ESPECIALMENTE PARA FALARMOS SOBRE COPERATIVISMO"
+  },
+  "84eaafcecbdbd2906f2c1d0f143dddb8_002.ogg": {
+    "tempo_inicio": "00:00:11.460",
+    "tempo_fim": "00:00:18.854",
+    "duracao": 7.39,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1435983180999756,
+    "mos_stoi": 0.7717878222465515,
+    "mos_si_sdr": 1.672514796257019,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

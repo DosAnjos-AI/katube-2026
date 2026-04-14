@@ -1,0 +1,17 @@
+{
+  "3c712c5ea998ed7d1863fed1a05a9406_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.428",
+    "duracao": 10.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3610682487487793,
+    "mos_stoi": 0.9616729617118835,
+    "mos_si_sdr": 17.52261734008789,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Isso quer dizer que todos os meses, a partir desse momento nós atingimos então o Magic Number, e isto traduzindo para o português, quer dizer que todos os meses nós vamos servir...",
+    "stt_wav2vec": "EQUEDEVER QUE TODOS OS MINAS A PARTIR DESSE MOMENTOS NÓS ATTINGIMOS ENTÃO O MEDIC NAMAR E ISTO TRADUZINDO PARA PORTUGUÊS QUERE DIZER QUE TODOS OS MESNAS VAMOS SFRER"
+  }
+}

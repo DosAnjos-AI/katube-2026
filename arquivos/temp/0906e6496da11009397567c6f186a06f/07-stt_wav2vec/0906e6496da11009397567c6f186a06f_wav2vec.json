@@ -1,0 +1,17 @@
+{
+  "0906e6496da11009397567c6f186a06f_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.278",
+    "duracao": 7.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4814646244049072,
+    "mos_stoi": 0.9582729935646057,
+    "mos_si_sdr": 18.85675811767578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "por norma, em aspas, sabem, primos. Nós iremos conseguir um retorno de 8%, ok?",
+    "stt_wav2vec": "ORNOR AEM QONTO PINTORENHA EM ACXO SSAVA EM PRENTS A NÓS IREMOS CONSEGUIR UM RETORNO EM DE OITO POR CENTO QUAQUE"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "82f959d45726754070b46699a0d2c5ef_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.988",
+    "duracao": 12.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1359394788742065,
+    "mos_stoi": 0.585267961025238,
+    "mos_si_sdr": -5.630256175994873,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Renato é treinador de futebol. Ele é treinador de futebol, ele não é... Simplifica a tese. Olha só, o Renato tem que cumprir uma função hoje, digerir o grupo, ficar em contato com os caras porque ele não pode dar treino.",
+    "stt_wav2vec": "ENECARA O RENATE DROUADOR DE FUTEBOL ELEMAMADOR DE FUTEBOL DANÃO ÉA ELE NÃO É É E SIMPLIFICA A LESE ALHA SA O RENADO TEM QUE CUBRIR UMA FULSÃO HOJE DI GERIR O GRIO QUE FEDO ENCONTAR COM OS CAS PELES NO VODE DA TREINA"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "69a725827f863b590861b395fb2a6142_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.756",
+    "duracao": 5.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7674264907836914,
+    "mos_stoi": 0.8975412249565125,
+    "mos_si_sdr": 3.658228635787964,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque os bancos acham muitas vezes aquele que já é cliente já está na mão, está no papo."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "8f329166b75d794c724dd432747acaf0_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.884",
+    "duracao": 5.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3370656967163086,
+    "mos_stoi": 0.9352141618728638,
+    "mos_si_sdr": 6.047379493713379,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "como as micronotícias podem ajudar nesse processo. A comunicação com o copo cheio."
+  },
+  "8f329166b75d794c724dd432747acaf0_002.ogg": {
+    "tempo_inicio": "00:00:06.180",
+    "tempo_fim": "00:00:12.444",
+    "duracao": 6.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5229403972625732,
+    "mos_stoi": 0.9551805853843689,
+    "mos_si_sdr": 10.140105247497559,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se você não acompanhou, vale a pena voltar e ouvir. Hoje a gente vai problematizar um pouco mais"
+  },
+  "8f329166b75d794c724dd432747acaf0_003.ogg": {
+    "tempo_inicio": "00:00:12.484",
+    "tempo_fim": "00:00:22.236",
+    "duracao": 9.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3142225742340088,
+    "mos_stoi": 0.9385754466056824,
+    "mos_si_sdr": 7.510402202606201,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "sobre a aderência das práticas de comunicação interna às transformações sociais que a gente está vivendo. Vamos falar da comunicação com personalidade."
+  }
+}

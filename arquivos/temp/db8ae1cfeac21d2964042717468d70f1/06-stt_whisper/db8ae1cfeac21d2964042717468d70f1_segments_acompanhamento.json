@@ -1,0 +1,16 @@
+{
+  "db8ae1cfeac21d2964042717468d70f1_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:07.278",
+    "duracao": 7.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4626524448394775,
+    "mos_stoi": 0.9171141982078552,
+    "mos_si_sdr": 16.195812225341797,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho que é isso, que Lava me trouxe também, essa necessidade de me procurar e de procurar os outros."
+  }
+}

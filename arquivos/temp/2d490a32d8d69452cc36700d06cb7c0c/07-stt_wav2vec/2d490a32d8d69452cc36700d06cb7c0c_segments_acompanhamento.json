@@ -1,0 +1,17 @@
+{
+  "2d490a32d8d69452cc36700d06cb7c0c_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:05.512",
+    "duracao": 5.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.323275566101074,
+    "mos_stoi": 0.9506076574325562,
+    "mos_si_sdr": 18.300661087036133,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "uma proximidade com os Panteras Negras nesse momento, não foi na década nos Estados Unidos?",
+    "stt_wav2vec": "MA PROXIMIDADE COM OS PANTEIRAS NEGRAS NESSE MOMENTO NÃO FOI NADA GRANDE NOS ESTADOS UNIDOS"
+  }
+}

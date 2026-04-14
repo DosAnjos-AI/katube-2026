@@ -1,0 +1,17 @@
+{
+  "1c1731fe71628c2f191f54cdb2780c40_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.476",
+    "duracao": 4.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1127166748046875,
+    "mos_stoi": 0.939635694026947,
+    "mos_si_sdr": 16.197132110595703,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "as cotas suficientes para, no final do mês, se ele trabalha mensalmente,",
+    "stt_wav2vec": "ESCOTAS SUFICIENTES PARA NO FINAL DO MÊSSO DISTRIBUIR MENSALMENTE"
+  }
+}

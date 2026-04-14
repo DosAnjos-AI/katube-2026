@@ -1,0 +1,16 @@
+{
+  "8e024dae8fe670f2a1abd888cb9d24b5_001.ogg": {
+    "tempo_inicio": "00:00:00.804",
+    "tempo_fim": "00:00:06.030",
+    "duracao": 5.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6641204357147217,
+    "mos_stoi": 0.6682609915733337,
+    "mos_si_sdr": 4.22299337387085,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nós estamos conectados com o Mauro, como sempre, e com..."
+  }
+}

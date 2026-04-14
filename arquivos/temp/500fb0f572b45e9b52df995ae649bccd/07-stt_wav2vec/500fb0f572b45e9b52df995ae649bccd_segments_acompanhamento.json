@@ -1,0 +1,32 @@
+{
+  "500fb0f572b45e9b52df995ae649bccd_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.284",
+    "duracao": 4.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9129953384399414,
+    "mos_stoi": 0.9476912021636963,
+    "mos_si_sdr": 18.926189422607422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas correram muito bem, uns dias espetaculares no Algarve.",
+    "stt_wav2vec": "MAS COVERA MUITO BEM TE UNS DIA ESPETACULARIS NO ALGARVI"
+  },
+  "500fb0f572b45e9b52df995ae649bccd_002.ogg": {
+    "tempo_inicio": "00:00:04.548",
+    "tempo_fim": "00:00:08.462",
+    "duracao": 3.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4165358543395996,
+    "mos_stoi": 0.9756472110748291,
+    "mos_si_sdr": 23.941682815551758,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas para mim férias é sempre férias e trabalho.",
+    "stt_wav2vec": "MAS PRAMINHA FÉRIAS É SEMPRE FÉRIAS E TRABALHO"
+  }
+}

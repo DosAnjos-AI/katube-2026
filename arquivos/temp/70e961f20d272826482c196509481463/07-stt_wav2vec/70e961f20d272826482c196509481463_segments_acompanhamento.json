@@ -1,0 +1,17 @@
+{
+  "70e961f20d272826482c196509481463_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:10.984",
+    "duracao": 10.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4355344772338867,
+    "mos_stoi": 0.9723919034004211,
+    "mos_si_sdr": 21.754505157470703,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Historicamente, ele vinha aumentando 18% ao ano. De repente, ele dá um pulo e aumenta no psicófico, 60%, no cooperativismo como um todo, 50%. O que é isso?",
+    "stt_wav2vec": "HISTORICAMENTE ELE VINHA AUMENTANDO DEZOITOPCENTO AO ANNO VI REPENTE ELLE DA UM PUDA E AUMENTA SESSENTO NO SICOPE SESSENTA POR CENTO NO COOPERATIVISMO COMO TODOS CINQUENTA POZEIROS QUEQUEIO"
+  }
+}

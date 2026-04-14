@@ -1,0 +1,47 @@
+{
+  "2beb8c55178f8df5555226ef58d1b806_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.988",
+    "duracao": 4.95,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 4.019012451171875,
+    "mos_stoi": 0.9576678276062012,
+    "mos_si_sdr": 26.411340713500977,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que é o fato de que no Brasil...",
+    "stt_wav2vec": "QUE É A O FATO DE QUE NO BRASIL"
+  },
+  "2beb8c55178f8df5555226ef58d1b806_002.ogg": {
+    "tempo_inicio": "00:00:05.412",
+    "tempo_fim": "00:00:09.948",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.140697717666626,
+    "mos_stoi": 0.9495607614517212,
+    "mos_si_sdr": 22.69268035888672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Embora a gente viva um momento nas artes em que a ideia de corpo",
+    "stt_wav2vec": null
+  },
+  "2beb8c55178f8df5555226ef58d1b806_003.ogg": {
+    "tempo_inicio": "00:00:10.436",
+    "tempo_fim": "00:00:19.036",
+    "duracao": 8.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.602076530456543,
+    "mos_stoi": 0.944347083568573,
+    "mos_si_sdr": 16.984922409057617,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "tomou conta de tudo e nós hoje falamos em corpo mais do que em sujeitos, o corpo, o corpo, o corpo, o corpo,",
+    "stt_wav2vec": null
+  }
+}

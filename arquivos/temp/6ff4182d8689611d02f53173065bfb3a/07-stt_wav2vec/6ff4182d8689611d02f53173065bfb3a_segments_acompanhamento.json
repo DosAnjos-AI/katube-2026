@@ -1,0 +1,32 @@
+{
+  "6ff4182d8689611d02f53173065bfb3a_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:09.852",
+    "duracao": 9.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5371286869049072,
+    "mos_stoi": 0.8503977060317993,
+    "mos_si_sdr": 7.74440860748291,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "eu escrevi o primeiro livro, até vou dar uma olhada, porque você sabe que eu faço uma confusão tremenda. Ah, eu juntei cinco contos que eu tinha escrito,",
+    "stt_wav2vec": "EU ESCREVI O PRIMEIRO LIVRO ATÉ BORDÃO MOLHADA PORQUE SE SA QUE EU FAÇA UMA CONFUSÃO TREMENDO A EU JUNTEI CINCO CONTOS QUE EU TINHA ESCRIPTO"
+  },
+  "6ff4182d8689611d02f53173065bfb3a_002.ogg": {
+    "tempo_inicio": "00:00:10.212",
+    "tempo_fim": "00:00:14.748",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8360185623168945,
+    "mos_stoi": 0.936138927936554,
+    "mos_si_sdr": 14.89100170135498,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e publiquei, banquei a publicação, ou seja, paguei a publicação,",
+    "stt_wav2vec": "IJO E PUBLIQUEI BANQUEI A PUBLICAÇÃO SEJA PAGUEI OMA PUBLICAÇÃO"
+  }
+}

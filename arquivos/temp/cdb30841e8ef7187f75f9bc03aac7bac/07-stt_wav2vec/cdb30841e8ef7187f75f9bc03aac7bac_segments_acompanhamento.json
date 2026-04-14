@@ -1,0 +1,32 @@
+{
+  "cdb30841e8ef7187f75f9bc03aac7bac_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:08.796",
+    "duracao": 8.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5704169273376465,
+    "mos_stoi": 0.9370056986808777,
+    "mos_si_sdr": 14.012142181396484,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Para quem conhece a oficina de hoje, pode estar achando estranho, mas a oficina que existe hoje, não tem nada a ver com a oficina de 67.",
+    "stt_wav2vec": "PARA QUEM CONHEÇE O SINO DE OIS QUARETATE ANDO ESTRANHO NEMAAS UTEOCINA QUE EXISTE HOJE E TEM NADA VÊR COM COFISSINA ARCUITETECTURA CUM OFICINA DE SESSENTA E SETE"
+  },
+  "cdb30841e8ef7187f75f9bc03aac7bac_002.ogg": {
+    "tempo_inicio": "00:00:09.188",
+    "tempo_fim": "00:00:16.686",
+    "duracao": 7.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9413540363311768,
+    "mos_stoi": 0.924953043460846,
+    "mos_si_sdr": 17.899192810058594,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O oficina que existe hoje, que é aquela arquitetura linda também, da Lina Bobardi, é de 93, muito depois.",
+    "stt_wav2vec": "OFSO OR INA QUE EXISTE HOJE QUE AQUELA ATCRITURA LINDA TAMBÉM DALI NU NABOBARDE É DE NOVENTA E TRÊS MUITO DEPOIS"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "96e79979623ec661a91d16c981de22d8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.228",
+    "duracao": 7.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9278879165649414,
+    "mos_stoi": 0.9459743499755859,
+    "mos_si_sdr": 20.470190048217773,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Além disso, essa interpretação científica pode mostrar ao legislador o quão longe está a sua obra..."
+  },
+  "96e79979623ec661a91d16c981de22d8_002.ogg": {
+    "tempo_inicio": "00:00:07.492",
+    "tempo_fim": "00:00:11.260",
+    "duracao": 3.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.6263198852539062,
+    "mos_stoi": 0.9710827469825745,
+    "mos_si_sdr": 21.626604080200195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "satisfazer a exigência técnico-jurídica de uma formulação."
+  },
+  "96e79979623ec661a91d16c981de22d8_003.ogg": {
+    "tempo_inicio": "00:00:11.620",
+    "tempo_fim": "00:00:24.920",
+    "duracao": 13.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.69048810005188,
+    "mos_stoi": 0.9659586548805237,
+    "mos_si_sdr": 16.527515411376953,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ou pelo menos ajudar na formulação de normas jurídicas que possuam o mínimo de significações e assim se obter o maior grau possível de segurança jurídica. Aqui a gente encerra o nosso trabalho."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "522af5a43ad04c44914a6daf9951ebec_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.966",
+    "duracao": 3.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.069033622741699,
+    "mos_stoi": 0.923284649848938,
+    "mos_si_sdr": 17.88701629638672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tem então esse livro que estão esperando aí o resultado do concurso.",
+    "stt_wav2vec": "TEM ENTÃO ESSE LIVRO QUE ESTOU ESPERANDO AI O RESULTADO CONCURSO"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "bbd172c01cea197a4a101b50fc012e58_001.ogg": {
+    "tempo_inicio": "00:00:01.028",
+    "tempo_fim": "00:00:29.422",
+    "duracao": 28.39,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.319349765777588,
+    "mos_stoi": 0.9477329254150391,
+    "mos_si_sdr": 9.405611038208008,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Como pode funcionar isso dentro aqui do Brasil, enfim, e para o internacionalmente, né? E abraço para as TVs a cabo que ia liberar seus canais para a galera ficar em casa de voz. Exatamente, né? Principalmente canais de filmes e séries. Argentina, Colômbia, Equador, Chile, Bolívia e Peru. Adotaram medidas que restringem entradas de estrangeiros nos países. Isso tudo em função do coronavírus. A Argentina anunciou ontem que está fechando por 15 dias as fronteiras do país. Ou seja..."
+  }
+}

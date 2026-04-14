@@ -1,0 +1,17 @@
+{
+  "c4a2a8f939f664ab024f11dcaa9e9156_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:09.856",
+    "duracao": 9.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.15166974067688,
+    "mos_stoi": 0.9529283046722412,
+    "mos_si_sdr": 19.23261260986328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pode ser, por exemplo, porque o banco mais barato não é aquele que empresta o máximo de valor, porque a maior parte dos bancos, as pessoas hoje em dia ouvem falar da história dos 10% de entrada.",
+    "stt_wav2vec": "PODESER POR EXEMPLO PORQO O BANCO MAIS BARATO NÃO É EQUEL QUE EMPRESTA O MÁXIMO DE VALOR PORQUE NU MEOPAR DOS BANCOS ASSSOAS JO GENIFA HOUVEM FALARDA HISTORIA DOS GESCOS EE"
+  }
+}

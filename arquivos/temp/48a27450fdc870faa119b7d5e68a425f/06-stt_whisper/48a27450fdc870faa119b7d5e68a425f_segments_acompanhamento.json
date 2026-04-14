@@ -1,0 +1,16 @@
+{
+  "48a27450fdc870faa119b7d5e68a425f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.230",
+    "duracao": 7.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8742666244506836,
+    "mos_stoi": 0.9302356243133545,
+    "mos_si_sdr": 12.453439712524414,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E eles construíram seguindo o modelo do Berliner na Alemanha, teatro brestiano, todo desencantado, com as coisas à mostra."
+  }
+}

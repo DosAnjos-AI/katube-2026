@@ -1,0 +1,17 @@
+{
+  "5ea4b54826612a8d4c377a691de56799_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.574",
+    "duracao": 6.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.157569646835327,
+    "mos_stoi": 0.9688974022865295,
+    "mos_si_sdr": 20.92361068725586,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que eu fiz contas a primeira vez e fui trabalhar numa empresa que é a primor.",
+    "stt_wav2vec": "DES QUE EU VISSE QUE ONDES A PRIMEIRAE SE FUI TRABALHAR NO NUMA EMPRESA QUE UM APRIMOR NO"
+  }
+}

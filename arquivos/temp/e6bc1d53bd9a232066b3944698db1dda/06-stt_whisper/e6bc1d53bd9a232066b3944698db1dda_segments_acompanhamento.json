@@ -1,0 +1,30 @@
+{
+  "e6bc1d53bd9a232066b3944698db1dda_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.996",
+    "duracao": 12.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5932859182357788,
+    "mos_stoi": 0.87410968542099,
+    "mos_si_sdr": 5.066662788391113,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Carinha quer falar alguma coisa. Aí era Hashi. Ilustrou a avó da Maralina igual a minha vóvóiaiaia. É, Clarinha. Ficou igualzinho mesmo. Eu também achei."
+  },
+  "e6bc1d53bd9a232066b3944698db1dda_002.ogg": {
+    "tempo_inicio": "00:00:12.356",
+    "tempo_fim": "00:00:18.584",
+    "duracao": 6.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8618814945220947,
+    "mos_stoi": 0.8833445310592651,
+    "mos_si_sdr": 10.355635643005371,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pessoal, muito obrigado por estar nos acompanhando. Um abraço pra todo mundo."
+  }
+}

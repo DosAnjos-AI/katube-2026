@@ -1,0 +1,30 @@
+{
+  "9b2f61bb1a0b1062ecf1d2a21981815c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.148",
+    "duracao": 9.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.972280740737915,
+    "mos_stoi": 0.9868307113647461,
+    "mos_si_sdr": 25.27608871459961,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "já é um grande resultado para ele e que siga aí para muito mais tempo aí no Inter, né? E continue fazendo, assim, montando um time forte ofensivo, eu como..."
+  },
+  "9b2f61bb1a0b1062ecf1d2a21981815c_002.ogg": {
+    "tempo_inicio": "00:00:09.412",
+    "tempo_fim": "00:00:16.936",
+    "duracao": 7.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0703482627868652,
+    "mos_stoi": 0.925886869430542,
+    "mos_si_sdr": 8.04166316986084,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Colorado o vosso último atacando. Então, se é pra perder, que perca, pelo menos ela tá atacando. Entendeu? Tem que vender caro. Agora perder, só se defender."
+  }
+}

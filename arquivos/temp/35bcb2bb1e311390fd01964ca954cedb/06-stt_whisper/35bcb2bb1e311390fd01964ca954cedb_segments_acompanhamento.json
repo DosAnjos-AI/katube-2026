@@ -1,0 +1,16 @@
+{
+  "35bcb2bb1e311390fd01964ca954cedb_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:06.590",
+    "duracao": 6.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5740876197814941,
+    "mos_stoi": 0.8130380511283875,
+    "mos_si_sdr": 5.639395713806152,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "As vitrinhas dele eram muito parecidas com as colagens e os quadrinhos que ele pintava."
+  }
+}

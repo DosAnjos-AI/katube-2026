@@ -1,0 +1,17 @@
+{
+  "9108e17592321a61989a33977dfcd52b_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:11.484",
+    "duracao": 11.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0192575454711914,
+    "mos_stoi": 0.9695684313774109,
+    "mos_si_sdr": 14.693535804748535,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O campeonato brasileiro esse ano talvez seja um dos mais fáceis dos últimos anos. Não é um campeonato que tem um time que tu fala assim, ah, esse time vai ganhar. Não é? Esse talvez seja o campeonato mais fácil nos últimos três anos.",
+    "stt_wav2vec": "O CAMPEONATO BRASILEIRO ESSE ANO TALVEZ SEJAM OS MAIS FÁCILS DOS ÚLTIMOS ANOS NÃO É UM CAMPEONATO QUE TEM UM TIME TE FALA SE ABAIS TIUVAGAR NÃO É NÃO É ESSE TALVEZ SER ARMARCABEATO MAISMASADO TELOS TRÊS ANOS"
+  }
+}

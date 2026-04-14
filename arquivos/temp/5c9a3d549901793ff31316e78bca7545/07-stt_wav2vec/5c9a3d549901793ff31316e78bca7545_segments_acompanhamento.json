@@ -1,0 +1,17 @@
+{
+  "5c9a3d549901793ff31316e78bca7545_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.624",
+    "duracao": 5.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.199301242828369,
+    "mos_stoi": 0.9393166899681091,
+    "mos_si_sdr": 11.660947799682617,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Certo, assim não dá. Qualquer calculadora te diz que demoras tipo 80 anos a atingir 80 ou 90 ou 100.",
+    "stt_wav2vec": "CERTO ASSEGUNDO ATE QUALQUER CALCULADOR ATE DIZ QUE MORAS TIPUITENTAR NOS ARTENGIR OITENTA AO NOVENTA OU SES"
+  }
+}

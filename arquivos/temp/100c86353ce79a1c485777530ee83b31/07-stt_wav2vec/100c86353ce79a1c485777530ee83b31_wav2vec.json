@@ -1,0 +1,32 @@
+{
+  "100c86353ce79a1c485777530ee83b31_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.100",
+    "duracao": 11.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4210965633392334,
+    "mos_stoi": 0.9732409715652466,
+    "mos_si_sdr": 21.955951690673828,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "isso um pouco, mas romance policial é o que é o mais curto. Eu não vejo muito filme de comédia, mas eu não vejo não é porque eu não gosto, porque eu não tenho muita recomendação, sabe, Bruno? Inclusive, se quiser...",
+    "stt_wav2vec": "UM POUCO MAS E RO MOÇO POLICIAL É O QUE U MAIS CURTO ASSIM EU NÃ NÃO VEJO MUITO ASSIM JOMENE COMEDIA MAS EU NÃO VEJA N ÉPOCA NÃO GOSTO PORQUE EU NÃO TENHO MUITA RECOMENDAÇÃO FAVBORINCLUSIU SE SE QUISER"
+  },
+  "100c86353ce79a1c485777530ee83b31_002.ogg": {
+    "tempo_inicio": "00:00:11.140",
+    "tempo_fim": "00:00:17.070",
+    "duracao": 5.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.574798583984375,
+    "mos_stoi": 0.9594641923904419,
+    "mos_si_sdr": 16.3649845123291,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas eu gosto, assim, também, de filme de comédia e... Agora, romance, eu não sei se ele assisti muito. Nossa!",
+    "stt_wav2vec": "MAS EU EUGO ASSIM TAMBÉM DI FEMILE COMÉDIA E HAVARÁ ROMANCE U NUN SRESTIMINTO"
+  }
+}

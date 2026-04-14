@@ -1,0 +1,32 @@
+{
+  "172c557e7dc66cbf540bbb86d5e64d21_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.540",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8437247276306152,
+    "mos_stoi": 0.9343838095664978,
+    "mos_si_sdr": 14.226908683776855,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Depois anotem aí, ó, esse teste. Vou tentar simular com os dedos aqui. Quem estiver ouvindo...",
+    "stt_wav2vec": "DEPOIS DA NOTE A YA ESSE TÉTIVO TENTA ASSIMULAR COM OS DEDOS AQUI QUEM TIVE OUVINDO"
+  },
+  "172c557e7dc66cbf540bbb86d5e64d21_002.ogg": {
+    "tempo_inicio": "00:00:04.868",
+    "tempo_fim": "00:00:11.836",
+    "duracao": 6.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7078638076782227,
+    "mos_stoi": 0.8770194053649902,
+    "mos_si_sdr": 7.896154880523682,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tenta fechar o olho e imaginar a cena. Então você está aqui e aí você sobe o pé em um degrau ou em um banco alguma coisa.",
+    "stt_wav2vec": "TENTA FECHAR OLHE IMAGEM NA CENA TOVOCE TÁ AQUI E É VOCÊ SOBE O PÉ E UM DEGRAU OUE UM BANCO ALGUMA COISA"
+  }
+}

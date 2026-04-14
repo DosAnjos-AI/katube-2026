@@ -1,0 +1,30 @@
+{
+  "f382fdc562660e300d68e393584714d5_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.292",
+    "duracao": 7.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1624575853347778,
+    "mos_stoi": 0.6849129796028137,
+    "mos_si_sdr": -2.6391468048095703,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Justamente para tentar evitar um pico nos casos, mas mesmo assim a gente ainda teve sim um pico nos casos."
+  },
+  "f382fdc562660e300d68e393584714d5_002.ogg": {
+    "tempo_inicio": "00:00:07.556",
+    "tempo_fim": "00:00:13.416",
+    "duracao": 5.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1742165088653564,
+    "mos_stoi": 0.6491670608520508,
+    "mos_si_sdr": -1.7409672737121582,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "em janeiro, chegou a 66 mil casos por dia, e foi quando"
+  }
+}

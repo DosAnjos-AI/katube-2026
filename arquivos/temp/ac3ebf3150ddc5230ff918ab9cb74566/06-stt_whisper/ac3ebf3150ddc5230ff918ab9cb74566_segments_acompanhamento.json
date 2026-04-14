@@ -1,0 +1,44 @@
+{
+  "ac3ebf3150ddc5230ff918ab9cb74566_001.ogg": {
+    "tempo_inicio": "00:00:01.028",
+    "tempo_fim": "00:00:06.556",
+    "duracao": 5.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.927830696105957,
+    "mos_stoi": 0.9922704696655273,
+    "mos_si_sdr": 24.195350646972656,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o que me impede de desfrutar a caminhada para o sucesso."
+  },
+  "ac3ebf3150ddc5230ff918ab9cb74566_002.ogg": {
+    "tempo_inicio": "00:00:06.660",
+    "tempo_fim": "00:00:20.572",
+    "duracao": 13.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.433277130126953,
+    "mos_stoi": 0.9770937561988831,
+    "mos_si_sdr": 21.34923553466797,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Mikael, lembra que você ouviu no início do episódio, começou a ter as mesmas sensações da Unice. Apesar de ter tido experiências de se expor em público, desde bem no vinho, ele cantava na igreja, fazia leituras para o público."
+  },
+  "ac3ebf3150ddc5230ff918ab9cb74566_003.ogg": {
+    "tempo_inicio": "00:00:20.676",
+    "tempo_fim": "00:00:26.712",
+    "duracao": 6.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6134538650512695,
+    "mos_stoi": 0.9833295345306396,
+    "mos_si_sdr": 21.61419677734375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Começou a notar que o desempenho em momentos de grande visibilidade já não era mais tão bom."
+  }
+}

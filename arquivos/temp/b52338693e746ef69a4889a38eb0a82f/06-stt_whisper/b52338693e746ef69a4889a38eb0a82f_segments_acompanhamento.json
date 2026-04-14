@@ -1,0 +1,16 @@
+{
+  "b52338693e746ef69a4889a38eb0a82f_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.056",
+    "duracao": 6.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3579607009887695,
+    "mos_stoi": 0.8872394561767578,
+    "mos_si_sdr": 19.380998611450195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ou pensar o contrário sobre o que eu sinto por vocês. Eu amo vocês de maneira única..."
+  }
+}

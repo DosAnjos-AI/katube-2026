@@ -1,0 +1,17 @@
+{
+  "3632a6d765298f667125b46438a5604a_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.788",
+    "duracao": 9.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.212784767150879,
+    "mos_stoi": 0.910102128982544,
+    "mos_si_sdr": 12.787592887878418,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Legal, Felipe. Eu acho que a gente tem bastante tempo que a gente fala em cultura ágil, né? Então, desde 2008, quando surgiu o DevOps...",
+    "stt_wav2vec": "LEGLFILIPE EU ACHO QUE A GENTE TEM BASTANTE TEMPO QUE AS GENTE FALA EM COST UM CULTURAGE NEM SÃO DESDE DOIS MIL OITO QUANDO SURGIU DEVOTOS"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "226b6922761b7e6611baf32389f0609f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.284",
+    "duracao": 12.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.175665855407715,
+    "mos_stoi": 0.9791488647460938,
+    "mos_si_sdr": 18.05714988708496,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "pedindo a saída de dirigentes, em frente do Corinthians, que também não está lá essas coisas. Corinthians, gastando bastante, endividado. São Paulo e Corinthians, então, se enfrentam no domingo, dia 30, às 11 horas da manhã."
+  },
+  "226b6922761b7e6611baf32389f0609f_002.ogg": {
+    "tempo_inicio": "00:00:12.452",
+    "tempo_fim": "00:00:20.184",
+    "duracao": 7.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0691230297088623,
+    "mos_stoi": 0.9860935211181641,
+    "mos_si_sdr": 24.433059692382812,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "no dia em que gravaremos nosso episódio de número 19. Vamos então palpitar Caxias e Grêmio primeiramente."
+  }
+}

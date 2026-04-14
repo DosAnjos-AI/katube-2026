@@ -1,0 +1,32 @@
+{
+  "f015c98783b77009324f8ed15cfdaefd_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.124",
+    "duracao": 12.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.782592535018921,
+    "mos_stoi": 0.9014711976051331,
+    "mos_si_sdr": 8.6942777633667,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "talvez não chegue para você. Então, só para ter certeza que você vai saber das coisas, entra no Telegram, que aí fica um pouquinho mais fácil, tá bom? E aí, quando eu abro vagas, eu faço um vídeo explicando tudo que tem...",
+    "stt_wav2vec": "TALVEZES NÃO CHEGUE PARA VOCÊ TÃO SÓ PARA SÓ PARA TER CERTEZA QUE VOCÊ VAE SABER DAS COISAS ENTRA NUM TELE GRANQUE AE FICA UM POUQUI MAIS FARTTA BOM E AI QUANDO EU ABRO VAGAS EU FAÇO UM VIRDE EXPLICANDO TUDO QUE TENE"
+  },
+  "f015c98783b77009324f8ed15cfdaefd_002.ogg": {
+    "tempo_inicio": "00:00:12.228",
+    "tempo_fim": "00:00:15.736",
+    "duracao": 3.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.697206735610962,
+    "mos_stoi": 0.7735304236412048,
+    "mos_si_sdr": 0.3950901925563812,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Todos os bônus, como funcionam os treinos e todas as paradas.",
+    "stt_wav2vec": "TODOS OS BONOS COMO QUE FUNCIONAM OS TREINOS E TODAS AS PARADAS"
+  }
+}

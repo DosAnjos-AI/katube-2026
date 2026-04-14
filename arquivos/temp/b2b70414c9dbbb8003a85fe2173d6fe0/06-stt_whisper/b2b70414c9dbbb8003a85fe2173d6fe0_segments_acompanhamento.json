@@ -1,0 +1,72 @@
+{
+  "b2b70414c9dbbb8003a85fe2173d6fe0_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:05.692",
+    "duracao": 5.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.750572681427002,
+    "mos_stoi": 0.8999078273773193,
+    "mos_si_sdr": 6.927273750305176,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E naquele corre-corre, que virou um que procó, as roupas se embolaram."
+  },
+  "b2b70414c9dbbb8003a85fe2173d6fe0_002.ogg": {
+    "tempo_inicio": "00:00:05.988",
+    "tempo_fim": "00:00:10.460",
+    "duracao": 4.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.282543420791626,
+    "mos_stoi": 0.9640141129493713,
+    "mos_si_sdr": 26.830759048461914,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E deram um grande nó. Parecia um bolo de pano."
+  },
+  "b2b70414c9dbbb8003a85fe2173d6fe0_003.ogg": {
+    "tempo_inicio": "00:00:10.852",
+    "tempo_fim": "00:00:15.868",
+    "duracao": 5.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.834932804107666,
+    "mos_stoi": 0.9237548112869263,
+    "mos_si_sdr": 23.360107421875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ou insetos presos em teias. Tinha até uma cueca."
+  },
+  "b2b70414c9dbbb8003a85fe2173d6fe0_004.ogg": {
+    "tempo_inicio": "00:00:16.388",
+    "tempo_fim": "00:00:23.100",
+    "duracao": 6.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.058882713317871,
+    "mos_stoi": 0.9757319092750549,
+    "mos_si_sdr": 17.481172561645508,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "b2b70414c9dbbb8003a85fe2173d6fe0_005.ogg": {
+    "tempo_inicio": "00:00:23.556",
+    "tempo_fim": "00:00:27.548",
+    "duracao": 3.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.168189525604248,
+    "mos_stoi": 0.9127601385116577,
+    "mos_si_sdr": 9.162641525268555,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas quem deu jeito na coisa foi a luva do Ribamar."
+  }
+}

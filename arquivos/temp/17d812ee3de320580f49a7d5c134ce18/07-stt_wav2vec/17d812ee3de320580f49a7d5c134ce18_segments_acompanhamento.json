@@ -1,0 +1,47 @@
+{
+  "17d812ee3de320580f49a7d5c134ce18_001.ogg": {
+    "tempo_inicio": "00:00:00.452",
+    "tempo_fim": "00:00:08.636",
+    "duracao": 8.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.382275104522705,
+    "mos_stoi": 0.931293249130249,
+    "mos_si_sdr": 21.044633865356445,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sejam bem-vindos ao nosso podcast de contação de histórias. Eu sou a Clara. E eu sou o Leandro. Este...",
+    "stt_wav2vec": "ETUMPEMVINDOSA NÃS PODEESQUERSE DE CLANTARSOR DESTOLHAS EU SOU CLARA E EU SOU LENDO ESTE"
+  },
+  "17d812ee3de320580f49a7d5c134ce18_002.ogg": {
+    "tempo_inicio": "00:00:09.092",
+    "tempo_fim": "00:00:14.844",
+    "duracao": 5.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4772262573242188,
+    "mos_stoi": 0.9327393174171448,
+    "mos_si_sdr": 19.752004623413086,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É o nosso sexto episódio de um podcast que nós contamos histórias para vocês.",
+    "stt_wav2vec": "É O NOSSO CESTA EPIESODE DE UM PODE QUEARCIAI QUE NÓS CONTAMOS DESTARA DABOFEI"
+  },
+  "17d812ee3de320580f49a7d5c134ce18_003.ogg": {
+    "tempo_inicio": "00:00:15.236",
+    "tempo_fim": "00:00:20.174",
+    "duracao": 4.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5356273651123047,
+    "mos_stoi": 0.9344966411590576,
+    "mos_si_sdr": 20.137052536010742,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Esse é o nosso podcast de contação de histórias infantis. Cacá conta.",
+    "stt_wav2vec": "ESSA NOSO BODKESTR DE CONTAÇÃO DE HISTÓRIAS INFANTISCA CA CONTA"
+  }
+}

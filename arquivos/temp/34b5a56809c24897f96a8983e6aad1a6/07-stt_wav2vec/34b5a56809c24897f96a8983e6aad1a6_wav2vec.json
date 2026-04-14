@@ -1,0 +1,17 @@
+{
+  "34b5a56809c24897f96a8983e6aad1a6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.796",
+    "duracao": 4.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0679516792297363,
+    "mos_stoi": 0.9703307151794434,
+    "mos_si_sdr": 18.045028686523438,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A cena aqui é o seguinte, é simplesmente um vazio preto com a seguinte frase.",
+    "stt_wav2vec": "ENAQUI SEGUINTE É SIMPLESMENTE UM VASIL PRETO COM SIG COM A SEGUINTE RASE"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "8883f41f7cc226329727b239c752d4bf_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.316",
+    "duracao": 4.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "o rei da velha 67, o texto foi escrito em 30...",
+    "stt_wav2vec": "NA OCORRE DA VELA E SESSENTA E SETE O TERÇO FOI ESCRITO EM TRINTA",
+    "stt_leg_normalizado": null,
+    "stt_whisper_normalizado": "o rei da velha sessenta e sete o texto foi escrito em trinta",
+    "stt_wav2vec_normalizado": "na ocorre da vela e sessenta e sete o terco foi escrito em trinta"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "48ee84c5eed34290f1bfdd51dc074d49_001.ogg": {
+    "tempo_inicio": "00:00:00.324",
+    "tempo_fim": "00:00:05.820",
+    "duracao": 5.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.471640110015869,
+    "mos_stoi": 0.944182813167572,
+    "mos_si_sdr": 19.961200714111328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eleitou ela. Você é da Boca em Braza. Vamos tomar um cházinho lá em casa.",
+    "stt_wav2vec": "GRITOU ELA VOCÊ DA BOQA IM BRASA VAMOS TOMAR UM CHAZINHO EM CASA"
+  }
+}

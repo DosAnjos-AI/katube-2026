@@ -1,0 +1,16 @@
+{
+  "0c8a1006e52f43fa31a2c0a6d0e0e419_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:29.992",
+    "duracao": 29.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3124356269836426,
+    "mos_stoi": 0.899996280670166,
+    "mos_si_sdr": 8.41408634185791,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "outros fósforos pegam fogo. E é essa associação que está sendo feita em relação ao coronavírus. Pegou, pegou, pegou. Um ficou em casa recluso, não passou por um monte de gente que poderia passar ileso disso, né? Se essa pessoa de fato fizesse isso. Então, ficar em casa também protege outras pessoas. Relembrando, então, algumas ações que você pode ter de maneira isolada ou até coletiva, mas é importante, tá? Evitar aglomerações se estiver doente, tá te sentindo mal, não tá legal, não vá trabalhar."
+  }
+}

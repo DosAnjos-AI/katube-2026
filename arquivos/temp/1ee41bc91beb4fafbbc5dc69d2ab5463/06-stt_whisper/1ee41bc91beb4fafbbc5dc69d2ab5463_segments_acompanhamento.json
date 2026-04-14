@@ -1,0 +1,44 @@
+{
+  "1ee41bc91beb4fafbbc5dc69d2ab5463_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.996",
+    "duracao": 4.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5978569984436035,
+    "mos_stoi": 0.8210782408714294,
+    "mos_si_sdr": 10.187949180603027,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "os roubos de produção por tribos rivais, entre outros."
+  },
+  "1ee41bc91beb4fafbbc5dc69d2ab5463_002.ogg": {
+    "tempo_inicio": "00:00:04.292",
+    "tempo_fim": "00:00:12.796",
+    "duracao": 8.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5123659372329712,
+    "mos_stoi": 0.8424606323242188,
+    "mos_si_sdr": 10.418627738952637,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se considerarmos os aspectos positivos em detrimento dos negativos, a domesticação do trigo serviu apenas para os sábios enquanto espécie."
+  },
+  "1ee41bc91beb4fafbbc5dc69d2ab5463_003.ogg": {
+    "tempo_inicio": "00:00:13.092",
+    "tempo_fim": "00:00:21.382",
+    "duracao": 8.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.712496042251587,
+    "mos_stoi": 0.8666608333587646,
+    "mos_si_sdr": 11.214552879333496,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "já que possibilita o aumento populacional mais acelerado. Assim, a Revolução Agrícola configura-se como a maior fraude da humanidade."
+  }
+}

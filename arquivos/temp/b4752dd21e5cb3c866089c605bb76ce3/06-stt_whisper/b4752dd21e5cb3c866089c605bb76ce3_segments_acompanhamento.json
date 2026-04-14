@@ -1,0 +1,16 @@
+{
+  "b4752dd21e5cb3c866089c605bb76ce3_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.464",
+    "duracao": 5.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.49491548538208,
+    "mos_stoi": 0.9580758213996887,
+    "mos_si_sdr": 11.57016372680664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vamos ver a exposição e tudo mais. Mas quanto maior for o payout, melhor não é?"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "95034b1aea42b59e35405fe1740d68f4_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.476",
+    "duracao": 8.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.320124626159668,
+    "mos_stoi": 0.9497552514076233,
+    "mos_si_sdr": 20.980438232421875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A gente vê bastante, né? Um fenômeno curioso, tem que ser estudado, tem que ser observado com muita cautela e precisão.",
+    "stt_wav2vec": "A GENTE VÊ BASTANTE NEÉ UM FENÔMENO CURIOSO TEM QUE SEI ESTUDADO TEM QUE SER OBSERVADO COM MUITA MUITA CAUTELA EE PRECISÃO"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "ce538099882da9d9f17eb800e1a2ae92_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.764",
+    "duracao": 4.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.878692388534546,
+    "mos_stoi": 0.9160929322242737,
+    "mos_si_sdr": 10.204277992248535,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "difícil pra caramba de expressar alguns gestos de amor, porque você só consegue pensar no que tá rolando no mundo agora."
+  }
+}

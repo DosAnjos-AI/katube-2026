@@ -1,0 +1,16 @@
+{
+  "c0ec4446236b164e7d42d16cf0035e7f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.420",
+    "duracao": 7.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1495548486709595,
+    "mos_stoi": 0.536422073841095,
+    "mos_si_sdr": -14.963825225830078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Hoje vos nasceu na cidade de Davi, o Salvador, que é Cristo, o Senhor."
+  }
+}

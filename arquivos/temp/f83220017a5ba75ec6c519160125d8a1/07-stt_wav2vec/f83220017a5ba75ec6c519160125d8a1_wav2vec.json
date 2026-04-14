@@ -1,0 +1,32 @@
+{
+  "f83220017a5ba75ec6c519160125d8a1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.436",
+    "duracao": 5.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5569162368774414,
+    "mos_stoi": 0.9372018575668335,
+    "mos_si_sdr": 9.591806411743164,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": "TEMOS ALGUNS CHOUS INTERNACIONAIS ONTEM POR EXEMPLO SAMIRAGAR FORM DOS VOCALISTAS DO"
+  },
+  "f83220017a5ba75ec6c519160125d8a1_006.ogg": {
+    "tempo_inicio": "00:01:06.276",
+    "tempo_fim": "00:01:42.460",
+    "duracao": 36.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1562552452087402,
+    "mos_stoi": 0.8957787752151489,
+    "mos_si_sdr": 6.772643089294434,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": "QUE AQUELE DISSE ENTÃO NÃO VEI MAIS OBRASIONA VAICEDA VAITECHOU A PRODUCTORA JÁ EMITIU NOTA ENFIM A PARTIR DA PRÓXIMA SEMANA COMEASOM OS REEMBOLSOS PARA QUEM TE A COMPRADO OFESTIVAL DO COACELA QUE ACONTECE SEMPRE NOS ESTADOS UNIDOS TAMBÉM FOI ADIADO PARA OUTUBRO O SEU NOME ENGANO ELE ACONTETE AGORA POR ABRIL POR MAIO ALI E TAMBÉM NÃO VAI ROLAR ANISTA ERA UMA DAS ATRAÇÕES PRINCIPAIS DO COATELA UMA OUTRA COISA QUE O FORANA VÍVEL TAR CAUSANDO NO MURO NO MURO A  MOERATOVA TU DE SEAI TANTAR É QUE HOJE É ASSIM SABE TU TENS CERTEZA DAS QOIS ALGUENTE QUASE NÃO TER CERTEZA É CARO"
+  }
+}

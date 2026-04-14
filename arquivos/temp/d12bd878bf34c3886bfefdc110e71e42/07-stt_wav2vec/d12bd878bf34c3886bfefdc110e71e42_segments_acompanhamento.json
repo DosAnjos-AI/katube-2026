@@ -1,0 +1,17 @@
+{
+  "d12bd878bf34c3886bfefdc110e71e42_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.278",
+    "duracao": 5.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0057530403137207,
+    "mos_stoi": 0.8811740875244141,
+    "mos_si_sdr": 11.873480796813965,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Por isso, eu acho que dizer um valor, é como tu dizes, menos 10%,",
+    "stt_wav2vec": "POR ISSO EU ADE QE NUO NÃO GACHO QE DIZER UM VALOR CLARO ÉO QE CUNTREZ MENOS DEZ POR CENTO"
+  }
+}

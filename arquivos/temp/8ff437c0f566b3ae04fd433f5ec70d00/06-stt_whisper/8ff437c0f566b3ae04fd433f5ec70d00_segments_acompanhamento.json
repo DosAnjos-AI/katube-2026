@@ -1,0 +1,44 @@
+{
+  "8ff437c0f566b3ae04fd433f5ec70d00_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.756",
+    "duracao": 9.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1451454162597656,
+    "mos_stoi": 0.6399783492088318,
+    "mos_si_sdr": -6.375433921813965,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tá louco. Então tá, gurizada. Deu aí, ó. A gente pagando 10 reais pra jogar bola, vamos acabar irritar esse programa aí. Deu mais de uma hora, eu acho, né? O programa de hoje..."
+  },
+  "8ff437c0f566b3ae04fd433f5ec70d00_002.ogg": {
+    "tempo_inicio": "00:00:09.988",
+    "tempo_fim": "00:00:22.108",
+    "duracao": 12.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7208523750305176,
+    "mos_stoi": 0.8778748512268066,
+    "mos_si_sdr": 6.836977958679199,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "8ff437c0f566b3ae04fd433f5ec70d00_003.ogg": {
+    "tempo_inicio": "00:00:22.468",
+    "tempo_fim": "00:00:30.464",
+    "duracao": 8.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.838568925857544,
+    "mos_stoi": 0.8914331793785095,
+    "mos_si_sdr": 6.067747592926025,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Todo mundo aqui, a gente tem uma história no futebol, a gente jogou em vários lugares, tem um cara que pisou na Europa,"
+  }
+}

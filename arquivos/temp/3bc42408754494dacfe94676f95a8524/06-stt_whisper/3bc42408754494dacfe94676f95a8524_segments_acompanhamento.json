@@ -1,0 +1,30 @@
+{
+  "3bc42408754494dacfe94676f95a8524_001.ogg": {
+    "tempo_inicio": "00:00:00.228",
+    "tempo_fim": "00:00:06.556",
+    "duracao": 6.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.469153642654419,
+    "mos_stoi": 0.9758337140083313,
+    "mos_si_sdr": 25.578813552856445,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "morava em Nazaré, que era um lugar bem pobrezinho, mas era descendente do grande rei Davi."
+  },
+  "3bc42408754494dacfe94676f95a8524_002.ogg": {
+    "tempo_inicio": "00:00:07.012",
+    "tempo_fim": "00:00:17.512",
+    "duracao": 10.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.53261137008667,
+    "mos_stoi": 0.9184675216674805,
+    "mos_si_sdr": 5.126629829406738,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ou seja, ele era neto, do neto, do neto, do neto, do tataraneto, do rei, que muitos séculos antes fizeram de Israel um reino poderoso."
+  }
+}

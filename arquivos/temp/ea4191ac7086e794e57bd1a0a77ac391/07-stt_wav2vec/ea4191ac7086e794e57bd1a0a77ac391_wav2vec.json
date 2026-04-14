@@ -1,0 +1,17 @@
+{
+  "ea4191ac7086e794e57bd1a0a77ac391_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.748",
+    "duracao": 10.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.15499210357666,
+    "mos_stoi": 0.96318519115448,
+    "mos_si_sdr": 10.497631072998047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não conhece? Depois eu vou te apresentar. Provavelmente você já deve ter visto foto, alguma coisa dela. Mas quem é do meio, quem é essa pató vai saber. Vai saber tudo falando. Eu queria só falar, né? Porque, tipo...",
+    "stt_wav2vec": "NUM CONHECE DEPOIS DO BATI APRESENTAVO E O PRHALMENTE SE JÁ DEVE TER VISTO FOTA OU UMA CEZELA MAS QUEM É QUEM A DO MEI QUEM ESSA PATÃO A SABER ESTESABENTOO BALANTE  EU QUERIA SÓ FALAR MEM PORQUE"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "8f39e725109fac2dc176b5f99cdf3e19_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.672",
+    "duracao": 5.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.969966173171997,
+    "mos_stoi": 0.9612962007522583,
+    "mos_si_sdr": 20.529071807861328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pegando pro parâmetro, o melhor adversário que a gente enfrentou até agora, na minha opinião, foi o Grêmio, então..."
+  }
+}

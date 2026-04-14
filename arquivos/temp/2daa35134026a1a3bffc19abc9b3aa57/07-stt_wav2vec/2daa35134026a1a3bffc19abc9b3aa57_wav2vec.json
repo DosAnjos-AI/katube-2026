@@ -1,0 +1,17 @@
+{
+  "2daa35134026a1a3bffc19abc9b3aa57_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.256",
+    "duracao": 7.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3416558504104614,
+    "mos_stoi": 0.7694092392921448,
+    "mos_si_sdr": 3.837557792663574,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É dezembro de 2021 a renovação do Lindoso. É, renovou, esses dias renovou o Lindoso, o Johnny também, que é outra posição parecida.",
+    "stt_wav2vec": "ÉDESIAMO DAS MIL VINTE ONE AROVAÇÃO BELOTE ERNÃO A BO SE DIZA NA VO LINDOSO  JONITLENQUEECOMPARECEU"
+  }
+}

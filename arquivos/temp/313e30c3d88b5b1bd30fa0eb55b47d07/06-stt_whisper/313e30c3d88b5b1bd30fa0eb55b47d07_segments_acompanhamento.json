@@ -1,0 +1,16 @@
+{
+  "313e30c3d88b5b1bd30fa0eb55b47d07_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.598",
+    "duracao": 7.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5858324766159058,
+    "mos_stoi": 0.8675317764282227,
+    "mos_si_sdr": 7.816531658172607,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Foda que o Matheus não joga FIFA comigo. Ah, aliás, você aí que joga um FIFA 21, Fortnite, Warzone..."
+  }
+}

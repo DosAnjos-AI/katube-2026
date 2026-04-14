@@ -1,0 +1,58 @@
+{
+  "380d4aff52189ea5076938f322c729ab_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.900",
+    "duracao": 7.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1263506412506104,
+    "mos_stoi": 0.9388151168823242,
+    "mos_si_sdr": 12.083250999450684,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então eu tenho pouca experiência. Eu treinei só uma atleta feminina de alto nível. No ano passado ela estava no Grêmio. Agora, se eu não me engano, ela estava no São José."
+  },
+  "380d4aff52189ea5076938f322c729ab_002.ogg": {
+    "tempo_inicio": "00:00:08.260",
+    "tempo_fim": "00:00:16.092",
+    "duracao": 7.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8290053606033325,
+    "mos_stoi": 0.8846198916435242,
+    "mos_si_sdr": 8.1182279586792,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, uma experiência muito pouca. Mas, fisiologicamente, a gente pode falar que quando a gente vai escolher exercícios..."
+  },
+  "380d4aff52189ea5076938f322c729ab_003.ogg": {
+    "tempo_inicio": "00:00:16.356",
+    "tempo_fim": "00:00:24.988",
+    "duracao": 8.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8666741847991943,
+    "mos_stoi": 0.8989195227622986,
+    "mos_si_sdr": 8.13436508178711,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não tem diferença de sexo. Não tem aquele exercício que é melhor para o masculino, aquele exercício que é melhor para o feminino. Não tem diferença."
+  },
+  "380d4aff52189ea5076938f322c729ab_004.ogg": {
+    "tempo_inicio": "00:00:25.284",
+    "tempo_fim": "00:00:32.216",
+    "duracao": 6.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3161730766296387,
+    "mos_stoi": 0.8650025725364685,
+    "mos_si_sdr": 5.961265563964844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se um agachamento com salto é o melhor exercício para a gente ganhar potência no futebol masculino e no futebol feminino também,"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "3b80d1eba41d16db1c051c6d840e6383_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.828",
+    "duracao": 4.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.969146966934204,
+    "mos_stoi": 0.8749297857284546,
+    "mos_si_sdr": 12.723614692687988,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Enfim. Nossa, quase que a gente esqueceu."
+  },
+  "3b80d1eba41d16db1c051c6d840e6383_002.ogg": {
+    "tempo_inicio": "00:00:05.252",
+    "tempo_fim": "00:00:19.996",
+    "duracao": 14.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9317706823349,
+    "mos_stoi": 0.9390329122543335,
+    "mos_si_sdr": 13.709349632263184,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Clarinha, esse Pierre André é ótimo, né? É. Eu acho que você não vai lembrar, mas a gente conheceu o Pierre André há muito tempo atrás, você era bem pequenininha lá em Belo Horizonte, na Praça da Liberdade, estava contando histórias para todo mundo."
+  }
+}

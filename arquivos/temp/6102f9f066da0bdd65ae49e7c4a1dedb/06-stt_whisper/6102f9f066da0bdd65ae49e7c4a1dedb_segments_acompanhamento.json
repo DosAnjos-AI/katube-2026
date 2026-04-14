@@ -1,0 +1,16 @@
+{
+  "6102f9f066da0bdd65ae49e7c4a1dedb_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.184",
+    "duracao": 10.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2326443195343018,
+    "mos_stoi": 0.8356656432151794,
+    "mos_si_sdr": 2.513671875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tá cheio de lock aí, né? Boa, Wagner. É, meu. Mais tem a lock, né? Os lock palha. Tu gostou, Carol? Eu achei bonitinho. Achei interessante."
+  }
+}

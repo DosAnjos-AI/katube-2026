@@ -1,0 +1,58 @@
+{
+  "103d55b4ac1a0e2d506c4fd376e26bfa_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.316",
+    "duracao": 4.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.408789873123169,
+    "mos_stoi": 0.44663187861442566,
+    "mos_si_sdr": -8.042365074157715,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "modenação por um dano moral. Há um possível dano moral da forma que aquilo ali..."
+  },
+  "103d55b4ac1a0e2d506c4fd376e26bfa_002.ogg": {
+    "tempo_inicio": "00:00:04.612",
+    "tempo_fim": "00:00:10.748",
+    "duracao": 6.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.66544771194458,
+    "mos_stoi": 0.730573296546936,
+    "mos_si_sdr": 7.49379825592041,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Como você bem colocou o vídeo, só mostra a parte final do evento. Mas, de qualquer modo..."
+  },
+  "103d55b4ac1a0e2d506c4fd376e26bfa_003.ogg": {
+    "tempo_inicio": "00:00:11.204",
+    "tempo_fim": "00:00:24.988",
+    "duracao": 13.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3303662538528442,
+    "mos_stoi": 0.853988528251648,
+    "mos_si_sdr": 3.829359531402588,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "dá para caracterizar da forma como a situação ocorreu. Agora, do ponto de vista criminal, que é um grande debate, há uma questão aí muito interessante e de difícil enquadramento jurídico, vamos lá."
+  },
+  "103d55b4ac1a0e2d506c4fd376e26bfa_004.ogg": {
+    "tempo_inicio": "00:00:25.284",
+    "tempo_fim": "00:00:29.912",
+    "duracao": 4.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.279575824737549,
+    "mos_stoi": 0.8941194415092468,
+    "mos_si_sdr": 15.48925495147705,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque a questão para ser crime não basta exclusivamente..."
+  }
+}

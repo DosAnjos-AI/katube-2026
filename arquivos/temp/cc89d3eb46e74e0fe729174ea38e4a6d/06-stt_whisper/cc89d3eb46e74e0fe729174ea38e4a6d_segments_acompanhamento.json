@@ -1,0 +1,16 @@
+{
+  "cc89d3eb46e74e0fe729174ea38e4a6d_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:08.830",
+    "duracao": 8.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.318176746368408,
+    "mos_stoi": 0.9620835185050964,
+    "mos_si_sdr": 7.776969909667969,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "problema de saúde, ficas desempregado, uma dívida enorme que apareceu, qualquer coisa. E ficas com a corda ao pescoço e vais ao pé do banco outra vez e dizem assim, isto agora está a correr mal"
+  }
+}

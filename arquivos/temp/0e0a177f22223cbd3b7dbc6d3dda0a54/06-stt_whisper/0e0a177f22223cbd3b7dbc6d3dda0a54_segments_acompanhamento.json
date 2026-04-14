@@ -1,0 +1,44 @@
+{
+  "0e0a177f22223cbd3b7dbc6d3dda0a54_001.ogg": {
+    "tempo_inicio": "00:00:00.228",
+    "tempo_fim": "00:00:14.332",
+    "duracao": 14.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.405691146850586,
+    "mos_stoi": 0.9661973118782043,
+    "mos_si_sdr": 21.875736236572266,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Um dia, disse ela. Meu príncipe virá, mas como ele demora, por onde andará. Já esperei mil anos a fio. Meu coração está vazio. Liga os contos de fadas, assim como eles são."
+  },
+  "0e0a177f22223cbd3b7dbc6d3dda0a54_002.ogg": {
+    "tempo_inicio": "00:00:14.532",
+    "tempo_fim": "00:00:21.564",
+    "duracao": 7.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.294534206390381,
+    "mos_stoi": 0.9586395621299744,
+    "mos_si_sdr": 18.61693572998047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Minhas longas tranças chegam a tocar o chão. Eu só queria mesmo um namorado poder viajar."
+  },
+  "0e0a177f22223cbd3b7dbc6d3dda0a54_003.ogg": {
+    "tempo_inicio": "00:00:21.860",
+    "tempo_fim": "00:00:31.192",
+    "duracao": 9.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8940272331237793,
+    "mos_stoi": 0.9567801356315613,
+    "mos_si_sdr": 17.630630493164062,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E mudar de penteado, então... Quando Solinha estava a ponto de se irritar, seu príncipe chegou, vindo lhe salvar."
+  }
+}

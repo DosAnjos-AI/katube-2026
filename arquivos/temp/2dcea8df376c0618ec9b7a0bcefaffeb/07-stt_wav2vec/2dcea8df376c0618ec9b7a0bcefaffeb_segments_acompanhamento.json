@@ -1,0 +1,32 @@
+{
+  "2dcea8df376c0618ec9b7a0bcefaffeb_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.284",
+    "duracao": 4.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.892986536026001,
+    "mos_stoi": 0.9608741402626038,
+    "mos_si_sdr": 10.439702033996582,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu quando fui ao garfo, gastei 40 horas na viagem.",
+    "stt_wav2vec": "J OLHEI EU QUANDO FRUIOU ALGAR VO VOCE FOR NTERI HORAS NA VIAGEM"
+  },
+  "2dcea8df376c0618ec9b7a0bcefaffeb_002.ogg": {
+    "tempo_inicio": "00:00:04.708",
+    "tempo_fim": "00:00:09.830",
+    "duracao": 5.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.595442533493042,
+    "mos_stoi": 0.9780426025390625,
+    "mos_si_sdr": 17.9792537689209,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "40 horas na viagem. E ficou muito mais barato. E fiquei em casa de um colega meu. Do Fábio.",
+    "stt_wav2vec": null
+  }
+}

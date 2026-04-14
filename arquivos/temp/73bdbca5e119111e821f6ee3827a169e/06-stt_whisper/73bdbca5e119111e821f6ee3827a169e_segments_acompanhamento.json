@@ -1,0 +1,44 @@
+{
+  "73bdbca5e119111e821f6ee3827a169e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:12.124",
+    "duracao": 12.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.477792263031006,
+    "mos_stoi": 0.9918228983879089,
+    "mos_si_sdr": 20.364763259887695,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "é preciso vir de dentro para fora. É no que acredita a Fabiana Gutierrez, sócia de Carlotas, uma empresa com propósito social que leva o diálogo sobre empatia para dentro das empresas."
+  },
+  "73bdbca5e119111e821f6ee3827a169e_002.ogg": {
+    "tempo_inicio": "00:00:12.196",
+    "tempo_fim": "00:00:24.668",
+    "duracao": 12.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6360321044921875,
+    "mos_stoi": 0.975085973739624,
+    "mos_si_sdr": 23.222537994384766,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E quando você cria um ambiente onde você tem esse olhar empático, principalmente para os erros, você propicia que as pessoas confiam nas outras, que elas se sintam muito mais à vontade para..."
+  },
+  "73bdbca5e119111e821f6ee3827a169e_003.ogg": {
+    "tempo_inicio": "00:00:24.740",
+    "tempo_fim": "00:00:31.822",
+    "duracao": 7.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0598504543304443,
+    "mos_stoi": 0.9524675011634827,
+    "mos_si_sdr": 17.7347412109375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "experimentar e ser mais criativo. Porque se você está num ambiente muito punitivo, você fala, meu, eu não vou sair do meu quadrado."
+  }
+}

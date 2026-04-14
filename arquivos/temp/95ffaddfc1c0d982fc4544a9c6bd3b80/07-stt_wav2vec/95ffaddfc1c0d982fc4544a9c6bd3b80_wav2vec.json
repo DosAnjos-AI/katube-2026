@@ -1,0 +1,17 @@
+{
+  "95ffaddfc1c0d982fc4544a9c6bd3b80_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.620",
+    "duracao": 10.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3138583898544312,
+    "mos_stoi": 0.8738205432891846,
+    "mos_si_sdr": 12.222123146057129,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu estou vendo imagens da Espanha agora, as pessoas com bandeiras em Madrid, que eu tive a oportunidade de conhecer no último ano, nas principais avenidas, nos seus apartamentos.",
+    "stt_wav2vec": "OVENDO IMAGENS DA ESPANHA AGORA AS PESSOAS COM BANDEIRAS NA EMMADRIGE GOTIVA OPORTUNIDADE DE CONHECER NO ÚLTIMO ANNO NAS PRINCIPAIS AVENIDAS NOS SEUS APARTAMENTOS"
+  }
+}

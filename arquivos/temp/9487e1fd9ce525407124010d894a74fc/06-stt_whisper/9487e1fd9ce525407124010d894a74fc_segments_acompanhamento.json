@@ -1,0 +1,44 @@
+{
+  "9487e1fd9ce525407124010d894a74fc_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:15.036",
+    "duracao": 15.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6737568378448486,
+    "mos_stoi": 0.8912592530250549,
+    "mos_si_sdr": 9.242547035217285,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olá, sejam bem-vindos ao nosso podcast de Contação de Histórias. Eu sou a Clara. E eu sou o Leandro. Este é o nosso décimo primeiro episódio."
+  },
+  "9487e1fd9ce525407124010d894a74fc_002.ogg": {
+    "tempo_inicio": "00:00:15.300",
+    "tempo_fim": "00:00:26.012",
+    "duracao": 10.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3779840469360352,
+    "mos_stoi": 0.8906130790710449,
+    "mos_si_sdr": 7.649218559265137,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de um podcast que contamos histórias para vocês. É o nosso podcast de contação de histórias infantis. Cacá conta. E hoje, no nosso 11º episódio..."
+  },
+  "9487e1fd9ce525407124010d894a74fc_003.ogg": {
+    "tempo_inicio": "00:00:26.244",
+    "tempo_fim": "00:00:31.262",
+    "duracao": 5.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5014351606369019,
+    "mos_stoi": 0.8618371486663818,
+    "mos_si_sdr": 4.816072463989258,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nós vamos contar a história do livro A Festa das Roupas, de Os Wagner Dias."
+  }
+}

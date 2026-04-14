@@ -1,0 +1,58 @@
+{
+  "c5fd34b8c7fcc3c769fcf3affe538df1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.660",
+    "duracao": 13.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.273538112640381,
+    "mos_stoi": 0.9768211841583252,
+    "mos_si_sdr": 21.05469512939453,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É importante dizer que esse projeto é um dos 20 projetos incentivados pelo edital CRIAPI, realizado pela prefeitura de Fortaleza através do Instituto Iracema, pois somos pagos para dizer esta frase."
+  },
+  "c5fd34b8c7fcc3c769fcf3affe538df1_002.ogg": {
+    "tempo_inicio": "00:00:13.956",
+    "tempo_fim": "00:00:24.348",
+    "duracao": 10.39,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.539942741394043,
+    "mos_stoi": 0.9895211458206177,
+    "mos_si_sdr": 19.66448402404785,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Brincadeira, gente. A gente diz, acha muito bom, viu? Inclusive, gostaríamos de abrir o espaço aqui pra agradecer essa oportunidade, né?"
+  },
+  "c5fd34b8c7fcc3c769fcf3affe538df1_003.ogg": {
+    "tempo_inicio": "00:00:25.444",
+    "tempo_fim": "00:00:29.724",
+    "duracao": 4.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9724674224853516,
+    "mos_stoi": 0.9810731410980225,
+    "mos_si_sdr": 22.981985092163086,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas sim, Gil..."
+  },
+  "c5fd34b8c7fcc3c769fcf3affe538df1_004.ogg": {
+    "tempo_inicio": "00:00:30.020",
+    "tempo_fim": "00:00:34.270",
+    "duracao": 4.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8240489959716797,
+    "mos_stoi": 0.9972834587097168,
+    "mos_si_sdr": 19.733760833740234,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Me diz aí como é que surgiu a história do podcast, como foi que a gente teve essa ideia."
+  }
+}

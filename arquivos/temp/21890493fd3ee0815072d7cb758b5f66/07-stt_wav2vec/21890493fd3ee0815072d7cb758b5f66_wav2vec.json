@@ -1,0 +1,17 @@
+{
+  "21890493fd3ee0815072d7cb758b5f66_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:27.804",
+    "duracao": 27.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2507388591766357,
+    "mos_stoi": 0.9618209600448608,
+    "mos_si_sdr": 14.5545015335083,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e o presidente da cooperativa estava junto, e estava todo mundo conversando de igual para igual, era o presidente da cooperativa, era eu que era super novata no papo de cooperativismo, estava ali como consultora da Eureca, a gente tinha também a galera do atendimento da cooperativa, e eu falei, gente, quando que num banco tradicional, era cooperativa de crédito, quando que num banco tradicional, eu ia estar sentado aqui numa mesa com o cara que é presidente, o cara que é caixa e o cara que é gerente, nunca que eu ia ver isso.",
+    "stt_wav2vec": "O PRESIDENTE DA COPERATIVA ATAVA JUNTO ESTAVA A TODO MUNDO CONVERSANDO DE IGUAL PARA IGUAL AO SENHORA O PRESIDENTE DA COPERATIVA ERA EU QUE ERA SUPERNOVATA NO NO PAPO DE COPERATIVISMO TAVALI COMO CONSTORA DE OURECA A GEM QUE TINHA TAMBÉM A GALERA DO ATENDMENTO DA COPERATIVA E EU FAZEI GENTE QUANDO QUE NUM BANCO TRADICIONAL NAERA COPERATIVA DE CRÉDITO QUANDO QUE NUM BRANCO BANCO TRADICIONAL EU IA TAR SENTADO AQUI NUMA MESA COM O CARAQUE A PRESIDENTE O CARACUIÉ CAXA E O CARAQUIÉ GERENTE NUNCA QUE EU IA VEISSO"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "4c1a2ce6d18ac78f16da8ab58dfd00e3_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:11.548",
+    "duracao": 11.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "4c1a2ce6d18ac78f16da8ab58dfd00e3_002.ogg": {
+    "tempo_inicio": "00:00:11.652",
+    "tempo_fim": "00:00:15.644",
+    "duracao": 3.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Mas eu sei que tu bate-se isso, nem sei quantos livros a ver se..."
+  }
+}

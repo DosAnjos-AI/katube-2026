@@ -1,0 +1,44 @@
+{
+  "6ee3acd5ea51933766cf4bfe79e1de2d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.308",
+    "duracao": 5.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0003247261047363,
+    "mos_stoi": 0.8996958136558533,
+    "mos_si_sdr": 8.790911674499512,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu entendo que é uma grande oportunidade para a gente retomar realmente o futebol que ele fez nada aqui no Grêmio."
+  },
+  "6ee3acd5ea51933766cf4bfe79e1de2d_002.ogg": {
+    "tempo_inicio": "00:00:05.636",
+    "tempo_fim": "00:00:19.836",
+    "duracao": 14.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1615808010101318,
+    "mos_stoi": 0.6124442219734192,
+    "mos_si_sdr": -5.847545623779297,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque o hotel tava olhando o que o Sari pensa em fazer com ele, é o que fazia com o Jorginho lá no Nápoles. É ter um cara referência no meio campo pra fazer o time jogar. Que era o que o Arthur fazia aqui no Bebo. Eu acho que o Arthur é um baita negócio pra Juventus. Ele vai..."
+  },
+  "6ee3acd5ea51933766cf4bfe79e1de2d_003.ogg": {
+    "tempo_inicio": "00:00:19.972",
+    "tempo_fim": "00:00:34.712",
+    "duracao": 14.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2592263221740723,
+    "mos_stoi": 0.7868941426277161,
+    "mos_si_sdr": 2.982874870300293,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "tem a responsabilidade de fazer o time jogar e ele como protagonista vai funcionar muito melhor do que ele no Barcelona, quando tinha ficado ali do lado do Busquets tocando bola pro Messi. Eu acho que ele tem um potencial muito grande pra crescer na Juventus, justamente porque o protagonista"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "06e0476e6648fc9f7d00c3a7e83b2c0b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.796",
+    "duracao": 8.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0360569953918457,
+    "mos_stoi": 0.9082326292991638,
+    "mos_si_sdr": 8.405875205993652,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, eu vou falando, eu fiquei refletindo, né? Será que eu deixei de dar algum passo na minha vida? Deixei de tomar algum caminho porque deixei a síndrome de imposto a me influenciar?"
+  },
+  "06e0476e6648fc9f7d00c3a7e83b2c0b_002.ogg": {
+    "tempo_inicio": "00:00:11.044",
+    "tempo_fim": "00:00:25.788",
+    "duracao": 14.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.518826484680176,
+    "mos_stoi": 0.9564886093139648,
+    "mos_si_sdr": 11.6891508102417,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E antes de passar para você, Eric, me lembrei de um fato aqui, fazendo uma autorreflexão, e que todas as minhas promoções na minha vida, na minha carreira, foram surpresas para mim. Acreditem se quiser. Eu sempre fui pega de surpresa nas minhas promoções e acabei de..."
+  },
+  "06e0476e6648fc9f7d00c3a7e83b2c0b_003.ogg": {
+    "tempo_inicio": "00:00:25.828",
+    "tempo_fim": "00:00:30.024",
+    "duracao": 4.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.515226364135742,
+    "mos_stoi": 0.9765599370002747,
+    "mos_si_sdr": 16.083724975585938,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ter essa epifania aqui. Vou deixar o Eric falar aqui, contar essa experiência."
+  }
+}

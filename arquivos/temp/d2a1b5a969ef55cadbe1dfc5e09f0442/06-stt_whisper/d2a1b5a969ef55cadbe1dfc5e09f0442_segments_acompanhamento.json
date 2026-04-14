@@ -1,0 +1,32 @@
+{
+  "d2a1b5a969ef55cadbe1dfc5e09f0442_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.628",
+    "duracao": 5.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Com certeza. Dodô me serve muito ainda. Ainda mais pegando essa crise aí que tá rolando lá pro... Pois é."
+  },
+  "d2a1b5a969ef55cadbe1dfc5e09f0442_002.ogg": {
+    "tempo_inicio": "00:00:05.956",
+    "tempo_fim": "00:00:18.940",
+    "duracao": 12.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "d2a1b5a969ef55cadbe1dfc5e09f0442_003.ogg": {
+    "tempo_inicio": "00:00:19.076",
+    "tempo_fim": "00:00:32.572",
+    "duracao": 13.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

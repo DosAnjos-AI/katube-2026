@@ -1,0 +1,16 @@
+{
+  "740f5908930f838d5de050ce32b52a40_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.278",
+    "duracao": 7.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9256759881973267,
+    "mos_stoi": 0.9223603010177612,
+    "mos_si_sdr": 10.152010917663574,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "impostos e este ano já vou em cento e dez ou cento e pronto. Então já é muito, muito dinheiro."
+  }
+}

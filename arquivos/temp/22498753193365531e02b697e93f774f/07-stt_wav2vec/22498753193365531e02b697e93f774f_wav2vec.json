@@ -1,0 +1,62 @@
+{
+  "22498753193365531e02b697e93f774f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.012",
+    "duracao": 6.01,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.8531131744384766,
+    "mos_stoi": 0.9920291900634766,
+    "mos_si_sdr": 25.34280014038086,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O uso de machine learning não evita a necessidade de uma interação humana. Como é que você enxerga essa interação?",
+    "stt_wav2vec": "O USO DE MASTILANE NÃO EVITA A NECESSIDADE DE UMA INTERAÇÃO HUMANA COMO É QUE VOCÊ ENXERGA ESSA INTERAÇÃO"
+  },
+  "22498753193365531e02b697e93f774f_002.ogg": {
+    "tempo_inicio": "00:00:06.500",
+    "tempo_fim": "00:00:12.092",
+    "duracao": 5.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2485437393188477,
+    "mos_stoi": 0.948020875453949,
+    "mos_si_sdr": 12.913498878479004,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ah, é legal ressaltar que a gente tem tido uma experiência excelente com o uso da tecnologia de machine learning.",
+    "stt_wav2vec": "HÁ ELEGAL RESTALTAR QUE A GINTTENTIDA UMA EXPERIÊNCIA EXCELENTE ESTÁ COM O USO DA TECNOLOGIA DE MAHINLARNE"
+  },
+  "22498753193365531e02b697e93f774f_003.ogg": {
+    "tempo_inicio": "00:00:12.356",
+    "tempo_fim": "00:00:23.356",
+    "duracao": 11.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4024791717529297,
+    "mos_stoi": 0.9733856320381165,
+    "mos_si_sdr": 20.621442794799805,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Com o uso da inteligência aplicada, a gente consegue ter uma economia de tempo, a gente melhora a maneira que a gente quantifica e organiza os nossos dados.",
+    "stt_wav2vec": "COM O USO DA INTELIGÊNCIA APLICADA LENTE CONSEGUE NE TER UMA ECONOMIA DE TEMPO SENTIR MELHOR ANÉ A MANEIRA QUE LHENQUENTIFICA E ORGANIZA OS NOSSOS DADOS"
+  },
+  "22498753193365531e02b697e93f774f_004.ogg": {
+    "tempo_inicio": "00:00:23.780",
+    "tempo_fim": "00:00:32.302",
+    "duracao": 8.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9070262908935547,
+    "mos_stoi": 0.9663641452789307,
+    "mos_si_sdr": 15.411883354187012,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "além também de encontrar insights mais precisos. A gente pode dizer, então, que a gente consegue usar a tecnologia como uma ferramenta para ganho de eficiência",
+    "stt_wav2vec": "ALÉM TAMBÉM DE ENCONTRAR EM SAITES MAIS PRECISOS ESO TE PODE DESENTRÃO QUE DE CONSEGUEM USAR TECNOLOGIA COMO UMA FERRAMENTA PARA GANHO DE EFICIÊNCIA"
+  }
+}

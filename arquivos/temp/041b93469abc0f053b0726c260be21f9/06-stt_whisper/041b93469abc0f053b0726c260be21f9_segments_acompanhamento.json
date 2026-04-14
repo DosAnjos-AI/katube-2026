@@ -1,0 +1,16 @@
+{
+  "041b93469abc0f053b0726c260be21f9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.204",
+    "duracao": 6.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1670167446136475,
+    "mos_stoi": 0.927533745765686,
+    "mos_si_sdr": 11.396415710449219,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas há alguns têm mais. Alguns têm mais, mas também temos que uma das vertentes do hate..."
+  }
+}

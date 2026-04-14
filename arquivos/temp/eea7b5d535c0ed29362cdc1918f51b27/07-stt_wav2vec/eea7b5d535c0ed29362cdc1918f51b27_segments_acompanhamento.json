@@ -1,0 +1,17 @@
+{
+  "eea7b5d535c0ed29362cdc1918f51b27_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.556",
+    "duracao": 14.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2164676189422607,
+    "mos_stoi": 0.956938624382019,
+    "mos_si_sdr": 17.439273834228516,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que é para não ser eu a ficar vinculado, até porque depois, eu sugiro-vos o banco B, e por azar aquele banco correu mal, porque morou até dar resposta, ou porque vocês não se entenderam com a pessoa, com a gestora, depois como estiveram no banco, daqui a 6 meses, e depois quem é que recomenda o banco?",
+    "stt_wav2vec": "PAR NÃO SEREA FICAVA INCLADA ATÉ PORPOIS AE VOCÊ EU EU SUGIROZO BANCOVE E PUR ESAR AQUELLE BANCROMAL PORCE MOROUATEA DA RESPOSTA OU PORQUE VOCÊS NÃO SE ENTENDERÃO COPISOA COSTORA COS COMTIRAR N AVAS DAQUESSES MESO E POIS QUEM É QUEM QUER COMENDOU VANGA"
+  }
+}

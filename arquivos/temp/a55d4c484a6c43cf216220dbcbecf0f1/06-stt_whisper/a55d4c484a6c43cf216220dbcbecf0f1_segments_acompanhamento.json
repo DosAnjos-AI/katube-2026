@@ -1,0 +1,16 @@
+{
+  "a55d4c484a6c43cf216220dbcbecf0f1_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.902",
+    "duracao": 9.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.663532257080078,
+    "mos_stoi": 0.9735882878303528,
+    "mos_si_sdr": 23.390172958374023,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Há quem pode levar até 10, mas nós vamos calcular aqui a 3 a 8 anos. E pode estar então aqui e comprar uma casa. O que é comprar uma casa? A chegar no teu dinheiro todo? Não. É dar..."
+  }
+}

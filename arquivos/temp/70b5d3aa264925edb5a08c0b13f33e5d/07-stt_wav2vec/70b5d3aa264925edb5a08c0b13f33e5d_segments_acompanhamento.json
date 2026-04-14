@@ -1,0 +1,32 @@
+{
+  "70b5d3aa264925edb5a08c0b13f33e5d_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:07.292",
+    "duracao": 7.19,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4396657943725586,
+    "mos_stoi": 0.9670705795288086,
+    "mos_si_sdr": 19.28296661376953,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Portanto, agora, se o banco está a fazer uma proposta de 1%, o que tens que pensar é o banco de vende dinheiro.",
+    "stt_wav2vec": "TANA AGORA SUBAN TAFAS E UMA PROPOSTA DE UM PORCENTO PO TENS QUE PENSAREM O BANCO DE VEND DINHEIRO"
+  },
+  "70b5d3aa264925edb5a08c0b13f33e5d_002.ogg": {
+    "tempo_inicio": "00:00:07.556",
+    "tempo_fim": "00:00:14.408",
+    "duracao": 6.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5722060203552246,
+    "mos_stoi": 0.8799809813499451,
+    "mos_si_sdr": 6.9024200439453125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se o banco achar que esse 1% que está a propor, ele vai dar prejuízo, não te propõe 1%, propõe 1,1% ou 1,2.",
+    "stt_wav2vec": null
+  }
+}

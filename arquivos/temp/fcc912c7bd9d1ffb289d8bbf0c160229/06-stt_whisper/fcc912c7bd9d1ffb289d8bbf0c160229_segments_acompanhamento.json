@@ -1,0 +1,16 @@
+{
+  "fcc912c7bd9d1ffb289d8bbf0c160229_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.684",
+    "duracao": 6.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2182908058166504,
+    "mos_stoi": 0.9575048685073853,
+    "mos_si_sdr": 14.090598106384277,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Com o ponto de primeiro não tem noção da tremenda responsabilidade que teve a prometer isso. Não tem noção também que essa promessa vai afetá-lo para sempre."
+  }
+}

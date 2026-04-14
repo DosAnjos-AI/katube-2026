@@ -1,0 +1,16 @@
+{
+  "05d2f52d73f5b2fe7d642770f445a7b3_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.326",
+    "duracao": 7.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.656233310699463,
+    "mos_stoi": 0.8685073852539062,
+    "mos_si_sdr": 12.238429069519043,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nós estamos vivendo um grande momento de transformação, de empoderamento de setores que não tinham acesso,"
+  }
+}

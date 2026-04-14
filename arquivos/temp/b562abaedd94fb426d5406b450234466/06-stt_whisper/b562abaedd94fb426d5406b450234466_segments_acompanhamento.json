@@ -1,0 +1,30 @@
+{
+  "b562abaedd94fb426d5406b450234466_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:18.268",
+    "duracao": 18.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9550917148590088,
+    "mos_stoi": 0.9751901626586914,
+    "mos_si_sdr": 13.227583885192871,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Muitos dados internacionais quando a gente já tem a nossa própria rotina agora, né? É verdade. E nós aqui, enquanto gaúchos, nós temos um dado muito relevante nesse aspecto, que é que nós somos 2 milhões de estudantes no Rio Grande do Sul. Ou seja, são 2 milhões de pessoas que deixaram de circular."
+  },
+  "b562abaedd94fb426d5406b450234466_002.ogg": {
+    "tempo_inicio": "00:00:18.788",
+    "tempo_fim": "00:00:30.248",
+    "duracao": 11.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.271878719329834,
+    "mos_stoi": 0.9765239357948303,
+    "mos_si_sdr": 16.560688018798828,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "em salas de aula, em ônibus, em trens, em carros ou vans, enfim, em ambientes que a gente teria muito contato com outras pessoas. Então, isso pode colaborar"
+  }
+}

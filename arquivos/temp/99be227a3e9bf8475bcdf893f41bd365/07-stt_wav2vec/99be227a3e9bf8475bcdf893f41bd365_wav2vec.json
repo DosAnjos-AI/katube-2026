@@ -1,0 +1,17 @@
+{
+  "99be227a3e9bf8475bcdf893f41bd365_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.316",
+    "duracao": 4.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.282425880432129,
+    "mos_stoi": 0.9438834190368652,
+    "mos_si_sdr": 14.384787559509277,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Soninha não teve medo daquela cara de mal.",
+    "stt_wav2vec": "I FONINHA NÃO TEVE MEDO DAQUELA CARA DE MAL"
+  }
+}

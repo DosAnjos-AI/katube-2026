@@ -1,0 +1,30 @@
+{
+  "67f9fcccce79fb275882473e756fe9b7_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.492",
+    "duracao": 14.49,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7735366821289062,
+    "mos_stoi": 0.9443411827087402,
+    "mos_si_sdr": 16.01047134399414,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É óbvio que eu não desconheço o fato de que essa dimensão do confinamento é necessária. Eu estou aqui na minha casa. Portanto, há algo disso que se desdobra como parte de um..."
+  },
+  "67f9fcccce79fb275882473e756fe9b7_002.ogg": {
+    "tempo_inicio": "00:00:14.596",
+    "tempo_fim": "00:00:20.956",
+    "duracao": 6.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.225940704345703,
+    "mos_stoi": 0.9711222052574158,
+    "mos_si_sdr": 22.58445930480957,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de uma dinâmica social... que não é sem contradição. Então..."
+  }
+}

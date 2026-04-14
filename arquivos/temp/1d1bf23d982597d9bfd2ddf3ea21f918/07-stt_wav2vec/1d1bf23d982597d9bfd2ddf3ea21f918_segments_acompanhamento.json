@@ -1,0 +1,20 @@
+{
+  "1d1bf23d982597d9bfd2ddf3ea21f918_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.104",
+    "duracao": 4.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0945959091186523,
+    "mos_stoi": 0.9619707465171814,
+    "mos_si_sdr": 12.61070442199707,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ela disse que ia ir pra Kagushima, porque lá ninguém a conhece e ela quer ficar sozinha.",
+    "stt_leg_normalizado": null,
+    "stt_whisper_normalizado": null,
+    "stt_wav2vec_normalizado": null,
+    "stt_wav2vec": "ELA DISSE QUE AI PARA CAGOCHIMA PORQUE LÁ NINGUÉM ACONHECE ELA QUER FICAR SOZINHA"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "ec57e84533cdd61ff9f5a33896336cd0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.828",
+    "duracao": 4.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.598154067993164,
+    "mos_stoi": 0.921117901802063,
+    "mos_si_sdr": 13.696637153625488,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A notícia é que ele é especulado no Milan, já se falou em Arsenal, em Mônaco também.",
+    "stt_wav2vec": "NOTÍCIA QUE ELE ESPECULADO NO LILAN JÁ SE FALOU EM ARTO NO IUÔNACO TAMBÉM"
+  },
+  "ec57e84533cdd61ff9f5a33896336cd0_002.ogg": {
+    "tempo_inicio": "00:00:05.444",
+    "tempo_fim": "00:00:12.094",
+    "duracao": 6.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.616978645324707,
+    "mos_stoi": 0.8289031982421875,
+    "mos_si_sdr": 7.518614292144775,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o preço inicial antes de começar toda essa crise de pandemia e tal, se falava em 15 milhões de euros.",
+    "stt_wav2vec": "O PREÇO INICIAL ANTES DE COMEÇAR A TODA ESTA CRISE DE PANDEMIA ITALSE FALAVA EM QUINZE BILHÕES DE ERROS"
+  }
+}

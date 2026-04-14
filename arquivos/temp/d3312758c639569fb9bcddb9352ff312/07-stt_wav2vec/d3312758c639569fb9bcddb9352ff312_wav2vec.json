@@ -1,0 +1,17 @@
+{
+  "d3312758c639569fb9bcddb9352ff312_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.596",
+    "duracao": 9.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8977924585342407,
+    "mos_stoi": 0.9108237028121948,
+    "mos_si_sdr": 5.97498893737793,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele tem, ele tem. Eu acho que quando ele saiu do Grêmio, ele já estava começando a aprimorar essa questão de verticalidade no...",
+    "stt_wav2vec": "ELE TEM ELE TEM ELE TEM ELE TEI  EU ACHO QUE QUANDO ELE SAIÚU DO GRÊMIO ELE JATAVA COMEÇANDO A A A PRIMORACISTA QUESTÃO DE DE VERTICALIDADE"
+  }
+}

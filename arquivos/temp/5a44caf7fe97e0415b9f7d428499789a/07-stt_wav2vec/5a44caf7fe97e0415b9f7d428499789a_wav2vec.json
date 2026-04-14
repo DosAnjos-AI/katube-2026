@@ -1,0 +1,17 @@
+{
+  "5a44caf7fe97e0415b9f7d428499789a_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:07.004",
+    "duracao": 6.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0511491298675537,
+    "mos_stoi": 0.9483566284179688,
+    "mos_si_sdr": 20.43264389038086,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "maior que a arte. Então, se eu pudesse colocar a Laba, eu colocaria isso. O Laba mostrou para todos nós.",
+    "stt_wav2vec": "MAIOR QUE ARTE ENTÃO SE EU PUDESSE COLOCÁ LA BA EU COLOCARIA ISSO LÁ BA MOSTROU  PARA TODOS NÓS"
+  }
+}

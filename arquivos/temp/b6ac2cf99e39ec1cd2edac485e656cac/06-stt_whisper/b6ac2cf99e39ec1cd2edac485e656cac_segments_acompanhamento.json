@@ -1,0 +1,16 @@
+{
+  "b6ac2cf99e39ec1cd2edac485e656cac_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.228",
+    "duracao": 7.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.734649658203125,
+    "mos_stoi": 0.8902648687362671,
+    "mos_si_sdr": 14.46155071258545,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então hoje eu vou-me pôr aqui num papel de entrevistadora e vou-te pôr aqui na cadeira quente."
+  }
+}

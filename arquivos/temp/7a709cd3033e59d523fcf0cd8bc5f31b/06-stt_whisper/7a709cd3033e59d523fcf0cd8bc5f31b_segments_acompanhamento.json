@@ -1,0 +1,30 @@
+{
+  "7a709cd3033e59d523fcf0cd8bc5f31b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.180",
+    "duracao": 5.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7787914276123047,
+    "mos_stoi": 0.8484618067741394,
+    "mos_si_sdr": 1.490587830543518,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu gostei também. Já temos dois assuntos colocados para semana que vem. Perfeito."
+  },
+  "7a709cd3033e59d523fcf0cd8bc5f31b_002.ogg": {
+    "tempo_inicio": "00:00:05.572",
+    "tempo_fim": "00:00:20.188",
+    "duracao": 14.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2638566493988037,
+    "mos_stoi": 0.7990232110023499,
+    "mos_si_sdr": 2.7594356536865234,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vamos manter pra semana que vem, porque vai rever essa... Ficamos com o Promete de gravagem. Segunda que vem eu pedi um pastel pra mim também. Ô, meu, esse pastel é muito bom. O bicho é monstruoso e é tamanho médio. Pafurioso. Olha aqui, ó."
+  }
+}

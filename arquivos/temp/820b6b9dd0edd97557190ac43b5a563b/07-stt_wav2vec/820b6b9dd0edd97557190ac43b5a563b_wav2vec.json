@@ -1,0 +1,47 @@
+{
+  "820b6b9dd0edd97557190ac43b5a563b_002.ogg": {
+    "tempo_inicio": "00:00:11.620",
+    "tempo_fim": "00:00:19.772",
+    "duracao": 8.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.373843193054199,
+    "mos_stoi": 0.9523155689239502,
+    "mos_si_sdr": 14.721041679382324,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Acho que a primeira temporada, eu acho que não foi, pra ser sincero mesmo, com relação a Lucifer. Não foi uma temporada muito boa.",
+    "stt_wav2vec": "ACHO QUE A PRIMEIRA TEMPORADA EU ACHO QUE NÃO FOI VACEFINFERO MESMO RELAÇÕNA A LUCIFER NÃO FALAZ MUTA PARANDA MUITO BOA"
+  },
+  "820b6b9dd0edd97557190ac43b5a563b_003.ogg": {
+    "tempo_inicio": "00:00:20.132",
+    "tempo_fim": "00:00:25.916",
+    "duracao": 5.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4825589656829834,
+    "mos_stoi": 0.8910412192344666,
+    "mos_si_sdr": 14.994336128234863,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Entretanto, eu acho que a partir da segunda que ele já sabia uma fórmula, eu acho que ela melhorou.",
+    "stt_wav2vec": "NE NITRA CANSÕASCOM A PARTIDA SEGUNDO QUE JÁ SABIAM A FÓRMULA EU ACHO QUE ELA MELHOROU"
+  },
+  "820b6b9dd0edd97557190ac43b5a563b_004.ogg": {
+    "tempo_inicio": "00:00:27.556",
+    "tempo_fim": "00:00:42.236",
+    "duracao": 14.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2450840473175049,
+    "mos_stoi": 0.8566702008247375,
+    "mos_si_sdr": 0.3282470405101776,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vocês não acham que vocês têm esse hype todo por conta do ator que é super bonito? Não é coisa e tal? Não. É gostoso. Gente, é gostoso. Não, amiga. Eu acho que ela trouxe algo...",
+    "stt_wav2vec": "VOCÊS HOJA QUE SE SE ENCERRAIPETODO POR CONTA DO ATOR QUE É SPRANNÃO E DAA HESITAL NHORA NASE QUE QER MUITO EUSAS LELA TEREIS NEGONES TOOS COVEM MAS DDAO AMIGA EU ACHO QUE A ELA ELA TROUXE AO U"
+  }
+}

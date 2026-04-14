@@ -1,0 +1,16 @@
+{
+  "2b6156ae7442fec73861663bcaba519e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.520",
+    "duracao": 4.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.018022298812866,
+    "mos_stoi": 0.9627467393875122,
+    "mos_si_sdr": 11.392373085021973,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não tive a ver com os compostos, tudo mais, mas sei que quando eu apresentei os primos..."
+  }
+}

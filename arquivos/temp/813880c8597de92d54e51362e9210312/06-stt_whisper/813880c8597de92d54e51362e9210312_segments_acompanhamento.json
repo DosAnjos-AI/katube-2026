@@ -1,0 +1,30 @@
+{
+  "813880c8597de92d54e51362e9210312_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.764",
+    "duracao": 12.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9400134086608887,
+    "mos_stoi": 0.9396541118621826,
+    "mos_si_sdr": 13.58475112915039,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho, o ideal seria Lucas Silva, Matheus Henrique e Jean Pierre, mas como o Danilson falou, não sei se o Renato, principalmente num Grenal vai arriscar. Cara,"
+  },
+  "813880c8597de92d54e51362e9210312_002.ogg": {
+    "tempo_inicio": "00:00:12.900",
+    "tempo_fim": "00:00:21.486",
+    "duracao": 8.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5568461418151855,
+    "mos_stoi": 0.9840784072875977,
+    "mos_si_sdr": 25.201215744018555,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Hoje nós temos dois times, tanto Grêmio quanto Inter, que estão bem, dois times na Libertadores, que estão com elencos bons."
+  }
+}

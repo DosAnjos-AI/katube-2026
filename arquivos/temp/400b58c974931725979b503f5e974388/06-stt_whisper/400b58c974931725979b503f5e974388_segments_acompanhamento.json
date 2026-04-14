@@ -1,0 +1,30 @@
+{
+  "400b58c974931725979b503f5e974388_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:10.588",
+    "duracao": 10.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.167229413986206,
+    "mos_stoi": 0.807719349861145,
+    "mos_si_sdr": -2.4701623916625977,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "400b58c974931725979b503f5e974388_002.ogg": {
+    "tempo_inicio": "00:00:10.852",
+    "tempo_fim": "00:00:14.588",
+    "duracao": 3.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3771636486053467,
+    "mos_stoi": 0.8353561758995056,
+    "mos_si_sdr": 4.722497463226318,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É legal e foi estourado."
+  }
+}

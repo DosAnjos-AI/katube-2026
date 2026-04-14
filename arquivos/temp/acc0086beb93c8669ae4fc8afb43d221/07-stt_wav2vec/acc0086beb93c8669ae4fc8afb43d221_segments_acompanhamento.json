@@ -1,0 +1,47 @@
+{
+  "acc0086beb93c8669ae4fc8afb43d221_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.460",
+    "duracao": 10.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2206257581710815,
+    "mos_stoi": 0.7801759839057922,
+    "mos_si_sdr": -2.8701841831207275,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Na idade dele, pra posição dele, eu acho bem difícil. Acho bem difícil mesmo. O Durval tá lá... A gente fala de idade só porque ele não tem aquele futebol...",
+    "stt_wav2vec": "TIFICINAIDADE DELE PARA PROPOSIÇÃO DELE EU ACHO BENCHINS AS MENXES OUISMENS ODURVALTALAMEMEU AGÊNCIE CORA UMA DEZARDE SÓ PORQUE ELE NÃO TEM AQUELLE FUTEBOL"
+  },
+  "acc0086beb93c8669ae4fc8afb43d221_002.ogg": {
+    "tempo_inicio": "00:00:10.788",
+    "tempo_fim": "00:00:16.636",
+    "duracao": 5.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4438742399215698,
+    "mos_stoi": 0.8038376569747925,
+    "mos_si_sdr": 0.3584313690662384,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "acc0086beb93c8669ae4fc8afb43d221_003.ogg": {
+    "tempo_inicio": "00:00:16.804",
+    "tempo_fim": "00:00:30.254",
+    "duracao": 13.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6696929931640625,
+    "mos_stoi": 0.9752492308616638,
+    "mos_si_sdr": 14.004964828491211,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

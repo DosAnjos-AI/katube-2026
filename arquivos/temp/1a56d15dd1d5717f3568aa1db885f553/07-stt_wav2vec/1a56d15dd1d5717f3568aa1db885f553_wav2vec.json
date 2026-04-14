@@ -1,0 +1,32 @@
+{
+  "1a56d15dd1d5717f3568aa1db885f553_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:16.892",
+    "duracao": 16.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.165504813194275,
+    "mos_stoi": 0.8914317488670349,
+    "mos_si_sdr": 5.2752885818481445,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": "AIDEAELE FIETAVA COM MUITA SEDE ONTEM CLARA ABABEMEDRÁULICO A E AÍ MAS TAMO TOTATÃMOOTAMO MELHORANDO NÃ TU DISCERTO SÓ TOMA BASTANTE ÁGUA HODE AI NÃO RESPIRAR PERDO NA MIVINTA TUDO BEM A PICHA NO SINAL OITI QUINS ÉO TADO NOSSA AQUI NA ATLÂNTIDA OLHA SÓ UM"
+  },
+  "1a56d15dd1d5717f3568aa1db885f553_002.ogg": {
+    "tempo_inicio": "00:00:17.220",
+    "tempo_fim": "00:00:50.268",
+    "duracao": 33.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2210679054260254,
+    "mos_stoi": 0.9256085753440857,
+    "mos_si_sdr": 7.510147571563721,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": "VOTEMO DATRILHA PQUE ESSE CASA AQUE ME CHAMOU ATENÇÃO EU NÃO SEI SE EU CONSEGUIRIA ISSO MAS PROPÕNH DESAFIO CARAUZINHA QUE TRABALHA COM ISTO BEM VÃO VECELA ELA NÃO FARIA ISSO DO BIDO OLHA LÁ VE AH BRITÂNICO SEGUE TENDÊNCIA E NÃO COMPRA ROUPAS A DES ANOS AHÁ DEZ ENOS O NOME DELE É UM ELE É UM CHEFE DE COZINHA CHAMADO ALFE FALLER DE VINTE E NOVE ANOS ELE VIVE NO REINO UNIDO E QUE É UM PAÍS QUE DESCARTA MAIS DE CENTO E QUARENTA MILHÕES DE LIBRAS"
+  }
+}

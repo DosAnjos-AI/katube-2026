@@ -1,0 +1,17 @@
+{
+  "230b66c89a690dcb16d42e1206a15352_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.446",
+    "duracao": 4.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.558686375617981,
+    "mos_stoi": 0.8946869373321533,
+    "mos_si_sdr": 8.693081855773926,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Antes de começar o episódio de hoje, eu queria agradecer imensamente",
+    "stt_wav2vec": "ANTES DE COMEÇAR O EPISÓDIO DE HOJE O QUEREGREDA AGRADECER IMENSAMENTE"
+  }
+}

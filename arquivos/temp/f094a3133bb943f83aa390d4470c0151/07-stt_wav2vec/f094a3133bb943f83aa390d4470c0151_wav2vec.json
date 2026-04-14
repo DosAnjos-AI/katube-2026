@@ -1,0 +1,17 @@
+{
+  "f094a3133bb943f83aa390d4470c0151_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.588",
+    "duracao": 6.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.244589328765869,
+    "mos_stoi": 0.9093106389045715,
+    "mos_si_sdr": 15.640999794006348,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "escola só porque errou o caminho Pedro vira porco espinho se tem felicidade",
+    "stt_wav2vec": "ESCOLA SAPORQUERROO CAMINHO PEDRO VIRA PORCO ESPINHO E TENHO FESE VERDADES"
+  }
+}

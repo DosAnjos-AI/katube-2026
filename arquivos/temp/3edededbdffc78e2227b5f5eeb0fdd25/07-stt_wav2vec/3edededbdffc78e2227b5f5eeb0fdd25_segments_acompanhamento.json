@@ -1,0 +1,17 @@
+{
+  "3edededbdffc78e2227b5f5eeb0fdd25_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.240",
+    "duracao": 9.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1260318756103516,
+    "mos_stoi": 0.9646372199058533,
+    "mos_si_sdr": 12.612707138061523,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Só que eu penso que Ele desce um degrau, sim Eu acho que ele desse um degrau Pela maneira como ele sai Um time como o Barcelona se desfazer",
+    "stt_wav2vec": "SÓ QUE EU PENSO QUE EU PENSO QUE ELHE ELLE DESCE UM DEGRAL SIM EU ACHO QUE LE DESSE UM DEGRAL PELA MANEIRA COMO ELLE SAI TPU O UM BOTIME COMO BARCELONA SE DESFAZER"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "85503dac4db7cdd418df09419cab0a50_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:12.796",
+    "duracao": 12.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6590248346328735,
+    "mos_stoi": 0.893427312374115,
+    "mos_si_sdr": 8.629886627197266,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E eu falei, nem sua mãe, a Ruth escobar, podia fazer esse milagre. E ela disse, não, não, mas até que a minha mãe teria conseguido fazer isso e eu falei,",
+    "stt_wav2vec": "FLEMENTO A MÃE PRA RUTICOBAR ODIA FAZER ASSE MILAGREA E ELA DISSE NÃO NÃO MAS A ATÉ QUE A MINHA MÃE TERIA CONSEGUIDO FAZEIR SE OPE"
+  },
+  "85503dac4db7cdd418df09419cab0a50_002.ogg": {
+    "tempo_inicio": "00:00:13.092",
+    "tempo_fim": "00:00:20.412",
+    "duracao": 7.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7860945463180542,
+    "mos_stoi": 0.8146857619285583,
+    "mos_si_sdr": 6.544610023498535,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E vamos lá, eu vou falar com o SESC. E, de fato, ela foi ela que falou com a Danilo Miranda.",
+    "stt_wav2vec": null
+  },
+  "85503dac4db7cdd418df09419cab0a50_003.ogg": {
+    "tempo_inicio": "00:00:20.740",
+    "tempo_fim": "00:00:30.552",
+    "duracao": 9.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7602100372314453,
+    "mos_stoi": 0.8309093117713928,
+    "mos_si_sdr": 5.670919895172119,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí está, Inés Pereira Cardoso, foi realmente a idealizadora do projeto. E trabalhando muito",
+    "stt_wav2vec": null
+  }
+}

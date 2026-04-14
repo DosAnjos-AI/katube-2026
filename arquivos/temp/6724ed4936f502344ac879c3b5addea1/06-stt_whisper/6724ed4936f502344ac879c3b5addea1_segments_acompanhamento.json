@@ -1,0 +1,30 @@
+{
+  "6724ed4936f502344ac879c3b5addea1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.532",
+    "duracao": 5.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1106719970703125,
+    "mos_stoi": 0.9929912090301514,
+    "mos_si_sdr": 20.439620971679688,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pois claro que existe aqui uma fórmula que nós não vamos aplicar, que nós não vamos falar, mas..."
+  },
+  "6724ed4936f502344ac879c3b5addea1_002.ogg": {
+    "tempo_inicio": "00:00:05.860",
+    "tempo_fim": "00:00:12.840",
+    "duracao": 6.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.197798252105713,
+    "mos_stoi": 0.9887168407440186,
+    "mos_si_sdr": 21.87133026123047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que é algo muito complicado, que é o valor inicial, mais eu juro, mais o E, não aparentes, fez aparentes, mas ninguém vai falar sobre isso."
+  }
+}

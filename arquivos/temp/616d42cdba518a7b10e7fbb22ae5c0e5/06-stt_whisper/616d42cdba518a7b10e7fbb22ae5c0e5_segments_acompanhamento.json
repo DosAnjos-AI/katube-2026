@@ -1,0 +1,30 @@
+{
+  "616d42cdba518a7b10e7fbb22ae5c0e5_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:16.156",
+    "duracao": 16.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.489809274673462,
+    "mos_stoi": 0.9066864848136902,
+    "mos_si_sdr": 10.347250938415527,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí nós chegamos à nossa última abordagem, que é a abordagem estrutural. Nesse ponto de vista, a comunicação é pensada como um processo de transmissão e recuperação de informações. Por exemplo, você trocou de número do WhatsApp e quer recuperar suas conversas, seus dados."
+  },
+  "616d42cdba518a7b10e7fbb22ae5c0e5_002.ogg": {
+    "tempo_inicio": "00:00:16.228",
+    "tempo_fim": "00:00:27.086",
+    "duracao": 10.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.618787169456482,
+    "mos_stoi": 0.9667079448699951,
+    "mos_si_sdr": 11.829992294311523,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Como é que você faz isso? Por meio do backup. O backup é exatamente essa estratégia, essa técnica estrutural de pensar na comunicação com uma ferramenta de recuperação de dados."
+  }
+}

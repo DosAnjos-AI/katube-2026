@@ -1,0 +1,47 @@
+{
+  "ee144b983abdebf37c7fc006369e1164_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.460",
+    "duracao": 6.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2440595626831055,
+    "mos_stoi": 0.943536102771759,
+    "mos_si_sdr": 12.932543754577637,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E tá bem lá. Mas, tipo, não saiu daqui super bem, entendeu? Ele só fez uma temporada...",
+    "stt_wav2vec": "ITABEM VEM LÁ BEM LÁ MAS TIPO NÃO SAIU DAQUI SUPERVEENTEDEOELE SÓ FEZ UMA TEMPORADA"
+  },
+  "ee144b983abdebf37c7fc006369e1164_002.ogg": {
+    "tempo_inicio": "00:00:06.852",
+    "tempo_fim": "00:00:11.324",
+    "duracao": 4.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2088711261749268,
+    "mos_stoi": 0.8948304653167725,
+    "mos_si_sdr": 11.3735933303833,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "ee144b983abdebf37c7fc006369e1164_003.ogg": {
+    "tempo_inicio": "00:00:11.748",
+    "tempo_fim": "00:00:20.654",
+    "duracao": 8.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1192760467529297,
+    "mos_stoi": 0.9666146636009216,
+    "mos_si_sdr": 11.262004852294922,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

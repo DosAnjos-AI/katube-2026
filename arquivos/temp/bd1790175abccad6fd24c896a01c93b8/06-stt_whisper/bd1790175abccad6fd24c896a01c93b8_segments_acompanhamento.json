@@ -1,0 +1,16 @@
+{
+  "bd1790175abccad6fd24c896a01c93b8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.820",
+    "duracao": 13.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2239303588867188,
+    "mos_stoi": 0.8930094838142395,
+    "mos_si_sdr": 14.776073455810547,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não só no Instagram, mas também no físico de prof, né? Cara, é muito bacana. Eu falei, eu até falei, não, vou criar essa rotina de assistir, pelo menos duas vezes no dia, o físico de prof. Cara,"
+  }
+}

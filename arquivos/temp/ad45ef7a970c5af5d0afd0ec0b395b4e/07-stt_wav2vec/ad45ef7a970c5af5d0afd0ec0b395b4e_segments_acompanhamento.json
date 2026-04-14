@@ -1,0 +1,17 @@
+{
+  "ad45ef7a970c5af5d0afd0ec0b395b4e_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.190",
+    "duracao": 6.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.410865545272827,
+    "mos_stoi": 0.9462405443191528,
+    "mos_si_sdr": 12.372193336486816,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí isso vai ser recorrente. Então é como se você fosse reforçando aquela experiência como algo negativo.",
+    "stt_wav2vec": "E A ISSO VAI SENDO RECORRENTE ENTRAR COMO SE VOSCÊ FOSSE REFORSANDO AQUELA EXPERIÊNCIA COMO ALGO NEGATIVO"
+  }
+}

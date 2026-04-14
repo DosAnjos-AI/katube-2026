@@ -1,0 +1,44 @@
+{
+  "e755b9ef1404b4699b584ff14fa56a46_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.404",
+    "duracao": 13.4,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9592177867889404,
+    "mos_stoi": 0.970352053642273,
+    "mos_si_sdr": 11.708222389221191,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o River ou o Boca, que ele também conseguiu um golzinho achado ali no meio do primeiro tempo e aí segurava o jogo, amorcegava o jogo e saia com a vitória. E eu acho que tá certo, eu acho que o Inter tem que reconhecer que vai enfrentar times superiores a ele,"
+  },
+  "e755b9ef1404b4699b584ff14fa56a46_002.ogg": {
+    "tempo_inicio": "00:00:13.508",
+    "tempo_fim": "00:00:19.100",
+    "duracao": 5.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2006430625915527,
+    "mos_stoi": 0.9605875015258789,
+    "mos_si_sdr": 8.733129501342773,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O que, na minha opinião, falta nos grenais, que o Inter quer impor o seu jogo a todo custo e toma uma roda pro Grêmio."
+  },
+  "e755b9ef1404b4699b584ff14fa56a46_003.ogg": {
+    "tempo_inicio": "00:00:19.204",
+    "tempo_fim": "00:00:29.640",
+    "duracao": 10.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.497800350189209,
+    "mos_stoi": 0.937534511089325,
+    "mos_si_sdr": 11.628174781799316,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, assim, tu vai pegar um time que é melhor do que tu, monta uma estratégia, anula o time dos caras em primeiro lugar e em segundo lugar tu busca a tua vitória. O Inter fez isso, o Inter viu como o Atlético se portou,"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "24ba1bf4dfd92c36f677e35462953017_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.516",
+    "duracao": 3.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.514677047729492,
+    "mos_stoi": 0.9246995449066162,
+    "mos_si_sdr": 16.820499420166016,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho que se comprasse uma casa agora, apesar de ter"
+  },
+  "24ba1bf4dfd92c36f677e35462953017_002.ogg": {
+    "tempo_inicio": "00:00:03.908",
+    "tempo_fim": "00:00:10.670",
+    "duracao": 6.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8049798011779785,
+    "mos_stoi": 0.9585089683532715,
+    "mos_si_sdr": 19.643709182739258,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "X€ para a entrada, eu pediria de empréstimo o máximo possível, porque os juros estão super baixos."
+  }
+}

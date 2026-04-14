@@ -1,0 +1,44 @@
+{
+  "da25f9ad17b2cbae4a9df5b87be2d97d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.212",
+    "duracao": 13.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9280571937561035,
+    "mos_stoi": 0.9507046341896057,
+    "mos_si_sdr": 17.93989372253418,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Jogava BR, cara, igual eu falo pra eles, né, assim, o nego falar, mas eu quero entrar pra Java BR, beleza, cara, eu recomendo demais, cara, mudou a minha vida pra Java BR, só que assim, muita coisa que você passa pra gente lá dentro, você passa no seu Instagram,"
+  },
+  "da25f9ad17b2cbae4a9df5b87be2d97d_002.ogg": {
+    "tempo_inicio": "00:00:13.252",
+    "tempo_fim": "00:00:19.580",
+    "duracao": 6.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0025999546051025,
+    "mos_stoi": 0.9546592235565186,
+    "mos_si_sdr": 20.300575256347656,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Você passa no físico de profissional, entendeu? Então, assim, a rapaziada não perde nada. Chegou o Samuel falou aí agora."
+  },
+  "da25f9ad17b2cbae4a9df5b87be2d97d_003.ogg": {
+    "tempo_inicio": "00:00:19.844",
+    "tempo_fim": "00:00:29.710",
+    "duracao": 9.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9543845653533936,
+    "mos_stoi": 0.9705040454864502,
+    "mos_si_sdr": 18.947202682495117,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

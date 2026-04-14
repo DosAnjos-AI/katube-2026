@@ -1,0 +1,58 @@
+{
+  "cf2e3666093ac18426bb2de9ac45e9cc_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:14.748",
+    "duracao": 14.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8490595817565918,
+    "mos_stoi": 0.8244410753250122,
+    "mos_si_sdr": 9.773087501525879,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de alto nível sobre o nosso queridíssimo futebol gaúcho brasileiro e mundial. Antes de escalar o nosso time para o episódio de número 3, lembro que é você que ainda não está seguindo o nosso perfil lá no Instagram para fazer agora mesmo. Pega o celular aí e entra no Instagram."
+  },
+  "cf2e3666093ac18426bb2de9ac45e9cc_002.ogg": {
+    "tempo_inicio": "00:00:14.916",
+    "tempo_fim": "00:00:20.988",
+    "duracao": 6.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.162691831588745,
+    "mos_stoi": 0.7939052581787109,
+    "mos_si_sdr": 10.737858772277832,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E procura lá pelo arroba confra do futebol. Arroba confra do futebol."
+  },
+  "cf2e3666093ac18426bb2de9ac45e9cc_003.ogg": {
+    "tempo_inicio": "00:00:21.412",
+    "tempo_fim": "00:00:29.276",
+    "duracao": 7.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9625065326690674,
+    "mos_stoi": 0.8540633916854858,
+    "mos_si_sdr": 7.3604512214660645,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É agora o nosso canal oficial de comunicação para você concordar, discordar e principalmente cornetear nossos resenhadores aqui."
+  },
+  "cf2e3666093ac18426bb2de9ac45e9cc_004.ogg": {
+    "tempo_inicio": "00:00:29.668",
+    "tempo_fim": "00:00:43.886",
+    "duracao": 14.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.548734188079834,
+    "mos_stoi": 0.8259192109107971,
+    "mos_si_sdr": 8.525089263916016,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "durante os nossos programas, durante as postagens, curta, compartilha, comente, utilize o Instagram lá o arroba confra do futebol para se comunicar conosco. Então não deixa de além de nos acompanhar aqui no Spotify, onde toda segunda-feira, teremos novos"
+  }
+}

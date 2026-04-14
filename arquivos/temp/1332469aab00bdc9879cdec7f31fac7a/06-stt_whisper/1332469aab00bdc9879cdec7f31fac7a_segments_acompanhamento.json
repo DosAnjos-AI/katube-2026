@@ -1,0 +1,30 @@
+{
+  "1332469aab00bdc9879cdec7f31fac7a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:24.220",
+    "duracao": 24.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3114618062973022,
+    "mos_stoi": 0.9093579649925232,
+    "mos_si_sdr": 7.680822372436523,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não é aquela lavadinha que saiu do banheiro, mas só botou uma aguinha ali, uma miguelona. Não, não, não, não. É lavar, de fato, a mão, 20 segundos. Se não houver água e sabão, usar um antissepico para as mãos à base de álcool em gel. Então agora a gente volta aquele assunto do álcool em gel, que não era para ter comprado milhares nas farmácias para ter acabado com ele. É só para pegar o teu e vai dar tudo certo, está tudo bem."
+  },
+  "1332469aab00bdc9879cdec7f31fac7a_002.ogg": {
+    "tempo_inicio": "00:00:24.484",
+    "tempo_fim": "00:00:29.726",
+    "duracao": 5.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5943185091018677,
+    "mos_stoi": 0.9028498530387878,
+    "mos_si_sdr": 11.195728302001953,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Enfim, obviamente, evitar o contato direto com as pessoas doentes e antes de se alimentar."
+  }
+}

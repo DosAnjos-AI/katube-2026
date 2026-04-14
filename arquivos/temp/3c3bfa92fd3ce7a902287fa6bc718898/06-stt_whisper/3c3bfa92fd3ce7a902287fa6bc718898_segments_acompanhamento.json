@@ -1,0 +1,16 @@
+{
+  "3c3bfa92fd3ce7a902287fa6bc718898_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.936",
+    "duracao": 4.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1402225494384766,
+    "mos_stoi": 0.960175633430481,
+    "mos_si_sdr": 19.561845779418945,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu sou o Igor, eu tenho 25 anos, sou gremista."
+  }
+}

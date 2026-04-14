@@ -1,0 +1,17 @@
+{
+  "50095f93268a5139d97e176dc31e32d3_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:15.452",
+    "duracao": 15.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.207627296447754,
+    "mos_stoi": 0.9187201857566833,
+    "mos_si_sdr": 7.775409698486328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "do nosso chega num oferecimento de Snowland, Neve de verdade, confira as ofertas especiais que preparamos pra você se divertir. É isso aí, desejamos a você uma ótima segunda, uma ótima semana, foco força e fé, quase sexta-feira, e assim a gente vai levando numa boa.",
+    "stt_wav2vec": "NOSSO CHEGA NUM OFERECIMENTO DEZ NOU LEND NEVE DE VERDADE CUMPRIR AS OFERTAS ESPECIAIS QUE PREPARAMOS PARA VOCÊ SE DIVERTIR É ISSO AÍ DESEJAMOS A VOCÊ UMA ÓTIMA SEGUNDA UMA ÓTIMA SEMANA FOCO FORCIFER QUASE CEXTA-FEIRA E ASSIM A GENTE VAI LEVANDO NUMABOA"
+  }
+}

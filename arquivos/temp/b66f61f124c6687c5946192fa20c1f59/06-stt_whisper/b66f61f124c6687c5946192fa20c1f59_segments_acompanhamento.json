@@ -1,0 +1,16 @@
+{
+  "b66f61f124c6687c5946192fa20c1f59_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.472",
+    "duracao": 6.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0398879051208496,
+    "mos_stoi": 0.9450222253799438,
+    "mos_si_sdr": 16.6165828704834,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Assim, eu começo a ver a escrita, ok, há na mesma vista,"
+  }
+}

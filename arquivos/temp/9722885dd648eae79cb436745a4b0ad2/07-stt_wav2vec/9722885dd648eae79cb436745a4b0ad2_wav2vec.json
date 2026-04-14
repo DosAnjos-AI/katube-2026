@@ -1,0 +1,17 @@
+{
+  "9722885dd648eae79cb436745a4b0ad2_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:24.766",
+    "duracao": 24.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2505799531936646,
+    "mos_stoi": 0.9245716333389282,
+    "mos_si_sdr": 6.175543785095215,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O pato aqui vai ser isso. 140 milhões de dólares é o contrato que foi fechado para essa empresa. Mas a passagem é quase isso. Claro. Para você inicialmente pelo menos poder fazer isso, você vai ter que desembolsar aproximadamente um ticket de 50 milhões de dólares. Para algumas pessoas é um trocado. Por isso que eu falei que eu... Não é um presente no caso. Eu não sei se eu vou conseguir no primeiro ano, talvez no segundo.",
+    "stt_wav2vec": "OFATO ÉQUE VAI SER ISTO CENTO E QUARENTA MILHÕES DE DÓLARES É ÉO CONTRATO QUE FOI FECHADO ASHAGECARAAS CAÇAGEM MAS A PASSAGEM É QUASE ISSO CLARO PARA VOCÊ INICIALMENTE PELO MENOS PODER FAZER ISSO AS NO E TEQUE SE MBOSA APROXIMADAMENTE UM TIQUETE DE CINQENTA MILHÕES DE DÓLAERA ALGUMA CACASO TROCADOS PARA ALGUMAS PESSOAS E HO TROCADO PORECEVALEI QUE RERENCE NO CAREU NÃO SÊ SEVOU COGUE NA PRIMEIRA  NO PRIMEIRO ANO TALVEZ NO SEGUNDO"
+  }
+}

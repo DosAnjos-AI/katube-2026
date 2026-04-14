@@ -1,0 +1,17 @@
+{
+  "2301c5b6caad4ccd76b33a788e892782_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.128",
+    "duracao": 7.13,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.297916889190674,
+    "mos_stoi": 0.952102780342102,
+    "mos_si_sdr": 21.784496307373047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "pedagógica, uma direção pedagógica muito clara, terapêutica, nas terapias.",
+    "stt_wav2vec": "PEDAGÓGICA NA DIREÇÃO PEDAGÓGICA MUITO CLARA É TERAPEUTICA NENAS TERAPIAS"
+  }
+}

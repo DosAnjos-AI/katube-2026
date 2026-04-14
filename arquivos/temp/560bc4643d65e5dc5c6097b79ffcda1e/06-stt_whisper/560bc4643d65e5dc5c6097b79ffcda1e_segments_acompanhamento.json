@@ -1,0 +1,30 @@
+{
+  "560bc4643d65e5dc5c6097b79ffcda1e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.468",
+    "duracao": 5.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.270751953125,
+    "mos_stoi": 0.9509554505348206,
+    "mos_si_sdr": 16.373241424560547,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Escolha um, seu armário está sortido. Sorria muito e mantenha a rotina."
+  },
+  "560bc4643d65e5dc5c6097b79ffcda1e_002.ogg": {
+    "tempo_inicio": "00:00:05.732",
+    "tempo_fim": "00:00:20.664",
+    "duracao": 14.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6428455114364624,
+    "mos_stoi": 0.9538938999176025,
+    "mos_si_sdr": 10.711297035217285,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

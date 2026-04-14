@@ -1,0 +1,17 @@
+{
+  "58745977eaebb182216ec38b240601dc_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.528",
+    "duracao": 7.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.344331741333008,
+    "mos_stoi": 0.9351259469985962,
+    "mos_si_sdr": 8.399584770202637,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Para a próxima a gente já troca o time colorado aqui já. Não, mandou para ele o cara que é palmeirense e não tem mundial.",
+    "stt_wav2vec": "VEA PRÓXIMA ENTIAATROCA O TIME COLORADO QUIJA AH NÃO MAN MANDOU PARA ELE O CAR QUE É PALMERENSE NÃO TEM MUNDIAGO"
+  }
+}

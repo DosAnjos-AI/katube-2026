@@ -1,0 +1,30 @@
+{
+  "d3b9169882c2793889f550513b37ed52_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.892",
+    "duracao": 4.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.707095146179199,
+    "mos_stoi": 0.9657214283943176,
+    "mos_si_sdr": 21.72357177734375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E se o Alex Santana for pro Ludogores, ele vai pegar mais um milhão e meio."
+  },
+  "d3b9169882c2793889f550513b37ed52_002.ogg": {
+    "tempo_inicio": "00:00:05.060",
+    "tempo_fim": "00:00:29.870",
+    "duracao": 24.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.555942177772522,
+    "mos_stoi": 0.9053767323493958,
+    "mos_si_sdr": 7.271997451782227,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É uns caras que, tipo, quando é que tu vai dizer que vai dar algum retorno financeiro pro clube, né? Tu nem espera. Então o Dourado, que tem muito mais bola com esses caras aí, tem chance, sim, eu acho. Não vai ser o que pensava, assim, né? Em 15 milhões de euros. É, no início falava 100 milhões, nada a ver, né? Só que agora, mas todo o retorno é bem-vindo, inclusive, futuro. Até dentro do mercado do Brasil daqui a pouco. O Inter tem um dinheiro com o Damião."
+  }
+}

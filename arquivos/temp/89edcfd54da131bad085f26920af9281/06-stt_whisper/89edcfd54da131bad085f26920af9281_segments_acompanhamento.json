@@ -1,0 +1,44 @@
+{
+  "89edcfd54da131bad085f26920af9281_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.924",
+    "duracao": 4.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2357268333435059,
+    "mos_stoi": 0.6331316232681274,
+    "mos_si_sdr": -1.208539605140686,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "89edcfd54da131bad085f26920af9281_002.ogg": {
+    "tempo_inicio": "00:00:05.220",
+    "tempo_fim": "00:00:14.652",
+    "duracao": 9.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.348802924156189,
+    "mos_stoi": 0.7662050127983093,
+    "mos_si_sdr": 2.7282209396362305,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o trabalho do Cudeiro Internacional nesse ano 2020. Falaremos também da volta do futebol no Rio de Janeiro, com torcida, inclusive, a partida dia 10 de julho."
+  },
+  "89edcfd54da131bad085f26920af9281_003.ogg": {
+    "tempo_inicio": "00:00:15.044",
+    "tempo_fim": "00:00:23.566",
+    "duracao": 8.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2600154876708984,
+    "mos_stoi": 0.7842614054679871,
+    "mos_si_sdr": 1.4736131429672241,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E também vamos falar um pouquinho sobre o título do livro, então é aquela questão que é muito debatida quando surge o assunto, que é Klopp vs."
+  }
+}

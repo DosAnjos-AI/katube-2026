@@ -1,0 +1,30 @@
+{
+  "ee79c6937e05724e2bcba54d7eb7ebe9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.796",
+    "duracao": 12.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.673206090927124,
+    "mos_stoi": 0.9037213325500488,
+    "mos_si_sdr": 8.57883071899414,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "saída. Segundo, porque ele é a moeda do Inter de venda. Então já é uma questão assim, se o Inter não vende ele. Mas, Renan, tu acha que ele joga mais por ser um jogador técnico que tem a saída de bola?"
+  },
+  "ee79c6937e05724e2bcba54d7eb7ebe9_002.ogg": {
+    "tempo_inicio": "00:00:13.028",
+    "tempo_fim": "00:00:26.972",
+    "duracao": 13.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5623193979263306,
+    "mos_stoi": 0.9215535521507263,
+    "mos_si_sdr": 8.537927627563477,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "4fcbadf5be8d330b140adebeb9b08b3e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.580",
+    "duracao": 7.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.896033525466919,
+    "mos_stoi": 0.9871089458465576,
+    "mos_si_sdr": 24.094913482666016,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Depois do primeiro, Iu cometeu outros crimes, que seguiram o mesmo padrão, pessoas idosas e a maioria de classe média alta.",
+    "stt_wav2vec": "DEPOIS DO PRIMEIRO IL COMETEU OUTROS CRIMES QUE SEGUIRAM O MESMO PADRÃO PESSUASIDOSAS E A MARIA DE CLASSE MÉDIA ALTA"
+  },
+  "4fcbadf5be8d330b140adebeb9b08b3e_002.ogg": {
+    "tempo_inicio": "00:00:08.036",
+    "tempo_fim": "00:00:13.596",
+    "duracao": 5.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.920335292816162,
+    "mos_stoi": 0.9869645237922668,
+    "mos_si_sdr": 23.232763290405273,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Em 18 de novembro, Yu invadiu uma casa. A governanta perguntou quem era ele.",
+    "stt_wav2vec": "EM DEZOITO DE NOVEMBRO IO INVADIU UMA CASA A GOVERNANTA PERGUNTOU QUEM ERA ELE"
+  },
+  "4fcbadf5be8d330b140adebeb9b08b3e_003.ogg": {
+    "tempo_inicio": "00:00:14.276",
+    "tempo_fim": "00:00:19.736",
+    "duracao": 5.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.799107551574707,
+    "mos_stoi": 0.9885416030883789,
+    "mos_si_sdr": 23.361900329589844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Em resposta, ele lhe mostrou sua faca e exigiu saber onde ficava o quarto principal.",
+    "stt_wav2vec": "EM RESPOSTA ELILE MOSTROU SUA FACA E EXIGIU SABER ONDE FICAVA O QUARTO PRINCIPAL"
+  }
+}

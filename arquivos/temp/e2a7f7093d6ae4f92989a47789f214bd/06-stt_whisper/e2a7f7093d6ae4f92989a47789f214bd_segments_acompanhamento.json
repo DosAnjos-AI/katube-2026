@@ -1,0 +1,30 @@
+{
+  "e2a7f7093d6ae4f92989a47789f214bd_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:09.212",
+    "duracao": 9.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5031282901763916,
+    "mos_stoi": 0.8053187131881714,
+    "mos_si_sdr": 4.901047229766846,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Musto, Edenilson, Marcos Guilherme, Bosquilha, da Alessandre Guerreiro. Temos duas estrelas de treinaram aqui no Inter, né, Igor?"
+  },
+  "e2a7f7093d6ae4f92989a47789f214bd_002.ogg": {
+    "tempo_inicio": "00:00:09.476",
+    "tempo_fim": "00:00:17.678",
+    "duracao": 8.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.371180772781372,
+    "mos_stoi": 0.8006865978240967,
+    "mos_si_sdr": 6.1105055809021,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

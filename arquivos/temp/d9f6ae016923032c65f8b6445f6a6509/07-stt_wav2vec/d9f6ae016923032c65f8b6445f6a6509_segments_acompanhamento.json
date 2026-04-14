@@ -1,0 +1,17 @@
+{
+  "d9f6ae016923032c65f8b6445f6a6509_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.902",
+    "duracao": 3.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0830554962158203,
+    "mos_stoi": 0.8032771348953247,
+    "mos_si_sdr": 8.415661811828613,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Inter permanece com os dois e deixa o Heitor de lado, hein, Hanan?",
+    "stt_wav2vec": "O O ÍNTER PERMANECE COM OS DOIS OU A POSTA E DEIXE O LEITOR DE LADO EM ENDA"
+  }
+}

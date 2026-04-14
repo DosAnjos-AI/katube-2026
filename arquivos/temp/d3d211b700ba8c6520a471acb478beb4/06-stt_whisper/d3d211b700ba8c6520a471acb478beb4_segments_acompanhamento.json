@@ -1,0 +1,30 @@
+{
+  "d3d211b700ba8c6520a471acb478beb4_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:12.732",
+    "duracao": 12.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.929380178451538,
+    "mos_stoi": 0.9580122232437134,
+    "mos_si_sdr": 17.927858352661133,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Portanto, aquela diferença de 120 euros que hoje era entre o seguro fora do banco e o seguro do banco, para o ano se calhar seria 125 diferença. Num ano a seguir seria 130, num ano outro de 35. Acho que se calhar tinha 150 ou 200 euros de diferença."
+  },
+  "d3d211b700ba8c6520a471acb478beb4_002.ogg": {
+    "tempo_inicio": "00:00:12.836",
+    "tempo_fim": "00:00:18.246",
+    "duracao": 5.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.012991428375244,
+    "mos_stoi": 0.967687726020813,
+    "mos_si_sdr": 13.756449699401855,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "entre ter o suco do banco ou o seguro fora, mas o 0,3 de diferença de spread vai ser assim o resto do contrato."
+  }
+}

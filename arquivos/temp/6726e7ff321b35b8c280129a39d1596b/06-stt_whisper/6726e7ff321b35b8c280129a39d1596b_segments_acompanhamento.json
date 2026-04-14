@@ -1,0 +1,16 @@
+{
+  "6726e7ff321b35b8c280129a39d1596b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.710",
+    "duracao": 12.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.423854947090149,
+    "mos_stoi": 0.9333005547523499,
+    "mos_si_sdr": 11.266798973083496,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Euberto diz empresta até 160 e vamos ao banco C e o banco C diz que empresta até 170, porque eles calculam de forma diferente. E eu não sabendo o que é que eles consideram cada um deles, porque não sei, na prática nem os gestores bancários sabem, porque eles metem a informação no sistema e"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "840640cdee50f68fec9f1a6be57f8d3a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.440",
+    "duracao": 4.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9977009296417236,
+    "mos_stoi": 0.8488514423370361,
+    "mos_si_sdr": 7.461813926696777,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Curitiba vendeu ele antes da maioridade."
+  }
+}

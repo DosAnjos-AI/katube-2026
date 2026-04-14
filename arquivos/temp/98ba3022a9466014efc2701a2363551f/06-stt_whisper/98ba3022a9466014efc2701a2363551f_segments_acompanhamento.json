@@ -1,0 +1,16 @@
+{
+  "98ba3022a9466014efc2701a2363551f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.808",
+    "duracao": 4.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0266337394714355,
+    "mos_stoi": 0.9106939435005188,
+    "mos_si_sdr": 7.399152755737305,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mas tens que ter uma avaliação 20% acima, que seria um excelente negócio e que na verdade hoje em dia está cada vez mais difícil."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ea084dd4d1af719179eda51994249a49_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.708",
+    "duracao": 11.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0490736961364746,
+    "mos_stoi": 0.929203450679779,
+    "mos_si_sdr": 14.439814567565918,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "com o privilégio do monopólio territorial do curral eleitoral. As segundas desfrutam da autonomização para pastorear com exclusividade este rebanho eleitoral."
+  },
+  "ea084dd4d1af719179eda51994249a49_002.ogg": {
+    "tempo_inicio": "00:00:11.844",
+    "tempo_fim": "00:00:28.280",
+    "duracao": 16.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6642272472381592,
+    "mos_stoi": 0.8970851302146912,
+    "mos_si_sdr": 12.226933479309082,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ficam de fora as religiões de matriz africana, especialmente os candombléz, cuja estrutura de crença, os processos rituais, a gestão administrativa, não operam pela lógica do poder pastoral de ofertar a salvação, a lei e a verdade."
+  }
+}

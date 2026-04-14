@@ -1,0 +1,30 @@
+{
+  "7680596dc5e2ac578199c104b8b797cf_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.468",
+    "duracao": 9.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8999788761138916,
+    "mos_stoi": 0.9324607253074646,
+    "mos_si_sdr": 13.26060962677002,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "uma espécie de paradoxo ali na expansão, a expansão tanto de público, de debate público,"
+  },
+  "7680596dc5e2ac578199c104b8b797cf_002.ogg": {
+    "tempo_inicio": "00:00:10.052",
+    "tempo_fim": "00:00:15.672",
+    "duracao": 5.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6426138877868652,
+    "mos_stoi": 0.8880189657211304,
+    "mos_si_sdr": 22.52524185180664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de sucesso, isso parecia que se expandia enquanto a situação do país regredia, se fechava"
+  }
+}

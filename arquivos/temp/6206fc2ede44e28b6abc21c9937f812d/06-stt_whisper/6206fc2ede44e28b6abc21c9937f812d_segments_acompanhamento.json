@@ -1,0 +1,44 @@
+{
+  "6206fc2ede44e28b6abc21c9937f812d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.860",
+    "duracao": 12.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3957064151763916,
+    "mos_stoi": 0.9777366518974304,
+    "mos_si_sdr": 23.753807067871094,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E essas pessoas ficam trancadas ali dentro... E aí eles têm que sair... E se deparam com o mundo... E assim... A única coisa que vale um pouco a pena... São os zumbis ali... Que são até que maquiados legais..."
+  },
+  "6206fc2ede44e28b6abc21c9937f812d_002.ogg": {
+    "tempo_inicio": "00:00:13.156",
+    "tempo_fim": "00:00:20.508",
+    "duracao": 7.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3720755577087402,
+    "mos_stoi": 0.9836604595184326,
+    "mos_si_sdr": 20.975765228271484,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas a atuação da galera é péssima. Quem faz é uma das atrizes, que faz é a Sabrina Sato."
+  },
+  "6206fc2ede44e28b6abc21c9937f812d_003.ogg": {
+    "tempo_inicio": "00:00:20.804",
+    "tempo_fim": "00:00:31.784",
+    "duracao": 10.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2802091836929321,
+    "mos_stoi": 0.8642755746841431,
+    "mos_si_sdr": 3.1611156463623047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu não sei se vocês chegaram a ver. Eu cheguei a ver a capa. É, bem ruim, não perca um tempo. Bom, vai. Obrigado. Eu ajudava essa menina sato, era tipo apresentadora, tipo Pedro Real."
+  }
+}

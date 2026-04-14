@@ -1,0 +1,30 @@
+{
+  "97ea98d654eb273e78327fa568e478bf_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:15.804",
+    "duracao": 15.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.461951494216919,
+    "mos_stoi": 0.9232778549194336,
+    "mos_si_sdr": 5.583678245544434,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A gente, mas eu tô numa aflição, querendo sair, ver gente, que eu falei, gente, primeira hora que essa quarentena acabar, qualquer boté, deixa eu ver que a porta aberta a gente já vai sentar e baixar lá. É bem isso, mas assim, se for pra sair pra sentar num restaurante e tal, eu gosto bastante, nunca não goste."
+  },
+  "97ea98d654eb273e78327fa568e478bf_002.ogg": {
+    "tempo_inicio": "00:00:16.164",
+    "tempo_fim": "00:00:22.136",
+    "duracao": 5.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3528554439544678,
+    "mos_stoi": 0.7964999079704285,
+    "mos_si_sdr": -1.7528966665267944,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sentar um boteco, tomar uma cerveja gelada, eu curto pra caramba. Mas eu sempre falo, apesar do seu DNA, né, mano?"
+  }
+}

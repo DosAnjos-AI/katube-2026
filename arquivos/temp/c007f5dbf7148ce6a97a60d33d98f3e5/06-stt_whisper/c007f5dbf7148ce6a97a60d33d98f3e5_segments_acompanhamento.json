@@ -1,0 +1,16 @@
+{
+  "c007f5dbf7148ce6a97a60d33d98f3e5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.912",
+    "duracao": 4.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.274905204772949,
+    "mos_stoi": 0.9431005716323853,
+    "mos_si_sdr": 17.16812515258789,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas, ó, em minha defesa, falando que sou eu que escolho filme ruim. Mas é muito difícil..."
+  }
+}

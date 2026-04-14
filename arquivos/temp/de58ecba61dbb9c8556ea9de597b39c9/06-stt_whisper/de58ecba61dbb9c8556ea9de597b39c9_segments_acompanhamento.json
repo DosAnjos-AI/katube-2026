@@ -1,0 +1,16 @@
+{
+  "de58ecba61dbb9c8556ea9de597b39c9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.664",
+    "duracao": 4.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.587679386138916,
+    "mos_stoi": 0.8703513145446777,
+    "mos_si_sdr": 3.7172811031341553,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "vocês falando da Gilles também não posso falar das outras"
+  }
+}

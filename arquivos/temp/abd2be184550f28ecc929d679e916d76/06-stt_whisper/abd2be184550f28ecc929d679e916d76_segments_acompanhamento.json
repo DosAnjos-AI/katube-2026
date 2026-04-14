@@ -1,0 +1,30 @@
+{
+  "abd2be184550f28ecc929d679e916d76_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:23.068",
+    "duracao": 23.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6520493030548096,
+    "mos_stoi": 0.9624553918838501,
+    "mos_si_sdr": 21.85961151123047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "na censura e na sanção ao outro. Oferta-se aos desterrados de direitos, aos escassos de dever, aos indivíduos aderiva nas redes sociais, uma aparentes unidade de grupo, um sentido fugais de pertencimento, através de rituais edificantes de esculhambação do diferente de nós. Estes renovariam os votos de adesão a soluções imediatas."
+  },
+  "abd2be184550f28ecc929d679e916d76_002.ogg": {
+    "tempo_inicio": "00:00:23.108",
+    "tempo_fim": "00:00:32.088",
+    "duracao": 8.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.687532901763916,
+    "mos_stoi": 0.9543032646179199,
+    "mos_si_sdr": 22.673538208007812,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Dá sermão na fila do supermercado, uma lição de moral no restaurante, um pito no cinema, chamar a atenção de alguma inconveniência, sentenciar"
+  }
+}

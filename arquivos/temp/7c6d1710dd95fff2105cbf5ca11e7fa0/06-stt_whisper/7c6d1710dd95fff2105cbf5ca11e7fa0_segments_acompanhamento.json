@@ -1,0 +1,58 @@
+{
+  "7c6d1710dd95fff2105cbf5ca11e7fa0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.804",
+    "duracao": 3.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6000474691390991,
+    "mos_stoi": 0.8480672240257263,
+    "mos_si_sdr": 10.451473236083984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "uma grande massa cinzenta, uma massa crítica pensante."
+  },
+  "7c6d1710dd95fff2105cbf5ca11e7fa0_002.ogg": {
+    "tempo_inicio": "00:00:04.324",
+    "tempo_fim": "00:00:09.564",
+    "duracao": 5.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.691533088684082,
+    "mos_stoi": 0.7914739847183228,
+    "mos_si_sdr": 7.450649261474609,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a liderar o movimento cooperativista, a incomodar o status quo,"
+  },
+  "7c6d1710dd95fff2105cbf5ca11e7fa0_003.ogg": {
+    "tempo_inicio": "00:00:09.956",
+    "tempo_fim": "00:00:15.484",
+    "duracao": 5.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1552627086639404,
+    "mos_stoi": 0.8612988591194153,
+    "mos_si_sdr": 7.944533348083496,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a sair das caixinhas, a pensar diferente, para atualizar, para se modernizar."
+  },
+  "7c6d1710dd95fff2105cbf5ca11e7fa0_004.ogg": {
+    "tempo_inicio": "00:00:15.844",
+    "tempo_fim": "00:00:20.168",
+    "duracao": 4.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4228922128677368,
+    "mos_stoi": 0.7534481287002563,
+    "mos_si_sdr": 0.4333755373954773,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "das respostas que a sociedade espera de uma cooperativa moderna."
+  }
+}

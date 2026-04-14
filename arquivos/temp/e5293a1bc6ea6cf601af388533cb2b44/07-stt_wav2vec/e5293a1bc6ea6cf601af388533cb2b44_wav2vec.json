@@ -1,0 +1,17 @@
+{
+  "e5293a1bc6ea6cf601af388533cb2b44_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:11.064",
+    "duracao": 11.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4543330669403076,
+    "mos_stoi": 0.9294419884681702,
+    "mos_si_sdr": 14.038572311401367,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "em termos raciais. Essa presença negra, então ele enfatiza novamente que não era necessário ter trago esses negros e de certa forma teria manchado",
+    "stt_wav2vec": "EMTERMOS AS RA RACIAIS ESSA PRESENÇANEGRA EM TONLHE ENFATIZA NOVAMENTE QUE NO ERA NECESSÁRIO TETRAGO ESSES NEGROS E DE CERTA FORMA TERIA MANCHADO"
+  }
+}

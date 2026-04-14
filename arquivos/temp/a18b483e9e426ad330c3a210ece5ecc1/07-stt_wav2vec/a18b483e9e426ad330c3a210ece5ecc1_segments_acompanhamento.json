@@ -1,0 +1,47 @@
+{
+  "a18b483e9e426ad330c3a210ece5ecc1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.228",
+    "duracao": 11.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.693070888519287,
+    "mos_stoi": 0.9521188735961914,
+    "mos_si_sdr": 24.328777313232422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu não concordo. Eu acho que não tenho porquê desfazer uma dupla assim. Ainda mais com o Musto jogando como quase um zagueiro. Então...",
+    "stt_wav2vec": "EU NÃO CONCORDO NÃO ACHO QUE NÃO TENHO POR QUE DES FAZER UMA DUPLA ASSIM AINDA MAIS QUE U MUSTO JOGANDO COMO QUAIS UM ZAIGUER ENTÃO"
+  },
+  "a18b483e9e426ad330c3a210ece5ecc1_002.ogg": {
+    "tempo_inicio": "00:00:12.132",
+    "tempo_fim": "00:00:16.636",
+    "duracao": 4.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.883100986480713,
+    "mos_stoi": 0.9653537273406982,
+    "mos_si_sdr": 25.203826904296875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não concordo, queria o Moledo. Eu acho que o Inter precisa de um zagueiro, assim, mas...",
+    "stt_wav2vec": null
+  },
+  "a18b483e9e426ad330c3a210ece5ecc1_003.ogg": {
+    "tempo_inicio": "00:00:17.476",
+    "tempo_fim": "00:00:21.320",
+    "duracao": 3.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3389410972595215,
+    "mos_stoi": 0.9939857125282288,
+    "mos_si_sdr": 25.044635772705078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas casca grossa. Mas é o nosso treinador aí.",
+    "stt_wav2vec": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "9275e0b71973927f7b7d46e49a4d5d80_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.136",
+    "duracao": 4.13,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.870152473449707,
+    "mos_stoi": 0.9214255213737488,
+    "mos_si_sdr": 17.372941970825195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Emengarda, você tem mesmo sete saias de Filó?"
+  }
+}

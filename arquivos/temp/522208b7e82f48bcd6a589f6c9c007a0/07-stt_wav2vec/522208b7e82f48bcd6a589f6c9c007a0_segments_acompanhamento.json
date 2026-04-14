@@ -1,0 +1,17 @@
+{
+  "522208b7e82f48bcd6a589f6c9c007a0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.742",
+    "duracao": 7.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6781094074249268,
+    "mos_stoi": 0.8028172850608826,
+    "mos_si_sdr": 11.927815437316895,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Metade virou polícia, metade virou ladrão. Nesse momento, Sônia, só eu estou vivo. Todo Jamoel.",
+    "stt_wav2vec": "METADE VIROU POLÍCIA METADE VEVO LADRÃO NESSE MOMENTO SONIA SÓ EU TO VIVO TODOS JAMOERO"
+  }
+}

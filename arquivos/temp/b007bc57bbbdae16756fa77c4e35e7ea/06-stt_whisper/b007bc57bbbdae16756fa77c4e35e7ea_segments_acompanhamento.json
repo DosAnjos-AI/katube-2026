@@ -1,0 +1,30 @@
+{
+  "b007bc57bbbdae16756fa77c4e35e7ea_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.676",
+    "duracao": 3.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0836572647094727,
+    "mos_stoi": 0.9617610573768616,
+    "mos_si_sdr": 22.962114334106445,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Temos 100% também que gostaram das aulas de investir melhor."
+  },
+  "b007bc57bbbdae16756fa77c4e35e7ea_002.ogg": {
+    "tempo_inicio": "00:00:03.972",
+    "tempo_fim": "00:00:09.628",
+    "duracao": 5.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.553313732147217,
+    "mos_stoi": 0.8668981194496155,
+    "mos_si_sdr": 9.795839309692383,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "As aulas de fiscalidade de declarações, 83% ficou satisfeito com essa aula."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "62e5145a8f29e351dfa160fd7593edff_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.296",
+    "duracao": 4.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8930145502090454,
+    "mos_stoi": 0.9297444224357605,
+    "mos_si_sdr": 11.831157684326172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho que aí na realidade, lá está a primeira"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "2fb5ada9a1434b4833632d3bbb84202d_001.flac": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:17.934",
+    "duracao": 17.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Eu tenho que ficar lá nas Austrálias e tal. Sabia que a patrão dela se chama, o sobrenome dela é Wilson? Eu achei louco isso. É Rita Wilson. Cosminha, pra quem tá chegando esse planeta hoje? Por que a gente tá rindo dela se chamar Wilson? Tem um filme clássico chamado Náufrago, que ele vai pra uma ilha deserta. É que ele vai.",
+    "stt_wav2vec": "ACALA NAS AUSTRÁLIA CATANE SABER QUE A PATROL DELA SE CHAMA EU SOBNOME DERA UILSON MERCHEINHO GOLDGO DAO AA RITA UILSON VAS MINHA BRAQUETA CHEGAR NESSE PLANETA HOJE PORQUE QUEM E ESTAR RENDO DEMAU ILSO EM UM FILME CLÁSSICO CHAMADO NÁUFRAGO EM QUE ELE VAI PRA POR UMA ILHA DESERTA É QUEMLHE VAI",
+    "stt_leg_normalizado": null,
+    "stt_whisper_normalizado": "eu tenho que ficar la nas australias e tal sabia que a patrao dela se chama o sobrenome dela e wilson eu achei louco isso e rita wilson cosminha pra quem ta chegando esse planeta hoje por que a gente ta rindo dela se chamar wilson tem um filme classico chamado naufrago que ele vai pra uma ilha deserta e que ele vai",
+    "stt_wav2vec_normalizado": "acala nas australia catane saber que a patrol dela se chama eu sobnome dera uilson mercheinho goldgo dao aa rita uilson vas minha braqueta chegar nesse planeta hoje porque quem e estar rendo demau ilso em um filme classico chamado naufrago em que ele vai pra por uma ilha deserta e quemlhe vai",
+    "sim_leg_whisper": null,
+    "sim_leg_wav2vec": null,
+    "sim_whisper_wav2vec": 0.6993670886075949,
+    "nota_similaridade": 0.6993670886075949,
+    "status_similaridade": "aprovado",
+    "metrica_similaridade": "wer",
+    "utilizou_denoiser": false,
+    "sox_sample_rate": 16000,
+    "sox_bit_depth": 16,
+    "sox_channels": 1,
+    "sox_output_format": "flac",
+    "sox_normalize_method": "rms",
+    "sox_target_level_db": -3.0,
+    "sox_remove_silence": true,
+    "utilizou_sox": true
+  }
+}

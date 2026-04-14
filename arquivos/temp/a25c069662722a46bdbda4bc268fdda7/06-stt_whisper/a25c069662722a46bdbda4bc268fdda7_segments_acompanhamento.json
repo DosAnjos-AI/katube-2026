@@ -1,0 +1,44 @@
+{
+  "a25c069662722a46bdbda4bc268fdda7_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.748",
+    "duracao": 14.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2591724395751953,
+    "mos_stoi": 0.9848935008049011,
+    "mos_si_sdr": 22.090715408325195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Temos em Guapore, revenda de semi-joias, onde antes da paralisação estávamos trabalhando com a venda pessoal através de kits consignados. Agora estamos nos reinventando e atuando através da venda."
+  },
+  "a25c069662722a46bdbda4bc268fdda7_002.ogg": {
+    "tempo_inicio": "00:00:14.948",
+    "tempo_fim": "00:00:25.788",
+    "duracao": 10.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2951297760009766,
+    "mos_stoi": 0.971761167049408,
+    "mos_si_sdr": 22.93701171875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "através da venda no atacado online pela nossa página do Instagram. Fazemos frete grátis para todo o Sul, Sudeste e Centro-Oeste do Brasil."
+  },
+  "a25c069662722a46bdbda4bc268fdda7_003.ogg": {
+    "tempo_inicio": "00:00:25.924",
+    "tempo_fim": "00:00:31.752",
+    "duracao": 5.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.791445255279541,
+    "mos_stoi": 0.9776625633239746,
+    "mos_si_sdr": 22.760360717773438,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "com o pedido mínimo super acessível. Nossa página, arroba sofisticada."
+  }
+}

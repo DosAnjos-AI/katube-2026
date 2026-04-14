@@ -1,0 +1,17 @@
+{
+  "a0fc790c667eb5bd144771e7acb46bf7_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.176",
+    "duracao": 9.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.993591070175171,
+    "mos_stoi": 0.9743735790252686,
+    "mos_si_sdr": 23.603790283203125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "prático, um fim útil. E esse fim útil não é o shopping mais perto. É algo que dê, então, para mais tarde poder sofrer do shopping.",
+    "stt_wav2vec": "PRATICO UM FILME O ZIGO E ASSEFE INÚTEL NÃO É O CHOPEM MAIS FERTO É ALGO QUE DIA ENTÃO PARA MAIS TARDE O DEUS DEFREDO OVEN"
+  }
+}

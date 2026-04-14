@@ -1,0 +1,58 @@
+{
+  "8fa7879e9225245827d355dc301e151f_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:07.388",
+    "duracao": 7.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.502479076385498,
+    "mos_stoi": 0.9496435523033142,
+    "mos_si_sdr": 13.974665641784668,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Além disso, Kelsey fala que a indeterminação está ligada aos fatos exposto pelo autor da norma."
+  },
+  "8fa7879e9225245827d355dc301e151f_002.ogg": {
+    "tempo_inicio": "00:00:07.972",
+    "tempo_fim": "00:00:13.468",
+    "duracao": 5.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.148144006729126,
+    "mos_stoi": 0.9596316814422607,
+    "mos_si_sdr": 18.806739807128906,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "tendo relação com os pressupostos condicionados da norma. Ou seja..."
+  },
+  "8fa7879e9225245827d355dc301e151f_003.ogg": {
+    "tempo_inicio": "00:00:13.732",
+    "tempo_fim": "00:00:28.348",
+    "duracao": 14.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.462566375732422,
+    "mos_stoi": 0.9408137798309326,
+    "mos_si_sdr": 12.287211418151855,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "é quando a norma superior pressupõe que a norma inferior irá estabelecer ações para que o que foi expresso nela seja devidamente executado pelo órgão que rege a aplicação da lei inferior."
+  },
+  "8fa7879e9225245827d355dc301e151f_004.ogg": {
+    "tempo_inicio": "00:00:28.708",
+    "tempo_fim": "00:00:36.732",
+    "duracao": 8.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.917621612548828,
+    "mos_stoi": 0.9596902132034302,
+    "mos_si_sdr": 18.956829071044922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "executando assim uma sequência quanto ao escalonamento das normas no âmbito de aplicação."
+  }
+}

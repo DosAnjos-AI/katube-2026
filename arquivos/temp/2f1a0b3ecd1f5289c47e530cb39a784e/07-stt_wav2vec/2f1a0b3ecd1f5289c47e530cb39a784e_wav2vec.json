@@ -1,0 +1,17 @@
+{
+  "2f1a0b3ecd1f5289c47e530cb39a784e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.292",
+    "duracao": 7.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3862972259521484,
+    "mos_stoi": 0.9674071669578552,
+    "mos_si_sdr": 16.89440155029297,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas, além disso, a Bia também é uma das criadoras e realizadoras do projeto, assim como eu e a Gabi.",
+    "stt_wav2vec": "MAS ALÉM DISSO HABIA TAMBÉM É UM DAS CRIADORAS E ALUSADORES DO PROJETO ASSIM COMO EU E AGABI"
+  }
+}

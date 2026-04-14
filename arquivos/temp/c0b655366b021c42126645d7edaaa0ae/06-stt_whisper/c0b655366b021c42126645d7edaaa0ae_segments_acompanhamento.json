@@ -1,0 +1,16 @@
+{
+  "c0b655366b021c42126645d7edaaa0ae_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.894",
+    "duracao": 4.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.997469902038574,
+    "mos_stoi": 0.9314619898796082,
+    "mos_si_sdr": 15.103726387023926,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu de recuso-me até vocês resolverem este problema E nós não podemos fazer isso"
+  }
+}

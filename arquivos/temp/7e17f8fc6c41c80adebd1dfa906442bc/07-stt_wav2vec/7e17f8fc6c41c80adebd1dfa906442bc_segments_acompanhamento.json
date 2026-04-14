@@ -1,0 +1,17 @@
+{
+  "7e17f8fc6c41c80adebd1dfa906442bc_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:20.030",
+    "duracao": 20.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5827701091766357,
+    "mos_stoi": 0.9840760827064514,
+    "mos_si_sdr": 18.157371520996094,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cara, saiu no Globo Esporte hoje, de tarde, início da tarde ali, que, tipo, no jogo do Fluminense que acontecia no jogo, eles estavam testando de manhã os atletas relacionados pra jogo e dois jogadores do Volta Redonda testaram positivo pra Covid e já foram tirados do negócio. Só que se os caras testaram positivo no dia do jogo, os caras já estavam com o bagulho nos treinos, tá ligado?",
+    "stt_wav2vec": "USAU  SÉU NO GLOBSPORTE HOJE DEDE D DE TARDE INÍCIA DA TARDE ALI QUE TPO NO JOGO DO FLUMINENSE ACONTECER O JOGO DELISTAVAM TESTANDO DE MANHÃ OS ATLETAS RELACIONADOS PARA JOGO E DOIS JOGADORES DO VOLTA REDONDA TESTARAM POSITIVO PARA COVIDE E JÁ FORAM TIRADOS DO DO NEGÓCIO SÓ QUE US CARA TESTARAM POSITIVO NO DIA DO JOGO ESCARA JATAVAM COBAGULHA NOS TRENO"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "516adb05b9d0fc89805b9bc0a5d7085b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.254",
+    "duracao": 6.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9914002418518066,
+    "mos_stoi": 0.8991086483001709,
+    "mos_si_sdr": 7.723348140716553,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Depois nós mudávamos o estatuto, não é? Quando estávamos mal com alguém, mudávamos o estatuto."
+  }
+}

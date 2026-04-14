@@ -1,0 +1,32 @@
+{
+  "37531f39ba10e987d8de0b7a8c64f15f_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:13.756",
+    "duracao": 13.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2254818677902222,
+    "mos_stoi": 0.72207111120224,
+    "mos_si_sdr": -0.5916575193405151,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "37531f39ba10e987d8de0b7a8c64f15f_002.ogg": {
+    "tempo_inicio": "00:00:14.244",
+    "tempo_fim": "00:00:20.558",
+    "duracao": 6.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.481456995010376,
+    "mos_stoi": 0.8060742020606995,
+    "mos_si_sdr": 3.2275161743164062,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e não perder o jogo que ele passou o tempo, vamos ver o que está sendo criticado. As interpretações diferentes. Cara, do Guerreiro.",
+    "stt_wav2vec": "NÃO PERDEU O JOGO QUE LE MAS OU TEMPO AO MORRIU GACANDO PESCADO OU AS SÓ EMPRESÕES DE FERCARABRIR EENO"
+  }
+}

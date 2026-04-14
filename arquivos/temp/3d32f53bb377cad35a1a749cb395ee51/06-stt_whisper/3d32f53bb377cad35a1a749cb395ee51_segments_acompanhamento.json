@@ -1,0 +1,16 @@
+{
+  "3d32f53bb377cad35a1a749cb395ee51_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.062",
+    "duracao": 6.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.087195873260498,
+    "mos_stoi": 0.9432776570320129,
+    "mos_si_sdr": 22.53145408630371,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a gente discute os dados com suas éticas, com suas normas, com suas regras."
+  }
+}

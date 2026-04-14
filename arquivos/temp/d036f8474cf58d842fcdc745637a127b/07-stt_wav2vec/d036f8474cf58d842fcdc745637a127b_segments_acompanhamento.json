@@ -1,0 +1,47 @@
+{
+  "d036f8474cf58d842fcdc745637a127b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.228",
+    "duracao": 11.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2347297668457031,
+    "mos_stoi": 0.8390608429908752,
+    "mos_si_sdr": 4.147740364074707,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E a gente queria saber o que vocês estão achando do podcast. Vocês estão gostando. Vocês queriam que a gente continuasse. Se tem alguma dica de livro. Tá bom? A gente vai adorar saber como é que vocês estão achando.",
+    "stt_wav2vec": "E A GENTE QUERIA SABER QUE QUE SE ESTÃO ACHANDO PADQUETE VOCÊ ESTÃO GOSTANDO SE AS QUERIAM QUE A GENTE CONTINUASSE SE TEM ALGUMA DICA DE LIVRO TÁ BOM A GENTE VAI ADORAR SABER COMO É QUE QUE SE ESTÃO ACHANDO"
+  },
+  "d036f8474cf58d842fcdc745637a127b_002.ogg": {
+    "tempo_inicio": "00:00:11.588",
+    "tempo_fim": "00:00:24.700",
+    "duracao": 13.11,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3453216552734375,
+    "mos_stoi": 0.8541271090507507,
+    "mos_si_sdr": 2.8953490257263184,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "d036f8474cf58d842fcdc745637a127b_003.ogg": {
+    "tempo_inicio": "00:00:25.060",
+    "tempo_fim": "00:00:31.608",
+    "duracao": 6.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.061520576477051,
+    "mos_stoi": 0.9021818041801453,
+    "mos_si_sdr": 9.529732704162598,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Isso mesmo. E aí vocês podem espalhar pra todo mundo, divulgar pros amigos, pros coleguinhas.",
+    "stt_wav2vec": null
+  }
+}

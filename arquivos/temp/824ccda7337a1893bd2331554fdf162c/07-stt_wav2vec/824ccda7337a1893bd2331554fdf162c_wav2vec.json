@@ -1,0 +1,17 @@
+{
+  "824ccda7337a1893bd2331554fdf162c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.022",
+    "duracao": 9.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.485968589782715,
+    "mos_stoi": 0.9568005204200745,
+    "mos_si_sdr": 13.586421966552734,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Agora, pagar funcionários também vou deixar três minhas, até para você me pagar, não é? Mas há gente também, uma pessoa, ok, vamos fazer, todos os contabilistas também foram médicos, não é?",
+    "stt_wav2vec": "OLHO SE EU PAGAR AR FUNCIONÁRIOS TAMBÉM BOU DEIXAR PORA ESNIDA PÉ VOCER MO PAGAR NÃO É A MA DAAGENTE TAMBÉM UMA BESOA CAIVAMOS FAZIEIRO BRÁBULO TUDOS QUANTO ALWÍSTAS TAMBÉM FOI MÉRICAS NÃO É"
+  }
+}

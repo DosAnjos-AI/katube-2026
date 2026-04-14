@@ -1,0 +1,17 @@
+{
+  "0d9b583de953bf70aa80abea5cba2aec_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.620",
+    "duracao": 6.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.619375228881836,
+    "mos_stoi": 0.9614005088806152,
+    "mos_si_sdr": 16.58867645263672,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu não duvido. Aqui no Grâmio tem o cargo de auxiliar se ele quiser vir. Fica no banquinho, vê o jogo de perto, tá bom?",
+    "stt_wav2vec": "ENÃO DEVIBE AQUI NO GRANDE TENHO UM CARGO DE AUXILIAR SE ELHE QUISER VIR FICA NO BANQUINHO MEU JOGO TE PERTA BOM"
+  }
+}

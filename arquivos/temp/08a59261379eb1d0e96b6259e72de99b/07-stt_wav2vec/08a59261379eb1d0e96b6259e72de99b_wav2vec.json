@@ -1,0 +1,17 @@
+{
+  "08a59261379eb1d0e96b6259e72de99b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.374",
+    "duracao": 5.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9653775691986084,
+    "mos_stoi": 0.9165293574333191,
+    "mos_si_sdr": 16.629066467285156,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele era diretor do Teatro Nacional até o ano passado ou retrasado.",
+    "stt_wav2vec": "ELE IRÁ O DIRETOR DE TEATRO NO NACIONAL ATÉ O ANO PASSADO O RETAÇADO"
+  }
+}

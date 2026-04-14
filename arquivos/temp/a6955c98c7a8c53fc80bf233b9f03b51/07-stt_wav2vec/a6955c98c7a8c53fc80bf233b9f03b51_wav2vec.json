@@ -1,0 +1,32 @@
+{
+  "a6955c98c7a8c53fc80bf233b9f03b51_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.980",
+    "duracao": 5.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9710853099822998,
+    "mos_stoi": 0.9360414743423462,
+    "mos_si_sdr": 9.524840354919434,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que é bem viável de fazer os 15 pontos ali, ou 12 pontos no caso, são 4 jogos.",
+    "stt_wav2vec": "É BEM VIAVEL O TE FAZER OS QUINZE PONTOS ALEOU O NOO DOZE PONTOS NO CASO SÃO QUATRO JOGOS"
+  },
+  "a6955c98c7a8c53fc80bf233b9f03b51_002.ogg": {
+    "tempo_inicio": "00:00:06.084",
+    "tempo_fim": "00:00:16.924",
+    "duracao": 10.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1940178871154785,
+    "mos_stoi": 0.9726936221122742,
+    "mos_si_sdr": 14.631845474243164,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Antes da Libertadores, o Inter tem esse conflonto contra o Palmeiras, que eu também concordo com o Dani pensando em campeonato, o empate não seria o mau resultado, porque depois pega o Bahia e Ceará em casa e o Goiás fora.",
+    "stt_wav2vec": "ANTES DELIBERTADORES O INTERTENENCE CNFONTO QUNTO PALMEIRAS QUE EU TAMBÉM CONCORDO COM DENINTENÇANDO EM CAMPEONATO O EMPATE NÃO SERIA O MA RESULTADO PORQUE DEPOIS PEGA O BAHI E SEARÁ EM CASA E O GOIAS FORA"
+  }
+}

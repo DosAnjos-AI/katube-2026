@@ -1,0 +1,30 @@
+{
+  "bb1506d19d6628e4325321afe7ab0a6f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.180",
+    "duracao": 5.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3411426544189453,
+    "mos_stoi": 0.9792674779891968,
+    "mos_si_sdr": 22.57516098022461,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "da formação histórica social. Nasceu em Recife, em 15 de março, de 1900."
+  },
+  "bb1506d19d6628e4325321afe7ab0a6f_002.ogg": {
+    "tempo_inicio": "00:00:05.572",
+    "tempo_fim": "00:00:15.864",
+    "duracao": 10.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5971107482910156,
+    "mos_stoi": 0.9730298519134521,
+    "mos_si_sdr": 15.865882873535156,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "fez arte liberais nos Estados Unidos, na Universidade de Beilon, em 1920, e se tornou mestre em arte pela Universidade de Colômbia, em 2022."
+  }
+}

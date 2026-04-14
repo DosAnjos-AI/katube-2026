@@ -1,0 +1,32 @@
+{
+  "6eab1eac71add8500fe7a4309133e0e8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.060",
+    "duracao": 8.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4305779933929443,
+    "mos_stoi": 0.9484270811080933,
+    "mos_si_sdr": 23.141199111938477,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mais uma noite de confraria do futebol para alegrar esse nosso fim de semana de quarentena, esse inferno, que a gente não aguenta mais.",
+    "stt_wav2vec": "MAIS UMA NOITE DE CONFRARIA DO FUTEBOL PRA ALEGRAR ESSE NOSSO FINTE SEMANA DE QUARENTENAENC INFERNO QEINTE NOVENTA MAIS"
+  },
+  "6eab1eac71add8500fe7a4309133e0e8_002.ogg": {
+    "tempo_inicio": "00:00:08.612",
+    "tempo_fim": "00:00:17.500",
+    "duracao": 8.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9585593938827515,
+    "mos_stoi": 0.8679462671279907,
+    "mos_si_sdr": 15.554312705993652,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E o meu destaque vai ser para um dos nossos principais assuntos de hoje, que é o Arthur que vai deitar na Itália e vai pifar o robô o dia todo nos jogos lá.",
+    "stt_wav2vec": "EU ME OBSTAQUE VAI SER PRO ANDO NÓSS PONQUASES ASSUNPTOS DE HOJE QUE ÉO ARTUR QUE VAI DEITAR NA ITARIA E VAI PEFAL O ROUBOU DIA TODO NO JOGOS LA"
+  }
+}

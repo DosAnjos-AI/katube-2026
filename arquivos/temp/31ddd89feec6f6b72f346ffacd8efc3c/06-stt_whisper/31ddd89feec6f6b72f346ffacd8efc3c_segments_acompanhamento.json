@@ -1,0 +1,16 @@
+{
+  "31ddd89feec6f6b72f346ffacd8efc3c_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:14.734",
+    "duracao": 14.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9239671230316162,
+    "mos_stoi": 0.9712746739387512,
+    "mos_si_sdr": 14.649333953857422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O que eu utilizo é pagar uma taxa de 7€ a mais, por exemplo, e ter a opção de cancelamento ou então de modificação de datas. E isso permite-me poupar muito. Para dar aqui valores certos."
+  }
+}

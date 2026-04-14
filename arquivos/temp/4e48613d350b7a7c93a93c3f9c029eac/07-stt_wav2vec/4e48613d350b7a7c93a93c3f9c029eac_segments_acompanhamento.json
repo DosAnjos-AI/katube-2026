@@ -1,0 +1,17 @@
+{
+  "4e48613d350b7a7c93a93c3f9c029eac_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.740",
+    "duracao": 3.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.505160093307495,
+    "mos_stoi": 0.975721001625061,
+    "mos_si_sdr": 26.323780059814453,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ajuvenho no sentido, se fosse particular.",
+    "stt_wav2vec": "AGILVEN NU SENTIDO SE FOSSE PARTICULAR"
+  }
+}

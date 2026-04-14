@@ -1,0 +1,17 @@
+{
+  "d2be1263d169ed6a36aa54aaa3b7f06d_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.852",
+    "duracao": 5.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.242631673812866,
+    "mos_stoi": 0.9222509264945984,
+    "mos_si_sdr": 8.204001426696777,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho que gostaria de falar de três coisas. Sim, eu penso. Primeiro, essa...",
+    "stt_wav2vec": "ODIODIO ALHO QUE SE CORTARIA EFALAR DE TRÊS COISAS SIGUE O PENAS O PRIMEIRO E SAARA"
+  }
+}

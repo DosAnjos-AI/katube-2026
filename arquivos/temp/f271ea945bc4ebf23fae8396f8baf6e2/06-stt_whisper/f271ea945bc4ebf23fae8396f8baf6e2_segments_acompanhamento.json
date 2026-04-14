@@ -1,0 +1,30 @@
+{
+  "f271ea945bc4ebf23fae8396f8baf6e2_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:16.348",
+    "duracao": 16.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9962153434753418,
+    "mos_stoi": 0.976746678352356,
+    "mos_si_sdr": 19.1561222076416,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Fortão Boa Pinta da Esquina, o miliciano, gente boa, será o seu tirano de amanhã. O libertador dos medos fabricados de agora será o achacador calculista que fabricará sucessivas ameaças para seguir exigindo a venda de proteção."
+  },
+  "f271ea945bc4ebf23fae8396f8baf6e2_002.ogg": {
+    "tempo_inicio": "00:00:16.484",
+    "tempo_fim": "00:00:26.478",
+    "duracao": 9.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.169001817703247,
+    "mos_stoi": 0.9761350750923157,
+    "mos_si_sdr": 19.142683029174805,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Este é o negócio político da proteção que produz o controle ilegal sobre territórios e populações e com isso regula os mercados ilegais."
+  }
+}

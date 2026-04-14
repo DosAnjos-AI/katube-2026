@@ -1,0 +1,32 @@
+{
+  "bce5431f62bc11780a5eeca692afa3e3_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.348",
+    "duracao": 8.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8345556259155273,
+    "mos_stoi": 0.9310930967330933,
+    "mos_si_sdr": 18.192035675048828,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Bem-vinda. Obrigada. Eu que agradeço. Vamos ver quem eu posso ajudar falando alguma coisa que seja útil.",
+    "stt_wav2vec": "EM VINDA BRIGADA É O QUE AGRADEÇO VAMOS VER QUE QUE A POSSA AJUDAR FALANDO ALGUMA COISA QUE SEJA ÚTIL"
+  },
+  "bce5431f62bc11780a5eeca692afa3e3_002.ogg": {
+    "tempo_inicio": "00:00:08.900",
+    "tempo_fim": "00:00:17.736",
+    "duracao": 8.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.383074164390564,
+    "mos_stoi": 0.8216539621353149,
+    "mos_si_sdr": 1.3384846448898315,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Você tem total competência para isso. Sônia, você é uma mulher de teatro, de dança, que escreve, que ensina.",
+    "stt_wav2vec": "RVOSESE SE TEM VOCÊ TEM TOTAL COMPETÊNCIA PRA ISSO SONHA VOCÊ É UMA MULHER DE TEATRO DE DANÇA QUE ESCREVE ENSINA"
+  }
+}

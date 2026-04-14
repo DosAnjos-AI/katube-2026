@@ -1,0 +1,17 @@
+{
+  "3428f27dbb5ede9bf1fb563fbbfcd4be_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.614",
+    "duracao": 5.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.016461133956909,
+    "mos_stoi": 0.9498275518417358,
+    "mos_si_sdr": 20.1126766204834,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "não me afetam mais, já me afetaram, mas há muito tempo já não me afeta.",
+    "stt_wav2vec": "NÃO ME AFETAM MAIS JÁ ME AFETARAM MAS HOJE O HÁ MUITO TEMPO JÁ NÃO ME AFETA"
+  }
+}

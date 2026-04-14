@@ -1,0 +1,58 @@
+{
+  "c884175a77d34b097f26d6817d2aa068_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.604",
+    "duracao": 4.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.715486526489258,
+    "mos_stoi": 0.9566482901573181,
+    "mos_si_sdr": 15.391987800598145,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É um livro lindo, gente, pessoal que tá ouvindo. Ele é um livro muito bem ilustrado..."
+  },
+  "c884175a77d34b097f26d6817d2aa068_002.ogg": {
+    "tempo_inicio": "00:00:04.900",
+    "tempo_fim": "00:00:12.156",
+    "duracao": 7.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5825204849243164,
+    "mos_stoi": 0.9643335342407227,
+    "mos_si_sdr": 22.49068832397461,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E ele, 1% do preço da capa do livro, vai ser doado pro Greenpeace Brasil, pela editora Carochinha."
+  },
+  "c884175a77d34b097f26d6817d2aa068_003.ogg": {
+    "tempo_inicio": "00:00:12.516",
+    "tempo_fim": "00:00:24.060",
+    "duracao": 11.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9016027450561523,
+    "mos_stoi": 0.931343674659729,
+    "mos_si_sdr": 13.586525917053223,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu achei muito bonito e muito legal a história. O que você achou, Clarinha? Muito divertido esse livro de aleta. Muito bem ilustrada pela Zoe Perstiko."
+  },
+  "c884175a77d34b097f26d6817d2aa068_004.ogg": {
+    "tempo_inicio": "00:00:24.388",
+    "tempo_fim": "00:00:30.960",
+    "duracao": 6.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0059165954589844,
+    "mos_stoi": 0.9489104151725769,
+    "mos_si_sdr": 22.898624420166016,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Muito bem escrito pela Luitucca. É, amor, que bom que você gostou."
+  }
+}

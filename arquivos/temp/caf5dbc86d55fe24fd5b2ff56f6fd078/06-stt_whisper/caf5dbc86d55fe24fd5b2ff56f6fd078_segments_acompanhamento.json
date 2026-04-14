@@ -1,0 +1,44 @@
+{
+  "caf5dbc86d55fe24fd5b2ff56f6fd078_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.692",
+    "duracao": 5.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4027624130249023,
+    "mos_stoi": 0.8472738265991211,
+    "mos_si_sdr": 13.726232528686523,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "concordo com tudo isso. Mas agora tu pega o histórico do COP, que sai do mais 0,5,"
+  },
+  "caf5dbc86d55fe24fd5b2ff56f6fd078_002.ogg": {
+    "tempo_inicio": "00:00:05.956",
+    "tempo_fim": "00:00:19.772",
+    "duracao": 13.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4432308673858643,
+    "mos_stoi": 0.9389212727546692,
+    "mos_si_sdr": 15.29172420501709,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "caf5dbc86d55fe24fd5b2ff56f6fd078_003.ogg": {
+    "tempo_inicio": "00:00:19.940",
+    "tempo_fim": "00:00:30.174",
+    "duracao": 10.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.26400625705719,
+    "mos_stoi": 0.7463183403015137,
+    "mos_si_sdr": 3.5835156440734863,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

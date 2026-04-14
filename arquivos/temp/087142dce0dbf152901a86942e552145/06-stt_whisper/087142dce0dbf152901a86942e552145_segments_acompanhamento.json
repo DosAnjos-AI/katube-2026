@@ -1,0 +1,44 @@
+{
+  "087142dce0dbf152901a86942e552145_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.524",
+    "duracao": 6.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3351645469665527,
+    "mos_stoi": 0.9228660464286804,
+    "mos_si_sdr": 12.188826560974121,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "São pessoas do sexo feminino, né? Então, quando eu fui pra computação, talvez até pela ignorância também, Bruna, eu não..."
+  },
+  "087142dce0dbf152901a86942e552145_002.ogg": {
+    "tempo_inicio": "00:00:06.692",
+    "tempo_fim": "00:00:19.612",
+    "duracao": 12.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1272096633911133,
+    "mos_stoi": 0.92389976978302,
+    "mos_si_sdr": 14.058744430541992,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu não sentia essa diferença. Então, eu entrei. Depois que eu entrei, eu realmente comecei a sentir que eu era parte de um grupo minoritário. Eu olhava ao meu redor e tentava esconder essa diferença, na verdade. Eu queria..."
+  },
+  "087142dce0dbf152901a86942e552145_003.ogg": {
+    "tempo_inicio": "00:00:19.812",
+    "tempo_fim": "00:00:31.086",
+    "duracao": 11.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.992089867591858,
+    "mos_stoi": 0.9020771980285645,
+    "mos_si_sdr": 11.770833015441895,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "pensar como eles, agir como eles, né, pra que não ficasse em evidência que eu era diferente, né, enfim, que eu podia gostar de exadas, isso é tão bom em cálculo quanto mesmo que eu fosse mulher, enfim. Aí eu comecei a sentir, então..."
+  }
+}

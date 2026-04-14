@@ -1,0 +1,32 @@
+{
+  "7811dc498c7c21ae70cc864c994f733e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.364",
+    "duracao": 6.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.809990167617798,
+    "mos_stoi": 0.9682537913322449,
+    "mos_si_sdr": 12.912432670593262,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "cultura, por mais que tenha feito numa rede social pessoal, ele está representando, em certa medida,",
+    "stt_wav2vec": "CULTURA POR MARQUETENHA FEITO NUMA REDE SOCIAL PESSOAL ELE ESTÁ REPRESSENTANDO E CERTAMENTE IDA"
+  },
+  "7811dc498c7c21ae70cc864c994f733e_002.ogg": {
+    "tempo_inicio": "00:00:06.692",
+    "tempo_fim": "00:00:16.828",
+    "duracao": 10.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.405857563018799,
+    "mos_stoi": 0.9578409194946289,
+    "mos_si_sdr": 10.487943649291992,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a organização. Então, eu acho que esse investimento, essa clareza do que a empresa espera do papel desempregado como a gente transformação é fundamental.",
+    "stt_wav2vec": "ORGANIZAÇÃO NE ENTÃO EU ACHO QUE ESSE INVESTIMENTO PERSA CLAREÇA DO QUE A IMPRENSA ESPERA DO PAPEL DESEMPREGADO COM UMA EM TRANSFORMAÇÃO É FUNDAMENTAL"
+  }
+}

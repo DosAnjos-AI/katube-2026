@@ -1,0 +1,16 @@
+{
+  "43d4e13d85c4e37810bef72957ec330f_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:07.582",
+    "duracao": 7.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.030597448348999,
+    "mos_stoi": 0.9741650223731995,
+    "mos_si_sdr": 15.551569938659668,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Por isso, Mary, queres falar um bocadinho em tua defesa, os primos devem ou não devem investir em dividendos."
+  }
+}

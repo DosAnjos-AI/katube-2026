@@ -1,0 +1,16 @@
+{
+  "ce2c9f3a19245c39950b7d693ba07acb_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.238",
+    "duracao": 14.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1891578435897827,
+    "mos_stoi": 0.7227109670639038,
+    "mos_si_sdr": 0.2488953173160553,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então eu acho que esse jogo vai depender da inspiração dos melhores jogadores do PSG. Mas realmente. Outra coisa importante que pode definir esse confronto são os gols fora de ficar... Ah, é um jogo só, né? Não é mais nada. É um jogo só."
+  }
+}

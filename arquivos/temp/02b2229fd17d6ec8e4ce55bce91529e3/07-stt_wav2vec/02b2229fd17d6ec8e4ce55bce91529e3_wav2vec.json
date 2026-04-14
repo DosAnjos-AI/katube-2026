@@ -1,0 +1,32 @@
+{
+  "02b2229fd17d6ec8e4ce55bce91529e3_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.316",
+    "duracao": 8.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1390089988708496,
+    "mos_stoi": 0.9075907468795776,
+    "mos_si_sdr": 13.863618850708008,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E fiquei muito feliz com o livro. Acho que ela gostaria. Porque ficou muito bonito. Mas esse aqui são cinco contos. O primeiro...",
+    "stt_wav2vec": "FIQUEI MUITO FELIZ COM O LIVRO ACHO QUE ELA GOSTARIA PORQUE FICOU MUITO BONITO MAS ESSE AQUI SÃO CINCO CONTOS O PRIMEIRO"
+  },
+  "02b2229fd17d6ec8e4ce55bce91529e3_002.ogg": {
+    "tempo_inicio": "00:00:08.772",
+    "tempo_fim": "00:00:13.758",
+    "duracao": 4.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.820040702819824,
+    "mos_stoi": 0.9496315121650696,
+    "mos_si_sdr": 23.75961685180664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "é de um menino que vai para febem, por acaso, do nada.",
+    "stt_wav2vec": "É DE UM MENINO QUE VAI PARA FEBEN POR ACASO DO NADA"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "125c25134b1eb936744cce6a52c341a1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.376",
+    "duracao": 6.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Vocês costumam acompanhar algum programa de culinária, algum canal no YouTube que ensina as coisas assim?"
+  }
+}

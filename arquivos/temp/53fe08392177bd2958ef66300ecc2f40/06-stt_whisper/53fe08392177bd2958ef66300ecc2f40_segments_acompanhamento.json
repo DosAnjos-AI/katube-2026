@@ -1,0 +1,16 @@
+{
+  "53fe08392177bd2958ef66300ecc2f40_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.052",
+    "duracao": 5.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.287309169769287,
+    "mos_stoi": 0.9525531530380249,
+    "mos_si_sdr": 15.643163681030273,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para ser assim, o número redondo. Num banco que paga 10€ de comissão, que se calhar até é mais."
+  }
+}

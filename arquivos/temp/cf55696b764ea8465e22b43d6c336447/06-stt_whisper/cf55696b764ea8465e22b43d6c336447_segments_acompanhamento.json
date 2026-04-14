@@ -1,0 +1,30 @@
+{
+  "cf55696b764ea8465e22b43d6c336447_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.140",
+    "duracao": 10.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9224843978881836,
+    "mos_stoi": 0.9632344245910645,
+    "mos_si_sdr": 16.59819221496582,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a pura habilidade de conhecer o sentido das normas jurídicas. E, diferentemente da interpretação feita pelos órgãos jurídicos, ela não é criação jurídica."
+  },
+  "cf55696b764ea8465e22b43d6c336447_002.ogg": {
+    "tempo_inicio": "00:00:10.532",
+    "tempo_fim": "00:00:24.158",
+    "duracao": 13.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.72056245803833,
+    "mos_stoi": 0.965606153011322,
+    "mos_si_sdr": 20.887474060058594,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A ideia de que essa interpretação criaria um direito novo é o fundamento da chamada jurisprudência dos conceitos e esta é repudiada pela teoria pura do direito. Logo, a interpretação da ciência jurídica"
+  }
+}

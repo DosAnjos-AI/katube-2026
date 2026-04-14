@@ -1,0 +1,17 @@
+{
+  "29cdcc19255649d853f0f529d2de121d_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:07.790",
+    "duracao": 7.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.311800241470337,
+    "mos_stoi": 0.9849902987480164,
+    "mos_si_sdr": 24.12108039855957,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quero aqui compartilhar um exemplo que a gente pôde viver de perto aqui na árvore. A gente viu o Ronaldo Ribeiro, CEO da Farmax, cliente da Árvore.",
+    "stt_wav2vec": "QUERO QUE COMPARTILHÁ UM EXEMPLO QUE A GENTE PÔDE VIVER DE PERTO AQUI NA ÁRVORE A GENTE VI RONALDO RIBEIRO CIOU DA FARMAX CLIENTE DA ÁRVORE"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "43bff5fd723236e5d2298afb4ecb569f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.574",
+    "duracao": 10.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7687640190124512,
+    "mos_stoi": 0.9287145733833313,
+    "mos_si_sdr": 9.278258323669434,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E já pensando na próxima rodada, que nem o Juan já levantou contra o Palmeiras. O Palmeiras que está invicto ainda no campeonato, mas empatou contra o Bahia por um a um nessa rodada agora.",
+    "stt_wav2vec": "E JÁ PENSANDO NA PRÓXIMA RODADA QUE NEM O RUA JÁ LEVANTOU CONTRA O PALMEIRAS O PALMEIRAS QUE TÁ IN VICTO AINDA NO CAMPEONATO MAS EMPATOU CONTRA O BAHIA POR UM A UMNA NESSA RODADA AGORA"
+  }
+}

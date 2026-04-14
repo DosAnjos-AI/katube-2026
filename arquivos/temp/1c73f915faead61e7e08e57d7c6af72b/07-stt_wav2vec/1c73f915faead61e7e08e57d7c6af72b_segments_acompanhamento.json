@@ -1,0 +1,17 @@
+{
+  "1c73f915faead61e7e08e57d7c6af72b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.238",
+    "duracao": 8.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3428525924682617,
+    "mos_stoi": 0.969474196434021,
+    "mos_si_sdr": 20.568593978881836,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "fez transições com o Pégulo ali, ali o Inter respirou um pouco do que estava sofrendo o segundo tempo inteiro.",
+    "stt_wav2vec": "A TRANSIÇÕES COM PEGLOLE ALI O INTRFI RESPIROU UM POUCO DO QUE ESTAVA SOFRENDO O SEGUNDO TEMPO INTEIRO"
+  }
+}

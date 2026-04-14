@@ -1,0 +1,16 @@
+{
+  "b168468524cbf1b35268b1527e48dd6b_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.292",
+    "duracao": 7.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.590470314025879,
+    "mos_stoi": 0.9483127593994141,
+    "mos_si_sdr": 17.283641815185547,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas as substituições do Kudê no segundo tempo, principalmente a do custo, né? Entrando no Lindoso, quando já tava no segundo pênalti ali?"
+  }
+}

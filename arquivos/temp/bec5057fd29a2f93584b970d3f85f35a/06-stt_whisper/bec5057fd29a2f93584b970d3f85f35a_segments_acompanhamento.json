@@ -1,0 +1,16 @@
+{
+  "bec5057fd29a2f93584b970d3f85f35a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.512",
+    "duracao": 5.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.131248950958252,
+    "mos_stoi": 0.9206539988517761,
+    "mos_si_sdr": 2.336042881011963,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "momentaneamente sim. Esse é o campeonato brasileiro mais aberto. Mais aberto, com certeza."
+  }
+}

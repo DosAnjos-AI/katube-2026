@@ -1,0 +1,16 @@
+{
+  "39ab690bcbc4bf0f43ee98e5fd152855_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.356",
+    "duracao": 11.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.096947431564331,
+    "mos_stoi": 0.9237666130065918,
+    "mos_si_sdr": 13.151226043701172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quem trabalha nas festas da aldeia, nas casas esperantes, eles acordam muito cedo e eles não se importam de ir às glóteses pão com churiço, buscar o pão com churiço o dia anterior."
+  }
+}

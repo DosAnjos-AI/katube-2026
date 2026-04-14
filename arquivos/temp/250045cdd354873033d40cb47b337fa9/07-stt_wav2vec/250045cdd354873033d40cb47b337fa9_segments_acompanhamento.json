@@ -1,0 +1,62 @@
+{
+  "250045cdd354873033d40cb47b337fa9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.964",
+    "duracao": 3.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.539205312728882,
+    "mos_stoi": 0.9579911231994629,
+    "mos_si_sdr": 22.688560485839844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então eu acho que dificilmente eles estão para evoluir além disso.",
+    "stt_wav2vec": "ENTÃO ACHO QUE DIFICILMENTE ELES TÃO PRA EVOLOI ALÉM DISSO"
+  },
+  "250045cdd354873033d40cb47b337fa9_002.ogg": {
+    "tempo_inicio": "00:00:04.388",
+    "tempo_fim": "00:00:12.348",
+    "duracao": 7.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.5838003158569336,
+    "mos_stoi": 0.9798281788825989,
+    "mos_si_sdr": 25.075531005859375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então eu não considero que seja um dos cinco Yancors da Liga. Em quinto, eu coloquei no lugar do Sacramento, eu coloquei o Cleveland Cavaliers.",
+    "stt_wav2vec": "ENTO NÃO CONSIDERO QUE SEJA UM DOS CINCO E AN CORS DA LIGA EM QUINTO EU COLOQUEI NO LOGAR DO SACRAMENTO E COLOQUEI O CLIVLA CAVALHEIRES"
+  },
+  "250045cdd354873033d40cb47b337fa9_003.ogg": {
+    "tempo_inicio": "00:00:12.964",
+    "tempo_fim": "00:00:27.132",
+    "duracao": 14.17,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.185590982437134,
+    "mos_stoi": 0.9799740314483643,
+    "mos_si_sdr": 15.040785789489746,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Cleveland Cavaliers, que tem um potencial muito grande aí, vindo do Colin Sexton, que foi Ricestar agora na última temporada, foi chamado para suplente, mas na minha opinião deveria ter sido chamado na primeira chamada.",
+    "stt_wav2vec": "CLIVRAM CAVALHEIRES QUE TEM UM POTENCIAL MUITO GRANDE AHI VINDE DO COLIM SEXTON QUE FOI E RAZ INSTAR AGORA NA ÚLTIMA TEMPORADA FOI CHAMADO PARA SUPLENTE MAS NA MINHA OPINIÃO DEVERIA TER SIDO CHAMADO NA PRIMEIRA CHAMADA"
+  },
+  "250045cdd354873033d40cb47b337fa9_004.ogg": {
+    "tempo_inicio": "00:00:27.556",
+    "tempo_fim": "00:00:38.332",
+    "duracao": 10.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4641923904418945,
+    "mos_stoi": 0.9813855886459351,
+    "mos_si_sdr": 22.013673782348633,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele estava fazendo média de 20 pontos por jogo, apresentou melhora defensiva em relação à primeira temporada e ele estava melhorando ainda mais com a troca de técnico depois da demissão do John Belein.",
+    "stt_wav2vec": "ELE MPTAVA FAZENDO MÉDIA DE VINTE PONTOS POR JOGO APRESENTOU MELHOR A DEFENSIVA EM RELAÇÃO À PRIMEIRA TEMPORADA E ELESTAVA MELHORANDO AINDA MAIS COATROCA DE TÉCNICO DEPOIS DA DEMISSÃO DO DOMBILA"
+  }
+}

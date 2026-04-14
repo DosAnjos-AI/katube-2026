@@ -1,0 +1,17 @@
+{
+  "40977bedd46aa852bf30c22bd2625ea6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.536",
+    "duracao": 8.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0504493713378906,
+    "mos_stoi": 0.9388493895530701,
+    "mos_si_sdr": 19.280433654785156,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não era mais rápido. E eu comecei a segui-lo lá. Foi há 10 anos. Portanto. Já é muito tempo. Que estou no Instagram. E que eu já conheço.",
+    "stt_wav2vec": "NÃO ERA MAIS RÁPIDO E EU CONFIA SEGILA LÁSFEADAS ANES TANDOTO JÁ É MUITO TIMO PORCE  TODO MINSTEGOEMICE OSACO"
+  }
+}

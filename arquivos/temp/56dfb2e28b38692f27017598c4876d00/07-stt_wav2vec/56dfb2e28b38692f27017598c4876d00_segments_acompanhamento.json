@@ -1,0 +1,17 @@
+{
+  "56dfb2e28b38692f27017598c4876d00_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.214",
+    "duracao": 11.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7425804138183594,
+    "mos_stoi": 0.9741317629814148,
+    "mos_si_sdr": 19.48122787475586,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí o Biel estava comentando que estava preocupado ou irritado, não sei qual foi o termo que ele falou, que o Grêmio não vinha atuando bem, só vinha empatando.",
+    "stt_wav2vec": "E AÍ O BEALTAVA COMENTANDO QUE ESTAVA PREOCUPADO OU IRRITADO NÃO SEI QUAL FOI O TERMO QUE ELHE FALOR QUE O GRÊMIO NÃO VINHA ATUANDO BEM SÓ VINHA EMPATANDO"
+  }
+}

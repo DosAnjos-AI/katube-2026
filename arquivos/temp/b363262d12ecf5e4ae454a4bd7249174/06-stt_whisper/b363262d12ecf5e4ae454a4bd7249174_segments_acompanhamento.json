@@ -1,0 +1,44 @@
+{
+  "b363262d12ecf5e4ae454a4bd7249174_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:04.444",
+    "duracao": 4.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.018078565597534,
+    "mos_stoi": 0.7746083736419678,
+    "mos_si_sdr": 8.731524467468262,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então dou meu boas-vindas aí pro pessoal da You Factory."
+  },
+  "b363262d12ecf5e4ae454a4bd7249174_002.ogg": {
+    "tempo_inicio": "00:00:04.708",
+    "tempo_fim": "00:00:10.204",
+    "duracao": 5.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2911098003387451,
+    "mos_stoi": 0.5513818264007568,
+    "mos_si_sdr": 1.419531226158142,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Gobos, toucas e mantas. É o inverno no esporte caminhando juntos."
+  },
+  "b363262d12ecf5e4ae454a4bd7249174_003.ogg": {
+    "tempo_inicio": "00:00:10.788",
+    "tempo_fim": "00:00:18.728",
+    "duracao": 7.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5155119895935059,
+    "mos_stoi": 0.7959787249565125,
+    "mos_si_sdr": 7.64288854598999,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Temos então nosso primeiro apoiador aí o Factory, que tem produtos licenciados e parcerias com Figueirense, Chapecoense e Havaí."
+  }
+}

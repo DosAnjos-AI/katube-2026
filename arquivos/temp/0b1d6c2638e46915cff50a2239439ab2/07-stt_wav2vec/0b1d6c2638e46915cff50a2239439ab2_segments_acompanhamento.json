@@ -1,0 +1,32 @@
+{
+  "0b1d6c2638e46915cff50a2239439ab2_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.868",
+    "duracao": 3.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7202277183532715,
+    "mos_stoi": 0.9800078868865967,
+    "mos_si_sdr": 18.893938064575195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Imaginemos que vocês têm 20 mil euros que conseguiram juntar, está bem?",
+    "stt_wav2vec": "MASNHERROS QUE VOCÊS TÊM VINTE MILLEUROS FONCIRAM JUNTAR TAMBÉM"
+  },
+  "0b1d6c2638e46915cff50a2239439ab2_002.ogg": {
+    "tempo_inicio": "00:00:04.164",
+    "tempo_fim": "00:00:10.830",
+    "duracao": 6.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7077388763427734,
+    "mos_stoi": 0.9695307612419128,
+    "mos_si_sdr": 15.8518648147583,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Em casal, estamos a falar aqui do tipo casal ou então em forma individual, mas nós temos aqui 20 mil euros.",
+    "stt_wav2vec": "ENCASALTAMOS O FALAQITIPO CAZALO OU ENTÃO EM FORMA INDIVIDUAL MAS NÓS FASTEMOS NOS AQUI VINTE MIL LEORES"
+  }
+}

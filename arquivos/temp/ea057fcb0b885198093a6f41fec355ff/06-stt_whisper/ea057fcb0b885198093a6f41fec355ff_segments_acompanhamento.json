@@ -1,0 +1,58 @@
+{
+  "ea057fcb0b885198093a6f41fec355ff_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.836",
+    "duracao": 11.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.479464054107666,
+    "mos_stoi": 0.8940266370773315,
+    "mos_si_sdr": 8.293140411376953,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tá ali o jogo rolando, tá 0x0, tá 1x1. Cara, em qualquer momento a gente vai estar tocando a nossa bola pro lado aqui e vai entrar, entendeu? É, hoje isso foi muito disto. Cara, sinceramente, eu acho que..."
+  },
+  "ea057fcb0b885198093a6f41fec355ff_002.ogg": {
+    "tempo_inicio": "00:00:11.940",
+    "tempo_fim": "00:00:16.796",
+    "duracao": 4.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.046743392944336,
+    "mos_stoi": 0.9305455088615417,
+    "mos_si_sdr": 16.74933624267578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Grêmio tem time para ganhar o brasileiro. Esse ano que o brasileiro está fácil."
+  },
+  "ea057fcb0b885198093a6f41fec355ff_003.ogg": {
+    "tempo_inicio": "00:00:17.092",
+    "tempo_fim": "00:00:25.372",
+    "duracao": 8.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.933867335319519,
+    "mos_stoi": 0.958809494972229,
+    "mos_si_sdr": 18.943904876708984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "porque eu tô olhando os jogos, cara, tá horrível, é um jogo pior que o outro. E o Inter tá sendo o time mais inteligente nisso, porque o Inter tá criando a gordura agora."
+  },
+  "ea057fcb0b885198093a6f41fec355ff_004.ogg": {
+    "tempo_inicio": "00:00:25.796",
+    "tempo_fim": "00:00:30.872",
+    "duracao": 5.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4335522651672363,
+    "mos_stoi": 0.9540396332740784,
+    "mos_si_sdr": 19.98202896118164,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Inter tá criando a gordura agora que o Grêmio não tá criando. Isso vai fazer de falta lá na frente."
+  }
+}

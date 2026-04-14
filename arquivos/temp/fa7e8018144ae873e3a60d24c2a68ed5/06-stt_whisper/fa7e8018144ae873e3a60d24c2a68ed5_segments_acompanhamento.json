@@ -1,0 +1,72 @@
+{
+  "fa7e8018144ae873e3a60d24c2a68ed5_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:12.540",
+    "duracao": 12.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5090726613998413,
+    "mos_stoi": 0.897812008857727,
+    "mos_si_sdr": 10.354376792907715,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olá a todos, bem-vindos ao meu escritório, novamente. O meu nome é Diogo Chefer, sou atleta profissional de Padle e treinador de muitos de vocês que estão a ouvir este podcast. E, em primeiro lugar, gostava de agradecer"
+  },
+  "fa7e8018144ae873e3a60d24c2a68ed5_002.ogg": {
+    "tempo_inicio": "00:00:12.676",
+    "tempo_fim": "00:00:27.036",
+    "duracao": 14.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7140315771102905,
+    "mos_stoi": 0.931652843952179,
+    "mos_si_sdr": 11.49360466003418,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "todas as mensagens que tenho recebido e o excelente feedback que tenho tido da vossa parte. É muito importante para mim, e isto não é conversa feita, é muito importante para mim perceber que a mensagem é bem recebida, que ajuda..."
+  },
+  "fa7e8018144ae873e3a60d24c2a68ed5_003.ogg": {
+    "tempo_inicio": "00:00:27.140",
+    "tempo_fim": "00:00:41.116",
+    "duracao": 13.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6720792055130005,
+    "mos_stoi": 0.9219129681587219,
+    "mos_si_sdr": 9.87716007232666,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a esclarecer dúvidas que vocês tenham e que muitas vezes não têm com quem partilhar e ser uma voz de referência para vocês e que vos ajude a encontrar o melhor..."
+  },
+  "fa7e8018144ae873e3a60d24c2a68ed5_004.ogg": {
+    "tempo_inicio": "00:00:41.220",
+    "tempo_fim": "00:00:45.436",
+    "duracao": 4.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7199064493179321,
+    "mos_stoi": 0.8235430717468262,
+    "mos_si_sdr": 7.405903339385986,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e a tirar de vocês o melhor do vosso jogo. Posto isto..."
+  },
+  "fa7e8018144ae873e3a60d24c2a68ed5_005.ogg": {
+    "tempo_inicio": "00:00:45.700",
+    "tempo_fim": "00:00:59.900",
+    "duracao": 14.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4270503520965576,
+    "mos_stoi": 0.8986935615539551,
+    "mos_si_sdr": 10.325645446777344,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Gostava só de pedir-vos que continuassem a interagir bastante e que me enviassem as vossas perguntas, as vossas dúvidas, porque a minha intenção é estar sempre mais próximo de vocês e é a forma mais fácil de fazer é se vocês participarem."
+  }
+}

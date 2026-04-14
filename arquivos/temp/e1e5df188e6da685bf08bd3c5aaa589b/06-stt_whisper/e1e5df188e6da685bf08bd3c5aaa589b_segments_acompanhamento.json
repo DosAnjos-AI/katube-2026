@@ -1,0 +1,16 @@
+{
+  "e1e5df188e6da685bf08bd3c5aaa589b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.972",
+    "duracao": 14.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.251562237739563,
+    "mos_stoi": 0.8088237047195435,
+    "mos_si_sdr": 0.110780730843544,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele sempre acaba perdendo. Mas, na minha opinião, ele faz o trabalho mais difícil que o treinador tem que fazer, que é tu mudar a característica do time inteiro. Pegava um Grêmio que só balão, só balão na área. O Grêmio virou, virou o time que virou."
+  }
+}

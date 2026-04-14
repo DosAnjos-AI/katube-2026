@@ -1,0 +1,47 @@
+{
+  "c7f35923e6631dd12a77b49aa91c3783_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:03.772",
+    "duracao": 3.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.543989419937134,
+    "mos_stoi": 0.9844298362731934,
+    "mos_si_sdr": 28.9349308013916,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então eu tinha de ficar umidecendo muito a boca e usava a língua para isso.",
+    "stt_wav2vec": "ENTÃO O TINHA DE FICAR HUMEDECENDO MUITO À BOCA E US AVA A LÍNGUA PARA ISSO"
+  },
+  "c7f35923e6631dd12a77b49aa91c3783_002.ogg": {
+    "tempo_inicio": "00:00:04.164",
+    "tempo_fim": "00:00:13.308",
+    "duracao": 9.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0561647415161133,
+    "mos_stoi": 0.9743384718894958,
+    "mos_si_sdr": 16.758617401123047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí a situação ficava extremamente constrangedora. As pessoas percebiam, eu ficava ainda mais tenso e a comunicação não fluía.",
+    "stt_wav2vec": "E AÍ A SITUAÇÃO FICAVA EXTREMAMENTE CONSTRANGEDORA AS PESSOAS PERCEBIAM EU FICAVA AINDA MAIS TENSO E A COMUNICAÇÃO NÃO NÃO FLUÍA"
+  },
+  "c7f35923e6631dd12a77b49aa91c3783_003.ogg": {
+    "tempo_inicio": "00:00:14.212",
+    "tempo_fim": "00:00:17.886",
+    "duracao": 3.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5338292121887207,
+    "mos_stoi": 0.9673013091087341,
+    "mos_si_sdr": 17.932907104492188,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pesquisas acadêmicas no mundo inteiro revelam que o medo...",
+    "stt_wav2vec": "PESQUISAS ACADÊMICAS NO MUNDO INTEIRO REVELAM QUE O MEDO"
+  }
+}

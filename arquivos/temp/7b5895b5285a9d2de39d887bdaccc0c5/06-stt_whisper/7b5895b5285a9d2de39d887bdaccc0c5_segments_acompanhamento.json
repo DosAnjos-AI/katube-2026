@@ -1,0 +1,44 @@
+{
+  "7b5895b5285a9d2de39d887bdaccc0c5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.780",
+    "duracao": 6.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0424766540527344,
+    "mos_stoi": 0.9665716886520386,
+    "mos_si_sdr": 20.391658782958984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "sei lá, uma despesa de mil euros. O pior que pode acontecer é tu voltares a ter essa dívida, mas tu já atinhas de qualquer forma. Exatamente."
+  },
+  "7b5895b5285a9d2de39d887bdaccc0c5_002.ogg": {
+    "tempo_inicio": "00:00:07.012",
+    "tempo_fim": "00:00:15.356",
+    "duracao": 8.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5610034465789795,
+    "mos_stoi": 0.9118717312812805,
+    "mos_si_sdr": 3.402754783630371,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Exatamente, porque imagina, há uma probabilidade que pode ser alta ou baixa, se te acontecer alguma coisa e tu precisas de fundo de emergência."
+  },
+  "7b5895b5285a9d2de39d887bdaccc0c5_003.ogg": {
+    "tempo_inicio": "00:00:15.652",
+    "tempo_fim": "00:00:20.024",
+    "duracao": 4.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3984122276306152,
+    "mos_stoi": 0.9595650434494019,
+    "mos_si_sdr": 8.71691608428955,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas esta dívida que tu tens com uma taxa de juros enormes é 100% garantida."
+  }
+}

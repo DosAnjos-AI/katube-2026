@@ -1,0 +1,58 @@
+{
+  "aaa4d3e7f694918651075f8f439a1ebd_001.ogg": {
+    "tempo_inicio": "00:00:00.196",
+    "tempo_fim": "00:00:03.740",
+    "duracao": 3.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6469295024871826,
+    "mos_stoi": 0.7346351146697998,
+    "mos_si_sdr": 4.894079208374023,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ilustrações de Everton Domingos, da editora Crianças."
+  },
+  "aaa4d3e7f694918651075f8f439a1ebd_002.ogg": {
+    "tempo_inicio": "00:00:04.100",
+    "tempo_fim": "00:00:14.236",
+    "duracao": 10.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7311930656433105,
+    "mos_stoi": 0.8982371687889099,
+    "mos_si_sdr": 11.541563034057617,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "diversas. E a gente queria agradecer, né, Clarinha? O Wagner diz que mandou esse livro pra gente, ele mora lá no Canadá e ouviu o nosso podcast, não foi?"
+  },
+  "aaa4d3e7f694918651075f8f439a1ebd_003.ogg": {
+    "tempo_inicio": "00:00:14.628",
+    "tempo_fim": "00:00:23.164",
+    "duracao": 8.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8207112550735474,
+    "mos_stoi": 0.9289658665657043,
+    "mos_si_sdr": 10.21450138092041,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e mandou pra gente através do nosso amigo Alex, da fábrica de podcast, que é quem edita os nossos podcasts."
+  },
+  "aaa4d3e7f694918651075f8f439a1ebd_004.ogg": {
+    "tempo_inicio": "00:00:23.332",
+    "tempo_fim": "00:00:31.260",
+    "duracao": 7.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7759599685668945,
+    "mos_stoi": 0.8908346891403198,
+    "mos_si_sdr": 5.54135799407959,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

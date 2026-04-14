@@ -1,0 +1,30 @@
+{
+  "e755e29ac1667003356482dc7ed9f161_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.028",
+    "duracao": 8.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2628748416900635,
+    "mos_stoi": 0.9484611749649048,
+    "mos_si_sdr": 19.665176391601562,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "porque é um cara que ficou estudando Brecht muito tempo, era fissurado no Berlin Nancy, na Alemanha,"
+  },
+  "e755e29ac1667003356482dc7ed9f161_002.ogg": {
+    "tempo_inicio": "00:00:08.452",
+    "tempo_fim": "00:00:18.206",
+    "duracao": 9.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.601428985595703,
+    "mos_stoi": 0.9321213960647583,
+    "mos_si_sdr": 13.710128784179688,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Inclusive, olha o que outro paradoxo. Você sabe que o teatro oficina foi reconstruído em 67, com a arquitetura do Flávio Império e do Rodrigo Lefebre, dois arquitetos fantásticos,"
+  }
+}

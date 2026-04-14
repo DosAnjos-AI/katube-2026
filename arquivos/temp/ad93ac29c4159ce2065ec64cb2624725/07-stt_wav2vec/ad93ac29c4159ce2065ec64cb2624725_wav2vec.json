@@ -1,0 +1,47 @@
+{
+  "ad93ac29c4159ce2065ec64cb2624725_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.940",
+    "duracao": 10.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8973119258880615,
+    "mos_stoi": 0.936622679233551,
+    "mos_si_sdr": 16.83290672302246,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Para pensar uma espécie de modelo para a cena, ou para pensar uma forma, uma dinâmica para a cena, o Brecht elabora o que ele chamava de cena de rua.",
+    "stt_wav2vec": "PA PENSAR A UMA ESPÉCIE DE MODELO PARA CENA OU PARA PENSAR UMA FORMA UMA DINÂMICA PARA CENA O BRESTE ELABORO QUE LHE CHAMAVA DE CENA DE RUA"
+  },
+  "ad93ac29c4159ce2065ec64cb2624725_002.ogg": {
+    "tempo_inicio": "00:00:12.164",
+    "tempo_fim": "00:00:21.212",
+    "duracao": 9.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1011061668395996,
+    "mos_stoi": 0.9488573670387268,
+    "mos_si_sdr": 22.34441566467285,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E o que é a cena de rua? A cena de rua é uma situação que se configura no espaço público,",
+    "stt_wav2vec": "E O QUE É A CENA DE RUA A CENA DE RUA É UMA MAS MA UMA SITUAÇÃO QUE SE CONFIGURA NO ESPAÇO PÚBLICO"
+  },
+  "ad93ac29c4159ce2065ec64cb2624725_003.ogg": {
+    "tempo_inicio": "00:00:22.180",
+    "tempo_fim": "00:00:29.788",
+    "duracao": 7.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.953660249710083,
+    "mos_stoi": 0.9405513405799866,
+    "mos_si_sdr": 17.868698120117188,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E a dinâmica que se dá neste espaço público se estabelece como modelo para pensar o funcionamento",
+    "stt_wav2vec": "E A DINÂMICA QUE SE DÁ NESTE ESPAÇO PÚBLICO SE ESTABELECE COMO MODELO PARA PENSAR O FUNCIONAMENTO"
+  }
+}

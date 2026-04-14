@@ -1,0 +1,16 @@
+{
+  "17c5bec8eb058608f983274549c9e14e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.792",
+    "duracao": 12.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.179185390472412,
+    "mos_stoi": 0.790891170501709,
+    "mos_si_sdr": -2.758053779602051,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "eles fazem é eu acho que o como é o nome do técnico dele eu acho que ele fez um intensivo com o Kudê aqui um tempo porque é bem similar"
+  }
+}

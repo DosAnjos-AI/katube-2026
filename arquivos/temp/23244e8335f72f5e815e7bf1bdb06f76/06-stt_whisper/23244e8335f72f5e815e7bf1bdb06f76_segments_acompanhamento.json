@@ -1,0 +1,16 @@
+{
+  "23244e8335f72f5e815e7bf1bdb06f76_001.ogg": {
+    "tempo_inicio": "00:00:03.172",
+    "tempo_fim": "00:00:09.870",
+    "duracao": 6.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0215415954589844,
+    "mos_stoi": 0.9684277176856995,
+    "mos_si_sdr": 17.103525161743164,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tem dúvida que a parte que ainda me vai custando um bocadinho, tem clientes que às vezes chegam às pessoas individuais"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "ba4beb594ca7ab5137a9f589406a90c9_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.260",
+    "duracao": 7.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7726480960845947,
+    "mos_stoi": 0.8830320239067078,
+    "mos_si_sdr": 9.472787857055664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A questão da injúria racial tem o problema do dolo, quer dizer, qual foi a intenção do casal.",
+    "stt_wav2vec": "A QUESTÃO DA INJÚRIA RACIAL TEM O PROBLEMA DO DÓLO EXENQUAL FOI A INTENÇÃO DO DO CASAL"
+  }
+}

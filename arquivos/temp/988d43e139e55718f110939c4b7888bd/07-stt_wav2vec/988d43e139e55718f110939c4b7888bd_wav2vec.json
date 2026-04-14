@@ -1,0 +1,32 @@
+{
+  "988d43e139e55718f110939c4b7888bd_002.ogg": {
+    "tempo_inicio": "00:00:15.588",
+    "tempo_fim": "00:00:26.460",
+    "duracao": 10.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.430160403251648,
+    "mos_stoi": 0.8559788465499878,
+    "mos_si_sdr": 9.234142303466797,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de um modo mais celere, de um modo mais exemplar. Mais uma vez, essa conta não vai ficar na justiça. Essa conta vai ter que ser pro legislador, porque gosta ou não do juiz de garantias, ele está na lei agora.",
+    "stt_wav2vec": "DE UM MODO MAIS CELERE DE UM MODO MAIS EXEMPLAR MAIS UMA VEZ ESSA CONTA NÃO VAI FICAR NA JUSTIÇA SAQUANTA VAI TER QUESER PO LEGISLADOR PORQUE GOSTE OU NÃO DOS JUIS DE GARANTIA DE LE TANA LEI AGORA"
+  },
+  "988d43e139e55718f110939c4b7888bd_003.ogg": {
+    "tempo_inicio": "00:00:26.724",
+    "tempo_fim": "00:00:30.830",
+    "duracao": 4.11,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2509783506393433,
+    "mos_stoi": 0.6411651968955994,
+    "mos_si_sdr": -2.9494271278381348,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele é algo que vai existir no Brasil. Se cria na prática.",
+    "stt_wav2vec": "ELE É O QUE VAI EXISTIR NO BRASIL SE CRIA NA PRÁTICA"
+  }
+}

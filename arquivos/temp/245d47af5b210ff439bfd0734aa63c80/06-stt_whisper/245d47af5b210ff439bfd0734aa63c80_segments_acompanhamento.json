@@ -1,0 +1,30 @@
+{
+  "245d47af5b210ff439bfd0734aa63c80_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.716",
+    "duracao": 10.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2950260639190674,
+    "mos_stoi": 0.7786105275154114,
+    "mos_si_sdr": 5.282534599304199,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Todas as mais valias que nós recebemos ao longo de um ano, seja por venda de uma ação, ou seja, eu comprei a 10, vendia 15, vou ter que pagar imposto sobre aqueles 5€ que ganhei."
+  },
+  "245d47af5b210ff439bfd0734aa63c80_002.ogg": {
+    "tempo_inicio": "00:00:10.948",
+    "tempo_fim": "00:00:15.036",
+    "duracao": 4.09,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5802838802337646,
+    "mos_stoi": 0.8852033019065857,
+    "mos_si_sdr": 13.629618644714355,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

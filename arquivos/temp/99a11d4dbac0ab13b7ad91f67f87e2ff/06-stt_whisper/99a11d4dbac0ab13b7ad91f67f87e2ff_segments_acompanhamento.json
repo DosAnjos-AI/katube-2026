@@ -1,0 +1,44 @@
+{
+  "99a11d4dbac0ab13b7ad91f67f87e2ff_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.980",
+    "duracao": 9.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6014366149902344,
+    "mos_stoi": 0.9358299970626831,
+    "mos_si_sdr": 12.035825729370117,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí eles são bons no bairro, eles vão começar a treinar agora na região toda. Então, o clube da região é..."
+  },
+  "99a11d4dbac0ab13b7ad91f67f87e2ff_002.ogg": {
+    "tempo_inicio": "00:00:10.276",
+    "tempo_fim": "00:00:25.084",
+    "duracao": 14.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1084980964660645,
+    "mos_stoi": 0.9236229658126831,
+    "mos_si_sdr": 11.977936744689941,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "trouxe eles uma peneira e trouxe eles lá eles vão competir com caras do outro bairro do outro bairro e vão competir como todos são bons todos são rápidos o detalhe de ser mais alto para um cara que está treinando a mesma coisa"
+  },
+  "99a11d4dbac0ab13b7ad91f67f87e2ff_003.ogg": {
+    "tempo_inicio": "00:00:25.124",
+    "tempo_fim": "00:00:30.318",
+    "duracao": 5.19,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4159488677978516,
+    "mos_stoi": 0.8153378367424011,
+    "mos_si_sdr": 5.877385139465332,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "vai fazer mais diferença e ele vai ser melhor. E assim vai em larga escala, os melhores do regional."
+  }
+}

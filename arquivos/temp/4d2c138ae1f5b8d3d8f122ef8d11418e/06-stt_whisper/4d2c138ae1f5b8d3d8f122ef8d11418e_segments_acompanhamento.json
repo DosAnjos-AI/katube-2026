@@ -1,0 +1,30 @@
+{
+  "4d2c138ae1f5b8d3d8f122ef8d11418e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:27.228",
+    "duracao": 27.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4413586854934692,
+    "mos_stoi": 0.9241819977760315,
+    "mos_si_sdr": 11.746332168579102,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mais uma vez fazendo esse apelo, gente, não é momento de ideologia. Esse inimigo, além de oculto, ele é muito maior do que qualquer outra coisa. Depois que se caguem... Desculpa, depois que se caguem a pau do jeito que quiserem, com as suas questões ideológicas, se é de esquerda, se é de direita, se é bolsominion, se é petralha, enfim, você escolhe o seu lado, faz o que quiser. A gente não está aqui para dizer o que você tem que fazer. A gente só está pedindo..."
+  },
+  "4d2c138ae1f5b8d3d8f122ef8d11418e_002.ogg": {
+    "tempo_inicio": "00:00:27.300",
+    "tempo_fim": "00:00:32.104",
+    "duracao": 4.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8895082473754883,
+    "mos_stoi": 0.9239383339881897,
+    "mos_si_sdr": 14.482454299926758,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mais um pouquinho de paciência, é horrível ter que ficar trancado dentro de casa."
+  }
+}

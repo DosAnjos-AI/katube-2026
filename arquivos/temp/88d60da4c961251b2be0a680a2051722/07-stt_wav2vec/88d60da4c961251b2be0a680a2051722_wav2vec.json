@@ -1,0 +1,17 @@
+{
+  "88d60da4c961251b2be0a680a2051722_001.ogg": {
+    "tempo_inicio": "00:00:00.324",
+    "tempo_fim": "00:00:13.118",
+    "duracao": 12.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1450791358947754,
+    "mos_stoi": 0.8502123355865479,
+    "mos_si_sdr": 5.829031944274902,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Uma solzeira, velho. Que sonzeira, cara. Talvez não tenha sido as mais, mas foi uma das mais. Ah, é isso. Daí é questão bem de gosto pessoal. Agora, pra mim, toda vez que eu toco, eu acho que, cara, esse é o... Pra mim é o pop.",
+    "stt_wav2vec": "OOZEIRA É OINTE VÃO IO SONZERA TALVEZ NÃO TENHA SIDO AS MAIS MAS FOI UMA DAS MAIA A DAÍ A QUESTAMBÉM DE GOSTO PESSOAL AGORA PARA MINHO TODA ISTO O GOGOESTO DE BACARESSE OU VAILI PARA MENOAOA"
+  }
+}

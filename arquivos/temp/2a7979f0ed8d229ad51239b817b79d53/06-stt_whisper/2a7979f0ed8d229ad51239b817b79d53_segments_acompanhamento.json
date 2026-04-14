@@ -1,0 +1,16 @@
+{
+  "2a7979f0ed8d229ad51239b817b79d53_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.288",
+    "duracao": 9.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1912574768066406,
+    "mos_stoi": 0.6743227243423462,
+    "mos_si_sdr": -1.5831044912338257,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Na minha opinião, ele tá já empatado com os outros e pode jogar. Mas na cabeça dos profissionais, ele pode ser que ele não jogue por algum motivo. Eu acho que não tenha nada a ver."
+  }
+}

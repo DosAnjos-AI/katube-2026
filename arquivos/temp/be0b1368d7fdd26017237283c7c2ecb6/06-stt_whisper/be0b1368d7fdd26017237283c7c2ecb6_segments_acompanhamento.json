@@ -1,0 +1,30 @@
+{
+  "be0b1368d7fdd26017237283c7c2ecb6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.796",
+    "duracao": 8.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.840567111968994,
+    "mos_stoi": 0.986743688583374,
+    "mos_si_sdr": 17.124069213867188,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "pais e mães. É mais importante vocês a partir de hoje começarem a falar em casa sobre investimentos, sobre negócios, sobre gestão financeira."
+  },
+  "be0b1368d7fdd26017237283c7c2ecb6_002.ogg": {
+    "tempo_inicio": "00:00:09.220",
+    "tempo_fim": "00:00:13.064",
+    "duracao": 3.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6943230628967285,
+    "mos_stoi": 0.9861488342285156,
+    "mos_si_sdr": 19.231220245361328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e deixar falar com os filhos abertamente, não é?"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "284f341ee42fb0920e4c278cda5c5b6d_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.772",
+    "duracao": 7.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7872083187103271,
+    "mos_stoi": 0.8110562562942505,
+    "mos_si_sdr": 7.987927436828613,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "sabendo já, porque tinham visto e conhecido o Glauber Rocha, já tinham conhecido uma porção de gente,",
+    "stt_wav2vec": "SABENDO JÁ PORQUE TINHAM VISTO E CONHECIDO O GLÁUBIAR ROCHA JÁ TINHAM CONHECIDO NA PORSÃO DE GENTE"
+  },
+  "284f341ee42fb0920e4c278cda5c5b6d_002.ogg": {
+    "tempo_inicio": "00:00:08.100",
+    "tempo_fim": "00:00:15.324",
+    "duracao": 7.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8309763669967651,
+    "mos_stoi": 0.7877159714698792,
+    "mos_si_sdr": 4.837278366088867,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "em Paris, relacionado ao Brasil, Jorge La Passade, que era um antropólogo que estudava",
+    "stt_wav2vec": null
+  },
+  "284f341ee42fb0920e4c278cda5c5b6d_003.ogg": {
+    "tempo_inicio": "00:00:15.652",
+    "tempo_fim": "00:00:25.404",
+    "duracao": 9.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4430656433105469,
+    "mos_stoi": 0.814870297908783,
+    "mos_si_sdr": 7.304730415344238,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "cultura africana no Brasil. Eles já vieram para o Brasil, já foram para o Brasil com uma mentalidade bastante...",
+    "stt_wav2vec": null
+  },
+  "284f341ee42fb0920e4c278cda5c5b6d_004.ogg": {
+    "tempo_inicio": "00:00:25.796",
+    "tempo_fim": "00:00:30.012",
+    "duracao": 4.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0169625282287598,
+    "mos_stoi": 0.8559806942939758,
+    "mos_si_sdr": 7.795398235321045,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "aberta à novidade, eles tinham tido uma pequena experiência",
+    "stt_wav2vec": null
+  }
+}

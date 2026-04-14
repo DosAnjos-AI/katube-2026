@@ -1,0 +1,16 @@
+{
+  "3a4ded4168649a4bedcdb10ea437de58_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:05.662",
+    "duracao": 5.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.016528844833374,
+    "mos_stoi": 0.9324566125869751,
+    "mos_si_sdr": 9.643449783325195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas eu não tive nenhuma formação para isso. E grande parte daquela malta que lá está a trabalhar nem sequer investe."
+  }
+}

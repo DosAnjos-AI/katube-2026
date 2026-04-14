@@ -1,0 +1,16 @@
+{
+  "dc42f501cae34ddde284a6d40e73d016_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.822",
+    "duracao": 3.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3008692264556885,
+    "mos_stoi": 0.7092462778091431,
+    "mos_si_sdr": -5.619899272918701,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não, não. Ainda não. Ainda tem mais um lado."
+  }
+}

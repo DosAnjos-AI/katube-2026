@@ -1,0 +1,17 @@
+{
+  "4c088bbf736bf382369323065c9f0973_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.624",
+    "duracao": 3.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3908960819244385,
+    "mos_stoi": 0.6877129077911377,
+    "mos_si_sdr": -0.4766596257686615,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não apareceu um ali no celular. Esse Renato...",
+    "stt_wav2vec": "NÓ APARECEMOS QUE UM ADIBUCAULARAE OMESAMO"
+  }
+}

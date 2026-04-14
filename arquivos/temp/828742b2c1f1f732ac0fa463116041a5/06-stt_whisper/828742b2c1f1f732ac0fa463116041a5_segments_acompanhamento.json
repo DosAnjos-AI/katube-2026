@@ -1,0 +1,16 @@
+{
+  "828742b2c1f1f732ac0fa463116041a5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.702",
+    "duracao": 13.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.359013557434082,
+    "mos_stoi": 0.9724323749542236,
+    "mos_si_sdr": 20.928701400756836,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Na prática, isto é um bocado como todo o resto da vida, não é? Se tu quiseres comprar um carro, vais ter que te informar sobre o carro, sobre o preço dos carros, para saber se estás a comprar barato, se não está, se você precisa até levas um mecânico porque alguém conhece da coisas."
+  }
+}

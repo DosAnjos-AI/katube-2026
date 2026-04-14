@@ -1,0 +1,30 @@
+{
+  "c10974ad7c4b362bec985fd05a3c9352_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.692",
+    "duracao": 5.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3974601030349731,
+    "mos_stoi": 0.8692934513092041,
+    "mos_si_sdr": 6.719753742218018,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O sentimento muda cada vez mais e cada vez mais rápido. É difícil a gente encontrar um exemplo como Werther hoje em dia."
+  },
+  "c10974ad7c4b362bec985fd05a3c9352_002.ogg": {
+    "tempo_inicio": "00:00:05.988",
+    "tempo_fim": "00:00:11.576",
+    "duracao": 5.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7891231775283813,
+    "mos_stoi": 0.8982398509979248,
+    "mos_si_sdr": 8.90683650970459,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele é o personagem principal do livro Sofrimento Jovem Werther, que é um dos livros mais lindos que eu já li até hoje na minha vida."
+  }
+}

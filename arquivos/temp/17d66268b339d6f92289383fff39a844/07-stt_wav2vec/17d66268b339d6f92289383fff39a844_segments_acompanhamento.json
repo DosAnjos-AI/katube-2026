@@ -1,0 +1,47 @@
+{
+  "17d66268b339d6f92289383fff39a844_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.700",
+    "duracao": 12.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5124545097351074,
+    "mos_stoi": 0.7373859882354736,
+    "mos_si_sdr": 8.516986846923828,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para cada jogo. Eu acho que o Inter tem chance de vencer Palmeiras? Tem. Palmeiras não está encaixado, não é tudo isso. Mas também é um jogo que as duas camisas são pesadas e os jogadores tendem a crescer. O jogador de futebol gosta desse tipo de jogo.",
+    "stt_wav2vec": "PARA CADA DE JOGO A EU ACHO QUE ME PETENXENSE DE VENSEU POLMEIRAS QEM CALMEIRAS NÃO TAE ENCAICXADO NÃO É LÉ TUDO ISSO MAS TAMBÉM É UM JOBO QUE AS DUAS CAMISAS SÃO PESADAS E OS JOGADORES TÊMEM ACRESCER JOGADORES QUEPROGOSTA DESSE TIPO DE JOGO"
+  },
+  "17d66268b339d6f92289383fff39a844_002.ogg": {
+    "tempo_inicio": "00:00:12.900",
+    "tempo_fim": "00:00:16.988",
+    "duracao": 4.09,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.013132095336914,
+    "mos_stoi": 0.7227775454521179,
+    "mos_si_sdr": 8.873993873596191,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "tanto jogadores do Inter como jogadores do Palmeiras.",
+    "stt_wav2vec": null
+  },
+  "17d66268b339d6f92289383fff39a844_003.ogg": {
+    "tempo_inicio": "00:00:17.284",
+    "tempo_fim": "00:00:30.894",
+    "duracao": 13.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3175042867660522,
+    "mos_stoi": 0.7424428462982178,
+    "mos_si_sdr": 7.357385635375977,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, Palmeiras é um time muito melhor do que Botafogo, individualmente falando, no confronto de 1 para 1, o Inter tem que estar muito mais atento. É muito mais difícil que marcar mesmo o Lucas Lima em mau momento, ele é muito mais jogador do que o Matheus Babi.",
+    "stt_wav2vec": null
+  }
+}

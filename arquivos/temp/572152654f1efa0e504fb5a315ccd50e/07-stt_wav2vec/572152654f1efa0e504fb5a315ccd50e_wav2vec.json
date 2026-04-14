@@ -1,0 +1,32 @@
+{
+  "572152654f1efa0e504fb5a315ccd50e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.716",
+    "duracao": 6.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.864720344543457,
+    "mos_stoi": 0.9437419772148132,
+    "mos_si_sdr": 14.858222007751465,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para poder lembrar a pessoa de não esquecer de fechar o carrinho, aí sim. Então, também acho que vale pensar...",
+    "stt_wav2vec": "PRA PODER LEMBRAR PESSOA DE NÃO ESQUECER DE FECHAR O CARRINHO AI SIM TANTO ME ACH QUE VALE PENSADO"
+  },
+  "572152654f1efa0e504fb5a315ccd50e_002.ogg": {
+    "tempo_inicio": "00:00:06.980",
+    "tempo_fim": "00:00:21.020",
+    "duracao": 14.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2825210094451904,
+    "mos_stoi": 0.7667723298072815,
+    "mos_si_sdr": 2.6517763137817383,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quais batalhas vai até não lutar no sentido dos dados? O Roy também não é direto, né? Exato. O Roy direto numa compra, numa conversão de compra, mas eu posso ter o Roy de um suporte de um chip de suporte que não foi aberto, né?",
+    "stt_wav2vec": "QAZ BATALHAS MARETANÃO LOCAR NO SINTIREO DASO O ROZ TAMBÉM NÃO É DIRETO NA SQIVASTAS RORE DIRETA NDNDNONONONANO UMA COMPRA NUMA CONVERSÃO DE COMPRA MAS OPOST E O ROIDE UM SUPORTE DE UM TIQUE DO SUPOSTE CONO FO ABERTO NA"
+  }
+}

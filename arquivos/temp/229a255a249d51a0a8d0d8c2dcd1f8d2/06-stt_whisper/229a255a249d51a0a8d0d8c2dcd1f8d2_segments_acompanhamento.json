@@ -1,0 +1,72 @@
+{
+  "229a255a249d51a0a8d0d8c2dcd1f8d2_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.284",
+    "duracao": 4.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4492452144622803,
+    "mos_stoi": 0.9326785802841187,
+    "mos_si_sdr": 12.788800239562988,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quando, na época do nazismo, eles foram..."
+  },
+  "229a255a249d51a0a8d0d8c2dcd1f8d2_002.ogg": {
+    "tempo_inicio": "00:00:04.868",
+    "tempo_fim": "00:00:08.732",
+    "duracao": 3.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7234582901000977,
+    "mos_stoi": 0.9536492824554443,
+    "mos_si_sdr": 19.530969619750977,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para o Monte Verita, foram todos."
+  },
+  "229a255a249d51a0a8d0d8c2dcd1f8d2_003.ogg": {
+    "tempo_inicio": "00:00:09.092",
+    "tempo_fim": "00:00:19.324",
+    "duracao": 10.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.995640993118286,
+    "mos_stoi": 0.9271420836448669,
+    "mos_si_sdr": 19.755298614501953,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "229a255a249d51a0a8d0d8c2dcd1f8d2_004.ogg": {
+    "tempo_inicio": "00:00:19.428",
+    "tempo_fim": "00:00:25.116",
+    "duracao": 5.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.327660083770752,
+    "mos_stoi": 0.9373188614845276,
+    "mos_si_sdr": 16.465763092041016,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e eles se juntaram numa espécie de comunidade, numa residência artística que a gente chamaria agora, eles fizeram."
+  },
+  "229a255a249d51a0a8d0d8c2dcd1f8d2_005.ogg": {
+    "tempo_inicio": "00:00:25.380",
+    "tempo_fim": "00:00:30.848",
+    "duracao": 5.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1644210815429688,
+    "mos_stoi": 0.9521548748016357,
+    "mos_si_sdr": 15.2366304397583,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "uma residência artística no Monte Delitar, na beira do Lago Major e dançavam."
+  }
+}

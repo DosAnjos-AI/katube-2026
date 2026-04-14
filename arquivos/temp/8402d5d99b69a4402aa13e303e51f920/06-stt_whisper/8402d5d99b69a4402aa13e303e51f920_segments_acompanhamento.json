@@ -1,0 +1,30 @@
+{
+  "8402d5d99b69a4402aa13e303e51f920_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:11.996",
+    "duracao": 11.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9396027326583862,
+    "mos_stoi": 0.9320164918899536,
+    "mos_si_sdr": 6.039741039276123,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "8402d5d99b69a4402aa13e303e51f920_002.ogg": {
+    "tempo_inicio": "00:00:12.356",
+    "tempo_fim": "00:00:16.342",
+    "duracao": 3.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1089305877685547,
+    "mos_stoi": 0.9056872725486755,
+    "mos_si_sdr": 11.070189476013184,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pessoal, o que foi o nosso primeiro piloto que tivemos?"
+  }
+}

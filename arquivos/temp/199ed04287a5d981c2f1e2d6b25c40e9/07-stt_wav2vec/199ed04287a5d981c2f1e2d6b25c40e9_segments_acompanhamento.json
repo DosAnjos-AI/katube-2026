@@ -1,0 +1,17 @@
+{
+  "199ed04287a5d981c2f1e2d6b25c40e9_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:07.822",
+    "duracao": 7.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8952090740203857,
+    "mos_stoi": 0.9487038254737854,
+    "mos_si_sdr": 13.767043113708496,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "São nove vitórias, cinco partes e apenas uma derrota naquele gol do Diego Souza, golaço, Pedro Garail com o Leandro e o Guilherme,",
+    "stt_wav2vec": "SÃO NOVE VITÓRIAS CIMFIPATES E APENAS UMA DERROTA NAQUELE RODO DIOK SOUSA GOLAS PEDO GARARIL FOANEEG"
+  }
+}

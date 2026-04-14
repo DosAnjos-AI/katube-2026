@@ -1,0 +1,32 @@
+{
+  "0b13fbaea69a512242ef4b051085bc0a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.284",
+    "duracao": 12.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4080795049667358,
+    "mos_stoi": 0.9021996259689331,
+    "mos_si_sdr": 7.066046237945557,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu ia falar normal... Eu cozinho... Do meu jeito... Do jeito... Do jeito que eu aprendi... Que eu vi as pessoas fazendo... A minha mãe... Que era cozinheira...",
+    "stt_wav2vec": "EU IA FALADO NORMAL EU COZINHO DO MEU JEITO EGDEDESENÃO NÃO REPROVE DO JEITO QUE EU A APRENDI QUE OU VIA AS PESSOAS FAZENDO A MINHA MÃE QUE ERA COZINHEIRA"
+  },
+  "0b13fbaea69a512242ef4b051085bc0a_002.ogg": {
+    "tempo_inicio": "00:00:12.612",
+    "tempo_fim": "00:00:21.688",
+    "duracao": 9.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2052148580551147,
+    "mos_stoi": 0.7866436839103699,
+    "mos_si_sdr": 4.392029762268066,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

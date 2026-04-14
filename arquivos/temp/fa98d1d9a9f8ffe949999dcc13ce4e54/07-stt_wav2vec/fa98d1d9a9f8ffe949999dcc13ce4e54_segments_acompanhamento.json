@@ -1,0 +1,47 @@
+{
+  "fa98d1d9a9f8ffe949999dcc13ce4e54_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.812",
+    "duracao": 6.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.237764596939087,
+    "mos_stoi": 0.6218563914299011,
+    "mos_si_sdr": -6.331532955169678,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A oportunidade. É, porque senão não vai surgir, entendeu? Você vai acabar estingando uma posição...",
+    "stt_wav2vec": "ORTULIDADE ALI ERA A TECTANÃO NUFNOOCA NO VEIFUGIR TANGE TVACABETE NA MESA UMA PODUÇÃO"
+  },
+  "fa98d1d9a9f8ffe949999dcc13ce4e54_002.ogg": {
+    "tempo_inicio": "00:00:07.076",
+    "tempo_fim": "00:00:14.492",
+    "duracao": 7.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.211559772491455,
+    "mos_stoi": 0.9221000671386719,
+    "mos_si_sdr": 8.733537673950195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho inadmissível. Eu acho inadmissível o Grêmio ser uma fábrica de volante.",
+    "stt_wav2vec": "EU ACHO EU ARCHOINA ADMISSÍVEL EU ACHO INADMISSÍVEL O GRÊMIO SE É UMA FÁBRICA DE DE VOLANTE"
+  },
+  "fa98d1d9a9f8ffe949999dcc13ce4e54_003.ogg": {
+    "tempo_inicio": "00:00:14.788",
+    "tempo_fim": "00:00:24.478",
+    "duracao": 9.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0498101711273193,
+    "mos_stoi": 0.9664767980575562,
+    "mos_si_sdr": 18.781333923339844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E de pontas. E não consegui fazer. Nenhum atacante. Me diz o último atacante. Que veio da base do Grêmio. Que é bom. Atacante. Lá na frente. Fincado.",
+    "stt_wav2vec": null
+  }
+}

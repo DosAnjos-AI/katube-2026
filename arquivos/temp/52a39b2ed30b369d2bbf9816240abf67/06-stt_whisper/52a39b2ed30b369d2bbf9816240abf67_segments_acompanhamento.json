@@ -1,0 +1,30 @@
+{
+  "52a39b2ed30b369d2bbf9816240abf67_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.244",
+    "duracao": 9.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5679569244384766,
+    "mos_stoi": 0.8897465467453003,
+    "mos_si_sdr": 11.319535255432129,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Segundo ele, para mim, a complexidade do amor é o que vai além da presença, sobre conexões, vivências e experiências, não sobre durações, sim sobre intensidade."
+  },
+  "52a39b2ed30b369d2bbf9816240abf67_002.ogg": {
+    "tempo_inicio": "00:00:09.668",
+    "tempo_fim": "00:00:20.206",
+    "duracao": 10.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6594187021255493,
+    "mos_stoi": 0.8654337525367737,
+    "mos_si_sdr": 12.4235258102417,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Uma brisa, né? Bom, quase participação do Chuchoto em outro meio que não é o físico, eu gostaria de agradecer a todo mundo que participou. Fiquei realmente feliz e refleti-se com todos os depoimentos."
+  }
+}

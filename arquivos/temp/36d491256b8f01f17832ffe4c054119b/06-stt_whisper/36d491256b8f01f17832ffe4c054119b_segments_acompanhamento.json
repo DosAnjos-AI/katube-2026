@@ -1,0 +1,16 @@
+{
+  "36d491256b8f01f17832ffe4c054119b_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.484",
+    "duracao": 7.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8448944091796875,
+    "mos_stoi": 0.9814120531082153,
+    "mos_si_sdr": 19.29418182373047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não é bem mal o que eu vou explicar neste momento, mas é verdade. O que ele tinha lá exposto era o preço da Terra, o preço do teu espaço..."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "20c347fc04bf1b3dead2f5badc9e5e87_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.144",
+    "duracao": 9.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.655216932296753,
+    "mos_stoi": 0.9152812957763672,
+    "mos_si_sdr": 15.421683311462402,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ler bastante, entender depois o que faz sentido para ti e depois ir filtrando e usando os bocadinhos de cada um que fazem sentido na tua jornada."
+  }
+}

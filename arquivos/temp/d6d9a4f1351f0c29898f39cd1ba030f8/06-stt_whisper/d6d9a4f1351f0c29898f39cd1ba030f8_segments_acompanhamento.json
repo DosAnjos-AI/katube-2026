@@ -1,0 +1,44 @@
+{
+  "d6d9a4f1351f0c29898f39cd1ba030f8_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:06.332",
+    "duracao": 6.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.053725481033325,
+    "mos_stoi": 0.7854545712471008,
+    "mos_si_sdr": 9.549615859985352,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Essa é a nossa sala virtual, onde a gente conta histórias das teatralidades brasileiras."
+  },
+  "d6d9a4f1351f0c29898f39cd1ba030f8_002.ogg": {
+    "tempo_inicio": "00:00:06.820",
+    "tempo_fim": "00:00:10.844",
+    "duracao": 4.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2645677328109741,
+    "mos_stoi": 0.571117103099823,
+    "mos_si_sdr": -6.25870418548584,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E hoje é o nosso primeiro programa gravado em 2021."
+  },
+  "d6d9a4f1351f0c29898f39cd1ba030f8_003.ogg": {
+    "tempo_inicio": "00:00:11.172",
+    "tempo_fim": "00:00:23.548",
+    "duracao": 12.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3338589668273926,
+    "mos_stoi": 0.7461318969726562,
+    "mos_si_sdr": 4.016659736633301,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "porque gravamos um ano passado, que está indo no ar, que vocês já devem ter ouvido na semana passada, sobre o teatro de revista, mas que só foi ao ar agora em 2021. Então, esse é o nosso..."
+  }
+}

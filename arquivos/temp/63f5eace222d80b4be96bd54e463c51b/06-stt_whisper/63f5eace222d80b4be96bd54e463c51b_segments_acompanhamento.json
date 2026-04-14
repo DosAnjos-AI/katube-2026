@@ -1,0 +1,16 @@
+{
+  "63f5eace222d80b4be96bd54e463c51b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.736",
+    "duracao": 7.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.987032890319824,
+    "mos_stoi": 0.9238079786300659,
+    "mos_si_sdr": 15.022562980651855,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "especialíssimo. Este é o Sala TUSP, a nossa sala virtual onde a gente conta histórias da teatralidade brasileira."
+  }
+}

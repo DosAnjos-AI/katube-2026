@@ -1,0 +1,17 @@
+{
+  "6e558b1a3e8de8b44ce2e54c5bcb6f22_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.352",
+    "duracao": 10.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1586427688598633,
+    "mos_stoi": 0.6823170781135559,
+    "mos_si_sdr": -4.97401237487793,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque a gente vai renovar com ele pro mais humano pra ser banco. É o que tu tá dizendo. Mas vai ser banco, vai escutar a posição. Não vai ter o daquele garantido, mas vai escutar a posição.",
+    "stt_wav2vec": "ELEITE VAI JA NO VÁ PORQUELE POR MAIS UM ANO PASSEIO BANCO EU QUE TU TÁ DIZENDO MAS QUERORIVEMVO QUETAATANANARAS BAISBELO FAESCUDAVOSESNÃO NÃO VAIQEU NAREIGARDE MANAS ETAVO"
+  }
+}

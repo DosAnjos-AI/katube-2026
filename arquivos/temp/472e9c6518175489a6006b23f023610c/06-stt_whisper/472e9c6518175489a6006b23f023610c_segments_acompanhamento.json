@@ -1,0 +1,30 @@
+{
+  "472e9c6518175489a6006b23f023610c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.548",
+    "duracao": 3.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.262302875518799,
+    "mos_stoi": 0.969582200050354,
+    "mos_si_sdr": 22.659767150878906,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vai acabar porque vamos ou pedir alguém para nos emprestar."
+  },
+  "472e9c6518175489a6006b23f023610c_002.ogg": {
+    "tempo_inicio": "00:00:04.004",
+    "tempo_fim": "00:00:08.814",
+    "duracao": 4.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.224982261657715,
+    "mos_stoi": 0.9330058693885803,
+    "mos_si_sdr": 7.856434345245361,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ou vamos acabar por dizer que não, ou vamos pedir um crédito para..."
+  }
+}

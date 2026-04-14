@@ -1,0 +1,17 @@
+{
+  "82ca88611b27b34fc5cf6bcf299390d8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.356",
+    "duracao": 7.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6325490474700928,
+    "mos_stoi": 0.9390417337417603,
+    "mos_si_sdr": 13.629080772399902,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "calibração, nada, mas ia dar um feedback. Eu tava cortando uma ação pra minha filha em formato de estrelinha, assim, né, só pra fazer um agrado.",
+    "stt_wav2vec": "LIBERAÇÃO NADA MAS ZIA DÃOM FIDBEK EUSTAVA CORTANDO UMAÇAU PARA A MINHA FILHA INFORMATO DE ESTRELINHA SSIM NAS SÓ PROPO FAZÃO AGRADO"
+  }
+}

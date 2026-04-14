@@ -1,0 +1,58 @@
+{
+  "79da95345230b5fa780b7cb4fd156d83_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.364",
+    "duracao": 10.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6796622276306152,
+    "mos_stoi": 0.9690254330635071,
+    "mos_si_sdr": 16.96344757080078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Esse nosso piloto, né? Isso aí. Mas e aí, pessoal? Bom, todos que estão aqui, né? Tem experiências diversas com diversos games. Mas eu quero saber..."
+  },
+  "79da95345230b5fa780b7cb4fd156d83_002.ogg": {
+    "tempo_inicio": "00:00:10.852",
+    "tempo_fim": "00:00:19.804",
+    "duracao": 8.95,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0748517513275146,
+    "mos_stoi": 0.9490877389907837,
+    "mos_si_sdr": 7.950102806091309,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "79da95345230b5fa780b7cb4fd156d83_003.ogg": {
+    "tempo_inicio": "00:00:20.132",
+    "tempo_fim": "00:00:32.252",
+    "duracao": 12.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.286931037902832,
+    "mos_stoi": 0.9635661244392395,
+    "mos_si_sdr": 9.318879127502441,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "79da95345230b5fa780b7cb4fd156d83_004.ogg": {
+    "tempo_inicio": "00:00:32.612",
+    "tempo_fim": "00:00:40.734",
+    "duracao": 8.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4484314918518066,
+    "mos_stoi": 0.9670166373252869,
+    "mos_si_sdr": 13.123087882995605,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Dos mais distantes, ele é um dos mais próximos. Eu posso dizer assim. Mas eu lembro que eu tinha..."
+  }
+}

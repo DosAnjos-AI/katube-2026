@@ -1,0 +1,30 @@
+{
+  "4db9f76e12f4d35a7ab867a18b5dc8c5_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:13.756",
+    "duracao": 13.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.027900457382202,
+    "mos_stoi": 0.9785087704658508,
+    "mos_si_sdr": 19.078372955322266,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ou seja, nós podemos fazer parte de uma empresa a partir do momento em que a empresa abre capital na Bolsa Valores. Abrir capital na Bolsa Valores quer dizer que transformar uma empresa que por norma é privada em pública."
+  },
+  "4db9f76e12f4d35a7ab867a18b5dc8c5_002.ogg": {
+    "tempo_inicio": "00:00:13.860",
+    "tempo_fim": "00:00:24.638",
+    "duracao": 10.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.646094560623169,
+    "mos_stoi": 0.9760338664054871,
+    "mos_si_sdr": 19.733034133911133,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Isto dá acesso a toda a gente, investidores privados, investidores individuais ou então mesmo fundos, etc., poderem comprar e poderem ser sócios diferentes."
+  }
+}

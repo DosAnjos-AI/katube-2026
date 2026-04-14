@@ -1,0 +1,30 @@
+{
+  "c66995544c35505954fbe30349e48202_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:11.068",
+    "duracao": 10.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8393993377685547,
+    "mos_stoi": 0.946285605430603,
+    "mos_si_sdr": 10.413773536682129,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O que eu te pergunto é assim, dá pra te basear totalmente no Jampierre, depender exclusivamente do Jampierre, é um jogador que vai te dar essa segurança de que só ele ali vai segurar todas as pontas durante a temporada toda?"
+  },
+  "c66995544c35505954fbe30349e48202_002.ogg": {
+    "tempo_inicio": "00:00:11.300",
+    "tempo_fim": "00:00:20.638",
+    "duracao": 9.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9537248611450195,
+    "mos_stoi": 0.9028059840202332,
+    "mos_si_sdr": 9.380170822143555,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu não sei se, cara. Essa temporada de agora, que nem o Renan já comentou, vai ter as renovações automáticas. Então, o Diagnésio vai ficaria até esse endereiro para concluir o profanato."
+  }
+}

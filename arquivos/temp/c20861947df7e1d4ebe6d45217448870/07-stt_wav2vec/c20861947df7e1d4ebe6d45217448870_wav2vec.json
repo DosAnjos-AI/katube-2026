@@ -1,0 +1,17 @@
+{
+  "c20861947df7e1d4ebe6d45217448870_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.776",
+    "duracao": 8.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9577112197875977,
+    "mos_stoi": 0.9794020652770996,
+    "mos_si_sdr": 21.675472259521484,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mesmo só para partilhar dicas e é bastante interessante todo o trabalho, porque isto é uma raça que dá muito trabalho a nível de pentear e assim, não pode ser só deixá-lo",
+    "stt_wav2vec": "MEMO SOPAPARTILHARICAS E ÉBERTANTE INTRESANTE TODO O TROBOPORQUE ESTÁ UMA RAÇA CUEDÁ MUITO TRABALHO ANIVEL DE PENTEARE A SI NÃO PODE SER SÓ DEIXÁ-LO"
+  }
+}

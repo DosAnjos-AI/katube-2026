@@ -1,0 +1,16 @@
+{
+  "1cecb2c141aa10259a51d7c0165290ed_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.040",
+    "duracao": 4.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5396959781646729,
+    "mos_stoi": 0.808329701423645,
+    "mos_si_sdr": 3.2195775508880615,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu não grito, acho que faz isso lá. Mas, ali, eu não sei o que eu sou o meu nome é nosso."
+  }
+}

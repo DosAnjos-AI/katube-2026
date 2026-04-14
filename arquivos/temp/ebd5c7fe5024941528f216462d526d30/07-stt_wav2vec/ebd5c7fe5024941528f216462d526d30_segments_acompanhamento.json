@@ -1,0 +1,47 @@
+{
+  "ebd5c7fe5024941528f216462d526d30_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.876",
+    "duracao": 10.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8567166328430176,
+    "mos_stoi": 0.960857629776001,
+    "mos_si_sdr": 13.574677467346191,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E a intuitiva é fácil de pensar assim. Só que quando a gente vai olhar por trás das coisas, por que só tem nadador grande lá? Porque para você chegar num nível...",
+    "stt_wav2vec": "AI QUE TIVO É FÁCIL DE DE PENSAR SSIM SÓ QUE QUANDO A RENTIVAL OLHAR POR TRÁS DAS COISAS PORDE QUE SÓ TEM NADA DOR GRANDE LÁ PORQUE PARA VOCÊ CHEGAR NO NIVEL"
+  },
+  "ebd5c7fe5024941528f216462d526d30_002.ogg": {
+    "tempo_inicio": "00:00:10.980",
+    "tempo_fim": "00:00:24.892",
+    "duracao": 13.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4748162031173706,
+    "mos_stoi": 0.8691173791885376,
+    "mos_si_sdr": 5.48734188079834,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "altamente competitivo, muita coisa é levada em situação, principalmente as alavancas biomecânicas. Então, quem tem maior envergadura vai conseguir arrastar muito mais o corpo dele sobre a água. Então, logicamente...",
+    "stt_wav2vec": "ALTAMENTE COMPETITIVO MUITA COISA É LEVADA EM SITUAÇÃO PRINCIPALMENTE AS ALAVANCAS BEOMECÂNICAS ENTÃO QUEM TEM MAIOR ENVERGADURA VAI CONSEGUIR ARRASTAR MUITO MAIS O CORPO DELE SOBRE A ÁGUA ENTÃO LOGICAMENTE"
+  },
+  "ebd5c7fe5024941528f216462d526d30_003.ogg": {
+    "tempo_inicio": "00:00:25.092",
+    "tempo_fim": "00:00:29.692",
+    "duracao": 4.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.262739419937134,
+    "mos_stoi": 0.8666890859603882,
+    "mos_si_sdr": 8.003576278686523,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quem é mais alto tem um favorecimento maior a ser mais rápido dentro da água.",
+    "stt_wav2vec": "QUEM É MAIS ALTO TEN UM FAVORECIMENTO MAIOR ACE MAIS RÁPIDO DENTO DA ÁGUA"
+  }
+}

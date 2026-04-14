@@ -1,0 +1,44 @@
+{
+  "69a4691d9f6e422bf163b72dec94ffaf_001.ogg": {
+    "tempo_inicio": "00:00:01.540",
+    "tempo_fim": "00:00:10.972",
+    "duracao": 9.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.6109468936920166,
+    "mos_stoi": 0.9627835750579834,
+    "mos_si_sdr": 24.541393280029297,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "é feito, que é a supercompensação, rapaziada. E como que ela funciona? Quando a gente faz um trabalho, quando a gente ativa essa musculatura e desgasta ela,"
+  },
+  "69a4691d9f6e422bf163b72dec94ffaf_002.ogg": {
+    "tempo_inicio": "00:00:11.300",
+    "tempo_fim": "00:00:21.884",
+    "duracao": 10.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9106838703155518,
+    "mos_stoi": 0.930867075920105,
+    "mos_si_sdr": 19.36648178100586,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Esse nível, então, a gente tem essa linha aqui, certo? Quando a gente faz um trabalho de força, a gente vai desgastar essa moléculatura e ela vai descer, então a gente vai desgastar ela."
+  },
+  "69a4691d9f6e422bf163b72dec94ffaf_003.ogg": {
+    "tempo_inicio": "00:00:22.148",
+    "tempo_fim": "00:00:30.414",
+    "duracao": 8.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.587883949279785,
+    "mos_stoi": 0.9655755758285522,
+    "mos_si_sdr": 22.05841827392578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para depois que a gente recuperar ela, ela subir dois degraus. Ou seja, ela vai passar da linha. Quando a gente faz esse trabalho todos os dias..."
+  }
+}

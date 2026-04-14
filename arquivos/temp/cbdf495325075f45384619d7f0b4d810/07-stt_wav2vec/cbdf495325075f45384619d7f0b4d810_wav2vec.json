@@ -1,0 +1,17 @@
+{
+  "cbdf495325075f45384619d7f0b4d810_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.964",
+    "duracao": 7.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6621778011322021,
+    "mos_stoi": 0.9359678626060486,
+    "mos_si_sdr": 7.3401198387146,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Alô, alô, minha gente! Sejam muito bem-vindos e bem-vindas a mais um episódio do podcast Confraria do Futebol.",
+    "stt_wav2vec": "A LUALONIA GENTE SEJAM MUITO BEM VINDOS E BEM VINDAS A MAIS UM EPISÓDIO DO PORTIKET CONFRARIA DO FUTEBOL"
+  }
+}

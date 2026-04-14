@@ -1,0 +1,32 @@
+{
+  "a50bc8d851b77d26aa6a948186a28538_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.076",
+    "duracao": 14.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.027761936187744,
+    "mos_stoi": 0.9921234250068665,
+    "mos_si_sdr": 24.498817443847656,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E a conclusão a que eles chegaram é que empresas com mentalidade do fundador têm forte vantagem em relação às demais. O livro deixa claro que o objeto de análise não foi a personalidade, mas a mentalidade.",
+    "stt_wav2vec": "E A CONCLUSÃO A QUE ELES CHEGARAM É QUE EMPRESAS COM MENTALIDADE DO FUNDADOR TEM FORTE VANTAGEM EM RELAÇÃO AOS DEMAIS O LIVRO DEIXA CLARO QUE O OBJETO DE ANÁLISE NÃO FOI A PERSONALIDADE MAS A MENTALIDADE"
+  },
+  "a50bc8d851b77d26aa6a948186a28538_002.ogg": {
+    "tempo_inicio": "00:00:14.372",
+    "tempo_fim": "00:00:28.638",
+    "duracao": 14.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.962451457977295,
+    "mos_stoi": 0.9800688028335571,
+    "mos_si_sdr": 22.62057113647461,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ou seja, o legado que os fundadores cultivam e deixam para que as empresas cresçam de maneira sustentável. Em um dos estudos, eles observaram os resultados financeiros de companhia de capital aberto nos Estados Unidos.",
+    "stt_wav2vec": "OU SEJA O LEGADO QUE OS FUNDADORES CULTIVAM E DEIXAM PARA QUE AS EMPRESAS CRESSAM DE MANEIRA SUSTENTÁVEL EM UM DOS ESTUDOS ELES OBSERVARAM OS RESULTADOS FINANCEIROS DE COMPANHIA DE CAPITAL ABERTO NOS ESTADOS UNIDOS"
+  }
+}

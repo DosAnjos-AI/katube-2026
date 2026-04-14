@@ -1,0 +1,17 @@
+{
+  "59ae674a9fce44fcf05d3bd488aeeb75_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.140",
+    "duracao": 10.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.725042700767517,
+    "mos_stoi": 0.8919761776924133,
+    "mos_si_sdr": 9.863987922668457,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e ainda se acha na razão de, ah, não tem problema, foi só 40 minutos, ele perdeu totalmente a razão dele, aí sim eu concordo que ele está errado.",
+    "stt_wav2vec": "AINDA SE E SE ACHA NA RAZÃO DIÁ  NÃO TEM PROBLEMA FOI SÓ QUARENTA MINUTOS ELE PERDEU TOTALMENTE A RAZÃO DELE E AÍ SIM OU CONCÓRDOQUES AERRADO"
+  }
+}

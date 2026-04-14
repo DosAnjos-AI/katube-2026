@@ -1,0 +1,16 @@
+{
+  "a46df5eddfc38ead6c6a2b664acd1da8_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.120",
+    "duracao": 4.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9441196918487549,
+    "mos_stoi": 0.9481567144393921,
+    "mos_si_sdr": 14.679093360900879,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Aquele friozinho na barriga, um sorriso recheado de felicidades."
+  }
+}

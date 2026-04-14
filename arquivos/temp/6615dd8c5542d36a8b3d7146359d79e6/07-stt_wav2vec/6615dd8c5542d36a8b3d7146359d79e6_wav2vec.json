@@ -1,0 +1,32 @@
+{
+  "6615dd8c5542d36a8b3d7146359d79e6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:17.884",
+    "duracao": 17.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5933880805969238,
+    "mos_stoi": 0.9377612471580505,
+    "mos_si_sdr": 14.71948528289795,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tá aí, tá na TV, tá todo mundo podendo acompanhar. Quanta gente trabalhando no sistema home office ou ficando em casa, né? E passando dificuldade nesse momento, porque a gente entende. Muita gente tem, né? Como eu falei antes do caso do meu amigo, que daí não tem mais agenda, a gente tem o pessoal dos restaurantes, né?",
+    "stt_wav2vec": "TANATEVETA TODO MUNDO PODENDO ACOMPANHAR QUANTA GENTE TRABALHANDO NO SISTEMA ROMIOFCE OU FICANDO EM CASA NE E PASSANDO DIFICULDADE NESSE MOMENTO QUE A GENTE UNAR  MUITA GENTE TEM NÉ COMO EU FALEI ANTES DO CASO DO MEU AMIGO QUE DAHI NÃO TEM MAIS AGENDA A GENTE TEMHO PESSOAL DOS RESTAURANTES N"
+  },
+  "6615dd8c5542d36a8b3d7146359d79e6_002.ogg": {
+    "tempo_inicio": "00:00:17.924",
+    "tempo_fim": "00:00:31.560",
+    "duracao": 13.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6331161260604858,
+    "mos_stoi": 0.9306045174598694,
+    "mos_si_sdr": 15.560744285583496,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que estão passando um momento de crise, de dificuldade, das próprias lojas, que o pessoal está tentando trabalhar muito com essa ideia do delivery, que inclusive tem números assombrosos, aí deve ser uma pesquisa ainda hoje.",
+    "stt_wav2vec": "QUE TÃO PASSANDO UM MOMENTO DE CRISE DIFICULDADE DAS PRÓPRIAS LOJAS QUE TÃO O PESSOAL TA TENTANDO E TRABALHAR MUITO COM ESSA IDÉIA DO DO DO DELIVERE NEDODO QUE INCLUSIVO E TEM NÚMEROS ASSOMBROSOS AHI DEVE SER UMA PESQUISA AINDA HOJE"
+  }
+}

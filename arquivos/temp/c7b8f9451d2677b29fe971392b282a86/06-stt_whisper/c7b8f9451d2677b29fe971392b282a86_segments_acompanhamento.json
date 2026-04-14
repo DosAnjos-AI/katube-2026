@@ -1,0 +1,30 @@
+{
+  "c7b8f9451d2677b29fe971392b282a86_001.ogg": {
+    "tempo_inicio": "00:00:00.196",
+    "tempo_fim": "00:00:20.572",
+    "duracao": 20.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.367002010345459,
+    "mos_stoi": 0.9315606951713562,
+    "mos_si_sdr": 11.751952171325684,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Que aponta que aumentaram 60% os delivery, né? Com certeza. E eles até implementaram novas formas de deixar, de não ter o contato físico até com o entregador. Então o cara coloca ali, de repente, no chão ou numa mesinha, algo que tu possa deixar ali entre vocês dois, e daí pega por ali, depois higieniza bem a embalagem e todo mundo seguro."
+  },
+  "c7b8f9451d2677b29fe971392b282a86_002.ogg": {
+    "tempo_inicio": "00:00:20.772",
+    "tempo_fim": "00:00:29.982",
+    "duracao": 9.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4096012115478516,
+    "mos_stoi": 0.8700960278511047,
+    "mos_si_sdr": 11.034969329833984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então eu estava dizendo o seguinte, o pessoal que ainda tem dúvidas sobre a reclusão, não é tarde para repensar isso, porque é necessário."
+  }
+}

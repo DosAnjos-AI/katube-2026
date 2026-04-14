@@ -1,0 +1,17 @@
+{
+  "1b71d3b6369c772a49e209e2fdc1676b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:22.016",
+    "duracao": 22.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1755273342132568,
+    "mos_stoi": 0.7630597352981567,
+    "mos_si_sdr": -0.3090083599090576,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cara, a Ramoso vem pra dar muito dinheiro pros caras e eles já tem uma máquina de time, convenhamos, a Flamengo é uma máquina, é o maior Flamengo de todos os tempos. Campeonato Brasileiro, né? Campeonato Brasileiro fudeu, velho. Se o Flamengo continuar nesse ritmo, a Libertadores fudeu também, velho. Quem chama investimento, meu? Chama investimento. Sim, investimento ponto maior.",
+    "stt_wav2vec": "CARA A A RAMAOS EU VEM PARA DÁ MUITO DIANR PUSCAR ARA E ELLES JÁ TEM UMA MÁQUINA DE TINO CONVENHÃNDO COM AMINA UMA MÁQHINA É O MAIOR FLAMENTE TODOS OS TEMPO OS BENATO BRASILEIRO ANEMEAO CAPELAE FOGASDERO FULEU EONAPONADO PRASIDEIRO FUDEUÇO ESEU FAMIGA É CORDINORESE RITIMO LEBOLIBERTADORES FUDEU TAMBÉM VEMDEOS NÃO BEEDENTE E CHAMA EM VERJE DE MEANTONEL CHAMAEM MALEXAFIN E VESTIMENTA OMEO MAIOR"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "dc094a6e1593d3b3ffa6d1ad64667ded_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.838",
+    "duracao": 9.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.655853748321533,
+    "mos_stoi": 0.9644869565963745,
+    "mos_si_sdr": 15.231481552124023,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Em jogos grandes, o Cortez sempre foi muito bem pelo Grêmio. Cara, mas ele deixa desejar, sim, ofensivamente, mas ele sempre foi muito bem e nunca, pra mim, nunca foi o furo do Grêmio."
+  }
+}

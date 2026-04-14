@@ -1,0 +1,16 @@
+{
+  "f5ac8e8957b354aa5395933fb5980322_001.ogg": {
+    "tempo_inicio": "00:00:00.260",
+    "tempo_fim": "00:00:06.748",
+    "duracao": 6.49,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6000721454620361,
+    "mos_stoi": 0.8704911470413208,
+    "mos_si_sdr": 9.630013465881348,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "de tão elegantes visitantes. Maria até ajeitou um pouquinho o cabelo e José lhes ouçam as vestes."
+  }
+}

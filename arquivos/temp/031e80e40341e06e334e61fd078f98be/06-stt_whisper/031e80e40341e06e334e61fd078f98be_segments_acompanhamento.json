@@ -1,0 +1,44 @@
+{
+  "031e80e40341e06e334e61fd078f98be_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.252",
+    "duracao": 4.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.608794093132019,
+    "mos_stoi": 0.7886544466018677,
+    "mos_si_sdr": 0.30516013503074646,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "está lá ainda até hoje, é na sexta avenida com a"
+  },
+  "031e80e40341e06e334e61fd078f98be_002.ogg": {
+    "tempo_inicio": "00:00:04.772",
+    "tempo_fim": "00:00:13.052",
+    "duracao": 8.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6516828536987305,
+    "mos_stoi": 0.7971646785736084,
+    "mos_si_sdr": 8.070746421813965,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Rua 14. E o Lívio ocupou o segundo, terceiro andares e o Mair Scaneham, que tinha achado..."
+  },
+  "031e80e40341e06e334e61fd078f98be_003.ogg": {
+    "tempo_inicio": "00:00:13.316",
+    "tempo_fim": "00:00:17.374",
+    "duracao": 4.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6296048164367676,
+    "mos_stoi": 0.7649835348129272,
+    "mos_si_sdr": 2.8999710083007812,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o Brasil, ocupava com o estúdio dele o último andar."
+  }
+}

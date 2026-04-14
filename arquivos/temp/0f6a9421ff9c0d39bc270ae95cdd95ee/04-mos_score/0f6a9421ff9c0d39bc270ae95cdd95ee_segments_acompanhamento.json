@@ -1,0 +1,14 @@
+{
+  "0f6a9421ff9c0d39bc270ae95cdd95ee_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.700",
+    "duracao": 4.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2106893062591553,
+    "mos_stoi": 0.9410761594772339,
+    "mos_si_sdr": 14.89041805267334,
+    "mos_qualidade": "media"
+  }
+}

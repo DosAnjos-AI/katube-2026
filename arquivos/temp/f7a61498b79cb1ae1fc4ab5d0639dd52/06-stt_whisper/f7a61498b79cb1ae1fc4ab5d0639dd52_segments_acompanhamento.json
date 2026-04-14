@@ -1,0 +1,16 @@
+{
+  "f7a61498b79cb1ae1fc4ab5d0639dd52_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.056",
+    "duracao": 4.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.666659355163574,
+    "mos_stoi": 0.9668880105018616,
+    "mos_si_sdr": 11.372335433959961,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "está só começando. Então, quanto antes a gente se ligar nisso..."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "0b87838b4493f877820ead84be3705fe_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.636",
+    "duracao": 4.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0088722705841064,
+    "mos_stoi": 0.8855940699577332,
+    "mos_si_sdr": 10.725247383117676,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E para isso nós precisamos incrementar e turbinar a presença.",
+    "stt_wav2vec": "E PARA ISSO NAO DECISÃO INTREMENTAR TURBINÁ A PRESENÇA"
+  }
+}

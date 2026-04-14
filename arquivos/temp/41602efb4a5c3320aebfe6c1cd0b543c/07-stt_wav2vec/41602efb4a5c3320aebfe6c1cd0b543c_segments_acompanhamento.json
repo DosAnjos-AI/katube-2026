@@ -1,0 +1,17 @@
+{
+  "41602efb4a5c3320aebfe6c1cd0b543c_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:05.022",
+    "duracao": 4.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4246816635131836,
+    "mos_stoi": 0.9797559976577759,
+    "mos_si_sdr": 18.607431411743164,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tens que ter noção que se o banco A não faz e o banco Bento A não faz e o banco Vedo também não, há de haver o CEOD que fazem.",
+    "stt_wav2vec": "TEO TERNUÇÃO QUE SUBANQUAR NÃO FAZ E O BANCOEITO TAMBÉN D NÃO HÁ DE VER O SIAO DIQUE FAZEM"
+  }
+}

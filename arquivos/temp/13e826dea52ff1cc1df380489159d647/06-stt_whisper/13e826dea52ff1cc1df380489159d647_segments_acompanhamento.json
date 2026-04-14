@@ -1,0 +1,16 @@
+{
+  "13e826dea52ff1cc1df380489159d647_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:18.798",
+    "duracao": 18.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4692285060882568,
+    "mos_stoi": 0.9327371716499329,
+    "mos_si_sdr": 12.706046104431152,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu ia te perguntar, tu que vive esse mundo do futebol, gosta de um estado, faz bola nas costas e tudo, tu conseguiu identificar algumas coisas que acontecem na Argentina dentro das torcidas que possa ser relacionadas aqui com o nosso futebol gaúcho?"
+  }
+}

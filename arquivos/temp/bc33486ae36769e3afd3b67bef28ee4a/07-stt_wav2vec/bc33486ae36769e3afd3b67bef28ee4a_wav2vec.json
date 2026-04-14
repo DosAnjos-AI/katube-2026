@@ -1,0 +1,17 @@
+{
+  "bc33486ae36769e3afd3b67bef28ee4a_001.ogg": {
+    "tempo_inicio": "00:00:00.260",
+    "tempo_fim": "00:00:09.884",
+    "duracao": 9.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9705456495285034,
+    "mos_stoi": 0.9601725339889526,
+    "mos_si_sdr": 12.46329402923584,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "você falou que uma coisa boa foi a estreia, eu queria falar que, né, ela não foi convidada pra estar aqui, queria estar deixando um beijo pra ela, menina Mix",
+    "stt_wav2vec": "VOCÊ VALOQUI UMA COISA BOA FOESE TRE O QUE DEVA VALAR AQUI NE ELA NÃO FOI CONVIDADA PORA ATAINCRIA TADEÇA DUM BEIJO D CHAELA MENINA AMIGAS"
+  }
+}

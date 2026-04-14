@@ -1,0 +1,16 @@
+{
+  "de4d8f53773754e0359e794c1cf950a9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.216",
+    "duracao": 8.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3092737197875977,
+    "mos_stoi": 0.8256235718727112,
+    "mos_si_sdr": 0.9842818975448608,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cara, se eu fosse seguir uma estratégia de dar uma participação, deve ter alguém ganhando a loteria. Ou tu fica no zerado total, tu que sabe?"
+  }
+}

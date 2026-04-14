@@ -1,0 +1,16 @@
+{
+  "c9cf6fc861cb6fcaee46a70aefa39ac9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.934",
+    "duracao": 3.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.889400601387024,
+    "mos_stoi": 0.8850398063659668,
+    "mos_si_sdr": 9.9917573928833,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Bom, eu não sei responder, já que eu acho que ainda não sei como é a nutrição do amor."
+  }
+}

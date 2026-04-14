@@ -1,0 +1,16 @@
+{
+  "b3d16a916374ffbcdbff84953f8ae346_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.324",
+    "duracao": 7.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.943011999130249,
+    "mos_stoi": 0.9116793870925903,
+    "mos_si_sdr": 8.42636489868164,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sim, é como ordenado. Vocês sempre sabem que o que vocês estão a ganhar é um ordenado. O vosso ordenado são 650 e o estado fica de uma parte."
+  }
+}

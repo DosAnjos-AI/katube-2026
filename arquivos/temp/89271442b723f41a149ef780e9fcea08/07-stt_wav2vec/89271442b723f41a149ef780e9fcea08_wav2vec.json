@@ -1,0 +1,32 @@
+{
+  "89271442b723f41a149ef780e9fcea08_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.340",
+    "duracao": 5.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2022380828857422,
+    "mos_stoi": 0.6004857420921326,
+    "mos_si_sdr": -5.672530174255371,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Exato. Olha, por exemplo, até vou partilhar com vocês uma coisa que eu falei com a Fire no início do ano.",
+    "stt_wav2vec": "EZA OLHA FOREMEBRUTA É BOM PARTELHAR COM BOSCENASSE UMA UMA COISA COFALE COM A FAIAR NOIS DOA"
+  },
+  "89271442b723f41a149ef780e9fcea08_002.ogg": {
+    "tempo_inicio": "00:00:05.604",
+    "tempo_fim": "00:00:13.048",
+    "duracao": 7.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.002485752105713,
+    "mos_stoi": 0.9490745663642883,
+    "mos_si_sdr": 9.88676929473877,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "do podcast, que foi o seguinte, eu quando comecei a investir no primeiro ano, eu ganhei dividendos, tinha ganhado cerca de 10€.",
+    "stt_wav2vec": "DO PORQESTA FOI SEGUITO E O QUANDO CONSENTISTIR NO PRIMEIRO NO PRIMEIRO ANO E ALGUEN IR DIVIVEANDOS TINHAGUÉM A CERCA DE DEZ EUROS"
+  }
+}

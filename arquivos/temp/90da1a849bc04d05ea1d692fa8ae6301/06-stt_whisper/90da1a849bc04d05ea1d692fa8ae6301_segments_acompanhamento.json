@@ -1,0 +1,44 @@
+{
+  "90da1a849bc04d05ea1d692fa8ae6301_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:12.124",
+    "duracao": 12.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6995553970336914,
+    "mos_stoi": 0.9107289910316467,
+    "mos_si_sdr": 10.921714782714844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "foi quando eu mudei pra Floripa, então, que foi nessa parte que eu senti que a minha vida interior ela deu uma virada muito forte. Eu fui pra lá morar sozinha e lançar uma marca de camisetas que eu tinha criado como meu melhor amigo."
+  },
+  "90da1a849bc04d05ea1d692fa8ae6301_002.ogg": {
+    "tempo_inicio": "00:00:12.196",
+    "tempo_fim": "00:00:20.988",
+    "duracao": 8.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8615607023239136,
+    "mos_stoi": 0.8810802102088928,
+    "mos_si_sdr": 9.665205955505371,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí, enquanto a marca acontecia, eu trabalhei com edição de vídeo, que era uma coisa que eu fazia desde os 15 também. Nesse tempo que eu tava lá, nos meus 20 anos, eu"
+  },
+  "90da1a849bc04d05ea1d692fa8ae6301_003.ogg": {
+    "tempo_inicio": "00:00:21.156",
+    "tempo_fim": "00:00:28.156",
+    "duracao": 7.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.967970371246338,
+    "mos_stoi": 0.9593673348426819,
+    "mos_si_sdr": 17.411104202270508,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Trabalhei de caixa na usina do hambúrguer. Eles tinham acabado de iniciar no caminho do empreendedorismo social."
+  }
+}

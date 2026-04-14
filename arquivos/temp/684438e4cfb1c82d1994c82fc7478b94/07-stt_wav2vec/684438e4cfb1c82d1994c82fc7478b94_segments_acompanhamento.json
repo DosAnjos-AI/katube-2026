@@ -1,0 +1,32 @@
+{
+  "684438e4cfb1c82d1994c82fc7478b94_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:19.356",
+    "duracao": 19.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4187724590301514,
+    "mos_stoi": 0.8658924102783203,
+    "mos_si_sdr": 4.712241172790527,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vagner? Todo dia a mesma Carolina se assustando com o Wagner. Eu entro no estúdio, né, pra fazer o bagulho aqui, ela se assusta, meu. O bagulho. Aham, ele é muito assustada, né, Adams. É, que Porto Alegrense, velho. Sabe, Wagner, a gente tá aqui exaltando os negócios.",
+    "stt_wav2vec": "VAGNA TODO DIA A MESMA CAROELINA SE ASSUSTANDO CRUVAG NEMESA EU ENTRO NO ESTÚDIO NA PROFASIOU BAGULHO QUE ELA MSTOMEU O BAGOLHA ANRA GOMERADA NEADONS É QUE PORTALEGRÊNCIA ÉBATALEJAS MENA A GENTE ESTÁ QUI EXALTANDO OS NEGÓCIOS"
+  },
+  "684438e4cfb1c82d1994c82fc7478b94_002.ogg": {
+    "tempo_inicio": "00:00:19.460",
+    "tempo_fim": "00:00:30.214",
+    "duracao": 10.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.420851230621338,
+    "mos_stoi": 0.9842735528945923,
+    "mos_si_sdr": 11.962939262390137,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "os pequenos negócios, dando oportunidade para divulgarem os seus arrobas, seus trabalhos. Então, eu te passei aqui, tem um arroba que tu pode divulgar para a gente,",
+    "stt_wav2vec": "NEOS PEQUENOS NEGÓCIOS DANDO OPORTUNIDADE PRA DIVULGAREM OS SEUS ARROUBAS SEUS TRABALHOS ENTÃO EU TE PASSEI AQUI TENHUM A ROUBA QUE TU PODES DIVULGAR PARA GENTE"
+  }
+}

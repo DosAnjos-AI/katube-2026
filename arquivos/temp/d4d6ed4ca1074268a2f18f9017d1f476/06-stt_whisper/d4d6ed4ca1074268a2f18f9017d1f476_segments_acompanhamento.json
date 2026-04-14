@@ -1,0 +1,58 @@
+{
+  "d4d6ed4ca1074268a2f18f9017d1f476_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.700",
+    "duracao": 4.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.703165292739868,
+    "mos_stoi": 0.9637244939804077,
+    "mos_si_sdr": 19.675838470458984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para depois querer fazer o que é um pouquinho mais complicado, um pouquinho mais avançado."
+  },
+  "d4d6ed4ca1074268a2f18f9017d1f476_002.ogg": {
+    "tempo_inicio": "00:00:05.092",
+    "tempo_fim": "00:00:11.740",
+    "duracao": 6.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.7099149227142334,
+    "mos_stoi": 0.9483845233917236,
+    "mos_si_sdr": 20.98178482055664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E a partir daí a gente vai estar ganhando velocidade, vai estar ganhando força e com certeza evoluindo muito dentro de campo."
+  },
+  "d4d6ed4ca1074268a2f18f9017d1f476_003.ogg": {
+    "tempo_inicio": "00:00:12.004",
+    "tempo_fim": "00:00:25.692",
+    "duracao": 13.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.021667242050171,
+    "mos_stoi": 0.9609168171882629,
+    "mos_si_sdr": 19.655210494995117,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Até porque são esses detalhes, rapaziada, que vão fazer diferença dentro de campo. São segundos que vão decidir um jogo. Se vão decidir se um atacante vai chegar na bola para conseguir finalizar, certo? Para fazer um cruzamento."
+  },
+  "d4d6ed4ca1074268a2f18f9017d1f476_004.ogg": {
+    "tempo_inicio": "00:00:26.020",
+    "tempo_fim": "00:00:31.896",
+    "duracao": 5.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.292731523513794,
+    "mos_stoi": 0.9581682682037354,
+    "mos_si_sdr": 17.226200103759766,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E se o zagueiro vai conseguir desmarcar e tudo mais. Então, esses detalhes são muito importantes, rapaziada."
+  }
+}

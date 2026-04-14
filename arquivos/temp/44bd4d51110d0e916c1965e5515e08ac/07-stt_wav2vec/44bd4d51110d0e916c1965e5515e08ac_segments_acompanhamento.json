@@ -1,0 +1,17 @@
+{
+  "44bd4d51110d0e916c1965e5515e08ac_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.142",
+    "duracao": 4.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2354493141174316,
+    "mos_stoi": 0.870955765247345,
+    "mos_si_sdr": 8.672623634338379,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E depois correr mal, também são as primeiras. Exatamente.",
+    "stt_wav2vec": "E DEPOIS QUE CORAMA-LO COMETOU A EXPREMA E VALANIA ARTAMEN"
+  }
+}

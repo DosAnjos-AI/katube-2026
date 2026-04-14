@@ -1,0 +1,16 @@
+{
+  "f1555802cb70b2c4f61bc20d70734801_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.678",
+    "duracao": 7.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2185994386672974,
+    "mos_stoi": 0.6956436634063721,
+    "mos_si_sdr": -1.1697766780853271,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu acho que o Leymar, né? Neymar. Neymar. Levantar o seguinte, Bell. Tira o gol de todos eles. Tira gols."
+  }
+}

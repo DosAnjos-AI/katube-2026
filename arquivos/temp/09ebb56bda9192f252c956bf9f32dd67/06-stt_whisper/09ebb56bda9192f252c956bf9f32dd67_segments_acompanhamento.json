@@ -1,0 +1,16 @@
+{
+  "09ebb56bda9192f252c956bf9f32dd67_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:14.278",
+    "duracao": 14.11,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.758601188659668,
+    "mos_stoi": 0.9628212451934814,
+    "mos_si_sdr": 15.939239501953125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A vergonha esteve no foco do escândalo envolvendo a ex-estagiária da Casa Branca, Mônica Lewinski e o então presidente dos Estados Unidos Bill Clinton. Depois de mais de uma década, Mônica resolveu sair do silêncio."
+  }
+}

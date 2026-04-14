@@ -1,0 +1,58 @@
+{
+  "105e5b4dd35b44787bfbd080e38920ea_001.ogg": {
+    "tempo_inicio": "00:00:00.420",
+    "tempo_fim": "00:00:08.092",
+    "duracao": 7.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.117068290710449,
+    "mos_stoi": 0.8775879740715027,
+    "mos_si_sdr": 9.264760971069336,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Acho que a Maria Rita Requel que falou que todo mundo começou a ficar a Odara, e daí o problema é que todo mundo passou a ficar a Odara, entendeu?"
+  },
+  "105e5b4dd35b44787bfbd080e38920ea_002.ogg": {
+    "tempo_inicio": "00:00:08.196",
+    "tempo_fim": "00:00:15.932",
+    "duracao": 7.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.614107370376587,
+    "mos_stoi": 0.9031394124031067,
+    "mos_si_sdr": 14.812941551208496,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí, então, essa briga que a gente tem notícias, na verdade, é essa disputa, talvez, anterior entre essas forças tão..."
+  },
+  "105e5b4dd35b44787bfbd080e38920ea_003.ogg": {
+    "tempo_inicio": "00:00:16.260",
+    "tempo_fim": "00:00:20.700",
+    "duracao": 4.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.61910080909729,
+    "mos_stoi": 0.9153472185134888,
+    "mos_si_sdr": 14.507526397705078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "tão necessárias e contundentes no país, uma de necessidade de reflexão,"
+  },
+  "105e5b4dd35b44787bfbd080e38920ea_004.ogg": {
+    "tempo_inicio": "00:00:20.996",
+    "tempo_fim": "00:00:27.342",
+    "duracao": 6.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3341768980026245,
+    "mos_stoi": 0.7295741438865662,
+    "mos_si_sdr": -1.4592657089233398,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e outra de necessidade de fazer, porque, né, convenhamos que está difícil."
+  }
+}

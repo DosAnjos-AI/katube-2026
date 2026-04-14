@@ -1,0 +1,17 @@
+{
+  "6ef078b73be37337ecd1be7932f84eb2_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.976",
+    "duracao": 3.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.704623222351074,
+    "mos_stoi": 0.9872701168060303,
+    "mos_si_sdr": 23.09517478942871,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Entretanto, nós fizemos uma atualização e agora sim estamos num sistema de...",
+    "stt_wav2vec": "ENTRETANTO NÓS FIZEMOS UMA TOLUSAÇÃO E AGORA SINTISAMOS NO SISTEMA DE"
+  }
+}

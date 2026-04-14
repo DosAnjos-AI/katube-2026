@@ -1,0 +1,17 @@
+{
+  "2c3a73b547851bb0848350bcacbd9750_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.518",
+    "duracao": 11.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.172221064567566,
+    "mos_stoi": 0.7020804286003113,
+    "mos_si_sdr": 1.5286206007003784,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "passar dias em casa familiares, ou seja, se você vais de alguém que mora, basta ser um bocadinho ao lado. Só de estares fora do teu ambiente, já é...",
+    "stt_wav2vec": "PAFARDABIAS EM CASA DO FAMILIAS CODOA SES RIVAIS NAUGENTCA MORA A MASTA PASTO CERDA UM CANDO EN HÃOLADO SOLTRAS PORTA DO TEU AMIANTO JÁ É"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "7d264fe50497bbdf4edbe136eb3b47f2_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:03.996",
+    "duracao": 3.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0662219524383545,
+    "mos_stoi": 0.9624854326248169,
+    "mos_si_sdr": 13.757437705993652,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "uma paródia da ópera Orfeano Inferno."
+  },
+  "7d264fe50497bbdf4edbe136eb3b47f2_002.ogg": {
+    "tempo_inicio": "00:00:04.292",
+    "tempo_fim": "00:00:09.788",
+    "duracao": 5.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.376859664916992,
+    "mos_stoi": 0.9774801731109619,
+    "mos_si_sdr": 21.28520965576172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E, na verdade, a opereta dele que também se chamava Orfeusonfer."
+  },
+  "7d264fe50497bbdf4edbe136eb3b47f2_003.ogg": {
+    "tempo_inicio": "00:00:09.860",
+    "tempo_fim": "00:00:21.500",
+    "duracao": 11.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7443084716796875,
+    "mos_stoi": 0.9501237273216248,
+    "mos_si_sdr": 15.160015106201172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E era muito engraçada, porque já começava que o Orfeu e a Euridice queriam se separar e eles queriam arranjar amantes. Então ela tem uma historinha do começo ao fim"
+  },
+  "7d264fe50497bbdf4edbe136eb3b47f2_004.ogg": {
+    "tempo_inicio": "00:00:21.540",
+    "tempo_fim": "00:00:30.046",
+    "duracao": 8.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.86510968208313,
+    "mos_stoi": 0.9537897109985352,
+    "mos_si_sdr": 17.903656005859375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E vão cantando, mas eles falam também, mas tem paródia, tem crítica política, a opereta é satírica."
+  }
+}

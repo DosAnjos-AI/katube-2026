@@ -1,0 +1,30 @@
+{
+  "d0e4947643bd8494cf97e2731a7a86a9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.292",
+    "duracao": 11.29,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8350138664245605,
+    "mos_stoi": 0.9552851319313049,
+    "mos_si_sdr": 17.651315689086914,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "projeto que às vezes têm como núcleo, como é feito, um diretor ou às vezes um dramaturgo, ou um dramaturgo diretor, mas não são..."
+  },
+  "d0e4947643bd8494cf97e2731a7a86a9_002.ogg": {
+    "tempo_inicio": "00:00:11.876",
+    "tempo_fim": "00:00:19.804",
+    "duracao": 7.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1078884601593018,
+    "mos_stoi": 0.9706557393074036,
+    "mos_si_sdr": 16.792606353759766,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "continuidade, não são, por exemplo, eu trabalho há 25 anos com um grupo em Minas Gerais,"
+  }
+}

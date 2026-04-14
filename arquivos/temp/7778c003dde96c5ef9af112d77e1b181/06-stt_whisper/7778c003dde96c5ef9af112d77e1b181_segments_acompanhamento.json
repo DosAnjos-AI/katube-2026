@@ -1,0 +1,30 @@
+{
+  "7778c003dde96c5ef9af112d77e1b181_001.ogg": {
+    "tempo_inicio": "00:00:00.260",
+    "tempo_fim": "00:00:03.932",
+    "duracao": 3.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.310716152191162,
+    "mos_stoi": 0.8868834972381592,
+    "mos_si_sdr": 5.057718276977539,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Jesus é o desfecho perfeito do plano de Deus."
+  },
+  "7778c003dde96c5ef9af112d77e1b181_002.ogg": {
+    "tempo_inicio": "00:00:04.260",
+    "tempo_fim": "00:00:12.894",
+    "duracao": 8.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8445976972579956,
+    "mos_stoi": 0.9330312609672546,
+    "mos_si_sdr": 10.468987464904785,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Por causa dele, nós conhecemos a Deus e somos amigos dele. E por isso, pessoal, que em Jesus, todos nós achamos graça."
+  }
+}

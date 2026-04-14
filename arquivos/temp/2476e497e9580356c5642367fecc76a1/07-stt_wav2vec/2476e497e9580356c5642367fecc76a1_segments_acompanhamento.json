@@ -1,0 +1,62 @@
+{
+  "2476e497e9580356c5642367fecc76a1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.700",
+    "duracao": 4.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2548668384552,
+    "mos_stoi": 0.9418521523475647,
+    "mos_si_sdr": 11.163240432739258,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "fazer. Mas eu acho interessante, cara. Eu gostaria muito de saber fazer alguma coisa.",
+    "stt_wav2vec": "FAZER MAS ACHEI INTERESSANTE CAREL EU EU GOSTARIA MUITO DIA DE SABER FAZER ALGUMA COISA"
+  },
+  "2476e497e9580356c5642367fecc76a1_002.ogg": {
+    "tempo_inicio": "00:00:05.060",
+    "tempo_fim": "00:00:17.980",
+    "duracao": 12.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1443853378295898,
+    "mos_stoi": 0.7442392706871033,
+    "mos_si_sdr": 0.06380864977836609,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "2476e497e9580356c5642367fecc76a1_003.ogg": {
+    "tempo_inicio": "00:00:18.180",
+    "tempo_fim": "00:00:24.028",
+    "duracao": 5.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4502758979797363,
+    "mos_stoi": 0.9412603378295898,
+    "mos_si_sdr": 10.46789264678955,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E eu acho que se você colocasse em três vasilinhas de negócio em cheio,",
+    "stt_wav2vec": "EU ACHO QUE SE VOCÊ COLOCASSEEM TRÊS BASA E DINHADOS DE NEGÓCIO ENTEIO"
+  },
+  "2476e497e9580356c5642367fecc76a1_004.ogg": {
+    "tempo_inicio": "00:00:24.484",
+    "tempo_fim": "00:00:29.352",
+    "duracao": 4.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2928955554962158,
+    "mos_stoi": 0.8211317658424377,
+    "mos_si_sdr": -0.48280206322669983,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "d2afdb90b752c0f30101d3a92d37a180_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:13.820",
+    "duracao": 13.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.582307815551758,
+    "mos_stoi": 0.9695865511894226,
+    "mos_si_sdr": 19.7637939453125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O truque moral e político realizado no regime do medo é a conversão do interesse comum, pactuado diante da diversidade de endereçamentos sociais, dos sujeitos reais, ao fantasioso interesse da maioria."
+  },
+  "d2afdb90b752c0f30101d3a92d37a180_002.ogg": {
+    "tempo_inicio": "00:00:13.860",
+    "tempo_fim": "00:00:28.158",
+    "duracao": 14.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.823679804801941,
+    "mos_stoi": 0.9424986839294434,
+    "mos_si_sdr": 11.284356117248535,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Note-se que o acesso exclusivo a esta entidade mística seria de um líder iluminado que encarna a Santíssima Trindade do Senhor da Guerra, do Mercador da Proteção e do Profeta do Medo e que, para tanto,"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "fc0b561ae396510001bc1095016a1f6f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.956",
+    "duracao": 4.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2692623138427734,
+    "mos_stoi": 0.9696992039680481,
+    "mos_si_sdr": 25.12464141845703,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Salve, salve, meus amigos! Hoje eu vou inovar."
+  }
+}

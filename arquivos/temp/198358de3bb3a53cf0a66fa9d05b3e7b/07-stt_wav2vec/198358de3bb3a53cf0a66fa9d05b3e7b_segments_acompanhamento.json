@@ -1,0 +1,32 @@
+{
+  "198358de3bb3a53cf0a66fa9d05b3e7b_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:08.316",
+    "duracao": 8.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0643272399902344,
+    "mos_stoi": 0.9222967624664307,
+    "mos_si_sdr": 5.711552143096924,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olha, estava a dizer, o Diogo é um ex-jogador e treinador de tênis.",
+    "stt_wav2vec": "OLHA A CAVATA TAMASIL O DIOGO É UM ASSGALOR DE TRENADOR TENISTE"
+  },
+  "198358de3bb3a53cf0a66fa9d05b3e7b_002.ogg": {
+    "tempo_inicio": "00:00:08.612",
+    "tempo_fim": "00:00:17.662",
+    "duracao": 9.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1282992362976074,
+    "mos_stoi": 0.9872072339057922,
+    "mos_si_sdr": 18.745418548583984,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Muitos anos também ligado ao tênis, como a maioria das pessoas que chegam ao pádio, vêm do tênis. Teve 7 anos de experiência como atleta e treinador de pádio.",
+    "stt_wav2vec": "É MUITOS ANOS TOMEM LIGADO ATENES COMO A MAIORIA DAS PESSOAS QUE CHEGA AO PAZEL VENDO TENIS É TEVE SETENOS DE EXPERIÊNCIA COMO ATLETA E TRENDOS PAZEL"
+  }
+}

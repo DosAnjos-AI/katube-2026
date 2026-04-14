@@ -1,0 +1,16 @@
+{
+  "fb624934ad4b3514ee5e4f2557a349c8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.560",
+    "duracao": 3.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6406053304672241,
+    "mos_stoi": 0.7304098606109619,
+    "mos_si_sdr": -7.292096138000488,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "por vocês de que o Fernandão. Esse cara..."
+  }
+}

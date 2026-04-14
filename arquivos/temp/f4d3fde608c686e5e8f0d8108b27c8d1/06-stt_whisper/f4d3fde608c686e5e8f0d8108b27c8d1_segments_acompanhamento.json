@@ -1,0 +1,16 @@
+{
+  "f4d3fde608c686e5e8f0d8108b27c8d1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.160",
+    "duracao": 5.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.409910202026367,
+    "mos_stoi": 0.919157862663269,
+    "mos_si_sdr": 13.521903038024902,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu também gosto, e esse menino eu conheci, ele morava meio que na rua, perto dele."
+  }
+}

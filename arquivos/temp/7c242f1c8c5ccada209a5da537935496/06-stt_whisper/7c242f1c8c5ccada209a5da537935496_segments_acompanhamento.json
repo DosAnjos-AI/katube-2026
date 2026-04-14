@@ -1,0 +1,30 @@
+{
+  "7c242f1c8c5ccada209a5da537935496_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.860",
+    "duracao": 8.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8684134483337402,
+    "mos_stoi": 0.9687547087669373,
+    "mos_si_sdr": 20.639787673950195,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E eu gostaria primeiro aqui de inverter os papéis e a ordem e dar um agradecimento pro meu novo patrocinador."
+  },
+  "7c242f1c8c5ccada209a5da537935496_002.ogg": {
+    "tempo_inicio": "00:00:09.252",
+    "tempo_fim": "00:00:21.784",
+    "duracao": 12.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2489676475524902,
+    "mos_stoi": 0.9666643738746643,
+    "mos_si_sdr": 23.76727294921875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a produtora Mr. Plot, do João Henrique Souza, Enio Porto e Felipe Almeida, que criaram em 2011, o Mundo Bita."
+  }
+}

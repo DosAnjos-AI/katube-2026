@@ -1,0 +1,17 @@
+{
+  "20568a602e4352e32ed890b78f6afd28_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:03.740",
+    "duracao": 3.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0176243782043457,
+    "mos_stoi": 0.6854304075241089,
+    "mos_si_sdr": 0.015919353812932968,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "está nos setores com menos ingressos.",
+    "stt_wav2vec": "DÁ E NOS SETORES COM MENOS E INGRESSO"
+  }
+}

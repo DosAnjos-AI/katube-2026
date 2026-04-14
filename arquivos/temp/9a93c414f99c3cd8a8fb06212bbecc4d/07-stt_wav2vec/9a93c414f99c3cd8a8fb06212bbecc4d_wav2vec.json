@@ -1,0 +1,32 @@
+{
+  "9a93c414f99c3cd8a8fb06212bbecc4d_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:09.788",
+    "duracao": 9.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2238519191741943,
+    "mos_stoi": 0.9630261659622192,
+    "mos_si_sdr": 21.064090728759766,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas o nível de força tá lá embaixo. Talvez a gente não consiga extrair esse potencial todo, cara. Por quê? Porque uma coisa complementa a outra. Então, rapaziada, é uma dica também.",
+    "stt_wav2vec": "MAS O NIVEL DE FORÇA TAÁ EMBAIXO TALVEZ A GENTE NÃO CONSIGA ESTRAIR ESSE POTENCIAL TODO CARA PORQUE PORQUE UMA COISA CUMPRIMENTA OUTRA ENTÃO RAPAZIADA É MAIS RICA TAMBÉM"
+  },
+  "9a93c414f99c3cd8a8fb06212bbecc4d_002.ogg": {
+    "tempo_inicio": "00:00:09.860",
+    "tempo_fim": "00:00:20.350",
+    "duracao": 10.49,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.118732213973999,
+    "mos_stoi": 0.9686569571495056,
+    "mos_si_sdr": 23.672203063964844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sempre em busca nivelar. Equilibrar tudo, cara. Treino de força, de resistência. Porque um vai melhorar o outro. Então você vai aumentar seu desempenho totalmente. Entendeu?",
+    "stt_wav2vec": "SEMPRE BUSQUE NE VELÁ EQUILIBRAR TUDO CARA TREINO DE FORÇA DE RESISTÊNCIA PORQUE UM VAE MELHORAR OUTRO ENTÃO VOCÊ VAE AUMENTAR SEU DESEMPENHO TOTALMENTE ENDEU"
+  }
+}

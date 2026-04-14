@@ -1,0 +1,32 @@
+{
+  "91913c1fecc2269f2bb12b8a7b1976ea_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.316",
+    "duracao": 4.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.6102044582366943,
+    "mos_stoi": 0.9762141108512878,
+    "mos_si_sdr": 23.645362854003906,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "do projeto criado do zero. A ideia do restaurante",
+    "stt_wav2vec": "O PROJETO CRIADO DO ZERO A IVEIA QUE DO ESTORANTE"
+  },
+  "91913c1fecc2269f2bb12b8a7b1976ea_002.ogg": {
+    "tempo_inicio": "00:00:04.580",
+    "tempo_fim": "00:00:11.518",
+    "duracao": 6.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4508986473083496,
+    "mos_stoi": 0.9803593158721924,
+    "mos_si_sdr": 22.602449417114258,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Veio de um anúncio. Veio de um anúncio que estava em casa de um colega meu, que nós estávamos na piscina.",
+    "stt_wav2vec": "VEODUNA DE UM ANÚNCIO PARA QUE VEDUMANOCE KERVIA ESTAVA EM CASA DO QUAGMELDO NAS CHAVAS DAPETINA"
+  }
+}

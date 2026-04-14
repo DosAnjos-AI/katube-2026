@@ -1,0 +1,47 @@
+{
+  "7ce8c8c21dcbba4a92cf471c9d59859c_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.724",
+    "duracao": 9.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.446652889251709,
+    "mos_stoi": 0.9369062781333923,
+    "mos_si_sdr": 21.71980094909668,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, a experiência do cliente, a maneira como as empresas vão se posicionar, vão construir jornadas, vão construir produtos, serviços.",
+    "stt_wav2vec": "ENTÃO UU A EXPERIÊNCIA DO CLIENTE A MANEIRA COMO AS EMPRESAS VÃO SE POSICIONAR VÃO CONSTRUIR JORNADAS UM CONSTRUIR PRODUTOS SERVIÇOS"
+  },
+  "7ce8c8c21dcbba4a92cf471c9d59859c_002.ogg": {
+    "tempo_inicio": "00:00:09.988",
+    "tempo_fim": "00:00:24.092",
+    "duracao": 14.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7554988861083984,
+    "mos_stoi": 0.9578052759170532,
+    "mos_si_sdr": 21.013961791992188,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "com base nos dados interpretados, tratados e direcionados através de uma estrutura de análise de sentimentos, machine learning, vai trazer uma experiência muito mais rica para o cliente.",
+    "stt_wav2vec": null
+  },
+  "7ce8c8c21dcbba4a92cf471c9d59859c_003.ogg": {
+    "tempo_inicio": "00:00:24.420",
+    "tempo_fim": "00:00:28.860",
+    "duracao": 4.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.5193111896514893,
+    "mos_stoi": 0.9797580242156982,
+    "mos_si_sdr": 23.950468063354492,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quanto mais personalizada vai ser a experiência, mais agradável, vai ser...",
+    "stt_wav2vec": null
+  }
+}

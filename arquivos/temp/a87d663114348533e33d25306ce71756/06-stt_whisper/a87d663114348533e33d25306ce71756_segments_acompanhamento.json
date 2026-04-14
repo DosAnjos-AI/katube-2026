@@ -1,0 +1,30 @@
+{
+  "a87d663114348533e33d25306ce71756_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.812",
+    "duracao": 14.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0704734325408936,
+    "mos_stoi": 0.9029121994972229,
+    "mos_si_sdr": 11.51794719696045,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Legal, legal demais. Show de bola. E agora, então, eu queria ouvir um pouquinho mais sobre a questão da sua experiência com o design office dentro da VL. Como que foi, então, para você, início, meio, fim, pós..."
+  },
+  "a87d663114348533e33d25306ce71756_002.ogg": {
+    "tempo_inicio": "00:00:14.852",
+    "tempo_fim": "00:00:24.286",
+    "duracao": 9.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.784635305404663,
+    "mos_stoi": 0.8919497132301331,
+    "mos_si_sdr": 4.351983547210693,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tanto profissional quanto para a empresa, ganhos que você pode ressaltar, desafios, as partes mais difíceis, mais complexas. Conta um pouco para a gente."
+  }
+}

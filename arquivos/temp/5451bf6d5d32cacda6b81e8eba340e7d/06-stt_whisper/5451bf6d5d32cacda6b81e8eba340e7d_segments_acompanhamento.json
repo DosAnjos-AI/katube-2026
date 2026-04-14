@@ -1,0 +1,44 @@
+{
+  "5451bf6d5d32cacda6b81e8eba340e7d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.572",
+    "duracao": 12.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0071802139282227,
+    "mos_stoi": 0.9564403295516968,
+    "mos_si_sdr": 10.711451530456543,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "fala e filtrar em 50% essas merdas que ele fala aí, porque eles adoram, eles são os posta-bosta, principalmente que ele tá vindo. Mas voltando, voltando à questão que o Igor comentou dos treinadores, tá? Eu acho que é uma pressão diferente."
+  },
+  "5451bf6d5d32cacda6b81e8eba340e7d_002.ogg": {
+    "tempo_inicio": "00:00:12.676",
+    "tempo_fim": "00:00:17.916",
+    "duracao": 5.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9503021240234375,
+    "mos_stoi": 0.9848235845565796,
+    "mos_si_sdr": 22.112098693847656,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "principalmente pela postura que me ter adotava anteriormente. Eu acho que o Renato tem a pressão sobre o resultado em si."
+  },
+  "5451bf6d5d32cacda6b81e8eba340e7d_003.ogg": {
+    "tempo_inicio": "00:00:18.180",
+    "tempo_fim": "00:00:30.696",
+    "duracao": 12.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.715029239654541,
+    "mos_stoi": 0.9254562854766846,
+    "mos_si_sdr": 4.87053918838501,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

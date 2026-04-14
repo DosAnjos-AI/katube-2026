@@ -1,0 +1,32 @@
+{
+  "63984deef0ec89557d0841e8efe012ae_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:14.684",
+    "duracao": 14.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.925612449645996,
+    "mos_stoi": 0.9350203275680542,
+    "mos_si_sdr": 11.805109024047852,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "63984deef0ec89557d0841e8efe012ae_002.ogg": {
+    "tempo_inicio": "00:00:14.884",
+    "tempo_fim": "00:00:21.224",
+    "duracao": 6.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.919447898864746,
+    "mos_stoi": 0.9750553369522095,
+    "mos_si_sdr": 21.617597579956055,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quando a gente está em crise de quem é a responsabilidade de selecionar o problema,",
+    "stt_wav2vec": "QUANDO A GENTE TAR EM CRISE DE QUENQUE É A RESPONSABILIDADE DE SELECIONAL PROBLEMA"
+  }
+}

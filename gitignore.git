@@ -1,0 +1,27 @@
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDEs
+.idea/
+.vscode/settings.json
+*.swp
+
+# Dados/áudio grandes
+data/
+output/
+audacity_data/
+*.flac
+*.ogg
+*.wav
+
+# Linux/Logs
+*.log
+tmp/
+.DS_Store

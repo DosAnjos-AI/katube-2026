@@ -1,0 +1,16 @@
+{
+  "e2b1928088e159a8978c7ef9c4b36d5e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.158",
+    "duracao": 6.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.200554370880127,
+    "mos_stoi": 0.935167133808136,
+    "mos_si_sdr": 9.540181159973145,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "vai dar um mandraque, assim, ó, minha boca vai ficar, a boquinha da bad boy, Paulo Santana. Ai, meu Deus."
+  }
+}

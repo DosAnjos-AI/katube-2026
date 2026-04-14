@@ -1,0 +1,16 @@
+{
+  "a8b83da4a591f3b986b2b84091f0ec16_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.262",
+    "duracao": 7.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4576995372772217,
+    "mos_stoi": 0.9294936060905457,
+    "mos_si_sdr": 14.735575675964355,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas é um espetáculo que é a mesma questão. Faz a negatividade, é que ele cria aquele coro famoso do Roda Viva, de jovens, hippies."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "971c54903676b266924fbb37af267065_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:13.308",
+    "duracao": 13.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.470393419265747,
+    "mos_stoi": 0.9241653084754944,
+    "mos_si_sdr": 6.602209091186523,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "De fundamento, hein? Não precisei de 40 minutos pra fazer uma rica de uma carne e ali ficou muito boa. Eu que sou super leiga no assunto, eu não sei o que é tomar Hulk? Toma... O que tu falou? Toma Raul? Eu se salivei."
+  },
+  "971c54903676b266924fbb37af267065_002.ogg": {
+    "tempo_inicio": "00:00:13.380",
+    "tempo_fim": "00:00:28.888",
+    "duracao": 15.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.251261591911316,
+    "mos_stoi": 0.8852114677429199,
+    "mos_si_sdr": 6.066705703735352,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

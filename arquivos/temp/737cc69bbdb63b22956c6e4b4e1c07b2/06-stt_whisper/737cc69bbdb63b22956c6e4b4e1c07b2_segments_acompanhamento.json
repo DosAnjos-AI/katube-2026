@@ -1,0 +1,44 @@
+{
+  "737cc69bbdb63b22956c6e4b4e1c07b2_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.508",
+    "duracao": 8.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5996336936950684,
+    "mos_stoi": 0.9058497548103333,
+    "mos_si_sdr": 6.539384365081787,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "deixo um pouquinho na água sanitária e utilizo os meus legumes com casca, sabe? Eu pico tudo bonitinho pra fazer sopa, pra fazer qualquer outro tipo de prato."
+  },
+  "737cc69bbdb63b22956c6e4b4e1c07b2_002.ogg": {
+    "tempo_inicio": "00:00:08.644",
+    "tempo_fim": "00:00:15.164",
+    "duracao": 6.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6811424493789673,
+    "mos_stoi": 0.8701126575469971,
+    "mos_si_sdr": 6.781729698181152,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas eu utilizo com casca e tudo. Claro, tem alguns alimentos que realmente você vai ter que descascar, né? São necessários."
+  },
+  "737cc69bbdb63b22956c6e4b4e1c07b2_003.ogg": {
+    "tempo_inicio": "00:00:15.268",
+    "tempo_fim": "00:00:24.088",
+    "duracao": 8.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.967013955116272,
+    "mos_stoi": 0.9138036370277405,
+    "mos_si_sdr": 13.69935131072998,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas aqueles que têm a casca fininha, assim, geralmente eu não descasco mais. E questão de aproveitar, alimento, congelar, acho que"
+  }
+}

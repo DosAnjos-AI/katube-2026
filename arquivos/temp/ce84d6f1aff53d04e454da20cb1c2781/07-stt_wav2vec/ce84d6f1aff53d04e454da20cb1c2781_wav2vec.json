@@ -1,0 +1,17 @@
+{
+  "ce84d6f1aff53d04e454da20cb1c2781_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:13.372",
+    "duracao": 13.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1245261430740356,
+    "mos_stoi": 0.767611563205719,
+    "mos_si_sdr": 0.5233734250068665,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É isso aí. Vem, Cosminha. Vem. O seguinte, ó. Tem uma crítica que aconteceu. Por que é Wagner? Ah, não. O Bonita Mortadela. Ah, tu acha que o Wagner também. É, Lika? Ah, tu acha que o Wagner também. É, Lika? Ah!",
+    "stt_wav2vec": "MITE VEM CO AS FINHA BENHASAR A C ITIOTA E UMAQIVAGNA ASABE TEMI UMA CRÍTICA E RUQUEZA AITA NÃO MOURIDA MAL ALÉRIA OVAGUEDEA GATA AS QUE O VAGNARTANÉ"
+  }
+}

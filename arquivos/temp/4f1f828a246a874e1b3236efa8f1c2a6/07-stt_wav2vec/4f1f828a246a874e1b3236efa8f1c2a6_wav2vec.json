@@ -1,0 +1,32 @@
+{
+  "4f1f828a246a874e1b3236efa8f1c2a6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.428",
+    "duracao": 10.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.938318133354187,
+    "mos_stoi": 0.9376692175865173,
+    "mos_si_sdr": 7.965142250061035,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "muitos talentos para outros esportes, inclusive esportes eletrônicos, então a gente precisa jogar futebol. E vocês que já são do futebol, vocês precisam cada vez mais treinar e jogar mais,",
+    "stt_wav2vec": "MUITOS TALENTOS PARA OUTROS EXPORTOS INCLUSIVOS POTES ELETRÔNICOS ENTÃO UM ARRINTPETERNOGACO COBOL E VOCÊS QUE JAÇÃO DO FUTEBOL SE ESPECISAM CADA VEZ MAIS TREINAIS OU AMAIS"
+  },
+  "4f1f828a246a874e1b3236efa8f1c2a6_003.ogg": {
+    "tempo_inicio": "00:00:21.956",
+    "tempo_fim": "00:00:30.600",
+    "duracao": 8.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5798559188842773,
+    "mos_stoi": 0.8595409393310547,
+    "mos_si_sdr": 6.415755271911621,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque se a gente for pensar em trabalho, em organização e estruturação, a gente está muito atrás. O Brasil só está no topo, porque tem muita gente jogando, e é de tanta gente que joga,",
+    "stt_wav2vec": "QUESEIM FOU PENSAR EM TRABALHOS EM ORGANIZAÇÃO E SCRUPULAÇÃE HÁ MUITO ATRÁS O BRASIL SOTÁ NO TURPO PORQUE TEM MUITA GENTE JOGANDO EÉ DE TANTA GENTE QUE JOGA"
+  }
+}

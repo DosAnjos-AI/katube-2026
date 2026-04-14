@@ -1,0 +1,47 @@
+{
+  "c35bae4aee01e9125f08bcd3049bb751_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.468",
+    "duracao": 5.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.385200262069702,
+    "mos_stoi": 0.9739542007446289,
+    "mos_si_sdr": 19.197742462158203,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "eu falei assim, aqui em casa, cara, eu tô feliz, eu vou comemorar o título, é...",
+    "stt_wav2vec": "EU FALEI ASSIM A QUINCASA CARAE EU TOU FELIZ EU VOU CO EU VOU COMERMORA O TISOE"
+  },
+  "c35bae4aee01e9125f08bcd3049bb751_002.ogg": {
+    "tempo_inicio": "00:00:05.540",
+    "tempo_fim": "00:00:19.228",
+    "duracao": 13.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1219288110733032,
+    "mos_stoi": 0.8082913756370544,
+    "mos_si_sdr": -1.848868727684021,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "c35bae4aee01e9125f08bcd3049bb751_003.ogg": {
+    "tempo_inicio": "00:00:19.300",
+    "tempo_fim": "00:00:31.016",
+    "duracao": 11.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8052449226379395,
+    "mos_stoi": 0.9553462862968445,
+    "mos_si_sdr": 7.693919658660889,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

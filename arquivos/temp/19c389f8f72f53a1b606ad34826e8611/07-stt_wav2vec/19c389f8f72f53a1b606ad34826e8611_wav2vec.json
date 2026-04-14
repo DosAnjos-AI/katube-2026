@@ -1,0 +1,17 @@
+{
+  "19c389f8f72f53a1b606ad34826e8611_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:03.816",
+    "duracao": 3.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4230854511260986,
+    "mos_stoi": 0.6688275337219238,
+    "mos_si_sdr": -0.866126298904419,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "no momento em que eu vi rituais e visões de transformação.",
+    "stt_wav2vec": "Á NO MOMENTO EM QUE O VI IRRITUAIS VISÕES DE TRANSFORMAÇÃO"
+  }
+}

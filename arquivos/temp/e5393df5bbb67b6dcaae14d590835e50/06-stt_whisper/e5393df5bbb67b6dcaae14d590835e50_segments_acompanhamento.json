@@ -1,0 +1,16 @@
+{
+  "e5393df5bbb67b6dcaae14d590835e50_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:29.526",
+    "duracao": 29.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.230779767036438,
+    "mos_stoi": 0.9472982287406921,
+    "mos_si_sdr": 10.02483081817627,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "De volta com o Tudo Nosso aqui na Atlântida, 23 minutos pras nove, tudo nosso que é um oferecimento e uma parceria com Snowland, neve de verdade, confira as ofertas especiais que preparamos para você se divertir. Fazminha, o que tu falasse ali antes mesmo? Então, seu Adam, teve uma mulher que já sabendo que estava com o coronavírus, já sabendo que estava com todos os sintomas, ela decidiu muita fé, né? Foi na igreja."
+  }
+}

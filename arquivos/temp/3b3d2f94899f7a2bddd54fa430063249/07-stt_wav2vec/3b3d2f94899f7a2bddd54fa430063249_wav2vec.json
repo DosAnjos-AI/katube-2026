@@ -1,0 +1,17 @@
+{
+  "3b3d2f94899f7a2bddd54fa430063249_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:04.776",
+    "duracao": 4.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.263186454772949,
+    "mos_stoi": 0.9752839207649231,
+    "mos_si_sdr": 24.9349422454834,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ela sabia que receber uma grande tarefa e que não seria nada fácil.",
+    "stt_wav2vec": "ASABIA QUE RECEBERA UMA GRANDE TAREFA E QUE NÃO SERIA NADA FÁCIL"
+  }
+}

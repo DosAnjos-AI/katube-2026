@@ -1,0 +1,44 @@
+{
+  "68e496b34f7fbc9e5dd4161149a5f240_001.ogg": {
+    "tempo_inicio": "00:00:01.092",
+    "tempo_fim": "00:00:16.060",
+    "duracao": 14.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2360244989395142,
+    "mos_stoi": 0.8125627040863037,
+    "mos_si_sdr": 8.188438415527344,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Com o argumento das sociedades cada vez mais complexas, após a Revolução Agrícola, surgiu um novo obstáculo, que foi a sobrecarga da memória. Ele perpetuou-se devido à quantidade exacervada de informações que as novas civilizações produziram."
+  },
+  "68e496b34f7fbc9e5dd4161149a5f240_002.ogg": {
+    "tempo_inicio": "00:00:16.772",
+    "tempo_fim": "00:00:25.276",
+    "duracao": 8.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.198481798171997,
+    "mos_stoi": 0.7253659963607788,
+    "mos_si_sdr": 4.384181976318359,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, pela primeira vez na história, o cérebro se tornou-se incapaz de armazenar todas as informações coletadas ao longo da vida dos sábados."
+  },
+  "68e496b34f7fbc9e5dd4161149a5f240_003.ogg": {
+    "tempo_inicio": "00:00:25.636",
+    "tempo_fim": "00:00:30.558",
+    "duracao": 4.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2269001007080078,
+    "mos_stoi": 0.5729485750198364,
+    "mos_si_sdr": -4.836757659912109,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vitória, pode explicar de forma mais detalhada como isso aconteceu? Claro."
+  }
+}

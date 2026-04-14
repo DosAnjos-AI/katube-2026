@@ -1,0 +1,16 @@
+{
+  "22a81d98d6cdb7b52a786187f0821de9_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.712",
+    "duracao": 4.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4857075214385986,
+    "mos_stoi": 0.8534003496170044,
+    "mos_si_sdr": 7.401220798492432,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu tenho um salário que me permite, no mês em que vou feiras, pagar as feiras."
+  }
+}

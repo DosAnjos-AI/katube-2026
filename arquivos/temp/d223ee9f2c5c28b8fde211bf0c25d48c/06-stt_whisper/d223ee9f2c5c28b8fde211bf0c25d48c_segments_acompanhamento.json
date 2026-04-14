@@ -1,0 +1,30 @@
+{
+  "d223ee9f2c5c28b8fde211bf0c25d48c_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:03.804",
+    "duracao": 3.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8198161125183105,
+    "mos_stoi": 0.9114646315574646,
+    "mos_si_sdr": 14.31789493560791,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se eu falo de Minas Gerais, Minas Gerais,"
+  },
+  "d223ee9f2c5c28b8fde211bf0c25d48c_002.ogg": {
+    "tempo_inicio": "00:00:04.100",
+    "tempo_fim": "00:00:07.864",
+    "duracao": 3.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.207770347595215,
+    "mos_stoi": 0.8507160544395447,
+    "mos_si_sdr": 10.622344017028809,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O movimento de teatro ou grupo é bastante forte. Bastante forte."
+  }
+}

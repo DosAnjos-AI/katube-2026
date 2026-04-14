@@ -1,0 +1,17 @@
+{
+  "e61dfd8c43b62c5c75407b4f6a3103e2_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:14.588",
+    "duracao": 14.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1999268531799316,
+    "mos_stoi": 0.7064940333366394,
+    "mos_si_sdr": 3.7388529777526855,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "um grupo, uma tribo, que vivia junto, onde viviam juntos, onde tinham filhos, criavam peças juntos e viajavam muito",
+    "stt_wav2vec": "GRUPO COM O MACOMATRÍBUNA QUE VIVIA JUNTTO ONDE VIVIAM JUNTOS ONDE TINHAM FILHOS HONMEE TINHAM AH CRIAVAM PEÇAS JUNTOS E VIAJAVAM MUITO"
+  }
+}

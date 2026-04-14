@@ -1,0 +1,16 @@
+{
+  "6e3e0a8ba41f95880468f4c8c0d87104_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.974",
+    "duracao": 10.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.73472261428833,
+    "mos_stoi": 0.9180494546890259,
+    "mos_si_sdr": 9.347649574279785,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vou ter tanta rentabilidade? Não. Depende de quanto aportares, como é lógico. Depende de quando é que vocês vão investir, mas ao mesmo tempo, mais vale ter um lucro de 4 mil ou 5 mil do que ter um lucro de 100 euros."
+  }
+}

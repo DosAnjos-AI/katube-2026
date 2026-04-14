@@ -1,0 +1,44 @@
+{
+  "162a71eeedc58122da099e65b1b071fa_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:13.756",
+    "duracao": 13.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6677398681640625,
+    "mos_stoi": 0.9566255211830139,
+    "mos_si_sdr": 24.461341857910156,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "muito real, surreal. Chega a ser incrível. Meus filhos pra frente... Nunca vão saber o que é passar essa transição. Eles vão chegar já na melhor qualidade. E eu vi o negócio crescer. É tipo videogame, assim. Eu lembro quando eu vim pra Ponta Grossa..."
+  },
+  "162a71eeedc58122da099e65b1b071fa_002.ogg": {
+    "tempo_inicio": "00:00:13.892",
+    "tempo_fim": "00:00:18.940",
+    "duracao": 5.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9692158699035645,
+    "mos_stoi": 0.9897178411483765,
+    "mos_si_sdr": 20.297061920166016,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O meu tio morava na minha frente, tio César, e o tio César tem um filho, o Caio, tem idade do meu irmão."
+  },
+  "162a71eeedc58122da099e65b1b071fa_003.ogg": {
+    "tempo_inicio": "00:00:19.300",
+    "tempo_fim": "00:00:27.544",
+    "duracao": 8.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5646653175354004,
+    "mos_stoi": 0.9626498818397522,
+    "mos_si_sdr": 21.92779541015625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Só que meu irmão nunca foi muito em videogame e tecnologia, essas coisas, sempre foi da bola, da rua. E eu ficava em casa com o Caio, porque desde que não saía, não podia sair, era criança."
+  }
+}

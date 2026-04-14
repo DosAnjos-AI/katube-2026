@@ -1,0 +1,30 @@
+{
+  "91bdf834a2e22ee95d6587c2e7d87c65_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:21.948",
+    "duracao": 21.95,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5010743141174316,
+    "mos_stoi": 0.9465117454528809,
+    "mos_si_sdr": 14.491076469421387,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É justamente isso, né? Ele enfatiza que todo mundo tá junto nessa e pode pegar qualquer um, não é só a idosa, que no caso ela era uma senhora de 91 anos, com certeza talvez tivesse outras doenças envolvidas, né? Que fazia dela um grupo de risco super alto, não só a idosa, mas também com outras doenças, que normalmente nessa idade é comum, né?"
+  },
+  "91bdf834a2e22ee95d6587c2e7d87c65_002.ogg": {
+    "tempo_inicio": "00:00:22.020",
+    "tempo_fim": "00:00:31.576",
+    "duracao": 9.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8114769458770752,
+    "mos_stoi": 0.9737420678138733,
+    "mos_si_sdr": 18.84041404724121,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "até mais alguma coisa que pudesse agravar a situação do Covid-19, mas aqui no estado subiu para 121 o número de casos"
+  }
+}

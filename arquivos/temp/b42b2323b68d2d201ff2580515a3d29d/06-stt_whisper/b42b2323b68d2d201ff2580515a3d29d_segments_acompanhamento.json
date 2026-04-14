@@ -1,0 +1,44 @@
+{
+  "b42b2323b68d2d201ff2580515a3d29d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.404",
+    "duracao": 5.4,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.779223680496216,
+    "mos_stoi": 0.7693148851394653,
+    "mos_si_sdr": 20.41043472290039,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Dida, você está destruindo a nossa casa. Vocês derrubaram árvores?"
+  },
+  "b42b2323b68d2d201ff2580515a3d29d_002.ogg": {
+    "tempo_inicio": "00:00:05.700",
+    "tempo_fim": "00:00:10.300",
+    "duracao": 4.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.566573143005371,
+    "mos_stoi": 0.5965921878814697,
+    "mos_si_sdr": -0.3302379846572876,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Espagaram as flores, agora as abelhas e espaços voaram para longe."
+  },
+  "b42b2323b68d2d201ff2580515a3d29d_003.ogg": {
+    "tempo_inicio": "00:00:10.788",
+    "tempo_fim": "00:00:16.006",
+    "duracao": 5.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.843620777130127,
+    "mos_stoi": 0.8474843502044678,
+    "mos_si_sdr": 20.67917251586914,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null
+  }
+}

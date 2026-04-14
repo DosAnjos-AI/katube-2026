@@ -1,0 +1,17 @@
+{
+  "88e99e27f0eb8d87cb6834bbd9880d9f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.100",
+    "duracao": 7.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3464298248291016,
+    "mos_stoi": 0.9525988101959229,
+    "mos_si_sdr": 19.855812072753906,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "No último pós-Grenal, o Juan falou bem assim, ó. Eu tô tranquilo, porque no Grenaldo final a gente vai ganhar isso que importa.",
+    "stt_wav2vec": "NO ÚLTIMO PÓZ GRENAL O RUAFALOBENSINHO EU TOU TRANQUILO PORQUE NO GRENAL DA FINAL RITE VAI GANHAR ES QUE IMPORTA"
+  }
+}

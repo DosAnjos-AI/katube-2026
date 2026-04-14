@@ -1,0 +1,30 @@
+{
+  "b50f9b14c214ddce58b18266847777ed_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.436",
+    "duracao": 9.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7468974590301514,
+    "mos_stoi": 0.8867314457893372,
+    "mos_si_sdr": 7.273214817047119,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pelo menos até março, maio, final de campeonato, vai ter que ser uma renovação automática de todo mundo que está no elenco. Eu imagino que seria o ideal. E para a temporada de 2021?"
+  },
+  "b50f9b14c214ddce58b18266847777ed_002.ogg": {
+    "tempo_inicio": "00:00:09.572",
+    "tempo_fim": "00:00:16.072",
+    "duracao": 6.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9961954355239868,
+    "mos_stoi": 0.7930882573127747,
+    "mos_si_sdr": 9.406489372253418,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tu acha interessante renovar com o Rodinei e com o Sarabia, o só com um deles ou com nenhum, vai atrás da base, vai atrás do mercado."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "2b2cb42d9388beab281e08b45e0cf072_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:05.692",
+    "duracao": 5.62,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.788003444671631,
+    "mos_stoi": 0.9803260564804077,
+    "mos_si_sdr": 16.759639739990234,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "da família, a gente trata como se fosse parente, uma permanência também nesse discurso, né?"
+  },
+  "2b2cb42d9388beab281e08b45e0cf072_002.ogg": {
+    "tempo_inicio": "00:00:06.052",
+    "tempo_fim": "00:00:18.972",
+    "duracao": 12.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7327120304107666,
+    "mos_stoi": 0.9772273898124695,
+    "mos_si_sdr": 14.930537223815918,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, portanto, Freire afirma também que a sociedade brasileira seria diferente daquela do regime do apartheid da África do Sul, já que brancos e negros conviviam bem"
+  },
+  "2b2cb42d9388beab281e08b45e0cf072_003.ogg": {
+    "tempo_inicio": "00:00:19.076",
+    "tempo_fim": "00:00:29.944",
+    "duracao": 10.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9200139045715332,
+    "mos_stoi": 0.95606529712677,
+    "mos_si_sdr": 10.603638648986816,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "as crianças negras e brancas cresciam juntas, e o fato de que aqui no Brasil essa segregação racial não era oficialmente institucionalizada,"
+  }
+}

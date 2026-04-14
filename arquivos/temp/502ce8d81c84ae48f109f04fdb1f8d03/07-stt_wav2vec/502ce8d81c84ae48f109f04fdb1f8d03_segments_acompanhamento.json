@@ -1,0 +1,24 @@
+{
+  "502ce8d81c84ae48f109f04fdb1f8d03_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.508",
+    "duracao": 8.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Eu acho que vai ser bem ao estilo Jurgen Klopp das Américas. 5x0. 3x2, Inter.",
+    "stt_wav2vec": "EU ACHO QUE VAI SE BEM AO ESTILO LIUNGANCLOPE DAS AMÉRICAS ESTEM QUATER DRÊS Á DOIS INTE"
+  },
+  "502ce8d81c84ae48f109f04fdb1f8d03_002.ogg": {
+    "tempo_inicio": "00:00:08.804",
+    "tempo_fim": "00:00:13.192",
+    "duracao": 4.39,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

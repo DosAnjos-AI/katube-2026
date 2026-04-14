@@ -1,0 +1,17 @@
+{
+  "bd9f64385d0a36d77031721bd32055d2_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.008",
+    "duracao": 4.01,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5325264930725098,
+    "mos_stoi": 0.9474636316299438,
+    "mos_si_sdr": 16.493167877197266,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Neste momento só que consegue investir 200 euros por mês. Ok, mas consegue investir mais",
+    "stt_wav2vec": "NOESTEMENTO SÓ QUE CONSEGUE NO INVESTIRO DESANOS EROS PORMENTOS ALQUEIRO MAIS CONSEGUINTE DEMAIS"
+  }
+}

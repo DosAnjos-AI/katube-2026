@@ -1,0 +1,16 @@
+{
+  "db897645a2b6cfe4533ccf9dbd668d24_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.544",
+    "duracao": 3.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3664798736572266,
+    "mos_stoi": 0.959402322769165,
+    "mos_si_sdr": 19.759563446044922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ter esse tipo de cadeiras, até mesmo aprender a cozinhar, não é?"
+  }
+}

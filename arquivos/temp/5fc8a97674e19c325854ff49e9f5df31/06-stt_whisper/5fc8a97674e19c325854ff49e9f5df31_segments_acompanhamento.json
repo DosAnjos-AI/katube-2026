@@ -1,0 +1,72 @@
+{
+  "5fc8a97674e19c325854ff49e9f5df31_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.084",
+    "duracao": 9.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2444370985031128,
+    "mos_stoi": 0.8119936585426331,
+    "mos_si_sdr": 1.8812607526779175,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olha. E é bom, né? Ah, com certeza. Uma hora dessa, você vai ter que levar eu e a mala lá pra dar um tiro. A Maria também coloca."
+  },
+  "5fc8a97674e19c325854ff49e9f5df31_002.ogg": {
+    "tempo_inicio": "00:00:09.188",
+    "tempo_fim": "00:00:18.428",
+    "duracao": 9.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3297715187072754,
+    "mos_stoi": 0.8340530395507812,
+    "mos_si_sdr": 2.2764127254486084,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "5fc8a97674e19c325854ff49e9f5df31_003.ogg": {
+    "tempo_inicio": "00:00:18.884",
+    "tempo_fim": "00:00:29.884",
+    "duracao": 11.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.584885597229004,
+    "mos_stoi": 0.9589213132858276,
+    "mos_si_sdr": 13.455775260925293,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Gente, então. Hoje é o tópico que eu amo. Confesso pra vocês que eu fiz uma lista enorme de férias."
+  },
+  "5fc8a97674e19c325854ff49e9f5df31_004.ogg": {
+    "tempo_inicio": "00:00:29.956",
+    "tempo_fim": "00:00:34.396",
+    "duracao": 4.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1882548332214355,
+    "mos_stoi": 0.8881760835647583,
+    "mos_si_sdr": 8.333436012268066,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas é claro que eu só escolhi algumas coisas aqui nos tópicos que nós vamos discutir para falar."
+  },
+  "5fc8a97674e19c325854ff49e9f5df31_005.ogg": {
+    "tempo_inicio": "00:00:34.948",
+    "tempo_fim": "00:00:42.144",
+    "duracao": 7.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.256092071533203,
+    "mos_stoi": 0.9170293211936951,
+    "mos_si_sdr": 14.123753547668457,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque eu me considero uma pessoa que adora seriados. E vocês, gente, vocês gostam? Nossa, eu amo."
+  }
+}

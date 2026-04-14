@@ -1,0 +1,30 @@
+{
+  "d44967fcbd96ae15b922253050c76b33_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:14.684",
+    "duracao": 14.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5512924194335938,
+    "mos_stoi": 0.8263948559761047,
+    "mos_si_sdr": 7.219857215881348,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Naquela época, eu acho que o que acontecia é que a gente via que havia uma possibilidade da Revolução Social realmente acontecer. A Revolução Social, significando, vamos chegar a um..."
+  },
+  "d44967fcbd96ae15b922253050c76b33_002.ogg": {
+    "tempo_inicio": "00:00:14.884",
+    "tempo_fim": "00:00:19.740",
+    "duracao": 4.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5373104810714722,
+    "mos_stoi": 0.7611410021781921,
+    "mos_si_sdr": 0.5976381301879883,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "no caso do anarquismo, vão chegar à autogestão dos meios de..."
+  }
+}

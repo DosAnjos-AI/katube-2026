@@ -1,0 +1,30 @@
+{
+  "4e7430ca2f3fc5798883239ebfd482a6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.812",
+    "duracao": 6.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.264871597290039,
+    "mos_stoi": 0.9687377214431763,
+    "mos_si_sdr": 18.06594467163086,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Renato, tem uma dúvida aqui que eu queria saber essa diferença, né? A mesma carga que a mesma carga ou a mesma intensidade"
+  },
+  "4e7430ca2f3fc5798883239ebfd482a6_002.ogg": {
+    "tempo_inicio": "00:00:07.140",
+    "tempo_fim": "00:00:15.182",
+    "duracao": 8.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.351414203643799,
+    "mos_stoi": 0.9495229721069336,
+    "mos_si_sdr": 18.74148941040039,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que o masculino usa, utiliza no treino, é a mesma carga para o feminino. Eu queria saber essa diferença entre treinos para o masculino e treino para o feminino."
+  }
+}

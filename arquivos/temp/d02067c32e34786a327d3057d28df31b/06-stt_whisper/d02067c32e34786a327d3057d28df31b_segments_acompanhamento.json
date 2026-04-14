@@ -1,0 +1,30 @@
+{
+  "d02067c32e34786a327d3057d28df31b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.844",
+    "duracao": 10.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2668073177337646,
+    "mos_stoi": 0.9175335168838501,
+    "mos_si_sdr": 7.929665565490723,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Isso? E sabe? Vai pegar estrada. E tem gatilhos, enfim. Mas é um papo muito profundo pra gente ficar, né? Eu e o Wagner aqui. Bem certinho."
+  },
+  "d02067c32e34786a327d3057d28df31b_002.ogg": {
+    "tempo_inicio": "00:00:11.108",
+    "tempo_fim": "00:00:15.516",
+    "duracao": 4.41,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.919370174407959,
+    "mos_stoi": 0.9354031085968018,
+    "mos_si_sdr": 13.059182167053223,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu queria saber o guri da mortadela. O que ele acha de tudo isso? Ele não veio."
+  }
+}

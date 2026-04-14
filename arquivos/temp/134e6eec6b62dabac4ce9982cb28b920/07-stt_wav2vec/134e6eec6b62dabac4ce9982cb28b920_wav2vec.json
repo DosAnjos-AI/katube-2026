@@ -1,0 +1,17 @@
+{
+  "134e6eec6b62dabac4ce9982cb28b920_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:13.806",
+    "duracao": 13.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5724735260009766,
+    "mos_stoi": 0.8476585745811462,
+    "mos_si_sdr": 8.121537208557129,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "esfregando o chão, enquanto o outro jogava um balde d'água, enquanto o outro comandava. E, pouco a pouco, você percebia que tinha alguma coisa que vê com a vida cotidiana, mas que estava tudo muito, muito estranho.",
+    "stt_wav2vec": "ESFREGANDO O CHÃO ENQUANTO O OUTO  JOGAVA UM BOLDI DÁGUA ENQUANTO O OUTRO COMANDAVA E POCO APOCOSIA PERCEBIA QUE TINHA ALGUMA COISA DE VIVER COM A VIDA COTIDIANA MAS E ESTAVA TUDO MUITO MUITO ESTRATA"
+  }
+}

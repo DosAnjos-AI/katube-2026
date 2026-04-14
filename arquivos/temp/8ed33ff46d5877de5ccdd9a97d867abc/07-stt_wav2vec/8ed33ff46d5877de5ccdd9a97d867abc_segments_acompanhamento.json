@@ -1,0 +1,62 @@
+{
+  "8ed33ff46d5877de5ccdd9a97d867abc_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.284",
+    "duracao": 8.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.138768434524536,
+    "mos_stoi": 0.9693700075149536,
+    "mos_si_sdr": 18.014211654663086,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olá, Chico. Tudo bom com vocês? Agora voltando online em linha, né? Na semana passada eu estava out.",
+    "stt_wav2vec": "CU TUDO BOM COM VOCÊS AGORA VOLTANDO OM LANIM LINHA NA A SEMANA PASSADA EU ESTAVA ALT"
+  },
+  "8ed33ff46d5877de5ccdd9a97d867abc_002.ogg": {
+    "tempo_inicio": "00:00:08.708",
+    "tempo_fim": "00:00:15.004",
+    "duracao": 6.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.608564615249634,
+    "mos_stoi": 0.9378182291984558,
+    "mos_si_sdr": 18.003646850585938,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "8ed33ff46d5877de5ccdd9a97d867abc_003.ogg": {
+    "tempo_inicio": "00:00:15.396",
+    "tempo_fim": "00:00:23.260",
+    "duracao": 7.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8364171981811523,
+    "mos_stoi": 0.9457610249519348,
+    "mos_si_sdr": 8.023131370544434,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E estamos conectando com Minas Gerais, Belo Horizonte, com a professora Sarah Rojo. Olá, Sarah!",
+    "stt_wav2vec": "ESTAMOS CONECTANDO COM MINA GERAES BELO HORIZONTE COM A PROFESSORA SARA RORRO LASARA"
+  },
+  "8ed33ff46d5877de5ccdd9a97d867abc_004.ogg": {
+    "tempo_inicio": "00:00:23.812",
+    "tempo_fim": "00:00:30.910",
+    "duracao": 7.1,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.501140832901001,
+    "mos_stoi": 0.8452568650245667,
+    "mos_si_sdr": 6.756932735443115,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olá, Maria, tudo bem? Olá, Maria. Tudo bem? Estou feliz de estar com vocês.",
+    "stt_wav2vec": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "6af34cdcdb0f348420c466728cd68f74_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.084",
+    "duracao": 5.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.483368992805481,
+    "mos_stoi": 0.8652456998825073,
+    "mos_si_sdr": 3.503528118133545,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O cara é ruim, o cara é ruim em todos. O cara é bom e todos. Me fala como é que tá o Igor então nessa aí."
+  },
+  "6af34cdcdb0f348420c466728cd68f74_002.ogg": {
+    "tempo_inicio": "00:00:05.444",
+    "tempo_fim": "00:00:15.100",
+    "duracao": 9.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2946534156799316,
+    "mos_stoi": 0.9774764180183411,
+    "mos_si_sdr": 17.573877334594727,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Igor? Não, só deixa eu completar como é que tá o top 6 geral no momento. A Vilma tá em primeiro, Wallace e Marta tá em segundo, Matheus Arsenez em terceiro."
+  },
+  "6af34cdcdb0f348420c466728cd68f74_003.ogg": {
+    "tempo_inicio": "00:00:15.396",
+    "tempo_fim": "00:00:23.164",
+    "duracao": 7.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.583160400390625,
+    "mos_stoi": 0.9800177812576294,
+    "mos_si_sdr": 21.82646369934082,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Bruna Gama, em quarto, Mariademenec, namorada do contra Denilson. Tá gastando a bola também. E o quinto..."
+  }
+}

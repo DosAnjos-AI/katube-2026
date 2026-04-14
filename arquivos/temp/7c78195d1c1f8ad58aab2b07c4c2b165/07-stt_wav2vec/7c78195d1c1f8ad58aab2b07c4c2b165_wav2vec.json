@@ -1,0 +1,17 @@
+{
+  "7c78195d1c1f8ad58aab2b07c4c2b165_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:08.286",
+    "duracao": 8.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6291218996047974,
+    "mos_stoi": 0.9785196185112,
+    "mos_si_sdr": 5.182682037353516,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e merecem ser reconhecidas. Uma delas acontece no Rio Grande do Sul, com o movimento Empatia no Trânsito.",
+    "stt_wav2vec": "MERECEM SER RECONHECIDAS UMA DELAS ACONTECE NO RIO GRANDE DO SUL COM O MOVIMENTO EMPATIA NO TRÂNSITO DEU-ME COLO"
+  }
+}

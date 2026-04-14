@@ -1,0 +1,17 @@
+{
+  "2d327b45b97c8b3f0481fbab2737f226_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.660",
+    "duracao": 5.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5899078845977783,
+    "mos_stoi": 0.8020354509353638,
+    "mos_si_sdr": 3.2979891300201416,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, essa escola, que era onde o Judício estudou com Piscato,",
+    "stt_wav2vec": "ELE ENTÃO NÃO ÉSSA ESCOLA ENO QUERA OREGEIR O JURIZO DO COMPISTO DESCATO"
+  }
+}

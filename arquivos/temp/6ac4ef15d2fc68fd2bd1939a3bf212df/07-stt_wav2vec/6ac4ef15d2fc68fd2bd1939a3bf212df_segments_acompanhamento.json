@@ -1,0 +1,17 @@
+{
+  "6ac4ef15d2fc68fd2bd1939a3bf212df_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.336",
+    "duracao": 5.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3638498783111572,
+    "mos_stoi": 0.9943175911903381,
+    "mos_si_sdr": 28.007488250732422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu mal, mal precisava falar. As pessoas já aprovavam e ali estava tudo certo.",
+    "stt_wav2vec": "EO MAL MAL PRECISAVA FALAR AS PESSOAS JÁ APROVAVAM E ALI TAVA TUDO CERTO"
+  }
+}

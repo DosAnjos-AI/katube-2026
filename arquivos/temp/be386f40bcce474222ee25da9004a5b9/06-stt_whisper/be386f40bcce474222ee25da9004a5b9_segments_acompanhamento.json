@@ -1,0 +1,44 @@
+{
+  "be386f40bcce474222ee25da9004a5b9_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.972",
+    "duracao": 10.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.148009777069092,
+    "mos_stoi": 0.9689262509346008,
+    "mos_si_sdr": 17.37394905090332,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Bom, eu acho que para trazer uma última pergunta, finalizar o nosso papo rápido sobre cooperativismo e transformação aqui no Brasil, eu gostaria de perguntar, deputado,"
+  },
+  "be386f40bcce474222ee25da9004a5b9_002.ogg": {
+    "tempo_inicio": "00:00:11.012",
+    "tempo_fim": "00:00:23.868",
+    "duracao": 12.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9898430109024048,
+    "mos_stoi": 0.9660805463790894,
+    "mos_si_sdr": 7.96441650390625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Que mensagem você deixaria para esses jovens que desejam se engajar na causa política, que desejam exercer um papel ativo nessa mudança, nessa modernização? Bom, primeiro deixa claro que..."
+  },
+  "be386f40bcce474222ee25da9004a5b9_003.ogg": {
+    "tempo_inicio": "00:00:24.484",
+    "tempo_fim": "00:00:29.742",
+    "duracao": 5.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4220651388168335,
+    "mos_stoi": 0.8510555624961853,
+    "mos_si_sdr": 4.694880485534668,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

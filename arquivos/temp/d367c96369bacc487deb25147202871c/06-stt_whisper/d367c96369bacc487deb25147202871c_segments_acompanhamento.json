@@ -1,0 +1,44 @@
+{
+  "d367c96369bacc487deb25147202871c_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.428",
+    "duracao": 6.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3413822650909424,
+    "mos_stoi": 0.8101180791854858,
+    "mos_si_sdr": 0.46033671498298645,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, muito cuidado, crianças. O monstro raspador gosta de assustar gente pequena."
+  },
+  "d367c96369bacc487deb25147202871c_002.ogg": {
+    "tempo_inicio": "00:00:06.948",
+    "tempo_fim": "00:00:14.332",
+    "duracao": 7.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6017961502075195,
+    "mos_stoi": 0.9621362090110779,
+    "mos_si_sdr": 14.31272029876709,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quando alguma criança se aproxima, ele abre o seu olhão, empina o narigão e dispensando."
+  },
+  "d367c96369bacc487deb25147202871c_003.ogg": {
+    "tempo_inicio": "00:00:14.756",
+    "tempo_fim": "00:00:19.080",
+    "duracao": 4.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3286670446395874,
+    "mos_stoi": 0.5463017225265503,
+    "mos_si_sdr": -11.987662315368652,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sinto cheiro de criança. Hum, hum."
+  }
+}

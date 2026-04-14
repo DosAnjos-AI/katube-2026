@@ -1,0 +1,17 @@
+{
+  "34435c7b3abc56ae83c230092b82ce91_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.404",
+    "duracao": 9.4,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1670645475387573,
+    "mos_stoi": 0.6560932397842407,
+    "mos_si_sdr": -3.7761926651000977,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "não pode pensar que todo jogador vai vir pra resolver problema, né? Tu vai fazendo o teu grupo. Eu acho que o Inter tem alguns jogadores nesse nível.",
+    "stt_wav2vec": "SEQUARTO CANSNAITORVERBADOSARMIM PARAOT O PROBLEMA AFAES VAI ORJÁIA FAZENDO PARE F AZENDO O OUTRO GRUPO VAIT REM QUE OGEM ALGUNS JOGADORES DESLIVA"
+  }
+}

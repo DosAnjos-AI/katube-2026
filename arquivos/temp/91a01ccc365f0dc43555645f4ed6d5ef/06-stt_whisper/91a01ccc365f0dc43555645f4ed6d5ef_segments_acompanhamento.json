@@ -1,0 +1,16 @@
+{
+  "91a01ccc365f0dc43555645f4ed6d5ef_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:05.550",
+    "duracao": 5.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.55448579788208,
+    "mos_stoi": 0.9608468413352966,
+    "mos_si_sdr": 23.82617950439453,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E em 15 de julho de 2004, armaram junto com a polícia para conseguir prender-lhe-o."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "3742e0214a7664725929c78d0fb7e60d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.608",
+    "duracao": 3.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.475327730178833,
+    "mos_stoi": 0.9487411379814148,
+    "mos_si_sdr": 21.240074157714844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ok, fiz a geneira e agora vou estar aqui, não vou dormir.",
+    "stt_wav2vec": "A QUE FIZ ASNEIRA E AGORA VOLTAR AQUI NÃO VOU DORMIR"
+  }
+}

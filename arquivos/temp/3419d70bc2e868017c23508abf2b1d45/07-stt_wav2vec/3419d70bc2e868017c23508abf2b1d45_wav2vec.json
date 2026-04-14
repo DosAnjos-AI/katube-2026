@@ -1,0 +1,17 @@
+{
+  "3419d70bc2e868017c23508abf2b1d45_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:07.982",
+    "duracao": 7.95,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2748332023620605,
+    "mos_stoi": 0.9928471446037292,
+    "mos_si_sdr": 21.165071487426758,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quando alguma coisa avala, ela vai ficar mais forte. E eles então começaram a aplicar novas medidas, mais controle nos aeroportos.",
+    "stt_wav2vec": "QUANDO ALGUMA COISA AVALA ELA VAI FICAR MAIS FORTE E EUS ENTÃO DEUNÇARMAAPLICAR NOVAS MEDIDASMAS CONTROLO NOS OPOTOS"
+  }
+}

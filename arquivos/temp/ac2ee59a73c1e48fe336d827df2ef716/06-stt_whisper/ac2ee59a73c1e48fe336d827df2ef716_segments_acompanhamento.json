@@ -1,0 +1,58 @@
+{
+  "ac2ee59a73c1e48fe336d827df2ef716_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.348",
+    "duracao": 4.35,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1948699951171875,
+    "mos_stoi": 0.9513296484947205,
+    "mos_si_sdr": 16.49284553527832,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "por estas caixinhas de objetivos que temos."
+  },
+  "ac2ee59a73c1e48fe336d827df2ef716_002.ogg": {
+    "tempo_inicio": "00:00:04.772",
+    "tempo_fim": "00:00:09.852",
+    "duracao": 5.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4546546936035156,
+    "mos_stoi": 0.89725661277771,
+    "mos_si_sdr": 9.821434020996094,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "tendo em conta o prazo, sendo em conta tudo. Lá está. E depois podemos chegar à conclusão que precisamos."
+  },
+  "ac2ee59a73c1e48fe336d827df2ef716_003.ogg": {
+    "tempo_inicio": "00:00:10.276",
+    "tempo_fim": "00:00:15.484",
+    "duracao": 5.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.376861572265625,
+    "mos_stoi": 0.927787184715271,
+    "mos_si_sdr": 15.699440956115723,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ou poupar mais, se for possível, através de aumentar rendimentos ou reduzir as despesas."
+  },
+  "ac2ee59a73c1e48fe336d827df2ef716_004.ogg": {
+    "tempo_inicio": "00:00:15.844",
+    "tempo_fim": "00:00:22.800",
+    "duracao": 6.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5800883769989014,
+    "mos_stoi": 0.9199885129928589,
+    "mos_si_sdr": 17.842498779296875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ou então aumentar o prazo dos objetivos que temos. Em vez de conseguir aqui atrasarmos, cada só vamos conseguir aqui a 5,"
+  }
+}

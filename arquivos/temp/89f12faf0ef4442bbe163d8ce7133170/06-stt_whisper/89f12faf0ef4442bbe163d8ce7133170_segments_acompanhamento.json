@@ -1,0 +1,16 @@
+{
+  "89f12faf0ef4442bbe163d8ce7133170_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.248",
+    "duracao": 10.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.837430715560913,
+    "mos_stoi": 0.9550395607948303,
+    "mos_si_sdr": 12.601812362670898,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Inocente Poisan, pé do ananás. JV, quando estamos numa corretora estrangeira e recebemos em dólares, como fazemos a conversão do valor para incluir no IRS em euros?"
+  }
+}

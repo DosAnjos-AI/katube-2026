@@ -1,0 +1,44 @@
+{
+  "e3bb525205a15fa4b139c77ec68182b8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.380",
+    "duracao": 8.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.384530544281006,
+    "mos_stoi": 0.9733221530914307,
+    "mos_si_sdr": 23.66596221923828,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "me enxergar como uma mulher bonita, como uma mulher competente, com uma mulher inteligente, independente das comparações."
+  },
+  "e3bb525205a15fa4b139c77ec68182b8_002.ogg": {
+    "tempo_inicio": "00:00:08.420",
+    "tempo_fim": "00:00:19.100",
+    "duracao": 10.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1867430210113525,
+    "mos_stoi": 0.9842840433120728,
+    "mos_si_sdr": 19.546794891357422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Essa trilha de autoconhecimento que a Sandra resolveu percorrer não dá resultados da noite para o dia, viu? É um processo em que tudo começa a se encaixar naturalmente."
+  },
+  "e3bb525205a15fa4b139c77ec68182b8_003.ogg": {
+    "tempo_inicio": "00:00:19.204",
+    "tempo_fim": "00:00:24.902",
+    "duracao": 5.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8670494556427,
+    "mos_stoi": 0.988103449344635,
+    "mos_si_sdr": 22.19964599609375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu percebo que tem muita gente tentando buscar técnicas prontas e quase que milagrosas."
+  }
+}

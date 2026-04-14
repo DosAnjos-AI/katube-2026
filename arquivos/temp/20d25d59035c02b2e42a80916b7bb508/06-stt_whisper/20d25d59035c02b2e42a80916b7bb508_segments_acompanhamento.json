@@ -1,0 +1,16 @@
+{
+  "20d25d59035c02b2e42a80916b7bb508_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:11.484",
+    "duracao": 11.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.922257423400879,
+    "mos_stoi": 0.9278461933135986,
+    "mos_si_sdr": 7.307651996612549,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Gayei e Verratti segurando no meio só. E uma zaga que, tá, é brasileira e tal, mas o Thiago Silva já não é mais ou menos um monstro que já foi. Eu até gosto muito do futebol do Marquinhos, mas toda hora."
+  }
+}

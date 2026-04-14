@@ -1,0 +1,30 @@
+{
+  "c1e619e933fa3eba5b829c9cbcbf4b5c_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:13.564",
+    "duracao": 13.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8404396772384644,
+    "mos_stoi": 0.9430258274078369,
+    "mos_si_sdr": 12.877632141113281,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "frase do integrante aí da mesa. Se a melhor área é o volante, não a defesa, eu não sei mais. Porque o cara está me dizendo que ele carrega um jumento"
+  },
+  "c1e619e933fa3eba5b829c9cbcbf4b5c_002.ogg": {
+    "tempo_inicio": "00:00:13.732",
+    "tempo_fim": "00:00:26.494",
+    "duracao": 12.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6693801879882812,
+    "mos_stoi": 0.9504067301750183,
+    "mos_si_sdr": 12.611348152160645,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O melhor zagueiro dele carrega um jumento nas costas. Então o meio de campo é o quê? O Beckenbauer? É o que é que tá nesse meio de campo? Aí é o Michael? Ah, não. Aí é loucura."
+  }
+}

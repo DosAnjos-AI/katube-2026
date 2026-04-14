@@ -1,0 +1,44 @@
+{
+  "a0a371b0a7f3dfc3a207ab6f7737c43a_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:10.172",
+    "duracao": 10.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8530449867248535,
+    "mos_stoi": 0.9359750151634216,
+    "mos_si_sdr": 6.833489418029785,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O time sul-americano tem que ter uma inteligência tática muito grande para poder bater, porque os times europeus são os times a ser batidos. Isso é um fato."
+  },
+  "a0a371b0a7f3dfc3a207ab6f7737c43a_002.ogg": {
+    "tempo_inicio": "00:00:10.276",
+    "tempo_fim": "00:00:25.180",
+    "duracao": 14.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9791772365570068,
+    "mos_stoi": 0.9332492351531982,
+    "mos_si_sdr": 8.024421691894531,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "a0a371b0a7f3dfc3a207ab6f7737c43a_003.ogg": {
+    "tempo_inicio": "00:00:25.252",
+    "tempo_fim": "00:00:29.404",
+    "duracao": 4.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8279701471328735,
+    "mos_stoi": 0.8648850917816162,
+    "mos_si_sdr": 4.080018520355225,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

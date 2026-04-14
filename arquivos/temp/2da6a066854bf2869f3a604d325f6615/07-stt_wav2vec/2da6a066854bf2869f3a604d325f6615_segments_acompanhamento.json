@@ -1,0 +1,17 @@
+{
+  "2da6a066854bf2869f3a604d325f6615_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.918",
+    "duracao": 5.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5061545372009277,
+    "mos_stoi": 0.9489479660987854,
+    "mos_si_sdr": 14.015480995178223,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas ainda há pouco tempo, houve ali um promenor sobre o contrato de trabalho a ter-me incerto, que eu não tinha noção",
+    "stt_wav2vec": "MASENDÁ POUCO TEMPO OUVOLI UM PROMNOR SOB  CONTRAT TRABALHO TER-ME INCERTO EN QUE EU NÃO TINHA NUÇÃO"
+  }
+}

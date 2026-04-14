@@ -1,0 +1,44 @@
+{
+  "7db2a0ee5b0dc9481063eb61c5b08e56_001.ogg": {
+    "tempo_inicio": "00:00:01.124",
+    "tempo_fim": "00:00:10.684",
+    "duracao": 9.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1465462446212769,
+    "mos_stoi": 0.8038921356201172,
+    "mos_si_sdr": 7.294339179992676,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "da Rádio da Sua Vida. Esse é o Tudo Nosso, teu Morning Show aqui da Rádio Atlântida, chegando ao Vivaço, continuando, né?"
+  },
+  "7db2a0ee5b0dc9481063eb61c5b08e56_002.ogg": {
+    "tempo_inicio": "00:00:10.756",
+    "tempo_fim": "00:00:24.988",
+    "duracao": 14.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.202623963356018,
+    "mos_stoi": 0.8925016522407532,
+    "mos_si_sdr": 8.162928581237793,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "com snowland, neve de verdade. Rodrigo Adams, ali no meu Instagram, no arroba carol.s, chegou uma mensagem referente àquela notícia que eu li do Espírito Santo, que o prefeito retirou"
+  },
+  "7db2a0ee5b0dc9481063eb61c5b08e56_003.ogg": {
+    "tempo_inicio": "00:00:25.028",
+    "tempo_fim": "00:00:29.032",
+    "duracao": 4.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2013630867004395,
+    "mos_stoi": 0.9779981374740601,
+    "mos_si_sdr": 16.488304138183594,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "os bancos de uma praça para evitar que os idosos fiquem na rua."
+  }
+}

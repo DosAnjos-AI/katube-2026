@@ -1,0 +1,32 @@
+{
+  "ed76d4a6932d9434fd07b38a6d7fb177_001.ogg": {
+    "tempo_inicio": "00:00:02.692",
+    "tempo_fim": "00:00:19.932",
+    "duracao": 17.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3221373558044434,
+    "mos_stoi": 0.9287233352661133,
+    "mos_si_sdr": 15.233121871948242,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "no pensamento dessa esquerda, que a gente está acostumada a dizer, a esquerda mais engajada, e que ela tem a peixe de ser uma esquerda chata, retrógrada, pesada, antiga, ultrapassada, mas que possui um rigor que, de certa forma, pela festividade...",
+    "stt_wav2vec": "NO PENSAMENTO DESSA ESQUERDA QUE A GENTE ESTÁ COSTUMADA DIZER ESQUENDA MAIS ENGAJADA E QUE ELA ATEM A PEXA DE SER UMA ESQUERDA CHATA RETRÓGRADA PESADA ANTIGA OUTRAPASSADA MAS QUE POSSUI UM RIGOR QUE DE CERTA FORMA PELA FESTIVIDADE"
+  },
+  "ed76d4a6932d9434fd07b38a6d7fb177_002.ogg": {
+    "tempo_inicio": "00:00:20.196",
+    "tempo_fim": "00:00:31.584",
+    "duracao": 11.39,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4659985303878784,
+    "mos_stoi": 0.8342700004577637,
+    "mos_si_sdr": 4.420521259307861,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que nós queremos também, porque nós temos corpos, nós queremos ser feliz, nós temos tesão, tudo certo, tudo lindo. Aliás, também tem o podcast do Live & Theater, que se vocês quiserem ouvir,",
+    "stt_wav2vec": null
+  }
+}

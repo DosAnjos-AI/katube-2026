@@ -1,0 +1,38 @@
+{
+  "bbd403f40c8f3e70a95fd3ae6fb8475f_001.ogg": {
+    "tempo_inicio": "00:00:00.356",
+    "tempo_fim": "00:00:28.380",
+    "duracao": 28.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.905479907989502,
+    "mos_stoi": 0.9634559750556946,
+    "mos_si_sdr": 15.3866548538208,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Muito obrigada. Bom, e se você gostou do nosso conteúdo de hoje, não se esqueça, compartilha, recomenda. Manda aí para os seus amigos, eu tenho certeza que todo mundo vai ficar feliz com a oportunidade de aprender um pouquinho mais a cada episódio do nosso podcast. Esse aqui é o podcast do Somos Líderes, um projeto do SESCOP, feito especialmente para falar sobre cooperativismo. Eu sou a Lia e estou saindo fora. Até o próximo episódio. Tchau, tchau!",
+    "stt_wav2vec": "OBRIGADA BOES SE VOCÊ GOSTOTOU DO NOSSO CONTEODO DE HOJE NÃO SE ESQUEÇA COMPARTILHA RECOMENDA MANDAE POR SEUS AMIGOS EU TENHO CERTEZA QUE TODO MUNDO VAE FICAR FELIZ COM A OPORTUNIDADE DE APRENDEU UM POUQUINHO MAIS A CADA EPISÓDIO DO NOSSO POTIQESC ESSE AQUI É O POUTIQUESTE DO SOMOS LIDERES UM PROJETO DO CESCOPE FEITO ESPECIALMENTE PARA FALAR NO SOBRE COPERATIVISMO EU SOU ALI A ESTOU SAINDO FORA ATÉ O PRÓXIMO EPISÓDIO ACA",
+    "stt_leg_normalizado": null,
+    "stt_whisper_normalizado": "muito obrigada bom e se voce gostou do nosso conteudo de hoje nao se esqueca compartilha recomenda manda ai para os seus amigos eu tenho certeza que todo mundo vai ficar feliz com a oportunidade de aprender um pouquinho mais a cada episodio do nosso podcast esse aqui e o podcast do somos lideres um projeto do sescop feito especialmente para falar sobre cooperativismo eu sou a lia e estou saindo fora ate o proximo episodio tchau tchau",
+    "stt_wav2vec_normalizado": "obrigada boes se voce gostotou do nosso conteodo de hoje nao se esqueca compartilha recomenda mandae por seus amigos eu tenho certeza que todo mundo vae ficar feliz com a oportunidade de aprendeu um pouquinho mais a cada episodio do nosso potiqesc esse aqui e o poutiqueste do somos lideres um projeto do cescope feito especialmente para falar no sobre coperativismo eu sou ali a estou saindo fora ate o proximo episodio aca"
+  },
+  "bbd403f40c8f3e70a95fd3ae6fb8475f_002.ogg": {
+    "tempo_inicio": "00:00:28.868",
+    "tempo_fim": "00:00:33.576",
+    "duracao": 4.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2250374555587769,
+    "mos_stoi": 0.7776960134506226,
+    "mos_si_sdr": 2.3259735107421875,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null,
+    "stt_leg_normalizado": null,
+    "stt_whisper_normalizado": null,
+    "stt_wav2vec_normalizado": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "839f1b38ff5217bce3fd7d82c7a5b5d4_001.ogg": {
+    "tempo_inicio": "00:00:00.196",
+    "tempo_fim": "00:00:03.902",
+    "duracao": 3.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.256206750869751,
+    "mos_stoi": 0.718059241771698,
+    "mos_si_sdr": -2.0951876640319824,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olha, eu vou chegar lá na Bahia, vou falar, Ei, Deus."
+  }
+}

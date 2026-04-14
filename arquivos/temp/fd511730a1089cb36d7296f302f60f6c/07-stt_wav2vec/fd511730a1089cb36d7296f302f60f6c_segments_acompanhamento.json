@@ -1,0 +1,47 @@
+{
+  "fd511730a1089cb36d7296f302f60f6c_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:08.700",
+    "duracao": 8.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2848787307739258,
+    "mos_stoi": 0.7974659204483032,
+    "mos_si_sdr": 0.9874648451805115,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "fd511730a1089cb36d7296f302f60f6c_002.ogg": {
+    "tempo_inicio": "00:00:08.804",
+    "tempo_fim": "00:00:15.100",
+    "duracao": 6.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3532625436782837,
+    "mos_stoi": 0.8282873630523682,
+    "mos_si_sdr": 2.611151695251465,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E para quem quiser saber mais sobre a EQSabuaria, pode procurar eles no Instagram, que é Eacua.",
+    "stt_wav2vec": "E PARA QUEM QUISER SABER MAIS SOBRE CUANSA BUARIE PODE PROCURAR ELES NO INSTAGRANT QUE EACUA"
+  },
+  "fd511730a1089cb36d7296f302f60f6c_003.ogg": {
+    "tempo_inicio": "00:00:15.556",
+    "tempo_fim": "00:00:20.220",
+    "duracao": 4.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9680933952331543,
+    "mos_stoi": 0.9247832298278809,
+    "mos_si_sdr": 5.567533016204834,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ponto Saboaria. O Iacoá escreve E-A-K-U-A.",
+    "stt_wav2vec": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "4e203288dd52b05a151ce51c2f4e4ee2_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:07.484",
+    "duracao": 7.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8962534666061401,
+    "mos_stoi": 0.8748668432235718,
+    "mos_si_sdr": 16.880054473876953,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Atlético, com certeza, não quer que o Real se consolite o campeão e espalhe na liderança. O Barcelona precisa reagir. 2x1, Barcelona."
+  }
+}

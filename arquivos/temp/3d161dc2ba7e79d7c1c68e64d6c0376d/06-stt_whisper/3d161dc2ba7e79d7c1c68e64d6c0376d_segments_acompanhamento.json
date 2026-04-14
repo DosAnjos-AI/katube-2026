@@ -1,0 +1,16 @@
+{
+  "3d161dc2ba7e79d7c1c68e64d6c0376d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.688",
+    "duracao": 3.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6090087890625,
+    "mos_stoi": 0.932087242603302,
+    "mos_si_sdr": 17.834800720214844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "esse tipo de trabalho que eu não considero uma técnica."
+  }
+}

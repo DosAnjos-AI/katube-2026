@@ -1,0 +1,17 @@
+{
+  "2796081e7db7a9d95e2af7765db80234_002.ogg": {
+    "tempo_inicio": "00:00:04.356",
+    "tempo_fim": "00:00:16.718",
+    "duracao": 12.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9242615699768066,
+    "mos_stoi": 0.9202958345413208,
+    "mos_si_sdr": 13.425897598266602,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "No agregado de dois jogos na final do Campeonato Galucho. Com o FTP. Everton e Diego Souza. Aumenta o hino produção. E perdeu pro Caxias hoje? Ah, não.",
+    "stt_wav2vec": "NO AGREGADO DE DOIS JOGOS NA FINAL DO CANCANAFIGAÚCHO GOOMEPEPE É VERTUD JEGO SOUSA AUMENTUIR NO PRODUÇÃL E PERDEU PO CACHIAS HOJE AH NÃO"
+  }
+}

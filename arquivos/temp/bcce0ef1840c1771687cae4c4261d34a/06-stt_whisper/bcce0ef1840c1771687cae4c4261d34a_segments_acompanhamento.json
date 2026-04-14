@@ -1,0 +1,16 @@
+{
+  "bcce0ef1840c1771687cae4c4261d34a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.416",
+    "duracao": 9.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9715781211853027,
+    "mos_stoi": 0.9731812477111816,
+    "mos_si_sdr": 17.51104736328125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Enquanto agora com os cursos, lá está, primeiro facilita quem nos tira porque aprende uma coisa que fica para a vida e elimina todos os outros cursos que teria à frente."
+  }
+}

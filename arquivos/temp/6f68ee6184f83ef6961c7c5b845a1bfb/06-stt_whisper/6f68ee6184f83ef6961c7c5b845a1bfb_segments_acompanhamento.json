@@ -1,0 +1,30 @@
+{
+  "6f68ee6184f83ef6961c7c5b845a1bfb_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:04.124",
+    "duracao": 3.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2925310134887695,
+    "mos_stoi": 0.8008494973182678,
+    "mos_si_sdr": 2.240565061569214,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "6f68ee6184f83ef6961c7c5b845a1bfb_002.ogg": {
+    "tempo_inicio": "00:00:07.876",
+    "tempo_fim": "00:00:21.134",
+    "duracao": 13.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.045212507247925,
+    "mos_stoi": 0.9191091656684875,
+    "mos_si_sdr": 17.53481101989746,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tu sabes que se investes com juros simples, ou seja, tens um valor fixo investido e depois recebes os juros e vais comprar pão e sapatinhos ou o que for e continuas sempre com o meu valor investido,"
+  }
+}

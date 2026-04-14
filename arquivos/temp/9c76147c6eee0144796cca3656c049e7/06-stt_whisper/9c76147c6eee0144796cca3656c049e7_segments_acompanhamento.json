@@ -1,0 +1,16 @@
+{
+  "9c76147c6eee0144796cca3656c049e7_001.ogg": {
+    "tempo_inicio": "00:00:02.660",
+    "tempo_fim": "00:00:22.318",
+    "duracao": 19.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.211867332458496,
+    "mos_stoi": 0.8699812293052673,
+    "mos_si_sdr": 4.933151721954346,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pra tia Oraide, pra todo mundo que tá lá. É só nome de índio velho. A Alegrete tem os nomes muito loucos, né? O Bellarmino, a Alcina, a Zeneida, a Oraide, o tio deuzinho. Beijo pra eles. Só uma galera do bem lá. Tio deuzinho, Little God. Little God."
+  }
+}

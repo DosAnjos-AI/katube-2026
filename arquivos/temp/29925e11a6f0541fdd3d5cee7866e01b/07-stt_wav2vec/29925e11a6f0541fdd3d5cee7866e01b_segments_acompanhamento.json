@@ -1,0 +1,17 @@
+{
+  "29925e11a6f0541fdd3d5cee7866e01b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.416",
+    "duracao": 7.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3150177001953125,
+    "mos_stoi": 0.9215484857559204,
+    "mos_si_sdr": 8.915162086486816,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "vai diretamente para um blog ou muito dificilmente vai diretamente para uma página de Instagram",
+    "stt_wav2vec": "VAI DIRETAMENTE PRUMBLO ENUM KAN OU MUITO DINFICILMENTE VAI DIREITAMENTE COM UMA PÁGINA DANRA DE INXAGRADE"
+  }
+}

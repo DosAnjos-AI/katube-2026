@@ -1,0 +1,58 @@
+{
+  "3928ee00021ec1dd20efd7f5d7cd4357_001.ogg": {
+    "tempo_inicio": "00:00:00.132",
+    "tempo_fim": "00:00:07.964",
+    "duracao": 7.83,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.313596248626709,
+    "mos_stoi": 0.8185963034629822,
+    "mos_si_sdr": 0.9633524417877197,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, Fernanda, bom dia a todos. É um tema extremamente complexo, revela vários problemas estruturais de nossa sociedade."
+  },
+  "3928ee00021ec1dd20efd7f5d7cd4357_002.ogg": {
+    "tempo_inicio": "00:00:08.484",
+    "tempo_fim": "00:00:14.620",
+    "duracao": 6.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.580115556716919,
+    "mos_stoi": 0.8628075122833252,
+    "mos_si_sdr": 8.306469917297363,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mas nós temos que fazer uma análise do ponto de vista do direito. E aí a gente precisa separar algumas questões."
+  },
+  "3928ee00021ec1dd20efd7f5d7cd4357_003.ogg": {
+    "tempo_inicio": "00:00:15.236",
+    "tempo_fim": "00:00:19.260",
+    "duracao": 4.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2704684734344482,
+    "mos_stoi": 0.46168461441993713,
+    "mos_si_sdr": -10.946730613708496,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Veja, uma coisa é a questão do dano moral."
+  },
+  "3928ee00021ec1dd20efd7f5d7cd4357_004.ogg": {
+    "tempo_inicio": "00:00:19.524",
+    "tempo_fim": "00:00:27.036",
+    "duracao": 7.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4218194484710693,
+    "mos_stoi": 0.6579418182373047,
+    "mos_si_sdr": -4.662491798400879,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

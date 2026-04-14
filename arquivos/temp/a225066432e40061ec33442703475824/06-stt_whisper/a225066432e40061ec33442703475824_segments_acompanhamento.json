@@ -1,0 +1,16 @@
+{
+  "a225066432e40061ec33442703475824_001.ogg": {
+    "tempo_inicio": "00:00:00.644",
+    "tempo_fim": "00:00:06.396",
+    "duracao": 5.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0278148651123047,
+    "mos_stoi": 0.9354965686798096,
+    "mos_si_sdr": 17.19363021850586,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí tava torcendo com ele, não pelo PSG, porque o PSG, como instituição, como time, é ridículo."
+  }
+}

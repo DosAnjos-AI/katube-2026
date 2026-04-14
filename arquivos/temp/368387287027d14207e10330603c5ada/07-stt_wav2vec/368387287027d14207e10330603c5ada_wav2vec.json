@@ -1,0 +1,47 @@
+{
+  "368387287027d14207e10330603c5ada_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.700",
+    "duracao": 4.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.536745548248291,
+    "mos_stoi": 0.9586330652236938,
+    "mos_si_sdr": 20.114116668701172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vamos de volta para Toronto, em 24 de julho de 1982.",
+    "stt_wav2vec": "VAMOS DE VOLTO PARA TORONTO EM VINTE E QUATRO DE JULHO DE MIL NOVECENTOS OITENTA E DOIS"
+  },
+  "368387287027d14207e10330603c5ada_002.ogg": {
+    "tempo_inicio": "00:00:05.700",
+    "tempo_fim": "00:00:11.132",
+    "duracao": 5.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.057248830795288,
+    "mos_stoi": 0.9714595675468445,
+    "mos_si_sdr": 22.649011611938477,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nascia Eric Clinton, Kirk Newton, Kirk Newman, filho de Anne York e Donald Newton.",
+    "stt_wav2vec": "NASCIA ERIK CLINTON KIRK NYLMA FILHO DE ANEORK E DONA DE NILMA"
+  },
+  "368387287027d14207e10330603c5ada_003.ogg": {
+    "tempo_inicio": "00:00:11.428",
+    "tempo_fim": "00:00:15.998",
+    "duracao": 4.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.209292411804199,
+    "mos_stoi": 0.9908967614173889,
+    "mos_si_sdr": 24.965858459472656,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que mais tarde seria conhecido como Luca Magnota, um assassino vaidoso.",
+    "stt_wav2vec": "QUE MAIS TARDE SERIA CONHECIDO COMO LUCA MAGNOTA UM ASSASSINO VAIDOSO"
+  }
+}

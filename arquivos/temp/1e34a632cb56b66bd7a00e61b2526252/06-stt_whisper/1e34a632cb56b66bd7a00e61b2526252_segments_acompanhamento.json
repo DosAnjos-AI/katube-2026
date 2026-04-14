@@ -1,0 +1,32 @@
+{
+  "1e34a632cb56b66bd7a00e61b2526252_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.988",
+    "duracao": 4.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Certo, em relação ao Benfica, eu não jogo de equipamento do Benfica."
+  },
+  "1e34a632cb56b66bd7a00e61b2526252_002.ogg": {
+    "tempo_inicio": "00:00:05.252",
+    "tempo_fim": "00:00:28.636",
+    "duracao": 23.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Por opção, atenção, não é bem por opção, mas eu vou tentar reformar isto bem, eu vou alternando o equipamento do Benfica com o meu equipamento oficial também das marcas que me apoiam, e então é um bocadinho neste registro, por exemplo eu treino muitas vezes e jogo muitas vezes que o equipamento do Benfica nós jogamos sempre, também uma questão de respeito às marcas parceiras do Benfica, porque o Benfica só pode estar associado a marcas parceiras do Benfica, é claro"
+  },
+  "1e34a632cb56b66bd7a00e61b2526252_003.ogg": {
+    "tempo_inicio": "00:00:28.708",
+    "tempo_fim": "00:00:40.252",
+    "duracao": 11.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "E como nós somos atletas individuais, no fundo, eu quero para respeitar um bocadinho também os contratos que tenho e um bocadinho não, respeito bastante, mas neste caso específico."
+  }
+}

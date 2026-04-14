@@ -1,0 +1,30 @@
+{
+  "f76ca03c3b708682899dc1555953ad5a_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:21.596",
+    "duracao": 21.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.792771816253662,
+    "mos_stoi": 0.9637129902839661,
+    "mos_si_sdr": 13.870034217834473,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Um restaurante pequeno que está entregando só por, enfim, aplicativos, deixar isso continuar a rodar e ao menos isso já ajuda muito, né? Esses comércios. Sabe, Carol, que isso que tu está falando, assim, é se se abre para diversas áreas, né? Muitas áreas, muitas áreas. Eu tenho amigos que trabalham no ramo do turismo, assim, que também estão..."
+  },
+  "f76ca03c3b708682899dc1555953ad5a_002.ogg": {
+    "tempo_inicio": "00:00:21.732",
+    "tempo_fim": "00:00:32.472",
+    "duracao": 10.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7303097248077393,
+    "mos_stoi": 0.9379639029502869,
+    "mos_si_sdr": 6.415238380432129,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

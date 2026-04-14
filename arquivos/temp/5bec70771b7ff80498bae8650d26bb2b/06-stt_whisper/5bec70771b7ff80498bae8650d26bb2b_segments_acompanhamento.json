@@ -1,0 +1,16 @@
+{
+  "5bec70771b7ff80498bae8650d26bb2b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.584",
+    "duracao": 4.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9172216653823853,
+    "mos_stoi": 0.8719777464866638,
+    "mos_si_sdr": 7.090512752532959,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Uma história bonita, cara. Obrigadão, obrigadão. Mais bonita que já apareceu aqui no podcast."
+  }
+}

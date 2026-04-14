@@ -1,0 +1,47 @@
+{
+  "d5db82a7b4f8ece3d9c4c910e6a8f3de_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.788",
+    "duracao": 9.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2238103151321411,
+    "mos_stoi": 0.8704673647880554,
+    "mos_si_sdr": 6.2299299240112305,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nesses vídeos de tutoriais que são febre na internet. Eu já aprendi a fazer mesa. Eu já aprendi a fazer um milhão de receitas. Eu já aprendi a fazer tudo.",
+    "stt_wav2vec": "ESSES VÍDEOS DE TUTORIAIS QUE SÃO FEBRE NA INTERNÉTIAS E UM JA LOLE VAZE MESA EU JÁ APREENDIA A FAZER UM MILHÃO DE RECEITAS EU JÁ APRENDIA A FAZER TUDO"
+  },
+  "d5db82a7b4f8ece3d9c4c910e6a8f3de_002.ogg": {
+    "tempo_inicio": "00:00:10.404",
+    "tempo_fim": "00:00:18.716",
+    "duracao": 8.31,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4161311388015747,
+    "mos_stoi": 0.8898602724075317,
+    "mos_si_sdr": 9.492842674255371,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "d5db82a7b4f8ece3d9c4c910e6a8f3de_003.ogg": {
+    "tempo_inicio": "00:00:18.788",
+    "tempo_fim": "00:00:27.104",
+    "duracao": 8.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.294217586517334,
+    "mos_stoi": 0.873782753944397,
+    "mos_si_sdr": 8.457995414733887,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "03be6a29360fa284c1a8e87ddce86815_001.ogg": {
+    "tempo_inicio": "00:00:00.356",
+    "tempo_fim": "00:00:04.120",
+    "duracao": 3.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9040486812591553,
+    "mos_stoi": 0.9079229831695557,
+    "mos_si_sdr": 19.01744842529297,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O problema de ter um elefrentinho como animais de estimação"
+  }
+}

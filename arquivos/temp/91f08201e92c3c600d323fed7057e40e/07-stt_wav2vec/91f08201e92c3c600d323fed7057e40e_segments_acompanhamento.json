@@ -1,0 +1,32 @@
+{
+  "91f08201e92c3c600d323fed7057e40e_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:04.348",
+    "duracao": 4.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1835163831710815,
+    "mos_stoi": 0.5418316125869751,
+    "mos_si_sdr": -10.076889038085938,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Agora, lá está. Entre trabalhar para outra pessoa e trabalhar para mim...",
+    "stt_wav2vec": "AGORA LÁ ESTÁ E ANTE TRABALHAR OUTRA PESSOA E TRABALHAR PARA MIM"
+  },
+  "91f08201e92c3c600d323fed7057e40e_002.ogg": {
+    "tempo_inicio": "00:00:04.804",
+    "tempo_fim": "00:00:08.590",
+    "duracao": 3.79,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2695538997650146,
+    "mos_stoi": 0.7586970925331116,
+    "mos_si_sdr": -1.1464827060699463,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e eu prefiro trabalhar para mim. Mas depende de pessoa para pessoa, entende?",
+    "stt_wav2vec": "EU EFILO TRABALHAR PARA MIM MAS A DEPENDO PESOPAPSO"
+  }
+}

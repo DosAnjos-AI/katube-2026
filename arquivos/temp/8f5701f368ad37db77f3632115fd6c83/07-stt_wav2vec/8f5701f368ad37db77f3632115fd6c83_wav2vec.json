@@ -1,0 +1,17 @@
+{
+  "8f5701f368ad37db77f3632115fd6c83_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.918",
+    "duracao": 5.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8324825763702393,
+    "mos_stoi": 0.857131838798523,
+    "mos_si_sdr": 10.546588897705078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E, no fundo, o que me parece que o Fire é um bocadinho é voltar...",
+    "stt_wav2vec": "E NO FUNDO O CO OUCOMO PARECE QUE O FAIAR É UMCADINHO É É VOLTAR"
+  }
+}

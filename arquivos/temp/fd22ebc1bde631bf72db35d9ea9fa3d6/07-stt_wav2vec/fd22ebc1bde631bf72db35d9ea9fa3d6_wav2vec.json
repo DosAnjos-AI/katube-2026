@@ -1,0 +1,47 @@
+{
+  "fd22ebc1bde631bf72db35d9ea9fa3d6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.956",
+    "duracao": 12.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.826324224472046,
+    "mos_stoi": 0.9159600138664246,
+    "mos_si_sdr": 16.924219131469727,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "coisas diferentes pra ele. Mas acontece que ela deixou o pulmão escapar bem no meio do pátio e todo mundo morreu de rir. Eu passei o resto da aula pensando que ia levar uma bronca da minha mãe porque...",
+    "stt_wav2vec": "DIFERENTES PARA ELE MAS ACONTECE QUE ENDA DEIXOU POM OCAPA BEM U MEOTOPÁTIO E TODO MUNDO MORREU DE RIO EU PASSEIO ARRESTA DA ALA PENSANDO E E LEVÃO A BRONCA DA MINHA MÃE POR QUÊ"
+  },
+  "fd22ebc1bde631bf72db35d9ea9fa3d6_002.ogg": {
+    "tempo_inicio": "00:00:13.060",
+    "tempo_fim": "00:00:23.868",
+    "duracao": 10.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.028412342071533,
+    "mos_stoi": 0.9444976449012756,
+    "mos_si_sdr": 19.282758712768555,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu fiz a diretora passar vergonha por causa do pum. Mas minha mãe ficou presa no trabalho e quem veio me buscar foi a tia Clotilde.",
+    "stt_wav2vec": "EADELETORA VOSSA VERGONHA POUPOR CAUSA DO PUM MAS MINHA MÃE FICOU PRETA MEU TRABALHO QE QUEM VEIO ME BUSCAR FOI ATIA CLOTILDE"
+  },
+  "fd22ebc1bde631bf72db35d9ea9fa3d6_003.ogg": {
+    "tempo_inicio": "00:00:24.132",
+    "tempo_fim": "00:00:30.300",
+    "duracao": 6.17,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2620139122009277,
+    "mos_stoi": 0.9049203395843506,
+    "mos_si_sdr": 20.05898666381836,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Acho que ela e minha diretora são amigas por em vez de me darem bronca.",
+    "stt_wav2vec": "ACHO QUE ELA MINHA TIA ELETONA SÃO ANIGRAS POR IMVEZ E MELITAREM BRONCA"
+  }
+}

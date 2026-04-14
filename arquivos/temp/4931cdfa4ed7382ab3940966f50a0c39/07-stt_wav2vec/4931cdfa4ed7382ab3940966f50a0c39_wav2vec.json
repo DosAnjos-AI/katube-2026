@@ -1,0 +1,17 @@
+{
+  "4931cdfa4ed7382ab3940966f50a0c39_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.860",
+    "duracao": 4.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.293335437774658,
+    "mos_stoi": 0.9842126965522766,
+    "mos_si_sdr": 22.499744415283203,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Um dos filmes que eu mais adoro é o The Great Showman.",
+    "stt_wav2vec": "MUM DOS FILMES QUE O MAIS ADOR É O  DE GRETES HOMEN"
+  }
+}

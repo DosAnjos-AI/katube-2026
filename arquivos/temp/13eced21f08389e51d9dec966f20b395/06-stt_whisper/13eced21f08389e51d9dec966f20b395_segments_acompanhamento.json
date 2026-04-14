@@ -1,0 +1,16 @@
+{
+  "13eced21f08389e51d9dec966f20b395_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.446",
+    "duracao": 7.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.245650053024292,
+    "mos_stoi": 0.7354323863983154,
+    "mos_si_sdr": -4.686903953552246,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "muita coisa, eu acho que o Cortez é um lateral é um lateral pobre o furo da barca pra mim é o ataque do Grêmio"
+  }
+}

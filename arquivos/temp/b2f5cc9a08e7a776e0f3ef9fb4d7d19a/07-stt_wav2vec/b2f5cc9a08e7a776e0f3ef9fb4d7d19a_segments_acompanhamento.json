@@ -1,0 +1,62 @@
+{
+  "b2f5cc9a08e7a776e0f3ef9fb4d7d19a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.604",
+    "duracao": 8.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.454255223274231,
+    "mos_stoi": 0.8632489442825317,
+    "mos_si_sdr": -0.7802073955535889,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "goleiro não deu tempo de sair. Os caras tiraram o Júlio César Peruzira, agora tá explicado por que ele é titular naquele time lá, porque, meu Deus.",
+    "stt_wav2vec": "OLE DO VAO MEU TEMPONE A BALDR RUNGAR A TIRAROS JE LU CESAR PELUZIRA GUAL A GUARTA EXPLICADA PORQUE QUELE TITULAR NAQUELE TIME UM APRO QUE MEU DEUS"
+  },
+  "b2f5cc9a08e7a776e0f3ef9fb4d7d19a_002.ogg": {
+    "tempo_inicio": "00:00:09.252",
+    "tempo_fim": "00:00:18.428",
+    "duracao": 9.18,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.2483432292938232,
+    "mos_stoi": 0.9734175801277161,
+    "mos_si_sdr": 24.81222915649414,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É, não, tá louco. É o Clayton, né? Clayton é um goleiro da seleção de base, foi comprado do Atlético Mineiro.",
+    "stt_wav2vec": null
+  },
+  "b2f5cc9a08e7a776e0f3ef9fb4d7d19a_003.ogg": {
+    "tempo_inicio": "00:00:18.660",
+    "tempo_fim": "00:00:26.268",
+    "duracao": 7.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.568418264389038,
+    "mos_stoi": 0.9102168083190918,
+    "mos_si_sdr": 13.481060981750488,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Foi o Clayton que começou jogando, mas o Marinho bateu muito bem na bola, né? Soteu do perder um gol sozinho, sem goleiro, então...",
+    "stt_wav2vec": null
+  },
+  "b2f5cc9a08e7a776e0f3ef9fb4d7d19a_004.ogg": {
+    "tempo_inicio": "00:00:26.532",
+    "tempo_fim": "00:00:32.166",
+    "duracao": 5.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1396594047546387,
+    "mos_stoi": 0.93499356508255,
+    "mos_si_sdr": 11.5814790725708,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

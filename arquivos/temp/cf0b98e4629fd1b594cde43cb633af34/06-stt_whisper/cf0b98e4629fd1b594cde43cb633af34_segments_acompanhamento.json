@@ -1,0 +1,16 @@
+{
+  "cf0b98e4629fd1b594cde43cb633af34_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.574",
+    "duracao": 6.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0237479209899902,
+    "mos_stoi": 0.984743595123291,
+    "mos_si_sdr": 20.738672256469727,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nós estamos aqui a atribuir, em média, uns 5% de rentabilidade anual."
+  }
+}

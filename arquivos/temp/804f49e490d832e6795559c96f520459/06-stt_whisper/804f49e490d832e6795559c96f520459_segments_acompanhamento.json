@@ -1,0 +1,32 @@
+{
+  "804f49e490d832e6795559c96f520459_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.524",
+    "duracao": 6.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Mas é uma ação do líder. Não cabe a área de comunicação, não cabe ao profissional de comunicação."
+  },
+  "804f49e490d832e6795559c96f520459_002.ogg": {
+    "tempo_inicio": "00:00:07.076",
+    "tempo_fim": "00:00:11.452",
+    "duracao": 4.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Romper a bolha é um gesto concreto rumo à empatia."
+  },
+  "804f49e490d832e6795559c96f520459_003.ogg": {
+    "tempo_inicio": "00:00:11.908",
+    "tempo_fim": "00:00:16.380",
+    "duracao": 4.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "E vale lembrar, empatia não é simplesmente uma palavrinha bonita."
+  }
+}

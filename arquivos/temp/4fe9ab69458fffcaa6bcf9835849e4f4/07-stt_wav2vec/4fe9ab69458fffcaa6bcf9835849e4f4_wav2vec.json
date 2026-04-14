@@ -1,0 +1,17 @@
+{
+  "4fe9ab69458fffcaa6bcf9835849e4f4_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.302",
+    "duracao": 6.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.28444766998291,
+    "mos_stoi": 0.9549868106842041,
+    "mos_si_sdr": 15.679694175720215,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Deixem o vosso comentário. Não se esqueçam de seguir a nossa querida Mary Popping nas redes sociais.",
+    "stt_wav2vec": "DEIXEM OM VOSSO COMENTÁRIO NÃO ESQUEÇAM DE SEGUIR A NOSSA CREDA MERY POPNAAS SOCIAIS"
+  }
+}

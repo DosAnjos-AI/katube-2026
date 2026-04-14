@@ -1,0 +1,17 @@
+{
+  "6b406041b60d82fb7fe3cb06ed4a6c54_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:12.014",
+    "duracao": 12.01,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1344714164733887,
+    "mos_stoi": 0.49584531784057617,
+    "mos_si_sdr": -10.099808692932129,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "cara também, porque ele é novo, ele tem mercado. Aí, beleza, mantém que ir pra Ferraz e é um bônus. Mas o goleiro não é um cara que se jogar fora, é que você vaiar bem a situação, bem cenário, pra buscar uma renovação, um cara é bom de bola.",
+    "stt_wav2vec": "CARVONEQUELE ANOOUVEDING ECATO A EREESA MANDEM QUE PROFERRARS E ALGOMES MAS BUGOREGULA NÃO PARTE DER NASOAES E A ECERVAA DISTOSSE MENTENÁRO PARA VOSCAR MAAO VASÃO CAI ALGUM DIVOT"
+  }
+}

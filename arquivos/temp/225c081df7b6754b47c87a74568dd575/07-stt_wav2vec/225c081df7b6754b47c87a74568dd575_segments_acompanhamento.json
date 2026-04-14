@@ -1,0 +1,17 @@
+{
+  "225c081df7b6754b47c87a74568dd575_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.932",
+    "duracao": 3.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3924667835235596,
+    "mos_stoi": 0.8940463662147522,
+    "mos_si_sdr": 16.179018020629883,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E o Robinho é a esproeixo mesmo. Robinho, talvez, uns...",
+    "stt_wav2vec": "HUNU E O ROBINHO MAIS PRUEXO MESMO ARRABINHO TALVEZ NOS"
+  }
+}

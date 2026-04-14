@@ -1,0 +1,32 @@
+{
+  "2c3fb160cbc5a551af596455b8cde890_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.588",
+    "duracao": 6.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8765735626220703,
+    "mos_stoi": 0.888149619102478,
+    "mos_si_sdr": 12.970442771911621,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e me sentindo muito motivado, porque nesse processo que estamos a viver de isolamento,",
+    "stt_wav2vec": "E ME SENTINDO MUITO MOTIVADO PORQUE NESSE PROCESSO ESTAMOS A VIVER DE ISOLAMENTO"
+  },
+  "2c3fb160cbc5a551af596455b8cde890_002.ogg": {
+    "tempo_inicio": "00:00:07.236",
+    "tempo_fim": "00:00:13.608",
+    "duracao": 6.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.043166160583496,
+    "mos_stoi": 0.9290766716003418,
+    "mos_si_sdr": 12.768538475036621,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e que não foi arbitrado por nós, é preciso realmente que se busque.",
+    "stt_wav2vec": "QUE NÃO NÃO FOI ABITAR ARBITRADO POR NÓS É PRECISO REALMENTE QUE QUE SE BUSQUE"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "6272df77f2a4e3e9cdc132aafc66d593_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.988",
+    "duracao": 4.98,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3543882369995117,
+    "mos_stoi": 0.9240909218788147,
+    "mos_si_sdr": 16.568187713623047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "XPTO, assim como vocês, que neste momento está aqui o mercado das criptomoedas."
+  },
+  "6272df77f2a4e3e9cdc132aafc66d593_002.ogg": {
+    "tempo_inicio": "00:00:05.348",
+    "tempo_fim": "00:00:11.228",
+    "duracao": 5.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.913905143737793,
+    "mos_stoi": 0.9416637420654297,
+    "mos_si_sdr": 19.0340576171875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a desabar, mas na altura quando nós entrámos até que o mercado estava em alta."
+  },
+  "6272df77f2a4e3e9cdc132aafc66d593_003.ogg": {
+    "tempo_inicio": "00:00:11.492",
+    "tempo_fim": "00:00:19.822",
+    "duracao": 8.33,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.89328932762146,
+    "mos_stoi": 0.9529110193252563,
+    "mos_si_sdr": 15.612345695495605,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E para isso nós reparamos aqui alguns pontos importantes e o primeiro é sobre a leitura. Mary, o que é que tens a dizer sobre isto?"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "4d9a407960f1ab00daeb0b61654b341f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.656",
+    "duracao": 7.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.338731288909912,
+    "mos_stoi": 0.9829696416854858,
+    "mos_si_sdr": 20.606021881103516,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se vocês, no final dos 7 anos, ou dos 10 anos, pegarem nesse valor que seja gerado, embora não seja muito, mas pegarem nesses..."
+  }
+}

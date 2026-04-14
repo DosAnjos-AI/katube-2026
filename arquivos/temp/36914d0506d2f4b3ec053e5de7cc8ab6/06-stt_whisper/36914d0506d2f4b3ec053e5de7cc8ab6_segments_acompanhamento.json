@@ -1,0 +1,16 @@
+{
+  "36914d0506d2f4b3ec053e5de7cc8ab6_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.942",
+    "duracao": 4.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4571611881256104,
+    "mos_stoi": 0.9826801419258118,
+    "mos_si_sdr": 20.674821853637695,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Para mim, essa palavra traz consigo coragem, luta, ambição positiva."
+  }
+}

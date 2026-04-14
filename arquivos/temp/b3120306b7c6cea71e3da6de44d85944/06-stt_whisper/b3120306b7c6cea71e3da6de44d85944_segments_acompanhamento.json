@@ -1,0 +1,30 @@
+{
+  "b3120306b7c6cea71e3da6de44d85944_001.ogg": {
+    "tempo_inicio": "00:00:00.196",
+    "tempo_fim": "00:00:14.428",
+    "duracao": 14.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.590324878692627,
+    "mos_stoi": 0.9512829184532166,
+    "mos_si_sdr": 19.667341232299805,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Olá, bem-vindos. Nós somos o grupo da Atividade 5, o qual é composto em ordem de fala, por mim, Mariana Medeiros, pela Lionais Silva, Erika Patrícia, Bruno Angélica, Giovana Pires, Rayane Cristina e Bruna Lopes."
+  },
+  "b3120306b7c6cea71e3da6de44d85944_002.ogg": {
+    "tempo_inicio": "00:00:14.628",
+    "tempo_fim": "00:00:18.748",
+    "duracao": 4.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.632079601287842,
+    "mos_stoi": 0.9877445101737976,
+    "mos_si_sdr": 18.159391403198242,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vamos falar sobre o capítulo 8, que tem por título a interpretação."
+  }
+}

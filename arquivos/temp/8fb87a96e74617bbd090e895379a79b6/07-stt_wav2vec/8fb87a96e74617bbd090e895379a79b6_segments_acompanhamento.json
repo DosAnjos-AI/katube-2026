@@ -1,0 +1,17 @@
+{
+  "8fb87a96e74617bbd090e895379a79b6_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:23.004",
+    "duracao": 22.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6089117527008057,
+    "mos_stoi": 0.926470160484314,
+    "mos_si_sdr": 9.809351921081543,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Wagner tem uma barriguinha que ele parece, sabe a letra B minúscula? B minúscula. Tá. É, ele é magrinho assim na caixa do catarro. Mas a região da bacia... Tem uma protuberância abdominal, né? Vermes. Vermes. Uma dica então é entrar em contato com o amigo do Adams, né? Podia ser. Fazer uma aula entre os dois. Aham.",
+    "stt_wav2vec": "LELEO VAGUNERELE TEMOMA BARRIGUINHA QUE ELE PARECE A LETRACABE A LETRABE MINÚSCULA  VEMETA E LEMAL AMAGRINHA ASSIM NA CAIXA DO CATARRO HANA A REGIÃO DA PARCENTA TEM UMA PROTUBERÂNCIA ABIDOMINAL ANTÉ NEVERMES EAPENTE MADI QUE ENTÃO ENTRAR EM CONTATO COM O AMIGO DO RÁDAMOS NÃ PODIA SEU FAZER U MAULA LETRE OS DOIS AÃ"
+  }
+}

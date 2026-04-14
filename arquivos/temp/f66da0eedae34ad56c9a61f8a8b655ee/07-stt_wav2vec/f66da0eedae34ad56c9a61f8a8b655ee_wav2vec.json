@@ -1,0 +1,17 @@
+{
+  "f66da0eedae34ad56c9a61f8a8b655ee_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.750",
+    "duracao": 4.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.156001091003418,
+    "mos_stoi": 0.9789233803749084,
+    "mos_si_sdr": 25.89165496826172,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas o show não havia acabado. Os anjos foram se juntando.",
+    "stt_wav2vec": "MAS O CHOL NÃO HAVIA ACABADO OS ANJOS FORAM-SE JUNTANDO"
+  }
+}

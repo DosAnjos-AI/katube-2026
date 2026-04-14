@@ -1,0 +1,32 @@
+{
+  "63dd24e053e0ebae4766a78ca9c4d601_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:11.388",
+    "duracao": 11.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2847938537597656,
+    "mos_stoi": 0.9714468717575073,
+    "mos_si_sdr": 11.414584159851074,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Hoje nós estamos aqui com convidados ilustres. A gente não podia começar melhor esse podcast, senão com esses convidados maravilhosos. Bom...",
+    "stt_wav2vec": "HOJE NÓS ESTAMOS AQUI COM CONVIDADOS ILUSTRES QESTÃ PODIA COMERÇAR MELHORE OS SE PODE QUESTER SENAO COM ESSES CONVIDADOS MARAVILHOSOO SIM BOM"
+  },
+  "63dd24e053e0ebae4766a78ca9c4d601_002.ogg": {
+    "tempo_inicio": "00:00:11.684",
+    "tempo_fim": "00:00:15.720",
+    "duracao": 4.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1878292560577393,
+    "mos_stoi": 0.9411734342575073,
+    "mos_si_sdr": 9.225886344909668,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Primeiro, uma das nossas hosts, que a gente pode falar assim,",
+    "stt_wav2vec": "PRIMEIRO UM DAS NOSSAS HOS NE ELES PODE FALAR ASSIM"
+  }
+}

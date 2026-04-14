@@ -1,0 +1,32 @@
+{
+  "50ce3db8eba8c17af8484ff61e9e9d2e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.572",
+    "duracao": 4.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1726083755493164,
+    "mos_stoi": 0.9061945080757141,
+    "mos_si_sdr": 4.300995826721191,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Boa também. Cara, eu não duvido, eu não duvido, não, eu tenho certeza.",
+    "stt_wav2vec": "BORTABÉM CARO EU NÃO DUVIDO EU NÃO E EU NÃO DUVIDO NÃO EU TEM CERTEZA"
+  },
+  "50ce3db8eba8c17af8484ff61e9e9d2e_002.ogg": {
+    "tempo_inicio": "00:00:04.900",
+    "tempo_fim": "00:00:08.476",
+    "duracao": 3.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1386427879333496,
+    "mos_stoi": 0.8558136820793152,
+    "mos_si_sdr": 4.930826187133789,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que ele vai ligar pro Romildo pedindo pra voltar. Já fez isso, né?",
+    "stt_wav2vec": "QUE ELE VAI LIGAR UM ROMILDO PEDINDO PARA VOLTAR JEASEVISTO NE"
+  }
+}

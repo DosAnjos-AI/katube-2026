@@ -1,0 +1,32 @@
+{
+  "bd566603e5df471ba61e73d59b447d19_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.844",
+    "duracao": 6.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1100330352783203,
+    "mos_stoi": 0.9480657577514648,
+    "mos_si_sdr": 13.805140495300293,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Depois, eu não sabia o nome de ninguém e pedia para chamar... Porque o meu irmão também não me dizia, conhecia o hotel.",
+    "stt_wav2vec": "DEPOIS EU NÃO SABIA O NOMO NINGUÉM E PRIAPA CHAMAR-A PORQUE O MELHOR CONTA MA DÃ ME VIZIA QUE CONHECIA O HOTEL"
+  },
+  "bd566603e5df471ba61e73d59b447d19_002.ogg": {
+    "tempo_inicio": "00:00:07.108",
+    "tempo_fim": "00:00:10.670",
+    "duracao": 3.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.081575870513916,
+    "mos_stoi": 0.985159695148468,
+    "mos_si_sdr": 16.03034019470215,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então manda uma exceção e disse, olha, vai lá e pede para chamar alguém.",
+    "stt_wav2vec": null
+  }
+}

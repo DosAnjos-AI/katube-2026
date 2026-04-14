@@ -1,0 +1,12 @@
+{
+  "5f3403294a6079e8b2c10c02a96db19d_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:03.688",
+    "duracao": 3.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "É algo que eles têm em consideração e que eu acho que nós também deveríamos ter."
+  }
+}

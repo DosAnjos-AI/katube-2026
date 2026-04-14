@@ -1,0 +1,47 @@
+{
+  "16a7e106e370bb684addfa06e421d8a5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.124",
+    "duracao": 4.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2612860202789307,
+    "mos_stoi": 0.5978729128837585,
+    "mos_si_sdr": -5.663835525512695,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se ele não tiver saído de casa, a gente não estaria... É o único erro na situação.",
+    "stt_wav2vec": "SE AECERE NÃO TE PRESSAIR DE CAZA ÉO NÃO ESTEFO É AO ÚNICO ERMO NASTRAÇÃO"
+  },
+  "16a7e106e370bb684addfa06e421d8a5_002.ogg": {
+    "tempo_inicio": "00:00:04.644",
+    "tempo_fim": "00:00:15.228",
+    "duracao": 10.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5040292739868164,
+    "mos_stoi": 0.9623239636421204,
+    "mos_si_sdr": 17.791099548339844,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Calma aí, vou chegar lá. A gente só tá falando nesse assunto com o Renato, porque ele saiu de casa, dentro de casa. Se ele não tivesse saído dentro de casa, talvez isso não tivesse a evidência que tá atento.",
+    "stt_wav2vec": "CAMAEIRE VOU CHEGÁ LÁ AINSÓ TÁ FALANDO NESSE ASSUNPTO RENATO QUE ELE SAIU DE CAO DENDO DE CABESEIRE A NÃO TIVESSE SAIDO ENTE CASA TALVEZES NÃO TIVESSE A EVIDÊNCIA QUE TATEM"
+  },
+  "16a7e106e370bb684addfa06e421d8a5_003.ogg": {
+    "tempo_inicio": "00:00:15.620",
+    "tempo_fim": "00:00:20.988",
+    "duracao": 5.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9107892513275146,
+    "mos_stoi": 0.9599308371543884,
+    "mos_si_sdr": 24.64324951171875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E outra, cara, eu acho que há um bloqueio e eu até entendo",
+    "stt_wav2vec": "E OUTRA CARA A EU ACHO QUE HÁ UM BLOQUEIO E EU Á TEMO ENTENDO"
+  }
+}

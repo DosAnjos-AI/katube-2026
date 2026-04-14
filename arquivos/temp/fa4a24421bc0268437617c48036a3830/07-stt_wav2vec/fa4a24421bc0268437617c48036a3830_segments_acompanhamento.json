@@ -1,0 +1,47 @@
+{
+  "fa4a24421bc0268437617c48036a3830_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.028",
+    "duracao": 12.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6198773384094238,
+    "mos_stoi": 0.8727872371673584,
+    "mos_si_sdr": 8.572112083435059,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "uma equipe, é muito diferente de uma equipe que tenha 10, 15 designers, né? A gente tem esse conceito que é efetível, eu posso trabalhar o sign-offs como uma cultura, um mindset,",
+    "stt_wav2vec": "EU O QIPE É MUITO DIFFERENTE DE UMA EQUIPE QUE TEMHA DEZ QUINS  DEZAENENA AGENTESTINHA DE CONCEITO QUE E ASPECTÍVEL POSSO TRABALHAR TANOBES COM UMA CULTURA UM MAISET"
+  },
+  "fa4a24421bc0268437617c48036a3830_002.ogg": {
+    "tempo_inicio": "00:00:15.684",
+    "tempo_fim": "00:00:30.652",
+    "duracao": 14.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8334882259368896,
+    "mos_stoi": 0.8813983201980591,
+    "mos_si_sdr": 11.254775047302246,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ou de uma forma mega robusta estruturada que tenha profissionais específicos que serão responsáveis por definir esses processos, por garantir que a gente tenha sistemas de design. Então, eu acho que é uma resposta um pouco mais ampla, mas que",
+    "stt_wav2vec": null
+  },
+  "fa4a24421bc0268437617c48036a3830_003.ogg": {
+    "tempo_inicio": "00:00:30.788",
+    "tempo_fim": "00:00:34.520",
+    "duracao": 3.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0139224529266357,
+    "mos_stoi": 0.9581844806671143,
+    "mos_si_sdr": 22.550390243530273,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que vai variar de acordo com a sua estrutura, né?",
+    "stt_wav2vec": null
+  }
+}

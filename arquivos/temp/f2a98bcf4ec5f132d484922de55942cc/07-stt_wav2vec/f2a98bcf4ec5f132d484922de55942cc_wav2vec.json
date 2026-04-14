@@ -1,0 +1,17 @@
+{
+  "f2a98bcf4ec5f132d484922de55942cc_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.772",
+    "duracao": 3.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4932106733322144,
+    "mos_stoi": 0.7936803698539734,
+    "mos_si_sdr": 2.2599122524261475,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É uma pessoa solitária. Mas é verdade, está bem?",
+    "stt_wav2vec": "É UMA PSSOA SOLITÁRIA APES A AME MAS É VERDADE TAMBÉM"
+  }
+}

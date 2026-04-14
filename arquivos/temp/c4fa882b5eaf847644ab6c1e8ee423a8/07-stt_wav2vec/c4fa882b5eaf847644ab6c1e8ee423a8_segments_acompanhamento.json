@@ -1,0 +1,47 @@
+{
+  "c4fa882b5eaf847644ab6c1e8ee423a8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.964",
+    "duracao": 11.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8581783771514893,
+    "mos_stoi": 0.9094294309616089,
+    "mos_si_sdr": 11.29639720916748,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Esse tem que ser o último ano do Everton no Grêmio. Eu acho que o Everton tem que sair do Grêmio nessa próxima janela e se a proposta do Nápoles furiou vai vir outra. Com certeza vai vir outra porque ele é um jogador com o mercado.",
+    "stt_wav2vec": "ESSE TEM QUE SEU ULTIMO AN DO GREDO EVERTONO GRENIO EU ACHO QUE O EVER TOMTEM QUIS SAIR DO GRENIO NA NESSA PRÓXIMA JANELA E SE A PROPOSTA DO NAPOLIS FURIOR VAI VINHOTRA COM CERTEZA RENOTA QUE LHE É UM JOGADOR COMPERCADO"
+  },
+  "c4fa882b5eaf847644ab6c1e8ee423a8_002.ogg": {
+    "tempo_inicio": "00:00:12.068",
+    "tempo_fim": "00:00:24.988",
+    "duracao": 12.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3597517013549805,
+    "mos_stoi": 0.8471968173980713,
+    "mos_si_sdr": 2.8613991737365723,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tem duas questões aí. O Romildo tem que analisar, só que a questão é a seguinte. Como o Danielson falou, ano passado, 20 milhões não era nada. Esse ano 20 milhões é mais. Nós estamos vivendo uma pandemia. Mas, cara, eu acho que assim...",
+    "stt_wav2vec": "E CAHAMODO MA FISO BENJEITO O ROMILDO TEQUE ANALIZAR SÓA QUE A QUESTÃO É A SEGUINTE A COMO DANIOÇÃO FALOU ANO PASSADO VINTE MILHÕES NÃO ERA NADA ESSE ANO VINTE MILHÕES E MAMERHAS MODOR MUASTANGO VENDO APANDEMIA MAS CARA EU ACHO QUE ASSIM"
+  },
+  "c4fa882b5eaf847644ab6c1e8ee423a8_003.ogg": {
+    "tempo_inicio": "00:00:25.188",
+    "tempo_fim": "00:00:29.960",
+    "duracao": 4.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1031129360198975,
+    "mos_stoi": 0.9517176747322083,
+    "mos_si_sdr": 18.965015411376953,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele vai sair nessa temporada. Ele vai sair nessa temporada. Vai ser ruim pro Grêmio.",
+    "stt_wav2vec": "ELE VAI SAIR NE SA TEMPORADA ELE VAI SENDO ESSA TEMPORADO VA VAI SER MUI PROGREMO"
+  }
+}

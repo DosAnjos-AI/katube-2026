@@ -1,0 +1,32 @@
+{
+  "3ea7d1c82995f2708328fdd97765f16d_002.ogg": {
+    "tempo_inicio": "00:00:09.188",
+    "tempo_fim": "00:00:12.700",
+    "duracao": 3.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.552018404006958,
+    "mos_stoi": 0.8079482913017273,
+    "mos_si_sdr": 5.224121570587158,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí riscou, né? Ele riscou e escreveu o quê?",
+    "stt_wav2vec": "RISCO NE ELE RISCOU E ESCREVEU QUE"
+  },
+  "3ea7d1c82995f2708328fdd97765f16d_003.ogg": {
+    "tempo_inicio": "00:00:12.996",
+    "tempo_fim": "00:00:26.588",
+    "duracao": 13.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.853391170501709,
+    "mos_stoi": 0.9354411959648132,
+    "mos_si_sdr": 15.833573341369629,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Todos são bem-vindos. Isso. Se vocês quiserem vir, meu elepantinho irá como nos encontrar, quando você recebeu os de braços abertos, porque é isso que fazem os amigos. Isso mesmo, adorei.",
+    "stt_wav2vec": "TODOS SÃO BEM LINDAS QUE VOCÊS QUEVEREM VIR MEU ELEFANTINO IRÁ COMO UNDO VE ENCONTRAR ONDO RERCEBEUDE BREVES ABERTO O QUE É ESSE QUE FAZEM AS ANICAS ISSO MESMO ADOR"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "ac8986349278a93439f7ca054adf72d1_001.ogg": {
+    "tempo_inicio": "00:00:02.148",
+    "tempo_fim": "00:00:16.700",
+    "duracao": 14.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7954732179641724,
+    "mos_stoi": 0.9847700595855713,
+    "mos_si_sdr": 12.880651473999023,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "M80 Padel Pop. Bom dia e bem-vindo a mais um programa da M80, a M80 Padel Pop, a nova forma de estar aos sábados de manhã, mesmo que confinado, um programa que dá voz às personalidades do Padel, uma modalidade que continua a conquistar.",
+    "stt_wav2vec": "OITENTATADA TOP BONDIEI BEM VINDO-A MAIS UM  PROGRAMA DE  OITENTA É OITENTA PADALPOPDA NOVA FORMA DE ESTAR AOS SÁBADOS DE MANHÃ MESMO QUE CONFINAVAM UM PROGRAMA QUE DAVAS AS PORSONALIDADES DO PÁVELO UMA MUDALIDADE QUE CONTINUA A CONQUISTAR"
+  }
+}

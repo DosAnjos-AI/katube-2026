@@ -1,0 +1,17 @@
+{
+  "7758f06baf9b006ef4d9a563c50a403d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.456",
+    "duracao": 6.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.574808359146118,
+    "mos_stoi": 0.9551650285720825,
+    "mos_si_sdr": 20.049264907836914,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas para quem não sabe, também tem um time de hockey no Canadá que chama-se Vancouver Giants. Então, como que o Google vai fazer essa distinção?",
+    "stt_wav2vec": "MAS PARA QUEM NÃO SABE TAMBÉM TER UM TIME DE OQUE E NO CANADÁ QUE CHAMA-SE VANCÚVER DIAENDES ENTÃO COMO QUE O BULGOL VAI FAZER SA DISTINÇÃO"
+  }
+}

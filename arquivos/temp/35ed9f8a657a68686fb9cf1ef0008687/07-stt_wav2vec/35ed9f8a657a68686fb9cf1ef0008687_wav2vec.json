@@ -1,0 +1,32 @@
+{
+  "35ed9f8a657a68686fb9cf1ef0008687_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:22.492",
+    "duracao": 22.49,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.00750732421875,
+    "mos_stoi": 0.9314515590667725,
+    "mos_si_sdr": 11.93663215637207,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": "PELA HISTÓRIA E AL PEDRO DA FRANCESA TINHA UMA HISTÓRIA E TINHA MÚSICAS BOAS E TINHA AS BAILADINAS MARAVILHOSAS DANSANDO CANCÃ E A REVISTA ERA MUITO MAIS POLÍTICA ENTÃO ELA DEMOROU PREO PEGALA FOI PEGAR A ENTROU NA MODA A PARTIR DE ETE QUANDO O ARTURASEVEDO JUNTO COM FRANCAFRANÇA JUNIOR"
+  },
+  "35ed9f8a657a68686fb9cf1ef0008687_002.ogg": {
+    "tempo_inicio": "00:00:23.076",
+    "tempo_fim": "00:00:37.020",
+    "duracao": 13.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.06826114654541,
+    "mos_stoi": 0.9452944397926331,
+    "mos_si_sdr": 16.1127986907959,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": "NÃO FAZI A PRIMEIRA REVISTA QUE É O RIO DE JANEIRO EM SE S DEPOIS DISSO O ARTURAZEVEDO SEGUIU SEGUIU SEGUIU ARRANJOU OUTROS PASSEIROS E ACABOU INSTALANDO DEFINITIVAMENTE A REVISTA NO BRASIL"
+  }
+}

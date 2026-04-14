@@ -1,0 +1,30 @@
+{
+  "dee8738a3e332c4d9ce5587f284da0ac_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.708",
+    "duracao": 3.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4287874698638916,
+    "mos_stoi": 0.9479132890701294,
+    "mos_si_sdr": 15.55247688293457,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Lembra-se que no podcast que nós entrevistámos..."
+  },
+  "dee8738a3e332c4d9ce5587f284da0ac_002.ogg": {
+    "tempo_inicio": "00:00:03.972",
+    "tempo_fim": "00:00:09.884",
+    "duracao": 5.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.474104166030884,
+    "mos_stoi": 0.9721202254295349,
+    "mos_si_sdr": 21.198549270629883,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tu tinhas falado que não tinhas aí, não tinhas noção, não tinhas criado nenhum projeto ou nenhuma empresa."
+  }
+}

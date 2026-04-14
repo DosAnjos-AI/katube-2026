@@ -1,0 +1,32 @@
+{
+  "03b36cc669b14279559df58ac48d1b7c_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.284",
+    "duracao": 4.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4618711471557617,
+    "mos_stoi": 0.9371309876441956,
+    "mos_si_sdr": 13.45393180847168,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Imaginatinho, paga-me trimestralmente 20 centavos de dólar",
+    "stt_wav2vec": "BASNASSIM PAGA UM TREINSTROMENTE VINTE CENTAVOS DE DÓLAR"
+  },
+  "03b36cc669b14279559df58ac48d1b7c_002.ogg": {
+    "tempo_inicio": "00:00:04.644",
+    "tempo_fim": "00:00:10.632",
+    "duracao": 5.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.0690085887908936,
+    "mos_stoi": 0.9712712168693542,
+    "mos_si_sdr": 19.11810302734375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A cada três meses, ou seja, a brincar, a brincar, para fingir o Magic não era uma coisa muito rápida.",
+    "stt_wav2vec": "DAQUELA TRÊS MESA SEJA A BRINCAVAM ENCARO PARA FINGIR O MEDICO NÃO PAROMOCUISAMOTISI MUITO RÁPIDA"
+  }
+}

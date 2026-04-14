@@ -1,0 +1,16 @@
+{
+  "dbb10e28995671230e8ed979d2fd45be_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.696",
+    "duracao": 4.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0967817306518555,
+    "mos_stoi": 0.9756011366844177,
+    "mos_si_sdr": 15.745673179626465,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mesmo que aparentemente sejamos felizes, será que essa felicidade não é apenas uma fachada?"
+  }
+}

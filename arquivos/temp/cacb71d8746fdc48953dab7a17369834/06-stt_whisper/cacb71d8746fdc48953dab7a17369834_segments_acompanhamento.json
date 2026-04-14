@@ -1,0 +1,16 @@
+{
+  "cacb71d8746fdc48953dab7a17369834_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:03.772",
+    "duracao": 3.7,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.912745475769043,
+    "mos_stoi": 0.948591411113739,
+    "mos_si_sdr": 22.78770637512207,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ali, sozinha. Ficou segurando mais placa."
+  }
+}

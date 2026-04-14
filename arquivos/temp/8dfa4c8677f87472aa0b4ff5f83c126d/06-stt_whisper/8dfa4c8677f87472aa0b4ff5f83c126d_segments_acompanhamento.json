@@ -1,0 +1,30 @@
+{
+  "8dfa4c8677f87472aa0b4ff5f83c126d_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.660",
+    "duracao": 9.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6709092855453491,
+    "mos_stoi": 0.7801033854484558,
+    "mos_si_sdr": 7.244028568267822,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele chegou na Europa, vindo dos Estados Unidos, depois de já há mais de uma década de trabalho."
+  },
+  "8dfa4c8677f87472aa0b4ff5f83c126d_002.ogg": {
+    "tempo_inicio": "00:00:10.564",
+    "tempo_fim": "00:00:19.566",
+    "duracao": 9.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6903356313705444,
+    "mos_stoi": 0.8001783490180969,
+    "mos_si_sdr": 8.654135704040527,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E foi reconhecido no Festival do Teatro das Nações, que aquele ano tinha lucrado em Paris, em 1961, e ganhou o primeiro prêmio."
+  }
+}

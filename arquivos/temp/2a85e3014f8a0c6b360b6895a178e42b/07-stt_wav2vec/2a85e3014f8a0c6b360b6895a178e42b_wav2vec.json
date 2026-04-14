@@ -1,0 +1,32 @@
+{
+  "2a85e3014f8a0c6b360b6895a178e42b_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:05.564",
+    "duracao": 5.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5312470197677612,
+    "mos_stoi": 0.7444190979003906,
+    "mos_si_sdr": 3.5192384719848633,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quando você trabalha com o processo penal, você quer a condenação de culpados e a absolvição de inocentes.",
+    "stt_wav2vec": "QUANDO VOCÊ TRABALHA COM O PROCESSO PENAL VOCÊ QUER A CONDENAÇÃO DE CULPADOS E A ABSORVIÇÃO DEINOFENTES"
+  },
+  "2a85e3014f8a0c6b360b6895a178e42b_002.ogg": {
+    "tempo_inicio": "00:00:05.828",
+    "tempo_fim": "00:00:13.308",
+    "duracao": 7.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.406785488128662,
+    "mos_stoi": 0.830394983291626,
+    "mos_si_sdr": 5.07388973236084,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O pêndulo na ideia do juiz de garantia é exclusivamente evitar a condenação de inocentes.",
+    "stt_wav2vec": "A UPÊNDOLO NA IDÉIA DO JUSDE GARANTIA É EXCLUSIVAMENTE EVITAR A CONDEMNAÇÃO DE INOCENSIA"
+  }
+}

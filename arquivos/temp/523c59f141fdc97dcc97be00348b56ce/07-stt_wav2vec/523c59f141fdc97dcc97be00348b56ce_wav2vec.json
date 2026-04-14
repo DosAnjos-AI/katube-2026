@@ -1,0 +1,32 @@
+{
+  "523c59f141fdc97dcc97be00348b56ce_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.924",
+    "duracao": 4.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5841481685638428,
+    "mos_stoi": 0.7423596382141113,
+    "mos_si_sdr": 6.08071756362915,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É um bocado mais difícil de ver. Mas existem tudo. Lá está. Agora, há investimentos que o fazem por nós.",
+    "stt_wav2vec": "ÉMUNCAR MAIS DE QUISOBLEMA AS EXISTEM TUDO MAST AGORA HA INESTRIMENTOS QUE O FAZEM POR NÓS"
+  },
+  "523c59f141fdc97dcc97be00348b56ce_002.ogg": {
+    "tempo_inicio": "00:00:05.316",
+    "tempo_fim": "00:00:10.232",
+    "duracao": 4.92,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1362404823303223,
+    "mos_stoi": 0.9126480221748352,
+    "mos_si_sdr": 12.086885452270508,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e que nós nem sequer temos, e depois são mais vantajosos, porque lá está, eu presumo nos peer-to-peer.",
+    "stt_wav2vec": "ENTRE NO NECATEMOS E ITAMA POSTOU MAIS VANTAJOSAS E ECSCAIL POSOMA NOS PIOR TUPERO"
+  }
+}

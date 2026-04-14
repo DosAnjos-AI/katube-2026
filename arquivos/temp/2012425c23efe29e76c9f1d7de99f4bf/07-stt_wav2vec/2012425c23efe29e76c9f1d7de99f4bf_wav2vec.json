@@ -1,0 +1,17 @@
+{
+  "2012425c23efe29e76c9f1d7de99f4bf_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.822",
+    "duracao": 3.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7761521339416504,
+    "mos_stoi": 0.9837976098060608,
+    "mos_si_sdr": 25.259685516357422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Deus disse que se a gente comesse dele, a gente morreria.",
+    "stt_wav2vec": "DEUS DISSE QUE SE A GENTE COMESE DELE A GENTE MORRERIA"
+  }
+}

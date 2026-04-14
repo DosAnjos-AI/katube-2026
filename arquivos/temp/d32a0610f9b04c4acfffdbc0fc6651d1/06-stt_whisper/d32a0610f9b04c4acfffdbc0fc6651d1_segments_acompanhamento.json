@@ -1,0 +1,16 @@
+{
+  "d32a0610f9b04c4acfffdbc0fc6651d1_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.900",
+    "duracao": 7.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.238955020904541,
+    "mos_stoi": 0.9818171262741089,
+    "mos_si_sdr": 17.815689086914062,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "A empresa era correta, a empresa era do bem. Mas aquela iniciativa de soltar os cachorros naquela senhora..."
+  }
+}

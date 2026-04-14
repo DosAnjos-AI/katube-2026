@@ -1,0 +1,30 @@
+{
+  "b3859a222884682e2a1768ea5da539ff_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.492",
+    "duracao": 14.49,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3072271347045898,
+    "mos_stoi": 0.8374535441398621,
+    "mos_si_sdr": -0.17080330848693848,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu boto ali o Orelho, eu prefiro muito mais um negão que é um trem ali que ele vai e volta na mesma intensidade do que o Victor Ferraz e sacrificar o meu ponto, entendeu? Mas, Igor, nessa linha que tu falou do Pedro Rocha, o Pedro Rocha quando jogava do outro lado ele tinha o Ramiro, que não era um cara que atacava."
+  },
+  "b3859a222884682e2a1768ea5da539ff_002.ogg": {
+    "tempo_inicio": "00:00:14.660",
+    "tempo_fim": "00:00:30.376",
+    "duracao": 15.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1638355255126953,
+    "mos_stoi": 0.6476191282272339,
+    "mos_si_sdr": -4.94237756729126,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  }
+}

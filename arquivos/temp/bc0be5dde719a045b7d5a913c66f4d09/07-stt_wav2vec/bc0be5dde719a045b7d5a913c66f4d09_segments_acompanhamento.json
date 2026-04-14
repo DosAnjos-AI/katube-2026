@@ -1,0 +1,17 @@
+{
+  "bc0be5dde719a045b7d5a913c66f4d09_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.276",
+    "duracao": 5.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7199894189834595,
+    "mos_stoi": 0.8165995478630066,
+    "mos_si_sdr": 10.062241554260254,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "entre os manifestantes e os objetos da...",
+    "stt_wav2vec": "AGADEOS MANICAS DA PANTEZI E E OS OBJETOS DÁ"
+  }
+}

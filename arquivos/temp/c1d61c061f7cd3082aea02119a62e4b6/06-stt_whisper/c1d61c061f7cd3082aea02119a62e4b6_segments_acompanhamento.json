@@ -1,0 +1,30 @@
+{
+  "c1d61c061f7cd3082aea02119a62e4b6_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:25.596",
+    "duracao": 25.53,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.036153554916382,
+    "mos_stoi": 0.9480554461479187,
+    "mos_si_sdr": 12.437603950500488,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "aqui nessa MAP, já falando para a Bruna, que é um dos nossos convidados aqui que não faz parte dessa MAP, contem também um fato único. Aquele fato de que só você passou por isso, só você encarou, só você tem. É uma das nossas tradições aqui nessa MAP. Conta aí, Eric. Olá, senhores. Meu nome é Eric Slaveski. Eu sei, é complicado. O sobrenome já é complicado, minha mãe quis complicar mais ainda."
+  },
+  "c1d61c061f7cd3082aea02119a62e4b6_002.ogg": {
+    "tempo_inicio": "00:00:25.668",
+    "tempo_fim": "00:00:30.824",
+    "duracao": 5.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.224018096923828,
+    "mos_stoi": 0.9464758634567261,
+    "mos_si_sdr": 14.429696083068848,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas ela já pensou no Internacional. Então, o Harry Slauski. Bom, vocês podem mexer em todas as redes sociais."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "adcdcffb1d7407521d992c131e29de28_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.200",
+    "duracao": 4.2,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4254534244537354,
+    "mos_stoi": 0.8114551305770874,
+    "mos_si_sdr": 9.831393241882324,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "desses tempos modernos e desta juventude que está por aí."
+  }
+}

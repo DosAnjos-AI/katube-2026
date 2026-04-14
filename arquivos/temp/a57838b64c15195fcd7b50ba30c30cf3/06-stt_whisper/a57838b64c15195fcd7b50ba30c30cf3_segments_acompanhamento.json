@@ -1,0 +1,16 @@
+{
+  "a57838b64c15195fcd7b50ba30c30cf3_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:11.630",
+    "duracao": 11.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2852498292922974,
+    "mos_stoi": 0.8732209205627441,
+    "mos_si_sdr": 11.488265037536621,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "teoria da comunicação. Eu sou o professor Cláudia São Carvalho e hoje nós vamos tratar mais especificamente sobre o conceito de comunicação. Você sabe quais são as sete concepções de comunicação?"
+  }
+}

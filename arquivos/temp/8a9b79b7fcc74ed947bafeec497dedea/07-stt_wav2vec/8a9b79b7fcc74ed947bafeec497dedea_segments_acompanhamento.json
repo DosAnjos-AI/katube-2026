@@ -1,0 +1,47 @@
+{
+  "8a9b79b7fcc74ed947bafeec497dedea_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.356",
+    "duracao": 11.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.206627607345581,
+    "mos_stoi": 0.9589473605155945,
+    "mos_si_sdr": 14.008366584777832,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cara, voltando um pouquinho quando tu falou da questão do candidato ao título, tá? Eu acho que os clubes brasileiros esse ano estão um pouco diferente do ano passado. O Flamengo era o melhor time do campeonato.",
+    "stt_wav2vec": "QUEQUEU V FA VOLTANDO LHE UM POQUIM QUANTO FALOU DA QUESTÃO DO CANDIDATO AO TÍTULO TAU ACHO QUE OS TUROS BRASILEIROS ESSE ANO UM TÃO UM POUCO DIFERENTE DO ANO PASSADO O FLAMENGO ERA O MELHOR TIME DO CAMPEONATO"
+  },
+  "8a9b79b7fcc74ed947bafeec497dedea_002.ogg": {
+    "tempo_inicio": "00:00:11.620",
+    "tempo_fim": "00:00:17.692",
+    "duracao": 6.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.265749454498291,
+    "mos_stoi": 0.9416619539260864,
+    "mos_si_sdr": 12.91003131866455,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E por algum motivo, todos os times do Campeonato Brasileiro achavam que poderiam jogar de igual para igual com o Flamengo e ganhar do Flamengo.",
+    "stt_wav2vec": null
+  },
+  "8a9b79b7fcc74ed947bafeec497dedea_003.ogg": {
+    "tempo_inicio": "00:00:18.148",
+    "tempo_fim": "00:00:22.856",
+    "duracao": 4.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0784921646118164,
+    "mos_stoi": 0.9353938102722168,
+    "mos_si_sdr": 13.056848526000977,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ninguém conseguiu. O Flamengo desde que engrenou, ficou invicto até o final do campeonato.",
+    "stt_wav2vec": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "fa0dfc12834c4fd4f7fe3ec71c0307da_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.220",
+    "duracao": 4.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.511315941810608,
+    "mos_stoi": 0.8379391431808472,
+    "mos_si_sdr": 6.451319217681885,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "dar as suas voltas, claro que o carro faz muito gente. Ou, tipo, quando fui a..."
+  },
+  "fa0dfc12834c4fd4f7fe3ec71c0307da_002.ogg": {
+    "tempo_inicio": "00:00:04.772",
+    "tempo_fim": "00:00:08.444",
+    "duracao": 3.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.696091651916504,
+    "mos_stoi": 0.8430819511413574,
+    "mos_si_sdr": 4.416760444641113,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Aos Açores, se não alugares um carro, praticamente não consegueses"
+  },
+  "fa0dfc12834c4fd4f7fe3ec71c0307da_003.ogg": {
+    "tempo_inicio": "00:00:08.804",
+    "tempo_fim": "00:00:17.470",
+    "duracao": 8.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6914616823196411,
+    "mos_stoi": 0.9392296075820923,
+    "mos_si_sdr": 9.380335807800293,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não consegues conhecer sítio nenhum. Eu por norma aluno sempre carro. Portanto, se não tiver carro, lugo. Não é que tem alguma coisa contra os transportes públicos?"
+  }
+}

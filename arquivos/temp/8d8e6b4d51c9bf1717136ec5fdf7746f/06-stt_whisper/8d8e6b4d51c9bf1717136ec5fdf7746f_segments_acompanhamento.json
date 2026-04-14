@@ -1,0 +1,30 @@
+{
+  "8d8e6b4d51c9bf1717136ec5fdf7746f_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:09.372",
+    "duracao": 9.3,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4307680130004883,
+    "mos_stoi": 0.9859650135040283,
+    "mos_si_sdr": 22.125446319580078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Uma vez que a imprensa foi acionada e trouxe visibilidade para isso, todos os órgãos fiscalizadores que tinham colocado isso na fila,"
+  },
+  "8d8e6b4d51c9bf1717136ec5fdf7746f_002.ogg": {
+    "tempo_inicio": "00:00:09.636",
+    "tempo_fim": "00:00:13.790",
+    "duracao": 4.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.807602643966675,
+    "mos_stoi": 0.9815048575401306,
+    "mos_si_sdr": 24.9461612701416,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Puxaram essa demanda para frente. Aí se tornou uma crise de imagem."
+  }
+}

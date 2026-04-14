@@ -1,0 +1,32 @@
+{
+  "603df7dd35f9bb7e153603cba0696ad4_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:44.156",
+    "duracao": 44.16,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.154422640800476,
+    "mos_stoi": 0.8863492608070374,
+    "mos_si_sdr": 4.048866271972656,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": "OLHAR COAS NÃO NÃO VAI TESCRITO SALTOS PELES SÃO CHIQUES NE MAS DAITEN A SENHOR ATÉ TANTO E ENORMALMENTE TEM CALSE TUTEM UM CORPO BONITO TUBAACHAFAIVATE TENHO O PROMLEMA A CAMISA MEMO O ELAMIA CAMISA BREGA O MIQUES É O VENDEDOR O VENDEDOR CO MIQUES ELLE É SINSERO ERVAVALAASSIM OLHO O LEGAL OLEGIÃO ABA OU VIQUE NÃO FICOU LEGAL  O OBRIQUES TEM CORPO DE VENDEDOR DO ESPIROTSAOÉ VERDADE EXATAMENTE VERDADARAS VIU  MAS COMIDA MUITO COMIGO NA AVISANDO QUE ALI NO REI DE ANDERALAINEA PLÂNTIDA TEM UMA FOTINHO PRASENTE PAR AGIR NESTE DIA NESTA TESTA FEIRA O ESTOU EU SOUAFATINHO OLHAOU COMUMA CAMISETA COM LENDAS DO ROQUEMROU E VOMAGE QUEM É QUE VAI"
+  },
+  "603df7dd35f9bb7e153603cba0696ad4_002.ogg": {
+    "tempo_inicio": "00:00:44.228",
+    "tempo_fim": "00:01:02.984",
+    "duracao": 18.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.209578514099121,
+    "mos_stoi": 0.8815101981163025,
+    "mos_si_sdr": 5.83079719543457,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

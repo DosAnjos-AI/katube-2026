@@ -1,0 +1,17 @@
+{
+  "b2f5cc9a08e7a776e0f3ef9fb4d7d19a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.604",
+    "duracao": 8.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.454255223274231,
+    "mos_stoi": 0.8632489442825317,
+    "mos_si_sdr": -0.7802073955535889,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "goleiro não deu tempo de sair. Os caras tiraram o Júlio César Peruzira, agora tá explicado por que ele é titular naquele time lá, porque, meu Deus.",
+    "stt_wav2vec": "OLE DO VAO MEU TEMPONE A BALDR RUNGAR A TIRAROS JE LU CESAR PELUZIRA GUAL A GUARTA EXPLICADA PORQUE QUELE TITULAR NAQUELE TIME UM APRO QUE MEU DEUS"
+  }
+}

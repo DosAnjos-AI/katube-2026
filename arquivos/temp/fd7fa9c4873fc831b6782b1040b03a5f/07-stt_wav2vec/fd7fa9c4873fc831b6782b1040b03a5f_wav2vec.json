@@ -1,0 +1,32 @@
+{
+  "fd7fa9c4873fc831b6782b1040b03a5f_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.172",
+    "duracao": 14.17,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.687691569328308,
+    "mos_stoi": 0.9653413891792297,
+    "mos_si_sdr": 6.879858016967773,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Voltando pro jogo, tá? Os reservas que jogaram hoje, tanto o Paulo Vitor, quanto o David Braz e o Lucas Silva, que acabou entrando porque o Maicon machucou, foram bem na partida, não passou por eles, então não passou por reserva atuando o empate do Grêmio.",
+    "stt_wav2vec": "VOLTANDO PORO JOGO TA O OS RESERVAS QUE JOGARA HOJE TANTO PAULO VITOR QUANTO DEVE DE BRAZ E O LUCA SILVA QUE ACABOU ENTRANDO TOMARCO MAS COU FORAM BEM NA PARTIDA NO NÃO PASSOU POR ELES ENTÃO NÃO PASSOU POR RESERVA GATOANDO O IMPATE DO GRÊMIO"
+  },
+  "fd7fa9c4873fc831b6782b1040b03a5f_002.ogg": {
+    "tempo_inicio": "00:00:14.436",
+    "tempo_fim": "00:00:24.990",
+    "duracao": 10.55,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4995992183685303,
+    "mos_stoi": 0.9865565896034241,
+    "mos_si_sdr": 22.891571044921875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas a gente precisa mais, cara. Ele precisa mais, não tá legal. O Isaac é avançado, não é ali a posição dele, ele foi melhor quando ele entrou atrás do jogador mais avançado, atrás do Diego Souza, no caso.",
+    "stt_wav2vec": "MAS NENTE PRECISA MAIS REPRECISA MAIS NÃO TA LEGAL O ISAQUE AVANÇADO NNÃO É ALI A PORIÇÃO DELLE ELE FOI MELHOR QUANDO ELLE ENTROU ATRÁS DO DO JOGADOR MAIS AVANÇADO TRAS DO JAGOSOUZA NO CASO"
+  }
+}

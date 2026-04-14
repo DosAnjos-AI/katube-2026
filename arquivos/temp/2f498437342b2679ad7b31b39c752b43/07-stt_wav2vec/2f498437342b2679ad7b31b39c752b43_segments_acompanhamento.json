@@ -1,0 +1,62 @@
+{
+  "2f498437342b2679ad7b31b39c752b43_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.900",
+    "duracao": 3.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3455318212509155,
+    "mos_stoi": 0.7308647632598877,
+    "mos_si_sdr": -1.029823660850525,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas aí é que nem o Renan falou, ah, beleza, mas é o Diego Souza, claro que eu tive...",
+    "stt_wav2vec": "MARAIA QUINHOE NA COMARES NAS QEO JEESUSA ESTAR EM SEU TIBE"
+  },
+  "2f498437342b2679ad7b31b39c752b43_002.ogg": {
+    "tempo_inicio": "00:00:04.164",
+    "tempo_fim": "00:00:08.700",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2688143253326416,
+    "mos_stoi": 0.5197601318359375,
+    "mos_si_sdr": -6.8208842277526855,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "2f498437342b2679ad7b31b39c752b43_003.ogg": {
+    "tempo_inicio": "00:00:09.028",
+    "tempo_fim": "00:00:16.700",
+    "duracao": 7.67,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6321425437927246,
+    "mos_stoi": 0.7809165120124817,
+    "mos_si_sdr": 6.892469882965088,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Avalha outras opções, mas o Diego Souza, para ter ali no grupo um cara identificado com o clube que está produzindo tem oito jogos de clube em 2020,",
+    "stt_wav2vec": null
+  },
+  "2f498437342b2679ad7b31b39c752b43_004.ogg": {
+    "tempo_inicio": "00:00:16.868",
+    "tempo_fim": "00:00:28.990",
+    "duracao": 12.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6493476629257202,
+    "mos_stoi": 0.9072517156600952,
+    "mos_si_sdr": 7.454353332519531,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mantenha o clube. Só que ele é o Diego Souza, né, Biel? Ele não veio pra cá pra ficar no banco encostado. O Inter não vai trazer um centroavante pra deixar o Guerreiro. Vai, identificado com o clube, joga a bola",
+    "stt_wav2vec": null
+  }
+}

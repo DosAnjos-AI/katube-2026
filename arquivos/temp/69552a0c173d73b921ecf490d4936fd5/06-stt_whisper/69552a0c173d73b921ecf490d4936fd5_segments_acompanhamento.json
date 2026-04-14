@@ -1,0 +1,42 @@
+{
+  "69552a0c173d73b921ecf490d4936fd5_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.772",
+    "duracao": 7.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Pareceu o Bruno Cortes, cruzando o Grêmio. Muito bem cruzava a bola. E vamos combinar, né, gente? Ganhou quem merecia vencer, né? O Bayern..."
+  },
+  "69552a0c173d73b921ecf490d4936fd5_002.ogg": {
+    "tempo_inicio": "00:00:08.132",
+    "tempo_fim": "00:00:19.356",
+    "duracao": 11.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Desde lá, desde o início do mata-mata, no acumulado socou 7x1 no Chelsea, depois nas quartas meteu 8x2 no Barcelona, na Semi socou 3x0 no Lyon,"
+  },
+  "69552a0c173d73b921ecf490d4936fd5_003.ogg": {
+    "tempo_inicio": "00:00:19.652",
+    "tempo_fim": "00:00:25.148",
+    "duracao": 5.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "E aí chegou na final como grande favorito, a gente falava bastante do PSG por causa do Neymar e tudo mais."
+  },
+  "69552a0c173d73b921ecf490d4936fd5_004.ogg": {
+    "tempo_inicio": "00:00:25.476",
+    "tempo_fim": "00:00:34.598",
+    "duracao": 9.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": null,
+    "stt_whisper": null
+  }
+}

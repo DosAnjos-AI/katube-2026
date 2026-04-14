@@ -1,0 +1,30 @@
+{
+  "b40ddb76595b5d2ff228722058a84180_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:06.108",
+    "duracao": 5.94,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.051077127456665,
+    "mos_stoi": 0.963708221912384,
+    "mos_si_sdr": 23.023426055908203,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas, sendo um rapaz justo, decidiu fazer tudo bem quietinho, para não envergonhar Maria."
+  },
+  "b40ddb76595b5d2ff228722058a84180_002.ogg": {
+    "tempo_inicio": "00:00:06.436",
+    "tempo_fim": "00:00:11.128",
+    "duracao": 4.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4422762393951416,
+    "mos_stoi": 0.9899625182151794,
+    "mos_si_sdr": 26.5748291015625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tendo resolvido tudo em sua mente, conseguiu finalmente dormir."
+  }
+}

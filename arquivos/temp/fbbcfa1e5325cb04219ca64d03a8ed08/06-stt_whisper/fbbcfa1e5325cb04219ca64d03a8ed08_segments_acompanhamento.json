@@ -1,0 +1,44 @@
+{
+  "fbbcfa1e5325cb04219ca64d03a8ed08_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:09.404",
+    "duracao": 9.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3314571380615234,
+    "mos_stoi": 0.9570426344871521,
+    "mos_si_sdr": 15.954045295715332,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Comecei a exercer o primeiro mandato com 25 anos, uma garra, uma vontade, uma força de vontade, um idealismo, uma vontade de mudar o mundo."
+  },
+  "fbbcfa1e5325cb04219ca64d03a8ed08_002.ogg": {
+    "tempo_inicio": "00:00:09.476",
+    "tempo_fim": "00:00:22.748",
+    "duracao": 13.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4267559051513672,
+    "mos_stoi": 0.9037137627601624,
+    "mos_si_sdr": 10.170653343200684,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "muito superior às que já estão há bastante tempo nisso. Então é importante que os nossos jovens se sintam motivados porque sim é capazes. Eu participo agora de um Congresso nacional, de uma Câmara dos Deputados, onde metade foi mudada, ou seja..."
+  },
+  "fbbcfa1e5325cb04219ca64d03a8ed08_003.ogg": {
+    "tempo_inicio": "00:00:22.916",
+    "tempo_fim": "00:00:29.998",
+    "duracao": 7.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.131075620651245,
+    "mos_stoi": 0.9019118547439575,
+    "mos_si_sdr": 14.30772876739502,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "metade dos 513 deputados, 240 e poucos deputados que estavam na legislatura passada não se reelegeram e vieram novos."
+  }
+}

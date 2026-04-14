@@ -1,0 +1,32 @@
+{
+  "f3c5e5621517f3cbbbe72869add808ef_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:08.092",
+    "duracao": 7.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.635014057159424,
+    "mos_stoi": 0.9793674349784851,
+    "mos_si_sdr": 22.313140869140625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Quando Joana tinha 30 anos, seu padrasto faleceu. Isso foi um golpe, pois ele era uma das únicas pessoas que eram um apoio para ela.",
+    "stt_wav2vec": "QUANDO JOANA TINHA TRINTA ANOS SEU PADRASTO FALECEU ISSO FOI UM GOLPE POIS ELE ERA UMA DAS ÚNICAS PESSOAS QUE ERA UM APOIO PARA ELA"
+  },
+  "f3c5e5621517f3cbbbe72869add808ef_002.ogg": {
+    "tempo_inicio": "00:00:08.388",
+    "tempo_fim": "00:00:15.132",
+    "duracao": 6.74,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.004838705062866,
+    "mos_stoi": 0.9673566222190857,
+    "mos_si_sdr": 24.2247314453125,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Seu filho mais de novo morreu com 24 anos em um tiroteio. Ela disse que esse foi um dos piores momentos da vida dela.",
+    "stt_wav2vec": null
+  }
+}

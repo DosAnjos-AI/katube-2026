@@ -1,0 +1,17 @@
+{
+  "a89e04afd36f94401c342ab9da8aea50_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.542",
+    "duracao": 4.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.672018527984619,
+    "mos_stoi": 0.989497184753418,
+    "mos_si_sdr": 25.190475463867188,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "sem dúvida que acho que construí o meu sucesso porque sou bastante coerente.",
+    "stt_wav2vec": "SEM DÚVIDA QUE AS CONSTRUIU O MEU SUCESSO PROQUE SOU BASTANTE QERIENTES"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "95aa188b633449a1d1447d037f81da55_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.660",
+    "duracao": 5.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6914916038513184,
+    "mos_stoi": 0.8499517440795898,
+    "mos_si_sdr": 3.8043668270111084,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Por ser prejudicada... E depois outro... Temos sempre a arranjar carro...",
+    "stt_wav2vec": "EAPOSER M SEPOS DE CASA E POIS OUTRA TENTO SEMPRE ARRANJAR PARA CARRO"
+  },
+  "95aa188b633449a1d1447d037f81da55_002.ogg": {
+    "tempo_inicio": "00:00:06.116",
+    "tempo_fim": "00:00:10.360",
+    "duracao": 4.24,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.574155807495117,
+    "mos_stoi": 0.9366486072540283,
+    "mos_si_sdr": 12.443747520446777,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Em vez de alugar, tempo sempre para arranjar carro alguém. Também é uma maneira para o passo.",
+    "stt_wav2vec": "EM BEZ DA LUGAR TEMPO SEMPRE ARRANJAR CARVOE A MINHA MMANEIRA TOPAÇE"
+  }
+}

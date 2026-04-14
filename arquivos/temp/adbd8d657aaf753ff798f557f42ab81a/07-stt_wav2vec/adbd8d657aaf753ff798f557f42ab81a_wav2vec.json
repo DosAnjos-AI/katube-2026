@@ -1,0 +1,32 @@
+{
+  "adbd8d657aaf753ff798f557f42ab81a_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.612",
+    "duracao": 3.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.571903944015503,
+    "mos_stoi": 0.9941624999046326,
+    "mos_si_sdr": 26.763761520385742,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E Valls Rodrigues, 40 anos, pedreiro.",
+    "stt_wav2vec": "E VAL O SOO RODRIGUES QUARENTA ANOS PEDREIRO"
+  },
+  "adbd8d657aaf753ff798f557f42ab81a_002.ogg": {
+    "tempo_inicio": "00:00:04.100",
+    "tempo_fim": "00:00:13.660",
+    "duracao": 9.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4391977787017822,
+    "mos_stoi": 0.9956201910972595,
+    "mos_si_sdr": 25.411670684814453,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É ele quem cuida da manutenção predial lá na Ídria. Poderia ser mais um colaborador da operação, mas ele é uma personalidade de destaque.",
+    "stt_wav2vec": "É ELE QUEM CUIDA DA MANUTENÇÃO PREDIAU LA NA ÍDREA PODERIA SER MAIS UM COLABORADOR DA OPERAÇÃO MAS ELE É UMA PERSONALIDADE DE DESTAQUE"
+  }
+}

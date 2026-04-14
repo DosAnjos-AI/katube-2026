@@ -1,0 +1,68 @@
+{
+  "2aa3b47b62be20266b087a328b23d132_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:17.340",
+    "duracao": 17.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": "PODER ABSURDO ESSA FASE É A DUS AANOS QUARENTA PARA A FRENTE QUE É A SÃO AS PRODUÇÕES DO VALTER PINTO O VOLTERTER PINTO É QUE CRIA UMA COISA QUE EU CHAMO ELLE NÃO CHAMAVA ASSIM DO SISSTEMA VEDETE ELLE"
+  },
+  "2aa3b47b62be20266b087a328b23d132_002.ogg": {
+    "tempo_inicio": "00:00:20.612",
+    "tempo_fim": "00:00:51.932",
+    "duracao": 31.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": "LÁ NO RIO DE JANEIRO E VAI PE VAY PCONVOCANDO PESSOAS MULHERES BONITAS PARA TRABALHAR COM ELE E AI LE TEM UM METODO PRAFAPRADE FORMAÇÃO PARA ELLAS ELAS FAZEM AULA DE DANÇA TODO O DIA ELAS FAZEM AULA DE CANTO TODO O DIA ELAS TÊM QUE DESCER A ESCADA SEM OLHAR PARA O CHÃO NÃO PODE OLHAR E ERAM ESCADAS DE QUARENTA DEGRAOS QUE IAM LÁ NO SEGUNDO ANDAR OU  TERCEIRO ANDAR DOS CAMARINS E DESCIAM POR LÁ ELLAS COMIAM O TINHAM QUE COM"
+  },
+  "2aa3b47b62be20266b087a328b23d132_003.ogg": {
+    "tempo_inicio": "00:00:52.004",
+    "tempo_fim": "00:01:40.124",
+    "duracao": 48.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "2aa3b47b62be20266b087a328b23d132_004.ogg": {
+    "tempo_inicio": "00:01:40.484",
+    "tempo_fim": "00:01:56.412",
+    "duracao": 15.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "2aa3b47b62be20266b087a328b23d132_005.ogg": {
+    "tempo_inicio": "00:01:56.452",
+    "tempo_fim": "00:02:07.868",
+    "duracao": 11.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "2aa3b47b62be20266b087a328b23d132_006.ogg": {
+    "tempo_inicio": "00:02:08.036",
+    "tempo_fim": "00:02:19.166",
+    "duracao": 11.13,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

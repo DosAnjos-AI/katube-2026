@@ -1,0 +1,44 @@
+{
+  "dba4f34409d68b533b23c201af871611_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.748",
+    "duracao": 14.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6661689281463623,
+    "mos_stoi": 0.9810472130775452,
+    "mos_si_sdr": 18.34305763244629,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu quero ver como é que eles vão trabalhar isso aí. John Collins também aí, não tenho nem o que falar, acho que ele é um jogador em ascensão, pode até ter aparições, não acho que na próxima temporada, mas no futuro aí no Allstar Game, porque ele tem números muito bons."
+  },
+  "dba4f34409d68b533b23c201af871611_002.ogg": {
+    "tempo_inicio": "00:00:15.076",
+    "tempo_fim": "00:00:21.212",
+    "duracao": 6.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6618916988372803,
+    "mos_stoi": 0.9763920903205872,
+    "mos_si_sdr": 18.10694122314453,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se esse Atlanta começar a ganhar, ele vai se mostrar uma peça muito importante junto com o Tree Young,"
+  },
+  "dba4f34409d68b533b23c201af871611_003.ogg": {
+    "tempo_inicio": "00:00:21.668",
+    "tempo_fim": "00:00:31.128",
+    "duracao": 9.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.783421516418457,
+    "mos_stoi": 0.9841827750205994,
+    "mos_si_sdr": 19.701416015625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vamos ver aí o que vai acontecer, né? Já em relação ao quinto, eu já vou começar discordando aqui, que eu não acho que o Sacramento 15 esteja entre os 5 melhores."
+  }
+}

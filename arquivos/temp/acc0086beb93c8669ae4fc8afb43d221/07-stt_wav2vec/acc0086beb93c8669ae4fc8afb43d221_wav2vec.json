@@ -1,0 +1,17 @@
+{
+  "acc0086beb93c8669ae4fc8afb43d221_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.460",
+    "duracao": 10.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2206257581710815,
+    "mos_stoi": 0.7801759839057922,
+    "mos_si_sdr": -2.8701841831207275,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Na idade dele, pra posição dele, eu acho bem difícil. Acho bem difícil mesmo. O Durval tá lá... A gente fala de idade só porque ele não tem aquele futebol...",
+    "stt_wav2vec": "TIFICINAIDADE DELE PARA PROPOSIÇÃO DELE EU ACHO BENCHINS AS MENXES OUISMENS ODURVALTALAMEMEU AGÊNCIE CORA UMA DEZARDE SÓ PORQUE ELE NÃO TEM AQUELLE FUTEBOL"
+  }
+}

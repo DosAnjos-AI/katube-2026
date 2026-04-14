@@ -1,0 +1,30 @@
+{
+  "dccbeb867439518c93f91af88f8b3fe4_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.716",
+    "duracao": 14.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0340781211853027,
+    "mos_stoi": 0.9535771608352661,
+    "mos_si_sdr": 11.08670425415039,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "TH-N-H-T-H-D-H-D-N-H-D-O-S-N-AT-D-O-S-E-S-E-S-M-A-N-A-T-H-D-O-S-A-S-A-S-A-S-A-S-A-S-A-S-A-S-A-N-A-S-A-S-A-N-A-N-A-N-A-S-A-S-A-S-A-S-A-S-A-N-A-N-A-N-A-S-A-N-A-N-A-N-A-N-A-N-A-N-A-N-A-S-A-N-A-N-A-N-A-A-N-A-A-N-A-A-A-A-A-A-A-A-A-A-T-N-A-A-T-N-H-A-T-H-N-T-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-"
+  },
+  "dccbeb867439518c93f91af88f8b3fe4_002.ogg": {
+    "tempo_inicio": "00:00:14.852",
+    "tempo_fim": "00:00:29.176",
+    "duracao": 14.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.300529956817627,
+    "mos_stoi": 0.9166162610054016,
+    "mos_si_sdr": 6.648602485656738,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "ovos de Páscoa que estão recheados, assim, daí tem negrinho, que assim, engolinho, ruído, do céu, tá perdendo. Tem um movimento que tá acontecendo nas redes sociais, se eu não me engano, é hashtag..."
+  }
+}

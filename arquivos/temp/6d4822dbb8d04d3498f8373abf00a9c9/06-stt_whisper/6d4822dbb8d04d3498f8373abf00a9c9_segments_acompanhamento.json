@@ -1,0 +1,16 @@
+{
+  "6d4822dbb8d04d3498f8373abf00a9c9_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.272",
+    "duracao": 7.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.849240779876709,
+    "mos_stoi": 0.9618455171585083,
+    "mos_si_sdr": 19.278230667114258,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Por exemplo, eu tenho essa vontade de ir com contabilidade por dentro, mas há coisas que a pessoa não fazem nem sequer ideia do que é que a carne não apagar."
+  }
+}

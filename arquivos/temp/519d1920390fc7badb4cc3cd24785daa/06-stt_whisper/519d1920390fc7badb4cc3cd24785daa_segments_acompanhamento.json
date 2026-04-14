@@ -1,0 +1,44 @@
+{
+  "519d1920390fc7badb4cc3cd24785daa_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:07.036",
+    "duracao": 6.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5971388816833496,
+    "mos_stoi": 0.7309320569038391,
+    "mos_si_sdr": 7.905816078186035,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null
+  },
+  "519d1920390fc7badb4cc3cd24785daa_002.ogg": {
+    "tempo_inicio": "00:00:07.556",
+    "tempo_fim": "00:00:12.828",
+    "duracao": 5.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.425772190093994,
+    "mos_stoi": 0.896571695804596,
+    "mos_si_sdr": 13.8325834274292,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas já está ali uminguiz com este torneio, aliás, este último ano que passou."
+  },
+  "519d1920390fc7badb4cc3cd24785daa_003.ogg": {
+    "tempo_inicio": "00:00:13.412",
+    "tempo_fim": "00:00:20.222",
+    "duracao": 6.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.587820053100586,
+    "mos_stoi": 0.7961030006408691,
+    "mos_si_sdr": 10.073946952819824,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Na meia-final eu lesionei-me no último jogo e tive que desistir da final uma coisa que nunca tinha acontecido."
+  }
+}

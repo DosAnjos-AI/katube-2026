@@ -1,0 +1,17 @@
+{
+  "7d9b429a784a5d70a7180b06dea4659b_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:22.076",
+    "duracao": 22.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4983525276184082,
+    "mos_stoi": 0.926539421081543,
+    "mos_si_sdr": 8.11124038696289,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que tu não consiga nem todo o teu dinheiro de volta. Então, é prejuízo para todo mundo. É melhor do colocar lá para frente, já estão se organizando para isso, a indústria, o setor do turismo como um todo. Então, se puder, já se organiza para o ano que vem, se tem uma viagem, de repente, para julho desse ano, que está meio em dúvida, acho que não vai rolar. Então, passa para o ano que vem, está tudo certo.",
+    "stt_wav2vec": "QUE TU NÃO CONSIGA NEM TTODO O TEU DINHEIRO DE VOLTA ENTÃO É PREJUIZ A TODO O MUN DO ÉVEMELHOR VA COLOCÁL-LA PARA FRENTE JÁ TÃO SE ORGANIZANDO PARA ISSO NEM A INDÚSTRIA A O SECTOR DO TURISMO COMUM TODO ENTÃO SE PUDER JÁ SE ORGANIZA POR O ANO QUE VENS TEM UMA VIAGEM DE REPENTE PARA JULHO DESSE ANO QUE TAMEM DÚVIDAASE QUE NÃO VAI ROLAR ENTÃO POSSA PRANO QUE VEN TA TODO SARVEE"
+  }
+}

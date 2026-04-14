@@ -1,0 +1,30 @@
+{
+  "736f0507c6444434cc03f6eb273fcbc0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.860",
+    "duracao": 12.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.95482337474823,
+    "mos_stoi": 0.9390444755554199,
+    "mos_si_sdr": 18.85915756225586,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "do Inter, não só na final, como no Mundial. O Alex foi seguido no Mundial, mas, enfim, foi bom recordar. Hoje eu vou deixar aí a minha assinalização para a partida do Wellington Monteiro. Me chamou a atenção, eu não lembrava..."
+  },
+  "736f0507c6444434cc03f6eb273fcbc0_002.ogg": {
+    "tempo_inicio": "00:00:12.900",
+    "tempo_fim": "00:00:17.896",
+    "duracao": 5.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.150179147720337,
+    "mos_stoi": 0.823942244052887,
+    "mos_si_sdr": 10.902691841125488,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ou talvez naquela época não tinha um entendimento para avaliar o quanto ele foi importante naquela partida."
+  }
+}

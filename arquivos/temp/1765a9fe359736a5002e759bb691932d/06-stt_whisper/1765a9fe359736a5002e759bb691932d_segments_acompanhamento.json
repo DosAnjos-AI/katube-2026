@@ -1,0 +1,16 @@
+{
+  "1765a9fe359736a5002e759bb691932d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.272",
+    "duracao": 11.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7017463445663452,
+    "mos_stoi": 0.971947968006134,
+    "mos_si_sdr": 15.268036842346191,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Concursos públicos já programados para esse período também serão realizados. Os restaurantes universitários estarão abertos, preferencialmente para beneficiários da pró-reitoria de assuntos estudantis."
+  }
+}

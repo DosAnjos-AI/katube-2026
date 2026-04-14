@@ -1,0 +1,17 @@
+{
+  "2cf0f8073a82adeb6319cb5689513bbd_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.158",
+    "duracao": 8.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.265934467315674,
+    "mos_stoi": 0.9463885426521301,
+    "mos_si_sdr": 20.270984649658203,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "dessa visão do europeu e também do escravo nessa casa grande cinzala do Gilberto Freire.",
+    "stt_wav2vec": "DESSA VISÃO DO DO EUROPEU E TAMBÉM DO ESCRAVO NESSA CCASAGRANDE SENZALA DO JUBERTOFREIRE"
+  }
+}

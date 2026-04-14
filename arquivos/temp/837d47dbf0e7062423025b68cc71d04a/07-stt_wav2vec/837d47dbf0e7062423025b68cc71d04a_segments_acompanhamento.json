@@ -1,0 +1,32 @@
+{
+  "837d47dbf0e7062423025b68cc71d04a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.516",
+    "duracao": 3.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8645496368408203,
+    "mos_stoi": 0.8289020657539368,
+    "mos_si_sdr": 8.62081241607666,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O que é giro é quando tu passas para o lado do investidor...",
+    "stt_wav2vec": "O QUEGEIRO É QUANTO PASSAS PARA O LADO DO INSTERIOR"
+  },
+  "837d47dbf0e7062423025b68cc71d04a_002.ogg": {
+    "tempo_inicio": "00:00:03.780",
+    "tempo_fim": "00:00:07.352",
+    "duracao": 3.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5023248195648193,
+    "mos_stoi": 0.8730811476707458,
+    "mos_si_sdr": 12.058302879333496,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E depois, em vez de seres tu a pagar os juros, começas a ser tu a recebê-los.",
+    "stt_wav2vec": "IDO POIS E INVESTEDERÇUA PAGAR OS JUROS COMATASETORES VELOS"
+  }
+}

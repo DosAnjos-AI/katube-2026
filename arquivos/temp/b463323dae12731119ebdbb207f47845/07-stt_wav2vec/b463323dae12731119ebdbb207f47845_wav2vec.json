@@ -1,0 +1,32 @@
+{
+  "b463323dae12731119ebdbb207f47845_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.748",
+    "duracao": 14.75,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4698554277420044,
+    "mos_stoi": 0.8788702487945557,
+    "mos_si_sdr": 6.554136276245117,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que essa síndrome acompanha e como a gente deveria, e ela é bem prática também, ela dá algumas dicas de como é que a gente poderia combater essas coisas, mas é um trabalho muito mental de educação e de trigar ali naquele momento e você parar e pensar, não, peraí.",
+    "stt_wav2vec": "QUE A SASENDRO ME ACOMPANHA E COMO A JÁ FE DEVERIA ELA BEM PRÁTICA TAMBÉM ELA DA ALGUAS DICAS DE COMO ECAGENTO PODERIA COMBATER ESSAS COISAS MAS É UM TRABALHO MUITO MENTAL DE EDUCAÇÃO É DE TRIGA LE NAQUELLE MOMENTO E VOCÊ PARA E PENSAR NÃO PREI"
+  },
+  "b463323dae12731119ebdbb207f47845_002.ogg": {
+    "tempo_inicio": "00:00:16.580",
+    "tempo_fim": "00:00:30.350",
+    "duracao": 13.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9203739166259766,
+    "mos_stoi": 0.9443008899688721,
+    "mos_si_sdr": 13.809256553649902,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então, um livro muito bom para ler, reler, trilê, até para ler. Eu estou só reiterando tudo o que vocês falaram aqui, vou pegar as dicas dos livros. Eu tenho o da Melinda, que está aqui como próximo. Eu sou uma leitora muito preguiçosa, eu sou de ouvir audiobook.",
+    "stt_wav2vec": "ENTÃO UM LIVRO MUITO BOM PRALER RE LETRE E LET AGALE EU DE TOSAL RETERANDO TUDO QUE VOCÊS FALARAM A QUIVOPEGADICA AS DICAS DOS LIVROS Ó TENHO DA MELHINDA QUE TAQUINA MEA COMO PRÓXIMO NALSA UMA LEITORA MUITO PREGUIÇOSA E O SO DE JOVIAL DE BUQUE"
+  }
+}

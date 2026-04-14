@@ -1,0 +1,13 @@
+{
+  "787b143d1964388995dc1cfef0791620_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.508",
+    "duracao": 8.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Eu aqui em casa, a gente usa... Eu acho que é manteiga, cara. Não é margarina, não. A margarina é melhor, né? Manteiga é mais cara.",
+    "stt_wav2vec": "EUMM É O AQUINCASA GENTIL SABO ÉS QUE MANTEGA CARA NA MARGARINA NÃO MANTEIA QUE AINDA MELHOR NA MANQUERIR MAIS SCALARA"
+  }
+}

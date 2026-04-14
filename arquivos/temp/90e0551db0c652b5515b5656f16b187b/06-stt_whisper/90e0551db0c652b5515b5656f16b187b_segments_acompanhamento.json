@@ -1,0 +1,30 @@
+{
+  "90e0551db0c652b5515b5656f16b187b_001.ogg": {
+    "tempo_inicio": "00:00:00.164",
+    "tempo_fim": "00:00:04.828",
+    "duracao": 4.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2722764015197754,
+    "mos_stoi": 0.983368456363678,
+    "mos_si_sdr": 17.283493041992188,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E a nossa participação especial, o nosso ouvinte que participará direto de São Paulo."
+  },
+  "90e0551db0c652b5515b5656f16b187b_002.ogg": {
+    "tempo_inicio": "00:00:05.092",
+    "tempo_fim": "00:00:16.808",
+    "duracao": 11.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.929837942123413,
+    "mos_stoi": 0.9780166149139404,
+    "mos_si_sdr": 18.56049919128418,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cleiton Oliveira, seja muito bem-vindo, Cleiton, rapidamente se apresente para nós, fala para que time tu torce, traça o destaque, já comenta aí algum episódio especial que passou com esse clube."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "e868c419f9d6b1d59f5a11cb07cbb2ce_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.588",
+    "duracao": 10.59,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4699931144714355,
+    "mos_stoi": 0.8849602341651917,
+    "mos_si_sdr": 5.261864185333252,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Fiz 7 meses de cumom e em 7 meses eu fiz 345 milhões de vezes as mesmas equações.",
+    "stt_wav2vec": "UAFROU PARGEBRE E SETE MESES DE COMUM EM SETE MESES EU FIZ TREZENTOS E QUARENTA E CINCO MILHÕES DE VEZES AS MESMAS EQUAÇÕES"
+  }
+}

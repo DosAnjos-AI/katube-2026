@@ -1,0 +1,17 @@
+{
+  "3cc4184778cbd4240dff431c30e73290_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:11.502",
+    "duracao": 11.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7781299352645874,
+    "mos_stoi": 0.948527991771698,
+    "mos_si_sdr": 9.539942741394043,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "vão comprar um teu, mas a seguir já estão a pensar que querem ter filhos, esqueceram-se de comprar uma casa a pensar dos filhos e cada um tem um carro, esqueceram-se de ter uma casa com duas garagens, uma garagem em grande.",
+    "stt_wav2vec": "VÃO COMPRAR OMTER UM MAS ASQUI JÁ ESTOMAM PENSAR QUEQUERA EN TER FILHO ESQUECERAM-SE DE COMPRAR UMA CASA PENSAND OS FILHOS E CADA UM TENH UM CARROS ESQUECERÃAM SE TER UMA CASA COMDO CUONDO DOAS GARAIGENS DE UMA GRANDE INGRENTE"
+  }
+}

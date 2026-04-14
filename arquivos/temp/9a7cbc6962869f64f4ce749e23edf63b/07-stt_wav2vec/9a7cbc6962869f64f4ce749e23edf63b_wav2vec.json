@@ -1,0 +1,17 @@
+{
+  "9a7cbc6962869f64f4ce749e23edf63b_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.368",
+    "duracao": 5.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9496374130249023,
+    "mos_stoi": 0.875288188457489,
+    "mos_si_sdr": 12.226698875427246,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "As oportunidades são ímplas. Hoje nós geramos já um volume grande de trabalho.",
+    "stt_wav2vec": "AS OPORTUNIDADES SÃO ÍMPICAS HOJE NÓOS GERAMOS JÁ UM GOLUME GRANDE DE TRABALHO"
+  }
+}

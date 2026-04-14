@@ -1,0 +1,30 @@
+{
+  "b37fe3ec0114a1d6b99e54e33e06e73b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.004",
+    "duracao": 11.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4275765419006348,
+    "mos_stoi": 0.7475203275680542,
+    "mos_si_sdr": 9.198494911193848,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E, cara, o Inter fez o que tinha que fazer. O peso 2 a 0, botou pra estar embaixo do braço, garantir uma vitória fora de casa. É importante, mesmo sem torcida, ganhar fora de casa é muito importante. A gente sabe que"
+  },
+  "b37fe3ec0114a1d6b99e54e33e06e73b_002.ogg": {
+    "tempo_inicio": "00:00:11.108",
+    "tempo_fim": "00:00:19.366",
+    "duracao": 8.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7399299144744873,
+    "mos_stoi": 0.707865297794342,
+    "mos_si_sdr": 8.693488121032715,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null
+  }
+}

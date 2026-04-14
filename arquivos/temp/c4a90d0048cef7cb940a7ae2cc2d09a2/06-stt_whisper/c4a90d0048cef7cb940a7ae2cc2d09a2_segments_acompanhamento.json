@@ -1,0 +1,30 @@
+{
+  "c4a90d0048cef7cb940a7ae2cc2d09a2_001.ogg": {
+    "tempo_inicio": "00:00:00.580",
+    "tempo_fim": "00:00:13.596",
+    "duracao": 13.02,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1667473316192627,
+    "mos_stoi": 0.9350563287734985,
+    "mos_si_sdr": 20.663898468017578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Incrível. Esse e o Enigma do Príncipe. Talvez seja por isso que sejam meus dois filmes favoritos. Mas daí, como não tinha, daí minha mãe assistiu a TV durante o dia, via, né? Daí ela falava, o Potter vai passar, o Potter, o Potter. Era o evento na minha casa."
+  },
+  "c4a90d0048cef7cb940a7ae2cc2d09a2_002.ogg": {
+    "tempo_inicio": "00:00:17.316",
+    "tempo_fim": "00:00:31.326",
+    "duracao": 14.01,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.344444751739502,
+    "mos_stoi": 0.969092845916748,
+    "mos_si_sdr": 21.370075225830078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "arrumava ali, dava horário, tipo, todo mundo já tinha tomado banho, tava todo mundo de pijama, sentada na sala com pipoca estourado esperando passar o Harry Potter. E eles iam lá e cortavam o filme. Silvio Santos, eu sou palhaça pra vocês, Silvio Santos? É isso, você gosta de me magoar?"
+  }
+}

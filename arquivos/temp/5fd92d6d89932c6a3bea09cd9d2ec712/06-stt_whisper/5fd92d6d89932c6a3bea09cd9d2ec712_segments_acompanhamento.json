@@ -1,0 +1,16 @@
+{
+  "5fd92d6d89932c6a3bea09cd9d2ec712_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.822",
+    "duracao": 5.82,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6991233825683594,
+    "mos_stoi": 0.9298185110092163,
+    "mos_si_sdr": 8.018198013305664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então tá, boa noite, pessoal. Meu destaque de hoje vai pro Shake, que deve ter comprado o Atlético Mineiro, já que eles estão contratando todo mundo."
+  }
+}

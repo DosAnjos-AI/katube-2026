@@ -1,0 +1,16 @@
+{
+  "7df2f838a5f19966a57c4af7c20951b8_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.808",
+    "duracao": 6.81,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8595337867736816,
+    "mos_stoi": 0.9698805212974548,
+    "mos_si_sdr": 19.465839385986328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Na medida em que eu fui crescendo, entendendo um pouco sobre a opinião das pessoas, que as pessoas têm opiniões."
+  }
+}

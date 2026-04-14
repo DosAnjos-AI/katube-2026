@@ -1,0 +1,32 @@
+{
+  "0c8ca8425c233d694035aaf618aefd94_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.092",
+    "duracao": 12.09,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.982177972793579,
+    "mos_stoi": 0.9267851710319519,
+    "mos_si_sdr": 8.773357391357422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E eles levavam lá pra casa do... Onde eu morava com os meus pais. E lá a gente jogava. Eu lembro uma visão muito clara de jogar Sonic. Uhum.",
+    "stt_wav2vec": "ELES ELEVAVAM LÁ PARA CASA DO E ONDE MORAVA COM OS MEUS PAES UM INE E LÁ GE JOGAVA O LEMBRO UMA UMA VISÃO MUITO CLARA DE JOGAR O SONIE NENH"
+  },
+  "0c8ca8425c233d694035aaf618aefd94_002.ogg": {
+    "tempo_inicio": "00:00:12.324",
+    "tempo_fim": "00:00:30.126",
+    "duracao": 17.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9999027252197266,
+    "mos_stoi": 0.917332649230957,
+    "mos_si_sdr": 10.143852233886719,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "sabe? E passar horas e horas jogando Sonic e tal. E criança, né? Ficava vislumbrado jogando aquilo, né? Apesar que eu sempre fui muito ruim em jogos, mas eu sempre gostei muito de jogar. E pra você, Maria...",
+    "stt_wav2vec": "SABE E PASSA HORAS E HORAS JOGANDO SONIQUE TAL EGISAR A E CRIANÇA NE DEFCAVA DE VISO VISLUMBRADO LAIEGAODAAISILO NEPOROT APEZAR CNEQUE E SEIO SEMPRE FUI MUITO RUIM NE EM EM JOGOS MAS O SENTADOSDE MUITO DE JOGAR E PARA VOCÊ MARIA"
+  }
+}

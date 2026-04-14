@@ -1,0 +1,30 @@
+{
+  "b40c085ffc6e7eaa51f167b8dc93fd5f_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:14.460",
+    "duracao": 14.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.587190866470337,
+    "mos_stoi": 0.8749444484710693,
+    "mos_si_sdr": 10.124395370483398,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E em termos de poupança ou qualquer coisa assim, ou seja, tu trabalhavas no fundo para conseguir comprar e fazer coisas que querias ou também conseguias pôr um bocadinho de partes a pensar em alguma coisa no futuro? Também com transição um bocado..."
+  },
+  "b40c085ffc6e7eaa51f167b8dc93fd5f_002.ogg": {
+    "tempo_inicio": "00:00:14.532",
+    "tempo_fim": "00:00:19.260",
+    "duracao": 4.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.1006293296813965,
+    "mos_stoi": 0.8936426043510437,
+    "mos_si_sdr": 10.946761131286621,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu era só para ganhar e já pagaste."
+  }
+}

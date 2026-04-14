@@ -1,0 +1,17 @@
+{
+  "671539c749d8533cc1f4c434b5d77ab6_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.398",
+    "duracao": 6.4,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2406187057495117,
+    "mos_stoi": 0.7450764775276184,
+    "mos_si_sdr": 1.0118329524993896,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "entrar em Lisboa, vai a Paris e depois vai para ir para Lisboa. Acredito-se que eu já fiz isso e às vezes compensa?",
+    "stt_wav2vec": "TAIA LESBOA VAIA FARIS E POIS VEI DE VARISDO POLISTANCA QUE JÁ FIZ ACEDETAS QUE O JÁ FIZ ISTO E ÀS VEZES CONDENÇA"
+  }
+}

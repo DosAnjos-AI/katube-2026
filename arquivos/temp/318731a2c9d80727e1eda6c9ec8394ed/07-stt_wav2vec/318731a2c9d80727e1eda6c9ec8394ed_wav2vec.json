@@ -1,0 +1,17 @@
+{
+  "318731a2c9d80727e1eda6c9ec8394ed_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:06.846",
+    "duracao": 6.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8269786834716797,
+    "mos_stoi": 0.9567939639091492,
+    "mos_si_sdr": 23.480545043945312,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pagaste também já está pago só para essas horas todas que ele teve a ter que estudar, não é?",
+    "stt_wav2vec": "PAGAR TABINHA JÁTA JÁ TAPACO SÓ PRESSA DAS HORAS TODAS PELO TEVO TEC ESTUDAR NÃO É A"
+  }
+}

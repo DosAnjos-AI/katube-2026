@@ -1,0 +1,32 @@
+{
+  "6264a618a05d54c1dbf6b4ddea2efc5d_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.148",
+    "duracao": 9.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5217456817626953,
+    "mos_stoi": 0.8627038598060608,
+    "mos_si_sdr": 6.445554733276367,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "nessa briga. Interessante. Eu acho. Pensando com a cabeça do Kudê, eu não consigo imaginar o Dourado no time nenhum.",
+    "stt_wav2vec": "ESABEI INTERESSANTE É ERAO AIXO PENSANDO UPORANTE CANÇANDO COM A CABEÇA BUCODERES EU NÃO CONSIGO IMAIGINAL DORADO U TINÃ"
+  },
+  "6264a618a05d54c1dbf6b4ddea2efc5d_002.ogg": {
+    "tempo_inicio": "00:00:09.732",
+    "tempo_fim": "00:00:22.094",
+    "duracao": 12.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4265979528427124,
+    "mos_stoi": 0.880993127822876,
+    "mos_si_sdr": 8.297090530395508,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Aquela região ali do campo onde o Dourado joga, foi a primeira coisa que ele mudou no time do Inter para botar o pensamento de futebol dele. Eu não tenho hoje o Dourado se desistiu em alguém ali.",
+    "stt_wav2vec": "AAQUELA ARLEIA A O MARIDO CAMPO ONDE DORADO JOGA É ONDE FOI O PRIMEIRO OSUA PRIMEIRA COISA QUE ELHE MODOU NO TIME DO ÍNTER A DOTAL PENSAMENTO DE FUTEBOL DERIAS OE E NUO UM TEJO HOJE DURADO DSQUIO NOVEMBRERE"
+  }
+}

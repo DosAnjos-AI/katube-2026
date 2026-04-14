@@ -1,0 +1,17 @@
+{
+  "0cc23c837ad864355dbbbad85ffa785f_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.616",
+    "duracao": 4.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4287967681884766,
+    "mos_stoi": 0.9489767551422119,
+    "mos_si_sdr": 6.867787837982178,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Agora, no entanto, nós temos, por exemplo, só vou pôr isso mais prático.",
+    "stt_wav2vec": "AGORA NO ENTENTO NÓS TEMOS POR EXEMPLO SÓ SOU VAPORISTO MAIS PRACICO"
+  }
+}

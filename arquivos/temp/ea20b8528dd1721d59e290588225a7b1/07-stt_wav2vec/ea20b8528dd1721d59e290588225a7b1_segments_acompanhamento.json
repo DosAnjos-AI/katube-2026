@@ -1,0 +1,47 @@
+{
+  "ea20b8528dd1721d59e290588225a7b1_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.588",
+    "duracao": 10.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2151564359664917,
+    "mos_stoi": 0.7678636908531189,
+    "mos_si_sdr": 3.2426247596740723,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Além disso, por mais que tenhantes, é impossível desfazer uma ordem imaginada. A menos que consigamos reunir um maior grupo de pessoas que acreditem em uma ordem imaginada maior, já que ela é intersubjetiva.",
+    "stt_wav2vec": "ALÉM DISSO POR MAIS QUE TEM TEMES É IMPOSSÍVEL DESFAZER O MODO IMAGINADA HA MENOS QUE CONSEGAMOS REÚNI UM MAIOR GRUPO DE PESSOAS QUE ÉCREIRTEM MODO IMAGINADO MAIOR DÁ AQUELA INTERSUBJETIVA"
+  },
+  "ea20b8528dd1721d59e290588225a7b1_002.ogg": {
+    "tempo_inicio": "00:00:10.756",
+    "tempo_fim": "00:00:21.628",
+    "duracao": 10.87,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2019191980361938,
+    "mos_stoi": 0.7474737763404846,
+    "mos_si_sdr": 0.8692274689674377,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Provavelmente você não entendeu muito nessa última parte do vídeo. Tudo bem. Em virtude disso, Noah Harari exemplificam esse conceito de ordem imaginada com a PJU. Tal empresa existe no imaginário de milhares de pessoas.",
+    "stt_wav2vec": null
+  },
+  "ea20b8528dd1721d59e290588225a7b1_003.ogg": {
+    "tempo_inicio": "00:00:21.732",
+    "tempo_fim": "00:00:30.312",
+    "duracao": 8.58,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.452226996421814,
+    "mos_stoi": 0.8323702812194824,
+    "mos_si_sdr": 7.946280479431152,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Logo, se algum CEO da Peugeot deixar de acreditar na existência da empresa e tentar desmistificar o ideal da existência dela, ele provavelmente vai falhar.",
+    "stt_wav2vec": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "2134fd970294ab8474281e1c570496ef_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.220",
+    "duracao": 4.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Eu gostar a pagar isso. Por exemplo, vou agora na próxima semana..."
+  },
+  "2134fd970294ab8474281e1c570496ef_002.ogg": {
+    "tempo_inicio": "00:00:04.516",
+    "tempo_fim": "00:00:08.776",
+    "duracao": 4.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "E paguei, nesse caso, 40 euros para o projeto de avião."
+  }
+}

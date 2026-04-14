@@ -1,0 +1,22 @@
+{
+  "04f0f316c1823000f3785fc29dae2eb8_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.124",
+    "duracao": 8.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "Imaginemos que eu ganho o meu ordenado Vou me focar em ganhar mais Sim, porque há duas maneiras Não é de aumentar a taxa de poupança",
+    "stt_wav2vec": "IMAGÍNEMOS QUE OE GANHO O MEU ORNAR BOM SUCARD ENGENHA MAIA A ELE TEM FICADO HASDE MANDEIRAS NÃO É LEDAUMENTAR A TAXA DE POPANÇA",
+    "stt_leg_normalizado": null,
+    "stt_whisper_normalizado": "imaginemos que eu ganho o meu ordenado vou me focar em ganhar mais sim porque ha duas maneiras nao e de aumentar a taxa de poupanca",
+    "stt_wav2vec_normalizado": "imaginemos que oe ganho o meu ornar bom sucard engenha maia a ele tem ficado hasde mandeiras nao e ledaumentar a taxa de popanca",
+    "sim_leg_whisper": null,
+    "sim_leg_wav2vec": null,
+    "sim_whisper_wav2vec": 0.6946564885496183,
+    "nota_similaridade": 0.6946564885496183,
+    "status_similaridade": "aprovado",
+    "metrica_similaridade": "wer"
+  }
+}

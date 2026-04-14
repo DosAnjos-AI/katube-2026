@@ -1,0 +1,30 @@
+{
+  "d7c31ea495bb127526a6f89c498fd4a3_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:18.652",
+    "duracao": 18.65,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.286335825920105,
+    "mos_stoi": 0.9386047124862671,
+    "mos_si_sdr": 9.030499458312988,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque eu não gosto dessa coisa. O cara dá uma letrinha. Pensando que vai ter uma barbada. Não, eu não quero. Eu quero pagar. Porque é assim que a gente vai girar essa economia. Meu amigo, minha amiga. Perfeito. Aliás, deixa eu contar para vocês. Porque eu estou muito feliz. Conte. Conte por que dessa felicidade. Ontem. Ontem. Após anos. Procurando..."
+  },
+  "d7c31ea495bb127526a6f89c498fd4a3_002.ogg": {
+    "tempo_inicio": "00:00:19.172",
+    "tempo_fim": "00:00:26.942",
+    "duracao": 7.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.379887580871582,
+    "mos_stoi": 0.9163703322410583,
+    "mos_si_sdr": 8.61815357208252,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Um artigo muito raro do clube que eu torço. Eu encontrei, cara, por um acaso da vida, um cara anunciando."
+  }
+}

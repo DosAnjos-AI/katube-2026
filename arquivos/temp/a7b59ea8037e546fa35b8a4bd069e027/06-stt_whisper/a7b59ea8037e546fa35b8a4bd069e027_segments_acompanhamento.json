@@ -1,0 +1,16 @@
+{
+  "a7b59ea8037e546fa35b8a4bd069e027_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.374",
+    "duracao": 7.37,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0315933227539062,
+    "mos_stoi": 0.9204514622688293,
+    "mos_si_sdr": 8.039737701416016,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não sobre os 67 mil euros, mas sobre 57 mil euros porque 10 mil euros são iniciais."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "04dcb9b503bd9e476593e062bd3e63ee_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:12.728",
+    "duracao": 12.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6141700744628906,
+    "mos_stoi": 0.9517892599105835,
+    "mos_si_sdr": 7.02756929397583,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Aí eu discordo de ti, eu não acho que ele não tenha ido bem na arena, ele não fez gol, agora, claro, centroavante pra ele tem que fazer gol, é essa ligação, se ele tivesse feito um gol e tivesse dado três contra-ataques pro Grêmio, porque perdeu a bola no meio e vai dizer que ele jogou bem.",
+    "stt_wav2vec": "NA EU DISCORDE TE E DISCORDE-TE EU NÃO ACHO QUE ELE NÃO TENHA IDO BEM NA ARENA ELE NÃO FEZ GOL AGORA CLARO E SANTRAVANTES PARA ENDEM QUE FAZER GOU ESSA DELEGAÇÃO SE LE TIVESSE FEITO UM GOL E TIVERES DADO DO TRÊS CONTRATAQUE PROGREME CO QUE PERDOU A BOLA NO MEITO A DEZAQUELE JOGOU BEM"
+  }
+}

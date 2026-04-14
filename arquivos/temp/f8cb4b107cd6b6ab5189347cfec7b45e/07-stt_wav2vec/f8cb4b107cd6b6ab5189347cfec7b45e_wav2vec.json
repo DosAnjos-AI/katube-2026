@@ -1,0 +1,47 @@
+{
+  "f8cb4b107cd6b6ab5189347cfec7b45e_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.404",
+    "duracao": 13.4,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.254297971725464,
+    "mos_stoi": 0.9698179364204407,
+    "mos_si_sdr": 14.040493965148926,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E ele, inclusive, tem um jogo que eu nunca achei na minha vida depois disso. É um jogo que eu tenho um sonho de encontrar pra mim jogar aquilo de novo. Dois jogos, na verdade. Era um jogo que era um... Você era meio que um ser humano ali, um astronautinha.",
+    "stt_wav2vec": "EELE TINCLUSIVE TE UM JOGO QUE EU NUNCA ACHEI NA MINHA VIDA DEPOIS DE SE UM JOCO TÃO SONHO DE DE ENCONTRAR PARA MIM JOGAR QUELO DE NOVO DOIS JOGOS NA VERDADE ERA UM JOGO QUER UM E VOCÊ ERA MEIO QUE UM  UM SER HUMANO ALI UM ASTRONALTINHA"
+  },
+  "f8cb4b107cd6b6ab5189347cfec7b45e_002.ogg": {
+    "tempo_inicio": "00:00:13.540",
+    "tempo_fim": "00:00:26.748",
+    "duracao": 13.21,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0788075923919678,
+    "mos_stoi": 0.9742336869239807,
+    "mos_si_sdr": 9.193289756774902,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E tinha que matar uns aliens com a arminha, você meio que voava. Eu acho que foi o primeiro jogo 3D que eu tive o contato na minha vida. E o outro era um jogo muito parecido com Age of Empires. Mas era muito mais complexo. Isso que é bizarro.",
+    "stt_wav2vec": "E TINHA QUE MATAR UNS AMENS COM AS AR COM ARMIN VOCÊ MEICO VOAVA FOI ACHO QUE FOI O PRIMEIRO JOGO TRES DECOTIVE COM UNTATO NA MINHA VIDA E OUTRO ERA UM JOGO MUITO PARECIDO COM EYJOFEM PAIRES MAS ERA MUITO MAIS COMPLEXO ISSO QUE É BIZARRO"
+  },
+  "f8cb4b107cd6b6ab5189347cfec7b45e_003.ogg": {
+    "tempo_inicio": "00:00:26.788",
+    "tempo_fim": "00:00:31.416",
+    "duracao": 4.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.742567539215088,
+    "mos_stoi": 0.9917212128639221,
+    "mos_si_sdr": 21.262439727783203,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu jogo aí o nível de complexidade é muito diferente.",
+    "stt_wav2vec": "EU JOGO E JOVMPAROS OZINGI NONTE ESPACIM UNÍVEL DE COMPLEXIDADE É MUITO DIFERENTE"
+  }
+}

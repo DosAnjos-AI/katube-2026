@@ -1,0 +1,32 @@
+{
+  "4c9e0145d9236f3fe87e8114f136fffb_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:03.964",
+    "duracao": 3.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.17950701713562,
+    "mos_stoi": 0.9864349365234375,
+    "mos_si_sdr": 20.455963134765625,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "que o consumo da informação se dá de formas bem diferentes.",
+    "stt_wav2vec": "QUO CONSUMO DA INFORMAÇÃO SE DÁ DE FORMAS BEM DIFERENTES"
+  },
+  "4c9e0145d9236f3fe87e8114f136fffb_002.ogg": {
+    "tempo_inicio": "00:00:04.420",
+    "tempo_fim": "00:00:13.692",
+    "duracao": 9.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.547731876373291,
+    "mos_stoi": 0.9965268969535828,
+    "mos_si_sdr": 25.57693862915039,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não é à toa que empatia virou palavra da moda. O desafio é tornar a comunicação mais aderente possível a diversos perfis de público.",
+    "stt_wav2vec": "NÃO É A TOA QUE IMPATIR VIROU PALAVRA DA MODA O DESAFIO É TORNAR A COMUNICAÇÃO MAIS ADERENTE POSSÍVEL ADIVERSO PERFÍGIO PÚBLICO"
+  }
+}

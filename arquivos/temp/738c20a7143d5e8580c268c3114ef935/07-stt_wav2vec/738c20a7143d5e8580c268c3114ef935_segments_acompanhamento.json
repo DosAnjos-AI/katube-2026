@@ -1,0 +1,32 @@
+{
+  "738c20a7143d5e8580c268c3114ef935_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:11.452",
+    "duracao": 11.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9728872776031494,
+    "mos_stoi": 0.9612268805503845,
+    "mos_si_sdr": 13.624747276306152,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eles estão mandando aqui um recado pra gente. Escutamos vocês todos os dias nos fazem companhia. Temos uma lojinha de instrumentos musicais pra galera não ficar entediada em casa. Fica na cidade de São Leopoldo.",
+    "stt_wav2vec": "ELA ESTÃO MANDANDO AQUE UM RECADO PRAGENTE Á ESCUTAMOS VOCÊS TODOS OS DIAS NOS FAZEM COMPANHIA TEMOS UMA LOGINHA DE INSTRUMENTOS MUSICAES PRA GALERA NÃO FICAR INTEDIADA EM CASA FICAR NA CIDADE DE SÃO LEUPODO"
+  },
+  "738c20a7143d5e8580c268c3114ef935_002.ogg": {
+    "tempo_inicio": "00:00:11.684",
+    "tempo_fim": "00:00:15.582",
+    "duracao": 3.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.491083860397339,
+    "mos_stoi": 0.9879429936408997,
+    "mos_si_sdr": 23.43133544921875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É a mega-músico UFC.",
+    "stt_wav2vec": null
+  }
+}

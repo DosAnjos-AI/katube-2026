@@ -1,0 +1,16 @@
+{
+  "43986697daedd4952546fabacf8f6e54_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.910",
+    "duracao": 8.91,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.806166648864746,
+    "mos_stoi": 0.8932616114616394,
+    "mos_si_sdr": 8.903095245361328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Normalmente, quando as pessoas começam um negócio próprio ou coisa assim, tem a ver com gosto pessoais, com coisas que se identificam."
+  }
+}

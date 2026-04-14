@@ -1,0 +1,16 @@
+{
+  "39745e069332b83d8f70c925bd3584ef_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.496",
+    "duracao": 9.49,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8495841026306152,
+    "mos_stoi": 0.9433033466339111,
+    "mos_si_sdr": 15.160802841186523,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque quando ele cai muito, por passar de um euro para 50 centimos, baixa aqui 50%, mas 50 centimos para passar para um euro, ele tem que ser 100%, está bem?"
+  }
+}

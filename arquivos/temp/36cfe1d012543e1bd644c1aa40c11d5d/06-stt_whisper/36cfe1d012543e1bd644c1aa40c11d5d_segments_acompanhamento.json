@@ -1,0 +1,16 @@
+{
+  "36cfe1d012543e1bd644c1aa40c11d5d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.798",
+    "duracao": 8.8,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.500627279281616,
+    "mos_stoi": 0.8858345746994019,
+    "mos_si_sdr": 12.641814231872559,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Você vai mudar a forma como ele enxerga o próprio trabalho e aí da próxima vez ele já vai fazer diferente, enfim. Eu acho que é um papo bem longo isso tudo."
+  }
+}

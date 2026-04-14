@@ -1,0 +1,16 @@
+{
+  "04dbcb5579c12bb0965a227ad0971387_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:08.156",
+    "duracao": 8.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6437705755233765,
+    "mos_stoi": 0.7688146829605103,
+    "mos_si_sdr": 11.042862892150879,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Edward Dobby, muitíssima gente aderiu a essa campanha."
+  }
+}

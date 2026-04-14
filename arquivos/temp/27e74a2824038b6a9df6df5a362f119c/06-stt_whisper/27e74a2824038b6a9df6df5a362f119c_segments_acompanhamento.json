@@ -1,0 +1,16 @@
+{
+  "27e74a2824038b6a9df6df5a362f119c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.246",
+    "duracao": 7.25,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.463258743286133,
+    "mos_stoi": 0.9073342084884644,
+    "mos_si_sdr": 15.070298194885254,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mudando a situação. Não pode dizer assim, olha, eu ganho um salário mínimo e pouco..."
+  }
+}

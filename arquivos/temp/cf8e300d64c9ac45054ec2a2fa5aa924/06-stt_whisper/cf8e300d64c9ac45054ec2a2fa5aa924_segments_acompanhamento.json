@@ -1,0 +1,30 @@
+{
+  "cf8e300d64c9ac45054ec2a2fa5aa924_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.284",
+    "duracao": 12.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8101353645324707,
+    "mos_stoi": 0.9740869402885437,
+    "mos_si_sdr": 16.280811309814453,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "nas disputas, ele dominou, conseguiu tirar o time de trás em muitas jogadas do Inter, não saiu o gol mais uma vez, mas eu acho que a bola também não chegou pra ele em condições, é que chegou, ele tentou criar uma jogada de gol pro Thiago Galeardo,"
+  },
+  "cf8e300d64c9ac45054ec2a2fa5aa924_002.ogg": {
+    "tempo_inicio": "00:00:12.356",
+    "tempo_fim": "00:00:20.696",
+    "duracao": 8.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.8980464935302734,
+    "mos_stoi": 0.9868777394294739,
+    "mos_si_sdr": 20.186458587646484,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": null
+  }
+}

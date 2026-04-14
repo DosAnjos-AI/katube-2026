@@ -1,0 +1,32 @@
+{
+  "091b61750617edcd670cf86c65a68702_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:15.036",
+    "duracao": 15.03,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2187132835388184,
+    "mos_stoi": 0.7476491928100586,
+    "mos_si_sdr": 0.3825601041316986,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Acho que também falta um pouco de investimento na base, eu acho do curso também, de apostar. Eu acho que se tem que dar sequência para o cara, tem que deixar o cara jogar, tem que deixar o cara errar. Eu acho que Fred, próprio Luiz Adriano, Guerreiro,",
+    "stt_wav2vec": "A QUE TAMBÉM FALTA UM POUCO DE DE INVESTIMENTO NABAL DO ACHO SUR TAMBÉM DA BOTAR ADOAS QUE SUPENTO DA FREQÊNCIA TRUCARA E TEM DE LEIXAL O CARAJOGAD IE DEXAL CARERRÁNEA OQE FREDE LIFROPOLDABRIANO A DENEIRO"
+  },
+  "091b61750617edcd670cf86c65a68702_002.ogg": {
+    "tempo_inicio": "00:00:15.076",
+    "tempo_fim": "00:00:18.928",
+    "duracao": 3.85,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9299654960632324,
+    "mos_stoi": 0.834862232208252,
+    "mos_si_sdr": 8.86415958404541,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Diego Souza, bom, Diego Souza, todo mundo que a gente já era até no passado. Então, assim...",
+    "stt_wav2vec": "DIAGO SOUSO ONDE O COGANECAMPRAOMENTEARA TÉA NO PASSADO TÃO ASSIM"
+  }
+}

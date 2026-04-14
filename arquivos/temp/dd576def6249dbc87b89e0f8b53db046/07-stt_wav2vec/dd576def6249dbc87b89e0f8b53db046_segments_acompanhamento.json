@@ -1,0 +1,32 @@
+{
+  "dd576def6249dbc87b89e0f8b53db046_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:14.300",
+    "duracao": 14.26,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1754475831985474,
+    "mos_stoi": 0.6902636289596558,
+    "mos_si_sdr": -1.8968311548233032,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  },
+  "dd576def6249dbc87b89e0f8b53db046_002.ogg": {
+    "tempo_inicio": "00:00:14.404",
+    "tempo_fim": "00:00:29.864",
+    "duracao": 15.46,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.07099986076355,
+    "mos_stoi": 0.990142822265625,
+    "mos_si_sdr": 21.798542022705078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ok, boa. Ok, portanto dão-vos um apoio grande. Acho que isto até, sendo este programa, a intenção deste programa ser promover a modalidade, acho que aquilo que o Benfica está a fazer, e agora fora de brincadeiras, é interessante até para a promoção",
+    "stt_wav2vec": "CABO OCA PORTANTO DAMOS UM APOIO GRANDE A ACHIRO E ASQUISTA TE SENDO ESTE ESTE PROGRAMA A A INTENÇÃO DESTE PROGRAMA SER POR UMO VERA AMODELIDADE ACHO QUE AQUI O QUI O BEIFICA ESTÁ FAZER E EE AGORFORE BRINCALERAS  ENTE SANTATP"
+  }
+}

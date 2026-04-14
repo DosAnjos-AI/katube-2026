@@ -1,0 +1,17 @@
+{
+  "cf9a4f4a24bcc70340c3470d63349eba_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.564",
+    "duracao": 5.56,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6035666465759277,
+    "mos_stoi": 0.8756147027015686,
+    "mos_si_sdr": 8.723862648010254,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque normalmente, quando a gente treina força, a gente também melhora o desempenho no ioiô.",
+    "stt_wav2vec": "PORQUE NORMALMENTE QUANDO A GENTE TREINA A FORÇA GE TAMBÉM MELHORA O DESEMPENHO NO IO"
+  }
+}

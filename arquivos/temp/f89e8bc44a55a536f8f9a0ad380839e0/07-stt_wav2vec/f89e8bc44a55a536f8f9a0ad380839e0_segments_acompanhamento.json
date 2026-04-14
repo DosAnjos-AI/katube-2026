@@ -1,0 +1,17 @@
+{
+  "f89e8bc44a55a536f8f9a0ad380839e0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:06.270",
+    "duracao": 6.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2970008850097656,
+    "mos_stoi": 0.6831543445587158,
+    "mos_si_sdr": -3.668191432952881,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Conseguiu. Volta GTR. Um abraço. Thiago Neves. 2021. Pode jogar. Acho que o Thiago Neves. Um bom reserva.",
+    "stt_wav2vec": "CONSEGUIU ROVES ETEEN MABRA SARUNELO MAIS JUEM QUAISA SE DENCENDE A DIERA AMUNERE BOM RESERVA"
+  }
+}

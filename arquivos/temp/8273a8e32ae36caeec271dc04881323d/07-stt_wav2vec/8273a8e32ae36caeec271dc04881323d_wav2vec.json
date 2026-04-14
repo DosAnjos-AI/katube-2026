@@ -1,0 +1,17 @@
+{
+  "8273a8e32ae36caeec271dc04881323d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.342",
+    "duracao": 5.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7424604892730713,
+    "mos_stoi": 0.8598862290382385,
+    "mos_si_sdr": 7.330914497375488,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Vocês não vão acordar amanhã. Vão brincar de leve. Vá, vocês vão pro sono eterno.",
+    "stt_wav2vec": "VOCÊS NÃO VOU ACORDAR MANHÃ QUERIGOL BRINCAI DE LEGO VÁCAS VOU POR SONO ETERNO"
+  }
+}

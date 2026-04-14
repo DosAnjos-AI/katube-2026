@@ -1,0 +1,32 @@
+{
+  "b8f6b7e5d66dd770b8fe88d3cfab945d_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.948",
+    "duracao": 9.95,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1853017807006836,
+    "mos_stoi": 0.9781338572502136,
+    "mos_si_sdr": 21.146732330322266,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "BD, bom dia. Bom dia, Tia Fernanda. Ô, BD, hoje tem um caso aqui que ganhou repercussão também nos últimos dias aí no noticiário.",
+    "stt_wav2vec": "BEDÊ BOM DIA OBEDÊR HOJE TEM UM UM CASO AQUENÉ QUE GANHOU REPERCUSSÃO TAMBÉM NOS ÚLTIMOS DIAS AINA NO NOTICIÁRIO"
+  },
+  "b8f6b7e5d66dd770b8fe88d3cfab945d_002.ogg": {
+    "tempo_inicio": "00:00:10.084",
+    "tempo_fim": "00:00:24.142",
+    "duracao": 14.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4799695014953613,
+    "mos_stoi": 0.9909652471542358,
+    "mos_si_sdr": 25.063377380371094,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tem a ver com o professor de surf lá no Rio de Janeiro. Matheus Nunes Ribeiro, 22 anos. Ele é negro, ele registrou um boletim de ocorrência após ser acusado de roubar uma bicicleta por um casal de jovens lá no bairro do Leblon.",
+    "stt_wav2vec": null
+  }
+}

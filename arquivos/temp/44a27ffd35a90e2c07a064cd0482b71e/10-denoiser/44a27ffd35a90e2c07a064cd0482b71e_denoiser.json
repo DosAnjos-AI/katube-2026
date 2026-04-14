@@ -1,0 +1,27 @@
+{
+  "44a27ffd35a90e2c07a064cd0482b71e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.238",
+    "duracao": 7.23,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1824119091033936,
+    "mos_stoi": 0.9782871603965759,
+    "mos_si_sdr": 22.923114776611328,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e diz, ah, mas eu queria fazer os esforços fora. E eles, em vez de dizer que aumentam de 1,1, para 1,1, dizem, pois, mas olha, mas isto aumenta logo para 1,5%, ou para 2%.",
+    "stt_wav2vec": "EXAMES O QUE FAZI OS CHUGOS FORA E AS INVESTIDES IREM CAUMENTAND E UM PON CON TUNDES EM POIS MASOLHOMAS ESTAUMENTA LOGO PAG PONCOS SERPON EM MAIO OPADOIS",
+    "stt_leg_normalizado": null,
+    "stt_whisper_normalizado": "e diz ah mas eu queria fazer os esforcos fora e eles em vez de dizer que aumentam de um virgula um para um virgula um dizem pois mas olha mas isto aumenta logo para um virgula cinco ou para dois por cento",
+    "stt_wav2vec_normalizado": "exames o que fazi os chugos fora e as investides irem caumentand e um pon con tundes em pois masolhomas estaumenta logo pagina poncos serpon em maio opadois",
+    "sim_leg_whisper": null,
+    "sim_leg_wav2vec": null,
+    "sim_whisper_wav2vec": 0.47058823529411764,
+    "nota_similaridade": 0.47058823529411764,
+    "status_similaridade": "aprovado",
+    "metrica_similaridade": "wer",
+    "utilizou_denoiser": true
+  }
+}

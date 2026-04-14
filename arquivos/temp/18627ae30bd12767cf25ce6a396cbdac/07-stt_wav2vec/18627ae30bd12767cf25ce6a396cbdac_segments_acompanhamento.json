@@ -1,0 +1,47 @@
+{
+  "18627ae30bd12767cf25ce6a396cbdac_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.660",
+    "duracao": 9.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.418052911758423,
+    "mos_stoi": 0.9345394372940063,
+    "mos_si_sdr": 17.080371856689453,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Na verdade, se a gente olhar a história econômica da Alemanha, da França, da Espanha, Itália, Portugal,",
+    "stt_wav2vec": "NA VERDADE SE A GENTE OLHAR A HISTÓRIA ECONÔMICA DA ALEMANHA DA FRANÇA DA ESPANHA ITÁLIA PORTUGAL"
+  },
+  "18627ae30bd12767cf25ce6a396cbdac_002.ogg": {
+    "tempo_inicio": "00:00:10.148",
+    "tempo_fim": "00:00:23.932",
+    "duracao": 13.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.581040859222412,
+    "mos_stoi": 0.966646671295166,
+    "mos_si_sdr": 21.486703872680664,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Canadá, Japão, a gente vai ver como que o cooperativismo, no caso, ele está falando de crédito, foi importante para a consolidação do sistema financeiro saudável.",
+    "stt_wav2vec": null
+  },
+  "18627ae30bd12767cf25ce6a396cbdac_003.ogg": {
+    "tempo_inicio": "00:00:24.164",
+    "tempo_fim": "00:00:31.224",
+    "duracao": 7.06,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.1114985942840576,
+    "mos_stoi": 0.9440940618515015,
+    "mos_si_sdr": 21.643136978149414,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E isso está acontecendo agora no Brasil e houve um movimento muito forte quando o Banco Central inseriu",
+    "stt_wav2vec": null
+  }
+}

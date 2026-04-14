@@ -1,0 +1,30 @@
+{
+  "8c3a6d34132f6222dc609be0f2e92a92_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.660",
+    "duracao": 13.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5895450115203857,
+    "mos_stoi": 0.9128109216690063,
+    "mos_si_sdr": 15.024845123291016,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E fala que também foi um método de suprir essa necessidade de mão de obra adotado pelo colonizador português. Então, ele só vanragem, ele reconhece criticando mesmo esse caráter técnico,"
+  },
+  "8c3a6d34132f6222dc609be0f2e92a92_002.ogg": {
+    "tempo_inicio": "00:00:13.732",
+    "tempo_fim": "00:00:19.368",
+    "duracao": 5.64,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2907752990722656,
+    "mos_stoi": 0.9284911155700684,
+    "mos_si_sdr": 19.60861587524414,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "escravista e latifundiário dessa colonização, ele lamenta não ter também adotado"
+  }
+}

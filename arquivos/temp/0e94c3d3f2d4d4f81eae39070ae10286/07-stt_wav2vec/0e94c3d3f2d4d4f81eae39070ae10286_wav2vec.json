@@ -1,0 +1,17 @@
+{
+  "0e94c3d3f2d4d4f81eae39070ae10286_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:05.784",
+    "duracao": 5.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.337019920349121,
+    "mos_stoi": 0.982161819934845,
+    "mos_si_sdr": 21.74118423461914,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Nós, quando não temos a noção de quanto é que ganhamos, nós pensamos que não ganhamos dinheiro e que não sobra dinheiro.",
+    "stt_wav2vec": "NÓS QUANDO NÃ TEMOS ALUÇANDO COM TÉ QUENHAMOS NÓS PENSAMOS QUE NÃO GANHAMOS DINHEIRO E QUE NÃO NÃO SOBRA DINHEIRO"
+  }
+}

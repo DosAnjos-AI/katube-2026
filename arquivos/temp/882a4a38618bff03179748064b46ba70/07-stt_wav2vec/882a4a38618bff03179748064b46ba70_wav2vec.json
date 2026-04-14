@@ -1,0 +1,17 @@
+{
+  "882a4a38618bff03179748064b46ba70_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.336",
+    "duracao": 5.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.714707374572754,
+    "mos_stoi": 0.9662333726882935,
+    "mos_si_sdr": 17.654251098632812,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Primeiro lugar, vou deixar meu protesto aqui. Que quarta-feira triste, né? A gente tem que palpitar em Grêmio e Cascuíça.",
+    "stt_wav2vec": "PRIMEIRO LUGAR ELE CHAMAU UM PROTESTA QUE QUE QUARTA-FEIRA TRISTE NÉ GENTE DÊ QUE PALPITAR EM GREME E CAIXQUISA"
+  }
+}

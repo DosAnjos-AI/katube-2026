@@ -1,0 +1,17 @@
+{
+  "4031b3fb1329cf7010ea3b5c166ab744_001.ogg": {
+    "tempo_inicio": "00:00:00.516",
+    "tempo_fim": "00:00:04.206",
+    "duracao": 3.69,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.36948561668396,
+    "mos_stoi": 0.9623484015464783,
+    "mos_si_sdr": 20.002967834472656,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "caminho de busca que parte de qualquer lugar",
+    "stt_wav2vec": "CAMINHO DE BUSCA QUE PARTE DE QUALQUER LUGAR"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "e29547b8dba72e45d9e6e125183daeaf_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.360",
+    "duracao": 4.36,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6246252059936523,
+    "mos_stoi": 0.9227120876312256,
+    "mos_si_sdr": 17.727214813232422,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e que são talvez como uma ordem cronológica",
+    "stt_wav2vec": "E QUE SO TALVEZ COMO EN NA ORDEM CRONOLÓGICA"
+  }
+}

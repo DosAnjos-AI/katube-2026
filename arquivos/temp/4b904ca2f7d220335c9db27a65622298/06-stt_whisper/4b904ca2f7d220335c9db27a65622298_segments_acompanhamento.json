@@ -1,0 +1,30 @@
+{
+  "4b904ca2f7d220335c9db27a65622298_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:23.324",
+    "duracao": 23.32,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1841106414794922,
+    "mos_stoi": 0.7883704304695129,
+    "mos_si_sdr": 2.1634535789489746,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "isso, mas o Flamengo não teria para um rival direto, entendeu? O Flamengo não ia ceder no empréstimo ou baixo custo, não tem isso. E vocês estavam falando do Musto, eu concordo com quem disse ele que a permanência do Musto vai... Eu acho que ele fica, tá? Porque o custo dele vai ser baixo, mas vai depender muito do que o Dourado apresentar. Se o Dourado não conseguir voltar e ele fica com certeza."
+  },
+  "4b904ca2f7d220335c9db27a65622298_002.ogg": {
+    "tempo_inicio": "00:00:23.364",
+    "tempo_fim": "00:00:29.886",
+    "duracao": 6.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.775393486022949,
+    "mos_stoi": 0.9716391563415527,
+    "mos_si_sdr": 21.775760650634766,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Se o Dourado voltar, acho que o Kudê vai ter que brigar um pouquinho por ele, mas ele acaba ficando. Mas tem a questão do Dourado também?"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "3beb7f75361097e4a5e43f0ae9401c99_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:11.484",
+    "duracao": 11.48,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2179296016693115,
+    "mos_stoi": 0.8602467775344849,
+    "mos_si_sdr": 4.415609836578369,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o meu retorno, então eu tive um pouquinho mais baixo, mas consigo. Daí eu falo um pouquinho mais baixinho também. Tá sendo alta minha voz pra ti aí? Tá tudo certo. Tudo certo. Tudo lindo, maravilhoso. Só pra relembrar que o"
+  },
+  "3beb7f75361097e4a5e43f0ae9401c99_002.ogg": {
+    "tempo_inicio": "00:00:11.652",
+    "tempo_fim": "00:00:32.158",
+    "duracao": 20.51,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3740979433059692,
+    "mos_stoi": 0.9065790772438049,
+    "mos_si_sdr": 10.70188045501709,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Tudo nosso é um oferecimento de Snowland, neve de verdade. Ontem eu vi uma postagem do Snowland dizendo que depois que tudo isso passar, a gente vai ser muito feliz. Nossa, com certeza. E eu fui lá emitir meu coraçãozinho e aquele meu Good Vibes, que é o simático do punk rock esse, né? Claro. Na realidade, tu adiciona mais um dedo, né? Porque o punk rock..."
+  }
+}

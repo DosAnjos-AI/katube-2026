@@ -1,0 +1,32 @@
+{
+  "26f92a02b085f6f8ebbbe704248dc406_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:13.116",
+    "duracao": 13.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7714295387268066,
+    "mos_stoi": 0.9032963514328003,
+    "mos_si_sdr": 6.854455947875977,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "o gol, meu. Parecia eu na MCM aqui, atrás do Big King, quando eu jogava na linha, quando eu tinha sete anos de idade, eu ficava topando a bola pro lado dos gols, tá ligado? O cara se jogava na linha...",
+    "stt_wav2vec": "GOMERO ARESAS ILA AIREU NA EME SUEMIA QUI NO ATRÁS DO BIGUEGI QUANDO EU JOGAVA NA LINHA QUANDO EU TINHA SETE ANOS DE IDADE EU FICAVA O CLANA VAL POR LATO OE MUNDO AMANHADO CARAS ASVELA NA LINHA"
+  },
+  "26f92a02b085f6f8ebbbe704248dc406_002.ogg": {
+    "tempo_inicio": "00:00:13.316",
+    "tempo_fim": "00:00:17.390",
+    "duracao": 4.07,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.345832109451294,
+    "mos_stoi": 0.9639880061149597,
+    "mos_si_sdr": 22.768980026245117,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Esperando pra fazer assim, meu, é só chutar gol, cara. Mas não foi só eu que cravei.",
+    "stt_wav2vec": "ESPERANDO PARA FAZER SER IMENÇÃO ESTAGOU CARA MAS NÃO FOI TE SABER QUE CRAVEI"
+  }
+}

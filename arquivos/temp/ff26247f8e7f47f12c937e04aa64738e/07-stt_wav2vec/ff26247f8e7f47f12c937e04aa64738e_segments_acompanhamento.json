@@ -1,0 +1,47 @@
+{
+  "ff26247f8e7f47f12c937e04aa64738e_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:04.636",
+    "duracao": 4.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5094943046569824,
+    "mos_stoi": 0.9328466057777405,
+    "mos_si_sdr": 16.83478546142578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "É um livro de referência que chama o papel do corpo no corpo do ator.",
+    "stt_wav2vec": "DISTO NÃO É É UM LIVRO DE REFERÊNCIA QUE CHAMA O PAPEL DO CORPO NO CORPO DO ATOR"
+  },
+  "ff26247f8e7f47f12c937e04aa64738e_002.ogg": {
+    "tempo_inicio": "00:00:04.900",
+    "tempo_fim": "00:00:13.052",
+    "duracao": 8.15,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.5929505825042725,
+    "mos_stoi": 0.9084917902946472,
+    "mos_si_sdr": 17.560768127441406,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ele é conhecido nas universidades, enfim, que foi um trabalho que eu não sei até hoje, como eu consegui fazer, não sei.",
+    "stt_wav2vec": "ELE É CONHECIDO NAS UNIVERSIDADES ENFIM QUE FOI UM TRABALHO QUE EU NÃO SEI ATÉ HOJE COMO EU CONSEQUI FAZER NÃO SEI"
+  },
+  "ff26247f8e7f47f12c937e04aa64738e_003.ogg": {
+    "tempo_inicio": "00:00:13.636",
+    "tempo_fim": "00:00:24.414",
+    "duracao": 10.78,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.075153350830078,
+    "mos_stoi": 0.8821887969970703,
+    "mos_si_sdr": 14.201586723327637,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu escrevi nos anos 80, não existia internet, portanto não existia computador, não tinha nada no Brasil em português, então...",
+    "stt_wav2vec": null
+  }
+}

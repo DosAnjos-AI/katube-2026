@@ -1,0 +1,17 @@
+{
+  "d0aac26642bcdcac7b6145d00d1b05cb_001.ogg": {
+    "tempo_inicio": "00:00:00.068",
+    "tempo_fim": "00:00:11.836",
+    "duracao": 11.77,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.63230037689209,
+    "mos_stoi": 0.977719247341156,
+    "mos_si_sdr": 22.111896514892578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Portanto, eu tenho ali uma margem significativa para eu iria subir, para se por acaso um deixar de pagar, a renda do outro paga o outro crédito, mais aquele. Portanto, é uma coisa mais ou menos controlada.",
+    "stt_wav2vec": "EU TENHA ALLI UMA UMAGEM INSIGNIFICATIVA PEOREVORSBIR PARAS POR ACASO UM DEIXATO PAGAR ARENA DO OUTRO PAGA O OUTRO CREBITE MAS O DAQUELLE TANT É UMA COISA MAIS AO MENES CONTROLADA"
+  }
+}

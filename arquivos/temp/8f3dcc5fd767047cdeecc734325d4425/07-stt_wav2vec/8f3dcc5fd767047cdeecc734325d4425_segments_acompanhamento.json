@@ -1,0 +1,17 @@
+{
+  "8f3dcc5fd767047cdeecc734325d4425_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:08.168",
+    "duracao": 8.17,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.3428609371185303,
+    "mos_stoi": 0.958893895149231,
+    "mos_si_sdr": 22.10232162475586,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E não ter empresa porque era algo que eu gostava de fazer. E foi outro erro, um dos erros que eu também notei, que foi deixar de fazer.",
+    "stt_wav2vec": "NÃO TER EMPRESA POCRELCO O QUESTAVA FAZER IA E FOI OUTRO ERC UM DOS ZELOS QUE TAMBÉM NOTEIQUE FOI DEIXADO FAZER"
+  }
+}

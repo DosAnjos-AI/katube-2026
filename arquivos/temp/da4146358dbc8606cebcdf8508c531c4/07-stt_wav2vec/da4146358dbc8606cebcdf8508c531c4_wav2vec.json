@@ -1,0 +1,17 @@
+{
+  "da4146358dbc8606cebcdf8508c531c4_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.892",
+    "duracao": 4.89,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.515901565551758,
+    "mos_stoi": 0.9837093353271484,
+    "mos_si_sdr": 24.908000946044922,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "O Espírito Santo lhe cobrirá e você vai ficar grávida.",
+    "stt_wav2vec": "O ESPÍRITO SANTO LHE COBRIRÁ E VOCÊ VAI FICAR GRÁVIDA"
+  }
+}

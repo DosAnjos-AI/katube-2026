@@ -1,0 +1,17 @@
+{
+  "43b4bbcc9458028c6693fa2373dc18a0_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.630",
+    "duracao": 7.63,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.802583694458008,
+    "mos_stoi": 0.9436518549919128,
+    "mos_si_sdr": 14.486286163330078,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Essa é uma pergunta muito boa, porque tinha um mito antes, e eu gosto de explicar até o fato histórico do mito existir para que todo mundo entenda.",
+    "stt_wav2vec": "ES ESE É UMA PERGUNTA MUITO BOA VOQUE TINHO MITO ANTES E EU GOSTO DE EXPLICAR ATÉ O FATO HISTÓRICO DO MITRO EXISTI PARA QUE TODO MUNDO INTENDA"
+  }
+}

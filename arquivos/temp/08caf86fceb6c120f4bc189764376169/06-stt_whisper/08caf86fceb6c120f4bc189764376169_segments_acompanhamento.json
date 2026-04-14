@@ -1,0 +1,16 @@
+{
+  "08caf86fceb6c120f4bc189764376169_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:10.718",
+    "duracao": 10.71,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0363011360168457,
+    "mos_stoi": 0.9516654014587402,
+    "mos_si_sdr": 17.085803985595703,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Eu já não me recordo, não sei se agora está a ser feito assim, mas no banco, quando eu trabalhava na altura, tu tinhas que todos os meses formalizar o pedido para levantar para aquele mês. Portanto, não é do estilo, se chega ao banco e diz, olha, a partir de agora"
+  }
+}

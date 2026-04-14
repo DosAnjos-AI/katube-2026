@@ -1,0 +1,17 @@
+{
+  "b19d488e46894f285d914762e0748fa3_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.544",
+    "duracao": 10.54,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.8989348411560059,
+    "mos_stoi": 0.9266974329948425,
+    "mos_si_sdr": 11.047916412353516,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Instalei o GTA 5. Já me lembrava de jogar ao tempo. Eu espero que não te confundas na vida real e não andes a conduzir como no GTA e pelas ferroas de Paris.",
+    "stt_wav2vec": "INSTALEIO  O JETEAFINCA JÁ ME LEMBRAVA DE JGAR OTIOMPO ES PARTNANTOS COLFUNDAS NA VIDA REAL ENÃO ANDOSACONDUZIR COMO COMO NO JETEAE FOT ROT DE PARIS"
+  }
+}

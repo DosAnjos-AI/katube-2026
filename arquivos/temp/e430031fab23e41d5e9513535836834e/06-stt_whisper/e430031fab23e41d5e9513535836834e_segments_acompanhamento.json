@@ -1,0 +1,44 @@
+{
+  "e430031fab23e41d5e9513535836834e_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:09.532",
+    "duracao": 9.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3030450344085693,
+    "mos_stoi": 0.9702063798904419,
+    "mos_si_sdr": 20.939796447753906,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "minimizando as distorções, distorções que no Brasil nós temos muitas, entre o que o estrategista de um"
+  },
+  "e430031fab23e41d5e9513535836834e_002.ogg": {
+    "tempo_inicio": "00:00:09.828",
+    "tempo_fim": "00:00:22.204",
+    "duracao": 12.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.347283363342285,
+    "mos_stoi": 0.9825107455253601,
+    "mos_si_sdr": 21.775659561157227,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pano Safra pensa, o que acontece tem uma lacuna enorme. O cooperativismo é que, ultimamente, tem aumentado enormemente a eficácia da política pública voltada para o agro."
+  },
+  "e430031fab23e41d5e9513535836834e_003.ogg": {
+    "tempo_inicio": "00:00:22.500",
+    "tempo_fim": "00:00:30.108",
+    "duracao": 7.61,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.405136823654175,
+    "mos_stoi": 0.9506940841674805,
+    "mos_si_sdr": 20.65594482421875,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Claro, ele sinergiza com instituições públicas e privadas, mas ele é um fator..."
+  }
+}

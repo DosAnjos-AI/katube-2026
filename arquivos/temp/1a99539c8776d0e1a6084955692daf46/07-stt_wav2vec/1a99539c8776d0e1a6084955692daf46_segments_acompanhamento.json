@@ -1,0 +1,47 @@
+{
+  "1a99539c8776d0e1a6084955692daf46_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:09.084",
+    "duracao": 9.08,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4615142345428467,
+    "mos_stoi": 0.7815722823143005,
+    "mos_si_sdr": 4.060292720794678,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porque o Zé enganou a gente. O Zé também vai falar que eles enganaram. Que daí tiveram que... Mas assim...",
+    "stt_wav2vec": "PQUE OSÉ ENGANOU A GENTE TASICAMENT OZÉ TAMBÉM VAI FALAR QUE ELES ENGANARAM QUE DAÍ DES VERO QUE ENGLÉ MANDIO ARACE TAL TUDO BEM MAS ASSIM"
+  },
+  "1a99539c8776d0e1a6084955692daf46_002.ogg": {
+    "tempo_inicio": "00:00:09.380",
+    "tempo_fim": "00:00:13.340",
+    "duracao": 3.96,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6644575595855713,
+    "mos_stoi": 0.6518639922142029,
+    "mos_si_sdr": -4.663317680358887,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Para mim foi o resgate a imagem do Living.",
+    "stt_wav2vec": "PARA MIM FOI UM RESGATE À IMAGEM DO DO LIVEN"
+  },
+  "1a99539c8776d0e1a6084955692daf46_003.ogg": {
+    "tempo_inicio": "00:00:13.700",
+    "tempo_fim": "00:00:21.564",
+    "duracao": 7.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.11987042427063,
+    "mos_stoi": 0.9411235451698303,
+    "mos_si_sdr": 16.124507904052734,
+    "mos_qualidade": "media",
+    "overlap01": true,
+    "stt_whisper": null,
+    "stt_wav2vec": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "bab3775b03f9b2cf9cd7053ada31a28c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:12.380",
+    "duracao": 12.38,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.656261920928955,
+    "mos_stoi": 0.92348712682724,
+    "mos_si_sdr": 14.25382137298584,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "eles trocam de nome. Exato. Muito ligado a isso, por um lado, ao mesmo tempo, era algo tão vigoroso e dinâmico que, de alguma forma, ultrapassava um pouco a ortodoxia"
+  },
+  "bab3775b03f9b2cf9cd7053ada31a28c_002.ogg": {
+    "tempo_inicio": "00:00:12.548",
+    "tempo_fim": "00:00:27.228",
+    "duracao": 14.68,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.6596670150756836,
+    "mos_stoi": 0.9387416839599609,
+    "mos_si_sdr": 15.756770133972168,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "secitarismo e as visões muito rígidas de interpretação social, tanto no movimento estudantil quanto do Partido Comunista. Foram momentos que apareceram grandes movimentos como os centros populares de cultura,"
+  },
+  "bab3775b03f9b2cf9cd7053ada31a28c_003.ogg": {
+    "tempo_inicio": "00:00:27.524",
+    "tempo_fim": "00:00:34.958",
+    "duracao": 7.43,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.283034086227417,
+    "mos_stoi": 0.9553676843643188,
+    "mos_si_sdr": 22.059059143066406,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "movimento de cultura popular, movimentos sobre o qual, se não me engano, a Iná falou, logo nos primeiros podcast."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "711c9a3a53422585cb9a127c7176e0de_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.006",
+    "duracao": 5.01,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.553213596343994,
+    "mos_stoi": 0.9509046673774719,
+    "mos_si_sdr": 17.64749526977539,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E este ano eu vou fechar com 500 euros, sabe? Fechar o ano com 500 euros.",
+    "stt_wav2vec": "E ASUE A NO BOFECHAR COM QUINHENTOS LEURAS SA MÃE FECHAR O ANO COM QUINHENTOS EURAS DE UM ESTRAIDA UM QUERINHO"
+  }
+}

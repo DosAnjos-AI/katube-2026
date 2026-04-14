@@ -1,0 +1,30 @@
+{
+  "067c09a92970d3a93217ed7936914719_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.572",
+    "duracao": 4.57,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.4837132692337036,
+    "mos_stoi": 0.8013843894004822,
+    "mos_si_sdr": -3.914689302444458,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "assim foram eles. Toc, toque, toque, toque, toque."
+  },
+  "067c09a92970d3a93217ed7936914719_002.ogg": {
+    "tempo_inicio": "00:00:05.220",
+    "tempo_fim": "00:00:09.816",
+    "duracao": 4.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9510722160339355,
+    "mos_stoi": 0.9726492762565613,
+    "mos_si_sdr": 22.69671630859375,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "em toda a porta que havia, até chegarem na última moradia da cidade."
+  }
+}

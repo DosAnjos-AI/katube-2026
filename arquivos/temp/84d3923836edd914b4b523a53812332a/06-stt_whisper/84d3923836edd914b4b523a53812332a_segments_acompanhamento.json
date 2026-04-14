@@ -1,0 +1,16 @@
+{
+  "84d3923836edd914b4b523a53812332a_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:15.000",
+    "duracao": 15.0,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3138508796691895,
+    "mos_stoi": 0.9221517443656921,
+    "mos_si_sdr": 8.495433807373047,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Cheguei esse fim de semana e tava ali o carinha de prontidão ali passando o álcool gel em cara que pegava o carrinho. Lá na China, vocês viram aquelas tropas de pessoas limpando as superfícies pra tirar o vírus. Um monte de cara de branco, com os lavajatos. Com as grandes mangueiras, assim, enormes."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "ef77c4d4b8bd4a936def92a246b6e248_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:08.616",
+    "duracao": 8.52,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.242276430130005,
+    "mos_stoi": 0.9745550155639648,
+    "mos_si_sdr": 20.77425765991211,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "sobre o que a gente poderia se inscrever como ideia no CRIAPI, veio essa ideia de falar sobre a problemática do lixo.",
+    "stt_wav2vec": "SOBRICA AGENTE PODERIA SE INSCREVE  INSREVER COMO IDÉIA NO CRIAPEI VEU ESSA IDÉIA TE PUDE DE FALAR SOBRE A POLEMA PROBLEMÁTICA DO LIXO"
+  }
+}

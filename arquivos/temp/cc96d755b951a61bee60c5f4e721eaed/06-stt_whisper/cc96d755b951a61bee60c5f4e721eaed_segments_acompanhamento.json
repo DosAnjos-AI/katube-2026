@@ -1,0 +1,30 @@
+{
+  "cc96d755b951a61bee60c5f4e721eaed_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.836",
+    "duracao": 7.84,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.2699451446533203,
+    "mos_stoi": 0.8837808966636658,
+    "mos_si_sdr": 13.244404792785645,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Aquele que jogava no Arsenal. Do País de Galho. Douglas Costa. Matuidia. Quadrado. Rabiô. Bentancur."
+  },
+  "cc96d755b951a61bee60c5f4e721eaed_002.ogg": {
+    "tempo_inicio": "00:00:08.100",
+    "tempo_fim": "00:00:12.382",
+    "duracao": 4.28,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.5224883556365967,
+    "mos_stoi": 0.7974422574043274,
+    "mos_si_sdr": -2.2692086696624756,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E aí é uma espirralhada que ninguém conhece. É..."
+  }
+}

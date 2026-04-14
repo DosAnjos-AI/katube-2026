@@ -1,0 +1,17 @@
+{
+  "1d3ad09cfd1acb6963f123e1e4b7bf68_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.502",
+    "duracao": 7.5,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.751455068588257,
+    "mos_stoi": 0.9562848210334778,
+    "mos_si_sdr": 18.55316925048828,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "vocês se estranham de comprar, porque uma coisa que eu gosto e o meu irmão também gostamos sempre foi no sentido",
+    "stt_wav2vec": "ESTREMO DE COMPRAR PORQUE UMA COISA É QUE OQUE O OSTI MA IRMÃ TAMBÉM QUE ESTAMOS FCEMPRE FOI NO SENTIDO"
+  }
+}

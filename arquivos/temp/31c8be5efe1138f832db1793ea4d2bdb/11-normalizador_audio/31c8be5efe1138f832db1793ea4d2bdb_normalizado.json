@@ -1,0 +1,31 @@
+{
+  "31c8be5efe1138f832db1793ea4d2bdb_001.flac": {
+    "tempo_inicio": "00:00:00.356",
+    "tempo_fim": "00:00:04.284",
+    "duracao": 3.93,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "overlap01": false,
+    "stt_whisper": "outros livros, você encontra na Amazon",
+    "stt_wav2vec": "OUTROS LIVROS É VOCÊ ENCONTRA NA AMAZON",
+    "stt_leg_normalizado": null,
+    "stt_whisper_normalizado": "outros livros voce encontra na amazon",
+    "stt_wav2vec_normalizado": "outros livros e voce encontra na amazon",
+    "sim_leg_whisper": null,
+    "sim_leg_wav2vec": null,
+    "sim_whisper_wav2vec": 0.9487179487179487,
+    "nota_similaridade": 0.9487179487179487,
+    "status_similaridade": "aprovado",
+    "metrica_similaridade": "wer",
+    "utilizou_denoiser": false,
+    "sox_sample_rate": 16000,
+    "sox_bit_depth": 16,
+    "sox_channels": 1,
+    "sox_output_format": "flac",
+    "sox_normalize_method": "rms",
+    "sox_target_level_db": -3.0,
+    "sox_remove_silence": true,
+    "utilizou_sox": true
+  }
+}

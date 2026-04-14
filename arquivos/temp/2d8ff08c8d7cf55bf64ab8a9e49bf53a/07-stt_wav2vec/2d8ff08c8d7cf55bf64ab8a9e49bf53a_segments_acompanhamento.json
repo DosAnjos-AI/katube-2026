@@ -1,0 +1,17 @@
+{
+  "2d8ff08c8d7cf55bf64ab8a9e49bf53a_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.900",
+    "duracao": 3.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.4600882530212402,
+    "mos_stoi": 0.9321938157081604,
+    "mos_si_sdr": 17.472139358520508,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Pois escrevi o quarto conto de uma vida inventada de Lígia.",
+    "stt_wav2vec": "POIS ESCREVEUM O QUATRO CONTOS DE UMA VIDA INVENTADA DE LIJA"
+  }
+}

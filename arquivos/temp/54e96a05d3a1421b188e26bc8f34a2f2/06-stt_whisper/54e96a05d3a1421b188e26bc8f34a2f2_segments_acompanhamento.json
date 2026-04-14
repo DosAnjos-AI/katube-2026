@@ -1,0 +1,16 @@
+{
+  "54e96a05d3a1421b188e26bc8f34a2f2_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:07.452",
+    "duracao": 7.45,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.6089775562286377,
+    "mos_stoi": 0.8135772347450256,
+    "mos_si_sdr": 9.083577156066895,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Melhor do que falar só de futebol é falar de futebol com meus amigos. Então, isso é uma resenha boa de todo domingo aí."
+  }
+}

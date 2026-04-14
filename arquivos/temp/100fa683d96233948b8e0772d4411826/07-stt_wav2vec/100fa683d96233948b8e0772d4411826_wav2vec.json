@@ -1,0 +1,17 @@
+{
+  "100fa683d96233948b8e0772d4411826_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.734",
+    "duracao": 4.73,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.7101585865020752,
+    "mos_stoi": 0.882334291934967,
+    "mos_si_sdr": -1.0465549230575562,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas existem algumas corretoras que vocês podem utilizar e que elas estão certificadas.",
+    "stt_wav2vec": "MAS EXISTE ALGUMAS CORETORAS QUE VOÇOS PODEM IMPUSAR E QUE ELAS TÃO CERTIFICADOS"
+  }
+}

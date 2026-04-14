@@ -1,0 +1,17 @@
+{
+  "098ba980454cc2ea1ad8b7941eb56694_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:04.600",
+    "duracao": 4.6,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0477325916290283,
+    "mos_stoi": 0.9124242663383484,
+    "mos_si_sdr": 13.326310157775879,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "KK conta. Um podcast de contação de histórias infantis.",
+    "stt_wav2vec": "CCÁ CONTA UM PÓ DE QUECHO DE CONTAÇÃO DE HISTÓRIAS INFANTIS"
+  }
+}

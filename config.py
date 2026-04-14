@@ -1,0 +1,623 @@
+from pathlib import Path
+
+# ============================================================================
+# DIRETÓRIO RAIZ DO PROJETO
+# ============================================================================
+PROJECT_ROOT = Path(__file__).resolve().parent
+
+
+# ============================================================================
+# BLOCO MASTER - Controle de Módulos Ativos
+# ============================================================================
+# Ativa/desativa módulos principais do sistema
+# True = módulo será executado | False = módulo será ignorado
+MASTER = {
+    'segmentacao': 'vad',      # Opcoes: 'vad', '' para audio ja segmentado
+    'mos_filter': True,        # True = utilizar; False = nao utilizar
+    'overlap': True,           # Utilizar ou nao o detector de overlap
+    'transcricao_whisper': True,
+    'transcricao_wav2vec': True,
+    'Denoiser': True,
+    'cleanup': 'all',          # Opcoes: 'all' (input+temp), 'input' (so input), 'temp' (so temp), 'none' (nao apaga)
+}
+
+
+# =============================================================================
+# MÓDULO 01: SEGMENTADOR DE ÁUDIO VAD (entrada por segmentacao)
+# =============================================================================
+
+# Configuracoes do modulo de segmentacao de audio por legendas externas
+# Utilizado quando MASTER['segmentacao'] = 'legenda'
+SEGMENTADOR_AUDIO = {
+    
+    # ------------------------------------------------------------------------
+    # Controle do tamanho dos segmentos criados
+    # ------------------------------------------------------------------------
+    # min_seg: Duração mínima de cada segmento em segundos
+    # - Segmentos menores serão agrupados com próximos (respeitando locutores)
+    # - Tolerância: aceita até 0.8s a menos
+    'min_seg': 2,
+    
+    # max_seg: Duração máxima de cada segmento em segundos
+    # - Segmentos não ultrapassam este limite
+    # - Tolerância: aceita até 0.8s a mais
+    'max_seg': 15,
+}
+
+
+# =============================================================================
+# MÓDULO 01: SEGMENTADOR DE ÁUDIO VAD (VOICE ACTIVITY DETECTION)
+# =============================================================================
+
+# Configurações do módulo de segmentação automática usando detecção de voz
+# Utilizado quando MASTER['segmentacao'] = 'vad'
+# 
+# Este módulo utiliza Silero-VAD para detectar automaticamente momentos de
+# fala e silêncio no áudio, criando segmentos baseados em pausas naturais
+# (sem depender de legendas).
+#
+# IMPORTANTE: Sempre processa áudio em 16 kHz internamente (conversão automática)
+SEGMENTADOR_AUDIO_VAD = {
+    
+    # ------------------------------------------------------------------------
+    # Detecção de Voz (Voice Activity Detection)
+    # ------------------------------------------------------------------------
+    'deteccao': {
+        # Threshold de confiança para considerar que há voz presente (0.0 a 1.0)
+        # - Valores BAIXOS (0.3-0.4): mais sensível, detecta até sussurros/ruídos
+        # - Valores MÉDIOS (0.5): equilíbrio, recomendado para maioria dos casos
+        # - Valores ALTOS (0.6-0.8): menos sensível, só detecta voz clara
+        # Exemplo: 0.5 = confiança média (50%) para considerar como voz
+        'voice_threshold': 0.5,
+        
+        # Tamanho da janela de análise em segundos
+        # Define a granularidade temporal da detecção de voz
+        # - Valores menores (0.05-0.1): maior precisão, mais processamento
+        # - Valores médios (0.15): equilíbrio recomendado
+        # - Valores maiores (0.3-0.5): menos precisão, mais rápido
+        # Exemplo: 0.15 = analisa o áudio em blocos de 150ms
+        'window_size_seconds': 0.15,
+    },
+    
+    # ------------------------------------------------------------------------
+    # Critérios de Silêncio e Fala
+    # ------------------------------------------------------------------------
+    'criterios': {
+        # Duração mínima de FALA para ser considerada válida (milissegundos)
+        # Falas mais curtas são ignoradas (consideradas ruído)
+        # - Valores baixos (100-200ms): captura falas muito breves
+        # - Valores médios (250-500ms): filtra ruídos curtos (recomendado)
+        # - Valores altos (>500ms): só aceita falas longas
+        # Exemplo: 250 = ignora sons com menos de 250ms (0.25s)
+        'min_speech_duration_ms': 250,
+        
+        # Duração mínima de SILÊNCIO entre falas (milissegundos)
+        # Silêncios mais curtos não separam falas (continuam no mesmo segmento)
+        # - Valores baixos (50-100ms): divide em pausas muito breves
+        # - Valores médios (100-200ms): equilíbrio (recomendado)
+        # - Valores altos (>300ms): só divide em pausas longas
+        # Exemplo: 100 = pausas menores que 100ms não dividem o segmento
+        'min_silence_duration_ms': 100,
+        
+        # Duração mínima de SILÊNCIO para FORÇAR divisão de segmento (segundos)
+        # Pausas maiores que este valor sempre criam novo segmento
+        # - Valores baixos (0.2-0.3s): sensível a pausas curtas
+        # - Valores médios (0.3-0.5s): equilíbrio (recomendado)
+        # - Valores altos (>0.5s): só divide em pausas muito longas
+        # Exemplo: 0.3 = pausa de 300ms sempre cria novo segmento
+        'min_silence_for_split': 0.3,
+    },
+    
+    # ------------------------------------------------------------------------
+    # Padding (Margem de Segurança nos Cortes)
+    # ------------------------------------------------------------------------
+    'padding': {
+        # Tempo adicional no INÍCIO de cada segmento (milissegundos)
+        # Evita cortar o início da primeira palavra
+        # - Valores baixos (10-30ms): corte mais preciso
+        # - Valores médios (30-50ms): segurança recomendada
+        # - Valores altos (>100ms): pode incluir silêncio extra
+        # Exemplo: 30 = adiciona 30ms antes do início detectado da fala
+        'inicio_ms': 30,
+        
+        # Tempo adicional no FIM de cada segmento (milissegundos)
+        # Evita cortar o final da última palavra
+        # - Valores baixos (10-30ms): corte mais preciso
+        # - Valores médios (30-50ms): segurança recomendada
+        # - Valores altos (>100ms): pode incluir silêncio extra
+        # Exemplo: 30 = adiciona 30ms após o fim detectado da fala
+        'fim_ms': 30,
+    },
+    
+    # ------------------------------------------------------------------------
+    # Limites de Duração dos Segmentos Finais
+    # ------------------------------------------------------------------------
+    'segmentos': {
+        # Duração MÍNIMA de cada segmento em segundos
+        # Segmentos mais curtos são agrupados com próximos
+        # - Valores baixos (2-4s): aceita segmentos muito curtos
+        # - Valores médios (4-8s): equilíbrio (recomendado)
+        # - Valores altos (>10s): força segmentos longos
+        # Exemplo: 4.0 = todos os segmentos terão no mínimo 4 segundos
+        'min_seg': 4.0,
+        
+        # Duração MÁXIMA de cada segmento em segundos
+        # Segmentos mais longos são divididos em pausas naturais
+        # - Valores baixos (8-12s): força segmentos curtos
+        # - Valores médios (15-20s): equilíbrio (recomendado)
+        # - Valores altos (>25s): permite segmentos muito longos
+        # Exemplo: 15.0 = nenhum segmento ultrapassará 15 segundos
+        'max_seg': 15.0,
+        
+        # Tolerância nas durações (segundos)
+        # Permite pequenas variações nos limites min/max
+        # - Valores baixos (0.3-0.5s): mais rigoroso
+        # - Valores médios (0.8-1.0s): equilíbrio (recomendado)
+        # - Valores altos (>1.5s): mais flexível
+        # Exemplo: 0.8 = aceita segmento de 3.2s (min=4.0 - tolerância=0.8)
+        'tolerancia': 0.5,
+    },
+    
+    # ------------------------------------------------------------------------
+    # Comportamento Geral
+    # ------------------------------------------------------------------------
+    'comportamento': {
+        # Sobrescrever segmentos existentes
+        # False = pula áudios já segmentados (verifica pasta segments/)
+        # True = re-segmenta mesmo que já exista
+        'sobrescrever': False,
+    },
+}
+
+# =============================================================================
+# MÓDULO 02: MOS FILTER (MEAN OPINION SCORE - QUALIDADE DE ÁUDIO)
+# =============================================================================
+
+# Configurações do filtro de qualidade de áudio baseado em MOS
+# Avalia áudio usando modelo SQUIM (Speech Quality and Intelligibility Measures)
+# Classifica segmentos em: baixa, média ou alta qualidade
+MOS_FILTER = {
+    
+    # ------------------------------------------------------------------------
+    # Dispositivo de Processamento
+    # ------------------------------------------------------------------------
+    # Define onde o modelo MOS será executado
+    # Opções disponíveis:
+    # - "auto": Detecta automaticamente (GPU se disponível, senão CPU)
+    # - "gpu": Força uso de GPU/CUDA (falha se GPU não disponível)
+    # - "cpu": Força uso de CPU (mais lento, mas funciona em qualquer máquina)
+    # 
+    # Recomendação: "auto" para máxima compatibilidade
+    # Nota: GPU acelera significativamente (3-5x mais rápido)
+    'device': 'auto',
+    
+    # ------------------------------------------------------------------------
+    # Limiares de Qualidade (MOS Score)
+    # ------------------------------------------------------------------------
+    # MOS (Mean Opinion Score) varia de 1.0 (péssimo) a 5.0 (excelente)
+    # Define os limiares para classificação de qualidade
+    
+    'thresholds': {
+        # Limiar mínimo aceitável
+        # Áudios com MOS < min_threshold são DESCARTADOS
+        # Valores típicos: 1.5-2.5
+        # Exemplo: 2.0 = descarta áudios muito ruins
+        'min_threshold': 0.1,
+        
+        # Limiar para alta qualidade
+        # Áudios com MOS >= max_threshold são considerados ÓTIMOS
+        # Não precisam de denoising posterior
+        # Valores típicos: 3.0-4.0
+        # Exemplo: 3.5 = áudios acima disso vão direto pro dataset
+        'max_threshold': 4.9,
+        
+        # Faixa intermediária (calculada automaticamente):
+        # min_threshold <= MOS < max_threshold
+        # Estes áudios passam por denoising antes do dataset final
+    },
+    
+    # ------------------------------------------------------------------------
+    # Batch Processing (Processamento em Lote)
+    # ------------------------------------------------------------------------
+    # Processa múltiplos áudios simultaneamente para maior eficiência
+    
+    'batch': {
+        # Tamanho do batch (quantos áudios processar juntos)
+        # Valores maiores = mais rápido, mas usa mais VRAM
+        # 
+        # Opções:
+        # - "auto": Calcula automaticamente baseado em VRAM disponível
+        # - 1-16: Valor fixo (números maiores exigem mais VRAM)
+        # 
+        # Referência de uso de VRAM (aproximado):
+        # - batch_size=1:  ~2.0 GB
+        # - batch_size=4:  ~3.0 GB
+        # - batch_size=8:  ~4.0 GB
+        # - batch_size=16: ~6.0 GB
+        # 
+        # Recomendação:
+        # - GPU com 24GB: "auto" ou 16
+        # - GPU com 8-16GB: 8
+        # - GPU com 4-8GB: 4
+        # - CPU: 1-2
+        'batch_size': 'auto',
+    },
+    
+    # ------------------------------------------------------------------------
+    # Comportamento Geral
+    # ------------------------------------------------------------------------
+    'comportamento': {
+        # Sobrescrever análises existentes
+        # False = pula segmentos já analisados (verifica se JSON existe)
+        # True = re-analisa todos os segmentos
+        'sobrescrever': False,
+    },
+}
+
+# =============================================================================
+# MÓDULO 04: DETECTOR DE OVERLAP 01 (SOBREPOSIÇÃO DE LOCUTORES)
+# =============================================================================
+
+# Configurações do detector de overlap usando diarização de speakers
+# Detecta se há sobreposição de fala (múltiplos locutores falando simultaneamente)
+# Utiliza modelo pyannote para análise de áudio
+OVERLAP_DETECTOR = {
+    
+    # ------------------------------------------------------------------------
+    # Dispositivo de Processamento
+    # ------------------------------------------------------------------------
+    # Define onde o modelo será executado
+    # Opções disponíveis:
+    # - "auto": Detecta automaticamente (GPU se disponível, senão CPU)
+    # - "gpu": Força uso de GPU/CUDA (falha se GPU não disponível)
+    # - "cpu": Força uso de CPU (mais lento, mas funciona em qualquer máquina)
+    # 
+    # Recomendação: "auto" para máxima compatibilidade
+    # Nota: GPU acelera significativamente o processamento
+    'device': 'auto',
+    
+    # ------------------------------------------------------------------------
+    # Modelo de Diarização
+    # ------------------------------------------------------------------------
+    # Modelo HuggingFace para detecção de overlap
+    # pyannote/speaker-diarization-community-1CC-BY-4.0
+    # Licença: CC-BY-4.0 (permissiva para uso acadêmico)
+    # IMPORTANTE: Requer token HuggingFace configurado em .env
+    'modelo': 'pyannote/speaker-diarization-3.1',
+    
+    # ------------------------------------------------------------------------
+    # Batch Processing (Processamento em Lote)
+    # ------------------------------------------------------------------------
+    # Processa múltiplos áudios simultaneamente para maior eficiência
+    
+    'batch': {
+        # Tamanho do batch (quantos áudios processar juntos)
+        # Valores maiores = mais rápido, mas usa mais VRAM
+        # 
+        # Opções:
+        # - "auto": Calcula automaticamente baseado em VRAM disponível
+        # - 1-16: Valor fixo (números maiores exigem mais VRAM)
+        # 
+        # Referência de uso de VRAM (aproximado):
+        # - batch_size=1:  ~3.0 GB
+        # - batch_size=4:  ~5.0 GB
+        # - batch_size=8:  ~8.0 GB
+        # - batch_size=16: ~12.0 GB
+        # 
+        # Recomendação:
+        # - GPU com 24GB: "auto" ou 16
+        # - GPU com 8-16GB: 8
+        # - GPU com 4-8GB: 4
+        # - CPU: 1
+        'batch_size': 'auto',
+    },
+    'timeout': {
+    'por_audio_segundos': 60,  # Timeout máximo por áudio
+    },
+    
+    # ------------------------------------------------------------------------
+    # Comportamento Geral
+    # ------------------------------------------------------------------------
+    'comportamento': {
+        # Sobrescrever análises existentes
+        # False = pula segmentos já analisados (verifica se campo overlap01 existe)
+        # True = re-analisa todos os segmentos
+        'sobrescrever': False,
+    },
+}
+
+# =============================================================================
+# MÓDULO 05: STT WHISPER (SPEECH-TO-TEXT)
+# =============================================================================
+
+# Configurações do módulo de transcrição usando Whisper
+# Converte segmentos de áudio em texto usando modelo distil-whisper PT-BR
+# Modelo: freds0/distil-whisper-large-v3-ptbr
+STT_WHISPER = {
+    
+    # ------------------------------------------------------------------------
+    # Dispositivo de Processamento
+    # ------------------------------------------------------------------------
+    # Define onde o modelo Whisper será executado
+    # Opções disponíveis:
+    # - "auto": Detecta automaticamente (GPU se disponível, senão CPU)
+    # - "gpu": Força uso de GPU/CUDA (falha se GPU não disponível)
+    # - "cpu": Força uso de CPU (mais lento, mas funciona em qualquer máquina)
+    # 
+    # Recomendação: "auto" para máxima compatibilidade
+    # Nota: GPU acelera significativamente (6x mais rápido que large-v3)
+    'device': 'auto',
+    
+    # ------------------------------------------------------------------------
+    # Batch Processing (Processamento em Lote)
+    # ------------------------------------------------------------------------
+    # Processa múltiplos áudios simultaneamente para maior eficiência
+    
+    'batch': {
+        # Tamanho do batch (quantos áudios transcrever juntos)
+        # Valores maiores = mais rápido, mas usa mais VRAM
+        # 
+        # Opções:
+        # - "auto": Calcula automaticamente baseado em VRAM disponível
+        # - 1-16: Valor fixo (números maiores exigem mais VRAM)
+        # 
+        # Referência de uso de VRAM (aproximado):
+        # - batch_size=1:  ~2.5 GB
+        # - batch_size=4:  ~4.0 GB
+        # - batch_size=8:  ~6.0 GB
+        # - batch_size=16: ~10.0 GB
+        # 
+        # Recomendação:
+        # - GPU com 24GB: "auto" ou 16
+        # - GPU com 8-16GB: 8
+        # - GPU com 4-8GB: 4
+        # - CPU: 1 automático
+        'batch_size': 8,
+    },
+    
+    # ------------------------------------------------------------------------
+    # Comportamento Geral
+    # ------------------------------------------------------------------------
+    'comportamento': {
+        # Sobrescrever transcrições existentes
+        # False = pula segmentos já transcritos (verifica se campo stt_whisper existe)
+        # True = re-transcreve todos os segmentos
+        'sobrescrever': False,
+    },
+}
+
+# ============================================================
+# MÓDULO 06: STT WAV2VEC2 (SPEECH-TO-TEXT) 
+# ============================================================
+STT_WAV2VEC2= {
+    "device": "auto",  # Dispositivo de processamento: auto, cpu, gpu
+}
+
+
+# ============================================================
+# MÓDULO 07: NORMALIZADOR DE TEXTO (TEXT NORMALIZER)
+# ============================================================
+TEXT_NORMALIZER = {
+
+    # Pontuação que afeta dicção/pronúncia do locutor
+    # Remove: . , ; ! ? _
+    # Exemplo: "Olá, mundo!" → "Olá mundo" (com remove=True)
+    # Exemplo: "Olá, mundo!" → "Olá, mundo!" (com remove=False)
+    # Útil para: comparação STT onde pontuação não é transcrita
+    "remove_punctuation_diction": True,
+    
+    # Acentuação gráfica (marcas diacríticas)
+    # Remove: ' ` ^ ~
+    # Exemplo: "josé" → "jose" (com remove=True)
+    # Exemplo: "josé" → "josé" (com remove=False)
+    # IMPORTANTE: Se False, números por extenso terão acento (três, décimo)
+    #             Se True, números por extenso sem acento (tres, decimo)
+    # Útil para: normalização para modelos que não lidam bem com acentos
+    "remove_accents_graphic": True,
+}
+
+# ============================================================
+# MÓDULO 08: VALIDADOR DE SIMILARIDADE (SIMILARITY VALIDATOR)
+# ============================================================
+SIMILARITY_VALIDATOR = {
+    
+    # Limiar de similaridade para aprovação de segmentos
+    # Valor entre 0.0 (totalmente diferente) e 1.0 (idêntico)
+    # Segmentos com similaridade >= threshold são aprovados
+    # Exemplo com threshold=0.75:
+    #   - Similaridade 0.80 → APROVADO (>=0.75)
+    #   - Similaridade 0.70 → REJEITADO (<0.75)
+    # Valores típicos: 0.70 (permissivo), 0.80 (equilibrado), 0.90 (restritivo)
+    # Útil para: filtrar segmentos com alta divergência entre modelos STT
+    "similarity_threshold": 0.05,
+    
+    # Tipo de métrica para cálculo de similaridade
+    # Opções disponíveis:
+    #   "wer" (Word Error Rate) - Padrão da indústria STT
+    #       Calcula: 1 - (edições_necessárias / total_palavras)
+    #       Exemplo: "casa azul" vs "casa verde" → WER ~0.50
+    #       Sensível à ordem das palavras
+    #       Melhor para: avaliar qualidade de transcrição completa
+    #   
+    #   "cer" (Character Error Rate) - Análise em nível de caractere
+    #       Calcula: 1 - (edições_necessárias / total_caracteres)
+    #       Exemplo: "josé" vs "jose" → CER ~0.80
+    #       Mais granular que WER
+    #       Melhor para: detectar erros sutis (acentos, typos)
+    #   
+    #   "levenshtein_norm" - Distância de edição normalizada
+    #       Calcula: 1 - (distância_levenshtein / max_length)
+    #       Exemplo: "gato" vs "pato" → 0.75 (1 edição em 4 chars)
+    #       Não diferencia palavras vs caracteres
+    #       Melhor para: comparação genérica de strings
+    # 
+    # Recomendação: "wer" para STT (alinhado com métricas acadêmicas)
+    "metric_type": "wer",
+}
+
+# ============================================================
+# MÓDULO 09: DENOISER DEEPFILTERNET
+# ============================================================
+DEEPFILTERNET_DENOISER = {
+    
+    # Filtro de qualidade MOS para seleção de áudios a processar
+    # Array com categorias de qualidade desejadas
+    # Opções disponíveis: "alta", "media", "baixa"
+    # Exemplos de uso:
+    #   ["alta", "media", "baixa"] → Processa TODOS os áudios (independente de MOS)
+    #   ["alta"] → Processa APENAS áudios de alta qualidade
+    #   ["media", "baixa"] → Processa áudios de média e baixa qualidade
+    #   [] → NÃO PROCESSA NENHUM ÁUDIO (array vazio = sem processamento)
+    # 
+    # Caso de uso típico: ["media", "baixa"] 
+    #   Aplica denoising apenas onde há maior chance de melhoria
+    #   Áudios de alta qualidade já processados permanecem intactos
+    # 
+    # IMPORTANTE: Os arquivos originais (input) SEMPRE permanecem intactos
+    #             O denoising cria novos arquivos processados no output
+    "mos_quality_filter": ["media", "baixa", "alta"],
+    
+    # Dispositivo de processamento
+    # Opções: "auto", "gpu", "cpu"
+    #   "auto" → Detecta GPU automaticamente, fallback para CPU
+    #   "gpu"  → Força uso de GPU (falha se indisponível)
+    #   "cpu"  → Força processamento em CPU (mais lento, sempre disponível)
+    # Recomendação: "auto" para máxima compatibilidade
+    "device": "auto",
+    
+    # Nível de agressividade do filtro pós-processamento
+    # Valores: 0, 1, 2
+    #   0 → Preserva mais características do áudio original (mínimo denoising)
+    #   1 → Balanceado entre remoção de ruído e preservação de fala (PADRÃO)
+    #   2 → Remoção máxima de ruído (pode afetar naturalidade da voz)
+    # 
+    # Recomendação por cenário:
+    #   Música de fundo presente → usar 0 ou 1
+    #   Ruído ambiente severo → usar 2
+    #   Análise STT downstream → usar 1 (equilibrado)
+    "post_filter": 1,
+    
+    # Limite de atenuação aplicado ao sinal
+    # Valor entre 0.0 e 1.0 (float)
+    #   0.0 → Sem limitação (pode causar over-processing)
+    #   1.0 → Limitação máxima (preserva dinâmica do áudio)
+    # 
+    # Função: Previne distorção em trechos de fala suave
+    # Padrão DeepFilterNet: 0.95
+    # 
+    # ⚠️ Valores muito baixos (<0.8) podem degradar inteligibilidade
+    # Recomendação: manter entre 0.90-0.98 para português brasileiro
+    "attenuation_limit": 0.95,
+    
+    # Pular segmentos já processados anteriormente
+    # Verifica flag "deepfilternet_processed" no JSON dinâmico
+    #   True → Ignora áudios com flag existente (economiza processamento)
+    #   False → Reprocessa todos os áudios elegíveis (sobrescreve outputs)
+    # 
+    # Caso de uso True: Re-execuções após falhas/interrupções
+    # Caso de uso False: Mudança de parâmetros (post_filter, attenuation_limit)
+    # 
+    # IMPORTANTE: Flag apenas previne reprocessamento, não valida qualidade
+    "skip_if_already_processed": True,
+}
+
+# ============================================================
+# MÓDULO 10: NORMALIZADOR DE ÁUDIO SOX
+# ============================================================
+SOX_NORMALIZER = {
+    
+    # Taxa de amostragem (sample rate) do áudio de saída
+    # Valores comuns: 8000, 16000, 22050, 44100, 48000 (em Hz)
+    # Exemplos de uso por aplicação:
+    #   8000  → Telefonia (qualidade mínima)
+    #   16000 → STT (Speech-to-Text) -BalanceIO qualidade/performance
+    #   22050 → TTS (Text-to-Speech) - Qualidade intermediária
+    #   44100 → CD quality - Uso geral alta fidelidade
+    #   48000 → Professional audio/broadcasting
+    # 
+    # IMPORTANTE: Modelos STT/TTS geralmente esperam 16kHz ou 22050Hz
+    # Valores mais altos = maior qualidade mas maior custo computacional
+    "sample_rate": 16000,
+    # Valores comuns: 8000, 16000, 22050, 24000, 44100, 48000 (em Hz)
+    # Profundidade de bits (bit depth) do áudio
+    # Valores: 16, 24, 32 (em bits)
+    #   16 → Padrão para STT/TTS (suficiente para fala)
+    #   24 → Maior dinâmica (uso profissional)
+    #   32 → Máxima qualidade (raramente necessário para IA)
+    # 
+    # Recomendação: 16 bits para datasets de treino IA
+    # Valores maiores aumentam tamanho sem ganho significativo
+    "bit_depth": 16,
+    
+    # Número de canais de áudio
+    # Valores: 1 (mono), 2 (stereo)
+    #   1 → OBRIGATÓRIO para STT/TTS (modelos esperam mono)
+    #   2 → Apenas se necessário preservar espacialização
+    # 
+    # ⚠️ CRÍTICO: Praticamente todos modelos STT/TTS requerem MONO
+    # Stereo aumenta tamanho 2x sem benefício para treino
+    "channels": 1,
+    
+    # Formato do arquivo de áudio de saída
+    # Opções: "wav", "flac", "mp3", "ogg"
+    #   "wav"  → Sem compressão, máxima qualidade, arquivos grandes
+    #   "flac" → Compressão lossless, qualidade=WAV, ~50% menor
+    #   "mp3"  → Compressão lossy, qualidade OK, arquivos pequenos
+    #   "ogg"  → Compressão lossy, melhor que MP3, menos compatível
+    # 
+    # Recomendação por caso:
+    #   Treino IA → "flac" (qualidade perfeita, economia storage)
+    #   Deployment → "mp3" (menor latência de carregamento)
+    #   Arquivamento → "wav" (sem perdas, compatibilidade total)
+    "output_format": "flac",
+    
+    # Método de normalização de volume
+    # Opções: "peak", "rms", "loudness"
+    #   "peak"     → Normaliza baseado no pico mais alto (evita clipping)
+    #   "rms"      → Normaliza baseado na energia média (mais consistente)
+    #   "loudness" → Normaliza baseado em percepção humana (LUFS/EBU R128)
+    # 
+    # Recomendação por cenário:
+    #   STT dataset → "rms" (consistência entre amostras)
+    #   TTS dataset → "loudness" (naturalidade percebida)
+    #   Mixagem → "peak" (controle máximo de headroom)
+    "normalize_method": "rms",
+    
+    # Nível alvo de normalização em decibéis
+    # Valores típicos: -3.0, -1.0, 0.0 (em dB)
+    #   -3.0 → Conservador (headroom para evitar clipping)
+    #   -1.0 → Balanceado (padrão broadcasting)
+    #   0.0  → Máximo (sem margem de segurança)
+    # 
+    # ⚠️ Valores positivos causam distorção (clipping)
+    # Valores muito negativos resultam em áudio baixo
+    # Recomendação: -3.0 para datasets de treino
+    "target_level_db": -3.0,
+    
+    # Remover silêncios no início e fim dos arquivos
+    # Valores: True, False
+    #   True  → Remove silêncios (economiza storage + melhora treino)
+    #   False → Preserva áudio original completo
+    # 
+    # Benefícios quando True:
+    #   - Reduz tamanho do dataset (menos padding inútil)
+    #   - Melhora eficiência de treino (modelo foca em fala)
+    #   - Facilita alinhamento temporal em pipelines downstream
+    # 
+    # Desvantagem: Perde contexto de pausas naturais
+    # Recomendação: True para maioria dos casos STT/TTS
+    "remove_silence": True,
+    
+    # Threshold para detecção de silêncio em decibéis
+    # Valores típicos: -50, -40, -30 (em dB, negativos)
+    #   -50 → Mais sensível (remove até ruído de fundo baixo)
+    #   -40 → Balanceado (padrão recomendado)
+    #   -30 → Menos sensível (remove apenas silêncios óbvios)
+    # 
+    # IMPORTANTE: Só tem efeito se remove_silence=True
+    # Valores muito altos (-20) podem cortar fala suave
+    # Valores muito baixos (-60) podem não remover silêncio
+    # 
+    # Recomendação: -40 dB para áudio limpo, -50 dB para áudio ruidoso
+    "silence_threshold_db": -40,
+}

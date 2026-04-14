@@ -1,0 +1,17 @@
+{
+  "a6e6cc7212f54a1443bb5578664665a6_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.894",
+    "duracao": 4.86,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.1947866678237915,
+    "mos_stoi": 0.8576772212982178,
+    "mos_si_sdr": 1.656699538230896,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Ô, que deu, Bahia, já tô espica, hein? Ó, o senhor foi em uma aulinha, hein?",
+    "stt_wav2vec": "OQUEBEL BAHIA JÁ TOES PIQUEM OQUE SEEU FOI MAULINHA"
+  }
+}

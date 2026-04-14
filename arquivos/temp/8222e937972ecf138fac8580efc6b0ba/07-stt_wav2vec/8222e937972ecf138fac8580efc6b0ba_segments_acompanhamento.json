@@ -1,0 +1,47 @@
+{
+  "8222e937972ecf138fac8580efc6b0ba_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.340",
+    "duracao": 5.34,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.105905771255493,
+    "mos_stoi": 0.9582909941673279,
+    "mos_si_sdr": 19.919757843017578,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Mas pronto, basicamente o que eu queria dizer é que nós somos finitos e não estamos livres e já vimos isso.",
+    "stt_wav2vec": "NOS PANTO VAZS QUEMENTA O QUE EU CUERI DEVER É QUE NÓS SOMOS FINITES E NÃOS ESTAMOS LIVROS E SABEMOS ISSO"
+  },
+  "8222e937972ecf138fac8580efc6b0ba_002.ogg": {
+    "tempo_inicio": "00:00:05.604",
+    "tempo_fim": "00:00:11.644",
+    "duracao": 6.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.607048273086548,
+    "mos_stoi": 0.9243232607841492,
+    "mos_si_sdr": 14.913702011108398,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "infelizmente que há muita gente que tem enfalecido e que tem acontecido algum problema ou mesmo",
+    "stt_wav2vec": null
+  },
+  "8222e937972ecf138fac8580efc6b0ba_003.ogg": {
+    "tempo_inicio": "00:00:12.068",
+    "tempo_fim": "00:00:16.062",
+    "duracao": 3.99,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.9908761978149414,
+    "mos_stoi": 0.9385095834732056,
+    "mos_si_sdr": 11.934067726135254,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Não estou livre que um dia o Instagram se lembra e bloqueio.",
+    "stt_wav2vec": null
+  }
+}

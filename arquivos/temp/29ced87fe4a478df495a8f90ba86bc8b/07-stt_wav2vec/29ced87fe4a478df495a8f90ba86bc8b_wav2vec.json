@@ -1,0 +1,17 @@
+{
+  "29ced87fe4a478df495a8f90ba86bc8b_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:18.140",
+    "duracao": 18.14,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.272303819656372,
+    "mos_stoi": 0.9366948008537292,
+    "mos_si_sdr": 10.006205558776855,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "para atuar na área. Te interessou, acessa fevale.br barralato para mais informações ou para conhecer diversos outros cursos nas modalidades mensais, quinzenais, semanais e digitais. Fevale inovar é humano. Ah, seu Adam, tem alguém que falou o seguinte, ó.",
+    "stt_wav2vec": "TOAR NA ÁRIA TE INTERESSO A CESSA FEVALE PONTO BIERRI BARRALATO PARA MAIS INFORMAÇÕES OU PARA CONHECER DIVERSOS OUTROS CURSOS NAS MODALIDADES MENSAIS QUINZENAIS SEMANAIS IDIJETAES VEVALE ENOVAR É HUMANO A SEADA DEQE ALGUÉM FALOU NT"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "bece92e196f6923c436eb8c7e1181d1c_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:10.904",
+    "duracao": 10.9,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.0746798515319824,
+    "mos_stoi": 0.9453891515731812,
+    "mos_si_sdr": 12.851515769958496,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E você, Vini, tem a luna? 30 Reasons Why. Eu só assisti a primeira temporada chorando até o fim da primeira temporada. Mas não de emoção, não é porque eu não gostei mesmo."
+  }
+}

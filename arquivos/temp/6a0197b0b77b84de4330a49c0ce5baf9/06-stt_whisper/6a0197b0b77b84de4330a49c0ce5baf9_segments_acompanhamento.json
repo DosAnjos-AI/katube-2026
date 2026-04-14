@@ -1,0 +1,16 @@
+{
+  "6a0197b0b77b84de4330a49c0ce5baf9_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:03.880",
+    "duracao": 3.88,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.014580249786377,
+    "mos_stoi": 0.9098824858665466,
+    "mos_si_sdr": 2.4975955486297607,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "podem bloquear, não é? Que diga, fica bloqueado."
+  }
+}

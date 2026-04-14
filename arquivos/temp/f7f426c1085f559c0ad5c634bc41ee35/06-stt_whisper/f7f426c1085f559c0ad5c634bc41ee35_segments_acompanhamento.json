@@ -1,0 +1,16 @@
+{
+  "f7f426c1085f559c0ad5c634bc41ee35_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.278",
+    "duracao": 9.27,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3831415176391602,
+    "mos_stoi": 0.767879068851471,
+    "mos_si_sdr": 2.7057132720947266,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "os jogos de volta das oitavas, mas o torteio ficou o seguinte, o Real Madrid ou o City, o City tem a vantagem, porque ele venceu o primeiro jogo, né?"
+  }
+}

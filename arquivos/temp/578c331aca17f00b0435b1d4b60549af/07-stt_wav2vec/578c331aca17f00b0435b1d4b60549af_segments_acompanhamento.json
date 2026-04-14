@@ -1,0 +1,32 @@
+{
+  "578c331aca17f00b0435b1d4b60549af_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:14.044",
+    "duracao": 14.04,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.9389281272888184,
+    "mos_stoi": 0.892792820930481,
+    "mos_si_sdr": 12.588711738586426,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Sobre o que eu assino até hoje. Gente, é maravilhoso. Eu queria conversar, na verdade, com você, mas já vai ser em outro momento. Escreve alguma coisa, publica sobre a questão da agressividade, que eu acho interessante. Ela como...",
+    "stt_wav2vec": "SOBLIQILOSINA TELELIS DENTEA MARAVILHOSO EU QUERIA CONVERSAR NA VERDADE COM VOCÊ MAS A VAISSE EM OUTRO MOMENTO TA ESCREVE ALGUMA COISA PUBLICA SOBRE SOBRE A QUESTÃO DA AGRESSIVIDADE QUE EU ACHO INTERESSANTE ELA COMO COMO"
+  },
+  "578c331aca17f00b0435b1d4b60549af_002.ogg": {
+    "tempo_inicio": "00:00:14.340",
+    "tempo_fim": "00:00:20.808",
+    "duracao": 6.47,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3691020011901855,
+    "mos_stoi": 0.9150004386901855,
+    "mos_si_sdr": 12.565443992614746,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Esse ato, é o ato agressivo, o Chato vai falar disso também, e é muito interessante como você lê.",
+    "stt_wav2vec": null
+  }
+}

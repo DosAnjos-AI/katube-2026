@@ -1,0 +1,30 @@
+{
+  "ec935cde63a9d669c8a00fbfed8f252c_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:09.052",
+    "duracao": 9.05,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.3007187843322754,
+    "mos_stoi": 0.8988954424858093,
+    "mos_si_sdr": 8.518913269042969,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "assim, aqui você vai ter os exercícios mais diferenciados, aqui você vai ter os treinos mais badalados da Europa. Não, cara, você vai ter resultado."
+  },
+  "ec935cde63a9d669c8a00fbfed8f252c_002.ogg": {
+    "tempo_inicio": "00:00:09.156",
+    "tempo_fim": "00:00:23.598",
+    "duracao": 14.44,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.498223066329956,
+    "mos_stoi": 0.8406569361686707,
+    "mos_si_sdr": 7.832779407501221,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Você quer melhorar o ioiô? Você quer melhorar o salto vertical? Você quer melhorar a tua velocidade? Você quer diminuir o presenteado de gordura? Você quer aumentar o nível de massa muscular? Aqui você vai conseguir. Agora, não vou prometer, ah, você vai fazer só exercício bacana, só exercício legal."
+  }
+}

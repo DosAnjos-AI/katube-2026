@@ -1,0 +1,16 @@
+{
+  "4cd64d945f810d3f77663bb67884c36e_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:07.662",
+    "duracao": 7.66,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3322103023529053,
+    "mos_stoi": 0.8448925018310547,
+    "mos_si_sdr": 7.172774791717529,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "a ver que o Matheusinho ser meu casal favorito da vida toda. Obrigado demais, primeiro, participar. Saudades de você, Matheusinho e doutor."
+  }
+}

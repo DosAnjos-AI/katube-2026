@@ -1,0 +1,30 @@
+{
+  "bdbdd93ea4926a14771fa82e1db153ce_001.ogg": {
+    "tempo_inicio": "00:00:00.036",
+    "tempo_fim": "00:00:04.796",
+    "duracao": 4.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.3086190223693848,
+    "mos_stoi": 0.7655063271522522,
+    "mos_si_sdr": 2.2133021354675293,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "e assumindo que podes usar 600 euros do subsídio de feiras que vais receber..."
+  },
+  "bdbdd93ea4926a14771fa82e1db153ce_002.ogg": {
+    "tempo_inicio": "00:00:05.188",
+    "tempo_fim": "00:00:16.200",
+    "duracao": 11.01,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.2092231512069702,
+    "mos_stoi": 0.7336964011192322,
+    "mos_si_sdr": 2.9771389961242676,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Todos os meses tens poupado 50 euros. E em julho ou agosto de 2022 já não te vai custar nada porque já fiz aquele dinheiro de parte que começaste a juntar agora. É uma ótima estratégia."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "6d06297209651af4623d08c79fe856b3_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:04.124",
+    "duracao": 4.12,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.361309766769409,
+    "mos_stoi": 0.8067898750305176,
+    "mos_si_sdr": 9.293539047241211,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Você pode nos ajudar? Pergunto o Greta olhou ao redor.",
+    "stt_wav2vec": "VOCÊ PODE NOS AJUDAR ELUNTOLO LETO LHO ARREDO"
+  },
+  "6d06297209651af4623d08c79fe856b3_002.ogg": {
+    "tempo_inicio": "00:00:04.516",
+    "tempo_fim": "00:00:10.236",
+    "duracao": 5.72,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7741329669952393,
+    "mos_stoi": 0.9219815135002136,
+    "mos_si_sdr": 23.266807556152344,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Os animais pareciam cansados e tristes. Ela tinha de ajudá-los. Mas como?",
+    "stt_wav2vec": "VELHE MAIS PALENCER UM CANTATOS E TRISTE ELA TINHA DE AJUDALOS MAS CO AMOR"
+  },
+  "6d06297209651af4623d08c79fe856b3_003.ogg": {
+    "tempo_inicio": "00:00:10.628",
+    "tempo_fim": "00:00:17.852",
+    "duracao": 7.22,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.7840733528137207,
+    "mos_stoi": 0.9535359144210815,
+    "mos_si_sdr": 23.146217346191406,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Então Greta teve uma ideia. Na manhã seguinte, Greta foi para a entrada na floresta e ficou esperando.",
+    "stt_wav2vec": null
+  }
+}

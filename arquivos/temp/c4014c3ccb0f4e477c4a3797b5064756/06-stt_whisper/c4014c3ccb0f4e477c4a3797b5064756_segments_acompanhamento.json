@@ -1,0 +1,16 @@
+{
+  "c4014c3ccb0f4e477c4a3797b5064756_001.ogg": {
+    "tempo_inicio": "00:00:00.004",
+    "tempo_fim": "00:00:03.976",
+    "duracao": 3.97,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 1.306472659111023,
+    "mos_stoi": 0.7964360117912292,
+    "mos_si_sdr": -0.16190984845161438,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Porquê? Porque os prazos do crédito da habitação são prazos muito longos."
+  }
+}

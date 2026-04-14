@@ -1,0 +1,32 @@
+{
+  "436ff5ad00a996fd8fa8bc254385b07f_001.ogg": {
+    "tempo_inicio": "00:00:00.100",
+    "tempo_fim": "00:00:14.524",
+    "duracao": 14.42,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.84234619140625,
+    "mos_stoi": 0.9919682145118713,
+    "mos_si_sdr": 20.247943878173828,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "Qual que era o argumento? A gente não está mais prestando atenção. Eu fiquei com uma cara de tacho e aprendi a lição naquele dia. Treinamento é treinamento, festa é festa, de preferência em lugares diferentes. Eu posso fazer um atrás do outro.",
+    "stt_wav2vec": "QUALQUER O ARGUMENTO A GENTE NÃO TÁ MAIS PRESTANDO ATENÇÃO EU FIQUEI COM UMA CARA DE TAHO E APRENDIA LIÇÃO NAQUELLE DIA TREINAMENTA É TREINAMENTO FESTA É FESTA DE PREFERÊNCIA EM LUGARES DIFERENTES EU POSSO FAZER UM ATRÁS DO OUTRO"
+  },
+  "436ff5ad00a996fd8fa8bc254385b07f_002.ogg": {
+    "tempo_inicio": "00:00:14.724",
+    "tempo_fim": "00:00:25.486",
+    "duracao": 10.76,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 3.4533801078796387,
+    "mos_stoi": 0.9934936165809631,
+    "mos_si_sdr": 25.12771224975586,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "mas nunca concorrendo, principalmente se tiver cheiro de comida no ar. Bom, feita essa introdução, eu vou lembrar agora de uma frase que eu falei no início do episódio.",
+    "stt_wav2vec": "MAS NUNCA CONCORRENDO PRINCIPALMENTE SE TIVER CHEIRO DE COMIDA NO AR BOM FEITA ESSA INTRODUÇÃO EU VO LEMBRAR AGORA DE UMA FRASE QUE EU FALEI NO INÍCIO DO EPISÓDIO"
+  }
+}

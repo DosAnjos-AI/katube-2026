@@ -1,0 +1,16 @@
+{
+  "b687b7f5e93d7666cfe4da9eb17c4889_001.ogg": {
+    "tempo_inicio": "00:00:00.000",
+    "tempo_fim": "00:00:05.134",
+    "duracao": 5.13,
+    "texto": null,
+    "legenda": null,
+    "vad": true,
+    "mos_score": 2.326144218444824,
+    "mos_stoi": 0.9424603581428528,
+    "mos_si_sdr": 13.683159828186035,
+    "mos_qualidade": "media",
+    "overlap01": false,
+    "stt_whisper": "E depois o Lewandowski, aquela bola na trave, que o Navas foi lá conferir e não chegou nem perto."
+  }
+}
