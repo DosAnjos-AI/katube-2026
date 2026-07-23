@@ -44,3 +44,7 @@ audacity_data/
 *.flac
 *.ogg
 .DS_Store
+
+# Credenciais - NUNCA versionar
+.env
+.env.*
