@@ -202,14 +202,14 @@ MOS_FILTER = {
         # Áudios com MOS < min_threshold são DESCARTADOS
         # Valores típicos: 1.5-2.5
         # Exemplo: 2.0 = descarta áudios muito ruins
-        'min_threshold': 0.1,
+        'min_threshold': 1.0,
         
         # Limiar para alta qualidade
         # Áudios com MOS >= max_threshold são considerados ÓTIMOS
         # Não precisam de denoising posterior
         # Valores típicos: 3.0-4.0
         # Exemplo: 3.5 = áudios acima disso vão direto pro dataset
-        'max_threshold': 4.9,
+        'max_threshold': 1.00001,
         
         # Faixa intermediária (calculada automaticamente):
         # min_threshold <= MOS < max_threshold
@@ -475,7 +475,7 @@ DEEPFILTERNET_DENOISER = {
     # 
     # IMPORTANTE: Os arquivos originais (input) SEMPRE permanecem intactos
     #             O denoising cria novos arquivos processados no output
-    "mos_quality_filter": ["media", "baixa", "alta"],
+    "mos_quality_filter": ["media"],
     
     # Dispositivo de processamento
     # Opções: "auto", "gpu", "cpu"

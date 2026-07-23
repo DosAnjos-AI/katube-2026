@@ -22,3 +22,25 @@ cache/
 *.wav
 
 
+
+# Dados de processamento - conteudo ignorado, pastas preservadas
+arquivos/temp/*
+!arquivos/temp/README.md
+arquivos/audios/*
+!arquivos/audios/README.md
+
+# Estado de execucao do executor.sh
+tempo.txt
+pasta_atual.txt
+
+# Absorvido de gitignore.git
+.venv/
+.idea/
+.vscode/settings.json
+*.swp
+*.pyo
+output/
+audacity_data/
+*.flac
+*.ogg
+.DS_Store
