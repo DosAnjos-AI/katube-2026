@@ -593,31 +593,4 @@ SOX_NORMALIZER = {
     # Valores muito negativos resultam em áudio baixo
     # Recomendação: -3.0 para datasets de treino
     "target_level_db": -3.0,
-    
-    # Remover silêncios no início e fim dos arquivos
-    # Valores: True, False
-    #   True  → Remove silêncios (economiza storage + melhora treino)
-    #   False → Preserva áudio original completo
-    # 
-    # Benefícios quando True:
-    #   - Reduz tamanho do dataset (menos padding inútil)
-    #   - Melhora eficiência de treino (modelo foca em fala)
-    #   - Facilita alinhamento temporal em pipelines downstream
-    # 
-    # Desvantagem: Perde contexto de pausas naturais
-    # Recomendação: True para maioria dos casos STT/TTS
-    "remove_silence": True,
-    
-    # Threshold para detecção de silêncio em decibéis
-    # Valores típicos: -50, -40, -30 (em dB, negativos)
-    #   -50 → Mais sensível (remove até ruído de fundo baixo)
-    #   -40 → Balanceado (padrão recomendado)
-    #   -30 → Menos sensível (remove apenas silêncios óbvios)
-    # 
-    # IMPORTANTE: Só tem efeito se remove_silence=True
-    # Valores muito altos (-20) podem cortar fala suave
-    # Valores muito baixos (-60) podem não remover silêncio
-    # 
-    # Recomendação: -40 dB para áudio limpo, -50 dB para áudio ruidoso
-    "silence_threshold_db": -40,
 }

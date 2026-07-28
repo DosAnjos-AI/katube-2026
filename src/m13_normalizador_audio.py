@@ -141,24 +141,7 @@ def construir_comando_sox(
     elif normalize_method == 'loudness':
         # Normaliza baseado em percepcao humana (LUFS)
         comando.extend(['loudness', str(target_db)])
-    
-    # Remocao de silencio
-    if config['remove_silence']:
-        threshold_db = config['silence_threshold_db']
-        
-        # Remove silencio no inicio
-        # Sintaxe: silence [-l] above-periods [duration threshold[d|%]]
-        comando.extend(['silence', '1', '0.1', f'{threshold_db}d'])
-        
-        # Inverte audio
-        comando.append('reverse')
-        
-        # Remove silencio no fim (que agora esta no inicio apos reverse)
-        comando.extend(['silence', '1', '0.1', f'{threshold_db}d'])
-        
-        # Inverte novamente para voltar ao normal
-        comando.append('reverse')
-    
+
     return comando
 
 
@@ -270,7 +253,6 @@ def adicionar_campos_sox(metadados: Dict, config: Dict, processado: bool) -> Dic
         metadados_atualizados['sox_output_format'] = config['output_format']
         metadados_atualizados['sox_normalize_method'] = config['normalize_method']
         metadados_atualizados['sox_target_level_db'] = config['target_level_db']
-        metadados_atualizados['sox_remove_silence'] = config['remove_silence']
         metadados_atualizados['utilizou_sox'] = True
     else:
         metadados_atualizados['sox_sample_rate'] = None
@@ -279,7 +261,6 @@ def adicionar_campos_sox(metadados: Dict, config: Dict, processado: bool) -> Dic
         metadados_atualizados['sox_output_format'] = None
         metadados_atualizados['sox_normalize_method'] = None
         metadados_atualizados['sox_target_level_db'] = None
-        metadados_atualizados['sox_remove_silence'] = None
         metadados_atualizados['utilizou_sox'] = False
     
     return metadados_atualizados

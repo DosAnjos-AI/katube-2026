@@ -199,7 +199,7 @@ stt_whisper | stt_wav2vec | sim_leg_whisper | sim_leg_wav2vec | sim_whisper_wav2
 nota_similaridade | status_similaridade | metrica_similaridade |
 utilizou_denoiser | sox_sample_rate | sox_bit_depth | sox_channels |
 sox_output_format | sox_normalize_method | sox_target_level_db |
-sox_remove_silence | utilizou_sox
+utilizou_sox
 ```
 
 **`dataset/audio_dataset/{audio_id}/*.flac`** — os arquivos de áudio finais
