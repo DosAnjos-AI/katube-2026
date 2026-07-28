@@ -224,14 +224,14 @@ MOS_FILTER = {
         # Áudios com MOS < min_threshold são DESCARTADOS
         # Valores típicos: 1.5-2.5
         # Exemplo: 2.0 = descarta áudios muito ruins
-        'min_threshold': 1.0,
+        'min_threshold': 2.0,
         
         # Limiar para alta qualidade
         # Áudios com MOS >= max_threshold são considerados ÓTIMOS
         # Não precisam de denoising posterior
         # Valores típicos: 3.0-4.0
         # Exemplo: 3.5 = áudios acima disso vão direto pro dataset
-        'max_threshold': 1.00001,
+        'max_threshold': 3.0,
         
         # Faixa intermediária (calculada automaticamente):
         # min_threshold <= MOS < max_threshold
@@ -334,7 +334,7 @@ OVERLAP_DETECTOR = {
         'batch_size': 'auto',
     },
     'timeout': {
-    'por_audio_segundos': 60,  # Timeout máximo por áudio
+    'por_audio_segundos': 150,  # Timeout máximo por áudio
     },
     
     # ------------------------------------------------------------------------
@@ -451,7 +451,7 @@ SIMILARITY_VALIDATOR = {
     #   - Similaridade 0.70 → REJEITADO (<0.75)
     # Valores típicos: 0.70 (permissivo), 0.80 (equilibrado), 0.90 (restritivo)
     # Útil para: filtrar segmentos com alta divergência entre modelos STT
-    "similarity_threshold": 0.05,
+    "similarity_threshold": 0.85,
     
     # Tipo de métrica para cálculo de similaridade
     # Opções disponíveis:
@@ -559,7 +559,7 @@ SOX_NORMALIZER = {
     # 
     # IMPORTANTE: Modelos STT/TTS geralmente esperam 16kHz ou 22050Hz
     # Valores mais altos = maior qualidade mas maior custo computacional
-    "sample_rate": 16000,
+    "sample_rate": 24000,
     # Valores comuns: 8000, 16000, 22050, 24000, 44100, 48000 (em Hz)
     # Profundidade de bits (bit depth) do áudio
     # Valores: 16, 24, 32 (em bits)
