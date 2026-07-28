@@ -378,7 +378,6 @@ def gerar_json_tracking(segmentos: list, pasta_destino: Path, id_audio: str, for
             'tempo_fim': segundos_para_timestamp(seg['tempo_fim']),
             'duracao': round(seg['duracao'], 2),
             'texto': None,      # VAD não gera transcrição
-            'legenda': None,    # VAD não usa legendas
             'vad': True         # Identifica segmentação por VAD
         }
     

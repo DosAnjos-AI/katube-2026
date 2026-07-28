@@ -49,7 +49,6 @@ spotify2026/
 │   ├── m01_load_models.py            # Singleton de modelos de IA (carrega 1x)
 │   ├── m02_diretorios.py             # Cria estrutura de pastas do áudio
 │   ├── m04_segmentador_audio_vad.py  # Segmentação por VAD (Silero)
-│   ├── m04_segmentador_audio_leg.py  # Segmentação por legendas (alternativa)
 │   ├── m05_segmentador_16khz.py      # Conversão para 16 kHz mono
 │   ├── m06_mos_filter.py             # Filtro de qualidade MOS (SQUIM)
 │   ├── m07_overlap1.py               # Detecção de sobreposição de locutores (pyannote)
@@ -117,7 +116,6 @@ Quebra o áudio longo em segmentos curtos de fala. Modo definido por
   pausas naturais. Parâmetros em `SEGMENTADOR_AUDIO_VAD` (threshold de voz, durações
   mín./máx. de segmento, padding nos cortes). Se nenhum segmento válido é encontrado,
   o áudio é **descartado**.
-- **`'legenda'`**: segmenta a partir de legendas externas (`SEGMENTADOR_AUDIO`).
 - **`''`**: pula (áudio já vem segmentado).
 
 Saída: segmentos em `02-segmentos_originais/`.
@@ -147,15 +145,16 @@ Transcreve com **`lgris/wav2vec2-large-xlsr-open-brazilian-portuguese`**. Campo
 por concordância (M11).
 
 ### M10 — Normalização de texto *(obrigatório)*
-Normaliza as transcrições (e legenda, se houver) segundo `TEXT_NORMALIZER`: remove
+Normaliza as transcrições segundo `TEXT_NORMALIZER`: remove
 pontuação que afeta dicção e, opcionalmente, acentuação gráfica. Produz os campos
 `*_normalizado` usados apenas para comparação.
 
 ### M11 — Validação de similaridade *(obrigatório)*
-Compara as transcrições normalizadas entre si (Whisper × Wav2Vec × legenda) usando
+Compara as duas transcrições normalizadas entre si (Whisper × Wav2Vec) usando
 **WER/CER/Levenshtein** (`SIMILARITY_VALIDATOR`). Segmentos com similaridade abaixo
 do `similarity_threshold` são marcados como reprovados — alta divergência entre dois
-STTs indica transcrição ruim ou áudio problemático. Campos `sim_*`,
+STTs indica transcrição ruim ou áudio problemático. As duas transcrições são
+obrigatórias: sem uma delas o segmento não é elegível. Campos `sim_whisper_wav2vec`,
 `nota_similaridade`, `status_similaridade`.
 
 ### M12 — Denoiser *(condicional — `Denoiser`)*
@@ -193,9 +192,9 @@ cada módulo** (absoluto e percentual).
 **`dataset/dataset.csv`** — uma linha por segmento aprovado. Colunas principais:
 
 ```
-arquivo_nome | caminho | tempo_inicio | tempo_fim | duracao | texto | legenda | vad |
+arquivo_nome | caminho | tempo_inicio | tempo_fim | duracao | texto | vad |
 mos_score | mos_stoi | mos_si_sdr | mos_qualidade | overlap01 |
-stt_whisper | stt_wav2vec | sim_leg_whisper | sim_leg_wav2vec | sim_whisper_wav2vec |
+stt_whisper | stt_wav2vec | sim_whisper_wav2vec |
 nota_similaridade | status_similaridade | metrica_similaridade |
 utilizou_denoiser | sox_sample_rate | sox_bit_depth | sox_channels |
 sox_output_format | sox_normalize_method | sox_target_level_db |
@@ -217,7 +216,7 @@ Toda a configuração fica em [config.py](config.py). O ponto de partida é o **
 
 ```python
 MASTER = {
-    'segmentacao': 'vad',        # 'vad' | 'legenda' | '' (já segmentado)
+    'segmentacao': 'vad',        # 'vad' | '' (já segmentado)
     'mos_filter': True,
     'overlap': True,
     'transcricao_whisper': True,

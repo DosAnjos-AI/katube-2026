@@ -28,7 +28,6 @@ from config import MASTER, EXTENSOES_AUDIO
 
 # Importar modulos do pipeline (todos estao em ./src/)
 from m02_diretorios import criar_diretorios
-from m04_segmentador_audio_leg import executar_segmentacao as executar_segmentacao_leg
 from m04_segmentador_audio_vad import executar_segmentacao_vad
 from m05_segmentador_16khz import processar_pasta
 from m06_mos_filter import processar_mos
@@ -255,10 +254,6 @@ def salvar_metadados_csv(
         'm02_criar_diretorios_segundos': round(tempos_modulos.get('m02', 0) or 0, 2) if tempos_modulos.get('m02') is not None else 'null',
         'm02_criar_diretorios_percentual': percentuais.get('m02') if percentuais.get('m02') is not None else 'null',
 
-        # M04 Legendas
-        'm04_segmentacao_legendas_segundos': round(tempos_modulos.get('m04_leg', 0) or 0, 2) if tempos_modulos.get('m04_leg') is not None else 'null',
-        'm04_segmentacao_legendas_percentual': percentuais.get('m04_leg') if percentuais.get('m04_leg') is not None else 'null',
-        
         # M04 VAD
         'm04_segmentacao_vad_segundos': round(tempos_modulos.get('m04_vad', 0) or 0, 2) if tempos_modulos.get('m04_vad') is not None else 'null',
         'm04_segmentacao_vad_percentual': percentuais.get('m04_vad') if percentuais.get('m04_vad') is not None else 'null',
@@ -360,14 +355,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         # ======================================================================
         modo_segmentacao = MASTER.get('segmentacao', '')
 
-        if modo_segmentacao == 'legenda':
-            logger.info("[M04-LEG] Executando segmentacao por legendas...")
-            inicio = time.time()
-            executar_segmentacao_leg(audio_id)
-            tempos_modulos['m04_leg'] = time.time() - inicio
-            logger.info(f"[M04-LEG] Concluido ({tempos_modulos['m04_leg']:.2f}s)")
-
-        elif modo_segmentacao == 'vad':
+        if modo_segmentacao == 'vad':
             logger.info("[M04-VAD] Executando segmentacao por VAD...")
             inicio = time.time()
             tem_segmentos = executar_segmentacao_vad(audio_id)
@@ -563,7 +551,7 @@ def main():
 
     # Dicionario para acumular tempos de todos os modulos DESTA EXECUCAO
     tempos_modulos_acumulados = {
-        'm02': 0.0, 'm04_leg': None, 'm04_vad': None,
+        'm02': 0.0, 'm04_vad': None,
         'm05': 0.0, 'm06': None, 'm07': None, 'm08': None, 'm09': None,
         'm10': 0.0, 'm11': 0.0, 'm12': None, 'm13': 0.0, 'm14': 0.0, 'm15': None
     }

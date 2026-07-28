@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Modulo m10_texto_normalizador.py
-Normaliza textos de legendas e transcrições STT (Whisper e WAV2VEC2)
+Normaliza as transcrições STT (Whisper e WAV2VEC2)
 Adiciona campos normalizados aos metadados JSON para análise WER
 """
 
@@ -441,17 +441,6 @@ def normalizar_segmentos(
         eh_elegivel = (segmentos_elegiveis is None) or (segment_id in segmentos_elegiveis)
         
         if eh_elegivel:
-            # Normaliza campo "texto" -> "stt_leg_normalizado"
-            if 'texto' in segment_data and segment_data['texto']:
-                texto_norm = normalize_text(
-                    segment_data['texto'],
-                    remove_punctuation=remove_punct,
-                    remove_accents=remove_acc
-                )
-                segment_data['stt_leg_normalizado'] = texto_norm
-            else:
-                segment_data['stt_leg_normalizado'] = None
-            
             # Normaliza campo "stt_whisper" -> "stt_whisper_normalizado"
             if 'stt_whisper' in segment_data and segment_data['stt_whisper']:
                 whisper_norm = normalize_text(
@@ -480,7 +469,6 @@ def normalizar_segmentos(
             
         else:
             # Segmento nao elegivel: adiciona campos como null
-            segment_data['stt_leg_normalizado'] = None
             segment_data['stt_whisper_normalizado'] = None
             segment_data['stt_wav2vec_normalizado'] = None
     

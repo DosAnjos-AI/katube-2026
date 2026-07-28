@@ -69,29 +69,6 @@ MASTER = {
 
 
 # =============================================================================
-# MÓDULO 01: SEGMENTADOR DE ÁUDIO VAD (entrada por segmentacao)
-# =============================================================================
-
-# Configuracoes do modulo de segmentacao de audio por legendas externas
-# Utilizado quando MASTER['segmentacao'] = 'legenda'
-SEGMENTADOR_AUDIO = {
-    
-    # ------------------------------------------------------------------------
-    # Controle do tamanho dos segmentos criados
-    # ------------------------------------------------------------------------
-    # min_seg: Duração mínima de cada segmento em segundos
-    # - Segmentos menores serão agrupados com próximos (respeitando locutores)
-    # - Tolerância: aceita até 0.8s a menos
-    'min_seg': 2,
-    
-    # max_seg: Duração máxima de cada segmento em segundos
-    # - Segmentos não ultrapassam este limite
-    # - Tolerância: aceita até 0.8s a mais
-    'max_seg': 15,
-}
-
-
-# =============================================================================
 # MÓDULO 01: SEGMENTADOR DE ÁUDIO VAD (VOICE ACTIVITY DETECTION)
 # =============================================================================
 
@@ -99,8 +76,7 @@ SEGMENTADOR_AUDIO = {
 # Utilizado quando MASTER['segmentacao'] = 'vad'
 # 
 # Este módulo utiliza Silero-VAD para detectar automaticamente momentos de
-# fala e silêncio no áudio, criando segmentos baseados em pausas naturais
-# (sem depender de legendas).
+# fala e silêncio no áudio, criando segmentos baseados em pausas naturais.
 #
 # IMPORTANTE: Sempre processa áudio em 16 kHz internamente (conversão automática)
 SEGMENTADOR_AUDIO_VAD = {

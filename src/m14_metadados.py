@@ -56,7 +56,6 @@ INDEX_SUFFIX = '.index'
 COLUNAS_FIXAS = ['arquivo_nome', 'caminho']
 
 CAMPOS_EXCLUIDOS = [
-    'stt_leg_normalizado',
     'stt_whisper_normalizado',
     'stt_wav2vec_normalizado',
 ]

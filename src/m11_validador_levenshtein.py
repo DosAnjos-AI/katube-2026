@@ -23,9 +23,6 @@ from config import SIMILARITY_VALIDATOR, TEXT_NORMALIZER
 # CONFIGURACAO
 # ==============================================================================
 
-# Campos de texto a comparar (todos opcionais)
-CAMPOS_STT = ["stt_leg_normalizado", "stt_whisper_normalizado", "stt_wav2vec_normalizado"]
-
 # Configuracoes do validador
 SIMILARITY_THRESHOLD = SIMILARITY_VALIDATOR["similarity_threshold"]
 METRIC_TYPE = SIMILARITY_VALIDATOR["metric_type"]
@@ -193,69 +190,48 @@ def calcular_similaridade(texto1: str, texto2: str, metrica: str) -> float:
 
 def validar_segmento(dados_segmento: Dict) -> Dict:
     """
-    Valida similaridade entre transcricoes STT de um segmento
-    
+    Valida similaridade entre as transcricoes STT de um segmento.
+
+    Criterio: whisper e wav2vec sao ambos obrigatorios (2 de 2). Se qualquer
+    um dos dois estiver ausente ou vazio, o segmento nao e elegivel e todos
+    os campos de similaridade saem em None.
+
     Args:
         dados_segmento: Dicionario com metadados do segmento
-        
+
     Returns:
         Dicionario com campos de similaridade calculados
     """
-    # Identifica campos STT disponiveis
-    campos_disponiveis = [campo for campo in CAMPOS_STT if campo in dados_segmento and dados_segmento[campo]]
-    
     # Inicializa campos de saida
     resultado = {
-        "sim_leg_whisper": None,
-        "sim_leg_wav2vec": None,
         "sim_whisper_wav2vec": None,
         "nota_similaridade": None,
         "status_similaridade": None,
         "metrica_similaridade": METRIC_TYPE
     }
-    
-    # Verifica elegibilidade (minimo 2 campos)
-    if len(campos_disponiveis) < 2:
+
+    texto_whisper = dados_segmento.get("stt_whisper_normalizado")
+    texto_wav2vec = dados_segmento.get("stt_wav2vec_normalizado")
+
+    # Verifica elegibilidade: as duas transcricoes sao obrigatorias
+    if not texto_whisper or not texto_wav2vec:
         return resultado
-    
-    # Lista para armazenar todas as similaridades calculadas
-    similaridades = []
-    
-    # Calcula similaridades par-a-par
-    if "stt_leg_normalizado" in campos_disponiveis and "stt_whisper_normalizado" in campos_disponiveis:
-        resultado["sim_leg_whisper"] = calcular_similaridade(
-            dados_segmento["stt_leg_normalizado"],
-            dados_segmento["stt_whisper_normalizado"],
-            METRIC_TYPE
-        )
-        similaridades.append(resultado["sim_leg_whisper"])
-    
-    if "stt_leg_normalizado" in campos_disponiveis and "stt_wav2vec_normalizado" in campos_disponiveis:
-        resultado["sim_leg_wav2vec"] = calcular_similaridade(
-            dados_segmento["stt_leg_normalizado"],
-            dados_segmento["stt_wav2vec_normalizado"],
-            METRIC_TYPE
-        )
-        similaridades.append(resultado["sim_leg_wav2vec"])
-    
-    if "stt_whisper_normalizado" in campos_disponiveis and "stt_wav2vec_normalizado" in campos_disponiveis:
-        resultado["sim_whisper_wav2vec"] = calcular_similaridade(
-            dados_segmento["stt_whisper_normalizado"],
-            dados_segmento["stt_wav2vec_normalizado"],
-            METRIC_TYPE
-        )
-        similaridades.append(resultado["sim_whisper_wav2vec"])
-    
-    # Calcula media das similaridades
-    if similaridades:
-        resultado["nota_similaridade"] = sum(similaridades) / len(similaridades)
-        
-        # Define status baseado no threshold
-        if resultado["nota_similaridade"] >= SIMILARITY_THRESHOLD:
-            resultado["status_similaridade"] = "aprovado"
-        else:
-            resultado["status_similaridade"] = "reprovado"
-    
+
+    resultado["sim_whisper_wav2vec"] = calcular_similaridade(
+        texto_whisper,
+        texto_wav2vec,
+        METRIC_TYPE
+    )
+
+    # Com apenas um par comparado, a nota e a propria similaridade whisper x wav2vec
+    resultado["nota_similaridade"] = resultado["sim_whisper_wav2vec"]
+
+    # Define status baseado no threshold
+    if resultado["nota_similaridade"] >= SIMILARITY_THRESHOLD:
+        resultado["status_similaridade"] = "aprovado"
+    else:
+        resultado["status_similaridade"] = "reprovado"
+
     return resultado
 
 
@@ -314,8 +290,6 @@ def processar_validacao(audio_id: str):
         if segmentos_elegiveis is not None and segment_id not in segmentos_elegiveis:
             # Segmento nao elegivel - adiciona campos null
             dados_segmento.update({
-                "sim_leg_whisper": None,
-                "sim_leg_wav2vec": None,
                 "sim_whisper_wav2vec": None,
                 "nota_similaridade": None,
                 "status_similaridade": None,
@@ -377,7 +351,7 @@ def processar_validacao(audio_id: str):
     print(f"\nSegmentos processados: {total_processados}")
     print(f"  - Aprovados: {total_aprovados}")
     print(f"  - Reprovados: {total_reprovados}")
-    print(f"  - Nao elegiveis (< 2 campos STT): {total_nao_elegiveis}")
+    print(f"  - Nao elegiveis (falta whisper ou wav2vec): {total_nao_elegiveis}")
     print(f"\nTotal de segmentos no arquivo: {len(dados_acompanhamento)}")
     print(f"{'='*70}\n")
 
