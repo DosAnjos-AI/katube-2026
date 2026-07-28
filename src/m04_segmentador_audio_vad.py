@@ -17,7 +17,7 @@ import torchaudio
 
 # Importar configurações do projeto
 sys.path.append(str(Path(__file__).parent.parent))
-from config import SEGMENTADOR_AUDIO_VAD, PROJECT_ROOT
+from config import SEGMENTADOR_AUDIO_VAD, PROJECT_ROOT, EXTENSOES_AUDIO
 
 
 # =============================================================================
@@ -423,7 +423,7 @@ def executar_segmentacao_vad(audio_id: str) -> bool:
     # Localizar audio
     arquivos_audio = [
         f for f in pasta_origem.iterdir()
-        if f.suffix.lower() in ['.mp3', '.flac', '.wav', '.m4a', '.ogg', '.opus']
+        if f.suffix.lower() in EXTENSOES_AUDIO
     ]
 
     if not arquivos_audio:
@@ -510,4 +510,8 @@ def executar_segmentacao_vad(audio_id: str) -> bool:
 # =============================================================================
 
 if __name__ == "__main__":
-    executar_segmentacao_vad('CA6TSoMw86k') # verificar para testes, garantir que existe este id no input "./arquivos/audios/"
+    # Execucao direta exige o audio_id como argumento - sem id fixo no codigo
+    if len(sys.argv) != 2:
+        print("Uso: python src/m04_segmentador_audio_vad.py <audio_id>")
+        sys.exit(1)
+    executar_segmentacao_vad(sys.argv[1])

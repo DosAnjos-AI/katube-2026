@@ -7,6 +7,52 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 
 
 # ============================================================================
+# FORMATOS DE ÁUDIO - FONTE ÚNICA
+# ============================================================================
+# Conjunto de extensões que os módulos do pipeline reconhecem como áudio.
+# Esta é a ÚNICA definição do projeto: todo módulo importa daqui.
+# Comparação sempre com `suffix.lower()`.
+#
+# ----------------------------------------------------------------------------
+# AS TRÊS LISTAS DE FORMATO (confirmadas empiricamente no build instalado
+# nesta máquina - relatório 04, Ubuntu 24.04.4)
+# ----------------------------------------------------------------------------
+#
+# 1) ENTRADA - o que o FFmpeg 6.1.1 consegue DECODIFICAR:
+#       mp3, wav, flac, ogg, opus, m4a, aac, wma, aiff, au
+#
+#    ATENÇÃO: a lista EM VIGOR abaixo (EXTENSOES_AUDIO) é mais restrita que
+#    essa - ela NÃO inclui `opus`, `aiff` nem `au`. Motivo: hoje não existe
+#    conversão para WAV na porta de entrada, então o formato do arquivo de
+#    entrada atravessa o pipeline inteiro e precisa ser processável por
+#    TODOS os módulos. Um `.opus` era aceito na entrada e rejeitado seis
+#    módulos adiante. Enquanto a conversão de entrada não existir, o
+#    arquivo é recusado logo na porta, com aviso, em vez de falhar no meio.
+#
+# 2) INTERMEDIÁRIO - `wav`, fixo e não configurável. É o formato usado
+#    internamente entre etapas (VAD sempre trabalha em 16 kHz mono).
+#
+# 3) SAÍDA - o que o SoX 14.4.2 consegue ESCREVER de forma útil:
+#       flac, wav, ogg, mp3   (padrão do projeto: flac - ver SOX_NORMALIZER)
+#
+#    O SoX também escreve aiff, au, caf, w64, raw, voc e amr-nb, mas estes
+#    ficam documentados como NÃO RECOMENDADOS - `amr-nb`, em particular,
+#    força reamostragem para 8 kHz. Quem precisar de outro formato converte
+#    fora do projeto, com FFmpeg.
+#
+# ----------------------------------------------------------------------------
+# ORIGEM DOS BINÁRIOS (relatório 04)
+# ----------------------------------------------------------------------------
+# `sox` v14.4.2 e `soxi` vêm de /usr/bin, ou seja, do SISTEMA OPERACIONAL,
+# NÃO do env conda `katube-2026`. O mesmo vale para `ffmpeg` e `ffprobe`
+# 6.1.1 (/usr/bin). Consequência prática: recriar o env a partir do
+# `environment.yml` NÃO reproduz o ambiente - os binários precisam ser
+# instalados à parte, no sistema, e a versão deles muda o que o pipeline
+# consegue ler e escrever.
+EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
+
+
+# ============================================================================
 # BLOCO MASTER - Controle de Módulos Ativos
 # ============================================================================
 # Ativa/desativa módulos principais do sistema

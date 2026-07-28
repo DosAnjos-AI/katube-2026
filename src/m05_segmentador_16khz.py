@@ -5,6 +5,7 @@ Converte segmentos de audio para 16kHz mono quando necessario
 Mantem formato original, copia JSON de metadados
 """
 
+import sys
 import subprocess
 import json
 import shutil
@@ -17,13 +18,11 @@ from typing import List, Tuple
 # CONFIGURACAO DE CAMINHOS
 # ==============================================================================
 
+# Adicionar pasta raiz ao path para importar config
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
 
-# ==============================================================================
-# EXTENSOES DE AUDIO SUPORTADAS
-# ==============================================================================
-
-EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
+from config import EXTENSOES_AUDIO
 
 # ==============================================================================
 # FUNCOES AUXILIARES
@@ -242,7 +241,7 @@ def processar_pasta(audio_id: str):
     pasta_output = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "03-segments_16khz"
     
     if not pasta_input.exists():
-        print(f"ERRO: Pasta de input nao existe: {PASTA_INPUT}")
+        print(f"ERRO: Pasta de input nao existe: {pasta_input}")
         return
     
     # Criar pasta output se nao existir
@@ -341,4 +340,8 @@ def processar_pasta(audio_id: str):
 # ==============================================================================
 
 if __name__ == "__main__":
-    processar_pasta('CA6TSoMw86k') # verificar para testes, garantir que existe este id no input "./arquivos/audios/"
+    # Execucao direta exige o audio_id como argumento - sem id fixo no codigo
+    if len(sys.argv) != 2:
+        print("Uso: python src/m05_segmentador_16khz.py <audio_id>")
+        sys.exit(1)
+    processar_pasta(sys.argv[1])

@@ -26,9 +26,6 @@ from m01_load_models import ModelManager
 # CONFIGURACAO
 # ==============================================================================
 
-# Extensoes de audio suportadas
-EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
-
 # Modelo wav2vec2
 MODELO_WAV2VEC2 = "lgris/wav2vec2-large-xlsr-open-brazilian-portuguese"
 

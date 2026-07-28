@@ -99,4 +99,21 @@ def executar_cleanup(audio_id: str):
 # ==============================================================================
 
 if __name__ == "__main__":
-    executar_cleanup('B4RgpqJhoIo')
+    # Guarda de execucao direta: este modulo APAGA pastas reais.
+    # Exige audio_id como argumento (sem id fixo no codigo) e confirmacao
+    # digitada. Nada disso roda quando o main.py chama executar_cleanup().
+    if len(sys.argv) != 2:
+        print("Uso: python src/m15_cleanup.py <audio_id>")
+        sys.exit(1)
+
+    audio_id_alvo = sys.argv[1]
+    print("ATENCAO: cleanup em execucao direta apaga as pastas abaixo")
+    print(f"  temp : {PROJECT_ROOT / 'arquivos' / 'temp' / audio_id_alvo}")
+    print(f"  input: {PROJECT_ROOT / 'arquivos' / 'audios' / audio_id_alvo}")
+    print(f"  modo configurado em MASTER['cleanup']: {MASTER.get('cleanup', 'none')}")
+
+    if input("Confirma? (digite SIM): ") != "SIM":
+        print("Cancelado - nada foi apagado")
+        sys.exit(1)
+
+    executar_cleanup(audio_id_alvo)

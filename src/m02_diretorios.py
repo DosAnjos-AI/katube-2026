@@ -1,3 +1,4 @@
+import sys
 from pathlib import Path
 import shutil
 
@@ -105,5 +106,8 @@ def criar_diretorios(audio_id: str):
 
 
 if __name__ == '__main__':
-    audio_id_testes = 'exemplo_audio_id'   # para testes, verificar se existe pasta com esse id
-    criar_diretorios(audio_id_testes)
+    # Execucao direta exige o audio_id como argumento - sem id fixo no codigo
+    if len(sys.argv) != 2:
+        print("Uso: python src/m02_diretorios.py <audio_id>")
+        sys.exit(1)
+    criar_diretorios(sys.argv[1])

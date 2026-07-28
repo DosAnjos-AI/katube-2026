@@ -21,7 +21,7 @@ import os
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from config import OVERLAP_DETECTOR, PROJECT_ROOT
+from config import OVERLAP_DETECTOR, PROJECT_ROOT, EXTENSOES_AUDIO
 from m01_load_models import ModelManager
 
 
@@ -31,9 +31,6 @@ from m01_load_models import ModelManager
 
 # Carregar variaveis de ambiente (.env)
 load_dotenv(PROJECT_ROOT / '.env')
-
-# Extensoes de audio suportadas
-EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
 
 
 # ==============================================================================

@@ -34,9 +34,6 @@ from m01_load_models import ModelManager
 # CONFIGURACAO
 # ==============================================================================
 
-# Extensoes de audio suportadas
-EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
-
 # Configuracoes do DeepFilterNet3
 MOS_QUALITY_FILTER = DEEPFILTERNET_DENOISER["mos_quality_filter"]
 DEVICE = DEEPFILTERNET_DENOISER["device"]

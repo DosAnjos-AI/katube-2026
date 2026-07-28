@@ -11,23 +11,20 @@ from pathlib import Path
 from typing import Dict, List, Tuple, Optional
 
 import torch
-from transformers import AutoModelForSpeechSeq2Seq, AutoProcessor, pipeline
+from transformers import pipeline
 import librosa
 
 # Adicionar pasta raiz ao path para importar config
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from config import STT_WHISPER, PROJECT_ROOT
+from config import STT_WHISPER, PROJECT_ROOT, EXTENSOES_AUDIO
 from m01_load_models import ModelManager
 
 
 # ==============================================================================
 # CONFIGURACAO
 # ==============================================================================
-
-# Extensoes de audio suportadas
-EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
 
 # Modelo Whisper
 MODELO_WHISPER = "freds0/distil-whisper-large-v3-ptbr"

@@ -5,7 +5,6 @@ Processa audios gerando datasets para TTS/STT
 """
 
 import sys
-import os
 import logging
 import csv
 import json
@@ -25,7 +24,7 @@ sys.path.insert(0, str(SRC_PATH))
 # CUDA_VISIBLE_DEVICES="" no .env forca CPU nesta maquina
 load_dotenv(PROJECT_ROOT / '.env')
 
-from config import MASTER
+from config import MASTER, EXTENSOES_AUDIO
 
 # Importar modulos do pipeline (todos estao em ./src/)
 from m02_diretorios import criar_diretorios
@@ -97,9 +96,6 @@ def configurar_logger(audio_id: str) -> logging.Logger:
 # ==============================================================================
 # FUNCOES AUXILIARES
 # ==============================================================================
-
-EXTENSOES_AUDIO = {'.flac', '.mp3', '.wav', '.ogg', '.m4a', '.aac', '.wma', '.opus'}
-
 
 def listar_ids_disponiveis() -> List[str]:
     """
