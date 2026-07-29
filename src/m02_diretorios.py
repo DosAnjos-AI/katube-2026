@@ -7,7 +7,39 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 
 
+def limpar_estado_anterior(audio_id: str):
+    """
+    Remove todo o estado deixado por rodadas anteriores deste audio_id.
+
+    Sem isso, o que a nova rodada nao regravar sobrevive e se mistura ao
+    estado novo: segmentos orfaos em temp/{id} e .flac orfaos no
+    dataset entregue. O processamento de um id nasce sempre do zero.
+    """
+    # Guarda obrigatoria: id vazio, '.' ou '..' colapsa o caminho na raiz e
+    # o rmtree passaria a mirar temp/ e audio_dataset/ inteiros. Falha alto.
+    if not audio_id or audio_id in ('.', '..') or '/' in audio_id or '\\' in audio_id:
+        raise ValueError(f"audio_id invalido para limpeza: {audio_id!r}")
+
+    alvos = [
+        PROJECT_ROOT / "arquivos" / "temp" / audio_id,
+        PROJECT_ROOT / "dataset" / "audio_dataset" / audio_id,
+    ]
+
+    for alvo in alvos:
+        if not alvo.exists():
+            continue
+
+        total_arquivos = sum(1 for item in alvo.rglob('*') if item.is_file())
+        shutil.rmtree(alvo)
+        print(f"Estado anterior removido: {alvo} ({total_arquivos} arquivo(s))")
+
+
 def criar_diretorios(audio_id: str):
+    #============================================================
+    # Reinicio limpo: nada de rodada anterior sobrevive
+    #============================================================
+    limpar_estado_anterior(audio_id)
+
     #============================================================
     # Criando pasta geral do audio onde estara todas as subpastas
     #============================================================

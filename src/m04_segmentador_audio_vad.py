@@ -358,27 +358,33 @@ def segmentar_audio(caminho_audio: Path, segmentos: list, pasta_destino: Path, i
             print(f"ERRO ao criar segmento {nome_segmento}: {e.stderr.decode()}")
 
 
-def gerar_json_tracking(segmentos: list, pasta_destino: Path, id_audio: str, formato: str):
+def gerar_json_tracking(segmentos: list, pasta_destino: Path, id_audio: str, formato: str, specs: dict):
     """
     Gera arquivo JSON com metadados dos segmentos
-    
+
     Args:
         segmentos: Lista de segmentos processados
         pasta_destino: Path da pasta de destino
         id_audio: ID do áudio
         formato: Extensão do arquivo
+        specs: Especificações do áudio-fonte (ja em memoria, sem leitura extra)
     """
     tracking = {}
-    
+
     for idx, seg in enumerate(segmentos, start=1):
         nome_segmento = f"{id_audio}_{idx:03d}.{formato}"
-        
+
         tracking[nome_segmento] = {
             'tempo_inicio': segundos_para_timestamp(seg['tempo_inicio']),
             'tempo_fim': segundos_para_timestamp(seg['tempo_fim']),
             'duracao': round(seg['duracao'], 2),
             'texto': None,      # VAD não gera transcrição
-            'vad': True         # Identifica segmentação por VAD
+            'vad': True,        # Identifica segmentação por VAD
+            # Proveniencia do arquivo FONTE (antes da segmentacao e da
+            # normalizacao) - define o teto de qualidade do segmento
+            'origem_codec': specs['codec'],
+            'origem_bitrate': specs['bitrate'],
+            'origem_sample_rate': specs['sample_rate']
         }
     
     # Salvar JSON
@@ -490,7 +496,7 @@ def executar_segmentacao_vad(audio_id: str) -> bool:
 
         # Gerar JSON
         print("\nGerando JSON de tracking...")
-        gerar_json_tracking(segmentos_finais, pasta_destino, id_audio, formato)
+        gerar_json_tracking(segmentos_finais, pasta_destino, id_audio, formato, specs)
 
         print(f"\nProcessamento concluído com sucesso!")
         resultado = True
