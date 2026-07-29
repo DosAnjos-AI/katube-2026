@@ -476,9 +476,23 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         # ======================================================================
         logger.info("[M14] Gerando metadados CSV...")
         inicio = time.time()
-        processar_metadados(audio_id)
+        resultado_m14 = processar_metadados(audio_id)
         tempos_modulos['m14'] = time.time() - inicio
-        logger.info(f"[M14] Concluido ({tempos_modulos['m14']:.2f}s)")
+
+        if not resultado_m14['sucesso']:
+            logger.error(f"[M14] FALHA: {resultado_m14['motivo_falha']}")
+            logger.error("="*80)
+            logger.error(f"PIPELINE INTERROMPIDA NO M14 PARA: {audio_id}")
+            logger.error("="*80)
+            return False
+
+        for aviso in resultado_m14['avisos']:
+            logger.warning(f"[M14] {aviso}")
+
+        logger.info(
+            f"[M14] Concluido ({tempos_modulos['m14']:.2f}s) - "
+            f"{resultado_m14['n_persistidos']} linha(s) persistida(s) no dataset.csv"
+        )
 
         # ======================================================================
         # M15 - CLEANUP (CONDICIONAL)
