@@ -162,17 +162,20 @@ def calcular_duracao_audios_aprovados(ids_processados: List[str]) -> float:
             try:
                 with open(historico_path, 'r', encoding='utf-8') as f:
                     dados = json.load(f)
-                
+
                 # Somar apenas duracoes validas (nao null)
                 for metadados in dados.values():
                     duracao = metadados.get('duracao')
                     if duracao is not None:
                         duracao_total += duracao
-                        
-            except Exception:
-                # Ignorar erros silenciosamente
-                pass
-    
+
+            except Exception as e:
+                # Historico existe mas nao pode ser lido: nao invalida o
+                # dataset ja gravado, mas nao pode sumir do relatorio
+                print(f"AVISO: falha ao ler historico de '{audio_id}' "
+                      f"({historico_path}): {e}")
+                print("       Duracao deste audio ficou de fora do total")
+
     return duracao_total
 
 
@@ -193,7 +196,11 @@ def obter_proximo_id_csv() -> int:
             reader = csv.DictReader(f, delimiter='|')
             ids = [int(row['id']) for row in reader if row['id'].isdigit()]
             return max(ids) + 1 if ids else 1
-    except Exception:
+    except Exception as e:
+        # CSV existe mas nao pode ser lido: voltar a 1 colide com ids ja
+        # gravados, entao o aviso precisa aparecer
+        print(f"AVISO: falha ao ler {csv_path}: {e}")
+        print("       Proximo id do CSV de metricas volta a 1 - risco de id repetido")
         return 1
 
 
@@ -346,8 +353,11 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         # ======================================================================
         logger.info("[M02] Criando estrutura de diretorios...")
         inicio = time.time()
-        criar_diretorios(audio_id)
+        sucesso = criar_diretorios(audio_id)
         tempos_modulos['m02'] = time.time() - inicio
+        if not sucesso:
+            logger.error("[M02] FALHOU - pasta de origem ausente. Abortando pipeline")
+            return False
         logger.info(f"[M02] Concluido ({tempos_modulos['m02']:.2f}s)")
 
         # ======================================================================
@@ -377,8 +387,11 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         # ======================================================================
         logger.info("[M05] Convertendo para 16kHz mono...")
         inicio = time.time()
-        processar_pasta(audio_id)
+        sucesso = processar_pasta(audio_id)
         tempos_modulos['m05'] = time.time() - inicio
+        if not sucesso:
+            logger.error("[M05] FALHOU - conversao 16kHz nao produziu saida. Abortando pipeline")
+            return False
         logger.info(f"[M05] Concluido ({tempos_modulos['m05']:.2f}s)")
 
         # ======================================================================
@@ -402,8 +415,11 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         if MASTER.get('overlap', False):
             logger.info("[M07] Detectando overlap de locutores...")
             inicio = time.time()
-            processar_overlap(audio_id)
+            sucesso = processar_overlap(audio_id)
             tempos_modulos['m07'] = time.time() - inicio
+            if not sucesso:
+                logger.error("[M07] FALHOU - Abortando pipeline")
+                return False
             logger.info(f"[M07] Concluido ({tempos_modulos['m07']:.2f}s)")
         else:
             logger.info("[M07] Pulando (desabilitado no MASTER)")
@@ -414,8 +430,11 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         if MASTER.get('transcricao_whisper', False):
             logger.info("[M08] Transcrevendo com Whisper...")
             inicio = time.time()
-            processar_whisper(audio_id)
+            sucesso = processar_whisper(audio_id)
             tempos_modulos['m08'] = time.time() - inicio
+            if not sucesso:
+                logger.error("[M08] FALHOU - Abortando pipeline")
+                return False
             logger.info(f"[M08] Concluido ({tempos_modulos['m08']:.2f}s)")
         else:
             logger.info("[M08] Pulando (desabilitado no MASTER)")
@@ -426,8 +445,11 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         if MASTER.get('transcricao_wav2vec', False):
             logger.info("[M09] Transcrevendo com Wav2Vec...")
             inicio = time.time()
-            processar_wav2vec(audio_id)
+            sucesso = processar_wav2vec(audio_id)
             tempos_modulos['m09'] = time.time() - inicio
+            if not sucesso:
+                logger.error("[M09] FALHOU - Abortando pipeline")
+                return False
             logger.info(f"[M09] Concluido ({tempos_modulos['m09']:.2f}s)")
         else:
             logger.info("[M09] Pulando (desabilitado no MASTER)")
@@ -437,8 +459,11 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         # ======================================================================
         logger.info("[M10] Normalizando textos...")
         inicio = time.time()
-        processar_normalizacao(audio_id)
+        sucesso = processar_normalizacao(audio_id)
         tempos_modulos['m10'] = time.time() - inicio
+        if not sucesso:
+            logger.error("[M10] FALHOU - Abortando pipeline")
+            return False
         logger.info(f"[M10] Concluido ({tempos_modulos['m10']:.2f}s)")
 
         # ======================================================================
@@ -446,8 +471,11 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         # ======================================================================
         logger.info("[M11] Validando similaridade (Levenshtein)...")
         inicio = time.time()
-        processar_validacao(audio_id)
+        sucesso = processar_validacao(audio_id)
         tempos_modulos['m11'] = time.time() - inicio
+        if not sucesso:
+            logger.error("[M11] FALHOU - Abortando pipeline")
+            return False
         logger.info(f"[M11] Concluido ({tempos_modulos['m11']:.2f}s)")
 
         # ======================================================================
@@ -456,8 +484,11 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         if MASTER.get('Denoiser', False):
             logger.info("[M12] Aplicando DeepFilterNet3...")
             inicio = time.time()
-            processar_denoiser(audio_id)
+            sucesso = processar_denoiser(audio_id)
             tempos_modulos['m12'] = time.time() - inicio
+            if not sucesso:
+                logger.error("[M12] FALHOU - Abortando pipeline")
+                return False
             logger.info(f"[M12] Concluido ({tempos_modulos['m12']:.2f}s)")
         else:
             logger.info("[M12] Pulando (desabilitado no MASTER)")
@@ -467,8 +498,11 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         # ======================================================================
         logger.info("[M13] Normalizando audios com SoX...")
         inicio = time.time()
-        processar_normalizador_audio(audio_id)
+        sucesso = processar_normalizador_audio(audio_id)
         tempos_modulos['m13'] = time.time() - inicio
+        if not sucesso:
+            logger.error("[M13] FALHOU - Abortando pipeline")
+            return False
         logger.info(f"[M13] Concluido ({tempos_modulos['m13']:.2f}s)")
 
         # ======================================================================
@@ -501,8 +535,12 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         if modo_cleanup != 'none':
             logger.info(f"[M15] Executando cleanup (modo: {modo_cleanup})...")
             inicio = time.time()
-            executar_cleanup(audio_id)
+            cleanup_ok = executar_cleanup(audio_id)
             tempos_modulos['m15'] = time.time() - inicio
+            # Cleanup e caso especial: o dataset ja esta gravado, entao a
+            # falha aqui e aviso e nao invalida o audio processado
+            if not cleanup_ok:
+                logger.warning("[M15] Cleanup falhou - dataset ja gravado, pipeline segue")
             logger.info(f"[M15] Concluido ({tempos_modulos['m15']:.2f}s)")
         else:
             logger.info("[M15] Pulando (cleanup desabilitado)")
@@ -582,8 +620,11 @@ def main():
             modo_cleanup = MASTER.get('cleanup', 'none')
             if modo_cleanup in ['all', 'input']:
                 print(f"Executando cleanup (modo: {modo_cleanup})...")
-                logger_temp = configurar_logger(audio_id)
-                executar_cleanup(audio_id)
+                logger_pulado = configurar_logger(audio_id)
+                if not executar_cleanup(audio_id):
+                    logger_pulado.warning(
+                        "[M15] Cleanup falhou para audio ja processado - nada a reverter"
+                    )
 
             pulados_nesta_execucao += 1
             continue

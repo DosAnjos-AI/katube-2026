@@ -239,12 +239,16 @@ def validar_segmento(dados_segmento: Dict) -> Dict:
 # FUNCOES DE PROCESSAMENTO
 # ==============================================================================
 
-def processar_validacao(audio_id: str):
+def processar_validacao(audio_id: str) -> bool:
     """
     Processa validacao de similaridade para todos os segmentos elegiveis.
 
     Args:
         audio_id: ID do audio a processar
+
+    Returns:
+        True se os JSONs de validacao foram gravados. Pre-condicao
+        ausente propaga excecao (FileNotFoundError).
     """
     # Definir caminhos baseados no audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"
@@ -354,6 +358,8 @@ def processar_validacao(audio_id: str):
     print(f"  - Nao elegiveis (falta whisper ou wav2vec): {total_nao_elegiveis}")
     print(f"\nTotal de segmentos no arquivo: {len(dados_acompanhamento)}")
     print(f"{'='*70}\n")
+
+    return True
 
 
 # ==============================================================================

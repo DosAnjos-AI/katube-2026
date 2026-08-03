@@ -275,12 +275,16 @@ def salvar_json_atualizado(
 # FUNCAO PRINCIPAL
 # ==============================================================================
 
-def main(audio_id: str):
+def main(audio_id: str) -> bool:
     """
     Funcao principal de execucao.
 
     Args:
         audio_id: ID do audio a processar
+
+    Returns:
+        True se os JSONs atualizados foram gravados. Pre-condicao
+        ausente propaga excecao (FileNotFoundError).
     """
     # Definir caminhos baseados no audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"
@@ -453,6 +457,8 @@ def main(audio_id: str):
     print("=" * 70)
     print("PROCESSAMENTO CONCLUÍDO COM SUCESSO!")
     print("=" * 70)
+
+    return True
 
 
 if __name__ == "__main__":

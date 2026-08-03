@@ -50,12 +50,17 @@ def excluir_pasta(pasta: Path, tipo: str) -> bool:
 # FUNCAO PRINCIPAL DE CLEANUP
 # ==============================================================================
 
-def executar_cleanup(audio_id: str):
+def executar_cleanup(audio_id: str) -> bool:
     """
     Executa limpeza conforme configuracao MASTER['cleanup'].
 
     Args:
         audio_id: ID do audio a processar
+
+    Returns:
+        True se a limpeza pedida foi concluida (ou estava desabilitada),
+        False se alguma pasta nao pode ser removida ou o modo e invalido.
+        Falha aqui e AVISO para o chamador: o dataset ja esta gravado.
     """
     # Definir caminhos baseados no audio_id
     PASTA_TEMP = PROJECT_ROOT / "arquivos" / "temp" / audio_id
@@ -70,29 +75,33 @@ def executar_cleanup(audio_id: str):
     
     if modo == 'none':
         print("[INFO] Cleanup desabilitado (mode='none')")
-        return
-    
+        return True
+
     # Executar limpeza conforme modo
     if modo == 'all':
         print("[INFO] Modo 'all': Excluindo input e temporarios")
-        excluir_pasta(PASTA_INPUT, 'input')
-        excluir_pasta(PASTA_TEMP, 'temp')
-        
+        ok_input = excluir_pasta(PASTA_INPUT, 'input')
+        ok_temp = excluir_pasta(PASTA_TEMP, 'temp')
+        sucesso = ok_input and ok_temp
+
     elif modo == 'input':
         print("[INFO] Modo 'input': Excluindo apenas arquivos de entrada")
-        excluir_pasta(PASTA_INPUT, 'input')
-        
+        sucesso = excluir_pasta(PASTA_INPUT, 'input')
+
     elif modo == 'temp':
         print("[INFO] Modo 'temp': Excluindo apenas arquivos temporarios")
-        excluir_pasta(PASTA_TEMP, 'temp')
-        
+        sucesso = excluir_pasta(PASTA_TEMP, 'temp')
+
     else:
         print(f"[ERRO] Modo de cleanup invalido: {modo}")
         print("[INFO] Valores validos: 'all', 'input', 'temp', 'none'")
-    
+        sucesso = False
+
     print(f"\n{'='*70}")
     print("CLEANUP FINALIZADO")
     print(f"{'='*70}\n")
+
+    return sucesso
 
 # ==============================================================================
 # EXECUCAO PRINCIPAL

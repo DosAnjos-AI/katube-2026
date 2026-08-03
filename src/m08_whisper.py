@@ -443,12 +443,16 @@ def salvar_outputs(json_filtrado: Optional[Dict],
 # FUNCAO PRINCIPAL
 # ==============================================================================
 
-def main(audio_id: str):
+def main(audio_id: str) -> bool:
     """
     Funcao principal: orquestra todo o fluxo de transcricao.
 
     Args:
         audio_id: ID do audio a processar
+
+    Returns:
+        True se as transcricoes foram salvas (ou nao havia segmento
+        elegivel), False se falta pre-condicao ou o salvamento falhou.
     """
     # Definir caminhos baseados no audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"
@@ -485,8 +489,8 @@ def main(audio_id: str):
     
     if json_acompanhamento is None:
         print("ERRO: Nao foi possivel carregar metadados. Abortando.")
-        return
-    
+        return False
+
     # 4. Determinar segmentos elegiveis
     segmentos_elegiveis = determinar_segmentos_elegiveis(
         json_filtrado, 
@@ -504,10 +508,11 @@ def main(audio_id: str):
     )
     
     if not arquivos_audio:
+        # Funil pode ter reprovado tudo antes: nao e falha deste modulo
         print("AVISO: Nenhum arquivo de audio elegivel encontrado")
         print("Verifique se os arquivos existem em:", PASTA_AUDIOS)
-        return
-    
+        return True
+
     print(f"Arquivos encontrados: {len(arquivos_audio)}/{len(segmentos_elegiveis)}")
     
     # 6. Processar transcricoes
@@ -539,6 +544,8 @@ def main(audio_id: str):
     else:
         print("Status: ERRO ao salvar outputs")
     print("=" * 70)
+
+    return sucesso
 
 
 # ==============================================================================

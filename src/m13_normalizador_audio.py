@@ -279,14 +279,17 @@ def limpar_pasta_vazia(pasta: Path):
         print(f"Aviso: Nao foi possivel remover pasta vazia {pasta}: {e}")
 
 
-def processar_normalizacao(audio_id: str) -> Tuple[int, int, int]:
+def processar_normalizacao(audio_id: str) -> Optional[Tuple[int, int, int]]:
     """
     Funcao principal de processamento.
 
     Args:
         audio_id: ID do audio a processar
 
-    Retorna tupla: (processados, pulados, falhados)
+    Returns:
+        Tupla (processados, pulados, falhados), ou None em falha dura
+        (SoX ausente ou JSON de acompanhamento ausente). None distingue
+        a falha do lote legitimamente vazio, que devolve (0, 0, 0).
     """
     # Definir caminhos baseados no audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"
@@ -302,7 +305,7 @@ def processar_normalizacao(audio_id: str) -> Tuple[int, int, int]:
     
     # Verificar instalacao do SoX
     if not verificar_sox_instalado():
-        return 0, 0, 0
+        return None
     
     # Carregar JSONs de entrada
     print(f"\nCarregando JSONs de: {PASTA_JSON_DINAMICO}")
@@ -313,7 +316,7 @@ def processar_normalizacao(audio_id: str) -> Tuple[int, int, int]:
 
     if json_acompanhamento is None:
         print(f"ERRO: Arquivo de acompanhamento nao encontrado")
-        return 0, 0, 0
+        return None
 
     json_filtro = carregar_json(PASTA_JSON_DINAMICO / f"{audio_id}.json")
     
@@ -425,15 +428,27 @@ def processar_normalizacao(audio_id: str) -> Tuple[int, int, int]:
 # MAIN
 # ==============================================================================
 
-def main(audio_id: str):
+def main(audio_id: str) -> bool:
     """
     Funcao principal.
 
     Args:
         audio_id: ID do audio a processar
+
+    Returns:
+        True se a normalizacao rodou, False em falha dura (SoX ausente
+        ou JSON de acompanhamento ausente).
     """
-    processados, pulados, falhados = processar_normalizacao(audio_id)
-    
+    resultado = processar_normalizacao(audio_id)
+
+    if resultado is None:
+        print("\n" + "="*70)
+        print("NORMALIZACAO DE AUDIO NAO EXECUTADA - falha dura")
+        print("="*70 + "\n")
+        return False
+
+    processados, pulados, falhados = resultado
+
     print("\n" + "="*70)
     print("RESUMO DO PROCESSAMENTO")
     print("="*70)
@@ -442,6 +457,8 @@ def main(audio_id: str):
     print(f"Segmentos com falha: {falhados}")
     print(f"Total: {processados + pulados + falhados}")
     print("="*70 + "\n")
+
+    return True
 
 
 if __name__ == "__main__":

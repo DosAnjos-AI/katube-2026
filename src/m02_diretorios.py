@@ -34,7 +34,14 @@ def limpar_estado_anterior(audio_id: str):
         print(f"Estado anterior removido: {alvo} ({total_arquivos} arquivo(s))")
 
 
-def criar_diretorios(audio_id: str):
+def criar_diretorios(audio_id: str) -> bool:
+    """
+    Prepara a estrutura de diretorios do audio_id e copia a entrada.
+
+    Returns:
+        True se a estrutura foi criada e a entrada copiada, False se a
+        pasta de origem nao existe (nada a processar).
+    """
     #============================================================
     # Reinicio limpo: nada de rodada anterior sobrevive
     #============================================================
@@ -107,14 +114,15 @@ def criar_diretorios(audio_id: str):
     # Garantir que destino existe
     pasta_destino.mkdir(parents=True, exist_ok=True)
 
-    # Verificar se a pasta de origem existe antes de copiar
+    # Pasta de origem ausente e falha dura: sem entrada nao ha o que processar
     if not pasta_origem.exists():
-        print(f"AVISO: Pasta de origem não encontrada: {pasta_origem}")
-    else:
-        # Copiar TODOS os arquivos (qualquer tipo, qualquer nome)
-        for item in pasta_origem.iterdir():
-            if item.is_file():
-                shutil.copy2(item, pasta_destino / item.name)
+        print(f"ERRO: Pasta de origem nao encontrada: {pasta_origem}")
+        return False
+
+    # Copiar TODOS os arquivos (qualquer tipo, qualquer nome)
+    for item in pasta_origem.iterdir():
+        if item.is_file():
+            shutil.copy2(item, pasta_destino / item.name)
 
     #########################################################
     #============================================================
@@ -136,10 +144,13 @@ def criar_diretorios(audio_id: str):
     log = dataset / 'log'
     log.mkdir(parents=True, exist_ok=True)
 
+    return True
+
 
 if __name__ == '__main__':
     # Execucao direta exige o audio_id como argumento - sem id fixo no codigo
     if len(sys.argv) != 2:
         print("Uso: python src/m02_diretorios.py <audio_id>")
         sys.exit(1)
-    criar_diretorios(sys.argv[1])
+    if not criar_diretorios(sys.argv[1]):
+        sys.exit(1)

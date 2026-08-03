@@ -462,12 +462,17 @@ def salvar_outputs(
 # FUNCAO PRINCIPAL
 # ==============================================================================
 
-def main(audio_id: str):
+def main(audio_id: str) -> bool:
     """
     Funcao principal: orquestra todo o processamento.
 
     Args:
         audio_id: ID do audio a processar
+
+    Returns:
+        True se o modulo concluiu (inclusive quando nao ha segmento
+        elegivel), False se falta pre-condicao ou a validacao reprovou
+        e os JSONs nao foram salvos.
     """
     # Definir caminhos baseados no audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"
@@ -485,12 +490,12 @@ def main(audio_id: str):
     # Validar caminhos
     if not PASTA_JSON_DINAMICO.exists():
         print(f"ERRO: Pasta JSON nao existe: {PASTA_JSON_DINAMICO}")
-        return
-    
+        return False
+
     if not PASTA_AUDIOS.exists():
         print(f"ERRO: Pasta de audios nao existe: {PASTA_AUDIOS}")
-        return
-    
+        return False
+
     # Carregar modelo usando ModelManager (singleton)
     print("\n2. Carregando modelo pyannote...")
     manager = ModelManager()
@@ -512,9 +517,10 @@ def main(audio_id: str):
     dados_acompanhamento, dados_filtro, segmentos = listar_segmentos_para_processar(PASTA_JSON_DINAMICO, audio_id)
     
     if not segmentos:
+        # Funil pode ter reprovado tudo antes: nao e falha deste modulo
         print("AVISO: Nenhum segmento para processar")
-        return
-    
+        return True
+
     # Processar segmentos
     print("\n4. Processando segmentos...")
     resultados = processar_todos_segmentos(pipeline, segmentos, timeout_segundos, PASTA_AUDIOS)
@@ -534,8 +540,8 @@ def main(audio_id: str):
     print("\n6. Validando consistencia dos dados...")
     if not validar_consistencia(json_acompanhamento_novo, json_overlap01, resultados, PASTA_AUDIOS):
         print("\nERRO: Validacao falhou - JSONs NAO foram salvos")
-        return
-    
+        return False
+
     print("Validacao OK")
     
     # Salvar outputs
@@ -558,6 +564,8 @@ def main(audio_id: str):
     print(f"  Falhas/Timeouts: {falhas}")
     print(f"\nSegmentos aprovados (overlap01=False): {len(json_overlap01)}")
     print("=" * 70)
+
+    return True
 
 
 # ==============================================================================

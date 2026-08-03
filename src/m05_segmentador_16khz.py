@@ -223,13 +223,18 @@ def copiar_json(pasta_origem: Path, pasta_destino: Path, audio_id: str) -> bool:
 # FUNCAO PRINCIPAL
 # ==============================================================================
 
-def processar_pasta(audio_id: str):
+def processar_pasta(audio_id: str) -> bool:
     """
     Funcao principal: processa todos os audios da pasta input.
     Converte para 16kHz mono quando necessario e copia JSON.
 
     Args:
         audio_id: ID do audio a processar
+
+    Returns:
+        True se a saida obrigatoria foi produzida (audios + JSON),
+        False se falta pre-condicao, se o JSON nao pode ser copiado
+        ou se nenhum audio chegou a pasta de destino.
     """
     print("=" * 70)
     print("INICIANDO CONVERSAO DE AUDIOS PARA 16kHz MONO")
@@ -242,18 +247,18 @@ def processar_pasta(audio_id: str):
     
     if not pasta_input.exists():
         print(f"ERRO: Pasta de input nao existe: {pasta_input}")
-        return
-    
+        return False
+
     # Criar pasta output se nao existir
     pasta_output.mkdir(parents=True, exist_ok=True)
-    
+
     # Validar existencia do JSON antes de iniciar
     arquivos_json = list(pasta_input.glob('*.json'))
     if not arquivos_json:
         print("ERRO: Nenhum arquivo JSON encontrado na pasta origem")
         print("Processo abortado - JSON e obrigatorio")
-        return
-    
+        return False
+
     # Listar arquivos de audio
     arquivos_audio = listar_arquivos_audio(pasta_input)
     total_arquivos = len(arquivos_audio)
@@ -314,10 +319,10 @@ def processar_pasta(audio_id: str):
         
         falhas = falhas_finais
     
-    # Copiar JSON
+    # Copiar JSON (obrigatorio: sem ele os modulos seguintes nao tem metadados)
     print("\n" + "-" * 70)
-    copiar_json(pasta_input, pasta_output, audio_id)
-    
+    json_copiado = copiar_json(pasta_input, pasta_output, audio_id)
+
     # Relatorio final
     print("\n" + "=" * 70)
     print("PROCESSAMENTO CONCLUIDO")
@@ -326,13 +331,24 @@ def processar_pasta(audio_id: str):
     print(f"Convertidos (SR/canais alterados): {convertidos}")
     print(f"Copiados (ja 16kHz mono): {copiados}")
     print(f"Falhas finais: {len(falhas)}")
-    
+
     if falhas:
         print("\nArquivos que falharam apos 2 tentativas:")
         for nome in falhas:
             print(f"  - {nome}")
-    
+
     print("=" * 70)
+
+    if not json_copiado:
+        print("ERRO: JSON obrigatorio nao foi copiado para a pasta de destino")
+        return False
+
+    # Nenhum audio na saida significa que o modulo nao entregou nada
+    if convertidos + copiados == 0:
+        print("ERRO: Nenhum audio produzido em 03-segments_16khz")
+        return False
+
+    return True
 
 
 # ==============================================================================
@@ -344,4 +360,5 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Uso: python src/m05_segmentador_16khz.py <audio_id>")
         sys.exit(1)
-    processar_pasta(sys.argv[1])
+    if not processar_pasta(sys.argv[1]):
+        sys.exit(1)
