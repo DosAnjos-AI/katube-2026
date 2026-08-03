@@ -58,13 +58,39 @@ EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
 # Ativa/desativa módulos principais do sistema
 # True = módulo será executado | False = módulo será ignorado
 MASTER = {
-    'segmentacao': 'vad',      # Opcoes: 'vad', '' para audio ja segmentado
+    # Opcoes: 'vad'. O valor '' (audio ja segmentado) esta previsto no codigo
+    # mas NAO FUNCIONA: nenhum modulo alimenta 02-segmentos_originais sem o
+    # m04, e o m05 aborta a pipeline em 0,00 min por falta do JSON. Nao use
+    # ate que exista um caminho de entrada para segmentos prontos.
+    'segmentacao': 'vad',
     'mos_filter': True,        # True = utilizar; False = nao utilizar
     'overlap': True,           # Utilizar ou nao o detector de overlap
     'transcricao_whisper': True,
     'transcricao_wav2vec': True,
     'Denoiser': True,
     'cleanup': 'all',          # Opcoes: 'all' (input+temp), 'input' (so input), 'temp' (so temp), 'none' (nao apaga)
+
+    # ------------------------------------------------------------------------
+    # FALLBACK PARA CPU - controle unico e global de todos os modelos
+    # ------------------------------------------------------------------------
+    # Governa o que acontece quando um bloco pede 'gpu' e a GPU nao atende
+    # (CUDA ausente, erro de CUDA, falta de VRAM, qualquer excecao no
+    # carregamento do modelo).
+    #
+    #   True  -> a pipeline CAI PARA CPU e continua. A excecao original e o
+    #            dispositivo efetivamente usado sao registrados em nivel de
+    #            ERRO, no stderr, com o prefixo [ERRO]. O log alto e
+    #            obrigatorio: uma rodada que cai para CPU sem ninguem
+    #            perceber custa cerca de 9,7x tempo real e passa por normal.
+    #
+    #   False -> SEM fallback. O erro derruba o modulo, que devolve False
+    #            pelo contrato de retorno, e o main.py marca o audio como
+    #            falho em processamento_metadados.csv.
+    #
+    # Vale para os cinco modelos (Whisper, wav2vec, pyannote, SQUIM e
+    # DeepFilterNet3). Ver a RESSALVA do DeepFilterNet3 em
+    # DEEPFILTERNET_DENOISER['device'].
+    'fallback_cpu': True,
 }
 
 
@@ -139,7 +165,12 @@ SEGMENTADOR_AUDIO_VAD = {
         # - Valores baixos (10-30ms): corte mais preciso
         # - Valores médios (30-50ms): segurança recomendada
         # - Valores altos (>100ms): pode incluir silêncio extra
-        # Exemplo: 30 = adiciona 30ms antes do início detectado da fala
+        #
+        # ATENÇÃO - este valor é aplicado DUAS VEZES no início: uma pelo
+        # Silero (o m04 o passa como speech_pad_ms, e o Silero expande os
+        # dois lados) e outra pelo próprio m04 ao montar o grupo. Com 30 ms
+        # configurados, o início recebe 60 ms no total. O fim recebe
+        # inicio_ms (pelo Silero) + fim_ms (pelo m04).
         'inicio_ms': 30,
         
         # Tempo adicional no FIM de cada segmento (milissegundos)
@@ -148,6 +179,7 @@ SEGMENTADOR_AUDIO_VAD = {
         # - Valores médios (30-50ms): segurança recomendada
         # - Valores altos (>100ms): pode incluir silêncio extra
         # Exemplo: 30 = adiciona 30ms após o fim detectado da fala
+        # Este campo NÃO chega ao Silero: só o m04 o aplica.
         'fim_ms': 30,
     },
     
@@ -155,20 +187,26 @@ SEGMENTADOR_AUDIO_VAD = {
     # Limites de Duração dos Segmentos Finais
     # ------------------------------------------------------------------------
     'segmentos': {
-        # Duração MÍNIMA de cada segmento em segundos
+        # Duração mínima ALVO de cada segmento, em segundos
         # Segmentos mais curtos são agrupados com próximos
         # - Valores baixos (2-4s): aceita segmentos muito curtos
         # - Valores médios (4-8s): equilíbrio (recomendado)
         # - Valores altos (>10s): força segmentos longos
-        # Exemplo: 4.0 = todos os segmentos terão no mínimo 4 segundos
+        #
+        # ATENÇÃO: o mínimo EFETIVO é (min_seg - tolerancia), não min_seg.
+        # Com min_seg=4.0 e tolerancia=0.5, o mínimo real é 3,5 s.
         'min_seg': 4.0,
         
-        # Duração MÁXIMA de cada segmento em segundos
-        # Segmentos mais longos são divididos em pausas naturais
+        # Teto de AGRUPAMENTO, em segundos - NÃO é teto absoluto
+        # Impede juntar mais um trecho de fala a um grupo que já alcançou
+        # este limite. Um trecho de fala único MAIOR que o limite
+        # ATRAVESSA INTEIRO - nada o divide.
         # - Valores baixos (8-12s): força segmentos curtos
         # - Valores médios (15-20s): equilíbrio (recomendado)
         # - Valores altos (>25s): permite segmentos muito longos
-        # Exemplo: 15.0 = nenhum segmento ultrapassará 15 segundos
+        #
+        # Medido neste projeto: com max_seg=8.0, um segmento saiu com
+        # 8,312 s. Com 15.0, os segmentos ficaram entre 6,5 e 12,3 s.
         'max_seg': 15.0,
         
         # Tolerância nas durações (segundos)
@@ -176,7 +214,8 @@ SEGMENTADOR_AUDIO_VAD = {
         # - Valores baixos (0.3-0.5s): mais rigoroso
         # - Valores médios (0.8-1.0s): equilíbrio (recomendado)
         # - Valores altos (>1.5s): mais flexível
-        # Exemplo: 0.8 = aceita segmento de 3.2s (min=4.0 - tolerância=0.8)
+        # Exemplo com os valores atuais: 0.5 aceita segmento de 3,5 s
+        # (min_seg 4.0 - tolerancia 0.5)
         'tolerancia': 0.5,
     },
     
@@ -184,9 +223,14 @@ SEGMENTADOR_AUDIO_VAD = {
     # Comportamento Geral
     # ------------------------------------------------------------------------
     'comportamento': {
-        # Sobrescrever segmentos existentes
-        # False = pula áudios já segmentados (verifica pasta segments/)
-        # True = re-segmenta mesmo que já exista
+        # CAMPO SEM EFEITO HOJE.
+        # O código do skip existe (m04), mas o m02 apaga temp/{audio_id}
+        # inteiro no início de todo processamento: quando a verificação
+        # acontece, a pasta de destino acabou de ser criada vazia, e a
+        # resposta é sempre "não há nada para pular". Confirmado em sete
+        # rodadas reprocessando o mesmo audio_id - a mensagem de skip nunca
+        # apareceu. Ligar isto exige decidir antes qual invariante vence:
+        # o reinício limpo ou o reaproveitamento.
         'sobrescrever': False,
     },
 }
@@ -204,14 +248,15 @@ MOS_FILTER = {
     # Dispositivo de Processamento
     # ------------------------------------------------------------------------
     # Define onde o modelo MOS será executado
-    # Opções disponíveis:
-    # - "auto": Detecta automaticamente (GPU se disponível, senão CPU)
-    # - "gpu": Força uso de GPU/CUDA (falha se GPU não disponível)
-    # - "cpu": Força uso de CPU (mais lento, mas funciona em qualquer máquina)
-    # 
-    # Recomendação: "auto" para máxima compatibilidade
+    # Opções disponíveis - APENAS DUAS ("auto" foi eliminado):
+    # - "gpu": pede GPU/CUDA. Se a GPU não atender, o que acontece é
+    #          decidido por MASTER['fallback_cpu'], não por este campo.
+    # - "cpu": força uso de CPU (mais lento, mas funciona em qualquer máquina)
+    #
+    # Qualquer outro valor é RECUSADO com erro explícito no m01 - não há
+    # resolução silenciosa nem valor padrão escondido.
     # Nota: GPU acelera significativamente (3-5x mais rápido)
-    'device': 'auto',
+    'device': 'gpu',
     
     # ------------------------------------------------------------------------
     # Limiares de Qualidade (MOS Score)
@@ -227,10 +272,12 @@ MOS_FILTER = {
         'min_threshold': 2.0,
         
         # Limiar para alta qualidade
-        # Áudios com MOS >= max_threshold são considerados ÓTIMOS
-        # Não precisam de denoising posterior
+        # Áudios com MOS >= max_threshold são classificados como 'alta'
         # Valores típicos: 3.0-4.0
-        # Exemplo: 3.5 = áudios acima disso vão direto pro dataset
+        # Exemplo com o valor atual: MOS >= 3.0 é classificado como 'alta'
+        #
+        # Este campo NÃO decide quem passa pelo denoiser - quem decide é
+        # DEEPFILTERNET_DENOISER['mos_quality_filter'].
         'max_threshold': 3.0,
         
         # Faixa intermediária (calculada automaticamente):
@@ -248,9 +295,11 @@ MOS_FILTER = {
         # Valores maiores = mais rápido, mas usa mais VRAM
         # 
         # Opções:
-        # - "auto": Calcula automaticamente baseado em VRAM disponível
+        # - "auto": neste bloco NÃO olha a VRAM. O m06 devolve 8 para GPU e
+        #           1 para CPU, e só. (O "auto" do STT_WHISPER é diferente:
+        #           lá a VRAM é lida de verdade.)
         # - 1-16: Valor fixo (números maiores exigem mais VRAM)
-        # 
+        #
         # Referência de uso de VRAM (aproximado):
         # - batch_size=1:  ~2.0 GB
         # - batch_size=4:  ~3.0 GB
@@ -269,9 +318,11 @@ MOS_FILTER = {
     # Comportamento Geral
     # ------------------------------------------------------------------------
     'comportamento': {
-        # Sobrescrever análises existentes
-        # False = pula segmentos já analisados (verifica se JSON existe)
-        # True = re-analisa todos os segmentos
+        # CAMPO SEM EFEITO HOJE.
+        # Mesmo caso do bloco do VAD: o código do skip existe (m06), mas o
+        # m02 apaga temp/{audio_id} antes, então o JSON que a verificação
+        # procura nunca está lá. Ligar isto é decisão de projeto, não de
+        # implementação.
         'sobrescrever': False,
     },
 }
@@ -289,49 +340,39 @@ OVERLAP_DETECTOR = {
     # Dispositivo de Processamento
     # ------------------------------------------------------------------------
     # Define onde o modelo será executado
-    # Opções disponíveis:
-    # - "auto": Detecta automaticamente (GPU se disponível, senão CPU)
-    # - "gpu": Força uso de GPU/CUDA (falha se GPU não disponível)
-    # - "cpu": Força uso de CPU (mais lento, mas funciona em qualquer máquina)
-    # 
-    # Recomendação: "auto" para máxima compatibilidade
+    # Opções disponíveis - APENAS DUAS ("auto" foi eliminado):
+    # - "gpu": pede GPU/CUDA. Se a GPU não atender, o que acontece é
+    #          decidido por MASTER['fallback_cpu'], não por este campo.
+    # - "cpu": força uso de CPU (mais lento, mas funciona em qualquer máquina)
+    #
+    # Qualquer outro valor é RECUSADO com erro explícito no m01.
     # Nota: GPU acelera significativamente o processamento
-    'device': 'auto',
+    'device': 'gpu',
     
     # ------------------------------------------------------------------------
     # Modelo de Diarização
     # ------------------------------------------------------------------------
-    # Modelo HuggingFace para detecção de overlap
-    # pyannote/speaker-diarization-community-1CC-BY-4.0
-    # Licença: CC-BY-4.0 (permissiva para uso acadêmico)
+    # Modelo HuggingFace para detecção de overlap.
+    # Este campo É lido pelo m01 e define de fato o modelo carregado -
+    # antes havia uma constante no código que o ignorava.
     # IMPORTANTE: Requer token HuggingFace configurado em .env
     'modelo': 'pyannote/speaker-diarization-3.1',
     
     # ------------------------------------------------------------------------
     # Batch Processing (Processamento em Lote)
     # ------------------------------------------------------------------------
-    # Processa múltiplos áudios simultaneamente para maior eficiência
-    
     'batch': {
-        # Tamanho do batch (quantos áudios processar juntos)
-        # Valores maiores = mais rápido, mas usa mais VRAM
-        # 
-        # Opções:
-        # - "auto": Calcula automaticamente baseado em VRAM disponível
-        # - 1-16: Valor fixo (números maiores exigem mais VRAM)
-        # 
-        # Referência de uso de VRAM (aproximado):
-        # - batch_size=1:  ~3.0 GB
-        # - batch_size=4:  ~5.0 GB
-        # - batch_size=8:  ~8.0 GB
-        # - batch_size=16: ~12.0 GB
-        # 
-        # Recomendação:
-        # - GPU com 24GB: "auto" ou 16
-        # - GPU com 8-16GB: 8
-        # - GPU com 4-8GB: 4
-        # - CPU: 1
-        'batch_size': 'auto',
+        # ÚNICO VALOR SUPORTADO: 1
+        #
+        # Este módulo processa um segmento por vez, com timeout individual
+        # por áudio - não existe caminho de lote no m07. O campo é LIDO e
+        # qualquer valor diferente de 1 é RECUSADO com erro explícito, que
+        # derruba o módulo. Antes o valor era simplesmente ignorado, e quem
+        # configurasse 8 não tinha como perceber.
+        #
+        # Processamento em lote aqui seria funcionalidade nova, não ajuste
+        # de configuração.
+        'batch_size': 1,
     },
     'timeout': {
     'por_audio_segundos': 150,  # Timeout máximo por áudio
@@ -341,9 +382,9 @@ OVERLAP_DETECTOR = {
     # Comportamento Geral
     # ------------------------------------------------------------------------
     'comportamento': {
-        # Sobrescrever análises existentes
-        # False = pula segmentos já analisados (verifica se campo overlap01 existe)
-        # True = re-analisa todos os segmentos
+        # CAMPO SEM EFEITO HOJE - e sem leitor nenhum.
+        # Nada no m07 verifica o campo overlap01 antes de processar; este
+        # valor não é consultado por linha alguma do projeto.
         'sobrescrever': False,
     },
 }
@@ -361,14 +402,14 @@ STT_WHISPER = {
     # Dispositivo de Processamento
     # ------------------------------------------------------------------------
     # Define onde o modelo Whisper será executado
-    # Opções disponíveis:
-    # - "auto": Detecta automaticamente (GPU se disponível, senão CPU)
-    # - "gpu": Força uso de GPU/CUDA (falha se GPU não disponível)
-    # - "cpu": Força uso de CPU (mais lento, mas funciona em qualquer máquina)
-    # 
-    # Recomendação: "auto" para máxima compatibilidade
+    # Opções disponíveis - APENAS DUAS ("auto" foi eliminado):
+    # - "gpu": pede GPU/CUDA. Se a GPU não atender, o que acontece é
+    #          decidido por MASTER['fallback_cpu'], não por este campo.
+    # - "cpu": força uso de CPU (mais lento, mas funciona em qualquer máquina)
+    #
+    # Qualquer outro valor é RECUSADO com erro explícito no m01.
     # Nota: GPU acelera significativamente (6x mais rápido que large-v3)
-    'device': 'auto',
+    'device': 'gpu',
     
     # ------------------------------------------------------------------------
     # Batch Processing (Processamento em Lote)
@@ -401,9 +442,9 @@ STT_WHISPER = {
     # Comportamento Geral
     # ------------------------------------------------------------------------
     'comportamento': {
-        # Sobrescrever transcrições existentes
-        # False = pula segmentos já transcritos (verifica se campo stt_whisper existe)
-        # True = re-transcreve todos os segmentos
+        # CAMPO SEM EFEITO HOJE - e sem leitor nenhum.
+        # Nada no m08 verifica o campo stt_whisper antes de transcrever;
+        # este valor não é consultado por linha alguma do projeto.
         'sobrescrever': False,
     },
 }
@@ -412,7 +453,10 @@ STT_WHISPER = {
 # MÓDULO 06: STT WAV2VEC2 (SPEECH-TO-TEXT) 
 # ============================================================
 STT_WAV2VEC2= {
-    "device": "auto",  # Dispositivo de processamento: auto, cpu, gpu
+    # Dispositivo de processamento - APENAS "gpu" ou "cpu" ("auto" foi
+    # eliminado). Com "gpu", a queda para CPU é decidida por
+    # MASTER['fallback_cpu']. Outro valor é recusado com erro no m01.
+    "device": "gpu",
 }
 
 
@@ -429,8 +473,10 @@ TEXT_NORMALIZER = {
     "remove_punctuation_diction": True,
     
     # Acentuação gráfica (marcas diacríticas)
-    # Remove: ' ` ^ ~
-    # Exemplo: "josé" → "jose" (com remove=True)
+    # Remove TODA marca diacrítica, por decomposição Unicode NFD seguida do
+    # descarte da categoria Mn: agudo, grave, circunflexo, til E CEDILHA.
+    # Exemplos verificados: "josé" → "jose", "coração" → "coracao",
+    #                       "açúcar" → "acucar" (a cedilha some junto)
     # Exemplo: "josé" → "josé" (com remove=False)
     # IMPORTANTE: Se False, números por extenso terão acento (três, décimo)
     #             Se True, números por extenso sem acento (tres, decimo)
@@ -446,14 +492,24 @@ SIMILARITY_VALIDATOR = {
     # Limiar de similaridade para aprovação de segmentos
     # Valor entre 0.0 (totalmente diferente) e 1.0 (idêntico)
     # Segmentos com similaridade >= threshold são aprovados
-    # Exemplo com threshold=0.75:
-    #   - Similaridade 0.80 → APROVADO (>=0.75)
-    #   - Similaridade 0.70 → REJEITADO (<0.75)
+    # Exemplo com o valor atual (0.85):
+    #   - Similaridade 0.90 → APROVADO (>=0.85)
+    #   - Similaridade 0.80 → REJEITADO (<0.85)
     # Valores típicos: 0.70 (permissivo), 0.80 (equilibrado), 0.90 (restritivo)
     # Útil para: filtrar segmentos com alta divergência entre modelos STT
     "similarity_threshold": 0.85,
     
     # Tipo de métrica para cálculo de similaridade
+    #
+    # ATENÇÃO: as três opções produzem HOJE resultados IDÊNTICOS. As três
+    # funções do m11 calculam a mesma coisa - 1 - (distância de Levenshtein
+    # / comprimento máximo) sobre CARACTERES. O "wer" não mede palavras: ele
+    # separa o texto em palavras e imediatamente as rejunta com espaço,
+    # voltando a medir caracteres. Verificado: 'casa azul' contra
+    # 'casa verde' devolve 0,5000 nas três. Trocar este campo não altera
+    # nenhuma nota nem nenhuma aprovação. A descrição abaixo é a intenção
+    # de projeto, a ser cumprida no redesenho da similaridade.
+    #
     # Opções disponíveis:
     #   "wer" (Word Error Rate) - Padrão da indústria STT
     #       Calcula: 1 - (edições_necessárias / total_palavras)
@@ -491,48 +547,88 @@ DEEPFILTERNET_DENOISER = {
     #   ["media", "baixa"] → Processa áudios de média e baixa qualidade
     #   [] → NÃO PROCESSA NENHUM ÁUDIO (array vazio = sem processamento)
     # 
-    # Caso de uso típico: ["media", "baixa"] 
-    #   Aplica denoising apenas onde há maior chance de melhoria
-    #   Áudios de alta qualidade já processados permanecem intactos
-    # 
+    # ATENÇÃO - o que chega de fato até aqui:
+    #   "baixa" NUNCA chega: o m06 descarta esses segmentos antes, por
+    #   min_threshold. Só restam "media" e "alta".
+    #   Com max_threshold=3.0, os segmentos deste projeto têm saído quase
+    #   todos como "alta" (MOS de 3,36 a 3,89). O valor ["media"] selecionou
+    #   ZERO segmentos em todas as rodadas de teste - o denoiser carrega,
+    #   imprime cabeçalho e não processa nada. Isso é a semântica correta
+    #   (áudio de qualidade alta não precisa de tratamento), mas quem
+    #   quiser ver o denoiser agir precisa incluir "alta".
+    #
     # IMPORTANTE: Os arquivos originais (input) SEMPRE permanecem intactos
     #             O denoising cria novos arquivos processados no output
     "mos_quality_filter": ["media"],
     
-    # Dispositivo de processamento
-    # Opções: "auto", "gpu", "cpu"
-    #   "auto" → Detecta GPU automaticamente, fallback para CPU
-    #   "gpu"  → Força uso de GPU (falha se indisponível)
-    #   "cpu"  → Força processamento em CPU (mais lento, sempre disponível)
-    # Recomendação: "auto" para máxima compatibilidade
-    "device": "auto",
+    # Dispositivo de processamento - APENAS DUAS opções ("auto" foi eliminado):
+    #   "gpu" → pede GPU/CUDA; a queda para CPU é decidida por
+    #           MASTER['fallback_cpu'], não por este campo
+    #   "cpu" → força processamento em CPU (mais lento, sempre disponível)
+    # Qualquer outro valor é RECUSADO com erro explícito no m01.
+    #
+    # RESSALVA DO DEEPFILTERNET3 (achado A29, medido no build instalado):
+    # a biblioteca resolve o dispositivo por conta própria, com get_device(),
+    # que escolhe cuda:0 sempre que houver CUDA. O init_df() NÃO aceita
+    # parâmetro device, e o config.ini interno do modelo traz [train]
+    # device = (vazio). Para submeter a biblioteca a este campo, o m01
+    # escreve a chave DEVICE na config interna do DeepFilterNet logo DEPOIS
+    # do init_df() - antes não adianta, porque o próprio init_df() recarrega
+    # o parser e apaga o ajuste.
+    #
+    # LIMITAÇÃO CONHECIDA E ACEITA (decisão do Mestre, instrução 20):
+    # o init_df() em si continua carregando o modelo no dispositivo que a
+    # biblioteca escolher. Consequência: numa GPU que FALHE, o
+    # DeepFilterNet3 NÃO consegue reiniciar em CPU, porque o init_df() do
+    # retry volta a tentar CUDA. Os outros quatro modelos têm fallback
+    # pleno. Resolver isso exigiria uma cópia do modelo dentro do projeto
+    # com o config.ini editado - custo não justificado hoje.
+    "device": "gpu",
     
-    # Nível de agressividade do filtro pós-processamento
-    # Valores: 0, 1, 2
-    #   0 → Preserva mais características do áudio original (mínimo denoising)
-    #   1 → Balanceado entre remoção de ruído e preservação de fala (PADRÃO)
-    #   2 → Remoção máxima de ruído (pode afetar naturalidade da voz)
-    # 
-    # Recomendação por cenário:
-    #   Música de fundo presente → usar 0 ou 1
-    #   Ruído ambiente severo → usar 2
-    #   Análise STT downstream → usar 1 (equilibrado)
+    # Liga/desliga o pós-filtro do DeepFilterNet.
+    # O parâmetro da biblioteca é BOOLEANO (assinatura verificada no build
+    # instalado, DeepFilterNet 0.5.6: post_filter: bool = False):
+    #   0 → desliga o pós-filtro
+    #   qualquer outro valor → liga
+    #
+    # NÃO existem três graus de agressividade nesta versão: o valor 2 é
+    # idêntico ao 1. O pós-filtro faz uma redução extra e menor de ruído.
     "post_filter": 1,
     
-    # Limite de atenuação aplicado ao sinal
-    # Valor entre 0.0 e 1.0 (float)
-    #   0.0 → Sem limitação (pode causar over-processing)
-    #   1.0 → Limitação máxima (preserva dinâmica do áudio)
-    # 
-    # Função: Previne distorção em trechos de fala suave
-    # Padrão DeepFilterNet: 0.95
-    # 
-    # ⚠️ Valores muito baixos (<0.8) podem degradar inteligibilidade
-    # Recomendação: manter entre 0.90-0.98 para português brasileiro
-    "attenuation_limit": 0.95,
+    # Limite de atenuação de ruído, em DECIBÉIS - NÃO é fração de 0 a 1.
+    # O valor viaja para o parâmetro `atten_lim_db` do enhance(), que mistura
+    # sinal original e sinal tratado assim:
+    #
+    #     lim = 10^(-|dB|/20)
+    #     saída = original * lim + tratado * (1 - lim)
+    #
+    # Ou seja, a fração do denoising que chega ao áudio é (1 - lim), e
+    # valor MAIOR em decibéis significa MAIS denoising - a escala é o
+    # inverso do que o comentário antigo descrevia.
+    #
+    # MEDIDO NESTE PROJETO (tarefa 19, 6 valores x 6 segmentos):
+    #    0.95 dB -> aplica  10,4 % do denoising (praticamente inerte)
+    #    3.0  dB -> aplica  29,2 %
+    #    6.0  dB -> aplica  49,9 %
+    #   12.0  dB -> aplica  74,9 %
+    #   24.0  dB -> aplica  93,7 %
+    #   40.0  dB -> aplica  99,0 %
+    #
+    # ABAIXO de 6 dB: região inerte - o módulo carrega, roda e quase não
+    # altera o áudio (com 0.95 dB a diferença medida ficou 51 dB abaixo do
+    # sinal, inaudível).
+    # ACIMA de 24 dB: saturação - de 24 para 40 dB o ganho é de 0,5 dB.
+    # Equivale a não ter limite nenhum.
+    # 0 ou None: sem limite, denoising integral.
+    #
+    # FAIXA ÚTIL: 6 a 24 dB. Valor de trabalho: 12.0 (75 % do denoising,
+    # conservador o bastante para não maltratar a voz num dataset de TTS).
+    # A duração do áudio NÃO muda em nenhum valor testado - a invariante
+    # de duração não é afetada por este campo.
+    "attenuation_limit": 12.0,
     
     # Pular segmentos já processados anteriormente
-    # Verifica flag "deepfilternet_processed" no JSON dinâmico
+    # Verifica o campo "utilizou_denoiser" no JSON dinâmico
     #   True → Ignora áudios com flag existente (economiza processamento)
     #   False → Reprocessa todos os áudios elegíveis (sobrescreve outputs)
     # 
@@ -557,10 +653,12 @@ SOX_NORMALIZER = {
     #   44100 → CD quality - Uso geral alta fidelidade
     #   48000 → Professional audio/broadcasting
     # 
-    # IMPORTANTE: Modelos STT/TTS geralmente esperam 16kHz ou 22050Hz
+    # Valor atual: 24000 Hz, escolha do projeto para TTS. Está na lista de
+    # valores comuns e não contradiz nada - modelos STT/TTS costumam
+    # esperar 16000, 22050 ou 24000 Hz.
     # Valores mais altos = maior qualidade mas maior custo computacional
     "sample_rate": 24000,
-    # Valores comuns: 8000, 16000, 22050, 24000, 44100, 48000 (em Hz)
+
     # Profundidade de bits (bit depth) do áudio
     # Valores: 16, 24, 32 (em bits)
     #   16 → Padrão para STT/TTS (suficiente para fala)
@@ -576,7 +674,7 @@ SOX_NORMALIZER = {
     #   1 → OBRIGATÓRIO para STT/TTS (modelos esperam mono)
     #   2 → Apenas se necessário preservar espacialização
     # 
-    # ⚠️ CRÍTICO: Praticamente todos modelos STT/TTS requerem MONO
+    # ATENCAO - CRITICO: Praticamente todos modelos STT/TTS requerem MONO
     # Stereo aumenta tamanho 2x sem benefício para treino
     "channels": 1,
     
@@ -594,15 +692,19 @@ SOX_NORMALIZER = {
     "output_format": "flac",
     
     # Método de normalização de volume
-    # Opções: "peak", "rms", "loudness"
-    #   "peak"     → Normaliza baseado no pico mais alto (evita clipping)
-    #   "rms"      → Normaliza baseado na energia média (mais consistente)
-    #   "loudness" → Normaliza baseado em percepção humana (LUFS/EBU R128)
-    # 
-    # Recomendação por cenário:
-    #   STT dataset → "rms" (consistência entre amostras)
-    #   TTS dataset → "loudness" (naturalidade percebida)
-    #   Mixagem → "peak" (controle máximo de headroom)
+    # Opções: "peak", "rms", "loudness" - o que CADA UMA emite para o SoX
+    # 14.4.2 instalado nesta máquina:
+    #   "peak"     → `norm <dB>`: normaliza pelo PICO
+    #   "rms"      → `gain -n <dB>`: TAMBÉM normaliza pelo PICO, não pela
+    #                energia média. O `sox --help-effect=gain` do build
+    #                instalado documenta `-n` como "Norm file to 0dBfs".
+    #                RMS de verdade no SoX seria `gain -b` / `-B`.
+    #   "loudness" → `loudness <dB>`: curva de audibilidade ISO 226 do SoX.
+    #                NÃO é LUFS/EBU R128.
+    #
+    # Consequência prática: "peak" e "rms" entregam a mesma coisa -
+    # normalização por pico, com diferenças menores de implementação. O
+    # nome "rms" não descreve o que acontece.
     "normalize_method": "rms",
     
     # Nível alvo de normalização em decibéis
@@ -611,7 +713,7 @@ SOX_NORMALIZER = {
     #   -1.0 → Balanceado (padrão broadcasting)
     #   0.0  → Máximo (sem margem de segurança)
     # 
-    # ⚠️ Valores positivos causam distorção (clipping)
+    # ATENCAO: Valores positivos causam distorção (clipping)
     # Valores muito negativos resultam em áudio baixo
     # Recomendação: -3.0 para datasets de treino
     "target_level_db": -3.0,

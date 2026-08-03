@@ -58,14 +58,13 @@ spotify2026/
 │   ├── m11_validador_levenshtein.py  # Validação de similaridade (WER/CER)
 │   ├── m12_denoiser_deepfilternet3.py# Denoising (DeepFilterNet3)
 │   ├── m13_normalizador_audio.py     # Normalização de áudio (SoX)
-│   ├── m14_metadados.py              # Escreve dataset.csv + índice
+│   ├── m14_metadados.py              # Escreve dataset.csv (append) + histórico
 │   └── m15_cleanup.py                # Limpeza de temporários/input
 ├── arquivos/
 │   ├── audios/{audio_id}/            # ENTRADA: um áudio por pasta
 │   └── temp/{audio_id}/              # Estado intermediário (ver abaixo)
 └── dataset/
     ├── dataset.csv                   # SAÍDA: metadados de cada segmento aprovado
-    ├── dataset.index                 # Índice de nomes (dedup O(1) entre execuções)
     ├── relacao_ids.csv               # Mapa hash ↔ nome/origem original
     ├── audio_dataset/{audio_id}/     # SAÍDA: segmentos .flac finais
     ├── historico_dataset/{id}.json   # JSON de acompanhamento por áudio processado
@@ -171,9 +170,12 @@ de silêncio nas pontas. Saída em `11-normalizador_audio/`.
 Converte o JSON de acompanhamento em linhas do **`dataset/dataset.csv`** (separador
 `|`). Garantias importantes:
 - Valida 1:1 entre segmentos do JSON e arquivos físicos em `audio_dataset/`.
-- Detecta duplicatas via `dataset.index` (lookup O(1), persiste entre execuções).
-- Escrita **atômica**: append direto no caso normal, ou reescrita via tempfile +
-  `os.replace()` quando surgem colunas novas — o CSV nunca fica corrompido/parcial.
+- Escrita **append puro**: as linhas do lote são acrescentadas ao CSV (que é criado
+  se ainda não existir). Não há reescrita nem truncamento. Quando o lote traz uma
+  coluna que o cabeçalho já gravado não tem, o cabeçalho existente prevalece e os
+  campos descartados são avisados nominalmente.
+- A deduplicação entre execuções é feita pelo **histórico** (`historico_dataset/`),
+  não por índice: o `main.py` barra na entrada o áudio que já tem histórico.
 - Copia o JSON para `historico_dataset/{audio_id}.json` (marca o áudio como
   processado e evita reprocessá-lo).
 
@@ -189,10 +191,12 @@ cada módulo** (absoluto e percentual).
 
 ## Saídas (o dataset)
 
-**`dataset/dataset.csv`** — uma linha por segmento aprovado. Colunas principais:
+**`dataset/dataset.csv`** — uma linha por segmento aprovado. As 29 colunas de
+hoje, na ordem do cabeçalho:
 
 ```
 arquivo_nome | caminho | tempo_inicio | tempo_fim | duracao | texto | vad |
+origem_codec | origem_bitrate | origem_sample_rate |
 mos_score | mos_stoi | mos_si_sdr | mos_qualidade | overlap01 |
 stt_whisper | stt_wav2vec | sim_whisper_wav2vec |
 nota_similaridade | status_similaridade | metrica_similaridade |
@@ -200,6 +204,11 @@ utilizou_denoiser | sox_sample_rate | sox_bit_depth | sox_channels |
 sox_output_format | sox_normalize_method | sox_target_level_db |
 utilizou_sox
 ```
+
+O cabeçalho não é fixo no código: o M14 o monta a partir das chaves do JSON de
+acompanhamento, com `arquivo_nome` e `caminho` como únicas colunas fixas. As
+transcrições ficam em `stt_whisper` e `stt_wav2vec`; a coluna `texto` é um campo
+reservado e hoje sai sempre vazia.
 
 **`dataset/audio_dataset/{audio_id}/*.flac`** — os arquivos de áudio finais
 referenciados pela coluna `caminho`.
@@ -289,13 +298,17 @@ registrados em `historico_dataset/`.
 
 ## Notas de design
 
-- **Idempotência**: o histórico (`historico_dataset/`) e o índice (`dataset.index`)
-  permitem parar e retomar a qualquer momento sem reprocessar nem duplicar segmentos.
+- **Idempotência**: o histórico (`historico_dataset/`) permite parar e retomar a
+  qualquer momento sem reprocessar nem duplicar segmentos. A presença de
+  `historico_dataset/{audio_id}.json` é o que marca um áudio como concluído, e o
+  `main.py` barra o áudio repetido na entrada, antes de qualquer módulo rodar.
 - **Estado dirigido por JSON**: cada módulo enriquece o
   `*_segments_acompanhamento.json`; o pipeline é, em essência, um enriquecimento
   progressivo desse documento até o M14 materializá-lo no CSV.
 - **Filtros em cascata**: segmentos são descartados ao longo do caminho (VAD vazio →
   MOS baixo → overlap → baixa similaridade), de modo que só o material de boa
   qualidade chega ao dataset final.
-- **Escrita resiliente**: o M14 nunca trunca o CSV antes de concluir a escrita; CSV e
-  índice são atualizados atomicamente e juntos.
+- **Escrita resiliente**: o M14 nunca trunca o CSV — a gravação é **append puro**
+  (ou criação, se o arquivo não existir). O histórico é copiado por último, só
+  depois das linhas efetivadas: se algo falhar no meio, o áudio não fica marcado
+  como concluído.

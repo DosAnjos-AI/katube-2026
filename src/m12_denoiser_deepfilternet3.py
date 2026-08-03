@@ -17,8 +17,7 @@ import torch
 import librosa
 import soundfile as sf
 import numpy as np
-from df import enhance, init_df
-from df.enhance import enhance, init_df, save_audio
+from df.enhance import enhance
 
 warnings.filterwarnings("ignore")
 
@@ -34,18 +33,14 @@ from m01_load_models import ModelManager
 # CONFIGURACAO
 # ==============================================================================
 
-# Configuracoes do DeepFilterNet3
+# Configuracoes do DeepFilterNet3 consumidas POR ESTE MODULO.
+# Os campos 'device' e 'post_filter' NAO entram aqui: quem os aplica e
+# anuncia e o m01, ao carregar o modelo. Le-los aqui so para imprimir
+# duplicava a leitura e dava a impressao falsa de que este modulo decide
+# o dispositivo.
 MOS_QUALITY_FILTER = DEEPFILTERNET_DENOISER["mos_quality_filter"]
-DEVICE = DEEPFILTERNET_DENOISER["device"]
-POST_FILTER = DEEPFILTERNET_DENOISER["post_filter"]
 ATTENUATION_LIMIT = DEEPFILTERNET_DENOISER["attenuation_limit"]
 SKIP_IF_ALREADY_PROCESSED = DEEPFILTERNET_DENOISER["skip_if_already_processed"]
-
-
-# ==============================================================================
-# FUNCOES DE DEVICE E MODELO
-# ==============================================================================
-
 
 
 # ==============================================================================
@@ -56,19 +51,21 @@ def processar_audio_denoiser(
     audio_path: Path,
     model,
     df_state,
-    device: torch.device,
     attenuation_limit: float
 ) -> Tuple[np.ndarray, int]:
     """
     Processa um arquivo de audio com DeepFilterNet3
-    
+
+    O dispositivo nao e parametro desta funcao: quem o define e o m01, ao
+    carregar o modelo, inclusive escrevendo a chave DEVICE na config
+    interna do DeepFilterNet (achado A29).
+
     Args:
         audio_path: Caminho do arquivo de audio
         model: Modelo DeepFilterNet
         df_state: Estado do DeepFilterNet
-        device: Dispositivo torch
-        attenuation_limit: Limite de atenuacao
-    
+        attenuation_limit: Limite de atenuacao, em decibeis
+
     Returns:
         Tupla (audio_denoised, sample_rate)
     """
@@ -297,8 +294,6 @@ def main(audio_id: str) -> bool:
     print("=" * 70)
     print(f"ID do audio: {audio_id}")
     print(f"Filtro MOS: {MOS_QUALITY_FILTER}")
-    print(f"Device: {DEVICE}")
-    print(f"Post-filter: {POST_FILTER}")
     print(f"Attenuation limit: {ATTENUATION_LIMIT}")
     print(f"Skip já processados: {SKIP_IF_ALREADY_PROCESSED}")
     print("=" * 70)
@@ -355,9 +350,10 @@ def main(audio_id: str) -> bool:
         model, df_state, sr_modelo = manager.get_deepfilternet()
         
         # Device ja gerenciado pelo manager
-        device = next(model.parameters()).device
-        print(f"[INFO] Modelo carregado em {device}")
-        print(f"[INFO] SR={sr_modelo}Hz, post_filter={POST_FILTER}, attenuation_limit={ATTENUATION_LIMIT}")
+        # Dispositivo real do modelo carregado pelo m01 - nao ha segunda
+        # decisao de device aqui
+        print(f"[INFO] Modelo carregado em {next(model.parameters()).device}")
+        print(f"[INFO] SR={sr_modelo}Hz, attenuation_limit={ATTENUATION_LIMIT} dB")
         print()
     else:
         print("[PASSO 3/6] Pulando inicialização - nenhum segmento para processar")
@@ -391,7 +387,6 @@ def main(audio_id: str) -> bool:
                 audio_path,
                 model,
                 df_state,
-                device,
                 ATTENUATION_LIMIT
             )
             
@@ -462,4 +457,10 @@ def main(audio_id: str) -> bool:
 
 
 if __name__ == "__main__":
-    main('CA6TSoMw86k')
+    # Execucao direta exige o audio_id como argumento - nao ha id fixo
+    # no codigo. Mesmo padrao do m15_cleanup.py.
+    if len(sys.argv) != 2:
+        print("Uso: python src/m12_denoiser_deepfilternet3.py <audio_id>")
+        sys.exit(1)
+
+    sys.exit(0 if main(sys.argv[1]) else 1)

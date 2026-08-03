@@ -287,4 +287,10 @@ def main(audio_id: str) -> bool:
 
 
 if __name__ == "__main__":
-    main('CA6TSoMw86k')
+    # Execucao direta exige o audio_id como argumento - nao ha id fixo
+    # no codigo. Mesmo padrao do m15_cleanup.py.
+    if len(sys.argv) != 2:
+        print("Uso: python src/m09_wav2vec.py <audio_id>")
+        sys.exit(1)
+
+    sys.exit(0 if main(sys.argv[1]) else 1)

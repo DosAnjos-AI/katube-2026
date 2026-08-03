@@ -13,7 +13,6 @@ from pathlib import Path
 from typing import Dict, List, Tuple, Optional
 from contextlib import contextmanager
 
-import torch
 from dotenv import load_dotenv
 import os
 
@@ -486,7 +485,18 @@ def main(audio_id: str) -> bool:
     
     # Configurar timeout
     timeout_segundos = OVERLAP_DETECTOR['timeout']['por_audio_segundos']
-    
+
+    # Este modulo processa UM segmento por vez, com timeout individual: nao
+    # existe caminho de lote. O campo do config passa a ser lido e recusado
+    # quando pede algo que o modulo nao faz - antes ele era ignorado em
+    # silencio, e quem configurasse batch 8 nao tinha como saber.
+    batch_size = OVERLAP_DETECTOR['batch']['batch_size']
+    if batch_size != 1:
+        print(f"ERRO: OVERLAP_DETECTOR['batch']['batch_size'] = {batch_size!r}")
+        print("Este modulo processa um segmento por vez - o unico valor "
+              "suportado e 1")
+        return False
+
     # Validar caminhos
     if not PASTA_JSON_DINAMICO.exists():
         print(f"ERRO: Pasta JSON nao existe: {PASTA_JSON_DINAMICO}")
@@ -501,16 +511,11 @@ def main(audio_id: str) -> bool:
     manager = ModelManager()
     pipeline = manager.get_pyannote()
     
-    # O device ja esta configurado pelo ModelManager
-    # Pyannote pipeline nao tem .parameters() como modelos normais
-    _device_cfg = OVERLAP_DETECTOR.get('device', 'auto').lower()
-    if _device_cfg == 'cpu':
-        _device_str = 'cpu'
-    elif _device_cfg in ('gpu', 'cuda'):
-        _device_str = 'cuda'
-    else:
-        _device_str = 'cuda' if torch.cuda.is_available() else 'cpu'
-    print(f"Pipeline configurado para {_device_str.upper()}")
+    # O device quem decide e o ModelManager (m01). Aqui apenas anunciamos o
+    # dispositivo que o pipeline de fato esta usando - nada de resolver o
+    # device uma segunda vez, que era como o log podia anunciar CUDA com o
+    # modelo em CPU.
+    print(f"Pipeline carregado no dispositivo: {pipeline.device}")
     
     # Listar segmentos para processar
     print("\n3. Listando segmentos para processar...")
@@ -573,4 +578,10 @@ def main(audio_id: str) -> bool:
 # ==============================================================================
 
 if __name__ == "__main__":
-    main('CA6TSoMw86k')
+    # Execucao direta exige o audio_id como argumento - nao ha id fixo
+    # no codigo. Mesmo padrao do m15_cleanup.py.
+    if len(sys.argv) != 2:
+        print("Uso: python src/m07_overlap1.py <audio_id>")
+        sys.exit(1)
+
+    sys.exit(0 if main(sys.argv[1]) else 1)
