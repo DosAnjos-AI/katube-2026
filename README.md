@@ -63,7 +63,7 @@ spotify2026/
 │   ├── m08_whisper.py                # STT com distil-Whisper PT-BR
 │   ├── m09_wav2vec.py                # STT com Wav2Vec2 PT-BR
 │   ├── m10_texto_normalizador.py     # Normalização de texto
-│   ├── m11_validador_levenshtein.py  # Validação de similaridade (WER/CER)
+│   ├── m11_validador_similaridade.py # Validação de similaridade (WER, CER, Levenshtein)
 │   ├── m12_denoiser_deepfilternet3.py# Denoising (DeepFilterNet3)
 │   ├── m13_normalizador_audio.py     # Normalização de áudio (SoX)
 │   ├── m14_metadados.py              # Escreve dataset.csv (append) + histórico
@@ -95,7 +95,7 @@ Criadas por **M02** e consumidas/preenchidas pelos módulos seguintes:
 | `06-stt_whisper/`       | Transcrições Whisper | M08 |
 | `07-stt_wav2vec/`       | Transcrições Wav2Vec2 | M09 |
 | `08-normalizador_texto/`| Textos normalizados | M10 |
-| `09-validacao_levenshtein/`| Notas de similaridade | M11 |
+| `09-validacao_similaridade/`| Métricas de similaridade | M11 |
 | `10-denoiser/`          | Áudios após denoising | M12 |
 | `11-normalizador_audio/`| Áudios finais normalizados (SoX) | M13 |
 
@@ -180,12 +180,21 @@ pontuação que afeta dicção e, opcionalmente, acentuação gráfica. Produz o
 `*_normalizado` usados apenas para comparação.
 
 ### M11 — Validação de similaridade *(obrigatório)*
-Compara as duas transcrições normalizadas entre si (Whisper × Wav2Vec) usando
-**WER/CER/Levenshtein** (`SIMILARITY_VALIDATOR`). Segmentos com similaridade abaixo
-do `similarity_threshold` são marcados como reprovados — alta divergência entre dois
-STTs indica transcrição ruim ou áudio problemático. As duas transcrições são
-obrigatórias: sem uma delas o segmento não é elegível. Campos `sim_whisper_wav2vec`,
-`nota_similaridade`, `status_similaridade`.
+Compara as duas transcrições normalizadas entre si (Whisper × Wav2Vec) calculando
+**sempre as três métricas** (`SIMILARITY_VALIDATOR`), cada uma na sua convenção:
+
+| Métrica | O que mede | Direção | Passa se | Limiar |
+|---|---|---|---|---|
+| `wer` | taxa de erro por **palavra** (sem teto superior) | 0 = perfeito | `<=` | `limiar_wer` (0.20) |
+| `cer` | taxa de erro por **caractere** | 0 = perfeito | `<=` | `limiar_cer` (0.15) |
+| `levenshtein_norm` | similaridade normalizada 0–1 | 1 = idêntico | `>=` | `limiar_levenshtein_norm` (0.85) |
+
+O segmento só é aprovado se passar nos **três** limiares — alta divergência entre dois
+STTs indica transcrição ruim ou áudio problemático. Cada reprovação é registrada no log
+com a métrica que reprovou e o seu valor. As duas transcrições são obrigatórias: sem uma
+delas o segmento não é elegível. Campos `sim_whisper_wav2vec_wer`,
+`sim_whisper_wav2vec_cer`, `sim_whisper_wav2vec_levenshtein_norm`,
+`status_similaridade`.
 
 ### M12 — Denoiser *(condicional — `Denoiser`)*
 Aplica **DeepFilterNet3** para remover ruído. Processa apenas as faixas de qualidade
@@ -233,8 +242,9 @@ hoje, na ordem do cabeçalho:
 arquivo_nome | caminho | tempo_inicio | tempo_fim | duracao | texto | vad |
 origem_codec | origem_bitrate | origem_sample_rate |
 mos_score | mos_stoi | mos_si_sdr | mos_qualidade | overlap01 |
-stt_whisper | stt_wav2vec | sim_whisper_wav2vec |
-nota_similaridade | status_similaridade | metrica_similaridade |
+stt_whisper | stt_wav2vec | sim_whisper_wav2vec_wer |
+sim_whisper_wav2vec_cer | sim_whisper_wav2vec_levenshtein_norm |
+status_similaridade |
 utilizou_denoiser | sox_sample_rate | sox_bit_depth | sox_channels |
 sox_output_format | sox_normalize_method | sox_target_level_db |
 utilizou_sox

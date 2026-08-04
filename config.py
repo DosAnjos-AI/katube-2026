@@ -541,49 +541,62 @@ TEXT_NORMALIZER = {
 # MÓDULO 08: VALIDADOR DE SIMILARIDADE (SIMILARITY VALIDATOR)
 # ============================================================
 SIMILARITY_VALIDATOR = {
-    
-    # Limiar de similaridade para aprovação de segmentos
-    # Valor entre 0.0 (totalmente diferente) e 1.0 (idêntico)
-    # Segmentos com similaridade >= threshold são aprovados
-    # Exemplo com o valor atual (0.85):
-    #   - Similaridade 0.90 → APROVADO (>=0.85)
-    #   - Similaridade 0.80 → REJEITADO (<0.85)
-    # Valores típicos: 0.70 (permissivo), 0.80 (equilibrado), 0.90 (restritivo)
-    # Útil para: filtrar segmentos com alta divergência entre modelos STT
-    "similarity_threshold": 0.85,
-    
-    # Tipo de métrica para cálculo de similaridade
+
+    # As TRÊS métricas são SEMPRE calculadas, comparando as transcrições do
+    # Whisper e do Wav2Vec2 entre si. Não há escolha de métrica: o segmento só
+    # segue na pipeline se passar nos TRÊS limiares abaixo.
     #
-    # ATENÇÃO: as três opções produzem HOJE resultados IDÊNTICOS. As três
-    # funções do m11 calculam a mesma coisa - 1 - (distância de Levenshtein
-    # / comprimento máximo) sobre CARACTERES. O "wer" não mede palavras: ele
-    # separa o texto em palavras e imediatamente as rejunta com espaço,
-    # voltando a medir caracteres. Verificado: 'casa azul' contra
-    # 'casa verde' devolve 0,5000 nas três. Trocar este campo não altera
-    # nenhuma nota nem nenhuma aprovação. A descrição abaixo é a intenção
-    # de projeto, a ser cumprida no redesenho da similaridade.
+    # ATENÇÃO À DIREÇÃO: cada métrica usa a sua convenção consagrada, e elas
+    # NÃO apontam para o mesmo lado. Em WER e CER, que são taxas de ERRO,
+    # menor é melhor. Em levenshtein_norm, que é uma SIMILARIDADE, maior é
+    # melhor. Por isso são três campos, e não uma média: eles medem coisas
+    # diferentes, em direções diferentes.
     #
-    # Opções disponíveis:
-    #   "wer" (Word Error Rate) - Padrão da indústria STT
-    #       Calcula: 1 - (edições_necessárias / total_palavras)
-    #       Exemplo: "casa azul" vs "casa verde" → WER ~0.50
-    #       Sensível à ordem das palavras
-    #       Melhor para: avaliar qualidade de transcrição completa
-    #   
-    #   "cer" (Character Error Rate) - Análise em nível de caractere
-    #       Calcula: 1 - (edições_necessárias / total_caracteres)
-    #       Exemplo: "josé" vs "jose" → CER ~0.80
-    #       Mais granular que WER
-    #       Melhor para: detectar erros sutis (acentos, typos)
-    #   
-    #   "levenshtein_norm" - Distância de edição normalizada
-    #       Calcula: 1 - (distância_levenshtein / max_length)
-    #       Exemplo: "gato" vs "pato" → 0.75 (1 edição em 4 chars)
-    #       Não diferencia palavras vs caracteres
-    #       Melhor para: comparação genérica de strings
-    # 
-    # Recomendação: "wer" para STT (alinhado com métricas acadêmicas)
-    "metric_type": "wer",
+    # Aumentar um limiar de erro (wer, cer) AFROUXA o filtro.
+    # Aumentar o limiar de similaridade (levenshtein_norm) APERTA o filtro.
+
+    # ------------------------------------------------------------------------
+    # WER - Word Error Rate (taxa de erro por PALAVRA)
+    # ------------------------------------------------------------------------
+    # Mede: edições de PALAVRA necessárias para transformar uma transcrição na
+    #       outra, dividido pelo número de palavras da referência.
+    # Direção: 0.0 = transcrições idênticas. QUANTO MENOR, MELHOR.
+    # Passa se: wer <= limiar
+    # SEM TETO SUPERIOR: passa de 1.0 quando um dos modelos insere mais
+    #       palavras do que a referência tem (ex.: referência com 1 palavra e
+    #       hipótese com 5 dá WER 4.0).
+    # Exemplo: "casa azul" vs "casa verde" → 1 palavra trocada em 2 → 0.50
+    # Este limiar é o mais FOLGADO de propósito: uma única letra errada
+    # invalida a palavra inteira, então o WER é sempre mais severo que o CER
+    # sobre o mesmo texto.
+    # Valores típicos: 0.30 (permissivo), 0.20 (equilibrado), 0.10 (restritivo)
+    "limiar_wer": 0.20,
+
+    # ------------------------------------------------------------------------
+    # CER - Character Error Rate (taxa de erro por CARACTERE)
+    # ------------------------------------------------------------------------
+    # Mede: edições de CARACTERE necessárias para transformar uma transcrição
+    #       na outra, dividido pelo número de caracteres da referência.
+    # Direção: 0.0 = transcrições idênticas. QUANTO MENOR, MELHOR.
+    # Passa se: cer <= limiar
+    # Também não tem teto superior, pela mesma razão do WER.
+    # Mais granular que o WER: pega erro sutil (acento, letra trocada) sem
+    # condenar a palavra inteira.
+    # Exemplo: "casa azul" vs "casa verde" → 5 edições em 9 chars → 0.5556
+    # Valores típicos: 0.25 (permissivo), 0.15 (equilibrado), 0.08 (restritivo)
+    "limiar_cer": 0.15,
+
+    # ------------------------------------------------------------------------
+    # LEVENSHTEIN NORMALIZADO (similaridade por CARACTERE)
+    # ------------------------------------------------------------------------
+    # Mede: 1 - (distância de Levenshtein / comprimento máximo dos dois textos)
+    # Direção: 1.0 = textos idênticos. QUANTO MAIOR, MELHOR. (INVERSA às duas
+    #       métricas acima - atenção ao ajustar.)
+    # Passa se: levenshtein_norm >= limiar
+    # Faixa fechada entre 0.0 e 1.0, diferente de WER e CER.
+    # Exemplo: "gato" vs "pato" → 1 edição em 4 chars → 0.75
+    # Valores típicos: 0.75 (permissivo), 0.85 (equilibrado), 0.92 (restritivo)
+    "limiar_levenshtein_norm": 0.85,
 }
 
 # ============================================================

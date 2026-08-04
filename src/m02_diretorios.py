@@ -188,8 +188,8 @@ def criar_diretorios(audio_id: str) -> Optional[dict]:
     pasta8 = pasta / '08-normalizador_texto'
     pasta8.mkdir(parents=True, exist_ok=True)
 
-    # criar pasta com arquivos do validacao_levenstein
-    pasta9 = pasta / '09-validacao_levenshtein'
+    # criar pasta com arquivos da validacao de similaridade
+    pasta9 = pasta / '09-validacao_similaridade'
     pasta9.mkdir(parents=True, exist_ok=True)
 
     # criar pasta com arquivos do denoiser

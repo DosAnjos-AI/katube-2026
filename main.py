@@ -36,7 +36,7 @@ from m07_overlap1 import main as processar_overlap
 from m08_whisper import main as processar_whisper
 from m09_wav2vec import main as processar_wav2vec
 from m10_texto_normalizador import processar_normalizacao
-from m11_validador_levenshtein import processar_validacao
+from m11_validador_similaridade import processar_validacao
 from m12_denoiser_deepfilternet3 import main as processar_denoiser
 from m13_normalizador_audio import main as processar_normalizador_audio
 from m14_metadados import processar_metadados
@@ -472,7 +472,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         # ======================================================================
         # M11 - VALIDACAO SIMILARIDADE (OBRIGATORIO)
         # ======================================================================
-        logger.info("[M11] Validando similaridade (Levenshtein)...")
+        logger.info("[M11] Validando similaridade (WER, CER, Levenshtein normalizado)...")
         inicio = time.time()
         sucesso = processar_validacao(audio_id)
         tempos_modulos['m11'] = time.time() - inicio
