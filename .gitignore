@@ -28,6 +28,8 @@ arquivos/temp/*
 !arquivos/temp/README.md
 arquivos/audios/*
 !arquivos/audios/README.md
+arquivos/input/*
+!arquivos/input/README.md
 
 # Estado de execucao do executor.sh
 tempo.txt

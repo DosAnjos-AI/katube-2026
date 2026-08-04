@@ -7,10 +7,64 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 
 
 # ============================================================================
+# MÓDULO 00: NOMEAÇÃO - PORTA DE ENTRADA DA PIPELINE
+# ============================================================================
+# Roda UMA vez por execução do main.py, antes de tudo. Varre
+# `arquivos/input/` recursivamente, resolve um id para cada áudio e MOVE o
+# arquivo para `arquivos/audios/{id}/{id}.<formato original>`, que é a
+# estrutura que o resto da pipeline consome.
+#
+# ATENÇÃO - A PASTA DE INPUT É ESVAZIADA: o arquivo é MOVIDO, não copiado.
+# Sempre cole uma CÓPIA em `arquivos/input/`, nunca a única cópia do áudio.
+NOMEACAO = {
+    # Como o id de cada áudio é decidido
+    # Opções: "nome_original" | "hash_md5"
+    #   "nome_original" → o id é o nome do arquivo sem a extensão. Legível,
+    #                     mas colide entre lotes: dois lotes com
+    #                     `entrevista.flac` disputam o mesmo id (a guarda de
+    #                     histórico barra o segundo).
+    #   "hash_md5"      → o id é o MD5 do nome já desempatado. Some com a
+    #                     legibilidade e produz a relação nome <-> id no CSV
+    #                     auxiliar `dataset/nomeacao_hash.csv`.
+    #
+    # Em AMBOS os modos o id é DETERMINÍSTICO: o hash é calculado sobre o
+    # NOME, nunca sobre o conteúdo, o caminho absoluto ou a hora. A mesma
+    # pasta de entrada produz sempre os mesmos ids. Isso é obrigatório - se
+    # o id variasse entre execuções, a deduplicação por histórico nunca
+    # barraria o repetido e o dataset.csv (append puro) acumularia linha
+    # duplicada.
+    #
+    # Nomes iguais em pastas diferentes são desempatados com sufixo
+    # numérico: `entrevista`, `entrevista_002`, `entrevista_003`. A ordem é
+    # a ALFABÉTICA do caminho relativo dentro de `arquivos/input/` - regra
+    # fixa, é ela que garante o determinismo.
+    'modo': 'nome_original',
+
+    # Extensões aceitas na varredura de `arquivos/input/`
+    # Arquivo com extensão fora desta lista é RECUSADO com log e contagem,
+    # nunca ignorado em silêncio. Comparação sempre com `suffix.lower()`.
+    #
+    # Esta é a FONTE ÚNICA de formato de entrada do projeto: o
+    # EXTENSOES_AUDIO abaixo é derivado daqui.
+    #
+    # Sobre o `.opus`: o FFmpeg 6.1.1 decodifica e, desde que o m02 passou a
+    # converter a entrada para WAV, ele atravessaria a pipeline inteira sem
+    # problema - o SoX, que não lê opus, nunca mais vê o formato original.
+    # Ele fica FORA da lista por decisão, não por limitação técnica. Para
+    # habilitá-lo, basta acrescentar '.opus' aqui.
+    #
+    # O FFmpeg também decodifica `aiff` e `au`, igualmente fora da lista.
+    'formatos_entrada': {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'},
+}
+
+
+# ============================================================================
 # FORMATOS DE ÁUDIO - FONTE ÚNICA
 # ============================================================================
 # Conjunto de extensões que os módulos do pipeline reconhecem como áudio.
-# Esta é a ÚNICA definição do projeto: todo módulo importa daqui.
+# DERIVADO de NOMEACAO['formatos_entrada'] - o que entra pela porta é o que
+# os módulos precisam reconhecer, e duas listas independentes divergiriam na
+# primeira edição. Para mudar os formatos aceitos, edite o bloco NOMEACAO.
 # Comparação sempre com `suffix.lower()`.
 #
 # ----------------------------------------------------------------------------
@@ -21,16 +75,15 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 # 1) ENTRADA - o que o FFmpeg 6.1.1 consegue DECODIFICAR:
 #       mp3, wav, flac, ogg, opus, m4a, aac, wma, aiff, au
 #
-#    ATENÇÃO: a lista EM VIGOR abaixo (EXTENSOES_AUDIO) é mais restrita que
-#    essa - ela NÃO inclui `opus`, `aiff` nem `au`. Motivo: hoje não existe
-#    conversão para WAV na porta de entrada, então o formato do arquivo de
-#    entrada atravessa o pipeline inteiro e precisa ser processável por
-#    TODOS os módulos. Um `.opus` era aceito na entrada e rejeitado seis
-#    módulos adiante. Enquanto a conversão de entrada não existir, o
-#    arquivo é recusado logo na porta, com aviso, em vez de falhar no meio.
+#    A lista EM VIGOR (NOMEACAO['formatos_entrada']) é mais restrita por
+#    decisão, não por limitação - ver o comentário daquele campo.
 #
-# 2) INTERMEDIÁRIO - `wav`, fixo e não configurável. É o formato usado
-#    internamente entre etapas (VAD sempre trabalha em 16 kHz mono).
+# 2) INTERMEDIÁRIO - `wav`, fixo e não configurável. O m02 converte a
+#    entrada para WAV ao copiá-la para `temp/{id}/01-arquivos_originais/`,
+#    preservando sample rate, canais e profundidade de bits do original.
+#    Daí em diante o formato de entrada não circula mais pela pipeline - é
+#    o que permite aceitar formatos que o SoX 14.4.2 não lê (`m4a`, `aac`,
+#    `wma`, `opus`). O m05 segue sendo o único ponto que produz 16 kHz.
 #
 # 3) SAÍDA - o que o SoX 14.4.2 consegue ESCREVER de forma útil:
 #       flac, wav, ogg, mp3   (padrão do projeto: flac - ver SOX_NORMALIZER)
@@ -49,7 +102,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 # `environment.yml` NÃO reproduz o ambiente - os binários precisam ser
 # instalados à parte, no sistema, e a versão deles muda o que o pipeline
 # consegue ler e escrever.
-EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
+EXTENSOES_AUDIO = set(NOMEACAO['formatos_entrada'])
 
 
 # ============================================================================

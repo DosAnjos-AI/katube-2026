@@ -1,10 +1,105 @@
+import json
 import sys
+import subprocess
 from pathlib import Path
+from typing import Optional
 import shutil
 
 # Definir PROJECT_ROOT no escopo global
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
 
+from config import EXTENSOES_AUDIO
+
+
+def sondar_specs_origem(origem: Path) -> Optional[dict]:
+    """
+    Sonda o arquivo-FONTE com ffprobe, uma unica vez, antes de converter.
+
+    Depois da conversao o formato de origem some da pipeline: o que circula e
+    o WAV interno. Sondar aqui e a ultima chance de registrar de onde o audio
+    veio - essas specs viajam ate as colunas origem_* do dataset.csv.
+
+    O mesmo resultado decide a profundidade de bits do WAV: o padrao do
+    FFmpeg e pcm_s16le, que truncaria um original de 24 bits SEM AVISO.
+
+    Returns:
+        Dict com formato, codec, bitrate, sample_rate, duracao e
+        bits_por_amostra, ou None se o ffprobe falhou (o chamador aborta).
+    """
+    cmd = [
+        'ffprobe',
+        '-v', 'error',
+        '-print_format', 'json',
+        '-show_format',
+        '-show_streams',
+        str(origem)
+    ]
+
+    try:
+        resultado = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        dados = json.loads(resultado.stdout)
+        stream = next(s for s in dados['streams'] if s['codec_type'] == 'audio')
+    except (OSError, subprocess.CalledProcessError, ValueError, KeyError, StopIteration) as e:
+        stderr = getattr(e, 'stderr', '') or ''
+        print(f"ERRO: ffprobe falhou em '{origem}': {e} {stderr.strip()}")
+        return None
+
+    return {
+        'formato': origem.suffix[1:],
+        'codec': stream.get('codec_name', 'N/A'),
+        'bitrate': stream.get('bit_rate', 'N/A'),
+        'sample_rate': stream.get('sample_rate', 'N/A'),
+        'duracao': float(dados['format'].get('duration', 0)),
+        'bits_por_amostra': stream.get('bits_per_raw_sample', 'N/A'),
+    }
+
+
+def converter_para_wav(origem: Path, destino: Path, specs: dict) -> bool:
+    """
+    Converte o audio para WAV preservando os parametros do original.
+
+    Sem '-ar' e sem '-ac': o FFmpeg copia o sample rate e a contagem de
+    canais da origem. Nada de resampling, nem para cima nem para baixo.
+
+    Args:
+        specs: specs da fonte ja sondadas, de onde sai a profundidade de bits.
+
+    Returns:
+        True se o WAV foi escrito, False caso contrario (com log).
+    """
+    # Formatos comprimidos (mp3, m4a, ogg, aac, wma) decodificam em ponto
+    # flutuante e nao declaram bits por amostra - 16 bits e o destino correto
+    bits = str(specs.get('bits_por_amostra', 'N/A'))
+    if bits == '24':
+        codec = 'pcm_s24le'
+    elif bits == '32':
+        codec = 'pcm_s32le'
+    else:
+        codec = 'pcm_s16le'
+
+    cmd = [
+        'ffmpeg',
+        '-v', 'error',
+        '-i', str(origem),
+        '-c:a', codec,
+        '-y',
+        str(destino)
+    ]
+
+    try:
+        subprocess.run(cmd, capture_output=True, text=True, check=True)
+    except (OSError, subprocess.CalledProcessError) as e:
+        stderr = getattr(e, 'stderr', '') or ''
+        print(f"ERRO: ffmpeg falhou ao converter '{origem}': {e} {stderr.strip()}")
+        return False
+
+    if not destino.exists() or destino.stat().st_size == 0:
+        print(f"ERRO: conversao nao produziu audio utilizavel: '{destino}'")
+        return False
+
+    print(f"Convertido para WAV ({codec}): {origem.name} -> {destino.name}")
+    return True
 
 
 def limpar_estado_anterior(audio_id: str):
@@ -34,13 +129,14 @@ def limpar_estado_anterior(audio_id: str):
         print(f"Estado anterior removido: {alvo} ({total_arquivos} arquivo(s))")
 
 
-def criar_diretorios(audio_id: str) -> bool:
+def criar_diretorios(audio_id: str) -> Optional[dict]:
     """
-    Prepara a estrutura de diretorios do audio_id e copia a entrada.
+    Prepara a estrutura de diretorios do audio_id e converte a entrada.
 
     Returns:
-        True se a estrutura foi criada e a entrada copiada, False se a
-        pasta de origem nao existe (nada a processar).
+        As specs do audio-FONTE (ver sondar_specs_origem), que o chamador
+        repassa ao m04 para a proveniencia do dataset, ou None se algo
+        falhou (pasta de origem ausente, sem audio, ffprobe ou ffmpeg).
     """
     #============================================================
     # Reinicio limpo: nada de rodada anterior sobrevive
@@ -106,7 +202,7 @@ def criar_diretorios(audio_id: str) -> bool:
 
     #########################################################
     #============================================================
-    # Criando copia dos arquivos originais
+    # Preparando os arquivos originais: audio vira WAV
     #============================================================
     pasta_origem = PROJECT_ROOT / "arquivos" / "audios" / audio_id
     pasta_destino = pasta1
@@ -117,12 +213,45 @@ def criar_diretorios(audio_id: str) -> bool:
     # Pasta de origem ausente e falha dura: sem entrada nao ha o que processar
     if not pasta_origem.exists():
         print(f"ERRO: Pasta de origem nao encontrada: {pasta_origem}")
-        return False
+        return None
 
-    # Copiar TODOS os arquivos (qualquer tipo, qualquer nome)
-    for item in pasta_origem.iterdir():
-        if item.is_file():
+    # WAV e o formato interno da pipeline. A conversao acontece aqui, uma vez
+    # por audio: dali em diante o formato de entrada nao circula mais, o que
+    # permite aceitar formatos que o SoX 14.4.2 nao le (m4a, aac, wma, opus).
+    # Arquivo que nao e audio segue copiado como esta.
+    audios_convertidos = 0
+    outros_copiados = 0
+    specs_origem = None
+
+    for item in sorted(pasta_origem.iterdir()):
+        if not item.is_file():
+            continue
+
+        if item.suffix.lower() in EXTENSOES_AUDIO:
+            specs = sondar_specs_origem(item)
+            if specs is None:
+                return None
+            if not converter_para_wav(item, pasta_destino / f"{item.stem}.wav", specs):
+                return None
+            audios_convertidos += 1
+            # O contrato e um audio por pasta; na ordem alfabetica, o primeiro
+            # e o que a pipeline vai processar
+            if specs_origem is None:
+                specs_origem = specs
+        else:
             shutil.copy2(item, pasta_destino / item.name)
+            outros_copiados += 1
+
+    # Pasta sem audio nenhum e falha dura: falhar aqui custa menos que falhar
+    # seis modulos adiante
+    if audios_convertidos == 0:
+        print(f"ERRO: nenhum arquivo de audio em {pasta_origem}")
+        return None
+
+    print(f"Originais preparados: {audios_convertidos} audio(s) em WAV, "
+          f"{outros_copiados} outro(s) arquivo(s) copiado(s)")
+    print(f"Proveniencia da fonte: {specs_origem['codec']} | "
+          f"{specs_origem['bitrate']} bps | {specs_origem['sample_rate']} Hz")
 
     #########################################################
     #============================================================
@@ -144,7 +273,7 @@ def criar_diretorios(audio_id: str) -> bool:
     log = dataset / 'log'
     log.mkdir(parents=True, exist_ok=True)
 
-    return True
+    return specs_origem
 
 
 if __name__ == '__main__':
@@ -152,5 +281,5 @@ if __name__ == '__main__':
     if len(sys.argv) != 2:
         print("Uso: python src/m02_diretorios.py <audio_id>")
         sys.exit(1)
-    if not criar_diretorios(sys.argv[1]):
+    if criar_diretorios(sys.argv[1]) is None:
         sys.exit(1)

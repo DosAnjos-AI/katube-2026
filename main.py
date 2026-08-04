@@ -27,6 +27,7 @@ load_dotenv(PROJECT_ROOT / '.env')
 from config import MASTER, EXTENSOES_AUDIO
 
 # Importar modulos do pipeline (todos estao em ./src/)
+from m00_nomeacao import preparar_entrada
 from m02_diretorios import criar_diretorios
 from m04_segmentador_audio_vad import executar_segmentacao_vad
 from m05_segmentador_16khz import processar_pasta
@@ -353,10 +354,12 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         # ======================================================================
         logger.info("[M02] Criando estrutura de diretorios...")
         inicio = time.time()
-        sucesso = criar_diretorios(audio_id)
+        # As specs vem da FONTE, sondada antes da conversao para WAV. Sao a
+        # unica memoria de onde o audio veio: depois daqui so circula WAV.
+        specs_origem = criar_diretorios(audio_id)
         tempos_modulos['m02'] = time.time() - inicio
-        if not sucesso:
-            logger.error("[M02] FALHOU - pasta de origem ausente. Abortando pipeline")
+        if specs_origem is None:
+            logger.error("[M02] FALHOU - entrada ausente ou conversao falhou. Abortando pipeline")
             return False
         logger.info(f"[M02] Concluido ({tempos_modulos['m02']:.2f}s)")
 
@@ -368,7 +371,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         if modo_segmentacao == 'vad':
             logger.info("[M04-VAD] Executando segmentacao por VAD...")
             inicio = time.time()
-            tem_segmentos = executar_segmentacao_vad(audio_id)
+            tem_segmentos = executar_segmentacao_vad(audio_id, specs_origem)
             tempos_modulos['m04_vad'] = time.time() - inicio
             if not tem_segmentos:
                 logger.warning("[M04-VAD] Nenhum segmento valido encontrado — audio descartado")
@@ -578,6 +581,14 @@ def main():
     
     # Marcar inicio do processamento total
     inicio_geral = time.time()
+
+    # Etapa 00: nomear e mover o material de arquivos/input/ para
+    # arquivos/audios/, que e o que a listagem abaixo varre.
+    # O predicado do historico vai injetado: a regra continua morando so aqui.
+    if not preparar_entrada(verificar_processado):
+        print("\nERRO na etapa de nomeacao - execucao abortada")
+        print("Nenhum audio foi processado. Verifique as mensagens [M00] acima.")
+        return
 
     # Listar IDs disponiveis
     ids_disponiveis = listar_ids_disponiveis()

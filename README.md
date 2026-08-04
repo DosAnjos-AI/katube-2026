@@ -12,16 +12,16 @@ normalizados, transcritos por dois modelos STT, validados por similaridade e com
 ## Visão geral
 
 ```
-Áudios brutos (.ogg/.flac/...)
-        │
-        ▼
-[ nomecao_spotify.py ]  ── ingestão: hash MD5 + relacao_ids.csv
-        │
-        ▼
-arquivos/audios/{audio_id}/{audio_id}.ext
+Áudios brutos (.ogg/.flac/...) colados em arquivos/input/
         │
         ▼
 ┌──────────────────────── main.py (orquestrador) ────────────────────────┐
+│  M00 ── nomeação: varre input/, resolve o id e MOVE para audios/       │
+│         │                                                              │
+│         ▼                                                              │
+│  arquivos/audios/{audio_id}/{audio_id}.ext                             │
+│         │                                                              │
+│         ▼                                                              │
 │  M02 → M04 → M05 → M06 → M07 → M08 → M09 → M10 → M11 → M12 → M13 → M14 → M15  │
 └─────────────────────────────────────────────────────────────────────────┘
         │
@@ -29,9 +29,16 @@ arquivos/audios/{audio_id}/{audio_id}.ext
 dataset/dataset.csv  +  dataset/audio_dataset/{audio_id}/*.flac
 ```
 
-Cada áudio é identificado por um **`audio_id`** (hash MD5). Todo o estado intermediário
-de um áudio vive em `arquivos/temp/{audio_id}/`, organizado em subpastas numeradas que
-espelham as etapas da pipeline.
+Cada áudio é identificado por um **`audio_id`**, decidido pelo M00 a partir do
+nome do arquivo (nome original ou hash MD5 — ver `NOMEACAO` em
+[config.py](config.py)). Todo o estado intermediário de um áudio vive em
+`arquivos/temp/{audio_id}/`, organizado em subpastas numeradas que espelham as
+etapas da pipeline.
+
+> **ATENÇÃO — `arquivos/input/` é esvaziada a cada execução.** O M00 **move** os
+> arquivos, não copia. **Cole sempre uma CÓPIA em `arquivos/input/`, nunca a única
+> cópia dos áudios** — eles são consumidos no processamento. Ver
+> [arquivos/input/README.md](arquivos/input/README.md).
 
 ---
 
@@ -45,9 +52,10 @@ spotify2026/
 ├── watchdog_spotify2026.sh  # Reexecuta main.py até esvaziar a fila (audios == temp)
 ├── limpar_temp.py           # Utilitário de limpeza manual de temporários
 ├── sumary_results.py        # Sumarização de resultados do dataset
-├── src/                     # Módulos da pipeline (m01–m15)
+├── src/                     # Módulos da pipeline (m00–m15)
+│   ├── m00_nomeacao.py               # Porta de entrada: input/ → audios/{id}/{id}.ext
 │   ├── m01_load_models.py            # Singleton de modelos de IA (carrega 1x)
-│   ├── m02_diretorios.py             # Cria estrutura de pastas do áudio
+│   ├── m02_diretorios.py             # Cria pastas do áudio e converte a entrada para WAV
 │   ├── m04_segmentador_audio_vad.py  # Segmentação por VAD (Silero)
 │   ├── m05_segmentador_16khz.py      # Conversão para 16 kHz mono
 │   ├── m06_mos_filter.py             # Filtro de qualidade MOS (SQUIM)
@@ -61,11 +69,12 @@ spotify2026/
 │   ├── m14_metadados.py              # Escreve dataset.csv (append) + histórico
 │   └── m15_cleanup.py                # Limpeza de temporários/input
 ├── arquivos/
-│   ├── audios/{audio_id}/            # ENTRADA: um áudio por pasta
+│   ├── input/                        # ENTRADA: cole aqui (é ESVAZIADA a cada execução)
+│   ├── audios/{audio_id}/            # Pasta de trabalho: um áudio por pasta
 │   └── temp/{audio_id}/              # Estado intermediário (ver abaixo)
 └── dataset/
     ├── dataset.csv                   # SAÍDA: metadados de cada segmento aprovado
-    ├── relacao_ids.csv               # Mapa hash ↔ nome/origem original
+    ├── nomeacao_hash.csv             # Mapa hash ↔ nome (só no modo hash_md5)
     ├── audio_dataset/{audio_id}/     # SAÍDA: segmentos .flac finais
     ├── historico_dataset/{id}.json   # JSON de acompanhamento por áudio processado
     └── log/{audio_id}.log            # Log detalhado por áudio
@@ -98,15 +107,37 @@ converte em linhas do `dataset.csv`.
 
 ## A pipeline passo a passo
 
-O orquestrador ([main.py](main.py)) percorre todos os `audio_id` em
-`arquivos/audios/`, pula os que já têm histórico, e executa as etapas abaixo para
-cada novo áudio. Etapas marcadas **(condicional)** só rodam conforme o bloco
-`MASTER` em [config.py](config.py).
+O orquestrador ([main.py](main.py)) roda o **M00 uma única vez**, depois percorre
+todos os `audio_id` em `arquivos/audios/`, pula os que já têm histórico, e executa
+as etapas abaixo para cada novo áudio. Etapas marcadas **(condicional)** só rodam
+conforme o bloco `MASTER` em [config.py](config.py).
+
+### M00 — Nomeação *(obrigatório, roda 1x por execução)*
+Varre `arquivos/input/` **recursivamente**, filtra pelos formatos de
+`NOMEACAO['formatos_entrada']`, resolve o `audio_id` de cada arquivo e o **MOVE**
+para `arquivos/audios/{audio_id}/{audio_id}.ext`.
+
+- **Id**: nome original ou hash MD5, conforme `NOMEACAO['modo']`. É sempre
+  **determinístico** — o hash é do nome, nunca do conteúdo ou da hora.
+- **Nomes repetidos** em pastas diferentes ganham sufixo `_002`, `_003`, na ordem
+  alfabética do caminho relativo.
+- **Não move** o que já está em `arquivos/audios/{id}/` nem o que já consta de
+  `historico_dataset/`. O arquivo fica parado na `input/`, com aviso no log.
+- Arquivo de formato não aceito é **ignorado com aviso e contagem**, e não sai
+  do lugar.
+- No modo hash, grava a relação nome ↔ id em `dataset/nomeacao_hash.csv`
+  (separador `|`, escrita atômica).
+
+**A pasta `arquivos/input/` é esvaziada a cada execução — cole sempre uma cópia.**
 
 ### M02 — Criar diretórios *(obrigatório)*
-Cria `arquivos/temp/{audio_id}/` com todas as subpastas numeradas e copia o áudio
-de entrada para `01-arquivos_originais/`. Também garante a existência de
-`dataset/audio_dataset/`, `dataset/historico_dataset/` e `dataset/log/`.
+Cria `arquivos/temp/{audio_id}/` com todas as subpastas numeradas e **converte** o
+áudio de entrada para **WAV** em `01-arquivos_originais/`, preservando sample rate,
+canais e profundidade de bits do original (24 bits viram `pcm_s24le`, não são
+truncados). WAV é o formato interno da pipeline: daí em diante o formato de
+entrada não circula mais, o que permite aceitar formatos que o SoX não lê
+(`m4a`, `aac`, `wma`). Também garante a existência de `dataset/audio_dataset/`,
+`dataset/historico_dataset/` e `dataset/log/`.
 
 ### M04 — Segmentação *(condicional)*
 Quebra o áudio longo em segmentos curtos de fala. Modo definido por
@@ -180,8 +211,12 @@ Converte o JSON de acompanhamento em linhas do **`dataset/dataset.csv`** (separa
   processado e evita reprocessá-lo).
 
 ### M15 — Cleanup *(condicional — `cleanup`)*
-Remove pastas temporárias e/ou de input conforme `MASTER['cleanup']`:
-`'all'` (temp + input), `'input'`, `'temp'` ou `'none'`.
+Remove pastas temporárias e/ou de entrada conforme `MASTER['cleanup']`:
+`'all'` (temp + entrada), `'input'`, `'temp'` ou `'none'`.
+
+> **Cuidado com o nome:** aqui `'input'` significa **`arquivos/audios/{audio_id}/`**,
+> a pasta de trabalho do áudio — **não** `arquivos/input/`, onde você cola o material.
+> A pasta `arquivos/input/` nunca é apagada pelo M15.
 
 Ao final, o `main.py` grava em `dataset/processamento_metadados.csv` um registro com
 duração total, contagem de áudios (processados/pulados/erros) e o **tempo gasto em
@@ -213,8 +248,10 @@ reservado e hoje sai sempre vazia.
 **`dataset/audio_dataset/{audio_id}/*.flac`** — os arquivos de áudio finais
 referenciados pela coluna `caminho`.
 
-**`dataset/relacao_ids.csv`** — mapeia cada `audio_id` (hash) de volta ao nome e
-caminho do arquivo original (`hash | nome_audio | caminho_origem | caminho_destino`).
+**`dataset/nomeacao_hash.csv`** — mapeia cada `audio_id` de volta ao nome do arquivo
+original (`hash | nome_desempatado | caminho_relativo_origem`, separador `|`). Escrito
+pelo M00 **apenas quando `NOMEACAO['modo'] == 'hash_md5'`** — no modo `nome_original` o
+id já é o nome, e o arquivo não é criado. Acumula entre execuções, com escrita atômica.
 
 ---
 
@@ -234,6 +271,18 @@ MASTER = {
     'cleanup': 'all',            # 'all' | 'input' | 'temp' | 'none'
 }
 ```
+
+O bloco **`NOMEACAO`** governa a porta de entrada (M00):
+
+```python
+NOMEACAO = {
+    'modo': 'nome_original',     # 'nome_original' | 'hash_md5'
+    'formatos_entrada': {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'},
+}
+```
+
+`formatos_entrada` é a **fonte única** de formato de entrada do projeto:
+`EXTENSOES_AUDIO`, que os módulos importam, é derivada dele.
 
 Cada módulo tem seu próprio dicionário de parâmetros (`SEGMENTADOR_AUDIO_VAD`,
 `MOS_FILTER`, `OVERLAP_DETECTOR`, `STT_WHISPER`, `STT_WAV2VEC2`, `TEXT_NORMALIZER`,
@@ -268,10 +317,16 @@ vez só, reutilizados entre áudios):
 - `.env` configurado (token HuggingFace).
 
 ### 1. Ingestão dos áudios
-Coloque os áudios de entrada em `arquivos/audios/{audio_id}/{audio_id}.ext`, ou use o
-script de ingestão [Dataset_Spotify_Processado/nomecao_spotify.py](../Dataset_Spotify_Processado/nomecao_spotify.py),
-que busca áudios recursivamente, renomeia cada um pelo **hash MD5** do caminho,
-descarta arquivos abaixo de 11 KB e gera o `relacao_ids.csv`.
+Cole os áudios em **`arquivos/input/`** — arquivos soltos ou pastas inteiras, em
+quantos níveis de subpasta quiser. O M00 cuida do resto na próxima execução do
+`main.py`: varre, nomeia e move para `arquivos/audios/{audio_id}/{audio_id}.ext`.
+
+> **COLE SEMPRE UMA CÓPIA, NUNCA A ÚNICA CÓPIA DOS ÁUDIOS.** Os arquivos são
+> **movidos**, não copiados: `arquivos/input/` é esvaziada a cada execução e o
+> material sai de lá. Mantenha sempre o original em outro lugar.
+
+Quem preferir pode continuar colando direto em
+`arquivos/audios/{audio_id}/{audio_id}.ext` — o M00 não atrapalha o que já está lá.
 
 ### 2. Rodar a pipeline
 ```bash
