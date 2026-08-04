@@ -45,14 +45,42 @@ def sondar_specs_origem(origem: Path) -> Optional[dict]:
         print(f"ERRO: ffprobe falhou em '{origem}': {e} {stderr.strip()}")
         return None
 
+    # Ausencia e None, nunca a string 'N/A': codec, bitrate e sample_rate
+    # viajam ate as colunas origem_* do dataset.csv, onde ausencia tem que ser
+    # celula vazia. 'N/A' seria TEXTO numa coluna numerica.
     return {
         'formato': origem.suffix[1:],
-        'codec': stream.get('codec_name', 'N/A'),
-        'bitrate': stream.get('bit_rate', 'N/A'),
-        'sample_rate': stream.get('sample_rate', 'N/A'),
+        'codec': stream.get('codec_name'),
+        'bitrate': stream.get('bit_rate'),
+        'sample_rate': stream.get('sample_rate'),
         'duracao': float(dados['format'].get('duration', 0)),
-        'bits_por_amostra': stream.get('bits_per_raw_sample', 'N/A'),
+        'bits_por_amostra': stream.get('bits_per_raw_sample'),
     }
+
+
+def codec_pcm_para_bits(specs: dict) -> str:
+    """
+    Traduz a profundidade de bits da FONTE no codec PCM correspondente.
+
+    Ponto unico de decisao: e usada tanto aqui, na conversao para WAV, quanto
+    pelo m04, no corte dos segmentos. Duas copias da regra sairiam do ar uma
+    da outra, e o segmento acabaria com profundidade diferente do original de
+    onde saiu.
+
+    Args:
+        specs: specs da fonte ja sondadas (ver sondar_specs_origem).
+
+    Returns:
+        Nome do codec PCM para o parametro '-c:a' do FFmpeg.
+    """
+    # Formatos comprimidos (mp3, m4a, ogg, aac, wma) decodificam em ponto
+    # flutuante e nao declaram bits por amostra - 16 bits e o destino correto
+    bits = str(specs.get('bits_por_amostra'))
+    if bits == '24':
+        return 'pcm_s24le'
+    if bits == '32':
+        return 'pcm_s32le'
+    return 'pcm_s16le'
 
 
 def converter_para_wav(origem: Path, destino: Path, specs: dict) -> bool:
@@ -68,15 +96,7 @@ def converter_para_wav(origem: Path, destino: Path, specs: dict) -> bool:
     Returns:
         True se o WAV foi escrito, False caso contrario (com log).
     """
-    # Formatos comprimidos (mp3, m4a, ogg, aac, wma) decodificam em ponto
-    # flutuante e nao declaram bits por amostra - 16 bits e o destino correto
-    bits = str(specs.get('bits_por_amostra', 'N/A'))
-    if bits == '24':
-        codec = 'pcm_s24le'
-    elif bits == '32':
-        codec = 'pcm_s32le'
-    else:
-        codec = 'pcm_s16le'
+    codec = codec_pcm_para_bits(specs)
 
     cmd = [
         'ffmpeg',
@@ -250,8 +270,9 @@ def criar_diretorios(audio_id: str) -> Optional[dict]:
 
     print(f"Originais preparados: {audios_convertidos} audio(s) em WAV, "
           f"{outros_copiados} outro(s) arquivo(s) copiado(s)")
-    print(f"Proveniencia da fonte: {specs_origem['codec']} | "
-          f"{specs_origem['bitrate']} bps | {specs_origem['sample_rate']} Hz")
+    print(f"Proveniencia da fonte: {specs_origem['codec'] or 'ausente'} | "
+          f"{specs_origem['bitrate'] or 'ausente'} bps | "
+          f"{specs_origem['sample_rate'] or 'ausente'} Hz")
 
     #########################################################
     #============================================================

@@ -51,10 +51,24 @@ def processar_audio_denoiser(
     audio_path: Path,
     model,
     df_state,
-    attenuation_limit: float
+    attenuation_limit: float,
+    sr_modelo: int
 ) -> Tuple[np.ndarray, int]:
     """
-    Processa um arquivo de audio com DeepFilterNet3
+    Processa um arquivo de audio com DeepFilterNet3, devolvendo-o na taxa
+    de amostragem em que entrou.
+
+    O DeepFilterNet3 opera a 48 kHz internamente: um segmento de 24 kHz e
+    reamostrado na entrada, e isso e inevitavel. A saida, porem, e devolvida
+    a taxa da fonte. Sem isso o dataset sairia com sample rate MISTURADO -
+    48 kHz nos segmentos que passaram pelo denoiser, a taxa da fonte nos que
+    nao passaram - e os de 48 kHz seriam material de 24 kHz esticado, sem
+    informacao nenhuma acima de 12 kHz. O custo do resample e irrisorio.
+
+    CANAIS NAO SAO RESTAURADOS, de proposito: o modelo e mono, e recriar um
+    par estereo duplicando o canal seria inventar informacao que o denoiser
+    nao produziu. O m13 leva todos os caminhos a mono de qualquer forma
+    (SOX_NORMALIZER['channels']), entao isso nao mistura nada no dataset.
 
     O dispositivo nao e parametro desta funcao: quem o define e o m01, ao
     carregar o modelo, inclusive escrevendo a chave DEVICE na config
@@ -65,16 +79,22 @@ def processar_audio_denoiser(
         model: Modelo DeepFilterNet
         df_state: Estado do DeepFilterNet
         attenuation_limit: Limite de atenuacao, em decibeis
+        sr_modelo: Taxa interna do modelo, como o m01 a anuncia - nao ha
+            numero fixo aqui, quem manda e a biblioteca carregada
 
     Returns:
-        Tupla (audio_denoised, sample_rate)
+        Tupla (audio_denoised, sample_rate), o sample rate sendo o do
+        segmento de ENTRADA - nao a taxa interna do modelo.
     """
-    # Carrega audio (DeepFilterNet espera mono em 48kHz)
-    audio, sr_original = librosa.load(str(audio_path), sr=48000, mono=True)
-    
+    # Taxa nativa do segmento, medida ANTES da reamostragem para o modelo
+    sr_fonte = sf.info(str(audio_path)).samplerate
+
+    # Carrega audio (DeepFilterNet espera mono na taxa interna do modelo)
+    audio, _ = librosa.load(str(audio_path), sr=sr_modelo, mono=True)
+
     # Converte para tensor torch (mantém em CPU - DeepFilterNet requer isso internamente)
     audio_tensor = torch.from_numpy(audio).unsqueeze(0)  # Shape: (1, samples)
-    
+
     # Aplica denoising
     with torch.no_grad():
         audio_denoised = enhance(
@@ -83,48 +103,59 @@ def processar_audio_denoiser(
             audio_tensor,
             atten_lim_db=attenuation_limit
         )
-    
+
     # Converte de volta para numpy (resultado pode estar em CPU ou GPU)
     if audio_denoised.is_cuda:
         audio_denoised_np = audio_denoised.cpu().numpy()
     else:
         audio_denoised_np = audio_denoised.numpy()
-    
+
     # Remove dimensão batch
     audio_denoised_np = audio_denoised_np.squeeze(0)
-    
-    return audio_denoised_np, 48000  # DeepFilterNet sempre retorna 48kHz
+
+    # Volta para a taxa da fonte (o modelo devolve sempre a taxa interna dele)
+    if sr_fonte != sr_modelo:
+        audio_denoised_np = librosa.resample(
+            audio_denoised_np, orig_sr=sr_modelo, target_sr=sr_fonte
+        )
+
+    return audio_denoised_np, sr_fonte
 
 
 def salvar_audio_formato_original(
     audio_denoised: np.ndarray,
     sr: int,
     output_path: Path,
-    formato_original: str
+    formato_original: str,
+    subtype: str
 ) -> None:
     """
     Salva audio processado no mesmo formato do arquivo original
-    
+
     Args:
         audio_denoised: Array numpy com audio processado
         sr: Sample rate
         output_path: Caminho de saida (com extensao original)
         formato_original: Extensao do arquivo original (ex: '.flac', '.mp3')
+        subtype: Subtipo do soundfile lido do segmento de ENTRADA. Gravar com
+            constante fixa rebaixaria um segmento de 24 bits sem avisar - o
+            m04 ja o entregou na profundidade da fonte, e o denoiser nao pode
+            ser o ponto que joga isso fora.
     """
     # Normaliza audio para evitar clipping
     audio_normalized = np.clip(audio_denoised, -1.0, 1.0)
-    
+
     if formato_original in ['.wav', '.flac']:
         # Formatos lossless: usa soundfile diretamente
-        sf.write(str(output_path), audio_normalized, sr, subtype='PCM_16')
-    
+        sf.write(str(output_path), audio_normalized, sr, subtype=subtype)
+
     elif formato_original in ['.mp3', '.ogg', '.m4a', '.aac']:
         # Formatos comprimidos: usa pydub via arquivo temporario WAV
         temp_wav = output_path.with_suffix('.wav')
-        
+
         # Salva temporariamente como WAV
-        sf.write(str(temp_wav), audio_normalized, sr, subtype='PCM_16')
-        
+        sf.write(str(temp_wav), audio_normalized, sr, subtype=subtype)
+
         # Converte para formato desejado usando pydub
         from pydub import AudioSegment
         audio_segment = AudioSegment.from_wav(str(temp_wav))
@@ -383,16 +414,24 @@ def main(audio_id: str) -> bool:
             # Processa audio
             print(f"[{idx}/{len(segmentos_elegiveis)}] Processando: {nome_arquivo} ({json_acompanhamento[nome_arquivo].get('mos_qualidade', '?')})")
             
+            # Subtipo do segmento de ENTRADA: e ele que define a profundidade
+            # de bits da saida, para o denoiser nao rebaixar o que o m04
+            # entregou na qualidade da fonte
+            subtype_entrada = sf.info(str(audio_path)).subtype
+
             audio_denoised, sr = processar_audio_denoiser(
                 audio_path,
                 model,
                 df_state,
-                ATTENUATION_LIMIT
+                ATTENUATION_LIMIT,
+                sr_modelo
             )
-            
+
             # Salva audio processado
             output_audio_path = PASTA_OUTPUT_DENOISER / nome_arquivo
-            salvar_audio_formato_original(audio_denoised, sr, output_audio_path, formato_original)
+            salvar_audio_formato_original(
+                audio_denoised, sr, output_audio_path, formato_original, subtype_entrada
+            )
             
             processados += 1
             

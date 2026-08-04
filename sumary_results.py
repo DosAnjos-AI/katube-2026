@@ -36,7 +36,7 @@ def analisar_dataset(csv_path: str):
         df = pd.read_csv(csv_path, sep='|')
 
         df_seg = df['duracao']
-        df_segmentos = df['arquivo_nome']
+        df_segmentos = df['nome_arquivo_audio']
 
         duracao_hrs = df_seg.sum() / 3600
         media = df_seg.mean()

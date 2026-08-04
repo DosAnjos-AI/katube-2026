@@ -74,7 +74,7 @@ spotify2026/
 │   └── temp/{audio_id}/              # Estado intermediário (ver abaixo)
 └── dataset/
     ├── dataset.csv                   # SAÍDA: metadados de cada segmento aprovado
-    ├── nomeacao_hash.csv             # Mapa hash ↔ nome (só no modo hash_md5)
+    ├── nomeacao.csv                  # Procedência: id ↔ caminho de origem
     ├── audio_dataset/{audio_id}/     # SAÍDA: segmentos .flac finais
     ├── historico_dataset/{id}.json   # JSON de acompanhamento por áudio processado
     └── log/{audio_id}.log            # Log detalhado por áudio
@@ -125,8 +125,9 @@ para `arquivos/audios/{audio_id}/{audio_id}.ext`.
   `historico_dataset/`. O arquivo fica parado na `input/`, com aviso no log.
 - Arquivo de formato não aceito é **ignorado com aviso e contagem**, e não sai
   do lugar.
-- No modo hash, grava a relação nome ↔ id em `dataset/nomeacao_hash.csv`
-  (separador `|`, escrita atômica).
+- Grava a procedência de cada áudio movido em `dataset/nomeacao.csv` (separador
+  `|`, **append puro**, nos dois modos). É a origem da coluna `nome_original` do
+  `dataset.csv`.
 
 **A pasta `arquivos/input/` é esvaziada a cada execução — cole sempre uma cópia.**
 
@@ -235,11 +236,12 @@ cada módulo** (absoluto e percentual).
 
 ## Saídas (o dataset)
 
-**`dataset/dataset.csv`** — uma linha por segmento aprovado. As 29 colunas de
-hoje, na ordem do cabeçalho:
+**`dataset/dataset.csv`** — uma linha por segmento aprovado. **Schema fixo de 31
+colunas**, na ordem do cabeçalho:
 
 ```
-arquivo_nome | caminho | tempo_inicio | tempo_fim | duracao | texto | vad |
+nome_original | nome_processado | nome_arquivo_audio | caminho |
+tempo_inicio | tempo_fim | duracao | vad |
 origem_codec | origem_bitrate | origem_sample_rate |
 mos_score | mos_stoi | mos_si_sdr | mos_qualidade | overlap01 |
 stt_whisper | stt_wav2vec | sim_whisper_wav2vec_wer |
@@ -247,21 +249,50 @@ sim_whisper_wav2vec_cer | sim_whisper_wav2vec_levenshtein_norm |
 status_similaridade |
 utilizou_denoiser | sox_sample_rate | sox_bit_depth | sox_channels |
 sox_output_format | sox_normalize_method | sox_target_level_db |
-utilizou_sox
+utilizou_sox | datetime_processado
 ```
 
-O cabeçalho não é fixo no código: o M14 o monta a partir das chaves do JSON de
-acompanhamento, com `arquivo_nome` e `caminho` como únicas colunas fixas. As
-transcrições ficam em `stt_whisper` e `stt_wav2vec`; a coluna `texto` é um campo
-reservado e hoje sai sempre vazia.
+**As colunas são sempre estas, qualquer que seja a configuração.** Denoiser
+desligado, SoX que não rodou, módulo pulado: a coluna continua lá, vazia. O que
+varia é o preenchimento, nunca o conjunto de colunas. O schema vive em
+`SCHEMA_DATASET`, no M14.
+
+As três primeiras colunas identificam a origem, em granularidades diferentes:
+
+| Coluna | Conteúdo | Granularidade |
+|---|---|---|
+| `nome_original` | caminho relativo de origem dentro de `arquivos/input/` | do **áudio** (repetido nas n linhas) |
+| `nome_processado` | id do áudio: nome desempatado ou hash | do **áudio** (repetido nas n linhas) |
+| `nome_arquivo_audio` | `{id}_{numeração}.{formato de saída}` | do **segmento** |
+
+No modo `nome_original`, as duas primeiras ficam com o mesmo valor de base —
+duplicação esperada, não defeito.
+
+**Valor de ausência:** célula **vazia** — é o que pandas, polars e o `csv` do
+Python leem como nulo sem tratamento nenhum. Exceção para três booleanos (`vad`,
+`utilizou_denoiser`, `utilizou_sox`), onde a ausência vira `False`, que ali
+significa "não usei". `overlap01` **não** é exceção: `False` nele significa "não
+há sobreposição", ou seja, aprovado — carimbá-lo sem o M07 ter rodado falsearia
+o dado.
+
+**`datetime_processado`** — momento em que a linha foi escrita, em ISO 8601 com
+fuso e precisão de segundos (`2026-08-04T15:32:07-03:00`). O fuso vem do sistema
+operacional, nunca de constante no código: um servidor em Frankfurt grava
+`+02:00` sozinho.
+
+O M14 só **cria** e faz **append**. Se o arquivo já existir com header diferente
+do schema, ele se recusa a gravar e devolve falha — append de 31 campos sob outro
+cabeçalho corromperia o arquivo em silêncio. Para migrar, arquive o CSV antigo.
 
 **`dataset/audio_dataset/{audio_id}/*.flac`** — os arquivos de áudio finais
 referenciados pela coluna `caminho`.
 
-**`dataset/nomeacao_hash.csv`** — mapeia cada `audio_id` de volta ao nome do arquivo
-original (`hash | nome_desempatado | caminho_relativo_origem`, separador `|`). Escrito
-pelo M00 **apenas quando `NOMEACAO['modo'] == 'hash_md5'`** — no modo `nome_original` o
-id já é o nome, e o arquivo não é criado. Acumula entre execuções, com escrita atômica.
+**`dataset/nomeacao.csv`** — a procedência de cada áudio
+(`nome_processado | nome_original | datetime_movido`, separador `|`). Escrito pelo
+M00 em **append puro** nos **dois** modos de nomeação, uma linha por áudio movido,
+gravada logo após o move. É dele que sai a coluna `nome_original` do
+`dataset.csv`. Nunca reescreve linha existente. O caminho é declarado em
+`config.CSV_NOMEACAO`.
 
 ---
 

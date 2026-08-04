@@ -24,8 +24,11 @@ NOMEACAO = {
     #                     `entrevista.flac` disputam o mesmo id (a guarda de
     #                     histórico barra o segundo).
     #   "hash_md5"      → o id é o MD5 do nome já desempatado. Some com a
-    #                     legibilidade e produz a relação nome <-> id no CSV
-    #                     auxiliar `dataset/nomeacao_hash.csv`.
+    #                     legibilidade, e só o CSV auxiliar (CSV_NOMEACAO)
+    #                     devolve a origem de cada áudio.
+    #
+    # O CSV auxiliar é escrito nos DOIS modos: é por ele que a coluna
+    # `nome_original` do dataset.csv é preenchida.
     #
     # Em AMBOS os modos o id é DETERMINÍSTICO: o hash é calculado sobre o
     # NOME, nunca sobre o conteúdo, o caminho absoluto ou a hora. A mesma
@@ -56,6 +59,21 @@ NOMEACAO = {
     # O FFmpeg também decodifica `aiff` e `au`, igualmente fora da lista.
     'formatos_entrada': {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'},
 }
+
+
+# ============================================================================
+# CSV AUXILIAR DA NOMEAÇÃO - A PROCEDÊNCIA DE CADA ÁUDIO
+# ============================================================================
+# Guarda a relação `id processado` <-> `caminho de origem em arquivos/input/`.
+# Escrito pelo M00 (append puro, uma linha por áudio movido) e LIDO pelo M14,
+# que é quem preenche a coluna `nome_original` do dataset.csv.
+#
+# Caminho declarado AQUI, e não nos módulos: dois literais iguais em arquivos
+# diferentes divergem na primeira edição, e o M14 passaria a ler um arquivo
+# que o M00 não escreve - sem erro nenhum, só com a coluna vazia.
+#
+# Colunas (separador `|`): nome_processado | nome_original | datetime_movido
+CSV_NOMEACAO = PROJECT_ROOT / "dataset" / "nomeacao.csv"
 
 
 # ============================================================================
@@ -570,7 +588,26 @@ SIMILARITY_VALIDATOR = {
     # invalida a palavra inteira, então o WER é sempre mais severo que o CER
     # sobre o mesmo texto.
     # Valores típicos: 0.30 (permissivo), 0.20 (equilibrado), 0.10 (restritivo)
-    "limiar_wer": 0.20,
+    #
+    # CALIBRADO EM DADO REAL (tarefa 28), não na escrivaninha. O wav2vec é
+    # FONÉTICO e não corrige para o português como o Whisper faz: divergência
+    # de PALAVRA entre os dois é esperada e NÃO é sinal de áudio ruim. Com o
+    # CER e o levenshtein_norm já filtrando, o WER é o mais frouxo dos três.
+    #
+    # Medição dos 23 segmentos elegíveis da etapa 6 (relatório 27): onze
+    # reprovavam APENAS por WER, com CER entre 0,0642 e 0,1481 (limiar 0,15) e
+    # levenshtein_norm entre 0,8519 e 0,9358 (limiar 0,85) - ou seja, folgados
+    # nas duas métricas que de fato medem erro de transcrição. O valor 0,20
+    # reprovava 100% dos segmentos de dois dos cinco áudios, enquanto o MESMO
+    # material em outro corte passava com 0,11.
+    #
+    # Por que 0.35 e não 0.40: em 0,40 o WER deixaria de decidir sozinho em
+    # qualquer caso da amostra - tudo que ele barraria já é barrado por CER e
+    # levenshtein_norm - e viraria botão sem efeito. Em 0,35 ele ainda barra
+    # sozinho um segmento (WER 0,4000 com CER 0,1481 e levenshtein_norm
+    # 0,8519, raspando nos três), então continua tendo poder de decisão
+    # próprio como rede contra divergência estrutural grosseira.
+    "limiar_wer": 0.35,
 
     # ------------------------------------------------------------------------
     # CER - Character Error Rate (taxa de erro por CARACTERE)
@@ -616,12 +653,19 @@ DEEPFILTERNET_DENOISER = {
     # ATENÇÃO - o que chega de fato até aqui:
     #   "baixa" NUNCA chega: o m06 descarta esses segmentos antes, por
     #   min_threshold. Só restam "media" e "alta".
-    #   Com max_threshold=3.0, os segmentos deste projeto têm saído quase
-    #   todos como "alta" (MOS de 3,36 a 3,89). O valor ["media"] selecionou
-    #   ZERO segmentos em todas as rodadas de teste - o denoiser carrega,
-    #   imprime cabeçalho e não processa nada. Isso é a semântica correta
-    #   (áudio de qualidade alta não precisa de tratamento), mas quem
-    #   quiser ver o denoiser agir precisa incluir "alta".
+    #
+    #   QUANTO ["media"] SELECIONA, medido na tarefa 28 (5 áudios, 23
+    #   segmentos elegíveis): 3 segmentos, todos do áudio `entrevista`.
+    #   Os outros 14 entregues não passaram pelo denoiser. Ou seja, o
+    #   filtro seleciona de verdade e os DOIS caminhos do m13 (com e sem
+    #   denoiser) são exercitados numa mesma rodada.
+    #
+    #   O comentário anterior afirmava que ["media"] selecionava ZERO
+    #   segmentos "em todas as rodadas de teste". Isso valia quando o
+    #   conjunto de teste era só o `qMrMmG__Yhw_60s`, cujos segmentos saem
+    #   quase todos como "alta" (MOS de 3,36 a 3,89 com max_threshold=3.0).
+    #   Deixou de valer quando entraram áudios de outra procedência.
+    #   Para processar TODO segmento com o denoiser, inclua "alta".
     #
     # IMPORTANTE: Os arquivos originais (input) SEMPRE permanecem intactos
     #             O denoising cria novos arquivos processados no output

@@ -10,6 +10,11 @@ estrutura que o resto da pipeline consome.
 Nao converte formato: o arquivo chega ao destino no formato original. A
 conversao para WAV e do m02.
 
+Grava tambem, NOS DOIS MODOS de nomeacao, o CSV auxiliar da procedencia
+(config.CSV_NOMEACAO): e por ele que o m14 preenche a coluna `nome_original`
+do dataset.csv. A escrita e APPEND PURO, uma linha por audio movido, feita
+logo apos o move - ver _registrar_no_csv.
+
 ATENCAO - A PASTA DE INPUT E ESVAZIADA: o arquivo e MOVIDO, nao copiado.
 """
 
@@ -17,8 +22,9 @@ import hashlib
 import os
 import shutil
 import sys
+from datetime import datetime
 from pathlib import Path
-from typing import Callable, List, Tuple
+from typing import Callable
 
 # ==============================================================================
 # CONFIGURACAO DE CAMINHOS
@@ -28,10 +34,10 @@ from typing import Callable, List, Tuple
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from config import NOMEACAO
+from config import CSV_NOMEACAO, NOMEACAO
 
-# Cabecalho do CSV auxiliar do modo hash
-CSV_HASH_HEADER = 'hash|nome_desempatado|caminho_relativo_origem'
+# Cabecalho do CSV auxiliar, escrito nos DOIS modos de nomeacao
+CSV_NOMEACAO_HEADER = 'nome_processado|nome_original|datetime_movido'
 
 
 # ==============================================================================
@@ -100,62 +106,50 @@ def _mover_seguro(origem: Path, destino: Path) -> bool:
         return False
 
 
-def _escrever_csv_hash(linhas: List[Tuple[str, str, str]]) -> bool:
+def _agora_iso() -> str:
     """
-    Grava a relacao hash <-> nome no CSV auxiliar, com escrita atomica.
+    Momento atual em ISO 8601 com fuso, precisao de segundos.
 
-    O arquivo acumula entre execucoes: le o que ja existe, funde as linhas
-    novas por hash e regrava inteiro em .tmp + os.replace (mesmo padrao do
-    m13). O arquivo nunca existe pela metade.
+    O fuso vem do sistema operacional (astimezone sem argumento), NUNCA de
+    constante no codigo: um servidor em Frankfurt tem que gravar '+02:00'
+    sozinho, sem ninguem editar o projeto.
+    """
+    return datetime.now().astimezone().replace(microsecond=0).isoformat()
 
-    Linha malformada no arquivo existente NAO e descartada nem reescrita: a
-    funcao recusa mexer no arquivo e devolve False, para que o Mestre decida.
+
+def _registrar_no_csv(nome_processado: str, nome_original: str) -> bool:
+    """
+    Acrescenta UMA linha ao CSV auxiliar, em APPEND PURO.
+
+    Nunca le o arquivo, nunca reescreve linha existente, nunca perde
+    registro. O header so e escrito quando o arquivo nasce.
+
+    A funcao e chamada logo depois de cada move bem-sucedido, e nao no fim
+    da varredura: se o processo morrer no meio do lote, a procedencia dos
+    audios ja movidos ja esta no disco. Perder essa relacao deixaria audio
+    orfao de origem parado em arquivos/audios/, sem como preencher a coluna
+    `nome_original` do dataset.csv.
+
+    A protecao contra linha duplicada NAO mora aqui: mora na guarda 1
+    (exists() em arquivos/audios/{id}/), que barra o audio ja movido antes
+    de chegar neste ponto.
 
     Returns:
-        True se o CSV esta gravado, False se falhou (com log).
+        True se a linha esta gravada, False se falhou (com log).
     """
-    caminho = PROJECT_ROOT / "dataset" / "nomeacao_hash.csv"
-    caminho.parent.mkdir(parents=True, exist_ok=True)
+    CSV_NOMEACAO.parent.mkdir(parents=True, exist_ok=True)
 
-    registros = {}
+    escrever_header = not CSV_NOMEACAO.exists()
 
-    if caminho.exists():
-        try:
-            with open(caminho, 'r', encoding='utf-8') as f:
-                for numero, linha in enumerate(f, 1):
-                    linha = linha.rstrip('\n')
-                    if not linha:
-                        continue
-                    if numero == 1 and linha == CSV_HASH_HEADER:
-                        continue
-                    campos = linha.split('|')
-                    if len(campos) != 3:
-                        print(f"[M00] ERRO: linha {numero} de '{caminho}' esta "
-                              f"malformada ({len(campos)} campos, esperado 3): "
-                              f"{linha!r}")
-                        print("[M00] O CSV auxiliar NAO foi alterado. "
-                              "Corrija a linha antes de rodar de novo.")
-                        return False
-                    registros[campos[0]] = (campos[0], campos[1], campos[2])
-        except OSError as e:
-            print(f"[M00] ERRO ao ler o CSV auxiliar '{caminho}': {e}")
-            return False
-
-    for registro in linhas:
-        registros[registro[0]] = registro
-
-    temporario = caminho.with_name(caminho.name + '.tmp')
     try:
-        with open(temporario, 'w', encoding='utf-8') as f:
-            f.write(CSV_HASH_HEADER + '\n')
-            for chave in sorted(registros):
-                f.write('|'.join(registros[chave]) + '\n')
-        os.replace(temporario, caminho)
+        with open(CSV_NOMEACAO, 'a', encoding='utf-8') as f:
+            if escrever_header:
+                f.write(CSV_NOMEACAO_HEADER + '\n')
+            f.write(f"{nome_processado}|{nome_original}|{_agora_iso()}\n")
     except OSError as e:
-        print(f"[M00] ERRO ao gravar o CSV auxiliar '{caminho}': {e}")
+        print(f"[M00] ERRO ao gravar o CSV auxiliar '{CSV_NOMEACAO}': {e}")
         return False
 
-    print(f"[M00] CSV auxiliar: {len(registros)} registro(s) em '{caminho}'")
     return True
 
 
@@ -216,7 +210,7 @@ def preparar_entrada(ja_processado: Callable[[str], bool]) -> bool:
 
     # Nome base -> quantas vezes ja apareceu, para o desempate _002, _003...
     ocorrencias = {}
-    linhas_csv = []
+    csv_ok = True
 
     for origem in candidatos:
         relativo = origem.relative_to(pasta_input).as_posix()
@@ -273,12 +267,9 @@ def preparar_entrada(ja_processado: Callable[[str], bool]) -> bool:
         movidos += 1
         print(f"[M00] MOVIDO: {relativo} -> arquivos/audios/{audio_id}/{destino.name}")
 
-        if modo == 'hash_md5':
-            linhas_csv.append((audio_id, nome_desempatado, relativo))
-
-    csv_ok = True
-    if modo == 'hash_md5':
-        csv_ok = _escrever_csv_hash(linhas_csv)
+        # Procedencia gravada imediatamente apos o move, nos dois modos
+        if not _registrar_no_csv(audio_id, relativo):
+            csv_ok = False
 
     print("-"*80)
     print(f"[M00] Arquivos encontrados          : {encontrados}")
@@ -288,6 +279,7 @@ def preparar_entrada(ja_processado: Callable[[str], bool]) -> bool:
     print(f"[M00] Pulados (guarda 1 - ja movido): {pulados_guarda1}")
     print(f"[M00] Pulados (guarda 2 - historico): {pulados_guarda2}")
     print(f"[M00] Erros ao mover                : {erros}")
+    print(f"[M00] CSV auxiliar                  : {CSV_NOMEACAO}")
     print("="*80)
 
     return erros == 0 and csv_ok

@@ -37,8 +37,10 @@ está - não é apagado nem movido.
 Decidido em `config.py`, no campo `NOMEACAO['modo']`:
 
 - `"nome_original"` - o id é o nome do arquivo sem a extensão.
-- `"hash_md5"` - o id é o MD5 do nome, e a relação nome <-> id fica em
-  `dataset/nomeacao_hash.csv`.
+- `"hash_md5"` - o id é o MD5 do nome.
+
+Nos dois modos, a relação `id <-> caminho de origem` fica em
+`dataset/nomeacao.csv`.
 
 Nomes repetidos em pastas diferentes ganham sufixo: `entrevista`,
 `entrevista_002`, `entrevista_003`, na ordem alfabética do caminho.
