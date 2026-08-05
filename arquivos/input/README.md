@@ -36,20 +36,27 @@ está - não é apagado nem movido.
 
 Decidido em `config.py`, no campo `NOMEACAO['modo']`:
 
+- `"hash_md5"` (recomendado) - o id é o MD5 do **conteúdo** do arquivo.
+  Dois áudios de conteúdo diferente com o mesmo nome entram os dois; o
+  mesmo arquivo colado em outra pasta é reconhecido como repetido.
 - `"nome_original"` - o id é o nome do arquivo sem a extensão.
-- `"hash_md5"` - o id é o MD5 do nome.
 
 Nos dois modos, a relação `id <-> caminho de origem` fica em
 `dataset/nomeacao.csv`.
 
 Nomes repetidos em pastas diferentes ganham sufixo: `entrevista`,
-`entrevista_002`, `entrevista_003`, na ordem alfabética do caminho.
+`entrevista_002`, `entrevista_003`, na ordem alfabética do caminho -
+**apenas no modo `nome_original`**. No modo hash não há sufixo: o
+conteúdo já distingue os arquivos.
 
-## Áudio já processado
+## Áudio já concluído
 
-Áudio cujo id já consta de `dataset/historico_dataset/` **não é movido** e
-fica parado aqui, com aviso no log. Mesma coisa para áudio que já está em
-`arquivos/audios/{id}/`.
+Áudio cujo id já consta de `dataset/concluidos.csv` **não é movido** e
+fica parado aqui, nomeado no log com a guarda que o barrou. Mesma coisa
+para áudio que já está em `arquivos/audios/{id}/`.
+
+O `dataset/historico_dataset/` **não** participa disso: ele é backup do
+JSON de acompanhamento, não marcador de deduplicação.
 
 O conteúdo deste diretório não é versionado (ver .gitignore).
 Este README existe para preservar a pasta no repositório.

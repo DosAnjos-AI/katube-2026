@@ -10,7 +10,7 @@ import csv
 import json
 import time
 from pathlib import Path
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Set
 from datetime import datetime
 from dotenv import load_dotenv
 
@@ -24,7 +24,7 @@ sys.path.insert(0, str(SRC_PATH))
 # CUDA_VISIBLE_DEVICES="" no .env forca CPU nesta maquina
 load_dotenv(PROJECT_ROOT / '.env')
 
-from config import MASTER, EXTENSOES_AUDIO
+from config import MASTER, EXTENSOES_AUDIO, CSV_CONCLUIDOS
 
 # Importar modulos do pipeline (todos estao em ./src/)
 from m00_nomeacao import preparar_entrada
@@ -39,7 +39,7 @@ from m10_texto_normalizador import processar_normalizacao
 from m11_validador_similaridade import processar_validacao
 from m12_denoiser_deepfilternet3 import main as processar_denoiser
 from m13_normalizador_audio import main as processar_normalizador_audio
-from m14_metadados import processar_metadados
+from m14_metadados import processar_metadados, CSV_CONCLUIDOS_HEADER
 from m15_cleanup import executar_cleanup
 
 
@@ -130,23 +130,75 @@ def listar_ids_disponiveis() -> List[str]:
     return sorted(ids)
 
 
-def verificar_processado(audio_id: str) -> bool:
+def carregar_ids_concluidos() -> Optional[Set[str]]:
     """
-    Verifica se audio ja foi processado checando historico.
+    Carrega, UMA vez por rodada, o conjunto de ids ja concluidos.
 
-    Args:
-        audio_id: ID do audio
+    A fonte e o CSV dos concluidos (config.CSV_CONCLUIDOS), escrito pelo m14
+    como ultimo passo de cada audio que terminou. Um conjunto em memoria, e
+    nao uma varredura por audio: a consulta fica O(1) mesmo com o arquivo
+    crescendo lote apos lote.
+
+    Arquivo ausente e legitimo - e a primeira rodada da maquina, e ninguem
+    foi concluido ainda. Devolve conjunto vazio.
 
     Returns:
-        True se ja processado, False caso contrario
+        O conjunto de ids, ou None se o arquivo existe e NAO PODE SER LIDO.
+        None obriga o chamador a abortar: devolver conjunto vazio nesse caso
+        faria a pipeline reprocessar o dataset inteiro em silencio.
     """
-    arquivo_historico = PROJECT_ROOT / "dataset" / "historico_dataset" / f"{audio_id}.json"
-    return arquivo_historico.exists()
+    if not CSV_CONCLUIDOS.exists():
+        print(f"CSV dos concluidos ainda nao existe ({CSV_CONCLUIDOS}) - "
+              "nenhum audio foi concluido nesta maquina")
+        return set()
+
+    ids: Set[str] = set()
+    linhas_ignoradas = 0
+
+    try:
+        with open(CSV_CONCLUIDOS, 'r', encoding='utf-8') as f:
+            for numero, linha in enumerate(f, 1):
+                texto = linha.rstrip('\n')
+
+                if numero == 1:
+                    if texto == CSV_CONCLUIDOS_HEADER:
+                        continue
+                    # Header inesperado nao pode passar batido: ou o arquivo
+                    # e de outro formato, ou perdeu a primeira linha
+                    print(f"AVISO: primeira linha de {CSV_CONCLUIDOS} nao e o "
+                          f"header esperado ({CSV_CONCLUIDOS_HEADER!r}) - "
+                          f"tratada como dado")
+
+                campo_id = texto.split('|')[0].strip()
+                if not campo_id:
+                    linhas_ignoradas += 1
+                    continue
+                ids.add(campo_id)
+
+    except OSError as e:
+        print(f"ERRO ao ler o CSV dos concluidos '{CSV_CONCLUIDOS}': {e}")
+        return None
+
+    if linhas_ignoradas:
+        print(f"AVISO: {linhas_ignoradas} linha(s) sem id em {CSV_CONCLUIDOS} "
+              "foram ignoradas")
+
+    print(f"Audios ja concluidos (de {CSV_CONCLUIDOS.name}): {len(ids)}")
+    return ids
 
 
 def calcular_duracao_audios_aprovados(ids_processados: List[str]) -> float:
     """
     Calcula duracao total dos audios aprovados APENAS dos IDs fornecidos.
+
+    LE OS JSONS DE dataset/historico_dataset/. Esse historico deixou de ser
+    o mecanismo de deduplicacao (que hoje e o CSV dos concluidos), mas
+    CONTINUA SENDO ESCRITO pelo m14 - e daqui que sai a coluna
+    `duracao_audios_aprovados_segundos` do processamento_metadados.csv, alem
+    de servir de backup para reconstruir o dataset sem rodar os modelos de
+    novo. "Tirar a deduplicacao do historico" NAO e "parar de escrever os
+    JSONs": sem eles, esta conta devolve 0,00 em silencio, porque arquivo
+    ausente cai no `if` abaixo e e ignorado.
 
     Args:
         ids_processados: Lista de IDs processados NESTA EXECUCAO
@@ -582,10 +634,20 @@ def main():
     # Marcar inicio do processamento total
     inicio_geral = time.time()
 
+    # Deduplicacao: os ids ja concluidos, lidos UMA vez e usados nos dois
+    # pontos de guarda (m00 e o laco abaixo). Erro de leitura ABORTA - com
+    # conjunto vazio, tudo seria reprocessado sem ninguem perceber.
+    ids_concluidos = carregar_ids_concluidos()
+    if ids_concluidos is None:
+        print("\nERRO ao ler o CSV dos concluidos - execucao abortada")
+        print("Sem ele nao ha como saber o que ja foi processado, e seguir "
+              "duplicaria o dataset. Corrija o arquivo e rode de novo.")
+        return
+
     # Etapa 00: nomear e mover o material de arquivos/input/ para
     # arquivos/audios/, que e o que a listagem abaixo varre.
-    # O predicado do historico vai injetado: a regra continua morando so aqui.
-    if not preparar_entrada(verificar_processado):
+    # O predicado vai injetado: a regra continua morando so aqui.
+    if not preparar_entrada(lambda audio_id: audio_id in ids_concluidos):
         print("\nERRO na etapa de nomeacao - execucao abortada")
         print("Nenhum audio foi processado. Verifique as mensagens [M00] acima.")
         return
@@ -623,9 +685,9 @@ def main():
         print(f"\n[{idx}/{len(ids_disponiveis)}] Processando: {audio_id}")
         print("-"*80)
 
-        # Verificar se ja foi processado ANTES
-        if verificar_processado(audio_id):
-            print(f"Audio {audio_id} ja processado (encontrado em historico)")
+        # Verificar se ja foi concluido ANTES
+        if audio_id in ids_concluidos:
+            print(f"Audio {audio_id} ja concluido (consta de {CSV_CONCLUIDOS.name})")
 
             # Executar cleanup se configurado
             modo_cleanup = MASTER.get('cleanup', 'none')
@@ -634,13 +696,13 @@ def main():
                 logger_pulado = configurar_logger(audio_id)
                 if not executar_cleanup(audio_id):
                     logger_pulado.warning(
-                        "[M15] Cleanup falhou para audio ja processado - nada a reverter"
+                        "[M15] Cleanup falhou para audio ja concluido - nada a reverter"
                     )
 
             pulados_nesta_execucao += 1
             continue
 
-        # Audio NAO estava processado - contar NESTA EXECUCAO
+        # Audio NAO estava concluido - contar NESTA EXECUCAO
         total_nesta_execucao += 1
 
         # Configurar logger
@@ -689,7 +751,7 @@ def main():
     print("="*80)
     print(f"Total de audios NESTA EXECUCAO: {total_nesta_execucao}")
     print(f"  Processados com sucesso: {processados_nesta_execucao}")
-    print(f"  Pulados (ja processados): {pulados_nesta_execucao}")
+    print(f"  Pulados (ja concluidos): {pulados_nesta_execucao}")
     print(f"  Erros: {erros_nesta_execucao}")
     print(f"Duracao total: {duracao_total/60:.2f} minutos")
     print(f"Duracao audios aprovados: {duracao_audios_aprovados/60:.2f} minutos")

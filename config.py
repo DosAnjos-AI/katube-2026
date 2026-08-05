@@ -18,29 +18,47 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 # Sempre cole uma CÓPIA em `arquivos/input/`, nunca a única cópia do áudio.
 NOMEACAO = {
     # Como o id de cada áudio é decidido
-    # Opções: "nome_original" | "hash_md5"
+    # Opções: "hash_md5" (RECOMENDADO) | "nome_original"
+    #
+    #   "hash_md5"      → o id é o MD5 do CONTEÚDO do arquivo (dos bytes).
+    #                     Some com a legibilidade, e só o CSV auxiliar
+    #                     (CSV_NOMEACAO) devolve a origem de cada áudio.
+    #                     Três ganhos de uma vez:
+    #                       1. Dois áudios de conteúdo DIFERENTE com o mesmo
+    #                          nome geram ids diferentes e AMBOS entram -
+    #                          material novo não se perde mais.
+    #                       2. O MESMO arquivo colado em outra pasta gera o
+    #                          MESMO id e é reconhecido como repetido - a
+    #                          retomada após quebra sobrevive até a
+    #                          renomeação da pasta de origem.
+    #                       3. Id seguro por construção: 32 caracteres
+    #                          hexadecimais, sem espaço, acento ou o `|` que
+    #                          quebraria a linha do dataset.csv.
+    #                     LIMITAÇÃO: o hash detecta ARQUIVO IDÊNTICO, não
+    #                     "mesmo conteúdo sonoro". O mesmo áudio reexportado,
+    #                     com metadado diferente ou convertido de formato,
+    #                     gera hash diferente e passa como novo.
+    #
     #   "nome_original" → o id é o nome do arquivo sem a extensão. Legível,
     #                     mas colide entre lotes: dois lotes com
-    #                     `entrevista.flac` disputam o mesmo id (a guarda de
-    #                     histórico barra o segundo).
-    #   "hash_md5"      → o id é o MD5 do nome já desempatado. Some com a
-    #                     legibilidade, e só o CSV auxiliar (CSV_NOMEACAO)
-    #                     devolve a origem de cada áudio.
+    #                     `entrevista.flac` disputam o mesmo id, e o segundo
+    #                     é barrado mesmo tendo conteúdo diferente - perda de
+    #                     material que o modo hash resolve.
     #
     # O CSV auxiliar é escrito nos DOIS modos: é por ele que a coluna
     # `nome_original` do dataset.csv é preenchida.
     #
-    # Em AMBOS os modos o id é DETERMINÍSTICO: o hash é calculado sobre o
-    # NOME, nunca sobre o conteúdo, o caminho absoluto ou a hora. A mesma
-    # pasta de entrada produz sempre os mesmos ids. Isso é obrigatório - se
-    # o id variasse entre execuções, a deduplicação por histórico nunca
-    # barraria o repetido e o dataset.csv (append puro) acumularia linha
-    # duplicada.
+    # Em AMBOS os modos o id é DETERMINÍSTICO - a mesma entrada produz
+    # sempre o mesmo id. Isso é obrigatório: se o id variasse entre
+    # execuções, a deduplicação (CSV_CONCLUIDOS, abaixo) nunca barraria o
+    # repetido e o dataset.csv (append puro) acumularia linha duplicada.
     #
-    # Nomes iguais em pastas diferentes são desempatados com sufixo
-    # numérico: `entrevista`, `entrevista_002`, `entrevista_003`. A ordem é
-    # a ALFABÉTICA do caminho relativo dentro de `arquivos/input/` - regra
-    # fixa, é ela que garante o determinismo.
+    # DESEMPATE - só no modo "nome_original". Nomes iguais em pastas
+    # diferentes ganham sufixo numérico: `entrevista`, `entrevista_002`,
+    # `entrevista_003`, na ordem ALFABÉTICA do caminho relativo dentro de
+    # `arquivos/input/`. No modo hash NÃO HÁ desempate: dois arquivos de
+    # mesmo nome já se distinguem pelo conteúdo, e se o conteúdo for igual
+    # são o mesmo áudio e devem mesmo colidir.
     'modo': 'nome_original',
 
     # Extensões aceitas na varredura de `arquivos/input/`
@@ -74,6 +92,41 @@ NOMEACAO = {
 #
 # Colunas (separador `|`): nome_processado | nome_original | datetime_movido
 CSV_NOMEACAO = PROJECT_ROOT / "dataset" / "nomeacao.csv"
+
+
+# ============================================================================
+# CSV DOS CONCLUÍDOS - A DEDUPLICAÇÃO PERSISTENTE
+# ============================================================================
+# A lista dos áudios que TERMINARAM a pipeline. É a ÚNICA fonte da
+# deduplicação: nenhum áudio cujo `nome_processado` já conste aqui volta a
+# entrar, seja no mesmo lote ou em lote nenhum.
+#
+# QUANDO A LINHA É ESCRITA: só após o sucesso COMPLETO do áudio - segmentos
+# gravados em `dataset/audio_dataset/{id}/`, linhas efetivadas no
+# `dataset.csv` e backup do JSON copiado para `historico_dataset/`. É o M14
+# quem escreve, como último passo. Áudio que quebrou no meio NÃO fica
+# registrado e por isso PODE ser reprocessado - é essa a razão de o registro
+# vir por último e não no começo.
+#
+# APPEND PURO. Este arquivo só é criado e recebe linhas no fim. Não existe,
+# em lugar nenhum do projeto, código que apague linha ou arquivo daqui.
+# Reprocessar um áudio já concluído é ação MANUAL do usuário: apagar a linha
+# correspondente com um editor, fora da pipeline.
+#
+# NÃO HÁ CAMPO DE CONFIGURAÇÃO PARA "REPROCESSAR MESMO ASSIM", e isso é
+# decisão, não esquecimento. Como o `dataset.csv` é append puro e nada nele
+# é removido, um botão desses seria um botão de GERAR DUPLICATA no dataset.
+# Além disso, no modo hash o critério deixou de ser o nome e passou a ser o
+# conteúdo: "mesmo nome, conteúdo diferente" já entra normalmente, que era o
+# caso que justificaria o botão.
+#
+# Caminho declarado AQUI, uma única vez, pelo mesmo motivo do CSV_NOMEACAO:
+# dois literais iguais em arquivos diferentes divergem na primeira edição, e
+# a guarda passaria a ler um arquivo que ninguém escreve - sem erro nenhum,
+# só deixando tudo entrar de novo.
+#
+# Colunas (separador `|`): nome_processado | nome_original | datetime_concluido
+CSV_CONCLUIDOS = PROJECT_ROOT / "dataset" / "concluidos.csv"
 
 
 # ============================================================================

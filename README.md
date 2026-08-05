@@ -29,9 +29,9 @@ normalizados, transcritos por dois modelos STT, validados por similaridade e com
 dataset/dataset.csv  +  dataset/audio_dataset/{audio_id}/*.flac
 ```
 
-Cada áudio é identificado por um **`audio_id`**, decidido pelo M00 a partir do
-nome do arquivo (nome original ou hash MD5 — ver `NOMEACAO` em
-[config.py](config.py)). Todo o estado intermediário de um áudio vive em
+Cada áudio é identificado por um **`audio_id`**, decidido pelo M00: o hash MD5
+do **conteúdo** do arquivo (modo recomendado) ou o nome original — ver
+`NOMEACAO` em [config.py](config.py). Todo o estado intermediário de um áudio vive em
 `arquivos/temp/{audio_id}/`, organizado em subpastas numeradas que espelham as
 etapas da pipeline.
 
@@ -75,8 +75,9 @@ spotify2026/
 └── dataset/
     ├── dataset.csv                   # SAÍDA: metadados de cada segmento aprovado
     ├── nomeacao.csv                  # Procedência: id ↔ caminho de origem
+    ├── concluidos.csv                # Deduplicação: quem terminou a pipeline
     ├── audio_dataset/{audio_id}/     # SAÍDA: segmentos .flac finais
-    ├── historico_dataset/{id}.json   # JSON de acompanhamento por áudio processado
+    ├── historico_dataset/{id}.json   # Backup do JSON de acompanhamento por áudio
     └── log/{audio_id}.log            # Log detalhado por áudio
 ```
 
@@ -117,12 +118,35 @@ Varre `arquivos/input/` **recursivamente**, filtra pelos formatos de
 `NOMEACAO['formatos_entrada']`, resolve o `audio_id` de cada arquivo e o **MOVE**
 para `arquivos/audios/{audio_id}/{audio_id}.ext`.
 
-- **Id**: nome original ou hash MD5, conforme `NOMEACAO['modo']`. É sempre
-  **determinístico** — o hash é do nome, nunca do conteúdo ou da hora.
+- **Id**: conforme `NOMEACAO['modo']`, sempre **determinístico** (a mesma entrada
+  produz sempre o mesmo id):
+  - **`hash_md5` — RECOMENDADO.** O id é o MD5 dos **bytes do arquivo**. Três
+    ganhos de uma vez: (1) dois áudios de **conteúdo diferente** com o mesmo
+    nome geram ids diferentes e **ambos entram** — material novo não se perde
+    mais; (2) o **mesmo** arquivo colado em outra pasta gera o **mesmo** id e é
+    reconhecido como repetido, então a retomada após quebra sobrevive até à
+    renomeação da pasta de origem; (3) id seguro por construção — 32 caracteres
+    hexadecimais, sem espaço, acento ou o `|` que quebraria a linha do CSV.
+  - **`nome_original`**: o id é o nome sem extensão. Legível, mas colide entre
+    lotes — dois lotes com `entrevista.flac` disputam o mesmo id e o segundo é
+    barrado **mesmo tendo conteúdo diferente**.
+- **Limitação do modo hash**: ele detecta **arquivo idêntico**, não "mesmo
+  conteúdo sonoro". O mesmo áudio reexportado, com metadado diferente ou
+  convertido de formato, gera hash diferente e **passa como novo**.
+- **Por que não hash de metadados** (timestamp, tamanho): timestamp **não
+  sobrevive** a cópia, download, extração de zip, sincronização de nuvem ou
+  transferência para o servidor. O mesmo áudio chegaria à AWS com id diferente,
+  garantindo duplicata em todo transporte — que é justamente o fluxo do projeto.
+- **Custo do hash**: medido em 0,003% de uma rodada em CPU (73 ms para 13,4 MB),
+  projetado em ~0,03% em GPU. É I/O de disco, não computação de modelo, então
+  não acelera na GPU — mas parte de um patamar irrelevante.
 - **Nomes repetidos** em pastas diferentes ganham sufixo `_002`, `_003`, na ordem
-  alfabética do caminho relativo.
-- **Não move** o que já está em `arquivos/audios/{id}/` nem o que já consta de
-  `historico_dataset/`. O arquivo fica parado na `input/`, com aviso no log.
+  alfabética do caminho relativo — **apenas no modo `nome_original`**. No modo
+  hash não há desempate: dois arquivos de mesmo nome já se distinguem pelo
+  conteúdo, e se o conteúdo for igual são o mesmo áudio e devem mesmo colidir.
+- **Não move** o que já está em `arquivos/audios/{id}/` (guarda 1) nem o que já
+  consta de `dataset/concluidos.csv` (guarda 2). O arquivo fica parado na
+  `input/`, nomeado no log, com a guarda que o barrou e a contagem no rodapé.
 - Arquivo de formato não aceito é **ignorado com aviso e contagem**, e não sai
   do lugar.
 - Grava a procedência de cada áudio movido em `dataset/nomeacao.csv` (separador
@@ -215,10 +239,14 @@ Converte o JSON de acompanhamento em linhas do **`dataset/dataset.csv`** (separa
   se ainda não existir). Não há reescrita nem truncamento. Quando o lote traz uma
   coluna que o cabeçalho já gravado não tem, o cabeçalho existente prevalece e os
   campos descartados são avisados nominalmente.
-- A deduplicação entre execuções é feita pelo **histórico** (`historico_dataset/`),
-  não por índice: o `main.py` barra na entrada o áudio que já tem histórico.
-- Copia o JSON para `historico_dataset/{audio_id}.json` (marca o áudio como
-  processado e evita reprocessá-lo).
+- A deduplicação entre execuções é feita pelo **`dataset/concluidos.csv`**: o
+  `main.py` barra na entrada o áudio cujo id já conste dele.
+- Copia o JSON para `historico_dataset/{audio_id}.json`. Isso é **backup**, não
+  deduplicação: permite reconstruir o dataset sem rodar os modelos de novo, e é
+  a fonte da duração aprovada da rodada.
+- **Registra o áudio em `dataset/concluidos.csv` como último passo**, depois de
+  os segmentos estarem em `audio_dataset/` e as linhas no `dataset.csv`. Áudio
+  que quebrou no meio não fica registrado e **por isso pode ser reprocessado**.
 
 ### M15 — Cleanup *(condicional — `cleanup`)*
 Remove pastas temporárias e/ou de entrada conforme `MASTER['cleanup']`:
@@ -294,6 +322,18 @@ gravada logo após o move. É dele que sai a coluna `nome_original` do
 `dataset.csv`. Nunca reescreve linha existente. O caminho é declarado em
 `config.CSV_NOMEACAO`.
 
+**`dataset/concluidos.csv`** — os áudios que **terminaram** a pipeline
+(`nome_processado | nome_original | datetime_concluido`, separador `|`). É a
+**única fonte da deduplicação**. Escrito pelo M14 em **append puro**, como
+último passo de cada áudio: quando a linha aparece, os segmentos já estão em
+`audio_dataset/`, as linhas já estão no `dataset.csv` e o backup do JSON já está
+no histórico. Não existe, em lugar nenhum do projeto, código que apague linha ou
+arquivo daqui — **reprocessar um áudio já concluído é ação manual**: apague a
+linha correspondente com um editor, fora da pipeline. Não há campo de
+configuração para "reprocessar mesmo assim", e isso é decisão: como o
+`dataset.csv` é append puro e nada nele é removido, um botão desses seria um
+botão de gerar duplicata. O caminho é declarado em `config.CSV_CONCLUIDOS`.
+
 ---
 
 ## Configuração
@@ -317,7 +357,7 @@ O bloco **`NOMEACAO`** governa a porta de entrada (M00):
 
 ```python
 NOMEACAO = {
-    'modo': 'nome_original',     # 'nome_original' | 'hash_md5'
+    'modo': 'nome_original',     # 'hash_md5' (recomendado) | 'nome_original'
     'formatos_entrada': {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'},
 }
 ```
@@ -376,7 +416,7 @@ cd /home/ubuntu/spotify2026
 python main.py
 ```
 O `main.py` processa todos os áudios pendentes em `arquivos/audios/`, pulando os já
-registrados em `historico_dataset/`.
+registrados em `dataset/concluidos.csv`.
 
 ### Execução em lote / não supervisionada
 
@@ -394,10 +434,15 @@ registrados em `historico_dataset/`.
 
 ## Notas de design
 
-- **Idempotência**: o histórico (`historico_dataset/`) permite parar e retomar a
-  qualquer momento sem reprocessar nem duplicar segmentos. A presença de
-  `historico_dataset/{audio_id}.json` é o que marca um áudio como concluído, e o
-  `main.py` barra o áudio repetido na entrada, antes de qualquer módulo rodar.
+- **Idempotência**: o `dataset/concluidos.csv` permite parar e retomar a
+  qualquer momento sem reprocessar nem duplicar segmentos. A linha nele é o que
+  marca um áudio como concluído, e o `main.py` barra o áudio repetido na
+  entrada, antes de qualquer módulo rodar. Como a linha só é escrita **depois**
+  de tudo estar gravado, o áudio interrompido no meio volta a ser processado
+  inteiro — a retomada não depende de adivinhar onde a rodada parou.
+- **O histórico (`historico_dataset/`) não é deduplicação**: é backup. Os JSONs
+  continuam sendo escritos, e servem para reconstruir o dataset sem rodar os
+  modelos de novo e para somar a duração aprovada da rodada.
 - **Estado dirigido por JSON**: cada módulo enriquece o
   `*_segments_acompanhamento.json`; o pipeline é, em essência, um enriquecimento
   progressivo desse documento até o M14 materializá-lo no CSV.

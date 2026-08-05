@@ -14,11 +14,11 @@ Regras de escrita (SEGURANCA MAXIMA DO dataset.csv):
    inteiro, nunca remove linha, nunca apaga audio do disco. Remover linha
    do dataset e privilegio exclusivo do usuario, manualmente.
 
-2. LINHA REPETIDA NAO E PROBLEMA AQUI. A deduplicacao nao pertence ao CSV:
-   o main barra o audio ja processado na ENTRADA, pelo historico
-   (dataset/historico_dataset/{id}.json), antes de qualquer modulo rodar.
-   O CSV acompanha o lote; o historico e quem cobre o audio que reaparece
-   em outro lote, sem aquele CSV por perto.
+2. LINHA REPETIDA NAO E PROBLEMA AQUI. A deduplicacao nao pertence ao
+   dataset.csv: o main barra o audio ja concluido na ENTRADA, pelo CSV dos
+   concluidos (config.CSV_CONCLUIDOS), antes de qualquer modulo rodar. E
+   este modulo quem escreve nesse CSV, como ULTIMO passo - ver
+   registrar_concluido.
 
 3. SCHEMA FIXO. As colunas sao SEMPRE as de SCHEMA_DATASET, na ordem
    declarada, qualquer que seja a configuracao da rodada. Denoiser
@@ -50,7 +50,7 @@ import shutil
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from config import CSV_NOMEACAO
+from config import CSV_CONCLUIDOS, CSV_NOMEACAO
 
 
 # ==============================================================================
@@ -328,13 +328,70 @@ def copiar_json_historico(origem: Path, destino: Path) -> None:
     """
     Copia o JSON de acompanhamento para o historico (sobrescreve se ja existe).
 
-    O historico e o marcador de audio concluido: sua presenca faz o main
-    pular o audio na entrada da proxima rodada. Por isso so e chamado
-    depois das linhas estarem efetivadas no CSV.
+    O historico NAO E MAIS o marcador de audio concluido - esse papel e do
+    CSV dos concluidos (ver registrar_concluido). O que ele e hoje:
+
+    1. BACKUP DAS INFORMACOES PROCESSADAS. Se o dataset.csv for perdido, o
+       dataset pode ser reconstruido a partir destes JSONs SEM passar pelos
+       modelos de novo. So por isso ele ja se paga.
+
+    2. FONTE DA DURACAO APROVADA DA RODADA. calcular_duracao_audios_aprovados
+       (main.py) le estes JSONs para somar o campo `duracao` de cada
+       segmento, e e dai que sai a coluna
+       `duracao_audios_aprovados_segundos` do processamento_metadados.csv.
+
+    ATENCAO: tirar a deduplicacao do historico NAO e parar de escrever os
+    JSONs. Se esta copia deixar de acontecer, a conta do item 2 passa a
+    devolver zero SEM ERRO NENHUM - arquivo ausente e ignorado la. Nao
+    remova esta chamada.
     """
     destino.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(origem, destino)
     print(f"  JSON de historico copiado: {destino}")
+
+
+# ==============================================================================
+# CSV DOS CONCLUIDOS — O MARCADOR DA DEDUPLICACAO
+# ==============================================================================
+
+CSV_CONCLUIDOS_HEADER = 'nome_processado|nome_original|datetime_concluido'
+
+
+def registrar_concluido(audio_id: str, nome_original: str) -> bool:
+    """
+    Acrescenta UMA linha ao CSV dos concluidos, em APPEND PURO.
+
+    E o marcador que barra o audio na entrada da proxima rodada, e por isso
+    e a ULTIMA coisa que o m14 faz: quando esta linha e escrita, os
+    segmentos ja estao em dataset/audio_dataset/{id}/, as linhas ja estao no
+    dataset.csv e o backup do JSON ja esta no historico. Audio que quebrou
+    antes deste ponto NAO fica registrado e SERA reprocessado - e essa a
+    razao da ordem.
+
+    Nunca le o arquivo, nunca reescreve linha existente, nunca apaga nada.
+    O header so e escrito quando o arquivo nasce.
+
+    Returns:
+        True se a linha esta gravada, False se falhou (com log). O chamador
+        transforma a falha em aviso: as linhas do dataset.csv ja estao
+        gravadas e nao seriam desfeitas, mas o audio nao fica marcado e
+        voltara a ser processado - o que precisa aparecer no log.
+    """
+    CSV_CONCLUIDOS.parent.mkdir(parents=True, exist_ok=True)
+
+    escrever_header = not CSV_CONCLUIDOS.exists()
+
+    try:
+        with open(CSV_CONCLUIDOS, 'a', encoding=CSV_ENCODING) as f:
+            if escrever_header:
+                f.write(CSV_CONCLUIDOS_HEADER + '\n')
+            f.write(f"{audio_id}{CSV_SEPARATOR}{nome_original}"
+                    f"{CSV_SEPARATOR}{agora_iso()}\n")
+    except OSError as e:
+        print(f"  ERRO ao gravar o CSV dos concluidos '{CSV_CONCLUIDOS}': {e}")
+        return False
+
+    return True
 
 
 # ==============================================================================
@@ -372,13 +429,17 @@ def montar_resultado(audio_id: str,
 
 def processar_metadados(audio_id: str) -> Dict[str, Any]:
     """
-    Processa metadados e gera outputs:
+    Processa metadados e gera outputs, NESTA ORDEM:
       1. Faz append das linhas do lote no dataset.csv (criando-o se preciso)
-      2. Copia o JSON de acompanhamento para o historico
+      2. Copia o JSON de acompanhamento para o historico (backup)
+      3. Registra o audio no CSV dos concluidos (o marcador da deduplicacao)
 
-    O historico e gravado por ultimo, so depois das linhas efetivadas: se a
-    rodada morrer antes daqui, o audio nao fica marcado como processado e a
-    proxima execucao o reprocessa.
+    A ordem e o mecanismo, nao detalhe: o passo 3 e o ultimo justamente para
+    que a rodada que morre antes dele deixe o audio SEM marca de concluido,
+    e a proxima execucao o reprocesse inteiro.
+
+    Lote sem nenhum segmento aprovado retorna antes do passo 1 e por isso
+    nao chega ao passo 3 - o audio nao fica marcado, de proposito.
 
     Args:
         audio_id: ID do audio a processar
@@ -422,11 +483,14 @@ def processar_metadados(audio_id: str) -> Dict[str, Any]:
 
     avisos: List[str] = []
 
-    # --- Lote sem segmento aprovado: nada a gravar, historico nao avanca ---
-    # Nao e falha do modulo (o funil pode reprovar tudo), mas o audio fica
-    # sem marca de concluido e sera reprocessado na proxima rodada.
+    # --- Lote sem segmento aprovado: nada a gravar, nada marcado ---
+    # Nao e falha do modulo (o funil pode reprovar tudo). O retorno acontece
+    # ANTES dos tres passos de escrita: nem dataset.csv, nem backup do JSON,
+    # nem registro no CSV dos concluidos. O audio fica sem marca e sera
+    # reprocessado na proxima rodada.
     if not nomes_json:
-        aviso = "Nenhum segmento aprovado — nada gravado no CSV e historico nao atualizado"
+        aviso = ("Nenhum segmento aprovado — nada gravado no dataset.csv, "
+                 "audio nao registrado como concluido")
         avisos.append(aviso)
         print(f"  {aviso}")
         print("-" * 80)
@@ -499,9 +563,25 @@ def processar_metadados(audio_id: str) -> Dict[str, Any]:
     print(f"  Linhas gravadas nesta rodada: {len(linhas_novas)}")
     print("-" * 80)
 
-    # --- Copiar JSON para historico (por ultimo: marca o audio como concluido) ---
+    # --- Copiar JSON para historico (backup, NAO marcador - ver a funcao) ---
     print("Copiando JSON para historico...")
     copiar_json_historico(ARQUIVO_JSON_ACOMPANHAMENTO, ARQUIVO_JSON_HISTORICO)
+    print("-" * 80)
+
+    # --- Registrar o audio como CONCLUIDO (ultimo passo, sempre) ---
+    # Aqui, e so aqui, valem as tres coisas ao mesmo tempo: segmentos em
+    # dataset/audio_dataset/{id}/, linhas no dataset.csv, backup do JSON no
+    # historico. E o unico instante do projeto em que o audio pode ser dado
+    # por concluido.
+    if registrar_concluido(audio_id, nome_original):
+        print(f"  Registrado como concluido em: {CSV_CONCLUIDOS}")
+    else:
+        aviso = (f"Falha ao registrar '{audio_id}' em '{CSV_CONCLUIDOS}' — as "
+                 f"{len(linhas_novas)} linha(s) JA estao no dataset.csv, mas o "
+                 f"audio nao ficou marcado e SERA reprocessado na proxima "
+                 f"rodada, duplicando essas linhas")
+        avisos.append(aviso)
+        print(f"  AVISO: {aviso}")
     print("-" * 80)
 
     print("Processamento concluido.")
