@@ -79,6 +79,7 @@ def verificar_sox_instalado() -> bool:
             ['sox', '--version'],
             capture_output=True,
             text=True,
+            encoding='utf-8',
             timeout=5
         )
         return resultado.returncode == 0
@@ -158,6 +159,7 @@ def normalizar_audio(
             comando,
             capture_output=True,
             text=True,
+            encoding='utf-8',
             timeout=300  # Timeout de 5 minutos
         )
         

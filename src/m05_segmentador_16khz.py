@@ -48,7 +48,8 @@ def obter_sample_rate(caminho_audio: Path) -> int:
             '-of', 'default=noprint_wrappers=1:nokey=1',
             str(caminho_audio)
         ]
-        resultado = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        resultado = subprocess.run(cmd, capture_output=True, text=True,
+                                   encoding='utf-8', check=True)
         return int(resultado.stdout.strip())
     except Exception as e:
         print(f"Erro ao obter SR de {caminho_audio.name}: {e}")
@@ -75,7 +76,8 @@ def obter_canais(caminho_audio: Path) -> int:
             '-of', 'default=noprint_wrappers=1:nokey=1',
             str(caminho_audio)
         ]
-        resultado = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        resultado = subprocess.run(cmd, capture_output=True, text=True,
+                                   encoding='utf-8', check=True)
         return int(resultado.stdout.strip())
     except Exception as e:
         print(f"Erro ao obter canais de {caminho_audio.name}: {e}")

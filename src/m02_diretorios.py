@@ -37,7 +37,8 @@ def sondar_specs_origem(origem: Path) -> Optional[dict]:
     ]
 
     try:
-        resultado = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        resultado = subprocess.run(cmd, capture_output=True, text=True,
+                                   encoding='utf-8', check=True)
         dados = json.loads(resultado.stdout)
         stream = next(s for s in dados['streams'] if s['codec_type'] == 'audio')
     except (OSError, subprocess.CalledProcessError, ValueError, KeyError, StopIteration) as e:
@@ -108,7 +109,8 @@ def converter_para_wav(origem: Path, destino: Path, specs: dict) -> bool:
     ]
 
     try:
-        subprocess.run(cmd, capture_output=True, text=True, check=True)
+        subprocess.run(cmd, capture_output=True, text=True,
+                       encoding='utf-8', check=True)
     except (OSError, subprocess.CalledProcessError) as e:
         stderr = getattr(e, 'stderr', '') or ''
         print(f"ERRO: ffmpeg falhou ao converter '{origem}': {e} {stderr.strip()}")

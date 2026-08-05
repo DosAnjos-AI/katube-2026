@@ -16,7 +16,8 @@ def contar_arquivos(diretorio: str) -> int:
         f"ls {diretorio} | wc -l",
         shell=True,
         capture_output=True,
-        text=True
+        text=True,
+        encoding='utf-8'
     )
     return int(result.stdout.strip())
 
@@ -26,7 +27,8 @@ def contar_linhas(diretorio: str) -> int:
         f"cat {diretorio} | wc -l",
         shell=True,
         capture_output=True,
-        text=True
+        text=True,
+        encoding='utf-8'
     )
     return int(result.stdout.strip())
 
