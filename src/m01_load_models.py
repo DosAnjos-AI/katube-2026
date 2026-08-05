@@ -5,10 +5,12 @@ Gerenciador centralizado de modelos de IA usando padrao Singleton
 Carrega modelos 1x e reutiliza entre multiplas execucoes
 """
 
+import inspect
 import os
 import sys
+from importlib.metadata import PackageNotFoundError, version as versao_pacote
 from pathlib import Path
-from typing import Any, List, Tuple
+from typing import Any, Callable, Dict, List, Optional, Tuple
 import torch
 from dotenv import load_dotenv
 
@@ -54,6 +56,58 @@ def _log_erro(linhas: List[str]) -> None:
         print(f"[ERRO] {linha}", file=sys.stderr)
     print("[ERRO] " + "=" * 62, file=sys.stderr)
     sys.stderr.flush()
+
+
+# ==============================================================================
+# COMPATIBILIDADE ENTRE VERSOES - NOME DO PARAMETRO DE AUTENTICACAO
+# ==============================================================================
+
+# Nomes ja usados por bibliotecas do ecossistema HuggingFace para o mesmo
+# parametro. A ordem e a de preferencia: o nome novo primeiro.
+NOMES_PARAMETRO_TOKEN = ('token', 'use_auth_token')
+
+
+def _kwarg_autenticacao(funcao: Callable, token: Optional[str],
+                        pacote: str) -> Dict[str, Optional[str]]:
+    """
+    Descobre, na assinatura da versao instalada, qual nome de parametro de
+    autenticacao a funcao aceita, e devolve o kwarg pronto para a chamada.
+
+    O ecossistema HuggingFace renomeou 'use_auth_token' para 'token'. Versoes
+    diferentes da mesma biblioteca convivem entre a maquina local e o servidor,
+    e a assinatura - nao o numero de versao - e o fato que decide a chamada.
+
+    Args:
+        funcao: A funcao que sera chamada (ex.: Pipeline.from_pretrained)
+        token: Valor do token a passar
+        pacote: Nome de distribuicao do pacote, so para a mensagem de erro
+
+    Returns:
+        Dicionario de um item: {nome_aceito: token}
+
+    Raises:
+        RuntimeError: Se a assinatura nao aceitar nenhum dos nomes conhecidos.
+                      Seguir sem autenticacao nao e opcao: o modelo e restrito
+                      e a falha apareceria adiante, longe da causa.
+    """
+    parametros = inspect.signature(funcao).parameters
+
+    for nome in NOMES_PARAMETRO_TOKEN:
+        if nome in parametros:
+            return {nome: token}
+
+    try:
+        versao = versao_pacote(pacote)
+    except PackageNotFoundError:
+        versao = "desconhecida"
+
+    raise RuntimeError(
+        f"ERRO: {pacote} {versao} nao aceita nenhum parametro de autenticacao "
+        f"conhecido em {funcao.__qualname__}.\n"
+        f"Nomes procurados: {', '.join(NOMES_PARAMETRO_TOKEN)}\n"
+        f"Parametros aceitos pela assinatura instalada: "
+        f"{', '.join(parametros)}"
+    )
 
 
 # ==============================================================================
@@ -328,9 +382,13 @@ class ModelManager:
         print(f"Modelo: {modelo_id}")
         print(f"Device: {device}")
 
+        # O nome do parametro de autenticacao muda entre versoes do pyannote:
+        # e lido da assinatura instalada, nunca presumido.
         pipeline = Pipeline.from_pretrained(
             modelo_id,
-            token=hf_token
+            **_kwarg_autenticacao(
+                Pipeline.from_pretrained, hf_token, 'pyannote.audio'
+            )
         )
 
         # Mover para device

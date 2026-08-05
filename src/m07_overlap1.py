@@ -9,12 +9,12 @@ import sys
 import json
 import shutil
 import signal
+import importlib.metadata
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional
 from contextlib import contextmanager
 
 from dotenv import load_dotenv
-import os
 
 # Adicionar pasta raiz ao path para importar config
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -67,30 +67,6 @@ def timeout(seconds: int):
     else:
         # Windows nao suporta SIGALRM - executar sem timeout
         yield
-
-
-# ==============================================================================
-# FUNCOES DE VALIDACAO E CONFIGURACAO
-# ==============================================================================
-
-def validar_hf_token() -> str:
-    """
-    Valida existencia do token HuggingFace
-    
-    Returns:
-        Token HuggingFace
-        
-    Raises:
-        ValueError: Se token nao encontrado
-    """
-    token = os.getenv('HF_TOKEN')
-    if not token or token == 'seu_token_aqui':
-        raise ValueError(
-            "Token HuggingFace nao configurado!\n"
-            "Configure HF_TOKEN no arquivo .env na raiz do projeto"
-        )
-    return token
-
 
 
 # ==============================================================================
@@ -168,6 +144,44 @@ def listar_segmentos_para_processar(pasta_json_dinamico: Path, audio_id: str) ->
     return dados_acompanhamento, dados_filtro, segmentos_processar
 
 
+def _extrair_anotacao(resultado):
+    """
+    Devolve a Annotation da diarizacao, qualquer que seja o formato do retorno.
+
+    O formato varia com a versao e com o modo do pipeline pyannote:
+    - objeto de saida que carrega a Annotation no campo speaker_diarization;
+    - a propria Annotation, direta (pyannote 3.x e o modo legacy do 4.x).
+
+    A escolha e feita por inspecao do objeto recebido, nunca por numero de
+    versao. A ordem importa: se um objeto for Annotation E tiver o campo,
+    o campo vence.
+
+    Args:
+        resultado: Objeto devolvido pela chamada do pipeline
+
+    Returns:
+        Annotation com as faixas da diarizacao
+
+    Raises:
+        TypeError: Se o objeto nao for nenhum dos dois formatos conhecidos
+    """
+    from pyannote.core import Annotation
+
+    if hasattr(resultado, 'speaker_diarization'):
+        return resultado.speaker_diarization
+
+    if isinstance(resultado, Annotation):
+        return resultado
+
+    atributos = sorted(a for a in dir(resultado) if not a.startswith('_'))
+    raise TypeError(
+        "Retorno do pipeline pyannote em formato desconhecido. "
+        f"Tipo recebido: {type(resultado).__name__}. "
+        f"pyannote.audio instalado: {importlib.metadata.version('pyannote.audio')}. "
+        f"Atributos publicos: {atributos}"
+    )
+
+
 def detectar_overlap(pipeline, audio_path: Path, timeout_segundos: int) -> Optional[bool]:
     """
     Detecta se ha overlap (multiplos speakers) no audio
@@ -186,10 +200,11 @@ def detectar_overlap(pipeline, audio_path: Path, timeout_segundos: int) -> Optio
         with timeout(timeout_segundos):
             # Executar diarizacao
             diarizacao = pipeline(str(audio_path))
-            
+            anotacao = _extrair_anotacao(diarizacao)
+
             # Extrair speakers unicos
             speakers = set()
-            for segment, _, speaker in diarizacao.speaker_diarization.itertracks(yield_label=True):
+            for segment, _, speaker in anotacao.itertracks(yield_label=True):
                 speakers.add(speaker)
             # Overlap = 2 ou mais speakers distintos
             num_speakers = len(speakers)

@@ -305,6 +305,8 @@ def escrever_linhas(caminho_csv: Path,
     """
     caminho_csv.parent.mkdir(parents=True, exist_ok=True)
 
+    # lineterminator explicito: o padrao do modulo csv e '\r\n', que deixaria
+    # este CSV em CRLF enquanto o nomeacao.csv e o concluidos.csv saem em LF.
     with open(caminho_csv, 'a', encoding=CSV_ENCODING, newline='') as f:
         writer = csv.DictWriter(
             f,
@@ -312,6 +314,7 @@ def escrever_linhas(caminho_csv: Path,
             delimiter=CSV_SEPARATOR,
             extrasaction='ignore',
             restval='',
+            lineterminator='\n',
         )
         if escrever_header:
             writer.writeheader()
