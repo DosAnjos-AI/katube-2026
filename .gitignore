@@ -7,7 +7,6 @@ __pycache__/
 *.db
 .ipynb_checkpoints/
 data/
-dataset/
 models/
 checkpoints/
 outputs/
@@ -31,7 +30,11 @@ arquivos/audios/*
 arquivos/input/*
 !arquivos/input/README.md
 
-# Estado de execucao do executor.sh
+# Saida da pipeline - conteudo ignorado, o sumarizador e versionado
+dataset/*
+!dataset/sumary_results.py
+
+# Estado de execucao de scripts de lote executados fora da pipeline
 tempo.txt
 pasta_atual.txt
 

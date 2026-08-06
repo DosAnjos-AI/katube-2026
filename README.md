@@ -1,11 +1,16 @@
-# spotify2026 — Pipeline de Processamento de Áudio (katube-2026)
+# katube-2026 — Pipeline de Processamento de Áudio
 
-Pipeline modular que transforma áudios brutos (segmentos do Spotify) em um **dataset
-limpo e transcrito para treino de modelos TTS/STT** em Português Brasileiro.
+Pipeline modular que transforma áudios brutos, de **qualquer origem**, em um
+**dataset limpo e transcrito para treino de modelos TTS/STT** em Português
+Brasileiro.
 
-A entrada é uma coleção de áudios; a saída é um `dataset.csv` com segmentos curtos,
-normalizados, transcritos por dois modelos STT, validados por similaridade e com
-áudios finais em FLAC 16 kHz mono.
+A entrada é uma coletânea de áudios; a saída é um `dataset.csv` com segmentos
+curtos, normalizados, transcritos por dois modelos STT e validados por
+similaridade, mais os arquivos de áudio correspondentes. **As características
+do áudio final não são fixas**: taxa de amostragem, profundidade de bits,
+número de canais, formato do arquivo, método de normalização de volume e nível
+alvo são todos definidos no bloco `SOX_NORMALIZER` do [config.py](config.py) —
+ver [Saídas (o dataset)](#saídas-o-dataset).
 
 ---
 
@@ -26,7 +31,7 @@ normalizados, transcritos por dois modelos STT, validados por similaridade e com
 └─────────────────────────────────────────────────────────────────────────┘
         │
         ▼
-dataset/dataset.csv  +  dataset/audio_dataset/{audio_id}/*.flac
+dataset/dataset.csv  +  dataset/audio_dataset/{audio_id}/*.{formato de saída}
 ```
 
 Cada áudio é identificado por um **`audio_id`**, decidido pelo M00: o hash MD5
@@ -54,13 +59,13 @@ https://miro.com/app/board/uXjVG9eNQ_g=/?focusWidget=3458764660637824545
 ## Estrutura do projeto
 
 ```
-spotify2026/
+katube-2026/
 ├── main.py                  # Orquestrador: roda M02→M15 para cada áudio
 ├── config.py                # TODA a configuração (bloco MASTER + params por módulo)
-├── pipeline_spotify.sh      # Driver em lote: ingestão + main.py + arquivamento por iteração
-├── watchdog_spotify2026.sh  # Reexecuta main.py até esvaziar a fila (audios == temp)
-├── limpar_temp.py           # Utilitário de limpeza manual de temporários
-├── sumary_results.py        # Sumarização de resultados do dataset
+├── requirements-servidor.txt # Versões fixadas do ambiente de referência
+├── .env.example             # Modelo do .env (token HuggingFace)
+├── INSTALL.md               # Montagem e verificação do ambiente
+├── Alcateia_-_Fluxo_Katube_VAD_2026.svg  # Diagrama do fluxo
 ├── src/                     # Módulos da pipeline (m00–m15)
 │   ├── m00_nomeacao.py               # Porta de entrada: input/ → audios/{id}/{id}.ext
 │   ├── m01_load_models.py            # Singleton de modelos de IA (carrega 1x)
@@ -82,10 +87,12 @@ spotify2026/
 │   ├── audios/{audio_id}/            # Pasta de trabalho: um áudio por pasta
 │   └── temp/{audio_id}/              # Estado intermediário (ver abaixo)
 └── dataset/
+    ├── sumary_results.py             # Sumarização de resultados do dataset
     ├── dataset.csv                   # SAÍDA: metadados de cada segmento aprovado
     ├── nomeacao.csv                  # Procedência: id ↔ caminho de origem
     ├── concluidos.csv                # Deduplicação: quem terminou a pipeline
-    ├── audio_dataset/{audio_id}/     # SAÍDA: segmentos .flac finais
+    ├── processamento_metadados.csv   # Registro de cada rodada: duração e tempo por módulo
+    ├── audio_dataset/{audio_id}/     # SAÍDA: segmentos de áudio finais
     ├── historico_dataset/{id}.json   # Backup do JSON de acompanhamento por áudio
     └── log/{audio_id}.log            # Log detalhado por áudio
 ```
@@ -236,9 +243,12 @@ listadas em `DEEPFILTERNET_DENOISER['mos_quality_filter']` (ex.: só `media`),
 preservando os originais. Saída em `10-denoiser/`.
 
 ### M13 — Normalização de áudio (SoX) *(obrigatório)*
-Padroniza o áudio final com **SoX** segundo `SOX_NORMALIZER`: sample rate (16 kHz),
-bit depth (16), mono, formato **FLAC**, normalização de volume (RMS −3 dB) e remoção
-de silêncio nas pontas. Saída em `11-normalizador_audio/`.
+Padroniza o áudio final com **SoX**. **Todas as características da saída vêm de
+`SOX_NORMALIZER`, no [config.py](config.py)** — nenhuma é fixa no código:
+`sample_rate`, `bit_depth`, `channels`, `output_format`, `normalize_method`,
+`target_level_db`, além da remoção de silêncio nas pontas. Cada campo está
+comentado no arquivo, com as opções aceitas e o efeito de cada uma. Saída em
+`11-normalizador_audio/`.
 
 ### M14 — Metadados *(obrigatório)*
 Converte o JSON de acompanhamento em linhas do **`dataset/dataset.csv`** (separador
@@ -321,8 +331,13 @@ O M14 só **cria** e faz **append**. Se o arquivo já existir com header diferen
 do schema, ele se recusa a gravar e devolve falha — append de 31 campos sob outro
 cabeçalho corromperia o arquivo em silêncio. Para migrar, arquive o CSV antigo.
 
-**`dataset/audio_dataset/{audio_id}/*.flac`** — os arquivos de áudio finais
-referenciados pela coluna `caminho`.
+**`dataset/audio_dataset/{audio_id}/`** — os arquivos de áudio finais
+referenciados pela coluna `caminho`. A extensão é a de
+`SOX_NORMALIZER['output_format']`, e as demais características do arquivo
+(taxa de amostragem, profundidade de bits, canais, normalização de volume)
+saem dos outros campos do mesmo bloco. As colunas `sox_*` do `dataset.csv`
+registram, linha a linha, os valores efetivamente aplicados — é lá que se lê o
+que foi produzido, não em constante do código.
 
 **`dataset/nomeacao.csv`** — a procedência de cada áudio
 (`nome_processado | nome_original | datetime_movido`, separador `|`). Escrito pelo
@@ -424,23 +439,17 @@ Quem preferir pode continuar colando direto em
 ### 2. Rodar a pipeline
 ```bash
 conda activate katube-2026
-cd /home/ubuntu/spotify2026
+cd <raiz do projeto>
 python main.py
 ```
 O `main.py` processa todos os áudios pendentes em `arquivos/audios/`, pulando os já
 registrados em `dataset/concluidos.csv`.
 
-### Execução em lote / não supervisionada
+### 3. Conferir o resultado
 
-- **[pipeline_spotify.sh](pipeline_spotify.sh)** — roda iterações completas:
-  para cada iteração `N` executa a ingestão (`nomecao_spotify{N}.py`), roda o
-  `main.py`, e arquiva resultados (`dataset/`, `output.log`, `tempo.txt`) em
-  `Dataset_Spotify_Processado/{N}/`, limpando o ambiente para a próxima.
-
-- **[watchdog_spotify2026.sh](watchdog_spotify2026.sh)** — reexecuta `main.py` em
-  loop até a fila esvaziar (condição de parada: nº de pastas em `audios/` ≤ nº em
-  `temp/`). Usa lockfile em `/tmp` para impedir instâncias concorrentes. Útil para
-  retomar automaticamente após falhas/interrupções.
+`dataset/sumary_results.py` lê o `dataset.csv` e resume a rodada: duração total
+em horas, contagem de segmentos, duração média, mínima e máxima, e quantos
+segmentos repetidos existem.
 
 ---
 
