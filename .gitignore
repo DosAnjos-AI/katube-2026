@@ -34,10 +34,6 @@ arquivos/input/*
 dataset/*
 !dataset/sumary_results.py
 
-# Estado de execucao de scripts de lote executados fora da pipeline
-tempo.txt
-pasta_atual.txt
-
 # Absorvido de gitignore.git
 .venv/
 .idea/

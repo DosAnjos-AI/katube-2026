@@ -64,6 +64,8 @@ katube-2026/
 ├── config.py                # TODA a configuração (bloco MASTER + params por módulo)
 ├── requirements-servidor.txt # Versões fixadas do ambiente de referência
 ├── .env.example             # Modelo do .env (token HuggingFace)
+├── .gitignore               # O que fica fora do versionamento (áudios, dataset, .env)
+├── README.md                # Este documento: visão geral, pipeline e saídas
 ├── INSTALL.md               # Montagem e verificação do ambiente
 ├── Alcateia_-_Fluxo_Katube_VAD_2026.svg  # Diagrama do fluxo
 ├── src/                     # Módulos da pipeline (m00–m15)
@@ -84,8 +86,12 @@ katube-2026/
 │   └── m15_cleanup.py                # Limpeza de temporários/input
 ├── arquivos/
 │   ├── input/                        # ENTRADA: cole aqui (é ESVAZIADA a cada execução)
-│   ├── audios/{audio_id}/            # Pasta de trabalho: um áudio por pasta
-│   └── temp/{audio_id}/              # Estado intermediário (ver abaixo)
+│   │   └── README.md                 # Como preparar o material de entrada
+│   ├── audios/                       # Pasta de trabalho: uma subpasta {audio_id} por áudio
+│   │   └── README.md                 # Estrutura da pasta de trabalho
+│   └── temp/                         # Estado intermediário: uma subpasta {audio_id} (ver abaixo)
+│       └── README.md                 # Estrutura das subpastas intermediárias
+├── audiosTestes/{nome}/              # Áudios de referência para teste (ignorados pelo git)
 └── dataset/
     ├── sumary_results.py             # Sumarização de resultados do dataset
     ├── dataset.csv                   # SAÍDA: metadados de cada segmento aprovado
@@ -226,7 +232,7 @@ Compara as duas transcrições normalizadas entre si (Whisper × Wav2Vec) calcul
 
 | Métrica | O que mede | Direção | Passa se | Limiar |
 |---|---|---|---|---|
-| `wer` | taxa de erro por **palavra** (sem teto superior) | 0 = perfeito | `<=` | `limiar_wer` (0.20) |
+| `wer` | taxa de erro por **palavra** (sem teto superior) | 0 = perfeito | `<=` | `limiar_wer` (0.35) |
 | `cer` | taxa de erro por **caractere** | 0 = perfeito | `<=` | `limiar_cer` (0.15) |
 | `levenshtein_norm` | similaridade normalizada 0–1 | 1 = idêntico | `>=` | `limiar_levenshtein_norm` (0.85) |
 
@@ -436,9 +442,12 @@ quantos níveis de subpasta quiser. O M00 cuida do resto na próxima execução 
 Quem preferir pode continuar colando direto em
 `arquivos/audios/{audio_id}/{audio_id}.ext` — o M00 não atrapalha o que já está lá.
 
+Os áudios de `audiosTestes/` são a matéria-prima dos testes e devem ser sempre
+**copiados** para `arquivos/input/`, nunca movidos.
+
 ### 2. Rodar a pipeline
 ```bash
-conda activate katube-2026
+conda activate katube_final
 cd <raiz do projeto>
 python main.py
 ```
