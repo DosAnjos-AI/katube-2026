@@ -50,3 +50,5 @@ audacity_data/
 # Credenciais - NUNCA versionar
 .env
 .env.*
+# Excecao: o modelo sem valores e versionado
+!.env.example

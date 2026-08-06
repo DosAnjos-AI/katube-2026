@@ -42,6 +42,15 @@ etapas da pipeline.
 
 ---
 
+## Diagrama de fluxo
+
+![Diagrama do fluxo da pipeline Katube VAD 2026: da ingestão dos áudios em arquivos/input/ até o dataset.csv final, passando pelos módulos M00 a M15](Alcateia_-_Fluxo_Katube_VAD_2026.svg)
+
+O desenho acima é uma exportação do board no Miro, que é a fonte sempre atualizada:
+https://miro.com/app/board/uXjVG9eNQ_g=/?focusWidget=3458764660637824545
+
+---
+
 ## Estrutura do projeto
 
 ```
@@ -393,9 +402,12 @@ vez só, reutilizados entre áudios):
 ## Como executar
 
 ### Pré-requisitos
-- Ambiente conda **`katube-2026`** ativado.
-- `ffmpeg` e `sox` instalados.
-- `.env` configurado (token HuggingFace).
+
+Montagem do ambiente, versões e verificação: **[INSTALL.md](INSTALL.md)**.
+
+Em resumo: env conda ativado, `ffmpeg`/`ffprobe`/`sox` instalados **pelo
+sistema** (não pelo conda) e `.env` preenchido a partir de
+[.env.example](.env.example) com o token HuggingFace.
 
 ### 1. Ingestão dos áudios
 Cole os áudios em **`arquivos/input/`** — arquivos soltos ou pastas inteiras, em
