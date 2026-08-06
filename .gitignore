@@ -7,7 +7,6 @@ __pycache__/
 *.db
 .ipynb_checkpoints/
 data/
-dataset/
 models/
 checkpoints/
 outputs/
@@ -28,10 +27,12 @@ arquivos/temp/*
 !arquivos/temp/README.md
 arquivos/audios/*
 !arquivos/audios/README.md
+arquivos/input/*
+!arquivos/input/README.md
 
-# Estado de execucao do executor.sh
-tempo.txt
-pasta_atual.txt
+# Saida da pipeline - conteudo ignorado, o sumarizador e versionado
+dataset/*
+!dataset/sumary_results.py
 
 # Absorvido de gitignore.git
 .venv/
@@ -48,3 +49,5 @@ audacity_data/
 # Credenciais - NUNCA versionar
 .env
 .env.*
+# Excecao: o modelo sem valores e versionado
+!.env.example

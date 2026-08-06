@@ -7,41 +7,214 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 
 
 # ============================================================================
+# MÓDULO 00: NOMEAÇÃO - PORTA DE ENTRADA DA PIPELINE
+# ============================================================================
+# Roda UMA vez por execução do main.py, antes de tudo. Varre
+# `arquivos/input/` recursivamente, resolve um id para cada áudio e MOVE o
+# arquivo para `arquivos/audios/{id}/{id}.<formato original>`, que é a
+# estrutura que o resto da pipeline consome.
+#
+# ATENÇÃO - A PASTA DE INPUT É ESVAZIADA: o arquivo é MOVIDO, não copiado.
+# Sempre cole uma CÓPIA em `arquivos/input/`, nunca a única cópia do áudio.
+NOMEACAO = {
+    # Como o id de cada áudio é decidido
+    # Opções: "hash_md5" (RECOMENDADO) | "nome_original"
+    #
+    #   "hash_md5"      → o id é o MD5 do CONTEÚDO do arquivo (dos bytes).
+    #                     Some com a legibilidade, e só o CSV auxiliar
+    #                     (CSV_NOMEACAO) devolve a origem de cada áudio.
+    #                     Três ganhos de uma vez:
+    #                       1. Dois áudios de conteúdo DIFERENTE com o mesmo
+    #                          nome geram ids diferentes e AMBOS entram -
+    #                          material novo não se perde mais.
+    #                       2. O MESMO arquivo colado em outra pasta gera o
+    #                          MESMO id e é reconhecido como repetido - a
+    #                          retomada após quebra sobrevive até a
+    #                          renomeação da pasta de origem.
+    #                       3. Id seguro por construção: 32 caracteres
+    #                          hexadecimais, sem espaço, acento ou o `|` que
+    #                          quebraria a linha do dataset.csv.
+    #                     LIMITAÇÃO: o hash detecta ARQUIVO IDÊNTICO, não
+    #                     "mesmo conteúdo sonoro". O mesmo áudio reexportado,
+    #                     com metadado diferente ou convertido de formato,
+    #                     gera hash diferente e passa como novo.
+    #
+    #   "nome_original" → o id é o nome do arquivo sem a extensão. Legível,
+    #                     mas colide entre lotes: dois lotes com
+    #                     `entrevista.flac` disputam o mesmo id, e o segundo
+    #                     é barrado mesmo tendo conteúdo diferente - perda de
+    #                     material que o modo hash resolve.
+    #
+    # O CSV auxiliar é escrito nos DOIS modos: é por ele que a coluna
+    # `nome_original` do dataset.csv é preenchida.
+    #
+    # Em AMBOS os modos o id é DETERMINÍSTICO - a mesma entrada produz
+    # sempre o mesmo id. Isso é obrigatório: se o id variasse entre
+    # execuções, a deduplicação (CSV_CONCLUIDOS, abaixo) nunca barraria o
+    # repetido e o dataset.csv (append puro) acumularia linha duplicada.
+    #
+    # DESEMPATE - só no modo "nome_original". Nomes iguais em pastas
+    # diferentes ganham sufixo numérico: `entrevista`, `entrevista_002`,
+    # `entrevista_003`, na ordem ALFABÉTICA do caminho relativo dentro de
+    # `arquivos/input/`. No modo hash NÃO HÁ desempate: dois arquivos de
+    # mesmo nome já se distinguem pelo conteúdo, e se o conteúdo for igual
+    # são o mesmo áudio e devem mesmo colidir.
+    'modo': 'nome_original',
+
+    # Extensões aceitas na varredura de `arquivos/input/`
+    # Arquivo com extensão fora desta lista é RECUSADO com log e contagem,
+    # nunca ignorado em silêncio. Comparação sempre com `suffix.lower()`.
+    #
+    # Esta é a FONTE ÚNICA de formato de entrada do projeto: o
+    # EXTENSOES_AUDIO abaixo é derivado daqui.
+    #
+    # Sobre o `.opus`: o FFmpeg 6.1.1 decodifica e, desde que o m02 passou a
+    # converter a entrada para WAV, ele atravessaria a pipeline inteira sem
+    # problema - o SoX, que não lê opus, nunca mais vê o formato original.
+    # Ele fica FORA da lista por decisão, não por limitação técnica. Para
+    # habilitá-lo, basta acrescentar '.opus' aqui.
+    #
+    # O FFmpeg também decodifica `aiff` e `au`, igualmente fora da lista.
+    'formatos_entrada': {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'},
+}
+
+
+# ============================================================================
+# CSV AUXILIAR DA NOMEAÇÃO - A PROCEDÊNCIA DE CADA ÁUDIO
+# ============================================================================
+# Guarda a relação `id processado` <-> `caminho de origem em arquivos/input/`.
+# Escrito pelo M00 (append puro, uma linha por áudio movido) e LIDO pelo M14,
+# que é quem preenche a coluna `nome_original` do dataset.csv.
+#
+# Caminho declarado AQUI, e não nos módulos: dois literais iguais em arquivos
+# diferentes divergem na primeira edição, e o M14 passaria a ler um arquivo
+# que o M00 não escreve - sem erro nenhum, só com a coluna vazia.
+#
+# Colunas (separador `|`): nome_processado | nome_original | datetime_movido
+CSV_NOMEACAO = PROJECT_ROOT / "dataset" / "nomeacao.csv"
+
+
+# ============================================================================
+# CSV DOS CONCLUÍDOS - A DEDUPLICAÇÃO PERSISTENTE
+# ============================================================================
+# A lista dos áudios que TERMINARAM a pipeline. É a ÚNICA fonte da
+# deduplicação: nenhum áudio cujo `nome_processado` já conste aqui volta a
+# entrar, seja no mesmo lote ou em lote nenhum.
+#
+# QUANDO A LINHA É ESCRITA: só após o sucesso COMPLETO do áudio - segmentos
+# gravados em `dataset/audio_dataset/{id}/`, linhas efetivadas no
+# `dataset.csv` e backup do JSON copiado para `historico_dataset/`. É o M14
+# quem escreve, como último passo. Áudio que quebrou no meio NÃO fica
+# registrado e por isso PODE ser reprocessado - é essa a razão de o registro
+# vir por último e não no começo.
+#
+# APPEND PURO. Este arquivo só é criado e recebe linhas no fim. Não existe,
+# em lugar nenhum do projeto, código que apague linha ou arquivo daqui.
+# Reprocessar um áudio já concluído é ação MANUAL do usuário: apagar a linha
+# correspondente com um editor, fora da pipeline.
+#
+# NÃO HÁ CAMPO DE CONFIGURAÇÃO PARA "REPROCESSAR MESMO ASSIM", e isso é
+# decisão, não esquecimento. Como o `dataset.csv` é append puro e nada nele
+# é removido, um botão desses seria um botão de GERAR DUPLICATA no dataset.
+# Além disso, no modo hash o critério deixou de ser o nome e passou a ser o
+# conteúdo: "mesmo nome, conteúdo diferente" já entra normalmente, que era o
+# caso que justificaria o botão.
+#
+# Caminho declarado AQUI, uma única vez, pelo mesmo motivo do CSV_NOMEACAO:
+# dois literais iguais em arquivos diferentes divergem na primeira edição, e
+# a guarda passaria a ler um arquivo que ninguém escreve - sem erro nenhum,
+# só deixando tudo entrar de novo.
+#
+# Colunas (separador `|`): nome_processado | nome_original | datetime_concluido
+CSV_CONCLUIDOS = PROJECT_ROOT / "dataset" / "concluidos.csv"
+
+
+# ============================================================================
+# FORMATOS DE ÁUDIO - FONTE ÚNICA
+# ============================================================================
+# Conjunto de extensões que os módulos do pipeline reconhecem como áudio.
+# DERIVADO de NOMEACAO['formatos_entrada'] - o que entra pela porta é o que
+# os módulos precisam reconhecer, e duas listas independentes divergiriam na
+# primeira edição. Para mudar os formatos aceitos, edite o bloco NOMEACAO.
+# Comparação sempre com `suffix.lower()`.
+#
+# ----------------------------------------------------------------------------
+# AS TRÊS LISTAS DE FORMATO (confirmadas empiricamente no build instalado
+# nesta máquina - relatório 04, Ubuntu 24.04.4)
+# ----------------------------------------------------------------------------
+#
+# 1) ENTRADA - o que o FFmpeg 6.1.1 consegue DECODIFICAR:
+#       mp3, wav, flac, ogg, opus, m4a, aac, wma, aiff, au
+#
+#    A lista EM VIGOR (NOMEACAO['formatos_entrada']) é mais restrita por
+#    decisão, não por limitação - ver o comentário daquele campo.
+#
+# 2) INTERMEDIÁRIO - `wav`, fixo e não configurável. O m02 converte a
+#    entrada para WAV ao copiá-la para `temp/{id}/01-arquivos_originais/`,
+#    preservando sample rate, canais e profundidade de bits do original.
+#    Daí em diante o formato de entrada não circula mais pela pipeline - é
+#    o que permite aceitar formatos que o SoX 14.4.2 não lê (`m4a`, `aac`,
+#    `wma`, `opus`). O m05 segue sendo o único ponto que produz 16 kHz.
+#
+# 3) SAÍDA - o que o SoX 14.4.2 consegue ESCREVER de forma útil:
+#       flac, wav, ogg, mp3   (padrão do projeto: flac - ver SOX_NORMALIZER)
+#
+#    O SoX também escreve aiff, au, caf, w64, raw, voc e amr-nb, mas estes
+#    ficam documentados como NÃO RECOMENDADOS - `amr-nb`, em particular,
+#    força reamostragem para 8 kHz. Quem precisar de outro formato converte
+#    fora do projeto, com FFmpeg.
+#
+# ----------------------------------------------------------------------------
+# ORIGEM DOS BINÁRIOS (relatório 04)
+# ----------------------------------------------------------------------------
+# `sox` v14.4.2 e `soxi` vêm de /usr/bin, ou seja, do SISTEMA OPERACIONAL,
+# NÃO do env conda `katube-2026`. O mesmo vale para `ffmpeg` e `ffprobe`
+# 6.1.1 (/usr/bin). Consequência prática: recriar o env a partir do
+# `environment.yml` NÃO reproduz o ambiente - os binários precisam ser
+# instalados à parte, no sistema, e a versão deles muda o que o pipeline
+# consegue ler e escrever.
+EXTENSOES_AUDIO = set(NOMEACAO['formatos_entrada'])
+
+
+# ============================================================================
 # BLOCO MASTER - Controle de Módulos Ativos
 # ============================================================================
 # Ativa/desativa módulos principais do sistema
 # True = módulo será executado | False = módulo será ignorado
 MASTER = {
-    'segmentacao': 'vad',      # Opcoes: 'vad', '' para audio ja segmentado
+    # Opcoes: 'vad'. O valor '' (audio ja segmentado) esta previsto no codigo
+    # mas NAO FUNCIONA: nenhum modulo alimenta 02-segmentos_originais sem o
+    # m04, e o m05 aborta a pipeline em 0,00 min por falta do JSON. Nao use
+    # ate que exista um caminho de entrada para segmentos prontos.
+    'segmentacao': 'vad',
     'mos_filter': True,        # True = utilizar; False = nao utilizar
     'overlap': True,           # Utilizar ou nao o detector de overlap
     'transcricao_whisper': True,
     'transcricao_wav2vec': True,
     'Denoiser': True,
     'cleanup': 'all',          # Opcoes: 'all' (input+temp), 'input' (so input), 'temp' (so temp), 'none' (nao apaga)
-}
 
-
-# =============================================================================
-# MÓDULO 01: SEGMENTADOR DE ÁUDIO VAD (entrada por segmentacao)
-# =============================================================================
-
-# Configuracoes do modulo de segmentacao de audio por legendas externas
-# Utilizado quando MASTER['segmentacao'] = 'legenda'
-SEGMENTADOR_AUDIO = {
-    
     # ------------------------------------------------------------------------
-    # Controle do tamanho dos segmentos criados
+    # FALLBACK PARA CPU - controle unico e global de todos os modelos
     # ------------------------------------------------------------------------
-    # min_seg: Duração mínima de cada segmento em segundos
-    # - Segmentos menores serão agrupados com próximos (respeitando locutores)
-    # - Tolerância: aceita até 0.8s a menos
-    'min_seg': 2,
-    
-    # max_seg: Duração máxima de cada segmento em segundos
-    # - Segmentos não ultrapassam este limite
-    # - Tolerância: aceita até 0.8s a mais
-    'max_seg': 15,
+    # Governa o que acontece quando um bloco pede 'gpu' e a GPU nao atende
+    # (CUDA ausente, erro de CUDA, falta de VRAM, qualquer excecao no
+    # carregamento do modelo).
+    #
+    #   True  -> a pipeline CAI PARA CPU e continua. A excecao original e o
+    #            dispositivo efetivamente usado sao registrados em nivel de
+    #            ERRO, no stderr, com o prefixo [ERRO]. O log alto e
+    #            obrigatorio: uma rodada que cai para CPU sem ninguem
+    #            perceber custa cerca de 9,7x tempo real e passa por normal.
+    #
+    #   False -> SEM fallback. O erro derruba o modulo, que devolve False
+    #            pelo contrato de retorno, e o main.py marca o audio como
+    #            falho em processamento_metadados.csv.
+    #
+    # Vale para os cinco modelos (Whisper, wav2vec, pyannote, SQUIM e
+    # DeepFilterNet3). Ver a RESSALVA do DeepFilterNet3 em
+    # DEEPFILTERNET_DENOISER['device'].
+    'fallback_cpu': True,
 }
 
 
@@ -53,8 +226,7 @@ SEGMENTADOR_AUDIO = {
 # Utilizado quando MASTER['segmentacao'] = 'vad'
 # 
 # Este módulo utiliza Silero-VAD para detectar automaticamente momentos de
-# fala e silêncio no áudio, criando segmentos baseados em pausas naturais
-# (sem depender de legendas).
+# fala e silêncio no áudio, criando segmentos baseados em pausas naturais.
 #
 # IMPORTANTE: Sempre processa áudio em 16 kHz internamente (conversão automática)
 SEGMENTADOR_AUDIO_VAD = {
@@ -117,7 +289,12 @@ SEGMENTADOR_AUDIO_VAD = {
         # - Valores baixos (10-30ms): corte mais preciso
         # - Valores médios (30-50ms): segurança recomendada
         # - Valores altos (>100ms): pode incluir silêncio extra
-        # Exemplo: 30 = adiciona 30ms antes do início detectado da fala
+        #
+        # ATENÇÃO - este valor é aplicado DUAS VEZES no início: uma pelo
+        # Silero (o m04 o passa como speech_pad_ms, e o Silero expande os
+        # dois lados) e outra pelo próprio m04 ao montar o grupo. Com 30 ms
+        # configurados, o início recebe 60 ms no total. O fim recebe
+        # inicio_ms (pelo Silero) + fim_ms (pelo m04).
         'inicio_ms': 30,
         
         # Tempo adicional no FIM de cada segmento (milissegundos)
@@ -126,6 +303,7 @@ SEGMENTADOR_AUDIO_VAD = {
         # - Valores médios (30-50ms): segurança recomendada
         # - Valores altos (>100ms): pode incluir silêncio extra
         # Exemplo: 30 = adiciona 30ms após o fim detectado da fala
+        # Este campo NÃO chega ao Silero: só o m04 o aplica.
         'fim_ms': 30,
     },
     
@@ -133,20 +311,26 @@ SEGMENTADOR_AUDIO_VAD = {
     # Limites de Duração dos Segmentos Finais
     # ------------------------------------------------------------------------
     'segmentos': {
-        # Duração MÍNIMA de cada segmento em segundos
+        # Duração mínima ALVO de cada segmento, em segundos
         # Segmentos mais curtos são agrupados com próximos
         # - Valores baixos (2-4s): aceita segmentos muito curtos
         # - Valores médios (4-8s): equilíbrio (recomendado)
         # - Valores altos (>10s): força segmentos longos
-        # Exemplo: 4.0 = todos os segmentos terão no mínimo 4 segundos
+        #
+        # ATENÇÃO: o mínimo EFETIVO é (min_seg - tolerancia), não min_seg.
+        # Com min_seg=4.0 e tolerancia=0.5, o mínimo real é 3,5 s.
         'min_seg': 4.0,
         
-        # Duração MÁXIMA de cada segmento em segundos
-        # Segmentos mais longos são divididos em pausas naturais
+        # Teto de AGRUPAMENTO, em segundos - NÃO é teto absoluto
+        # Impede juntar mais um trecho de fala a um grupo que já alcançou
+        # este limite. Um trecho de fala único MAIOR que o limite
+        # ATRAVESSA INTEIRO - nada o divide.
         # - Valores baixos (8-12s): força segmentos curtos
         # - Valores médios (15-20s): equilíbrio (recomendado)
         # - Valores altos (>25s): permite segmentos muito longos
-        # Exemplo: 15.0 = nenhum segmento ultrapassará 15 segundos
+        #
+        # Medido neste projeto: com max_seg=8.0, um segmento saiu com
+        # 8,312 s. Com 15.0, os segmentos ficaram entre 6,5 e 12,3 s.
         'max_seg': 15.0,
         
         # Tolerância nas durações (segundos)
@@ -154,7 +338,8 @@ SEGMENTADOR_AUDIO_VAD = {
         # - Valores baixos (0.3-0.5s): mais rigoroso
         # - Valores médios (0.8-1.0s): equilíbrio (recomendado)
         # - Valores altos (>1.5s): mais flexível
-        # Exemplo: 0.8 = aceita segmento de 3.2s (min=4.0 - tolerância=0.8)
+        # Exemplo com os valores atuais: 0.5 aceita segmento de 3,5 s
+        # (min_seg 4.0 - tolerancia 0.5)
         'tolerancia': 0.5,
     },
     
@@ -162,9 +347,14 @@ SEGMENTADOR_AUDIO_VAD = {
     # Comportamento Geral
     # ------------------------------------------------------------------------
     'comportamento': {
-        # Sobrescrever segmentos existentes
-        # False = pula áudios já segmentados (verifica pasta segments/)
-        # True = re-segmenta mesmo que já exista
+        # CAMPO SEM EFEITO HOJE.
+        # O código do skip existe (m04), mas o m02 apaga temp/{audio_id}
+        # inteiro no início de todo processamento: quando a verificação
+        # acontece, a pasta de destino acabou de ser criada vazia, e a
+        # resposta é sempre "não há nada para pular". Confirmado em sete
+        # rodadas reprocessando o mesmo audio_id - a mensagem de skip nunca
+        # apareceu. Ligar isto exige decidir antes qual invariante vence:
+        # o reinício limpo ou o reaproveitamento.
         'sobrescrever': False,
     },
 }
@@ -182,14 +372,15 @@ MOS_FILTER = {
     # Dispositivo de Processamento
     # ------------------------------------------------------------------------
     # Define onde o modelo MOS será executado
-    # Opções disponíveis:
-    # - "auto": Detecta automaticamente (GPU se disponível, senão CPU)
-    # - "gpu": Força uso de GPU/CUDA (falha se GPU não disponível)
-    # - "cpu": Força uso de CPU (mais lento, mas funciona em qualquer máquina)
-    # 
-    # Recomendação: "auto" para máxima compatibilidade
+    # Opções disponíveis - APENAS DUAS ("auto" foi eliminado):
+    # - "gpu": pede GPU/CUDA. Se a GPU não atender, o que acontece é
+    #          decidido por MASTER['fallback_cpu'], não por este campo.
+    # - "cpu": força uso de CPU (mais lento, mas funciona em qualquer máquina)
+    #
+    # Qualquer outro valor é RECUSADO com erro explícito no m01 - não há
+    # resolução silenciosa nem valor padrão escondido.
     # Nota: GPU acelera significativamente (3-5x mais rápido)
-    'device': 'auto',
+    'device': 'gpu',
     
     # ------------------------------------------------------------------------
     # Limiares de Qualidade (MOS Score)
@@ -202,14 +393,16 @@ MOS_FILTER = {
         # Áudios com MOS < min_threshold são DESCARTADOS
         # Valores típicos: 1.5-2.5
         # Exemplo: 2.0 = descarta áudios muito ruins
-        'min_threshold': 1.0,
+        'min_threshold': 2.0,
         
         # Limiar para alta qualidade
-        # Áudios com MOS >= max_threshold são considerados ÓTIMOS
-        # Não precisam de denoising posterior
+        # Áudios com MOS >= max_threshold são classificados como 'alta'
         # Valores típicos: 3.0-4.0
-        # Exemplo: 3.5 = áudios acima disso vão direto pro dataset
-        'max_threshold': 1.00001,
+        # Exemplo com o valor atual: MOS >= 3.0 é classificado como 'alta'
+        #
+        # Este campo NÃO decide quem passa pelo denoiser - quem decide é
+        # DEEPFILTERNET_DENOISER['mos_quality_filter'].
+        'max_threshold': 3.0,
         
         # Faixa intermediária (calculada automaticamente):
         # min_threshold <= MOS < max_threshold
@@ -226,9 +419,11 @@ MOS_FILTER = {
         # Valores maiores = mais rápido, mas usa mais VRAM
         # 
         # Opções:
-        # - "auto": Calcula automaticamente baseado em VRAM disponível
+        # - "auto": neste bloco NÃO olha a VRAM. O m06 devolve 8 para GPU e
+        #           1 para CPU, e só. (O "auto" do STT_WHISPER é diferente:
+        #           lá a VRAM é lida de verdade.)
         # - 1-16: Valor fixo (números maiores exigem mais VRAM)
-        # 
+        #
         # Referência de uso de VRAM (aproximado):
         # - batch_size=1:  ~2.0 GB
         # - batch_size=4:  ~3.0 GB
@@ -247,9 +442,11 @@ MOS_FILTER = {
     # Comportamento Geral
     # ------------------------------------------------------------------------
     'comportamento': {
-        # Sobrescrever análises existentes
-        # False = pula segmentos já analisados (verifica se JSON existe)
-        # True = re-analisa todos os segmentos
+        # CAMPO SEM EFEITO HOJE.
+        # Mesmo caso do bloco do VAD: o código do skip existe (m06), mas o
+        # m02 apaga temp/{audio_id} antes, então o JSON que a verificação
+        # procura nunca está lá. Ligar isto é decisão de projeto, não de
+        # implementação.
         'sobrescrever': False,
     },
 }
@@ -267,61 +464,51 @@ OVERLAP_DETECTOR = {
     # Dispositivo de Processamento
     # ------------------------------------------------------------------------
     # Define onde o modelo será executado
-    # Opções disponíveis:
-    # - "auto": Detecta automaticamente (GPU se disponível, senão CPU)
-    # - "gpu": Força uso de GPU/CUDA (falha se GPU não disponível)
-    # - "cpu": Força uso de CPU (mais lento, mas funciona em qualquer máquina)
-    # 
-    # Recomendação: "auto" para máxima compatibilidade
+    # Opções disponíveis - APENAS DUAS ("auto" foi eliminado):
+    # - "gpu": pede GPU/CUDA. Se a GPU não atender, o que acontece é
+    #          decidido por MASTER['fallback_cpu'], não por este campo.
+    # - "cpu": força uso de CPU (mais lento, mas funciona em qualquer máquina)
+    #
+    # Qualquer outro valor é RECUSADO com erro explícito no m01.
     # Nota: GPU acelera significativamente o processamento
-    'device': 'auto',
+    'device': 'gpu',
     
     # ------------------------------------------------------------------------
     # Modelo de Diarização
     # ------------------------------------------------------------------------
-    # Modelo HuggingFace para detecção de overlap
-    # pyannote/speaker-diarization-community-1CC-BY-4.0
-    # Licença: CC-BY-4.0 (permissiva para uso acadêmico)
+    # Modelo HuggingFace para detecção de overlap.
+    # Este campo É lido pelo m01 e define de fato o modelo carregado -
+    # antes havia uma constante no código que o ignorava.
     # IMPORTANTE: Requer token HuggingFace configurado em .env
     'modelo': 'pyannote/speaker-diarization-3.1',
     
     # ------------------------------------------------------------------------
     # Batch Processing (Processamento em Lote)
     # ------------------------------------------------------------------------
-    # Processa múltiplos áudios simultaneamente para maior eficiência
-    
     'batch': {
-        # Tamanho do batch (quantos áudios processar juntos)
-        # Valores maiores = mais rápido, mas usa mais VRAM
-        # 
-        # Opções:
-        # - "auto": Calcula automaticamente baseado em VRAM disponível
-        # - 1-16: Valor fixo (números maiores exigem mais VRAM)
-        # 
-        # Referência de uso de VRAM (aproximado):
-        # - batch_size=1:  ~3.0 GB
-        # - batch_size=4:  ~5.0 GB
-        # - batch_size=8:  ~8.0 GB
-        # - batch_size=16: ~12.0 GB
-        # 
-        # Recomendação:
-        # - GPU com 24GB: "auto" ou 16
-        # - GPU com 8-16GB: 8
-        # - GPU com 4-8GB: 4
-        # - CPU: 1
-        'batch_size': 'auto',
+        # ÚNICO VALOR SUPORTADO: 1
+        #
+        # Este módulo processa um segmento por vez, com timeout individual
+        # por áudio - não existe caminho de lote no m07. O campo é LIDO e
+        # qualquer valor diferente de 1 é RECUSADO com erro explícito, que
+        # derruba o módulo. Antes o valor era simplesmente ignorado, e quem
+        # configurasse 8 não tinha como perceber.
+        #
+        # Processamento em lote aqui seria funcionalidade nova, não ajuste
+        # de configuração.
+        'batch_size': 1,
     },
     'timeout': {
-    'por_audio_segundos': 60,  # Timeout máximo por áudio
+    'por_audio_segundos': 150,  # Timeout máximo por áudio
     },
     
     # ------------------------------------------------------------------------
     # Comportamento Geral
     # ------------------------------------------------------------------------
     'comportamento': {
-        # Sobrescrever análises existentes
-        # False = pula segmentos já analisados (verifica se campo overlap01 existe)
-        # True = re-analisa todos os segmentos
+        # CAMPO SEM EFEITO HOJE - e sem leitor nenhum.
+        # Nada no m07 verifica o campo overlap01 antes de processar; este
+        # valor não é consultado por linha alguma do projeto.
         'sobrescrever': False,
     },
 }
@@ -339,14 +526,14 @@ STT_WHISPER = {
     # Dispositivo de Processamento
     # ------------------------------------------------------------------------
     # Define onde o modelo Whisper será executado
-    # Opções disponíveis:
-    # - "auto": Detecta automaticamente (GPU se disponível, senão CPU)
-    # - "gpu": Força uso de GPU/CUDA (falha se GPU não disponível)
-    # - "cpu": Força uso de CPU (mais lento, mas funciona em qualquer máquina)
-    # 
-    # Recomendação: "auto" para máxima compatibilidade
+    # Opções disponíveis - APENAS DUAS ("auto" foi eliminado):
+    # - "gpu": pede GPU/CUDA. Se a GPU não atender, o que acontece é
+    #          decidido por MASTER['fallback_cpu'], não por este campo.
+    # - "cpu": força uso de CPU (mais lento, mas funciona em qualquer máquina)
+    #
+    # Qualquer outro valor é RECUSADO com erro explícito no m01.
     # Nota: GPU acelera significativamente (6x mais rápido que large-v3)
-    'device': 'auto',
+    'device': 'gpu',
     
     # ------------------------------------------------------------------------
     # Batch Processing (Processamento em Lote)
@@ -379,9 +566,9 @@ STT_WHISPER = {
     # Comportamento Geral
     # ------------------------------------------------------------------------
     'comportamento': {
-        # Sobrescrever transcrições existentes
-        # False = pula segmentos já transcritos (verifica se campo stt_whisper existe)
-        # True = re-transcreve todos os segmentos
+        # CAMPO SEM EFEITO HOJE - e sem leitor nenhum.
+        # Nada no m08 verifica o campo stt_whisper antes de transcrever;
+        # este valor não é consultado por linha alguma do projeto.
         'sobrescrever': False,
     },
 }
@@ -390,7 +577,10 @@ STT_WHISPER = {
 # MÓDULO 06: STT WAV2VEC2 (SPEECH-TO-TEXT) 
 # ============================================================
 STT_WAV2VEC2= {
-    "device": "auto",  # Dispositivo de processamento: auto, cpu, gpu
+    # Dispositivo de processamento - APENAS "gpu" ou "cpu" ("auto" foi
+    # eliminado). Com "gpu", a queda para CPU é decidida por
+    # MASTER['fallback_cpu']. Outro valor é recusado com erro no m01.
+    "device": "gpu",
 }
 
 
@@ -407,8 +597,10 @@ TEXT_NORMALIZER = {
     "remove_punctuation_diction": True,
     
     # Acentuação gráfica (marcas diacríticas)
-    # Remove: ' ` ^ ~
-    # Exemplo: "josé" → "jose" (com remove=True)
+    # Remove TODA marca diacrítica, por decomposição Unicode NFD seguida do
+    # descarte da categoria Mn: agudo, grave, circunflexo, til E CEDILHA.
+    # Exemplos verificados: "josé" → "jose", "coração" → "coracao",
+    #                       "açúcar" → "acucar" (a cedilha some junto)
     # Exemplo: "josé" → "josé" (com remove=False)
     # IMPORTANTE: Se False, números por extenso terão acento (três, décimo)
     #             Se True, números por extenso sem acento (tres, decimo)
@@ -420,39 +612,81 @@ TEXT_NORMALIZER = {
 # MÓDULO 08: VALIDADOR DE SIMILARIDADE (SIMILARITY VALIDATOR)
 # ============================================================
 SIMILARITY_VALIDATOR = {
-    
-    # Limiar de similaridade para aprovação de segmentos
-    # Valor entre 0.0 (totalmente diferente) e 1.0 (idêntico)
-    # Segmentos com similaridade >= threshold são aprovados
-    # Exemplo com threshold=0.75:
-    #   - Similaridade 0.80 → APROVADO (>=0.75)
-    #   - Similaridade 0.70 → REJEITADO (<0.75)
-    # Valores típicos: 0.70 (permissivo), 0.80 (equilibrado), 0.90 (restritivo)
-    # Útil para: filtrar segmentos com alta divergência entre modelos STT
-    "similarity_threshold": 0.05,
-    
-    # Tipo de métrica para cálculo de similaridade
-    # Opções disponíveis:
-    #   "wer" (Word Error Rate) - Padrão da indústria STT
-    #       Calcula: 1 - (edições_necessárias / total_palavras)
-    #       Exemplo: "casa azul" vs "casa verde" → WER ~0.50
-    #       Sensível à ordem das palavras
-    #       Melhor para: avaliar qualidade de transcrição completa
-    #   
-    #   "cer" (Character Error Rate) - Análise em nível de caractere
-    #       Calcula: 1 - (edições_necessárias / total_caracteres)
-    #       Exemplo: "josé" vs "jose" → CER ~0.80
-    #       Mais granular que WER
-    #       Melhor para: detectar erros sutis (acentos, typos)
-    #   
-    #   "levenshtein_norm" - Distância de edição normalizada
-    #       Calcula: 1 - (distância_levenshtein / max_length)
-    #       Exemplo: "gato" vs "pato" → 0.75 (1 edição em 4 chars)
-    #       Não diferencia palavras vs caracteres
-    #       Melhor para: comparação genérica de strings
-    # 
-    # Recomendação: "wer" para STT (alinhado com métricas acadêmicas)
-    "metric_type": "wer",
+
+    # As TRÊS métricas são SEMPRE calculadas, comparando as transcrições do
+    # Whisper e do Wav2Vec2 entre si. Não há escolha de métrica: o segmento só
+    # segue na pipeline se passar nos TRÊS limiares abaixo.
+    #
+    # ATENÇÃO À DIREÇÃO: cada métrica usa a sua convenção consagrada, e elas
+    # NÃO apontam para o mesmo lado. Em WER e CER, que são taxas de ERRO,
+    # menor é melhor. Em levenshtein_norm, que é uma SIMILARIDADE, maior é
+    # melhor. Por isso são três campos, e não uma média: eles medem coisas
+    # diferentes, em direções diferentes.
+    #
+    # Aumentar um limiar de erro (wer, cer) AFROUXA o filtro.
+    # Aumentar o limiar de similaridade (levenshtein_norm) APERTA o filtro.
+
+    # ------------------------------------------------------------------------
+    # WER - Word Error Rate (taxa de erro por PALAVRA)
+    # ------------------------------------------------------------------------
+    # Mede: edições de PALAVRA necessárias para transformar uma transcrição na
+    #       outra, dividido pelo número de palavras da referência.
+    # Direção: 0.0 = transcrições idênticas. QUANTO MENOR, MELHOR.
+    # Passa se: wer <= limiar
+    # SEM TETO SUPERIOR: passa de 1.0 quando um dos modelos insere mais
+    #       palavras do que a referência tem (ex.: referência com 1 palavra e
+    #       hipótese com 5 dá WER 4.0).
+    # Exemplo: "casa azul" vs "casa verde" → 1 palavra trocada em 2 → 0.50
+    # Este limiar é o mais FOLGADO de propósito: uma única letra errada
+    # invalida a palavra inteira, então o WER é sempre mais severo que o CER
+    # sobre o mesmo texto.
+    # Valores típicos: 0.30 (permissivo), 0.20 (equilibrado), 0.10 (restritivo)
+    #
+    # CALIBRADO EM DADO REAL (tarefa 28), não na escrivaninha. O wav2vec é
+    # FONÉTICO e não corrige para o português como o Whisper faz: divergência
+    # de PALAVRA entre os dois é esperada e NÃO é sinal de áudio ruim. Com o
+    # CER e o levenshtein_norm já filtrando, o WER é o mais frouxo dos três.
+    #
+    # Medição dos 23 segmentos elegíveis da etapa 6 (relatório 27): onze
+    # reprovavam APENAS por WER, com CER entre 0,0642 e 0,1481 (limiar 0,15) e
+    # levenshtein_norm entre 0,8519 e 0,9358 (limiar 0,85) - ou seja, folgados
+    # nas duas métricas que de fato medem erro de transcrição. O valor 0,20
+    # reprovava 100% dos segmentos de dois dos cinco áudios, enquanto o MESMO
+    # material em outro corte passava com 0,11.
+    #
+    # Por que 0.35 e não 0.40: em 0,40 o WER deixaria de decidir sozinho em
+    # qualquer caso da amostra - tudo que ele barraria já é barrado por CER e
+    # levenshtein_norm - e viraria botão sem efeito. Em 0,35 ele ainda barra
+    # sozinho um segmento (WER 0,4000 com CER 0,1481 e levenshtein_norm
+    # 0,8519, raspando nos três), então continua tendo poder de decisão
+    # próprio como rede contra divergência estrutural grosseira.
+    "limiar_wer": 0.35,
+
+    # ------------------------------------------------------------------------
+    # CER - Character Error Rate (taxa de erro por CARACTERE)
+    # ------------------------------------------------------------------------
+    # Mede: edições de CARACTERE necessárias para transformar uma transcrição
+    #       na outra, dividido pelo número de caracteres da referência.
+    # Direção: 0.0 = transcrições idênticas. QUANTO MENOR, MELHOR.
+    # Passa se: cer <= limiar
+    # Também não tem teto superior, pela mesma razão do WER.
+    # Mais granular que o WER: pega erro sutil (acento, letra trocada) sem
+    # condenar a palavra inteira.
+    # Exemplo: "casa azul" vs "casa verde" → 5 edições em 9 chars → 0.5556
+    # Valores típicos: 0.25 (permissivo), 0.15 (equilibrado), 0.08 (restritivo)
+    "limiar_cer": 0.15,
+
+    # ------------------------------------------------------------------------
+    # LEVENSHTEIN NORMALIZADO (similaridade por CARACTERE)
+    # ------------------------------------------------------------------------
+    # Mede: 1 - (distância de Levenshtein / comprimento máximo dos dois textos)
+    # Direção: 1.0 = textos idênticos. QUANTO MAIOR, MELHOR. (INVERSA às duas
+    #       métricas acima - atenção ao ajustar.)
+    # Passa se: levenshtein_norm >= limiar
+    # Faixa fechada entre 0.0 e 1.0, diferente de WER e CER.
+    # Exemplo: "gato" vs "pato" → 1 edição em 4 chars → 0.75
+    # Valores típicos: 0.75 (permissivo), 0.85 (equilibrado), 0.92 (restritivo)
+    "limiar_levenshtein_norm": 0.85,
 }
 
 # ============================================================
@@ -469,48 +703,95 @@ DEEPFILTERNET_DENOISER = {
     #   ["media", "baixa"] → Processa áudios de média e baixa qualidade
     #   [] → NÃO PROCESSA NENHUM ÁUDIO (array vazio = sem processamento)
     # 
-    # Caso de uso típico: ["media", "baixa"] 
-    #   Aplica denoising apenas onde há maior chance de melhoria
-    #   Áudios de alta qualidade já processados permanecem intactos
-    # 
+    # ATENÇÃO - o que chega de fato até aqui:
+    #   "baixa" NUNCA chega: o m06 descarta esses segmentos antes, por
+    #   min_threshold. Só restam "media" e "alta".
+    #
+    #   QUANTO ["media"] SELECIONA, medido na tarefa 28 (5 áudios, 23
+    #   segmentos elegíveis): 3 segmentos, todos do áudio `entrevista`.
+    #   Os outros 14 entregues não passaram pelo denoiser. Ou seja, o
+    #   filtro seleciona de verdade e os DOIS caminhos do m13 (com e sem
+    #   denoiser) são exercitados numa mesma rodada.
+    #
+    #   O comentário anterior afirmava que ["media"] selecionava ZERO
+    #   segmentos "em todas as rodadas de teste". Isso valia quando o
+    #   conjunto de teste era só o `qMrMmG__Yhw_60s`, cujos segmentos saem
+    #   quase todos como "alta" (MOS de 3,36 a 3,89 com max_threshold=3.0).
+    #   Deixou de valer quando entraram áudios de outra procedência.
+    #   Para processar TODO segmento com o denoiser, inclua "alta".
+    #
     # IMPORTANTE: Os arquivos originais (input) SEMPRE permanecem intactos
     #             O denoising cria novos arquivos processados no output
     "mos_quality_filter": ["media"],
     
-    # Dispositivo de processamento
-    # Opções: "auto", "gpu", "cpu"
-    #   "auto" → Detecta GPU automaticamente, fallback para CPU
-    #   "gpu"  → Força uso de GPU (falha se indisponível)
-    #   "cpu"  → Força processamento em CPU (mais lento, sempre disponível)
-    # Recomendação: "auto" para máxima compatibilidade
-    "device": "auto",
+    # Dispositivo de processamento - APENAS DUAS opções ("auto" foi eliminado):
+    #   "gpu" → pede GPU/CUDA; a queda para CPU é decidida por
+    #           MASTER['fallback_cpu'], não por este campo
+    #   "cpu" → força processamento em CPU (mais lento, sempre disponível)
+    # Qualquer outro valor é RECUSADO com erro explícito no m01.
+    #
+    # RESSALVA DO DEEPFILTERNET3 (achado A29, medido no build instalado):
+    # a biblioteca resolve o dispositivo por conta própria, com get_device(),
+    # que escolhe cuda:0 sempre que houver CUDA. O init_df() NÃO aceita
+    # parâmetro device, e o config.ini interno do modelo traz [train]
+    # device = (vazio). Para submeter a biblioteca a este campo, o m01
+    # escreve a chave DEVICE na config interna do DeepFilterNet logo DEPOIS
+    # do init_df() - antes não adianta, porque o próprio init_df() recarrega
+    # o parser e apaga o ajuste.
+    #
+    # LIMITAÇÃO CONHECIDA E ACEITA (decisão do Mestre, instrução 20):
+    # o init_df() em si continua carregando o modelo no dispositivo que a
+    # biblioteca escolher. Consequência: numa GPU que FALHE, o
+    # DeepFilterNet3 NÃO consegue reiniciar em CPU, porque o init_df() do
+    # retry volta a tentar CUDA. Os outros quatro modelos têm fallback
+    # pleno. Resolver isso exigiria uma cópia do modelo dentro do projeto
+    # com o config.ini editado - custo não justificado hoje.
+    "device": "gpu",
     
-    # Nível de agressividade do filtro pós-processamento
-    # Valores: 0, 1, 2
-    #   0 → Preserva mais características do áudio original (mínimo denoising)
-    #   1 → Balanceado entre remoção de ruído e preservação de fala (PADRÃO)
-    #   2 → Remoção máxima de ruído (pode afetar naturalidade da voz)
-    # 
-    # Recomendação por cenário:
-    #   Música de fundo presente → usar 0 ou 1
-    #   Ruído ambiente severo → usar 2
-    #   Análise STT downstream → usar 1 (equilibrado)
+    # Liga/desliga o pós-filtro do DeepFilterNet.
+    # O parâmetro da biblioteca é BOOLEANO (assinatura verificada no build
+    # instalado, DeepFilterNet 0.5.6: post_filter: bool = False):
+    #   0 → desliga o pós-filtro
+    #   qualquer outro valor → liga
+    #
+    # NÃO existem três graus de agressividade nesta versão: o valor 2 é
+    # idêntico ao 1. O pós-filtro faz uma redução extra e menor de ruído.
     "post_filter": 1,
     
-    # Limite de atenuação aplicado ao sinal
-    # Valor entre 0.0 e 1.0 (float)
-    #   0.0 → Sem limitação (pode causar over-processing)
-    #   1.0 → Limitação máxima (preserva dinâmica do áudio)
-    # 
-    # Função: Previne distorção em trechos de fala suave
-    # Padrão DeepFilterNet: 0.95
-    # 
-    # ⚠️ Valores muito baixos (<0.8) podem degradar inteligibilidade
-    # Recomendação: manter entre 0.90-0.98 para português brasileiro
-    "attenuation_limit": 0.95,
+    # Limite de atenuação de ruído, em DECIBÉIS - NÃO é fração de 0 a 1.
+    # O valor viaja para o parâmetro `atten_lim_db` do enhance(), que mistura
+    # sinal original e sinal tratado assim:
+    #
+    #     lim = 10^(-|dB|/20)
+    #     saída = original * lim + tratado * (1 - lim)
+    #
+    # Ou seja, a fração do denoising que chega ao áudio é (1 - lim), e
+    # valor MAIOR em decibéis significa MAIS denoising - a escala é o
+    # inverso do que o comentário antigo descrevia.
+    #
+    # MEDIDO NESTE PROJETO (tarefa 19, 6 valores x 6 segmentos):
+    #    0.95 dB -> aplica  10,4 % do denoising (praticamente inerte)
+    #    3.0  dB -> aplica  29,2 %
+    #    6.0  dB -> aplica  49,9 %
+    #   12.0  dB -> aplica  74,9 %
+    #   24.0  dB -> aplica  93,7 %
+    #   40.0  dB -> aplica  99,0 %
+    #
+    # ABAIXO de 6 dB: região inerte - o módulo carrega, roda e quase não
+    # altera o áudio (com 0.95 dB a diferença medida ficou 51 dB abaixo do
+    # sinal, inaudível).
+    # ACIMA de 24 dB: saturação - de 24 para 40 dB o ganho é de 0,5 dB.
+    # Equivale a não ter limite nenhum.
+    # 0 ou None: sem limite, denoising integral.
+    #
+    # FAIXA ÚTIL: 6 a 24 dB. Valor de trabalho: 12.0 (75 % do denoising,
+    # conservador o bastante para não maltratar a voz num dataset de TTS).
+    # A duração do áudio NÃO muda em nenhum valor testado - a invariante
+    # de duração não é afetada por este campo.
+    "attenuation_limit": 12.0,
     
     # Pular segmentos já processados anteriormente
-    # Verifica flag "deepfilternet_processed" no JSON dinâmico
+    # Verifica o campo "utilizou_denoiser" no JSON dinâmico
     #   True → Ignora áudios com flag existente (economiza processamento)
     #   False → Reprocessa todos os áudios elegíveis (sobrescreve outputs)
     # 
@@ -535,10 +816,12 @@ SOX_NORMALIZER = {
     #   44100 → CD quality - Uso geral alta fidelidade
     #   48000 → Professional audio/broadcasting
     # 
-    # IMPORTANTE: Modelos STT/TTS geralmente esperam 16kHz ou 22050Hz
+    # Valor atual: 24000 Hz, escolha do projeto para TTS. Está na lista de
+    # valores comuns e não contradiz nada - modelos STT/TTS costumam
+    # esperar 16000, 22050 ou 24000 Hz.
     # Valores mais altos = maior qualidade mas maior custo computacional
-    "sample_rate": 16000,
-    # Valores comuns: 8000, 16000, 22050, 24000, 44100, 48000 (em Hz)
+    "sample_rate": 24000,
+
     # Profundidade de bits (bit depth) do áudio
     # Valores: 16, 24, 32 (em bits)
     #   16 → Padrão para STT/TTS (suficiente para fala)
@@ -554,7 +837,7 @@ SOX_NORMALIZER = {
     #   1 → OBRIGATÓRIO para STT/TTS (modelos esperam mono)
     #   2 → Apenas se necessário preservar espacialização
     # 
-    # ⚠️ CRÍTICO: Praticamente todos modelos STT/TTS requerem MONO
+    # ATENCAO - CRITICO: Praticamente todos modelos STT/TTS requerem MONO
     # Stereo aumenta tamanho 2x sem benefício para treino
     "channels": 1,
     
@@ -572,15 +855,19 @@ SOX_NORMALIZER = {
     "output_format": "flac",
     
     # Método de normalização de volume
-    # Opções: "peak", "rms", "loudness"
-    #   "peak"     → Normaliza baseado no pico mais alto (evita clipping)
-    #   "rms"      → Normaliza baseado na energia média (mais consistente)
-    #   "loudness" → Normaliza baseado em percepção humana (LUFS/EBU R128)
-    # 
-    # Recomendação por cenário:
-    #   STT dataset → "rms" (consistência entre amostras)
-    #   TTS dataset → "loudness" (naturalidade percebida)
-    #   Mixagem → "peak" (controle máximo de headroom)
+    # Opções: "peak", "rms", "loudness" - o que CADA UMA emite para o SoX
+    # 14.4.2 instalado nesta máquina:
+    #   "peak"     → `norm <dB>`: normaliza pelo PICO
+    #   "rms"      → `gain -n <dB>`: TAMBÉM normaliza pelo PICO, não pela
+    #                energia média. O `sox --help-effect=gain` do build
+    #                instalado documenta `-n` como "Norm file to 0dBfs".
+    #                RMS de verdade no SoX seria `gain -b` / `-B`.
+    #   "loudness" → `loudness <dB>`: curva de audibilidade ISO 226 do SoX.
+    #                NÃO é LUFS/EBU R128.
+    #
+    # Consequência prática: "peak" e "rms" entregam a mesma coisa -
+    # normalização por pico, com diferenças menores de implementação. O
+    # nome "rms" não descreve o que acontece.
     "normalize_method": "rms",
     
     # Nível alvo de normalização em decibéis
@@ -589,35 +876,8 @@ SOX_NORMALIZER = {
     #   -1.0 → Balanceado (padrão broadcasting)
     #   0.0  → Máximo (sem margem de segurança)
     # 
-    # ⚠️ Valores positivos causam distorção (clipping)
+    # ATENCAO: Valores positivos causam distorção (clipping)
     # Valores muito negativos resultam em áudio baixo
     # Recomendação: -3.0 para datasets de treino
     "target_level_db": -3.0,
-    
-    # Remover silêncios no início e fim dos arquivos
-    # Valores: True, False
-    #   True  → Remove silêncios (economiza storage + melhora treino)
-    #   False → Preserva áudio original completo
-    # 
-    # Benefícios quando True:
-    #   - Reduz tamanho do dataset (menos padding inútil)
-    #   - Melhora eficiência de treino (modelo foca em fala)
-    #   - Facilita alinhamento temporal em pipelines downstream
-    # 
-    # Desvantagem: Perde contexto de pausas naturais
-    # Recomendação: True para maioria dos casos STT/TTS
-    "remove_silence": True,
-    
-    # Threshold para detecção de silêncio em decibéis
-    # Valores típicos: -50, -40, -30 (em dB, negativos)
-    #   -50 → Mais sensível (remove até ruído de fundo baixo)
-    #   -40 → Balanceado (padrão recomendado)
-    #   -30 → Menos sensível (remove apenas silêncios óbvios)
-    # 
-    # IMPORTANTE: Só tem efeito se remove_silence=True
-    # Valores muito altos (-20) podem cortar fala suave
-    # Valores muito baixos (-60) podem não remover silêncio
-    # 
-    # Recomendação: -40 dB para áudio limpo, -50 dB para áudio ruidoso
-    "silence_threshold_db": -40,
 }

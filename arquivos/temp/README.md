@@ -11,7 +11,8 @@ Exemplo de subpastas: 01-arquivos_originais, 06-stt_whisper, 07-stt_wav2vec.
 
 ## Ciclo de vida
 
-Conteúdo transitório, removido por limpar_temp.py entre lotes.
+Conteúdo transitório, removido pelo M15 (cleanup) ao final de cada áudio,
+conforme o campo `MASTER['cleanup']` do `config.py`.
 
 O conteúdo deste diretório não é versionado (ver .gitignore).
 Este README existe para preservar a pasta no repositório.

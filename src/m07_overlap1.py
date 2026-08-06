@@ -9,19 +9,18 @@ import sys
 import json
 import shutil
 import signal
+import importlib.metadata
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional
 from contextlib import contextmanager
 
-import torch
 from dotenv import load_dotenv
-import os
 
 # Adicionar pasta raiz ao path para importar config
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from config import OVERLAP_DETECTOR, PROJECT_ROOT
+from config import OVERLAP_DETECTOR, PROJECT_ROOT, EXTENSOES_AUDIO
 from m01_load_models import ModelManager
 
 
@@ -31,9 +30,6 @@ from m01_load_models import ModelManager
 
 # Carregar variaveis de ambiente (.env)
 load_dotenv(PROJECT_ROOT / '.env')
-
-# Extensoes de audio suportadas
-EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
 
 
 # ==============================================================================
@@ -71,30 +67,6 @@ def timeout(seconds: int):
     else:
         # Windows nao suporta SIGALRM - executar sem timeout
         yield
-
-
-# ==============================================================================
-# FUNCOES DE VALIDACAO E CONFIGURACAO
-# ==============================================================================
-
-def validar_hf_token() -> str:
-    """
-    Valida existencia do token HuggingFace
-    
-    Returns:
-        Token HuggingFace
-        
-    Raises:
-        ValueError: Se token nao encontrado
-    """
-    token = os.getenv('HF_TOKEN')
-    if not token or token == 'seu_token_aqui':
-        raise ValueError(
-            "Token HuggingFace nao configurado!\n"
-            "Configure HF_TOKEN no arquivo .env na raiz do projeto"
-        )
-    return token
-
 
 
 # ==============================================================================
@@ -172,6 +144,44 @@ def listar_segmentos_para_processar(pasta_json_dinamico: Path, audio_id: str) ->
     return dados_acompanhamento, dados_filtro, segmentos_processar
 
 
+def _extrair_anotacao(resultado):
+    """
+    Devolve a Annotation da diarizacao, qualquer que seja o formato do retorno.
+
+    O formato varia com a versao e com o modo do pipeline pyannote:
+    - objeto de saida que carrega a Annotation no campo speaker_diarization;
+    - a propria Annotation, direta (pyannote 3.x e o modo legacy do 4.x).
+
+    A escolha e feita por inspecao do objeto recebido, nunca por numero de
+    versao. A ordem importa: se um objeto for Annotation E tiver o campo,
+    o campo vence.
+
+    Args:
+        resultado: Objeto devolvido pela chamada do pipeline
+
+    Returns:
+        Annotation com as faixas da diarizacao
+
+    Raises:
+        TypeError: Se o objeto nao for nenhum dos dois formatos conhecidos
+    """
+    from pyannote.core import Annotation
+
+    if hasattr(resultado, 'speaker_diarization'):
+        return resultado.speaker_diarization
+
+    if isinstance(resultado, Annotation):
+        return resultado
+
+    atributos = sorted(a for a in dir(resultado) if not a.startswith('_'))
+    raise TypeError(
+        "Retorno do pipeline pyannote em formato desconhecido. "
+        f"Tipo recebido: {type(resultado).__name__}. "
+        f"pyannote.audio instalado: {importlib.metadata.version('pyannote.audio')}. "
+        f"Atributos publicos: {atributos}"
+    )
+
+
 def detectar_overlap(pipeline, audio_path: Path, timeout_segundos: int) -> Optional[bool]:
     """
     Detecta se ha overlap (multiplos speakers) no audio
@@ -190,10 +200,11 @@ def detectar_overlap(pipeline, audio_path: Path, timeout_segundos: int) -> Optio
         with timeout(timeout_segundos):
             # Executar diarizacao
             diarizacao = pipeline(str(audio_path))
-            
+            anotacao = _extrair_anotacao(diarizacao)
+
             # Extrair speakers unicos
             speakers = set()
-            for segment, _, speaker in diarizacao.speaker_diarization.itertracks(yield_label=True):
+            for segment, _, speaker in anotacao.itertracks(yield_label=True):
                 speakers.add(speaker)
             # Overlap = 2 ou mais speakers distintos
             num_speakers = len(speakers)
@@ -465,12 +476,17 @@ def salvar_outputs(
 # FUNCAO PRINCIPAL
 # ==============================================================================
 
-def main(audio_id: str):
+def main(audio_id: str) -> bool:
     """
     Funcao principal: orquestra todo o processamento.
 
     Args:
         audio_id: ID do audio a processar
+
+    Returns:
+        True se o modulo concluiu (inclusive quando nao ha segmento
+        elegivel), False se falta pre-condicao ou a validacao reprovou
+        e os JSONs nao foram salvos.
     """
     # Definir caminhos baseados no audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"
@@ -484,40 +500,47 @@ def main(audio_id: str):
     
     # Configurar timeout
     timeout_segundos = OVERLAP_DETECTOR['timeout']['por_audio_segundos']
-    
+
+    # Este modulo processa UM segmento por vez, com timeout individual: nao
+    # existe caminho de lote. O campo do config passa a ser lido e recusado
+    # quando pede algo que o modulo nao faz - antes ele era ignorado em
+    # silencio, e quem configurasse batch 8 nao tinha como saber.
+    batch_size = OVERLAP_DETECTOR['batch']['batch_size']
+    if batch_size != 1:
+        print(f"ERRO: OVERLAP_DETECTOR['batch']['batch_size'] = {batch_size!r}")
+        print("Este modulo processa um segmento por vez - o unico valor "
+              "suportado e 1")
+        return False
+
     # Validar caminhos
     if not PASTA_JSON_DINAMICO.exists():
         print(f"ERRO: Pasta JSON nao existe: {PASTA_JSON_DINAMICO}")
-        return
-    
+        return False
+
     if not PASTA_AUDIOS.exists():
         print(f"ERRO: Pasta de audios nao existe: {PASTA_AUDIOS}")
-        return
-    
+        return False
+
     # Carregar modelo usando ModelManager (singleton)
     print("\n2. Carregando modelo pyannote...")
     manager = ModelManager()
     pipeline = manager.get_pyannote()
     
-    # O device ja esta configurado pelo ModelManager
-    # Pyannote pipeline nao tem .parameters() como modelos normais
-    _device_cfg = OVERLAP_DETECTOR.get('device', 'auto').lower()
-    if _device_cfg == 'cpu':
-        _device_str = 'cpu'
-    elif _device_cfg in ('gpu', 'cuda'):
-        _device_str = 'cuda'
-    else:
-        _device_str = 'cuda' if torch.cuda.is_available() else 'cpu'
-    print(f"Pipeline configurado para {_device_str.upper()}")
+    # O device quem decide e o ModelManager (m01). Aqui apenas anunciamos o
+    # dispositivo que o pipeline de fato esta usando - nada de resolver o
+    # device uma segunda vez, que era como o log podia anunciar CUDA com o
+    # modelo em CPU.
+    print(f"Pipeline carregado no dispositivo: {pipeline.device}")
     
     # Listar segmentos para processar
     print("\n3. Listando segmentos para processar...")
     dados_acompanhamento, dados_filtro, segmentos = listar_segmentos_para_processar(PASTA_JSON_DINAMICO, audio_id)
     
     if not segmentos:
+        # Funil pode ter reprovado tudo antes: nao e falha deste modulo
         print("AVISO: Nenhum segmento para processar")
-        return
-    
+        return True
+
     # Processar segmentos
     print("\n4. Processando segmentos...")
     resultados = processar_todos_segmentos(pipeline, segmentos, timeout_segundos, PASTA_AUDIOS)
@@ -537,8 +560,8 @@ def main(audio_id: str):
     print("\n6. Validando consistencia dos dados...")
     if not validar_consistencia(json_acompanhamento_novo, json_overlap01, resultados, PASTA_AUDIOS):
         print("\nERRO: Validacao falhou - JSONs NAO foram salvos")
-        return
-    
+        return False
+
     print("Validacao OK")
     
     # Salvar outputs
@@ -562,10 +585,18 @@ def main(audio_id: str):
     print(f"\nSegmentos aprovados (overlap01=False): {len(json_overlap01)}")
     print("=" * 70)
 
+    return True
+
 
 # ==============================================================================
 # EXECUCAO
 # ==============================================================================
 
 if __name__ == "__main__":
-    main('CA6TSoMw86k')
+    # Execucao direta exige o audio_id como argumento - nao ha id fixo
+    # no codigo. Mesmo padrao do m15_cleanup.py.
+    if len(sys.argv) != 2:
+        print("Uso: python src/m07_overlap1.py <audio_id>")
+        sys.exit(1)
+
+    sys.exit(0 if main(sys.argv[1]) else 1)

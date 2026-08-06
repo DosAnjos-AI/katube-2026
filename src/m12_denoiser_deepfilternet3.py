@@ -17,8 +17,7 @@ import torch
 import librosa
 import soundfile as sf
 import numpy as np
-from df import enhance, init_df
-from df.enhance import enhance, init_df, save_audio
+from df.enhance import enhance
 
 warnings.filterwarnings("ignore")
 
@@ -34,21 +33,14 @@ from m01_load_models import ModelManager
 # CONFIGURACAO
 # ==============================================================================
 
-# Extensoes de audio suportadas
-EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
-
-# Configuracoes do DeepFilterNet3
+# Configuracoes do DeepFilterNet3 consumidas POR ESTE MODULO.
+# Os campos 'device' e 'post_filter' NAO entram aqui: quem os aplica e
+# anuncia e o m01, ao carregar o modelo. Le-los aqui so para imprimir
+# duplicava a leitura e dava a impressao falsa de que este modulo decide
+# o dispositivo.
 MOS_QUALITY_FILTER = DEEPFILTERNET_DENOISER["mos_quality_filter"]
-DEVICE = DEEPFILTERNET_DENOISER["device"]
-POST_FILTER = DEEPFILTERNET_DENOISER["post_filter"]
 ATTENUATION_LIMIT = DEEPFILTERNET_DENOISER["attenuation_limit"]
 SKIP_IF_ALREADY_PROCESSED = DEEPFILTERNET_DENOISER["skip_if_already_processed"]
-
-
-# ==============================================================================
-# FUNCOES DE DEVICE E MODELO
-# ==============================================================================
-
 
 
 # ==============================================================================
@@ -59,28 +51,50 @@ def processar_audio_denoiser(
     audio_path: Path,
     model,
     df_state,
-    device: torch.device,
-    attenuation_limit: float
+    attenuation_limit: float,
+    sr_modelo: int
 ) -> Tuple[np.ndarray, int]:
     """
-    Processa um arquivo de audio com DeepFilterNet3
-    
+    Processa um arquivo de audio com DeepFilterNet3, devolvendo-o na taxa
+    de amostragem em que entrou.
+
+    O DeepFilterNet3 opera a 48 kHz internamente: um segmento de 24 kHz e
+    reamostrado na entrada, e isso e inevitavel. A saida, porem, e devolvida
+    a taxa da fonte. Sem isso o dataset sairia com sample rate MISTURADO -
+    48 kHz nos segmentos que passaram pelo denoiser, a taxa da fonte nos que
+    nao passaram - e os de 48 kHz seriam material de 24 kHz esticado, sem
+    informacao nenhuma acima de 12 kHz. O custo do resample e irrisorio.
+
+    CANAIS NAO SAO RESTAURADOS, de proposito: o modelo e mono, e recriar um
+    par estereo duplicando o canal seria inventar informacao que o denoiser
+    nao produziu. O m13 leva todos os caminhos a mono de qualquer forma
+    (SOX_NORMALIZER['channels']), entao isso nao mistura nada no dataset.
+
+    O dispositivo nao e parametro desta funcao: quem o define e o m01, ao
+    carregar o modelo, inclusive escrevendo a chave DEVICE na config
+    interna do DeepFilterNet (achado A29).
+
     Args:
         audio_path: Caminho do arquivo de audio
         model: Modelo DeepFilterNet
         df_state: Estado do DeepFilterNet
-        device: Dispositivo torch
-        attenuation_limit: Limite de atenuacao
-    
+        attenuation_limit: Limite de atenuacao, em decibeis
+        sr_modelo: Taxa interna do modelo, como o m01 a anuncia - nao ha
+            numero fixo aqui, quem manda e a biblioteca carregada
+
     Returns:
-        Tupla (audio_denoised, sample_rate)
+        Tupla (audio_denoised, sample_rate), o sample rate sendo o do
+        segmento de ENTRADA - nao a taxa interna do modelo.
     """
-    # Carrega audio (DeepFilterNet espera mono em 48kHz)
-    audio, sr_original = librosa.load(str(audio_path), sr=48000, mono=True)
-    
+    # Taxa nativa do segmento, medida ANTES da reamostragem para o modelo
+    sr_fonte = sf.info(str(audio_path)).samplerate
+
+    # Carrega audio (DeepFilterNet espera mono na taxa interna do modelo)
+    audio, _ = librosa.load(str(audio_path), sr=sr_modelo, mono=True)
+
     # Converte para tensor torch (mantém em CPU - DeepFilterNet requer isso internamente)
     audio_tensor = torch.from_numpy(audio).unsqueeze(0)  # Shape: (1, samples)
-    
+
     # Aplica denoising
     with torch.no_grad():
         audio_denoised = enhance(
@@ -89,48 +103,59 @@ def processar_audio_denoiser(
             audio_tensor,
             atten_lim_db=attenuation_limit
         )
-    
+
     # Converte de volta para numpy (resultado pode estar em CPU ou GPU)
     if audio_denoised.is_cuda:
         audio_denoised_np = audio_denoised.cpu().numpy()
     else:
         audio_denoised_np = audio_denoised.numpy()
-    
+
     # Remove dimensão batch
     audio_denoised_np = audio_denoised_np.squeeze(0)
-    
-    return audio_denoised_np, 48000  # DeepFilterNet sempre retorna 48kHz
+
+    # Volta para a taxa da fonte (o modelo devolve sempre a taxa interna dele)
+    if sr_fonte != sr_modelo:
+        audio_denoised_np = librosa.resample(
+            audio_denoised_np, orig_sr=sr_modelo, target_sr=sr_fonte
+        )
+
+    return audio_denoised_np, sr_fonte
 
 
 def salvar_audio_formato_original(
     audio_denoised: np.ndarray,
     sr: int,
     output_path: Path,
-    formato_original: str
+    formato_original: str,
+    subtype: str
 ) -> None:
     """
     Salva audio processado no mesmo formato do arquivo original
-    
+
     Args:
         audio_denoised: Array numpy com audio processado
         sr: Sample rate
         output_path: Caminho de saida (com extensao original)
         formato_original: Extensao do arquivo original (ex: '.flac', '.mp3')
+        subtype: Subtipo do soundfile lido do segmento de ENTRADA. Gravar com
+            constante fixa rebaixaria um segmento de 24 bits sem avisar - o
+            m04 ja o entregou na profundidade da fonte, e o denoiser nao pode
+            ser o ponto que joga isso fora.
     """
     # Normaliza audio para evitar clipping
     audio_normalized = np.clip(audio_denoised, -1.0, 1.0)
-    
+
     if formato_original in ['.wav', '.flac']:
         # Formatos lossless: usa soundfile diretamente
-        sf.write(str(output_path), audio_normalized, sr, subtype='PCM_16')
-    
+        sf.write(str(output_path), audio_normalized, sr, subtype=subtype)
+
     elif formato_original in ['.mp3', '.ogg', '.m4a', '.aac']:
         # Formatos comprimidos: usa pydub via arquivo temporario WAV
         temp_wav = output_path.with_suffix('.wav')
-        
+
         # Salva temporariamente como WAV
-        sf.write(str(temp_wav), audio_normalized, sr, subtype='PCM_16')
-        
+        sf.write(str(temp_wav), audio_normalized, sr, subtype=subtype)
+
         # Converte para formato desejado usando pydub
         from pydub import AudioSegment
         audio_segment = AudioSegment.from_wav(str(temp_wav))
@@ -278,12 +303,16 @@ def salvar_json_atualizado(
 # FUNCAO PRINCIPAL
 # ==============================================================================
 
-def main(audio_id: str):
+def main(audio_id: str) -> bool:
     """
     Funcao principal de execucao.
 
     Args:
         audio_id: ID do audio a processar
+
+    Returns:
+        True se os JSONs atualizados foram gravados. Pre-condicao
+        ausente propaga excecao (FileNotFoundError).
     """
     # Definir caminhos baseados no audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"
@@ -296,8 +325,6 @@ def main(audio_id: str):
     print("=" * 70)
     print(f"ID do audio: {audio_id}")
     print(f"Filtro MOS: {MOS_QUALITY_FILTER}")
-    print(f"Device: {DEVICE}")
-    print(f"Post-filter: {POST_FILTER}")
     print(f"Attenuation limit: {ATTENUATION_LIMIT}")
     print(f"Skip já processados: {SKIP_IF_ALREADY_PROCESSED}")
     print("=" * 70)
@@ -354,9 +381,10 @@ def main(audio_id: str):
         model, df_state, sr_modelo = manager.get_deepfilternet()
         
         # Device ja gerenciado pelo manager
-        device = next(model.parameters()).device
-        print(f"[INFO] Modelo carregado em {device}")
-        print(f"[INFO] SR={sr_modelo}Hz, post_filter={POST_FILTER}, attenuation_limit={ATTENUATION_LIMIT}")
+        # Dispositivo real do modelo carregado pelo m01 - nao ha segunda
+        # decisao de device aqui
+        print(f"[INFO] Modelo carregado em {next(model.parameters()).device}")
+        print(f"[INFO] SR={sr_modelo}Hz, attenuation_limit={ATTENUATION_LIMIT} dB")
         print()
     else:
         print("[PASSO 3/6] Pulando inicialização - nenhum segmento para processar")
@@ -386,17 +414,24 @@ def main(audio_id: str):
             # Processa audio
             print(f"[{idx}/{len(segmentos_elegiveis)}] Processando: {nome_arquivo} ({json_acompanhamento[nome_arquivo].get('mos_qualidade', '?')})")
             
+            # Subtipo do segmento de ENTRADA: e ele que define a profundidade
+            # de bits da saida, para o denoiser nao rebaixar o que o m04
+            # entregou na qualidade da fonte
+            subtype_entrada = sf.info(str(audio_path)).subtype
+
             audio_denoised, sr = processar_audio_denoiser(
                 audio_path,
                 model,
                 df_state,
-                device,
-                ATTENUATION_LIMIT
+                ATTENUATION_LIMIT,
+                sr_modelo
             )
-            
+
             # Salva audio processado
             output_audio_path = PASTA_OUTPUT_DENOISER / nome_arquivo
-            salvar_audio_formato_original(audio_denoised, sr, output_audio_path, formato_original)
+            salvar_audio_formato_original(
+                audio_denoised, sr, output_audio_path, formato_original, subtype_entrada
+            )
             
             processados += 1
             
@@ -457,6 +492,14 @@ def main(audio_id: str):
     print("PROCESSAMENTO CONCLUÍDO COM SUCESSO!")
     print("=" * 70)
 
+    return True
+
 
 if __name__ == "__main__":
-    main('CA6TSoMw86k')
+    # Execucao direta exige o audio_id como argumento - nao ha id fixo
+    # no codigo. Mesmo padrao do m15_cleanup.py.
+    if len(sys.argv) != 2:
+        print("Uso: python src/m12_denoiser_deepfilternet3.py <audio_id>")
+        sys.exit(1)
+
+    sys.exit(0 if main(sys.argv[1]) else 1)

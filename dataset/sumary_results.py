@@ -16,7 +16,8 @@ def contar_arquivos(diretorio: str) -> int:
         f"ls {diretorio} | wc -l",
         shell=True,
         capture_output=True,
-        text=True
+        text=True,
+        encoding='utf-8'
     )
     return int(result.stdout.strip())
 
@@ -26,7 +27,8 @@ def contar_linhas(diretorio: str) -> int:
         f"cat {diretorio} | wc -l",
         shell=True,
         capture_output=True,
-        text=True
+        text=True,
+        encoding='utf-8'
     )
     return int(result.stdout.strip())
 
@@ -36,7 +38,7 @@ def analisar_dataset(csv_path: str):
         df = pd.read_csv(csv_path, sep='|')
 
         df_seg = df['duracao']
-        df_segmentos = df['arquivo_nome']
+        df_segmentos = df['nome_arquivo_audio']
 
         duracao_hrs = df_seg.sum() / 3600
         media = df_seg.mean()

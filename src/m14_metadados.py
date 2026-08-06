@@ -4,31 +4,42 @@ Modulo m14_metadados.py
 Gera metadados finais do dataset em formato CSV
 Copia arquivo de acompanhamento JSON para historico
 
-Estrategia de escrita:
-- CASO NORMAL   (colunas iguais)  : append direto ao final do arquivo
-- CASO ESPECIAL (colunas novas)   : reescrita streaming via tempfile + os.replace() atomico
+Arquivo gerenciado:
+  dataset.csv — uma linha por segmento entregue, de todos os audio_ids
 
-Arquivos gerenciados (vivem lado a lado, sempre sincronizados):
-  dataset.csv    — dados completos
-  dataset.index  — apenas os nomes dos segmentos (um por linha)
-                   permite deteccao de duplicatas em O(1) sem ler o CSV inteiro
-                   persiste entre pit stops: parar, adicionar audios, continuar
+Regras de escrita (SEGURANCA MAXIMA DO dataset.csv):
 
-Garantias de integridade:
-- O arquivo original jamais e truncado antes da escrita estar 100% concluida
-- Em caso de falha no meio da escrita, ambos os arquivos originais permanecem intactos
-- CSV e indice sao atualizados atomicamente juntos (nunca ficam dessincronizados)
-- Validacao 1:1 entre segmentos do JSON e arquivos fisicos na pasta de audio
-- Deteccao de duplicatas antes de qualquer escrita
+1. APPEND PURO. O modulo so CRIA o arquivo, quando ele ainda nao existe, e
+   faz APPEND das linhas da rodada ao final. Nunca reescreve o arquivo
+   inteiro, nunca remove linha, nunca apaga audio do disco. Remover linha
+   do dataset e privilegio exclusivo do usuario, manualmente.
+
+2. LINHA REPETIDA NAO E PROBLEMA AQUI. A deduplicacao nao pertence ao
+   dataset.csv: o main barra o audio ja concluido na ENTRADA, pelo CSV dos
+   concluidos (config.CSV_CONCLUIDOS), antes de qualquer modulo rodar. E
+   este modulo quem escreve nesse CSV, como ULTIMO passo - ver
+   registrar_concluido.
+
+3. SCHEMA FIXO. As colunas sao SEMPRE as de SCHEMA_DATASET, na ordem
+   declarada, qualquer que seja a configuracao da rodada. Denoiser
+   desligado, SoX que nao rodou, modulo pulado: a coluna continua la,
+   vazia. O que varia e o preenchimento, nunca o conjunto de colunas.
+   Campo do JSON fora do schema nao entra, e e avisado nominalmente.
+
+4. HEADER DIVERGENTE FALHA ALTO. Se o arquivo ja existe com header
+   diferente do schema, o modulo se recusa a gravar. Fazer append de 31
+   campos sob um header de outro tamanho corromperia o arquivo em silencio.
+
+5. RETORNO EXPLICITO. processar_metadados devolve um dicionario com
+   sucesso, contagem e motivo de falha. Quem chama verifica.
 """
 
 import sys
 import json
 import csv
-import os
-import tempfile
+from datetime import datetime
 from pathlib import Path
-from typing import Dict, Any, List, Optional, Tuple
+from typing import Dict, Any, List, Optional
 import shutil
 
 
@@ -39,6 +50,8 @@ import shutil
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
+from config import CSV_CONCLUIDOS, CSV_NOMEACAO
+
 
 # ==============================================================================
 # CONFIGURACAO DE INPUTS/OUTPUTS
@@ -47,19 +60,84 @@ sys.path.insert(0, str(PROJECT_ROOT))
 CSV_SEPARATOR = '|'
 CSV_ENCODING  = 'utf-8'
 
-# Arquivo de indice: mesmo nome do CSV, extensao .index
-# Armazena apenas os nomes dos segmentos (um por linha)
-# Permite checagem de duplicatas em O(1) sem ler o CSV inteiro
-# Persiste entre pit stops junto com o CSV
-INDEX_SUFFIX = '.index'
+# ------------------------------------------------------------------------------
+# SCHEMA FIXO DO dataset.csv - as mesmas colunas SEMPRE, na ordem declarada
+# ------------------------------------------------------------------------------
+# As tres primeiras identificam o audio e o segmento, em granularidades
+# diferentes e sem ambiguidade:
+#   nome_original      - caminho de origem em arquivos/input/ (do AUDIO,
+#                        repetido nas n linhas dele)
+#   nome_processado    - id do audio: nome desempatado ou hash (do AUDIO)
+#   nome_arquivo_audio - {id}_{numeracao}.{formato de saida} (do SEGMENTO)
+SCHEMA_DATASET = [
+    'nome_original',
+    'nome_processado',
+    'nome_arquivo_audio',
+    'caminho',
+    'tempo_inicio',
+    'tempo_fim',
+    'duracao',
+    'vad',
+    'origem_codec',
+    'origem_bitrate',
+    'origem_sample_rate',
+    'mos_score',
+    'mos_stoi',
+    'mos_si_sdr',
+    'mos_qualidade',
+    'overlap01',
+    'stt_whisper',
+    'stt_wav2vec',
+    'sim_whisper_wav2vec_wer',
+    'sim_whisper_wav2vec_cer',
+    'sim_whisper_wav2vec_levenshtein_norm',
+    'status_similaridade',
+    'utilizou_denoiser',
+    'sox_sample_rate',
+    'sox_bit_depth',
+    'sox_channels',
+    'sox_output_format',
+    'sox_normalize_method',
+    'sox_target_level_db',
+    'utilizou_sox',
+    'datetime_processado',
+]
 
-COLUNAS_FIXAS = ['arquivo_nome', 'caminho']
+# Colunas calculadas pelo m14, que nunca vem do JSON de acompanhamento
+COLUNAS_CALCULADAS = {
+    'nome_original',
+    'nome_processado',
+    'nome_arquivo_audio',
+    'caminho',
+    'datetime_processado',
+}
 
-CAMPOS_EXCLUIDOS = [
-    'stt_leg_normalizado',
+# ------------------------------------------------------------------------------
+# VALOR DE AUSENCIA
+# ------------------------------------------------------------------------------
+# Regra geral: campo VAZIO. E o padrao de CSV para nulo - pandas, polars e o
+# csv do Python leem como nulo sem tratamento. 'NULL', 'None' e 'N/A' virariam
+# TEXTO, e uma coluna numerica inteira passaria a ser lida como string.
+#
+# Excecao, para os booleanos abaixo: ausencia vira False, o que mantem a
+# invariante de booleano nunca nulo. Nos tres, False significa "nao usei":
+# nao segmentei por VAD, nao passei pelo denoiser, nao passei pelo SoX.
+#
+# ATENCAO - `overlap01` NAO esta nesta lista, DE PROPOSITO. Nele, False nao
+# significa "nao usei": significa "NAO HA SOBREPOSICAO", ou seja, o segmento
+# passou no teste. Se o m07 nao rodar (MASTER['overlap'] = False), carimbar
+# False seria falsear aprovacao de um teste que nunca aconteceu. Por isso ele
+# cai na regra geral e sai vazio. Nao "conserte" esta excecao.
+COLUNAS_BOOLEANAS = {'vad', 'utilizou_denoiser', 'utilizou_sox'}
+
+# Campos que o JSON traz e que ficam FORA do CSV POR DECISAO, nao por
+# esquecimento. Sao insumo interno do m11 (comparacao das transcricoes), nao
+# dado de dataset. Ficam nesta lista para nao poluirem o aviso de campo
+# inesperado - o aviso existe para descobrir campo NOVO que ninguem previu.
+CAMPOS_EXCLUIDOS = {
     'stt_whisper_normalizado',
     'stt_wav2vec_normalizado',
-]
+}
 
 
 # ==============================================================================
@@ -71,11 +149,36 @@ def construir_caminho_audio(nome_arquivo: str, audio_id: str) -> str:
     return f"./audio_dataset/{audio_id}/{nome_arquivo}"
 
 
-def converter_bool_para_str(valor: Any) -> Any:
-    """Converte booleanos Python para string 'True'/'False' capitalizada."""
+def pasta_audios_do_id(audio_id: str) -> Path:
+    """Pasta onde vivem os .flac entregues de um audio_id."""
+    return PROJECT_ROOT / "dataset" / "audio_dataset" / audio_id
+
+
+def formatar_valor(valor: Any, coluna: str) -> Any:
+    """
+    Converte um valor do JSON para o que vai na celula do CSV.
+
+    Booleano vira string 'True'/'False' capitalizada. Ausencia (None) segue a
+    regra de COLUNAS_BOOLEANAS: 'False' para os tres booleanos, celula vazia
+    para todo o resto.
+    """
+    if valor is None:
+        return 'False' if coluna in COLUNAS_BOOLEANAS else ''
     if isinstance(valor, bool):
         return str(valor)
     return valor
+
+
+def agora_iso() -> str:
+    """
+    Momento atual em ISO 8601 com fuso, precisao de segundos.
+
+    O fuso vem do sistema operacional (astimezone sem argumento), NUNCA de
+    constante no codigo: um servidor em Frankfurt tem que gravar '+02:00'
+    sozinho. Sem milissegundos - as linhas de um mesmo audio sao escritas no
+    mesmo instante, e a precisao extra nao distinguiria nada.
+    """
+    return datetime.now().astimezone().replace(microsecond=0).isoformat()
 
 
 def carregar_json(caminho: Path) -> Optional[Dict[str, Any]]:
@@ -86,70 +189,88 @@ def carregar_json(caminho: Path) -> Optional[Dict[str, Any]]:
         return json.load(f)
 
 
-def obter_todas_colunas(dados_json: Dict[str, Any]) -> List[str]:
+def buscar_nome_original(audio_id: str) -> Optional[str]:
     """
-    Coleta todas as colunas unicas do JSON, mantendo ordem de primeira aparicao.
-    Exclui os campos definidos em CAMPOS_EXCLUIDOS.
-    Retorna: colunas fixas + campos do JSON filtrados.
+    Procura no CSV auxiliar da nomeacao o caminho de origem deste audio_id.
+
+    O arquivo e varrido linha a linha (O(1) de RAM) e a PRIMEIRA ocorrencia
+    vence: o CSV e append puro, entao a linha mais antiga e a do move que de
+    fato aconteceu.
+
+    Returns:
+        O caminho relativo de origem, ou None quando nao ha registro - o que
+        acontece com audio colocado a mao em arquivos/audios/, sem passar
+        pelo m00. O chamador transforma isso em aviso, nunca em silencio.
     """
-    colunas     = COLUNAS_FIXAS.copy()
-    colunas_set = set(COLUNAS_FIXAS)
+    if not CSV_NOMEACAO.exists():
+        return None
 
-    for segmento_data in dados_json.values():
-        for chave in segmento_data.keys():
-            if chave not in colunas_set and chave not in CAMPOS_EXCLUIDOS:
-                colunas.append(chave)
-                colunas_set.add(chave)
+    try:
+        with open(CSV_NOMEACAO, 'r', encoding=CSV_ENCODING) as f:
+            for linha in f:
+                campos = linha.rstrip('\n').split(CSV_SEPARATOR)
+                if len(campos) >= 2 and campos[0] == audio_id:
+                    return campos[1]
+    except OSError as e:
+        print(f"  AVISO: falha ao ler o CSV auxiliar '{CSV_NOMEACAO}': {e}")
+        return None
 
-    return colunas
-
-
-def mesclar_colunas(colunas_existentes: List[str],
-                    colunas_novas: List[str]) -> List[str]:
-    """
-    Mescla colunas existentes com as do lote atual.
-    Novas colunas sao adicionadas ao final, mantendo a ordem do CSV.
-    """
-    existentes_set = set(colunas_existentes)
-    resultado = colunas_existentes.copy()
-    for col in colunas_novas:
-        if col not in existentes_set:
-            resultado.append(col)
-    return resultado
+    return None
 
 
 def preparar_linha_csv(nome_arquivo: str,
                        dados_segmento: Dict[str, Any],
-                       colunas: List[str],
-                       audio_id: str) -> Dict[str, Any]:
+                       audio_id: str,
+                       nome_original: str,
+                       momento: str) -> Dict[str, Any]:
     """
-    Prepara um dicionario de linha para o CSV.
-    Todas as colunas sao preenchidas:
-      - colunas fixas com seus valores calculados
+    Prepara um dicionario de linha para o CSV, com TODAS as colunas do
+    SCHEMA_DATASET preenchidas:
+      - colunas calculadas pelo m14 com seus valores
       - campos presentes no JSON com seus valores (bool convertido)
-      - campos ausentes com 'null'
+      - campos ausentes com o valor de ausencia (vazio, ou 'False' nos
+        booleanos declarados)
     """
     linha: Dict[str, Any] = {}
-    for col in colunas:
-        if col == 'arquivo_nome':
+    for col in SCHEMA_DATASET:
+        if col == 'nome_original':
+            linha[col] = nome_original
+        elif col == 'nome_processado':
+            linha[col] = audio_id
+        elif col == 'nome_arquivo_audio':
             linha[col] = nome_arquivo
         elif col == 'caminho':
             linha[col] = construir_caminho_audio(nome_arquivo, audio_id)
-        elif col in dados_segmento:
-            linha[col] = converter_bool_para_str(dados_segmento[col])
+        elif col == 'datetime_processado':
+            linha[col] = momento
         else:
-            linha[col] = 'null'
+            linha[col] = formatar_valor(dados_segmento.get(col), col)
     return linha
 
 
-# ==============================================================================
-# FUNCOES AUXILIARES — LEITURA LEVE DO CSV (sem carregar tudo em RAM)
-# ==============================================================================
+def campos_fora_do_schema(dados_json: Dict[str, Any]) -> List[str]:
+    """
+    Lista os campos do JSON que nao tem coluna no schema, na ordem de
+    primeira aparicao. Sao os campos que NAO serao gravados - o chamador
+    avisa nominalmente, para que a perda nunca seja silenciosa.
+    """
+    fora: List[str] = []
+    conhecidos = set(SCHEMA_DATASET) | CAMPOS_EXCLUIDOS
+
+    for segmento_data in dados_json.values():
+        for chave in segmento_data.keys():
+            if chave not in conhecidos:
+                fora.append(chave)
+                conhecidos.add(chave)
+
+    return fora
+
 
 def ler_header_csv(caminho: Path) -> List[str]:
     """
     Le APENAS o header do CSV (primeira linha).
     Uso de RAM: O(1) — nao carrega nenhuma linha de dados.
+    Retorna lista vazia quando o arquivo nao existe ou esta vazio.
     """
     if not caminho.exists():
         return []
@@ -160,285 +281,46 @@ def ler_header_csv(caminho: Path) -> List[str]:
     return primeira_linha.split(CSV_SEPARATOR)
 
 
-def caminho_indice(caminho_csv: Path) -> Path:
-    """Retorna o caminho do arquivo de indice correspondente ao CSV."""
-    return caminho_csv.with_suffix(INDEX_SUFFIX)
-
-
-def carregar_indice(caminho_csv: Path) -> set:
-    """
-    Carrega o indice de nomes em RAM como set para lookup O(1).
-
-    O indice (dataset.index) e um arquivo texto com um nome por linha.
-    E ~25x menor que o CSV e persiste entre pit stops junto com ele.
-
-    Auto-recuperacao: se o indice nao existir mas o CSV sim
-    (ex: primeiro uso apos migracao, ou indice deletado acidentalmente),
-    reconstroi o indice lendo o CSV em streaming — ocorre uma unica vez.
-    """
-    indice_path = caminho_indice(caminho_csv)
-
-    if indice_path.exists():
-        with open(indice_path, 'r', encoding=CSV_ENCODING) as f:
-            return {linha.strip() for linha in f if linha.strip()}
-
-    if caminho_csv.exists():
-        print("  AVISO: indice ausente — reconstruindo a partir do CSV (ocorre uma unica vez)...")
-        nomes: set = set()
-        with open(caminho_csv, 'r', encoding=CSV_ENCODING, newline='') as f:
-            reader = csv.DictReader(f, delimiter=CSV_SEPARATOR)
-            for row in reader:
-                nome = row.get('arquivo_nome', '').strip()
-                if nome:
-                    nomes.add(nome)
-        _salvar_indice_completo(indice_path, nomes)
-        print(f"  Indice reconstruido: {len(nomes):,} entradas -> {indice_path}")
-        return nomes
-
-    return set()
-
-
-def _salvar_indice_completo(indice_path: Path, nomes: set) -> None:
-    """Salva o indice completo de forma atomica. Uso: reconstrucao ou reescrita."""
-    indice_path.parent.mkdir(parents=True, exist_ok=True)
-    fd, tmp = tempfile.mkstemp(dir=indice_path.parent, suffix='.tmp', prefix='index_')
-    try:
-        with os.fdopen(fd, 'w', encoding=CSV_ENCODING) as f:
-            f.write('\n'.join(sorted(nomes)) + '\n')
-        os.replace(tmp, indice_path)
-    except Exception:
-        try:
-            os.unlink(tmp)
-        except OSError:
-            pass
-        raise
-
-
-def _append_indice(indice_path: Path, nomes_novos: List[str]) -> None:
-    """Append de novos nomes ao indice. Simetrico ao _append_csv."""
-    with open(indice_path, 'a', encoding=CSV_ENCODING) as f:
-        f.write('\n'.join(nomes_novos) + '\n')
-
-
 # ==============================================================================
-# ESCRITA DO CSV — DOIS CAMINHOS CONFORME O CASO
+# ESCRITA DO CSV — SO CRIACAO E APPEND
 # ==============================================================================
 
-def _append_csv(caminho: Path,
-                colunas: List[str],
-                linhas_novas: List[Dict[str, Any]],
-                nomes_novos: List[str]) -> None:
+def escrever_linhas(caminho_csv: Path,
+                    linhas_novas: List[Dict[str, Any]],
+                    escrever_header: bool) -> str:
     """
-    CASO NORMAL: colunas iguais -> append direto ao CSV + append ao indice.
+    Grava as linhas da rodada no fim do CSV.
 
-    Ordem de operacoes:
-      1. Append no CSV  (open 'a' — nunca trunca)
-      2. Append no indice (open 'a' — nunca trunca)
+    O arquivo e aberto em modo 'a': ele e criado se nao existir e JAMAIS e
+    truncado. Nenhuma linha ja gravada e lida, movida ou removida. O header
+    so e escrito quando o arquivo esta sendo criado agora, e e sempre o
+    SCHEMA_DATASET.
 
-    Se morrer entre 1 e 2: na proxima execucao o indice e reconstruido
-    automaticamente pelo carregar_indice() — sem perda de dados no CSV.
-    Se morrer durante 1: linhas parciais ficam no final do CSV mas o
-    header e todas as linhas anteriores permanecem intactos.
+    As linhas chegam prontas de preparar_linha_csv, com exatamente as chaves
+    do schema. O extrasaction e o restval do DictWriter sao redundancia
+    defensiva, nunca exercitada por este fluxo.
+
+    Returns:
+        Modo usado: 'criacao' ou 'append'
     """
-    with open(caminho, 'a', encoding=CSV_ENCODING, newline='') as f:
+    caminho_csv.parent.mkdir(parents=True, exist_ok=True)
+
+    # lineterminator explicito: o padrao do modulo csv e '\r\n', que deixaria
+    # este CSV em CRLF enquanto o nomeacao.csv e o concluidos.csv saem em LF.
+    with open(caminho_csv, 'a', encoding=CSV_ENCODING, newline='') as f:
         writer = csv.DictWriter(
             f,
-            fieldnames=colunas,
+            fieldnames=SCHEMA_DATASET,
             delimiter=CSV_SEPARATOR,
             extrasaction='ignore',
-            restval='null',
+            restval='',
+            lineterminator='\n',
         )
+        if escrever_header:
+            writer.writeheader()
         writer.writerows(linhas_novas)
 
-    _append_indice(caminho_indice(caminho), nomes_novos)
-
-
-def _reescrever_csv_streaming(caminho: Path,
-                               colunas_finais: List[str],
-                               colunas_novas: List[str],
-                               linhas_novas: List[Dict[str, Any]],
-                               indice_atual: set,
-                               nomes_novos: List[str]) -> None:
-    """
-    CASO ESPECIAL: novas colunas -> reescrita streaming atomica do CSV + indice.
-
-    Ambos os arquivos sao escritos em temporarios separados e substituidos
-    atomicamente juntos. Se qualquer etapa falhar, os originais ficam intactos.
-
-    Ordem de operacoes:
-      1. Escreve CSV novo em tmp_csv  (streaming, sem carregar tudo em RAM)
-      2. Escreve indice novo em tmp_idx (indice_atual + nomes_novos)
-      3. os.replace(tmp_csv  -> dataset.csv)   <- atomico
-      4. os.replace(tmp_idx  -> dataset.index) <- atomico
-    Se morrer em 3 ou 4: na proxima execucao carregar_indice() reconstroi
-    o indice a partir do CSV — sem perda de dados.
-    """
-    caminho.parent.mkdir(parents=True, exist_ok=True)
-    indice_path = caminho_indice(caminho)
-
-    fd_csv, tmp_csv = tempfile.mkstemp(dir=caminho.parent, suffix='.tmp', prefix='dataset_')
-    fd_idx, tmp_idx = tempfile.mkstemp(dir=caminho.parent, suffix='.tmp', prefix='index_')
-
-    try:
-        # --- Escreve CSV novo em streaming ---
-        with os.fdopen(fd_csv, 'w', encoding=CSV_ENCODING, newline='') as f_out:
-            writer = csv.DictWriter(
-                f_out,
-                fieldnames=colunas_finais,
-                delimiter=CSV_SEPARATOR,
-                extrasaction='ignore',
-                restval='null',
-            )
-            writer.writeheader()
-            with open(caminho, 'r', encoding=CSV_ENCODING, newline='') as f_in:
-                for row in csv.DictReader(f_in, delimiter=CSV_SEPARATOR):
-                    for col in colunas_novas:
-                        row.setdefault(col, 'null')
-                    writer.writerow(row)
-            writer.writerows(linhas_novas)
-
-        # --- Escreve indice novo (existentes + novos) ---
-        nomes_finais = indice_atual | set(nomes_novos)
-        with os.fdopen(fd_idx, 'w', encoding=CSV_ENCODING) as f_idx:
-            f_idx.write('\n'.join(sorted(nomes_finais)) + '\n')
-
-        # --- Substituicao atomica dos dois arquivos ---
-        os.replace(tmp_csv, caminho)
-        os.replace(tmp_idx, indice_path)
-
-    except Exception:
-        for tmp in (tmp_csv, tmp_idx):
-            try:
-                os.unlink(tmp)
-            except OSError:
-                pass
-        raise
-
-
-def atualizar_csv(caminho: Path,
-                  colunas_finais: List[str],
-                  colunas_novas: List[str],
-                  linhas_novas: List[Dict[str, Any]],
-                  indice_atual: set,
-                  nomes_novos: List[str]) -> str:
-    """
-    Ponto de entrada unico para escrita no CSV + indice.
-    Decide automaticamente o caminho de escrita e retorna o modo usado.
-
-    Args:
-        caminho:        Caminho do dataset.csv
-        colunas_finais: Todas as colunas (existentes + novas mescladas)
-        colunas_novas:  Apenas as colunas que nao existiam no CSV anterior
-        linhas_novas:   Linhas do lote atual (preparadas com colunas_finais)
-        indice_atual:   Set de nomes ja existentes no indice
-        nomes_novos:    Nomes dos segmentos do lote atual
-
-    Returns:
-        Modo usado: 'criacao', 'append' ou 'reescrita'
-    """
-    caminho.parent.mkdir(parents=True, exist_ok=True)
-    indice_path = caminho_indice(caminho)
-
-    # --- Criacao inicial (CSV ainda nao existe) ---
-    if not caminho.exists():
-        fd_csv, tmp_csv = tempfile.mkstemp(dir=caminho.parent, suffix='.tmp', prefix='dataset_')
-        fd_idx, tmp_idx = tempfile.mkstemp(dir=caminho.parent, suffix='.tmp', prefix='index_')
-        try:
-            with os.fdopen(fd_csv, 'w', encoding=CSV_ENCODING, newline='') as f:
-                writer = csv.DictWriter(
-                    f,
-                    fieldnames=colunas_finais,
-                    delimiter=CSV_SEPARATOR,
-                    extrasaction='ignore',
-                    restval='null',
-                )
-                writer.writeheader()
-                writer.writerows(linhas_novas)
-            with os.fdopen(fd_idx, 'w', encoding=CSV_ENCODING) as f:
-                f.write('\n'.join(sorted(nomes_novos)) + '\n')
-            os.replace(tmp_csv, caminho)
-            os.replace(tmp_idx, indice_path)
-        except Exception:
-            for tmp in (tmp_csv, tmp_idx):
-                try:
-                    os.unlink(tmp)
-                except OSError:
-                    pass
-            raise
-        return 'criacao'
-
-    # --- CSV existe: append ou reescrita conforme necessidade ---
-    if not colunas_novas:
-        _append_csv(caminho, colunas_finais, linhas_novas, nomes_novos)
-        return 'append'
-    else:
-        _reescrever_csv_streaming(caminho, colunas_finais, colunas_novas,
-                                   linhas_novas, indice_atual, nomes_novos)
-        return 'reescrita'
-
-
-# ==============================================================================
-# VALIDACAO DE INTEGRIDADE
-# ==============================================================================
-
-def validar_pasta_audios(audio_id: str,
-                          nomes_segmentos: List[str]) -> Tuple[bool, str, List[str]]:
-    """
-    Valida integridade 1:1 entre os segmentos do JSON e os arquivos fisicos.
-
-    Verificacoes realizadas:
-      1. Pasta do audio existe e e um diretorio
-      2. Pasta nao esta vazia
-      3. Cada arquivo referenciado no JSON existe fisicamente na pasta (1:1)
-      4. (Aviso) Se ha arquivos na pasta que nao estao no JSON
-
-    Args:
-        audio_id:        ID do audio
-        nomes_segmentos: Lista de nomes de arquivo esperados (do JSON)
-
-    Returns:
-        Tupla (valido, mensagem_erro, arquivos_faltantes)
-    """
-    pasta_audios = PROJECT_ROOT / "dataset" / "audio_dataset" / audio_id
-
-    if not pasta_audios.exists():
-        return False, f"ERRO: Pasta de audios nao existe: {pasta_audios}", []
-
-    if not pasta_audios.is_dir():
-        return False, f"ERRO: Caminho nao e um diretorio: {pasta_audios}", []
-
-    # Verifica se tem ao menos um arquivo sem listar tudo (eficiente)
-    try:
-        next(pasta_audios.iterdir())
-    except StopIteration:
-        return False, f"ERRO: Pasta de audios esta vazia: {pasta_audios}", []
-
-    # Verificacao 1:1 — cada arquivo do JSON deve existir fisicamente
-    arquivos_faltantes = [
-        nome for nome in nomes_segmentos
-        if not (pasta_audios / nome).exists()
-    ]
-
-    if arquivos_faltantes:
-        msg = (f"ERRO: {len(arquivos_faltantes)} arquivo(s) referenciados no JSON "
-               f"nao encontrados na pasta de audios: {pasta_audios}")
-        return False, msg, arquivos_faltantes
-
-    # Aviso se ha excedente na pasta (arquivos nao referenciados no JSON)
-    total_na_pasta = sum(1 for _ in pasta_audios.iterdir())
-    if total_na_pasta != len(nomes_segmentos):
-        print(f"  AVISO: Pasta tem {total_na_pasta} arquivo(s), "
-              f"JSON referencia {len(nomes_segmentos)} segmento(s)")
-
-    return True, "", []
-
-
-def verificar_duplicatas(indice: set, nomes_novos: List[str]) -> List[str]:
-    """
-    Verifica duplicatas usando o indice em RAM — O(1) por nome.
-    Nao acessa o disco.
-    """
-    return [n for n in nomes_novos if n in indice]
+    return 'criacao' if escrever_header else 'append'
 
 
 # ==============================================================================
@@ -446,24 +328,128 @@ def verificar_duplicatas(indice: set, nomes_novos: List[str]) -> List[str]:
 # ==============================================================================
 
 def copiar_json_historico(origem: Path, destino: Path) -> None:
-    """Copia o JSON de acompanhamento para o historico (sobrescreve se ja existe)."""
+    """
+    Copia o JSON de acompanhamento para o historico (sobrescreve se ja existe).
+
+    O historico NAO E MAIS o marcador de audio concluido - esse papel e do
+    CSV dos concluidos (ver registrar_concluido). O que ele e hoje:
+
+    1. BACKUP DAS INFORMACOES PROCESSADAS. Se o dataset.csv for perdido, o
+       dataset pode ser reconstruido a partir destes JSONs SEM passar pelos
+       modelos de novo. So por isso ele ja se paga.
+
+    2. FONTE DA DURACAO APROVADA DA RODADA. calcular_duracao_audios_aprovados
+       (main.py) le estes JSONs para somar o campo `duracao` de cada
+       segmento, e e dai que sai a coluna
+       `duracao_audios_aprovados_segundos` do processamento_metadados.csv.
+
+    ATENCAO: tirar a deduplicacao do historico NAO e parar de escrever os
+    JSONs. Se esta copia deixar de acontecer, a conta do item 2 passa a
+    devolver zero SEM ERRO NENHUM - arquivo ausente e ignorado la. Nao
+    remova esta chamada.
+    """
     destino.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(origem, destino)
     print(f"  JSON de historico copiado: {destino}")
 
 
 # ==============================================================================
+# CSV DOS CONCLUIDOS — O MARCADOR DA DEDUPLICACAO
+# ==============================================================================
+
+CSV_CONCLUIDOS_HEADER = 'nome_processado|nome_original|datetime_concluido'
+
+
+def registrar_concluido(audio_id: str, nome_original: str) -> bool:
+    """
+    Acrescenta UMA linha ao CSV dos concluidos, em APPEND PURO.
+
+    E o marcador que barra o audio na entrada da proxima rodada, e por isso
+    e a ULTIMA coisa que o m14 faz: quando esta linha e escrita, os
+    segmentos ja estao em dataset/audio_dataset/{id}/, as linhas ja estao no
+    dataset.csv e o backup do JSON ja esta no historico. Audio que quebrou
+    antes deste ponto NAO fica registrado e SERA reprocessado - e essa a
+    razao da ordem.
+
+    Nunca le o arquivo, nunca reescreve linha existente, nunca apaga nada.
+    O header so e escrito quando o arquivo nasce.
+
+    Returns:
+        True se a linha esta gravada, False se falhou (com log). O chamador
+        transforma a falha em aviso: as linhas do dataset.csv ja estao
+        gravadas e nao seriam desfeitas, mas o audio nao fica marcado e
+        voltara a ser processado - o que precisa aparecer no log.
+    """
+    CSV_CONCLUIDOS.parent.mkdir(parents=True, exist_ok=True)
+
+    escrever_header = not CSV_CONCLUIDOS.exists()
+
+    try:
+        with open(CSV_CONCLUIDOS, 'a', encoding=CSV_ENCODING) as f:
+            if escrever_header:
+                f.write(CSV_CONCLUIDOS_HEADER + '\n')
+            f.write(f"{audio_id}{CSV_SEPARATOR}{nome_original}"
+                    f"{CSV_SEPARATOR}{agora_iso()}\n")
+    except OSError as e:
+        print(f"  ERRO ao gravar o CSV dos concluidos '{CSV_CONCLUIDOS}': {e}")
+        return False
+
+    return True
+
+
+# ==============================================================================
+# RESULTADO
+# ==============================================================================
+
+def montar_resultado(audio_id: str,
+                     sucesso: bool,
+                     motivo_falha: Optional[str] = None,
+                     n_persistidos: int = 0,
+                     avisos: Optional[List[str]] = None) -> Dict[str, Any]:
+    """
+    Monta o resultado devolvido por processar_metadados.
+
+    Campos:
+        sucesso       — False so em falha real (JSON de entrada ausente,
+                        pasta de audio ausente havendo segmentos a entregar).
+                        Lote sem segmento aprovado e sucesso-com-aviso.
+        motivo_falha  — texto do erro quando sucesso e False
+        n_persistidos — linhas gravadas no CSV nesta rodada
+        avisos        — mensagens de degradacao do lote
+    """
+    return {
+        'audio_id': audio_id,
+        'sucesso': sucesso,
+        'motivo_falha': motivo_falha,
+        'n_persistidos': n_persistidos,
+        'avisos': avisos if avisos is not None else [],
+    }
+
+
+# ==============================================================================
 # FUNCAO PRINCIPAL
 # ==============================================================================
 
-def processar_metadados(audio_id: str) -> None:
+def processar_metadados(audio_id: str) -> Dict[str, Any]:
     """
-    Processa metadados e gera outputs:
-      1. Adiciona segmentos ao dataset.csv (append ou reescrita streaming)
-      2. Copia JSON de acompanhamento para historico
+    Processa metadados e gera outputs, NESTA ORDEM:
+      1. Faz append das linhas do lote no dataset.csv (criando-o se preciso)
+      2. Copia o JSON de acompanhamento para o historico (backup)
+      3. Registra o audio no CSV dos concluidos (o marcador da deduplicacao)
+
+    A ordem e o mecanismo, nao detalhe: o passo 3 e o ultimo justamente para
+    que a rodada que morre antes dele deixe o audio SEM marca de concluido,
+    e a proxima execucao o reprocesse inteiro.
+
+    Lote sem nenhum segmento aprovado retorna antes do passo 1 e por isso
+    nao chega ao passo 3 - o audio nao fica marcado, de proposito.
 
     Args:
         audio_id: ID do audio a processar
+
+    Returns:
+        Dicionario de resultado (ver montar_resultado). O chamador DEVE
+        verificar a chave 'sucesso'.
     """
     # --- Definir caminhos ---
     PASTA_JSON_DINAMICO       = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"
@@ -487,96 +473,127 @@ def processar_metadados(audio_id: str) -> None:
         dados_json = carregar_json(ARQUIVO_JSON_ACOMPANHAMENTO)
 
         if dados_json is None:
-            print(f"  ERRO: Arquivo de acompanhamento nao encontrado: {ARQUIVO_JSON_ACOMPANHAMENTO}")
-            return
+            motivo = f"JSON de entrada ausente: {ARQUIVO_JSON_ACOMPANHAMENTO}"
+            print(f"  ERRO: {motivo}")
+            print("-" * 80)
+            return montar_resultado(audio_id, sucesso=False, motivo_falha=motivo)
     else:
         print(f"  Usando arquivo filtrado: {ARQUIVO_JSON_FILTRADO}")
 
-    nomes_segmentos = list(dados_json.keys())
-    print(f"  Total de segmentos no JSON: {len(nomes_segmentos)}")
+    nomes_json = list(dados_json.keys())
+    print(f"  Total de segmentos no JSON: {len(nomes_json)}")
     print("-" * 80)
 
-    # --- Sem segmentos aprovados: encerra graciosamente sem erro ---
-    if not nomes_segmentos:
-        print("  Nenhum segmento aprovado para este audio — nada a registrar no dataset.")
+    avisos: List[str] = []
+
+    # --- Lote sem segmento aprovado: nada a gravar, nada marcado ---
+    # Nao e falha do modulo (o funil pode reprovar tudo). O retorno acontece
+    # ANTES dos tres passos de escrita: nem dataset.csv, nem backup do JSON,
+    # nem registro no CSV dos concluidos. O audio fica sem marca e sera
+    # reprocessado na proxima rodada.
+    if not nomes_json:
+        aviso = ("Nenhum segmento aprovado — nada gravado no dataset.csv, "
+                 "audio nao registrado como concluido")
+        avisos.append(aviso)
+        print(f"  {aviso}")
         print("-" * 80)
-        return
+        return montar_resultado(audio_id, sucesso=True, n_persistidos=0, avisos=avisos)
 
-    # --- Validar integridade 1:1 pasta de audios vs JSON ---
-    print("Validando integridade dos audios...")
-    valido, mensagem_erro, arquivos_faltantes = validar_pasta_audios(audio_id, nomes_segmentos)
-
-    if not valido:
-        print(f"  {mensagem_erro}")
-        for arq in arquivos_faltantes[:10]:
-            print(f"    - {arq}")
-        if len(arquivos_faltantes) > 10:
-            print(f"    ... e mais {len(arquivos_faltantes) - 10} arquivo(s)")
-        print("  Processamento abortado.")
+    # --- Pasta de audios ausente havendo segmentos e falha real ---
+    # (significa que o m13 nao produziu nada)
+    if not pasta_audios_do_id(audio_id).is_dir():
+        motivo = f"Pasta de audios do dataset nao existe: {pasta_audios_do_id(audio_id)}"
+        print(f"  ERRO: {motivo}")
         print("-" * 80)
-        return
+        return montar_resultado(audio_id, sucesso=False, motivo_falha=motivo)
 
-    print("  Integridade OK: todos os arquivos de audio confirmados")
-    print("-" * 80)
-
-    # --- Carregar indice (O(1) por consulta, persiste entre pit stops) ---
-    indice = carregar_indice(ARQUIVO_CSV_DATASET)
-
-    # --- Verificar duplicatas antes de qualquer escrita ---
-    print("Verificando duplicatas no CSV...")
-    duplicatas = verificar_duplicatas(indice, nomes_segmentos)
-
-    if duplicatas:
-        print(f"  AVISO: {len(duplicatas)} segmento(s) ja existem no CSV — serao ignorados:")
-        for d in duplicatas[:5]:
-            print(f"    - {d}")
-        if len(duplicatas) > 5:
-            print(f"    ... e mais {len(duplicatas) - 5}")
-        # Filtra o lote atual removendo os duplicados
-        duplicatas_set  = set(duplicatas)
-        nomes_segmentos = [n for n in nomes_segmentos if n not in duplicatas_set]
-        dados_json      = {k: v for k, v in dados_json.items() if k in set(nomes_segmentos)}
-        print(f"  Segmentos restantes para adicionar: {len(nomes_segmentos)}")
-    else:
-        print("  Nenhuma duplicata encontrada")
-
-    print("-" * 80)
-
-    if not nomes_segmentos:
-        print("Nenhum segmento novo para adicionar. Encerrando.")
-        return
-
-    # --- Determinar colunas ---
-    colunas_json      = obter_todas_colunas(dados_json)
+    # --- Guarda do schema: header divergente FALHA ALTO ---
+    # As colunas sao sempre as do SCHEMA_DATASET. Se o arquivo ja existe com
+    # outro header, fazer append por cima desalinharia todas as linhas novas
+    # em relacao ao cabecalho - corrupcao silenciosa.
     colunas_existentes = ler_header_csv(ARQUIVO_CSV_DATASET)           # O(1) de RAM
-    colunas_finais    = mesclar_colunas(colunas_existentes, colunas_json)
-    colunas_novas     = [c for c in colunas_finais if c not in set(colunas_existentes)]
 
-    if colunas_novas:
-        print(f"Novas colunas detectadas: {colunas_novas}")
+    if colunas_existentes and colunas_existentes != SCHEMA_DATASET:
+        motivo = (
+            f"Header do CSV diverge do schema fixo. "
+            f"Arquivo: {len(colunas_existentes)} coluna(s); "
+            f"schema: {len(SCHEMA_DATASET)} coluna(s). "
+            f"Nada foi gravado. Arquive '{ARQUIVO_CSV_DATASET}' antes de rodar "
+            f"de novo - o append puro nao migra header."
+        )
+        print(f"  ERRO: {motivo}")
+        print("-" * 80)
+        return montar_resultado(audio_id, sucesso=False, motivo_falha=motivo)
+
+    # --- Campo do JSON sem coluna no schema: descartado COM aviso nominal ---
+    ignoradas = campos_fora_do_schema(dados_json)
+    if ignoradas:
+        aviso = (f"{len(ignoradas)} campo(s) do lote fora do schema do CSV, "
+                 f"nao gravado(s): {', '.join(ignoradas)}")
+        avisos.append(aviso)
+        print(f"  AVISO: {aviso}")
+
+    # --- Procedencia do audio (coluna nome_original) ---
+    nome_original = buscar_nome_original(audio_id)
+    if nome_original is None:
+        aviso = (f"Sem registro em '{CSV_NOMEACAO}' para o id '{audio_id}' — "
+                 f"coluna 'nome_original' gravada vazia nas "
+                 f"{len(nomes_json)} linha(s)")
+        avisos.append(aviso)
+        print(f"  AVISO: {aviso}")
+        nome_original = ''
 
     # --- Preparar linhas do lote atual ---
-    # RAM usada aqui: apenas o lote (~20 segmentos), nunca o CSV inteiro
+    # RAM usada aqui: apenas o lote, nunca o CSV inteiro.
+    # O momento e calculado UMA vez: as linhas de um mesmo audio sao mesmo
+    # escritas no mesmo instante, e um relogio por linha so daria a ilusao de
+    # precisao.
+    momento = agora_iso()
     linhas_novas = [
-        preparar_linha_csv(nome, dados_json[nome], colunas_finais, audio_id)
-        for nome in nomes_segmentos
+        preparar_linha_csv(nome, dados_json[nome], audio_id, nome_original, momento)
+        for nome in nomes_json
     ]
 
-    # --- Escrever CSV + indice ---
-    print("Atualizando CSV...")
-    modo = atualizar_csv(ARQUIVO_CSV_DATASET, colunas_finais, colunas_novas,
-                         linhas_novas, indice, nomes_segmentos)
+    # --- Gravar no CSV (criacao ou append; nunca reescrita) ---
+    print("Gravando linhas no CSV...")
+    modo = escrever_linhas(
+        ARQUIVO_CSV_DATASET, linhas_novas,
+        escrever_header=not colunas_existentes,
+    )
 
     print(f"  Arquivo CSV: {ARQUIVO_CSV_DATASET}")
-    print(f"  Modo de escrita: {modo}")
-    print(f"  Linhas adicionadas: {len(linhas_novas)}")
+    print(f"  Modo de escrita: {modo} ({len(SCHEMA_DATASET)} colunas do schema fixo)")
+    print(f"  Linhas gravadas nesta rodada: {len(linhas_novas)}")
     print("-" * 80)
 
-    # --- Copiar JSON para historico ---
+    # --- Copiar JSON para historico (backup, NAO marcador - ver a funcao) ---
     print("Copiando JSON para historico...")
     copiar_json_historico(ARQUIVO_JSON_ACOMPANHAMENTO, ARQUIVO_JSON_HISTORICO)
     print("-" * 80)
-    print("Processamento concluido com sucesso!")
+
+    # --- Registrar o audio como CONCLUIDO (ultimo passo, sempre) ---
+    # Aqui, e so aqui, valem as tres coisas ao mesmo tempo: segmentos em
+    # dataset/audio_dataset/{id}/, linhas no dataset.csv, backup do JSON no
+    # historico. E o unico instante do projeto em que o audio pode ser dado
+    # por concluido.
+    if registrar_concluido(audio_id, nome_original):
+        print(f"  Registrado como concluido em: {CSV_CONCLUIDOS}")
+    else:
+        aviso = (f"Falha ao registrar '{audio_id}' em '{CSV_CONCLUIDOS}' — as "
+                 f"{len(linhas_novas)} linha(s) JA estao no dataset.csv, mas o "
+                 f"audio nao ficou marcado e SERA reprocessado na proxima "
+                 f"rodada, duplicando essas linhas")
+        avisos.append(aviso)
+        print(f"  AVISO: {aviso}")
+    print("-" * 80)
+
+    print("Processamento concluido.")
+
+    return montar_resultado(
+        audio_id, sucesso=True,
+        n_persistidos=len(linhas_novas),
+        avisos=avisos,
+    )
 
 
 # ==============================================================================

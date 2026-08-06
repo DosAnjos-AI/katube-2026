@@ -15,9 +15,15 @@ import sys
 import torch
 import torchaudio
 
-# Importar configurações do projeto
+# Importar configurações do projeto (raiz) e modulos irmaos (src/)
 sys.path.append(str(Path(__file__).parent.parent))
-from config import SEGMENTADOR_AUDIO_VAD, PROJECT_ROOT
+sys.path.append(str(Path(__file__).resolve().parent))
+from config import SEGMENTADOR_AUDIO_VAD, PROJECT_ROOT, EXTENSOES_AUDIO
+# Sondagem e traducao bits->codec vem do m02, fonte unica. Este modulo ja teve
+# a sua propria copia da sondagem, que NAO lia bits_por_amostra: pela pipeline
+# o corte saia correto e pela execucao direta saia em 16 bits, divergencia que
+# so aparece para quem depura. Uma funcao so, um resultado so.
+from m02_diretorios import codec_pcm_para_bits, sondar_specs_origem
 
 
 # =============================================================================
@@ -57,47 +63,6 @@ def segundos_para_timestamp(segundos: float) -> str:
     segs = segundos % 60
     
     return f"{horas:02d}:{minutos:02d}:{segs:06.3f}"
-
-
-def detectar_specs_audio(caminho_audio: Path) -> dict:
-    """
-    Detecta formato, bitrate e sample rate do áudio usando ffprobe
-    
-    Args:
-        caminho_audio: Path do arquivo de áudio
-        
-    Returns:
-        Dict com: formato, bitrate, sample_rate, codec
-    """
-    try:
-        cmd = [
-            'ffprobe',
-            '-v', 'quiet',
-            '-print_format', 'json',
-            '-show_format',
-            '-show_streams',
-            str(caminho_audio)
-        ]
-        
-        resultado = subprocess.run(cmd, capture_output=True, text=True, check=True)
-        dados = json.loads(resultado.stdout)
-        
-        # Extrair informações do primeiro stream de áudio
-        stream_audio = next(s for s in dados['streams'] if s['codec_type'] == 'audio')
-        
-        specs = {
-            'formato': caminho_audio.suffix[1:],
-            'bitrate': stream_audio.get('bit_rate', 'N/A'),
-            'sample_rate': stream_audio.get('sample_rate', 'N/A'),
-            'codec': stream_audio.get('codec_name', 'N/A'),
-            'duracao': float(dados['format'].get('duration', 0))
-        }
-        
-        return specs
-        
-    except Exception as e:
-        print(f"Erro ao detectar specs do áudio: {e}")
-        return None
 
 
 def converter_para_16khz(caminho_audio: Path) -> Path:
@@ -291,15 +256,19 @@ def agrupar_segmentos_vad(segmentos_fala: list, duracao_total: float) -> list:
 
 def segmentar_audio(caminho_audio: Path, segmentos: list, pasta_destino: Path, id_audio: str, formato: str, specs: dict):
     """
-    Segmenta áudio original usando ffmpeg baseado nos timestamps calculados
-    
+    Segmenta o audio original com ffmpeg, na qualidade da fonte.
+
+    O segmento sai com a MESMA profundidade de bits, taxa e contagem de canais
+    do original: 02-segmentos_originais e o teto de qualidade de tudo que vem
+    depois, e o nome da pasta precisa corresponder ao conteudo.
+
     Args:
         caminho_audio: Path do áudio original
         segmentos: Lista de segmentos com tempo_inicio e tempo_fim em segundos
         pasta_destino: Path da pasta onde salvar segmentos
         id_audio: ID do áudio
-        formato: Extensão do arquivo
-        specs: Especificações do áudio original
+        formato: Extensão do arquivo (compoe o nome do segmento)
+        specs: Especificações do áudio-FONTE, de onde saem bits e sample rate
     """
     pasta_destino.mkdir(parents=True, exist_ok=True)
     
@@ -321,28 +290,16 @@ def segmentar_audio(caminho_audio: Path, segmentos: list, pasta_destino: Path, i
             '-t', str(duracao_seg),
         ]
         
-        # Preservar qualidade original baseado no formato
-        if formato == 'flac':
-            cmd.extend(['-c:a', 'flac'])
-        elif formato == 'mp3':
-            if specs['bitrate'] != 'N/A':
-                cmd.extend(['-c:a', 'libmp3lame', '-b:a', specs['bitrate']])
-            else:
-                cmd.extend(['-c:a', 'libmp3lame', '-q:a', '0'])
-        elif formato == 'wav':
-            cmd.extend(['-c:a', 'pcm_s16le'])
-        elif formato == 'ogg':
-            cmd.extend(['-c:a', 'libvorbis'])
-        elif formato == 'opus':
-            cmd.extend(['-c:a', 'libopus'])
-        else:
-            # Manter codec original
-            if specs['codec'] != 'N/A':
-                cmd.extend(['-c:a', specs['codec']])
-        
+        # Profundidade de bits da FONTE, pela mesma regra que o m02 usou para
+        # gravar 01-arquivos_originais. Constante fixa aqui truncaria um
+        # original de 24 bits SEM AVISO, e nenhuma etapa adiante recupera.
+        cmd.extend(['-c:a', codec_pcm_para_bits(specs)])
+
         # Preservar sample rate original
-        if specs['sample_rate'] != 'N/A':
+        if specs['sample_rate'] is not None:
             cmd.extend(['-ar', specs['sample_rate']])
+
+        # Sem '-ac': o FFmpeg copia a contagem de canais da entrada
         
         cmd.extend(['-y', str(caminho_segmento)])
         
@@ -358,28 +315,32 @@ def segmentar_audio(caminho_audio: Path, segmentos: list, pasta_destino: Path, i
             print(f"ERRO ao criar segmento {nome_segmento}: {e.stderr.decode()}")
 
 
-def gerar_json_tracking(segmentos: list, pasta_destino: Path, id_audio: str, formato: str):
+def gerar_json_tracking(segmentos: list, pasta_destino: Path, id_audio: str, formato: str, specs: dict):
     """
     Gera arquivo JSON com metadados dos segmentos
-    
+
     Args:
         segmentos: Lista de segmentos processados
         pasta_destino: Path da pasta de destino
         id_audio: ID do áudio
         formato: Extensão do arquivo
+        specs: Especificações do áudio-fonte (ja em memoria, sem leitura extra)
     """
     tracking = {}
-    
+
     for idx, seg in enumerate(segmentos, start=1):
         nome_segmento = f"{id_audio}_{idx:03d}.{formato}"
-        
+
         tracking[nome_segmento] = {
             'tempo_inicio': segundos_para_timestamp(seg['tempo_inicio']),
             'tempo_fim': segundos_para_timestamp(seg['tempo_fim']),
             'duracao': round(seg['duracao'], 2),
-            'texto': None,      # VAD não gera transcrição
-            'legenda': None,    # VAD não usa legendas
-            'vad': True         # Identifica segmentação por VAD
+            'vad': True,        # Identifica segmentação por VAD
+            # Proveniencia do arquivo FONTE (antes da segmentacao e da
+            # normalizacao) - define o teto de qualidade do segmento
+            'origem_codec': specs['codec'],
+            'origem_bitrate': specs['bitrate'],
+            'origem_sample_rate': specs['sample_rate']
         }
     
     # Salvar JSON
@@ -396,12 +357,15 @@ def gerar_json_tracking(segmentos: list, pasta_destino: Path, id_audio: str, for
 # FUNÇÃO PRINCIPAL
 # =============================================================================
 
-def executar_segmentacao_vad(audio_id: str) -> bool:
+def executar_segmentacao_vad(audio_id: str, specs_origem: dict) -> bool:
     """
     Executa fluxo completo de segmentacao via VAD.
 
     Args:
         audio_id: ID do audio a processar
+        specs_origem: specs do arquivo-FONTE, sondadas pelo m02 antes da
+            conversao para WAV. Sondar aqui devolveria as specs do WAV
+            interno, e a procedencia do audio se perderia.
 
     Returns:
         True se segmentos validos foram encontrados/criados, False caso contrario
@@ -423,7 +387,7 @@ def executar_segmentacao_vad(audio_id: str) -> bool:
     # Localizar audio
     arquivos_audio = [
         f for f in pasta_origem.iterdir()
-        if f.suffix.lower() in ['.mp3', '.flac', '.wav', '.m4a', '.ogg', '.opus']
+        if f.suffix.lower() in EXTENSOES_AUDIO
     ]
 
     if not arquivos_audio:
@@ -437,13 +401,11 @@ def executar_segmentacao_vad(audio_id: str) -> bool:
     print(f"Audio: {audio_path.name}")
     print(f"ID: {id_audio} | Formato: {formato}")
 
-    # Detectar especificações do áudio original
-    specs = detectar_specs_audio(audio_path)
-    if not specs:
-        print("Erro ao detectar especificações do áudio")
-        return False
-
-    print(f"Specs originais: {specs['codec']} | {specs['bitrate']} bps | {specs['sample_rate']} Hz | {specs['duracao']:.2f}s")
+    # Specs da FONTE, ja em memoria (sondadas pelo m02 antes da conversao)
+    print(f"Specs da fonte: {specs_origem['codec'] or 'ausente'} | "
+          f"{specs_origem['bitrate'] or 'ausente'} bps | "
+          f"{specs_origem['sample_rate'] or 'ausente'} Hz | "
+          f"{specs_origem['duracao']:.2f}s")
 
     # Carregar modelo VAD
     print("\nCarregando modelo VAD...")
@@ -471,7 +433,7 @@ def executar_segmentacao_vad(audio_id: str) -> bool:
 
         # Agrupar segmentos
         print("\nAgrupando segmentos...")
-        segmentos_finais = agrupar_segmentos_vad(segmentos_fala, specs['duracao'])
+        segmentos_finais = agrupar_segmentos_vad(segmentos_fala, specs_origem['duracao'])
 
         if not segmentos_finais:
             print("Nenhum segmento válido após agrupamento")
@@ -487,11 +449,11 @@ def executar_segmentacao_vad(audio_id: str) -> bool:
 
         # Segmentar áudio original
         print(f"\nSegmentando áudio original ({len(segmentos_finais)} segmentos)...")
-        segmentar_audio(audio_path, segmentos_finais, pasta_destino, id_audio, formato, specs)
+        segmentar_audio(audio_path, segmentos_finais, pasta_destino, id_audio, formato, specs_origem)
 
         # Gerar JSON
         print("\nGerando JSON de tracking...")
-        gerar_json_tracking(segmentos_finais, pasta_destino, id_audio, formato)
+        gerar_json_tracking(segmentos_finais, pasta_destino, id_audio, formato, specs_origem)
 
         print(f"\nProcessamento concluído com sucesso!")
         resultado = True
@@ -510,4 +472,28 @@ def executar_segmentacao_vad(audio_id: str) -> bool:
 # =============================================================================
 
 if __name__ == "__main__":
-    executar_segmentacao_vad('CA6TSoMw86k') # verificar para testes, garantir que existe este id no input "./arquivos/audios/"
+    # Execucao direta exige o audio_id como argumento - sem id fixo no codigo
+    if len(sys.argv) != 2:
+        print("Uso: python src/m04_segmentador_audio_vad.py <audio_id>")
+        sys.exit(1)
+
+    audio_id_cli = sys.argv[1]
+
+    # Na pipeline as specs vem do m02. Fora dela, sonda-se o arquivo-FONTE -
+    # nunca o WAV de 01-arquivos_originais, que ja perdeu o formato de origem
+    pasta_fonte_cli = PROJECT_ROOT / "arquivos" / "audios" / audio_id_cli
+    fontes_cli = sorted(
+        f for f in pasta_fonte_cli.iterdir()
+        if f.is_file() and f.suffix.lower() in EXTENSOES_AUDIO
+    ) if pasta_fonte_cli.is_dir() else []
+
+    if not fontes_cli:
+        print(f"Nenhum audio-fonte encontrado em {pasta_fonte_cli}")
+        sys.exit(1)
+
+    specs_cli = sondar_specs_origem(fontes_cli[0])
+    if not specs_cli:
+        sys.exit(1)
+
+    if not executar_segmentacao_vad(audio_id_cli, specs_cli):
+        sys.exit(1)

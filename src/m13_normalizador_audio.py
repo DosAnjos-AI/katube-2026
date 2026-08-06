@@ -20,14 +20,6 @@ from config import SOX_NORMALIZER, PROJECT_ROOT
 
 
 # ==============================================================================
-# CONFIGURACAO
-# ==============================================================================
-
-# Extensoes de audio suportadas
-EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
-
-
-# ==============================================================================
 # FUNCOES AUXILIARES - JSON
 # ==============================================================================
 
@@ -87,6 +79,7 @@ def verificar_sox_instalado() -> bool:
             ['sox', '--version'],
             capture_output=True,
             text=True,
+            encoding='utf-8',
             timeout=5
         )
         return resultado.returncode == 0
@@ -141,24 +134,7 @@ def construir_comando_sox(
     elif normalize_method == 'loudness':
         # Normaliza baseado em percepcao humana (LUFS)
         comando.extend(['loudness', str(target_db)])
-    
-    # Remocao de silencio
-    if config['remove_silence']:
-        threshold_db = config['silence_threshold_db']
-        
-        # Remove silencio no inicio
-        # Sintaxe: silence [-l] above-periods [duration threshold[d|%]]
-        comando.extend(['silence', '1', '0.1', f'{threshold_db}d'])
-        
-        # Inverte audio
-        comando.append('reverse')
-        
-        # Remove silencio no fim (que agora esta no inicio apos reverse)
-        comando.extend(['silence', '1', '0.1', f'{threshold_db}d'])
-        
-        # Inverte novamente para voltar ao normal
-        comando.append('reverse')
-    
+
     return comando
 
 
@@ -183,6 +159,7 @@ def normalizar_audio(
             comando,
             capture_output=True,
             text=True,
+            encoding='utf-8',
             timeout=300  # Timeout de 5 minutos
         )
         
@@ -270,7 +247,6 @@ def adicionar_campos_sox(metadados: Dict, config: Dict, processado: bool) -> Dic
         metadados_atualizados['sox_output_format'] = config['output_format']
         metadados_atualizados['sox_normalize_method'] = config['normalize_method']
         metadados_atualizados['sox_target_level_db'] = config['target_level_db']
-        metadados_atualizados['sox_remove_silence'] = config['remove_silence']
         metadados_atualizados['utilizou_sox'] = True
     else:
         metadados_atualizados['sox_sample_rate'] = None
@@ -279,7 +255,6 @@ def adicionar_campos_sox(metadados: Dict, config: Dict, processado: bool) -> Dic
         metadados_atualizados['sox_output_format'] = None
         metadados_atualizados['sox_normalize_method'] = None
         metadados_atualizados['sox_target_level_db'] = None
-        metadados_atualizados['sox_remove_silence'] = None
         metadados_atualizados['utilizou_sox'] = False
     
     return metadados_atualizados
@@ -306,14 +281,17 @@ def limpar_pasta_vazia(pasta: Path):
         print(f"Aviso: Nao foi possivel remover pasta vazia {pasta}: {e}")
 
 
-def processar_normalizacao(audio_id: str) -> Tuple[int, int, int]:
+def processar_normalizacao(audio_id: str) -> Optional[Tuple[int, int, int]]:
     """
     Funcao principal de processamento.
 
     Args:
         audio_id: ID do audio a processar
 
-    Retorna tupla: (processados, pulados, falhados)
+    Returns:
+        Tupla (processados, pulados, falhados), ou None em falha dura
+        (SoX ausente ou JSON de acompanhamento ausente). None distingue
+        a falha do lote legitimamente vazio, que devolve (0, 0, 0).
     """
     # Definir caminhos baseados no audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"
@@ -329,7 +307,7 @@ def processar_normalizacao(audio_id: str) -> Tuple[int, int, int]:
     
     # Verificar instalacao do SoX
     if not verificar_sox_instalado():
-        return 0, 0, 0
+        return None
     
     # Carregar JSONs de entrada
     print(f"\nCarregando JSONs de: {PASTA_JSON_DINAMICO}")
@@ -340,7 +318,7 @@ def processar_normalizacao(audio_id: str) -> Tuple[int, int, int]:
 
     if json_acompanhamento is None:
         print(f"ERRO: Arquivo de acompanhamento nao encontrado")
-        return 0, 0, 0
+        return None
 
     json_filtro = carregar_json(PASTA_JSON_DINAMICO / f"{audio_id}.json")
     
@@ -452,15 +430,27 @@ def processar_normalizacao(audio_id: str) -> Tuple[int, int, int]:
 # MAIN
 # ==============================================================================
 
-def main(audio_id: str):
+def main(audio_id: str) -> bool:
     """
     Funcao principal.
 
     Args:
         audio_id: ID do audio a processar
+
+    Returns:
+        True se a normalizacao rodou, False em falha dura (SoX ausente
+        ou JSON de acompanhamento ausente).
     """
-    processados, pulados, falhados = processar_normalizacao(audio_id)
-    
+    resultado = processar_normalizacao(audio_id)
+
+    if resultado is None:
+        print("\n" + "="*70)
+        print("NORMALIZACAO DE AUDIO NAO EXECUTADA - falha dura")
+        print("="*70 + "\n")
+        return False
+
+    processados, pulados, falhados = resultado
+
     print("\n" + "="*70)
     print("RESUMO DO PROCESSAMENTO")
     print("="*70)
@@ -470,6 +460,14 @@ def main(audio_id: str):
     print(f"Total: {processados + pulados + falhados}")
     print("="*70 + "\n")
 
+    return True
+
 
 if __name__ == "__main__":
-    main('CA6TSoMw86k')
+    # Execucao direta exige o audio_id como argumento - nao ha id fixo
+    # no codigo. Mesmo padrao do m15_cleanup.py.
+    if len(sys.argv) != 2:
+        print("Uso: python src/m13_normalizador_audio.py <audio_id>")
+        sys.exit(1)
+
+    sys.exit(0 if main(sys.argv[1]) else 1)

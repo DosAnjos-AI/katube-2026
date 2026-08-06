@@ -26,9 +26,6 @@ from m01_load_models import ModelManager
 # CONFIGURACAO
 # ==============================================================================
 
-# Extensoes de audio suportadas
-EXTENSOES_AUDIO = {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'}
-
 # Modelo wav2vec2
 MODELO_WAV2VEC2 = "lgris/wav2vec2-large-xlsr-open-brazilian-portuguese"
 
@@ -246,12 +243,16 @@ def salvar_outputs(dados_acompanhamento: Dict, dados_wav2vec: Dict, pasta_output
 # FUNCAO PRINCIPAL
 # ==============================================================================
 
-def main(audio_id: str):
+def main(audio_id: str) -> bool:
     """
     Funcao principal de execucao.
 
     Args:
         audio_id: ID do audio a processar
+
+    Returns:
+        True se os outputs foram salvos. Pre-condicao ausente propaga
+        excecao (FileNotFoundError) em vez de retorno mudo.
     """
     # Definir caminhos baseados no audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"
@@ -282,6 +283,14 @@ def main(audio_id: str):
     print("PROCESSAMENTO CONCLUIDO")
     print("="*70)
 
+    return True
+
 
 if __name__ == "__main__":
-    main('CA6TSoMw86k')
+    # Execucao direta exige o audio_id como argumento - nao ha id fixo
+    # no codigo. Mesmo padrao do m15_cleanup.py.
+    if len(sys.argv) != 2:
+        print("Uso: python src/m09_wav2vec.py <audio_id>")
+        sys.exit(1)
+
+    sys.exit(0 if main(sys.argv[1]) else 1)

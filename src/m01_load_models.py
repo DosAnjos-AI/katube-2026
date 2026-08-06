@@ -5,10 +5,12 @@ Gerenciador centralizado de modelos de IA usando padrao Singleton
 Carrega modelos 1x e reutiliza entre multiplas execucoes
 """
 
+import inspect
 import os
 import sys
+from importlib.metadata import PackageNotFoundError, version as versao_pacote
 from pathlib import Path
-from typing import Optional, Any, Tuple
+from typing import Any, Callable, Dict, List, Optional, Tuple
 import torch
 from dotenv import load_dotenv
 
@@ -35,7 +37,77 @@ from config import (
 
 WHISPER_MODEL_ID = "freds0/distil-whisper-large-v3-ptbr"
 WAV2VEC_MODEL_ID = "lgris/wav2vec2-large-xlsr-open-brazilian-portuguese"
-PYANNOTE_MODEL_ID = "pyannote/speaker-diarization-3.1"
+
+
+# ==============================================================================
+# LOG ALTO - ERRO QUE NAO PODE PASSAR DESPERCEBIDO
+# ==============================================================================
+
+def _log_erro(linhas: List[str]) -> None:
+    """
+    Registra erro em nivel alto, no stderr, com prefixo [ERRO].
+
+    Usado para a queda de GPU para CPU: uma rodada que cai para CPU sem
+    ninguem perceber custa cerca de 9,7x tempo real e passa por normal.
+    """
+    print("", file=sys.stderr)
+    print("[ERRO] " + "=" * 62, file=sys.stderr)
+    for linha in linhas:
+        print(f"[ERRO] {linha}", file=sys.stderr)
+    print("[ERRO] " + "=" * 62, file=sys.stderr)
+    sys.stderr.flush()
+
+
+# ==============================================================================
+# COMPATIBILIDADE ENTRE VERSOES - NOME DO PARAMETRO DE AUTENTICACAO
+# ==============================================================================
+
+# Nomes ja usados por bibliotecas do ecossistema HuggingFace para o mesmo
+# parametro. A ordem e a de preferencia: o nome novo primeiro.
+NOMES_PARAMETRO_TOKEN = ('token', 'use_auth_token')
+
+
+def _kwarg_autenticacao(funcao: Callable, token: Optional[str],
+                        pacote: str) -> Dict[str, Optional[str]]:
+    """
+    Descobre, na assinatura da versao instalada, qual nome de parametro de
+    autenticacao a funcao aceita, e devolve o kwarg pronto para a chamada.
+
+    O ecossistema HuggingFace renomeou 'use_auth_token' para 'token'. Versoes
+    diferentes da mesma biblioteca convivem entre a maquina local e o servidor,
+    e a assinatura - nao o numero de versao - e o fato que decide a chamada.
+
+    Args:
+        funcao: A funcao que sera chamada (ex.: Pipeline.from_pretrained)
+        token: Valor do token a passar
+        pacote: Nome de distribuicao do pacote, so para a mensagem de erro
+
+    Returns:
+        Dicionario de um item: {nome_aceito: token}
+
+    Raises:
+        RuntimeError: Se a assinatura nao aceitar nenhum dos nomes conhecidos.
+                      Seguir sem autenticacao nao e opcao: o modelo e restrito
+                      e a falha apareceria adiante, longe da causa.
+    """
+    parametros = inspect.signature(funcao).parameters
+
+    for nome in NOMES_PARAMETRO_TOKEN:
+        if nome in parametros:
+            return {nome: token}
+
+    try:
+        versao = versao_pacote(pacote)
+    except PackageNotFoundError:
+        versao = "desconhecida"
+
+    raise RuntimeError(
+        f"ERRO: {pacote} {versao} nao aceita nenhum parametro de autenticacao "
+        f"conhecido em {funcao.__qualname__}.\n"
+        f"Nomes procurados: {', '.join(NOMES_PARAMETRO_TOKEN)}\n"
+        f"Parametros aceitos pela assinatura instalada: "
+        f"{', '.join(parametros)}"
+    )
 
 
 # ==============================================================================
@@ -82,28 +154,91 @@ class ModelManager:
     # METODOS AUXILIARES - DEVICE MANAGEMENT
     # ==========================================================================
     
-    def _obter_device(self, config_device: str) -> str:
+    def _obter_device(self, config_device: str, nome_bloco: str) -> str:
         """
-        Determina device baseado em configuracao
-        
+        Determina device a partir da configuracao.
+
+        Aceita SOMENTE "gpu" ou "cpu" - o valor "auto" foi eliminado do
+        projeto. Nao ha resolucao silenciosa nem valor padrao escondido.
+
         Args:
-            config_device: Valor do config ("auto", "gpu", "cpu")
-            
+            config_device: valor do campo 'device' do bloco
+            nome_bloco: nome do bloco do config, para a mensagem de erro
+
         Returns:
             "cuda" ou "cpu"
+
+        Raises:
+            ValueError: valor de device invalido
+            RuntimeError: "gpu" pedida sem CUDA e MASTER['fallback_cpu'] False
         """
-        device_config = config_device.lower()
-        
-        if device_config == "auto":
-            return "cuda" if torch.cuda.is_available() else "cpu"
-        elif device_config == "gpu":
-            if not torch.cuda.is_available():
-                print("AVISO: GPU solicitada mas CUDA nao disponivel. Usando CPU.")
-                return "cpu"
-            return "cuda"
-        else:  # cpu
+        device_config = str(config_device).lower()
+
+        if device_config == "cpu":
             return "cpu"
-    
+
+        if device_config != "gpu":
+            raise ValueError(
+                f"{nome_bloco}['device'] invalido: {config_device!r}. "
+                "Valores aceitos: 'gpu' ou 'cpu'"
+            )
+
+        if torch.cuda.is_available():
+            return "cuda"
+
+        # GPU pedida e CUDA indisponivel: quem decide e o fallback_cpu
+        if not MASTER.get('fallback_cpu', False):
+            raise RuntimeError(
+                f"{nome_bloco}['device']='gpu' mas CUDA nao esta disponivel "
+                "e MASTER['fallback_cpu'] e False"
+            )
+
+        _log_erro([
+            f"{nome_bloco}['device']='gpu' mas CUDA nao esta disponivel",
+            "MASTER['fallback_cpu']=True - caindo para CPU",
+            "DISPOSITIVO EFETIVO: cpu",
+        ])
+        return "cpu"
+
+    def _fallback_para_cpu(self, erro: Exception, device: str,
+                           nome_modelo: str, nome_bloco: str) -> bool:
+        """
+        Decide se um carregamento que falhou deve ser refeito em CPU.
+
+        Args:
+            erro: excecao original do carregamento
+            device: device em que a tentativa falhou (None se a falha foi
+                    anterior a resolucao do device)
+            nome_modelo: nome do modelo, para o log
+            nome_bloco: bloco do config, para o log
+
+        Returns:
+            True se o chamador deve recarregar em CPU; False se o erro
+            deve derrubar o modulo.
+        """
+        # Falha em CPU, ou antes de resolver o device, nao tem para onde cair
+        if device != "cuda":
+            return False
+
+        if not MASTER.get('fallback_cpu', False):
+            _log_erro([
+                f"{nome_modelo}: falha ao carregar em GPU "
+                f"({nome_bloco}['device']='gpu')",
+                f"Excecao original: {type(erro).__name__}: {erro}",
+                "MASTER['fallback_cpu']=False - sem fallback, o modulo vai falhar",
+            ])
+            return False
+
+        _log_erro([
+            f"{nome_modelo}: falha ao carregar em GPU "
+            f"({nome_bloco}['device']='gpu')",
+            f"Excecao original: {type(erro).__name__}: {erro}",
+            "MASTER['fallback_cpu']=True - recarregando em CPU",
+            "DISPOSITIVO EFETIVO: cpu",
+        ])
+        return True
+
+
     def _obter_device_id(self, device: str) -> int:
         """
         Converte device string para device_id (para transformers pipeline)
@@ -120,282 +255,340 @@ class ModelManager:
     # WHISPER - STT
     # ==========================================================================
     
+    def _carregar_whisper(self, device: str) -> Any:
+        """Carrega o pipeline Whisper no device indicado"""
+        from transformers import pipeline
+
+        print(f"Modelo: {WHISPER_MODEL_ID}")
+        print(f"Device: {device}")
+
+        return pipeline(
+            "automatic-speech-recognition",
+            model=WHISPER_MODEL_ID,
+            device=self._obter_device_id(device)
+        )
+
     def get_whisper(self) -> Any:
         """
         Obtem pipeline Whisper (carrega 1x, reutiliza depois)
-        
+
         Returns:
             Pipeline do transformers para Whisper
-            
+
         Raises:
             RuntimeError: Se modulo desabilitado no MASTER
-            Exception: Se carregamento falhar
+            Exception: Se carregamento falhar e nao houver fallback
         """
         # Retorna se ja carregado
         if self._whisper is not None:
             return self._whisper
-        
+
         # Verifica se modulo esta ativo no MASTER
         if not MASTER.get('transcricao_whisper', False):
             raise RuntimeError("ERRO: Whisper desabilitado no MASTER config")
-        
+
         print("\n" + "-"*70)
         print("CARREGANDO MODELO: Whisper")
         print("-"*70)
-        
+
+        device = None
         try:
-            from transformers import pipeline
-            
-            # Obter device do bloco especifico
-            device = self._obter_device(STT_WHISPER.get('device', 'auto'))
-            device_id = self._obter_device_id(device)
-            
-            print(f"Modelo: {WHISPER_MODEL_ID}")
-            print(f"Device: {device}")
-            
-            # Carregar modelo
-            self._whisper = pipeline(
-                "automatic-speech-recognition",
-                model=WHISPER_MODEL_ID,
-                device=device_id
-            )
-            
-            print("✓ Whisper carregado com sucesso")
-            print("-"*70 + "\n")
-            
-            return self._whisper
-            
+            device = self._obter_device(STT_WHISPER['device'], 'STT_WHISPER')
+            self._whisper = self._carregar_whisper(device)
         except Exception as e:
-            print(f"✗ ERRO ao carregar Whisper: {e}")
-            print("-"*70 + "\n")
-            raise
+            if not self._fallback_para_cpu(e, device, 'Whisper', 'STT_WHISPER'):
+                print(f"ERRO ao carregar Whisper: {e}")
+                print("-"*70 + "\n")
+                raise
+            # Retry em CPU: se este tambem falhar, o erro propaga
+            self._whisper = self._carregar_whisper("cpu")
+
+        print("Whisper carregado com sucesso")
+        print("-"*70 + "\n")
+
+        return self._whisper
     
     # ==========================================================================
     # WAV2VEC - STT
     # ==========================================================================
     
+    def _carregar_wav2vec(self, device: str) -> Any:
+        """Carrega o pipeline wav2vec no device indicado"""
+        from transformers import pipeline
+
+        print(f"Modelo: {WAV2VEC_MODEL_ID}")
+        print(f"Device: {device}")
+
+        return pipeline(
+            "automatic-speech-recognition",
+            model=WAV2VEC_MODEL_ID,
+            device=self._obter_device_id(device)
+        )
+
     def get_wav2vec(self) -> Any:
         """
         Obtem pipeline wav2vec (carrega 1x, reutiliza depois)
-        
+
         Returns:
             Pipeline do transformers para wav2vec
-            
+
         Raises:
             RuntimeError: Se modulo desabilitado no MASTER
-            Exception: Se carregamento falhar
+            Exception: Se carregamento falhar e nao houver fallback
         """
         # Retorna se ja carregado
         if self._wav2vec is not None:
             return self._wav2vec
-        
+
         # Verifica se modulo esta ativo no MASTER
         if not MASTER.get('transcricao_wav2vec', False):
             raise RuntimeError("ERRO: wav2vec desabilitado no MASTER config")
-        
+
         print("\n" + "-"*70)
         print("CARREGANDO MODELO: wav2vec")
         print("-"*70)
-        
+
+        device = None
         try:
-            from transformers import pipeline
-            
-            # Obter device do bloco especifico
-            device = self._obter_device(STT_WAV2VEC2.get('device', 'auto'))
-            device_id = self._obter_device_id(device)
-            
-            print(f"Modelo: {WAV2VEC_MODEL_ID}")
-            print(f"Device: {device}")
-            
-            # Carregar modelo
-            self._wav2vec = pipeline(
-                "automatic-speech-recognition",
-                model=WAV2VEC_MODEL_ID,
-                device=device_id
-            )
-            
-            print("✓ wav2vec carregado com sucesso")
-            print("-"*70 + "\n")
-            
-            return self._wav2vec
-            
+            device = self._obter_device(STT_WAV2VEC2['device'], 'STT_WAV2VEC2')
+            self._wav2vec = self._carregar_wav2vec(device)
         except Exception as e:
-            print(f"✗ ERRO ao carregar wav2vec: {e}")
-            print("-"*70 + "\n")
-            raise
+            if not self._fallback_para_cpu(e, device, 'wav2vec', 'STT_WAV2VEC2'):
+                print(f"ERRO ao carregar wav2vec: {e}")
+                print("-"*70 + "\n")
+                raise
+            # Retry em CPU: se este tambem falhar, o erro propaga
+            self._wav2vec = self._carregar_wav2vec("cpu")
+
+        print("wav2vec carregado com sucesso")
+        print("-"*70 + "\n")
+
+        return self._wav2vec
     
     # ==========================================================================
     # PYANNOTE - OVERLAP DETECTION
     # ==========================================================================
     
+    def _carregar_pyannote(self, device: str) -> Any:
+        """Carrega o pipeline pyannote no device indicado"""
+        from pyannote.audio import Pipeline
+
+        # Modelo vem do config - nao ha mais constante hardcoded
+        modelo_id = OVERLAP_DETECTOR['modelo']
+
+        # Token HuggingFace — lido do .env
+        hf_token = os.getenv('HF_TOKEN')
+
+        print(f"Modelo: {modelo_id}")
+        print(f"Device: {device}")
+
+        # O nome do parametro de autenticacao muda entre versoes do pyannote:
+        # e lido da assinatura instalada, nunca presumido.
+        pipeline = Pipeline.from_pretrained(
+            modelo_id,
+            **_kwarg_autenticacao(
+                Pipeline.from_pretrained, hf_token, 'pyannote.audio'
+            )
+        )
+
+        # Mover para device
+        pipeline.to(torch.device(device))
+
+        return pipeline
+
     def get_pyannote(self) -> Any:
         """
         Obtem pipeline pyannote (carrega 1x, reutiliza depois)
-        
+
         Returns:
             Pipeline pyannote.audio
-            
+
         Raises:
             RuntimeError: Se modulo desabilitado no MASTER
-            Exception: Se carregamento falhar
+            Exception: Se carregamento falhar e nao houver fallback
         """
         # Retorna se ja carregado
         if self._pyannote is not None:
             return self._pyannote
-        
+
         # Verifica se modulo esta ativo no MASTER
         if not MASTER.get('overlap', False):
             raise RuntimeError("ERRO: Overlap detector desabilitado no MASTER config")
-        
+
         print("\n" + "-"*70)
         print("CARREGANDO MODELO: pyannote")
         print("-"*70)
-        
+
+        device = None
         try:
-            from pyannote.audio import Pipeline
-            
-            # Obter device do bloco especifico
-            device = self._obter_device(OVERLAP_DETECTOR.get('device', 'auto'))
-            
-            # Token HuggingFace — lido do .env
-            hf_token = os.getenv('HF_TOKEN')
-
-            print(f"Modelo: {PYANNOTE_MODEL_ID}")
-            print(f"Device: {device}")
-
-            # Carregar modelo
-            self._pyannote = Pipeline.from_pretrained(
-                PYANNOTE_MODEL_ID,
-                token=hf_token
-            )
-            
-            # Mover para device
-            self._pyannote.to(torch.device(device))
-            
-            print("✓ pyannote carregado com sucesso")
-            print("-"*70 + "\n")
-            
-            return self._pyannote
-            
+            device = self._obter_device(OVERLAP_DETECTOR['device'], 'OVERLAP_DETECTOR')
+            self._pyannote = self._carregar_pyannote(device)
         except Exception as e:
-            print(f"✗ ERRO ao carregar pyannote: {e}")
-            print("-"*70 + "\n")
-            raise
+            if not self._fallback_para_cpu(e, device, 'pyannote', 'OVERLAP_DETECTOR'):
+                print(f"ERRO ao carregar pyannote: {e}")
+                print("-"*70 + "\n")
+                raise
+            # Retry em CPU: se este tambem falhar, o erro propaga
+            self._pyannote = self._carregar_pyannote("cpu")
+
+        print("pyannote carregado com sucesso")
+        print("-"*70 + "\n")
+
+        return self._pyannote
     
     # ==========================================================================
     # SQUIM - MOS QUALITY ASSESSMENT
     # ==========================================================================
     
+    def _carregar_squim(self, device: str) -> Any:
+        """Carrega o modelo SQUIM no device indicado"""
+        import torchaudio
+
+        print(f"Modelo: SQUIM_OBJECTIVE (torchaudio)")
+        print(f"Device: {device}")
+
+        modelo = torchaudio.pipelines.SQUIM_OBJECTIVE.get_model()
+        return modelo.to(device)
+
     def get_squim(self) -> Any:
         """
         Obtem modelo SQUIM (carrega 1x, reutiliza depois)
-        
+
         Returns:
             Modelo SQUIM do torchaudio
-            
+
         Raises:
             RuntimeError: Se modulo desabilitado no MASTER
-            Exception: Se carregamento falhar
+            Exception: Se carregamento falhar e nao houver fallback
         """
         # Retorna se ja carregado
         if self._squim is not None:
             return self._squim
-        
+
         # Verifica se modulo esta ativo no MASTER
         if not MASTER.get('mos_filter', False):
             raise RuntimeError("ERRO: MOS filter desabilitado no MASTER config")
-        
+
         print("\n" + "-"*70)
         print("CARREGANDO MODELO: SQUIM")
         print("-"*70)
-        
+
+        device = None
         try:
-            import torchaudio
-            
-            # Obter device do bloco especifico
-            device = self._obter_device(MOS_FILTER.get('device', 'auto'))
-            
-            print(f"Modelo: SQUIM_OBJECTIVE (torchaudio)")
-            print(f"Device: {device}")
-            
-            # Carregar modelo
-            self._squim = torchaudio.pipelines.SQUIM_OBJECTIVE.get_model()
-            self._squim = self._squim.to(device)
-            
-            print("✓ SQUIM carregado com sucesso")
-            print("-"*70 + "\n")
-            
-            return self._squim
-            
+            device = self._obter_device(MOS_FILTER['device'], 'MOS_FILTER')
+            self._squim = self._carregar_squim(device)
         except Exception as e:
-            print(f"✗ ERRO ao carregar SQUIM: {e}")
-            print("-"*70 + "\n")
-            raise
+            if not self._fallback_para_cpu(e, device, 'SQUIM', 'MOS_FILTER'):
+                print(f"ERRO ao carregar SQUIM: {e}")
+                print("-"*70 + "\n")
+                raise
+            # Retry em CPU: se este tambem falhar, o erro propaga
+            self._squim = self._carregar_squim("cpu")
+
+        print("SQUIM carregado com sucesso")
+        print("-"*70 + "\n")
+
+        return self._squim
     
     # ==========================================================================
     # DEEPFILTERNET3 - AUDIO DENOISING
     # ==========================================================================
     
+    def _carregar_deepfilternet(self, device: str) -> Tuple[Any, Any, int]:
+        """
+        Carrega o DeepFilterNet3 e submete a biblioteca ao device do config.
+
+        Achado A29: o init_df() nao aceita parametro device, e o enhance()
+        resolve o dispositivo sozinho, por get_device(), que escolhe cuda:0
+        sempre que houver CUDA. Sem o ajuste abaixo, num servidor com GPU e
+        device='cpu' o modelo fica em CPU e as features vao para cuda:0.
+
+        O ajuste tem de vir DEPOIS do init_df(): o proprio init_df() recarrega
+        o parser da config interna do DeepFilterNet e apagaria o valor.
+        """
+        from df import init_df
+        from df.config import config as df_config
+        from df.utils import get_device as df_get_device
+
+        post_filter = DEEPFILTERNET_DENOISER['post_filter']
+
+        print(f"Modelo: DeepFilterNet3")
+        print(f"Device: {device}")
+        print(f"Post-filter: {post_filter}")
+
+        modelo, df_state, _ = init_df(
+            post_filter=post_filter,
+            log_level="ERROR"  # Reduz verbosidade
+        )
+
+        # A29: submeter o get_device() da biblioteca ao device do config
+        df_config.set("DEVICE", device, str, section="train")
+
+        # Mover modelo para device
+        modelo = modelo.to(device)
+
+        # Conferencia por log: o dispositivo interno tem de bater com o pedido.
+        # Divergencia aqui e o achado A29 se manifestando - nao pode passar
+        # em silencio na primeira rodada com GPU.
+        device_interno = str(df_get_device())
+        print(f"Device interno do DeepFilterNet (get_device): {device_interno}")
+        if device_interno.split(':')[0] != device:
+            _log_erro([
+                "DeepFilterNet3: dispositivo interno DIVERGE do config (achado A29)",
+                f"Pedido pelo config: {device}",
+                f"get_device() da biblioteca: {device_interno}",
+                "As features irao para um dispositivo diferente do modelo",
+            ])
+
+        return (modelo, df_state, df_state.sr())
+
     def get_deepfilternet(self) -> Tuple[Any, Any, int]:
         """
         Obtem modelo e estado DeepFilterNet (carrega 1x, reutiliza depois)
-        
+
         Returns:
             Tupla (modelo, df_state, sample_rate)
-            
+
         Raises:
             RuntimeError: Se modulo desabilitado no MASTER
-            Exception: Se carregamento falhar
+            Exception: Se carregamento falhar e nao houver fallback
+
+        LIMITACAO CONHECIDA (decisao registrada, instrucao 20): o retry em
+        CPU chama init_df() de novo, e o init_df() volta a escolher o
+        dispositivo por conta propria. Numa GPU que falhe, o fallback deste
+        modelo pode nao se completar - ao contrario dos outros quatro.
         """
         # Retorna se ja carregado
         if self._deepfilternet is not None:
             return self._deepfilternet
-        
+
         # Verifica se modulo esta ativo no MASTER
         if not MASTER.get('Denoiser', False):
             raise RuntimeError("ERRO: Denoiser desabilitado no MASTER config")
-        
+
         print("\n" + "-"*70)
         print("CARREGANDO MODELO: DeepFilterNet3")
         print("-"*70)
-        
+
+        device = None
         try:
-            from df import init_df
-            
-            # Obter device do bloco especifico
-            device = self._obter_device(DEEPFILTERNET_DENOISER.get('device', 'auto'))
-            
-            # Parametros do DeepFilterNet
-            post_filter = DEEPFILTERNET_DENOISER.get('post_filter', 1)
-            
-            print(f"Modelo: DeepFilterNet3")
-            print(f"Device: {device}")
-            print(f"Post-filter: {post_filter}")
-            
-            # Carregar modelo
-            modelo, df_state, _ = init_df(
-                post_filter=post_filter,
-                log_level="ERROR"  # Reduz verbosidade
-            )
-            
-            # Mover modelo para device
-            modelo = modelo.to(device)
-            
-            # Obter sample rate do df_state
-            sr = df_state.sr()
-            
-            # Armazenar tupla completa
-            self._deepfilternet = (modelo, df_state, sr)
-            
-            print(f"✓ DeepFilterNet3 carregado com sucesso (SR={sr} Hz)")
-            print("-"*70 + "\n")
-            
-            return self._deepfilternet
-            
+            device = self._obter_device(DEEPFILTERNET_DENOISER['device'],
+                                        'DEEPFILTERNET_DENOISER')
+            self._deepfilternet = self._carregar_deepfilternet(device)
         except Exception as e:
-            print(f"✗ ERRO ao carregar DeepFilterNet3: {e}")
-            print("-"*70 + "\n")
-            raise
+            if not self._fallback_para_cpu(e, device, 'DeepFilterNet3',
+                                           'DEEPFILTERNET_DENOISER'):
+                print(f"ERRO ao carregar DeepFilterNet3: {e}")
+                print("-"*70 + "\n")
+                raise
+            # Retry em CPU: se este tambem falhar, o erro propaga
+            self._deepfilternet = self._carregar_deepfilternet("cpu")
+
+        sr = self._deepfilternet[2]
+        print(f"DeepFilterNet3 carregado com sucesso (SR={sr} Hz)")
+        print("-"*70 + "\n")
+
+        return self._deepfilternet
     
     # ==========================================================================
     # UTILIDADES - GESTAO DE MEMORIA
@@ -405,7 +598,7 @@ class ModelManager:
         """Limpa cache de GPU (util para liberar VRAM)"""
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
-            print("✓ Cache GPU limpo")
+            print("Cache GPU limpo")
     
     def get_vram_usage(self) -> dict:
         """
