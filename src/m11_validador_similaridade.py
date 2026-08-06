@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 """
-Modulo m11_validador_similaridade.py
-Valida similaridade entre as transcricoes STT (whisper x wav2vec)
+Module m11_validador_similaridade.py
+Validates similarity between the STT transcriptions (whisper x wav2vec)
 
-Calcula SEMPRE as tres metricas, cada uma na sua convencao consagrada:
+ALWAYS calculates all three metrics, each in its own established
+convention:
 
-  wer              taxa de erro por PALAVRA,    0 = perfeito, sem teto superior
-  cer              taxa de erro por CARACTERE,  0 = perfeito
-  levenshtein_norm similaridade normalizada,    1 = identico, faixa 0 a 1
+  wer              error rate per WORD,       0 = perfect, no upper bound
+  cer              error rate per CHARACTER,  0 = perfect
+  levenshtein_norm normalized similarity,     1 = identical, range 0 to 1
 
-Como as convencoes apontam em direcoes diferentes, cada metrica tem o seu
-proprio comparador contra o proprio limiar. O segmento so e aprovado se
-passar nos TRES limiares.
+Since the conventions point in different directions, each metric has
+its own comparator against its own threshold. The segment is only
+approved if it passes all THREE thresholds.
 """
 
 import sys
@@ -45,13 +46,14 @@ LIMIAR_LEVENSHTEIN_NORM = SIMILARITY_VALIDATOR["limiar_levenshtein_norm"]
 
 def normalizar_para_comparacao(texto: str) -> str:
     """
-    Normaliza texto para comparacao seguindo configuracoes do TEXT_NORMALIZER
+    Normalizes text for comparison, following the TEXT_NORMALIZER
+    settings
 
     Args:
-        texto: Texto original
+        texto: Original text
 
     Returns:
-        Texto normalizado para comparacao
+        Text normalized for comparison
     """
     if not texto:
         return ""
@@ -86,25 +88,25 @@ def normalizar_para_comparacao(texto: str) -> str:
 
 def calcular_wer(referencia: str, hipotese: str) -> float:
     """
-    Calcula Word Error Rate (WER) - taxa de erro por PALAVRA.
+    Calculates the Word Error Rate (WER) - error rate per WORD.
 
-    WER = distancia_de_edicao_em_PALAVRAS / numero_de_palavras_da_referencia
+    WER = edit_distance_in_WORDS / number_of_words_in_the_reference
 
-    A distancia e calculada sobre a LISTA de palavras, nao sobre a string:
-    Levenshtein.distance aceita sequencias, entao cada palavra conta como um
-    token unico. Trocar uma palavra inteira custa 1, qualquer que seja o
-    tamanho dela. E o que separa o WER do CER.
+    The distance is calculated over the LIST of words, not over the
+    string: Levenshtein.distance accepts sequences, so each word counts
+    as a single token. Swapping an entire word costs 1, whatever its
+    length. That is what sets WER apart from CER.
 
-    Convencao: 0.0 = transcricoes identicas. NAO ha teto superior - quando o
-    reconhecedor insere mais palavras do que a referencia tem, o valor passa
-    de 1.0.
+    Convention: 0.0 = identical transcriptions. There is NO upper bound
+    - when the recognizer inserts more words than the reference has,
+    the value goes above 1.0.
 
     Args:
-        referencia: Texto de referencia (ja normalizado)
-        hipotese: Texto a comparar (ja normalizado)
+        referencia: Reference text (already normalized)
+        hipotese: Text to compare (already normalized)
 
     Returns:
-        Taxa de erro por palavra (0.0 = perfeito, sem limite superior)
+        Error rate per word (0.0 = perfect, no upper bound)
     """
     palavras_ref = referencia.split()
     palavras_hip = hipotese.split()
@@ -121,19 +123,20 @@ def calcular_wer(referencia: str, hipotese: str) -> float:
 
 def calcular_cer(referencia: str, hipotese: str) -> float:
     """
-    Calcula Character Error Rate (CER) - taxa de erro por CARACTERE.
+    Calculates the Character Error Rate (CER) - error rate per
+    CHARACTER.
 
-    CER = distancia_de_edicao_em_CARACTERES / numero_de_caracteres_da_referencia
+    CER = edit_distance_in_CHARACTERS / number_of_characters_in_the_reference
 
-    Convencao: 0.0 = transcricoes identicas. Tambem nao tem teto superior,
-    pela mesma razao do WER.
+    Convention: 0.0 = identical transcriptions. It also has no upper
+    bound, for the same reason as WER.
 
     Args:
-        referencia: Texto de referencia (ja normalizado)
-        hipotese: Texto a comparar (ja normalizado)
+        referencia: Reference text (already normalized)
+        hipotese: Text to compare (already normalized)
 
     Returns:
-        Taxa de erro por caractere (0.0 = perfeito, sem limite superior)
+        Error rate per character (0.0 = perfect, no upper bound)
     """
     if not referencia:
         return 0.0 if not hipotese else 1.0
@@ -145,19 +148,19 @@ def calcular_cer(referencia: str, hipotese: str) -> float:
 
 def calcular_levenshtein_normalizado(referencia: str, hipotese: str) -> float:
     """
-    Calcula similaridade normalizada de Levenshtein sobre CARACTERES.
+    Calculates the normalized Levenshtein similarity over CHARACTERS.
 
-    Similaridade = 1 - (distancia_levenshtein / comprimento_maximo)
+    Similarity = 1 - (levenshtein_distance / max_length)
 
-    Convencao INVERSA a das outras duas: 1.0 = identico, 0.0 = totalmente
-    diferente. Faixa fechada entre 0.0 e 1.0.
+    Convention that is the INVERSE of the other two: 1.0 = identical,
+    0.0 = completely different. Closed range between 0.0 and 1.0.
 
     Args:
-        referencia: Texto de referencia (ja normalizado)
-        hipotese: Texto a comparar (ja normalizado)
+        referencia: Reference text (already normalized)
+        hipotese: Text to compare (already normalized)
 
     Returns:
-        Similaridade normalizada (1.0 = identico)
+        Normalized similarity (1.0 = identical)
     """
     max_len = max(len(referencia), len(hipotese))
 
@@ -172,16 +175,16 @@ def calcular_levenshtein_normalizado(referencia: str, hipotese: str) -> float:
 
 def calcular_tres_metricas(texto1: str, texto2: str) -> Dict[str, float]:
     """
-    Calcula as tres metricas de uma vez para o par de textos.
+    Calculates all three metrics at once for the pair of texts.
 
-    A normalizacao roda uma unica vez e alimenta as tres.
+    Normalization runs a single time and feeds all three.
 
     Args:
-        texto1: Primeiro texto (referencia)
-        texto2: Segundo texto (hipotese)
+        texto1: First text (reference)
+        texto2: Second text (hypothesis)
 
     Returns:
-        Dicionario com as tres metricas, cada uma na sua convencao
+        Dictionary with the three metrics, each in its own convention
     """
     texto1_norm = normalizar_para_comparacao(texto1)
     texto2_norm = normalizar_para_comparacao(texto2)
@@ -199,16 +202,16 @@ def calcular_tres_metricas(texto1: str, texto2: str) -> Dict[str, float]:
 
 def motivos_de_reprovacao(wer: float, cer: float, levenshtein_norm: float) -> List[str]:
     """
-    Verifica as tres metricas contra os seus limiares e devolve a lista de
-    motivos de reprovacao, ja formatados para log.
+    Checks the three metrics against their thresholds and returns the
+    list of rejection reasons, already formatted for the log.
 
-    Cada metrica e comparada na direcao da sua propria convencao:
-      wer              passa se <= limiar (taxa de erro: menor e melhor)
-      cer              passa se <= limiar (taxa de erro: menor e melhor)
-      levenshtein_norm passa se >= limiar (similaridade: maior e melhor)
+    Each metric is compared in the direction of its own convention:
+      wer              passes if <= threshold (error rate: lower is better)
+      cer              passes if <= threshold (error rate: lower is better)
+      levenshtein_norm passes if >= threshold (similarity: higher is better)
 
     Returns:
-        Lista vazia quando o segmento passa nos tres limiares
+        Empty list when the segment passes all three thresholds
     """
     motivos = []
 
@@ -229,21 +232,21 @@ def motivos_de_reprovacao(wer: float, cer: float, levenshtein_norm: float) -> Li
 
 def validar_segmento(dados_segmento: Dict) -> Dict:
     """
-    Valida a similaridade entre as transcricoes STT de um segmento.
+    Validates the similarity between a segment's STT transcriptions.
 
-    Criterio de elegibilidade: whisper e wav2vec sao ambos obrigatorios. Se
-    qualquer um dos dois estiver ausente ou vazio, o segmento nao e elegivel
-    e todos os campos de similaridade saem em None.
+    Eligibility criterion: whisper and wav2vec are both required. If
+    either one is missing or empty, the segment is not eligible and all
+    similarity fields come out as None.
 
-    Criterio de aprovacao: passar nos TRES limiares.
+    Approval criterion: passing all THREE thresholds.
 
     Args:
-        dados_segmento: Dicionario com metadados do segmento
+        dados_segmento: Dictionary with the segment's metadata
 
     Returns:
-        Dicionario com as tres metricas e o status, mais a lista de motivos
-        de reprovacao sob a chave '_motivos' - essa chave e consumida pelo
-        chamador para o log e nunca chega ao JSON
+        Dictionary with the three metrics and the status, plus the list
+        of rejection reasons under the '_motivos' key - this key is
+        consumed by the caller for the log and never reaches the JSON
     """
     resultado = {
         "sim_whisper_wav2vec_wer": None,
@@ -280,14 +283,14 @@ def validar_segmento(dados_segmento: Dict) -> Dict:
 
 def processar_validacao(audio_id: str) -> bool:
     """
-    Processa validacao de similaridade para todos os segmentos elegiveis.
+    Processes similarity validation for all eligible segments.
 
     Args:
-        audio_id: ID do audio a processar
+        audio_id: ID of the audio file to process
 
     Returns:
-        True se os JSONs de validacao foram gravados. Pre-condicao
-        ausente propaga excecao (FileNotFoundError).
+        True if the validation JSONs were written. A missing
+        precondition propagates an exception (FileNotFoundError).
     """
     # Definir caminhos baseados no audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"

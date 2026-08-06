@@ -1,27 +1,27 @@
-# katube-2026 — Pipeline de Processamento de Áudio
+# katube-2026 — Audio Processing Pipeline
 
-Pipeline modular que transforma áudios brutos, de **qualquer origem**, em um
-**dataset limpo e transcrito para treino de modelos TTS/STT** em Português
-Brasileiro.
+Modular pipeline that turns raw audio, from **any source**, into a
+**clean, transcribed dataset for training TTS/STT models** in Brazilian
+Portuguese.
 
-A entrada é uma coletânea de áudios; a saída é um `dataset.csv` com segmentos
-curtos, normalizados, transcritos por dois modelos STT e validados por
-similaridade, mais os arquivos de áudio correspondentes. **As características
-do áudio final não são fixas**: taxa de amostragem, profundidade de bits,
-número de canais, formato do arquivo, método de normalização de volume e nível
-alvo são todos definidos no bloco `SOX_NORMALIZER` do [config.py](config.py) —
-ver [Saídas (o dataset)](#saídas-o-dataset).
+The input is a collection of audio files; the output is a `dataset.csv` with
+short, normalized segments, transcribed by two STT models and validated by
+similarity, plus the corresponding audio files. **The final audio's
+characteristics are not fixed**: sample rate, bit depth, number of channels,
+file format, volume normalization method and target level are all defined in
+the `SOX_NORMALIZER` block of [config.py](config.py) —
+see [Outputs (the dataset)](#outputs-the-dataset).
 
 ---
 
-## Visão geral
+## Overview
 
 ```
-Áudios brutos (.ogg/.flac/...) colados em arquivos/input/
+Raw audio (.ogg/.flac/...) pasted into arquivos/input/
         │
         ▼
-┌──────────────────────── main.py (orquestrador) ────────────────────────┐
-│  M00 ── nomeação: varre input/, resolve o id e MOVE para audios/       │
+┌──────────────────────── main.py (orchestrator) ────────────────────────┐
+│  M00 ── naming: scans input/, resolves the id and MOVES to audios/     │
 │         │                                                              │
 │         ▼                                                              │
 │  arquivos/audios/{audio_id}/{audio_id}.ext                             │
@@ -31,266 +31,288 @@ ver [Saídas (o dataset)](#saídas-o-dataset).
 └─────────────────────────────────────────────────────────────────────────┘
         │
         ▼
-dataset/dataset.csv  +  dataset/audio_dataset/{audio_id}/*.{formato de saída}
+dataset/dataset.csv  +  dataset/audio_dataset/{audio_id}/*.{output format}
 ```
 
-Cada áudio é identificado por um **`audio_id`**, decidido pelo M00: o hash MD5
-do **conteúdo** do arquivo (modo recomendado) ou o nome original — ver
-`NOMEACAO` em [config.py](config.py). Todo o estado intermediário de um áudio vive em
-`arquivos/temp/{audio_id}/`, organizado em subpastas numeradas que espelham as
-etapas da pipeline.
+Each audio file is identified by an **`audio_id`**, decided by M00: the MD5
+hash of the file's **content** (recommended mode) or the original name — see
+`NOMEACAO` in [config.py](config.py). All intermediate state for an audio
+file lives in `arquivos/temp/{audio_id}/`, organized into numbered subfolders
+that mirror the pipeline stages.
 
-> **ATENÇÃO — `arquivos/input/` é esvaziada a cada execução.** O M00 **move** os
-> arquivos, não copia. **Cole sempre uma CÓPIA em `arquivos/input/`, nunca a única
-> cópia dos áudios** — eles são consumidos no processamento. Ver
+> **ATTENTION — `arquivos/input/` is emptied on every run.** M00 **moves**
+> the files, it does not copy them. **Always paste a COPY into
+> `arquivos/input/`, never the only copy of the audio files** — they are
+> consumed during processing. See
 > [arquivos/input/README.md](arquivos/input/README.md).
 
 ---
 
-## Diagrama de fluxo
+## Flow diagram
 
-![Diagrama do fluxo da pipeline Katube VAD 2026: da ingestão dos áudios em arquivos/input/ até o dataset.csv final, passando pelos módulos M00 a M15](Alcateia_-_Fluxo_Katube_VAD_2026.svg)
+![Katube VAD 2026 pipeline flow diagram: from audio ingestion in arquivos/input/ to the final dataset.csv, passing through modules M00 to M15](Alcateia_-_Fluxo_Katube_VAD_2026.svg)
 
-O desenho acima é uma exportação do board no Miro, que é a fonte sempre atualizada:
+The diagram above is an export of the Miro board, which is always the
+up-to-date source:
 https://miro.com/app/board/uXjVG9eNQ_g=/?focusWidget=3458764660637824545
 
 ---
 
-## Estrutura do projeto
+## Project structure
 
 ```
 katube-2026/
-├── main.py                  # Orquestrador: roda M02→M15 para cada áudio
-├── config.py                # TODA a configuração (bloco MASTER + params por módulo)
-├── requirements-servidor.txt # Versões fixadas do ambiente de referência
-├── .env.example             # Modelo do .env (token HuggingFace)
-├── .gitignore               # O que fica fora do versionamento (áudios, dataset, .env)
-├── README.md                # Este documento: visão geral, pipeline e saídas
-├── INSTALL.md               # Montagem e verificação do ambiente
-├── Alcateia_-_Fluxo_Katube_VAD_2026.svg  # Diagrama do fluxo
-├── src/                     # Módulos da pipeline (m00–m15)
-│   ├── m00_nomeacao.py               # Porta de entrada: input/ → audios/{id}/{id}.ext
-│   ├── m01_load_models.py            # Singleton de modelos de IA (carrega 1x)
-│   ├── m02_diretorios.py             # Cria pastas do áudio e converte a entrada para WAV
-│   ├── m04_segmentador_audio_vad.py  # Segmentação por VAD (Silero)
-│   ├── m05_segmentador_16khz.py      # Conversão para 16 kHz mono
-│   ├── m06_mos_filter.py             # Filtro de qualidade MOS (SQUIM)
-│   ├── m07_overlap1.py               # Detecção de sobreposição de locutores (pyannote)
-│   ├── m08_whisper.py                # STT com distil-Whisper PT-BR
-│   ├── m09_wav2vec.py                # STT com Wav2Vec2 PT-BR
-│   ├── m10_texto_normalizador.py     # Normalização de texto
-│   ├── m11_validador_similaridade.py # Validação de similaridade (WER, CER, Levenshtein)
+├── main.py                  # Orchestrator: runs M02→M15 for each audio file
+├── config.py                # ALL the configuration (MASTER block + per-module params)
+├── requirements-servidor.txt # Pinned versions of the reference environment
+├── .env.example             # Template for the .env (HuggingFace token)
+├── .gitignore               # What stays out of version control (audio, dataset, .env)
+├── README.md                # This document: overview, pipeline and outputs
+├── INSTALL.md                # Environment setup and verification
+├── Alcateia_-_Fluxo_Katube_VAD_2026.svg  # Flow diagram
+├── src/                     # Pipeline modules (m00-m15)
+│   ├── m00_nomeacao.py               # Entry point: input/ → audios/{id}/{id}.ext
+│   ├── m01_load_models.py            # AI model singleton (loads once)
+│   ├── m02_diretorios.py             # Creates audio folders and converts input to WAV
+│   ├── m04_segmentador_audio_vad.py  # VAD segmentation (Silero)
+│   ├── m05_segmentador_16khz.py      # Conversion to 16 kHz mono
+│   ├── m06_mos_filter.py             # MOS quality filter (SQUIM)
+│   ├── m07_overlap1.py               # Speaker overlap detection (pyannote)
+│   ├── m08_whisper.py                # STT with distil-Whisper PT-BR
+│   ├── m09_wav2vec.py                # STT with Wav2Vec2 PT-BR
+│   ├── m10_texto_normalizador.py     # Text normalization
+│   ├── m11_validador_similaridade.py # Similarity validation (WER, CER, Levenshtein)
 │   ├── m12_denoiser_deepfilternet3.py# Denoising (DeepFilterNet3)
-│   ├── m13_normalizador_audio.py     # Normalização de áudio (SoX)
-│   ├── m14_metadados.py              # Escreve dataset.csv (append) + histórico
-│   └── m15_cleanup.py                # Limpeza de temporários/input
+│   ├── m13_normalizador_audio.py     # Audio normalization (SoX)
+│   ├── m14_metadados.py              # Writes dataset.csv (append) + history
+│   └── m15_cleanup.py                # Cleans up temp/input
 ├── arquivos/
-│   ├── input/                        # ENTRADA: cole aqui (é ESVAZIADA a cada execução)
-│   │   └── README.md                 # Como preparar o material de entrada
-│   ├── audios/                       # Pasta de trabalho: uma subpasta {audio_id} por áudio
-│   │   └── README.md                 # Estrutura da pasta de trabalho
-│   └── temp/                         # Estado intermediário: uma subpasta {audio_id} (ver abaixo)
-│       └── README.md                 # Estrutura das subpastas intermediárias
-├── audiosTestes/{nome}/              # Áudios de referência para teste (ignorados pelo git)
+│   ├── input/                        # INPUT: paste here (EMPTIED on every run)
+│   │   └── README.md                 # How to prepare input material
+│   ├── audios/                       # Working folder: one {audio_id} subfolder per audio
+│   │   └── README.md                 # Working folder structure
+│   └── temp/                         # Intermediate state: one {audio_id} subfolder (see below)
+│       └── README.md                 # Structure of the intermediate subfolders
+├── audiosTestes/{nome}/              # Reference audio files for testing (ignored by git)
 └── dataset/
-    ├── sumary_results.py             # Sumarização de resultados do dataset
-    ├── dataset.csv                   # SAÍDA: metadados de cada segmento aprovado
-    ├── nomeacao.csv                  # Procedência: id ↔ caminho de origem
-    ├── concluidos.csv                # Deduplicação: quem terminou a pipeline
-    ├── processamento_metadados.csv   # Registro de cada rodada: duração e tempo por módulo
-    ├── audio_dataset/{audio_id}/     # SAÍDA: segmentos de áudio finais
-    ├── historico_dataset/{id}.json   # Backup do JSON de acompanhamento por áudio
-    └── log/{audio_id}.log            # Log detalhado por áudio
+    ├── sumary_results.py             # Summarizes dataset results
+    ├── dataset.csv                   # OUTPUT: metadata for each approved segment
+    ├── nomeacao.csv                  # Provenance: id ↔ source path
+    ├── concluidos.csv                # Deduplication: which audio finished the pipeline
+    ├── processamento_metadados.csv   # Run log: duration and time per module
+    ├── audio_dataset/{audio_id}/     # OUTPUT: final audio segments
+    ├── historico_dataset/{id}.json   # Backup of the per-audio tracking JSON
+    └── log/{audio_id}.log            # Detailed per-audio log
 ```
 
-### Subpastas de `arquivos/temp/{audio_id}/`
+### Subfolders of `arquivos/temp/{audio_id}/`
 
-Criadas por **M02** e consumidas/preenchidas pelos módulos seguintes:
+Created by **M02** and consumed/filled by the following modules:
 
-| Pasta | Conteúdo | Módulo |
+| Folder | Content | Module |
 |-------|----------|--------|
-| `00-json_dinamico/`     | JSON de acompanhamento (estado de cada segmento) | todos |
-| `01-arquivos_originais/`| Cópia do áudio de entrada | M02 |
-| `02-segmentos_originais/`| Segmentos no sample rate original | M04 |
-| `03-segments_16khz/`    | Segmentos convertidos para 16 kHz | M05 |
-| `04-mos_score/`         | Resultados do filtro MOS | M06 |
-| `05-overlap1/`          | Resultados de detecção de overlap | M07 |
-| `06-stt_whisper/`       | Transcrições Whisper | M08 |
-| `07-stt_wav2vec/`       | Transcrições Wav2Vec2 | M09 |
-| `08-normalizador_texto/`| Textos normalizados | M10 |
-| `09-validacao_similaridade/`| Métricas de similaridade | M11 |
-| `10-denoiser/`          | Áudios após denoising | M12 |
-| `11-normalizador_audio/`| Áudios finais normalizados (SoX) | M13 |
+| `00-json_dinamico/`     | Tracking JSON (state of each segment) | all |
+| `01-arquivos_originais/`| Copy of the input audio file | M02 |
+| `02-segmentos_originais/`| Segments at the original sample rate | M04 |
+| `03-segments_16khz/`    | Segments converted to 16 kHz | M05 |
+| `04-mos_score/`         | MOS filter results | M06 |
+| `05-overlap1/`          | Overlap detection results | M07 |
+| `06-stt_whisper/`       | Whisper transcriptions | M08 |
+| `07-stt_wav2vec/`       | Wav2Vec2 transcriptions | M09 |
+| `08-normalizador_texto/`| Normalized texts | M10 |
+| `09-validacao_similaridade/`| Similarity metrics | M11 |
+| `10-denoiser/`          | Audio files after denoising | M12 |
+| `11-normalizador_audio/`| Final normalized audio files (SoX) | M13 |
 
-O **`00-json_dinamico/{audio_id}_segments_acompanhamento.json`** é o coração da
-pipeline: cada módulo lê e enriquece esse JSON com seus campos, e ao final o M14 o
-converte em linhas do `dataset.csv`.
+The **`00-json_dinamico/{audio_id}_segments_acompanhamento.json`** is the
+heart of the pipeline: each module reads and enriches this JSON with its
+fields, and at the end M14 converts it into rows of `dataset.csv`.
 
 ---
 
-## A pipeline passo a passo
+## The pipeline, step by step
 
-O orquestrador ([main.py](main.py)) roda o **M00 uma única vez**, depois percorre
-todos os `audio_id` em `arquivos/audios/`, pula os que já têm histórico, e executa
-as etapas abaixo para cada novo áudio. Etapas marcadas **(condicional)** só rodam
-conforme o bloco `MASTER` em [config.py](config.py).
+The orchestrator ([main.py](main.py)) runs **M00 only once**, then iterates
+over every `audio_id` in `arquivos/audios/`, skips those that already have
+history, and runs the steps below for each new audio file. Steps marked
+**(conditional)** only run according to the `MASTER` block in
+[config.py](config.py).
 
-### M00 — Nomeação *(obrigatório, roda 1x por execução)*
-Varre `arquivos/input/` **recursivamente**, filtra pelos formatos de
-`NOMEACAO['formatos_entrada']`, resolve o `audio_id` de cada arquivo e o **MOVE**
-para `arquivos/audios/{audio_id}/{audio_id}.ext`.
+### M00 — Naming *(required, runs once per execution)*
+Scans `arquivos/input/` **recursively**, filters by the formats in
+`NOMEACAO['formatos_entrada']`, resolves the `audio_id` for each file and
+**MOVES** it to `arquivos/audios/{audio_id}/{audio_id}.ext`.
 
-- **Id**: conforme `NOMEACAO['modo']`, sempre **determinístico** (a mesma entrada
-  produz sempre o mesmo id):
-  - **`hash_md5` — RECOMENDADO.** O id é o MD5 dos **bytes do arquivo**. Três
-    ganhos de uma vez: (1) dois áudios de **conteúdo diferente** com o mesmo
-    nome geram ids diferentes e **ambos entram** — material novo não se perde
-    mais; (2) o **mesmo** arquivo colado em outra pasta gera o **mesmo** id e é
-    reconhecido como repetido, então a retomada após quebra sobrevive até à
-    renomeação da pasta de origem; (3) id seguro por construção — 32 caracteres
-    hexadecimais, sem espaço, acento ou o `|` que quebraria a linha do CSV.
-  - **`nome_original`**: o id é o nome sem extensão. Legível, mas colide entre
-    lotes — dois lotes com `entrevista.flac` disputam o mesmo id e o segundo é
-    barrado **mesmo tendo conteúdo diferente**.
-- **Limitação do modo hash**: ele detecta **arquivo idêntico**, não "mesmo
-  conteúdo sonoro". O mesmo áudio reexportado, com metadado diferente ou
-  convertido de formato, gera hash diferente e **passa como novo**.
-- **Por que não hash de metadados** (timestamp, tamanho): timestamp **não
-  sobrevive** a cópia, download, extração de zip, sincronização de nuvem ou
-  transferência para o servidor. O mesmo áudio chegaria à AWS com id diferente,
-  garantindo duplicata em todo transporte — que é justamente o fluxo do projeto.
-- **Custo do hash**: medido em 0,003% de uma rodada em CPU (73 ms para 13,4 MB),
-  projetado em ~0,03% em GPU. É I/O de disco, não computação de modelo, então
-  não acelera na GPU — mas parte de um patamar irrelevante.
-- **Nomes repetidos** em pastas diferentes ganham sufixo `_002`, `_003`, na ordem
-  alfabética do caminho relativo — **apenas no modo `nome_original`**. No modo
-  hash não há desempate: dois arquivos de mesmo nome já se distinguem pelo
-  conteúdo, e se o conteúdo for igual são o mesmo áudio e devem mesmo colidir.
-- **Não move** o que já está em `arquivos/audios/{id}/` (guarda 1) nem o que já
-  consta de `dataset/concluidos.csv` (guarda 2). O arquivo fica parado na
-  `input/`, nomeado no log, com a guarda que o barrou e a contagem no rodapé.
-- Arquivo de formato não aceito é **ignorado com aviso e contagem**, e não sai
-  do lugar.
-- Grava a procedência de cada áudio movido em `dataset/nomeacao.csv` (separador
-  `|`, **append puro**, nos dois modos). É a origem da coluna `nome_original` do
-  `dataset.csv`.
+- **Id**: per `NOMEACAO['modo']`, always **deterministic** (the same input
+  always produces the same id):
+  - **`hash_md5` — RECOMMENDED.** The id is the MD5 of the **file's bytes**.
+    Three gains at once: (1) two audio files with **different content** and
+    the same name generate different ids and **both get in** — new material
+    is no longer lost; (2) the **same** file pasted into another folder
+    generates the **same** id and is recognized as a repeat, so resuming
+    after a break survives until the source folder is renamed; (3) a safe id
+    by construction — 32 hexadecimal characters, with no space, accent or
+    the `|` that would break the CSV row.
+  - **`nome_original`**: the id is the name without the extension. Readable,
+    but collides between batches — two batches with `entrevista.flac`
+    compete for the same id and the second one is blocked **even if the
+    content is different**.
+- **Hash mode limitation**: it detects an **identical file**, not "the same
+  sound content". The same audio re-exported, with different metadata or
+  converted to another format, generates a different hash and **passes as
+  new**.
+- **Why not hash the metadata** (timestamp, size): the timestamp **does not
+  survive** copying, downloading, zip extraction, cloud sync or transfer to
+  the server. The same audio file would arrive at AWS with a different id,
+  guaranteeing a duplicate on every transfer — which is exactly this
+  project's workflow.
+- **Hash cost**: measured at 0.003% of a CPU run (73 ms for 13.4 MB),
+  projected at ~0.03% on GPU. It is disk I/O, not model computation, so it
+  does not speed up on GPU — but it starts from a negligible baseline.
+- **Repeated names** in different folders get a `_002`, `_003` suffix, in
+  the alphabetical order of the relative path — **only in `nome_original`
+  mode**. In hash mode there is no tie-break: two files with the same name
+  are already distinguished by content, and if the content is the same they
+  are the same audio and should collide.
+- **Does not move** what is already in `arquivos/audios/{id}/` (guard 1) or
+  what is already listed in `dataset/concluidos.csv` (guard 2). The file
+  stays put in `input/`, named in the log, with the guard that blocked it
+  and the count in the footer.
+- A file with an unaccepted format is **ignored with a warning and a
+  count**, and it does not move.
+- Records the provenance of each moved audio file in `dataset/nomeacao.csv`
+  (`|` separator, **pure append**, in both modes). This is the source of the
+  `nome_original` column in `dataset.csv`.
 
-**A pasta `arquivos/input/` é esvaziada a cada execução — cole sempre uma cópia.**
+**The `arquivos/input/` folder is emptied on every run — always paste a
+copy.**
 
-### M02 — Criar diretórios *(obrigatório)*
-Cria `arquivos/temp/{audio_id}/` com todas as subpastas numeradas e **converte** o
-áudio de entrada para **WAV** em `01-arquivos_originais/`, preservando sample rate,
-canais e profundidade de bits do original (24 bits viram `pcm_s24le`, não são
-truncados). WAV é o formato interno da pipeline: daí em diante o formato de
-entrada não circula mais, o que permite aceitar formatos que o SoX não lê
-(`m4a`, `aac`, `wma`). Também garante a existência de `dataset/audio_dataset/`,
-`dataset/historico_dataset/` e `dataset/log/`.
+### M02 — Create directories *(required)*
+Creates `arquivos/temp/{audio_id}/` with all the numbered subfolders and
+**converts** the input audio to **WAV** in `01-arquivos_originais/`,
+preserving the original's sample rate, channels and bit depth (24 bits
+become `pcm_s24le`, not truncated). WAV is the pipeline's internal format:
+from this point on the input format no longer circulates, which allows
+accepting formats that SoX cannot read (`m4a`, `aac`, `wma`). It also
+ensures the existence of `dataset/audio_dataset/`,
+`dataset/historico_dataset/` and `dataset/log/`.
 
-### M04 — Segmentação *(condicional)*
-Quebra o áudio longo em segmentos curtos de fala. Modo definido por
+### M04 — Segmentation *(conditional)*
+Breaks the long audio file into short speech segments. Mode defined by
 `MASTER['segmentacao']`:
-- **`'vad'`** (padrão): usa **Silero-VAD** para detectar fala/silêncio e cortar em
-  pausas naturais. Parâmetros em `SEGMENTADOR_AUDIO_VAD` (threshold de voz, durações
-  mín./máx. de segmento, padding nos cortes). Se nenhum segmento válido é encontrado,
-  o áudio é **descartado**.
-- **`''`**: pula (áudio já vem segmentado).
+- **`'vad'`** (default): uses **Silero-VAD** to detect speech/silence and
+  cut at natural pauses. Parameters in `SEGMENTADOR_AUDIO_VAD` (voice
+  threshold, min/max segment durations, padding on the cuts). If no valid
+  segment is found, the audio file is **discarded**.
+- **`''`**: skips (audio already comes segmented).
 
-Saída: segmentos em `02-segmentos_originais/`.
+Output: segments in `02-segmentos_originais/`.
 
-### M05 — Conversão 16 kHz *(obrigatório)*
-Converte cada segmento para **16 kHz mono**, formato esperado pelos modelos de IA a
-jusante. Saída em `03-segments_16khz/`.
+### M05 — 16 kHz conversion *(required)*
+Converts each segment to **16 kHz mono**, the format expected by the
+downstream AI models. Output in `03-segments_16khz/`.
 
-### M06 — Filtro MOS *(condicional — `mos_filter`)*
-Avalia a qualidade percebida de cada segmento com o modelo **SQUIM** (MOS, STOI,
-SI-SDR). Classifica em `alta`/`media`/`baixa` segundo `MOS_FILTER['thresholds']` e
-**descarta** segmentos abaixo de `min_threshold`. Essa classificação também decide
-o que o denoiser (M12) processa.
+### M06 — MOS filter *(conditional — `mos_filter`)*
+Evaluates the perceived quality of each segment with the **SQUIM** model
+(MOS, STOI, SI-SDR). Classifies as `alta`/`media`/`baixa` according to
+`MOS_FILTER['thresholds']` and **discards** segments below `min_threshold`.
+This classification also decides what the denoiser (M12) processes.
 
-### M07 — Detecção de overlap *(condicional — `overlap`)*
-Usa **pyannote** (`speaker-diarization-3.1`) para detectar sobreposição de locutores
-(duas pessoas falando ao mesmo tempo). Segmentos com overlap recebem flag para serem
-filtrados — áudio de treino TTS/STT deve ter um único falante por segmento.
+### M07 — Overlap detection *(conditional — `overlap`)*
+Uses **pyannote** (`speaker-diarization-3.1`) to detect speaker overlap (two
+people talking at the same time). Segments with overlap are flagged to be
+filtered out — TTS/STT training audio must have a single speaker per
+segment.
 
-### M08 — Transcrição Whisper *(condicional — `transcricao_whisper`)*
-Transcreve cada segmento com **`freds0/distil-whisper-large-v3-ptbr`**. Campo
-`stt_whisper`.
+### M08 — Whisper transcription *(conditional — `transcricao_whisper`)*
+Transcribes each segment with **`freds0/distil-whisper-large-v3-ptbr`**.
+Field `stt_whisper`.
 
-### M09 — Transcrição Wav2Vec2 *(condicional — `transcricao_wav2vec`)*
-Transcreve com **`lgris/wav2vec2-large-xlsr-open-brazilian-portuguese`**. Campo
-`stt_wav2vec`. Ter **duas transcrições independentes** permite validar a qualidade
-por concordância (M11).
+### M09 — Wav2Vec2 transcription *(conditional — `transcricao_wav2vec`)*
+Transcribes with
+**`lgris/wav2vec2-large-xlsr-open-brazilian-portuguese`**. Field
+`stt_wav2vec`. Having **two independent transcriptions** allows quality to
+be validated by agreement (M11).
 
-### M10 — Normalização de texto *(obrigatório)*
-Normaliza as transcrições segundo `TEXT_NORMALIZER`: remove
-pontuação que afeta dicção e, opcionalmente, acentuação gráfica. Produz os campos
-`*_normalizado` usados apenas para comparação.
+### M10 — Text normalization *(required)*
+Normalizes the transcriptions according to `TEXT_NORMALIZER`: removes
+punctuation that affects diction and, optionally, diacritics. Produces the
+`*_normalizado` fields used only for comparison.
 
-### M11 — Validação de similaridade *(obrigatório)*
-Compara as duas transcrições normalizadas entre si (Whisper × Wav2Vec) calculando
-**sempre as três métricas** (`SIMILARITY_VALIDATOR`), cada uma na sua convenção:
+### M11 — Similarity validation *(required)*
+Compares the two normalized transcriptions against each other (Whisper ×
+Wav2Vec), always calculating **all three metrics**
+(`SIMILARITY_VALIDATOR`), each in its own convention:
 
-| Métrica | O que mede | Direção | Passa se | Limiar |
+| Metric | What it measures | Direction | Passes if | Threshold |
 |---|---|---|---|---|
-| `wer` | taxa de erro por **palavra** (sem teto superior) | 0 = perfeito | `<=` | `limiar_wer` (0.35) |
-| `cer` | taxa de erro por **caractere** | 0 = perfeito | `<=` | `limiar_cer` (0.15) |
-| `levenshtein_norm` | similaridade normalizada 0–1 | 1 = idêntico | `>=` | `limiar_levenshtein_norm` (0.85) |
+| `wer` | word **error** rate (no upper bound) | 0 = perfect | `<=` | `limiar_wer` (0.35) |
+| `cer` | **character** error rate | 0 = perfect | `<=` | `limiar_cer` (0.15) |
+| `levenshtein_norm` | normalized similarity 0-1 | 1 = identical | `>=` | `limiar_levenshtein_norm` (0.85) |
 
-O segmento só é aprovado se passar nos **três** limiares — alta divergência entre dois
-STTs indica transcrição ruim ou áudio problemático. Cada reprovação é registrada no log
-com a métrica que reprovou e o seu valor. As duas transcrições são obrigatórias: sem uma
-delas o segmento não é elegível. Campos `sim_whisper_wav2vec_wer`,
+The segment is only approved if it passes all **three** thresholds — high
+divergence between the two STTs indicates a bad transcription or
+problematic audio. Every failure is logged with the metric that failed and
+its value. Both transcriptions are required: without either one the segment
+is not eligible. Fields `sim_whisper_wav2vec_wer`,
 `sim_whisper_wav2vec_cer`, `sim_whisper_wav2vec_levenshtein_norm`,
 `status_similaridade`.
 
-### M12 — Denoiser *(condicional — `Denoiser`)*
-Aplica **DeepFilterNet3** para remover ruído. Processa apenas as faixas de qualidade
-listadas em `DEEPFILTERNET_DENOISER['mos_quality_filter']` (ex.: só `media`),
-preservando os originais. Saída em `10-denoiser/`.
+### M12 — Denoiser *(conditional — `Denoiser`)*
+Applies **DeepFilterNet3** to remove noise. Processes only the quality
+tiers listed in `DEEPFILTERNET_DENOISER['mos_quality_filter']` (e.g., only
+`media`), preserving the originals. Output in `10-denoiser/`.
 
-### M13 — Normalização de áudio (SoX) *(obrigatório)*
-Padroniza o áudio final com **SoX**. **Todas as características da saída vêm de
-`SOX_NORMALIZER`, no [config.py](config.py)** — nenhuma é fixa no código:
-`sample_rate`, `bit_depth`, `channels`, `output_format`, `normalize_method`,
-`target_level_db`, além da remoção de silêncio nas pontas. Cada campo está
-comentado no arquivo, com as opções aceitas e o efeito de cada uma. Saída em
-`11-normalizador_audio/`.
+### M13 — Audio normalization (SoX) *(required)*
+Standardizes the final audio with **SoX**. **All output characteristics
+come from `SOX_NORMALIZER`, in [config.py](config.py)** — none are
+hardcoded: `sample_rate`, `bit_depth`, `channels`, `output_format`,
+`normalize_method`, `target_level_db`, plus silence trimming at the edges.
+Each field is commented in the file, with the accepted options and the
+effect of each one. Output in `11-normalizador_audio/`.
 
-### M14 — Metadados *(obrigatório)*
-Converte o JSON de acompanhamento em linhas do **`dataset/dataset.csv`** (separador
-`|`). Garantias importantes:
-- Valida 1:1 entre segmentos do JSON e arquivos físicos em `audio_dataset/`.
-- Escrita **append puro**: as linhas do lote são acrescentadas ao CSV (que é criado
-  se ainda não existir). Não há reescrita nem truncamento. Quando o lote traz uma
-  coluna que o cabeçalho já gravado não tem, o cabeçalho existente prevalece e os
-  campos descartados são avisados nominalmente.
-- A deduplicação entre execuções é feita pelo **`dataset/concluidos.csv`**: o
-  `main.py` barra na entrada o áudio cujo id já conste dele.
-- Copia o JSON para `historico_dataset/{audio_id}.json`. Isso é **backup**, não
-  deduplicação: permite reconstruir o dataset sem rodar os modelos de novo, e é
-  a fonte da duração aprovada da rodada.
-- **Registra o áudio em `dataset/concluidos.csv` como último passo**, depois de
-  os segmentos estarem em `audio_dataset/` e as linhas no `dataset.csv`. Áudio
-  que quebrou no meio não fica registrado e **por isso pode ser reprocessado**.
+### M14 — Metadata *(required)*
+Converts the tracking JSON into rows of **`dataset/dataset.csv`** (`|`
+separator). Important guarantees:
+- Validates 1:1 between JSON segments and physical files in
+  `audio_dataset/`.
+- **Pure append** write: the batch's rows are appended to the CSV (which is
+  created if it does not yet exist). There is no rewriting or truncation.
+  When the batch brings a column that the already-written header does not
+  have, the existing header prevails and the discarded fields are warned
+  about by name.
+- Deduplication across runs is done via **`dataset/concluidos.csv`**:
+  `main.py` blocks, at the entry point, any audio file whose id is already
+  in it.
+- Copies the JSON to `historico_dataset/{audio_id}.json`. This is a
+  **backup**, not deduplication: it allows the dataset to be rebuilt
+  without rerunning the models, and it is the source of the run's approved
+  duration.
+- **Registers the audio file in `dataset/concluidos.csv` as the last
+  step**, after the segments are in `audio_dataset/` and the rows are in
+  `dataset.csv`. An audio file that broke midway is not registered and
+  **can therefore be reprocessed**.
 
-### M15 — Cleanup *(condicional — `cleanup`)*
-Remove pastas temporárias e/ou de entrada conforme `MASTER['cleanup']`:
-`'all'` (temp + entrada), `'input'`, `'temp'` ou `'none'`.
+### M15 — Cleanup *(conditional — `cleanup`)*
+Removes temporary and/or input folders according to `MASTER['cleanup']`:
+`'all'` (temp + input), `'input'`, `'temp'` or `'none'`.
 
-> **Cuidado com o nome:** aqui `'input'` significa **`arquivos/audios/{audio_id}/`**,
-> a pasta de trabalho do áudio — **não** `arquivos/input/`, onde você cola o material.
-> A pasta `arquivos/input/` nunca é apagada pelo M15.
+> **Careful with the name:** here `'input'` means
+> **`arquivos/audios/{audio_id}/`**, the audio's working folder — **not**
+> `arquivos/input/`, where you paste the material. The `arquivos/input/`
+> folder is never deleted by M15.
 
-Ao final, o `main.py` grava em `dataset/processamento_metadados.csv` um registro com
-duração total, contagem de áudios (processados/pulados/erros) e o **tempo gasto em
-cada módulo** (absoluto e percentual).
+At the end, `main.py` writes a record to
+`dataset/processamento_metadados.csv` with the total duration, audio count
+(processed/skipped/errors) and the **time spent in each module** (absolute
+and percentage).
 
 ---
 
-## Saídas (o dataset)
+## Outputs (the dataset)
 
-**`dataset/dataset.csv`** — uma linha por segmento aprovado. **Schema fixo de 31
-colunas**, na ordem do cabeçalho:
+**`dataset/dataset.csv`** — one row per approved segment. **Fixed
+31-column schema**, in header order:
 
 ```
 nome_original | nome_processado | nome_arquivo_audio | caminho |
@@ -305,75 +327,78 @@ sox_output_format | sox_normalize_method | sox_target_level_db |
 utilizou_sox | datetime_processado
 ```
 
-**As colunas são sempre estas, qualquer que seja a configuração.** Denoiser
-desligado, SoX que não rodou, módulo pulado: a coluna continua lá, vazia. O que
-varia é o preenchimento, nunca o conjunto de colunas. O schema vive em
-`SCHEMA_DATASET`, no M14.
+**The columns are always these, regardless of configuration.** Denoiser
+off, SoX that did not run, a skipped module: the column stays there, empty.
+What varies is the fill, never the set of columns. The schema lives in
+`SCHEMA_DATASET`, in M14.
 
-As três primeiras colunas identificam a origem, em granularidades diferentes:
+The first three columns identify the source, at different granularities:
 
-| Coluna | Conteúdo | Granularidade |
+| Column | Content | Granularity |
 |---|---|---|
-| `nome_original` | caminho relativo de origem dentro de `arquivos/input/` | do **áudio** (repetido nas n linhas) |
-| `nome_processado` | id do áudio: nome desempatado ou hash | do **áudio** (repetido nas n linhas) |
-| `nome_arquivo_audio` | `{id}_{numeração}.{formato de saída}` | do **segmento** |
+| `nome_original` | relative source path inside `arquivos/input/` | per **audio file** (repeated across n rows) |
+| `nome_processado` | audio id: tie-broken name or hash | per **audio file** (repeated across n rows) |
+| `nome_arquivo_audio` | `{id}_{numbering}.{output format}` | per **segment** |
 
-No modo `nome_original`, as duas primeiras ficam com o mesmo valor de base —
-duplicação esperada, não defeito.
+In `nome_original` mode, the first two end up with the same base value —
+expected duplication, not a defect.
 
-**Valor de ausência:** célula **vazia** — é o que pandas, polars e o `csv` do
-Python leem como nulo sem tratamento nenhum. Exceção para três booleanos (`vad`,
-`utilizou_denoiser`, `utilizou_sox`), onde a ausência vira `False`, que ali
-significa "não usei". `overlap01` **não** é exceção: `False` nele significa "não
-há sobreposição", ou seja, aprovado — carimbá-lo sem o M07 ter rodado falsearia
-o dado.
+**Absence value:** an **empty** cell — it's what pandas, polars and
+Python's `csv` read as null with no extra handling. Exception for three
+booleans (`vad`, `utilizou_denoiser`, `utilizou_sox`), where absence
+becomes `False`, which there means "did not use". `overlap01` is **not**
+an exception: `False` in it means "no overlap", i.e., approved — stamping
+it without M07 having run would falsify the data.
 
-**`datetime_processado`** — momento em que a linha foi escrita, em ISO 8601 com
-fuso e precisão de segundos (`2026-08-04T15:32:07-03:00`). O fuso vem do sistema
-operacional, nunca de constante no código: um servidor em Frankfurt grava
-`+02:00` sozinho.
+**`datetime_processado`** — the moment the row was written, in ISO 8601
+with timezone and second precision (`2026-08-04T15:32:07-03:00`). The
+timezone comes from the operating system, never from a constant in the
+code: a server in Frankfurt writes `+02:00` on its own.
 
-O M14 só **cria** e faz **append**. Se o arquivo já existir com header diferente
-do schema, ele se recusa a gravar e devolve falha — append de 31 campos sob outro
-cabeçalho corromperia o arquivo em silêncio. Para migrar, arquive o CSV antigo.
+M14 only **creates** and does **append**. If the file already exists with
+a header different from the schema, it refuses to write and returns a
+failure — appending 31 fields under a different header would silently
+corrupt the file. To migrate, archive the old CSV.
 
-**`dataset/audio_dataset/{audio_id}/`** — os arquivos de áudio finais
-referenciados pela coluna `caminho`. A extensão é a de
-`SOX_NORMALIZER['output_format']`, e as demais características do arquivo
-(taxa de amostragem, profundidade de bits, canais, normalização de volume)
-saem dos outros campos do mesmo bloco. As colunas `sox_*` do `dataset.csv`
-registram, linha a linha, os valores efetivamente aplicados — é lá que se lê o
-que foi produzido, não em constante do código.
+**`dataset/audio_dataset/{audio_id}/`** — the final audio files referenced
+by the `caminho` column. The extension is the one in
+`SOX_NORMALIZER['output_format']`, and the file's other characteristics
+(sample rate, bit depth, channels, volume normalization) come from the
+other fields in the same block. The `sox_*` columns in `dataset.csv`
+record, row by row, the values actually applied — that's where you read
+what was produced, not in a constant in the code.
 
-**`dataset/nomeacao.csv`** — a procedência de cada áudio
-(`nome_processado | nome_original | datetime_movido`, separador `|`). Escrito pelo
-M00 em **append puro** nos **dois** modos de nomeação, uma linha por áudio movido,
-gravada logo após o move. É dele que sai a coluna `nome_original` do
-`dataset.csv`. Nunca reescreve linha existente. O caminho é declarado em
-`config.CSV_NOMEACAO`.
+**`dataset/nomeacao.csv`** — the provenance of each audio file
+(`nome_processado | nome_original | datetime_movido`, `|` separator).
+Written by M00 in **pure append** in **both** naming modes, one row per
+moved audio file, written right after the move. This is the source of the
+`nome_original` column in `dataset.csv`. It never rewrites an existing
+row. The path is declared in `config.CSV_NOMEACAO`.
 
-**`dataset/concluidos.csv`** — os áudios que **terminaram** a pipeline
-(`nome_processado | nome_original | datetime_concluido`, separador `|`). É a
-**única fonte da deduplicação**. Escrito pelo M14 em **append puro**, como
-último passo de cada áudio: quando a linha aparece, os segmentos já estão em
-`audio_dataset/`, as linhas já estão no `dataset.csv` e o backup do JSON já está
-no histórico. Não existe, em lugar nenhum do projeto, código que apague linha ou
-arquivo daqui — **reprocessar um áudio já concluído é ação manual**: apague a
-linha correspondente com um editor, fora da pipeline. Não há campo de
-configuração para "reprocessar mesmo assim", e isso é decisão: como o
-`dataset.csv` é append puro e nada nele é removido, um botão desses seria um
-botão de gerar duplicata. O caminho é declarado em `config.CSV_CONCLUIDOS`.
+**`dataset/concluidos.csv`** — the audio files that **finished** the
+pipeline (`nome_processado | nome_original | datetime_concluido`, `|`
+separator). It is the **single source of deduplication**. Written by M14
+in **pure append**, as the last step for each audio file: by the time the
+row appears, the segments are already in `audio_dataset/`, the rows are
+already in `dataset.csv` and the JSON backup is already in the history.
+There is no code anywhere in the project that deletes a row or file from
+here — **reprocessing an already-finished audio file is a manual
+action**: delete the corresponding row with an editor, outside the
+pipeline. There is no configuration field for "reprocess anyway", and
+that is a deliberate decision: since `dataset.csv` is pure append and
+nothing in it is ever removed, such a button would be a button for
+generating duplicates. The path is declared in `config.CSV_CONCLUIDOS`.
 
 ---
 
-## Configuração
+## Configuration
 
-Toda a configuração fica em [config.py](config.py). O ponto de partida é o **bloco
-`MASTER`**, que liga/desliga as etapas condicionais:
+All configuration lives in [config.py](config.py). The starting point is
+the **`MASTER` block**, which turns the conditional steps on/off:
 
 ```python
 MASTER = {
-    'segmentacao': 'vad',        # 'vad' | '' (já segmentado)
+    'segmentacao': 'vad',        # 'vad' | '' (already segmented)
     'mos_filter': True,
     'overlap': True,
     'transcricao_whisper': True,
@@ -383,29 +408,30 @@ MASTER = {
 }
 ```
 
-O bloco **`NOMEACAO`** governa a porta de entrada (M00):
+The **`NOMEACAO`** block governs the entry point (M00):
 
 ```python
 NOMEACAO = {
-    'modo': 'nome_original',     # 'hash_md5' (recomendado) | 'nome_original'
+    'modo': 'nome_original',     # 'hash_md5' (recommended) | 'nome_original'
     'formatos_entrada': {'.mp3', '.wav', '.flac', '.m4a', '.ogg', '.aac', '.wma'},
 }
 ```
 
-`formatos_entrada` é a **fonte única** de formato de entrada do projeto:
-`EXTENSOES_AUDIO`, que os módulos importam, é derivada dele.
+`formatos_entrada` is the project's **single source** of input format:
+`EXTENSOES_AUDIO`, which the modules import, is derived from it.
 
-Cada módulo tem seu próprio dicionário de parâmetros (`SEGMENTADOR_AUDIO_VAD`,
-`MOS_FILTER`, `OVERLAP_DETECTOR`, `STT_WHISPER`, `STT_WAV2VEC2`, `TEXT_NORMALIZER`,
-`SIMILARITY_VALIDATOR`, `DEEPFILTERNET_DENOISER`, `SOX_NORMALIZER`) — todos
-extensamente comentados no arquivo.
+Each module has its own parameter dictionary (`SEGMENTADOR_AUDIO_VAD`,
+`MOS_FILTER`, `OVERLAP_DETECTOR`, `STT_WHISPER`, `STT_WAV2VEC2`,
+`TEXT_NORMALIZER`, `SIMILARITY_VALIDATOR`, `DEEPFILTERNET_DENOISER`,
+`SOX_NORMALIZER`) — all extensively commented in the file.
 
-### Modelos de IA
+### AI models
 
-Carregados como **singleton** por [m01_load_models.py](src/m01_load_models.py) (uma
-vez só, reutilizados entre áudios):
+Loaded as a **singleton** by
+[m01_load_models.py](src/m01_load_models.py) (loaded once, reused across
+audio files):
 
-| Etapa | Modelo |
+| Stage | Model |
 |-------|--------|
 | Whisper (M08)   | `freds0/distil-whisper-large-v3-ptbr` |
 | Wav2Vec2 (M09)  | `lgris/wav2vec2-large-xlsr-open-brazilian-portuguese` |
@@ -413,73 +439,81 @@ vez só, reutilizados entre áudios):
 | MOS (M06)       | TorchAudio SQUIM |
 | Denoiser (M12)  | DeepFilterNet3 |
 
-### Variáveis de ambiente (`.env` na raiz do projeto)
+### Environment variables (`.env` at the project root)
 
-- **Token HuggingFace** — necessário para o modelo pyannote (M07).
-- `CUDA_VISIBLE_DEVICES=""` força execução em CPU (carregado antes de importar torch).
+- **HuggingFace token** — required for the pyannote model (M07).
+- `CUDA_VISIBLE_DEVICES=""` forces execution on CPU (loaded before
+  importing torch).
 
 ---
 
-## Como executar
+## How to run
 
-### Pré-requisitos
+### Prerequisites
 
-Montagem do ambiente, versões e verificação: **[INSTALL.md](INSTALL.md)**.
+Environment setup, versions and verification:
+**[INSTALL.md](INSTALL.md)**.
 
-Em resumo: env conda ativado, `ffmpeg`/`ffprobe`/`sox` instalados **pelo
-sistema** (não pelo conda) e `.env` preenchido a partir de
-[.env.example](.env.example) com o token HuggingFace.
+In short: conda env activated, `ffmpeg`/`ffprobe`/`sox` installed **by the
+system** (not by conda) and `.env` filled in from
+[.env.example](.env.example) with the HuggingFace token.
 
-### 1. Ingestão dos áudios
-Cole os áudios em **`arquivos/input/`** — arquivos soltos ou pastas inteiras, em
-quantos níveis de subpasta quiser. O M00 cuida do resto na próxima execução do
-`main.py`: varre, nomeia e move para `arquivos/audios/{audio_id}/{audio_id}.ext`.
+### 1. Audio ingestion
+Paste the audio files into **`arquivos/input/`** — loose files or entire
+folders, at any number of subfolder levels. M00 takes care of the rest on
+the next run of `main.py`: scans, names and moves to
+`arquivos/audios/{audio_id}/{audio_id}.ext`.
 
-> **COLE SEMPRE UMA CÓPIA, NUNCA A ÚNICA CÓPIA DOS ÁUDIOS.** Os arquivos são
-> **movidos**, não copiados: `arquivos/input/` é esvaziada a cada execução e o
-> material sai de lá. Mantenha sempre o original em outro lugar.
+> **ALWAYS PASTE A COPY, NEVER THE ONLY COPY OF THE AUDIO FILES.** The
+> files are **moved**, not copied: `arquivos/input/` is emptied on every
+> run and the material leaves from there. Always keep the original
+> somewhere else.
 
-Quem preferir pode continuar colando direto em
-`arquivos/audios/{audio_id}/{audio_id}.ext` — o M00 não atrapalha o que já está lá.
+If you prefer, you can keep pasting directly into
+`arquivos/audios/{audio_id}/{audio_id}.ext` — M00 does not disturb what is
+already there.
 
-Os áudios de `audiosTestes/` são a matéria-prima dos testes e devem ser sempre
-**copiados** para `arquivos/input/`, nunca movidos.
+The audio files in `audiosTestes/` are the raw material for tests and
+must always be **copied** to `arquivos/input/`, never moved.
 
-### 2. Rodar a pipeline
+### 2. Run the pipeline
 ```bash
 conda activate katube_final
-cd <raiz do projeto>
+cd <project root>
 python main.py
 ```
-O `main.py` processa todos os áudios pendentes em `arquivos/audios/`, pulando os já
-registrados em `dataset/concluidos.csv`.
+`main.py` processes every pending audio file in `arquivos/audios/`,
+skipping those already registered in `dataset/concluidos.csv`.
 
-### 3. Conferir o resultado
+### 3. Check the result
 
-`dataset/sumary_results.py` lê o `dataset.csv` e resume a rodada: duração total
-em horas, contagem de segmentos, duração média, mínima e máxima, e quantos
-segmentos repetidos existem.
+`dataset/sumary_results.py` reads `dataset.csv` and summarizes the run:
+total duration in hours, segment count, average, minimum and maximum
+duration, and how many repeated segments exist.
 
 ---
 
-## Notas de design
+## Design notes
 
-- **Idempotência**: o `dataset/concluidos.csv` permite parar e retomar a
-  qualquer momento sem reprocessar nem duplicar segmentos. A linha nele é o que
-  marca um áudio como concluído, e o `main.py` barra o áudio repetido na
-  entrada, antes de qualquer módulo rodar. Como a linha só é escrita **depois**
-  de tudo estar gravado, o áudio interrompido no meio volta a ser processado
-  inteiro — a retomada não depende de adivinhar onde a rodada parou.
-- **O histórico (`historico_dataset/`) não é deduplicação**: é backup. Os JSONs
-  continuam sendo escritos, e servem para reconstruir o dataset sem rodar os
-  modelos de novo e para somar a duração aprovada da rodada.
-- **Estado dirigido por JSON**: cada módulo enriquece o
-  `*_segments_acompanhamento.json`; o pipeline é, em essência, um enriquecimento
-  progressivo desse documento até o M14 materializá-lo no CSV.
-- **Filtros em cascata**: segmentos são descartados ao longo do caminho (VAD vazio →
-  MOS baixo → overlap → baixa similaridade), de modo que só o material de boa
-  qualidade chega ao dataset final.
-- **Escrita resiliente**: o M14 nunca trunca o CSV — a gravação é **append puro**
-  (ou criação, se o arquivo não existir). O histórico é copiado por último, só
-  depois das linhas efetivadas: se algo falhar no meio, o áudio não fica marcado
-  como concluído.
+- **Idempotency**: `dataset/concluidos.csv` allows stopping and resuming
+  at any time without reprocessing or duplicating segments. The row in it
+  is what marks an audio file as finished, and `main.py` blocks the
+  repeated audio file at the entry point, before any module runs. Since
+  the row is only written **after** everything has been saved, an audio
+  file interrupted midway goes back to being processed in full — resuming
+  does not depend on guessing where the run stopped.
+- **The history (`historico_dataset/`) is not deduplication**: it is a
+  backup. The JSONs keep being written, and they serve to rebuild the
+  dataset without rerunning the models and to sum up the run's approved
+  duration.
+- **JSON-driven state**: each module enriches the
+  `*_segments_acompanhamento.json`; the pipeline is, in essence, a
+  progressive enrichment of this document until M14 materializes it into
+  the CSV.
+- **Cascading filters**: segments are discarded along the way (empty VAD
+  → low MOS → overlap → low similarity), so that only good-quality
+  material reaches the final dataset.
+- **Resilient writing**: M14 never truncates the CSV — the write is
+  **pure append** (or creation, if the file does not exist). The history
+  is copied last, only after the rows are committed: if something fails
+  midway, the audio file is not marked as finished.

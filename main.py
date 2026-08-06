@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-main.py - Orquestrador Principal do Pipeline katube-2026
-Processa audios gerando datasets para TTS/STT
+main.py - Main Orchestrator for the katube-2026 Pipeline
+Processes audio files, generating datasets for TTS/STT
 """
 
 import sys
@@ -14,19 +14,19 @@ from typing import List, Dict, Optional, Set
 from datetime import datetime
 from dotenv import load_dotenv
 
-# Adicionar pasta raiz e src ao path
+# Add root and src folders to the path
 PROJECT_ROOT = Path(__file__).resolve().parent
 SRC_PATH = PROJECT_ROOT / "src"
 sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.insert(0, str(SRC_PATH))
 
-# Carregar .env antes de qualquer import de torch/CUDA
-# CUDA_VISIBLE_DEVICES="" no .env forca CPU nesta maquina
+# Load .env before any torch/CUDA import
+# CUDA_VISIBLE_DEVICES="" in .env forces CPU on this machine
 load_dotenv(PROJECT_ROOT / '.env')
 
 from config import MASTER, EXTENSOES_AUDIO, CSV_CONCLUIDOS
 
-# Importar modulos do pipeline (todos estao em ./src/)
+# Import pipeline modules (all located in ./src/)
 from m00_nomeacao import preparar_entrada
 from m02_diretorios import criar_diretorios
 from m04_segmentador_audio_vad import executar_segmentacao_vad
@@ -44,42 +44,42 @@ from m15_cleanup import executar_cleanup
 
 
 # ==============================================================================
-# CONFIGURACAO DE LOGS
+# LOG CONFIGURATION
 # ==============================================================================
 
 def configurar_logger(audio_id: str) -> logging.Logger:
     """
-    Configura logger para o audio especifico.
+    Configures the logger for the specific audio file.
 
     Args:
-        audio_id: ID do audio
+        audio_id: Audio ID
 
     Returns:
-        Logger configurado
+        Configured logger
     """
-    # Criar pasta de logs
+    # Create logs folder
     pasta_logs = PROJECT_ROOT / "dataset" / "log"
     pasta_logs.mkdir(parents=True, exist_ok=True)
 
-    # Arquivo de log
+    # Log file
     arquivo_log = pasta_logs / f"{audio_id}.log"
 
-    # Configurar logger
+    # Configure logger
     logger = logging.getLogger(f"pipeline_{audio_id}")
     logger.setLevel(logging.INFO)
 
-    # Remover handlers existentes
+    # Remove existing handlers
     logger.handlers.clear()
 
-    # Handler para arquivo
+    # File handler
     file_handler = logging.FileHandler(arquivo_log, encoding='utf-8')
     file_handler.setLevel(logging.INFO)
 
-    # Handler para console
+    # Console handler
     console_handler = logging.StreamHandler()
     console_handler.setLevel(logging.INFO)
 
-    # Formato
+    # Format
     formatter = logging.Formatter(
         '%(asctime)s - %(levelname)s - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S'
@@ -94,18 +94,18 @@ def configurar_logger(audio_id: str) -> logging.Logger:
 
 
 # ==============================================================================
-# FUNCOES AUXILIARES
+# HELPER FUNCTIONS
 # ==============================================================================
 
 def listar_ids_disponiveis() -> List[str]:
     """
-    Lista IDs de audios disponiveis em ./arquivos/audios/.
+    Lists available audio ids in ./arquivos/audios/.
 
-    Cada subpasta deve conter um arquivo de audio com o mesmo nome da pasta
-    (qualquer extensao suportada): arquivos/audios/{audio_id}/{audio_id}.{ext}
+    Each subfolder must contain an audio file with the same name as the
+    folder (any supported extension): arquivos/audios/{audio_id}/{audio_id}.{ext}
 
     Returns:
-        Lista de audio_ids encontrados, ordenada alfabeticamente
+        List of audio_ids found, sorted alphabetically
     """
     pasta_audios = PROJECT_ROOT / "arquivos" / "audios"
 
@@ -117,7 +117,7 @@ def listar_ids_disponiveis() -> List[str]:
         if not subpasta.is_dir():
             continue
         audio_id = subpasta.name
-        # Verifica se existe arquivo de audio com o nome do audio_id
+        # Checks whether an audio file with the audio_id name exists
         tem_audio = any(
             (subpasta / f"{audio_id}{ext}").exists()
             for ext in EXTENSOES_AUDIO
@@ -132,20 +132,21 @@ def listar_ids_disponiveis() -> List[str]:
 
 def carregar_ids_concluidos() -> Optional[Set[str]]:
     """
-    Carrega, UMA vez por rodada, o conjunto de ids ja concluidos.
+    Loads, ONCE per run, the set of already-completed ids.
 
-    A fonte e o CSV dos concluidos (config.CSV_CONCLUIDOS), escrito pelo m14
-    como ultimo passo de cada audio que terminou. Um conjunto em memoria, e
-    nao uma varredura por audio: a consulta fica O(1) mesmo com o arquivo
-    crescendo lote apos lote.
+    The source is the completed-audio CSV (config.CSV_CONCLUIDOS), written
+    by m14 as the last step for each audio file that finished. An
+    in-memory set, not a per-audio scan: the lookup stays O(1) even as the
+    file grows batch after batch.
 
-    Arquivo ausente e legitimo - e a primeira rodada da maquina, e ninguem
-    foi concluido ainda. Devolve conjunto vazio.
+    A missing file is legitimate - it is the machine's first run, and no
+    audio has been completed yet. Returns an empty set.
 
     Returns:
-        O conjunto de ids, ou None se o arquivo existe e NAO PODE SER LIDO.
-        None obriga o chamador a abortar: devolver conjunto vazio nesse caso
-        faria a pipeline reprocessar o dataset inteiro em silencio.
+        The set of ids, or None if the file exists and CANNOT BE READ.
+        None forces the caller to abort: returning an empty set in that
+        case would make the pipeline silently reprocess the entire
+        dataset.
     """
     if not CSV_CONCLUIDOS.exists():
         print(f"CSV dos concluidos ainda nao existe ({CSV_CONCLUIDOS}) - "
@@ -163,8 +164,8 @@ def carregar_ids_concluidos() -> Optional[Set[str]]:
                 if numero == 1:
                     if texto == CSV_CONCLUIDOS_HEADER:
                         continue
-                    # Header inesperado nao pode passar batido: ou o arquivo
-                    # e de outro formato, ou perdeu a primeira linha
+                    # An unexpected header cannot pass unnoticed: either the
+                    # file is in another format, or it lost its first line
                     print(f"AVISO: primeira linha de {CSV_CONCLUIDOS} nao e o "
                           f"header esperado ({CSV_CONCLUIDOS_HEADER!r}) - "
                           f"tratada como dado")
@@ -189,22 +190,24 @@ def carregar_ids_concluidos() -> Optional[Set[str]]:
 
 def calcular_duracao_audios_aprovados(ids_processados: List[str]) -> float:
     """
-    Calcula duracao total dos audios aprovados APENAS dos IDs fornecidos.
+    Calculates the total duration of approved audio files ONLY for the
+    given IDs.
 
-    LE OS JSONS DE dataset/historico_dataset/. Esse historico deixou de ser
-    o mecanismo de deduplicacao (que hoje e o CSV dos concluidos), mas
-    CONTINUA SENDO ESCRITO pelo m14 - e daqui que sai a coluna
-    `duracao_audios_aprovados_segundos` do processamento_metadados.csv, alem
-    de servir de backup para reconstruir o dataset sem rodar os modelos de
-    novo. "Tirar a deduplicacao do historico" NAO e "parar de escrever os
-    JSONs": sem eles, esta conta devolve 0,00 em silencio, porque arquivo
-    ausente cai no `if` abaixo e e ignorado.
+    READS THE JSONS FROM dataset/historico_dataset/. This history stopped
+    being the deduplication mechanism (which today is the completed-audio
+    CSV), but it CONTINUES TO BE WRITTEN by m14 - this is where the
+    `duracao_audios_aprovados_segundos` column of
+    processamento_metadados.csv comes from, besides serving as a backup to
+    rebuild the dataset without rerunning the models. "Removing
+    deduplication from the history" does NOT mean "stop writing the
+    JSONs": without them, this count silently returns 0.00, because a
+    missing file falls into the `if` below and is ignored.
 
     Args:
-        ids_processados: Lista de IDs processados NESTA EXECUCAO
+        ids_processados: List of IDs processed IN THIS RUN
 
     Returns:
-        Duracao total em segundos
+        Total duration in seconds
     """
     duracao_total = 0.0
 
@@ -216,15 +219,15 @@ def calcular_duracao_audios_aprovados(ids_processados: List[str]) -> float:
                 with open(historico_path, 'r', encoding='utf-8') as f:
                     dados = json.load(f)
 
-                # Somar apenas duracoes validas (nao null)
+                # Sum only valid (non-null) durations
                 for metadados in dados.values():
                     duracao = metadados.get('duracao')
                     if duracao is not None:
                         duracao_total += duracao
 
             except Exception as e:
-                # Historico existe mas nao pode ser lido: nao invalida o
-                # dataset ja gravado, mas nao pode sumir do relatorio
+                # History exists but cannot be read: it does not invalidate
+                # the already-saved dataset, but it cannot vanish from the report
                 print(f"AVISO: falha ao ler historico de '{audio_id}' "
                       f"({historico_path}): {e}")
                 print("       Duracao deste audio ficou de fora do total")
@@ -234,10 +237,10 @@ def calcular_duracao_audios_aprovados(ids_processados: List[str]) -> float:
 
 def obter_proximo_id_csv() -> int:
     """
-    Obtem o proximo ID sequencial para o CSV
-    
+    Gets the next sequential ID for the CSV
+
     Returns:
-        Proximo ID disponivel (1 se arquivo nao existe)
+        Next available ID (1 if the file does not exist)
     """
     csv_path = PROJECT_ROOT / "dataset" / "processamento_metadados.csv"
     
@@ -250,8 +253,8 @@ def obter_proximo_id_csv() -> int:
             ids = [int(row['id']) for row in reader if row['id'].isdigit()]
             return max(ids) + 1 if ids else 1
     except Exception as e:
-        # CSV existe mas nao pode ser lido: voltar a 1 colide com ids ja
-        # gravados, entao o aviso precisa aparecer
+        # CSV exists but cannot be read: going back to 1 collides with ids
+        # already saved, so the warning needs to show up
         print(f"AVISO: falha ao ler {csv_path}: {e}")
         print("       Proximo id do CSV de metricas volta a 1 - risco de id repetido")
         return 1
@@ -267,39 +270,39 @@ def salvar_metadados_csv(
     tempos_modulos: Dict[str, Optional[float]]
 ):
     """
-    Salva metadados do processamento em CSV (modo APPEND)
-    APENAS com dados da iteracao atual
-    
+    Saves processing metadata to CSV (APPEND mode)
+    ONLY with data from the current iteration
+
     Args:
-        duracao_total: Duracao total do processamento em segundos
-        total_audios: Total de audios encontrados NESTA EXECUCAO
-        processados: Audios processados com sucesso NESTA EXECUCAO
-        pulados: Audios pulados NESTA EXECUCAO
-        erros: Audios com erro NESTA EXECUCAO
-        duracao_audios_aprovados: Duracao total dos audios aprovados NESTA EXECUCAO
-        tempos_modulos: Dicionario com tempos de cada modulo NESTA EXECUCAO
+        duracao_total: Total processing duration in seconds
+        total_audios: Total audio files found IN THIS RUN
+        processados: Audio files processed successfully IN THIS RUN
+        pulados: Audio files skipped IN THIS RUN
+        erros: Audio files with errors IN THIS RUN
+        duracao_audios_aprovados: Total duration of approved audio files IN THIS RUN
+        tempos_modulos: Dictionary with the time for each module IN THIS RUN
     """
     csv_path = PROJECT_ROOT / "dataset" / "processamento_metadados.csv"
     csv_path.parent.mkdir(parents=True, exist_ok=True)
     
-    # Verificar se arquivo existe para criar header
+    # Check whether the file exists, to create the header
     arquivo_existe = csv_path.exists()
-    
-    # Obter proximo ID
+
+    # Get next ID
     registro_id = obter_proximo_id_csv()
-    
-    # Data/hora fim
+
+    # End date/time
     data_hora_fim = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    
-    # Calcular percentuais
+
+    # Calculate percentages
     percentuais = {}
     for modulo, tempo in tempos_modulos.items():
         if tempo is not None and duracao_total > 0:
             percentuais[modulo] = round((tempo / duracao_total) * 100, 1)
         else:
             percentuais[modulo] = None
-    
-    # Preparar linha de dados
+
+    # Prepare data row
     linha = {
         'id': registro_id,
         'data_hora_fim': data_hora_fim,
@@ -366,11 +369,11 @@ def salvar_metadados_csv(
     # Headers
     fieldnames = list(linha.keys())
     
-    # Escrever em modo APPEND
+    # Write in APPEND mode
     with open(csv_path, 'a', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter='|')
-        
-        # Escrever header apenas se arquivo nao existe
+
+        # Write header only if the file does not exist
         if not arquivo_existe:
             writer.writeheader()
         
@@ -381,20 +384,20 @@ def salvar_metadados_csv(
 
 
 # ==============================================================================
-# PIPELINE DE PROCESSAMENTO
+# PROCESSING PIPELINE
 # ==============================================================================
 
 def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dict[str, Optional[float]]) -> bool:
     """
-    Executa pipeline completa para um audio.
+    Runs the full pipeline for one audio file.
 
     Args:
-        audio_id: ID do audio a processar
-        logger: Logger configurado
-        tempos_modulos: Dicionario para armazenar tempos de execucao
+        audio_id: ID of the audio file to process
+        logger: Configured logger
+        tempos_modulos: Dictionary to store execution times
 
     Returns:
-        True se sucesso, False se erro
+        True on success, False on error
     """
     logger.info("="*80)
     logger.info(f"INICIANDO PIPELINE PARA AUDIO: {audio_id}")
@@ -402,12 +405,13 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
 
     try:
         # ======================================================================
-        # M02 - CRIAR DIRETORIOS (OBRIGATORIO)
+        # M02 - CREATE DIRECTORIES (REQUIRED)
         # ======================================================================
         logger.info("[M02] Criando estrutura de diretorios...")
         inicio = time.time()
-        # As specs vem da FONTE, sondada antes da conversao para WAV. Sao a
-        # unica memoria de onde o audio veio: depois daqui so circula WAV.
+        # The specs come from the SOURCE, probed before the conversion to
+        # WAV. They are the only memory of where the audio came from: from
+        # here on only WAV circulates.
         specs_origem = criar_diretorios(audio_id)
         tempos_modulos['m02'] = time.time() - inicio
         if specs_origem is None:
@@ -416,7 +420,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         logger.info(f"[M02] Concluido ({tempos_modulos['m02']:.2f}s)")
 
         # ======================================================================
-        # M04 - SEGMENTACAO (CONDICIONAL)
+        # M04 - SEGMENTATION (CONDITIONAL)
         # ======================================================================
         modo_segmentacao = MASTER.get('segmentacao', '')
 
@@ -438,7 +442,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
             return False
 
         # ======================================================================
-        # M05 - CONVERSAO 16KHZ (OBRIGATORIO)
+        # M05 - 16KHZ CONVERSION (REQUIRED)
         # ======================================================================
         logger.info("[M05] Convertendo para 16kHz mono...")
         inicio = time.time()
@@ -450,7 +454,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         logger.info(f"[M05] Concluido ({tempos_modulos['m05']:.2f}s)")
 
         # ======================================================================
-        # M06 - FILTRO MOS (CONDICIONAL)
+        # M06 - MOS FILTER (CONDITIONAL)
         # ======================================================================
         if MASTER.get('mos_filter', False):
             logger.info("[M06] Aplicando filtro MOS...")
@@ -465,7 +469,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
             logger.info("[M06] Pulando (desabilitado no MASTER)")
 
         # ======================================================================
-        # M07 - DETECCAO OVERLAP (CONDICIONAL)
+        # M07 - OVERLAP DETECTION (CONDITIONAL)
         # ======================================================================
         if MASTER.get('overlap', False):
             logger.info("[M07] Detectando overlap de locutores...")
@@ -480,7 +484,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
             logger.info("[M07] Pulando (desabilitado no MASTER)")
 
         # ======================================================================
-        # M08 - TRANSCRICAO WHISPER (CONDICIONAL)
+        # M08 - WHISPER TRANSCRIPTION (CONDITIONAL)
         # ======================================================================
         if MASTER.get('transcricao_whisper', False):
             logger.info("[M08] Transcrevendo com Whisper...")
@@ -495,7 +499,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
             logger.info("[M08] Pulando (desabilitado no MASTER)")
 
         # ======================================================================
-        # M09 - TRANSCRICAO WAV2VEC (CONDICIONAL)
+        # M09 - WAV2VEC TRANSCRIPTION (CONDITIONAL)
         # ======================================================================
         if MASTER.get('transcricao_wav2vec', False):
             logger.info("[M09] Transcrevendo com Wav2Vec...")
@@ -510,7 +514,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
             logger.info("[M09] Pulando (desabilitado no MASTER)")
 
         # ======================================================================
-        # M10 - NORMALIZACAO TEXTO (OBRIGATORIO)
+        # M10 - TEXT NORMALIZATION (REQUIRED)
         # ======================================================================
         logger.info("[M10] Normalizando textos...")
         inicio = time.time()
@@ -522,7 +526,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         logger.info(f"[M10] Concluido ({tempos_modulos['m10']:.2f}s)")
 
         # ======================================================================
-        # M11 - VALIDACAO SIMILARIDADE (OBRIGATORIO)
+        # M11 - SIMILARITY VALIDATION (REQUIRED)
         # ======================================================================
         logger.info("[M11] Validando similaridade (WER, CER, Levenshtein normalizado)...")
         inicio = time.time()
@@ -534,7 +538,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         logger.info(f"[M11] Concluido ({tempos_modulos['m11']:.2f}s)")
 
         # ======================================================================
-        # M12 - DENOISER (CONDICIONAL)
+        # M12 - DENOISER (CONDITIONAL)
         # ======================================================================
         if MASTER.get('Denoiser', False):
             logger.info("[M12] Aplicando DeepFilterNet3...")
@@ -549,7 +553,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
             logger.info("[M12] Pulando (desabilitado no MASTER)")
 
         # ======================================================================
-        # M13 - NORMALIZACAO AUDIO (OBRIGATORIO)
+        # M13 - AUDIO NORMALIZATION (REQUIRED)
         # ======================================================================
         logger.info("[M13] Normalizando audios com SoX...")
         inicio = time.time()
@@ -561,7 +565,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         logger.info(f"[M13] Concluido ({tempos_modulos['m13']:.2f}s)")
 
         # ======================================================================
-        # M14 - METADADOS (OBRIGATORIO)
+        # M14 - METADATA (REQUIRED)
         # ======================================================================
         logger.info("[M14] Gerando metadados CSV...")
         inicio = time.time()
@@ -584,7 +588,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
         )
 
         # ======================================================================
-        # M15 - CLEANUP (CONDICIONAL)
+        # M15 - CLEANUP (CONDITIONAL)
         # ======================================================================
         modo_cleanup = MASTER.get('cleanup', 'none')
         if modo_cleanup != 'none':
@@ -592,8 +596,9 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
             inicio = time.time()
             cleanup_ok = executar_cleanup(audio_id)
             tempos_modulos['m15'] = time.time() - inicio
-            # Cleanup e caso especial: o dataset ja esta gravado, entao a
-            # falha aqui e aviso e nao invalida o audio processado
+            # Cleanup is a special case: the dataset is already saved, so a
+            # failure here is a warning and does not invalidate the
+            # processed audio
             if not cleanup_ok:
                 logger.warning("[M15] Cleanup falhou - dataset ja gravado, pipeline segue")
             logger.info(f"[M15] Concluido ({tempos_modulos['m15']:.2f}s)")
@@ -601,7 +606,7 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
             logger.info("[M15] Pulando (cleanup desabilitado)")
 
         # ======================================================================
-        # FINALIZACAO
+        # FINALIZATION
         # ======================================================================
         logger.info("="*80)
         logger.info(f"PIPELINE CONCLUIDA COM SUCESSO PARA: {audio_id}")
@@ -618,12 +623,12 @@ def executar_pipeline(audio_id: str, logger: logging.Logger, tempos_modulos: Dic
 
 
 # ==============================================================================
-# FUNCAO PRINCIPAL
+# MAIN FUNCTION
 # ==============================================================================
 
 def main():
     """
-    Funcao principal do orquestrador
+    Main function of the orchestrator
     """
     print("\n" + "="*80)
     print("KATUBE-2026 PIPELINE ORQUESTRADOR")
@@ -631,12 +636,12 @@ def main():
     print(f"Data/Hora Inicio: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("="*80 + "\n")
     
-    # Marcar inicio do processamento total
+    # Mark the start of the total processing
     inicio_geral = time.time()
 
-    # Deduplicacao: os ids ja concluidos, lidos UMA vez e usados nos dois
-    # pontos de guarda (m00 e o laco abaixo). Erro de leitura ABORTA - com
-    # conjunto vazio, tudo seria reprocessado sem ninguem perceber.
+    # Deduplication: the already-completed ids, read ONCE and used at both
+    # guard points (m00 and the loop below). A read error ABORTS - with an
+    # empty set, everything would be reprocessed without anyone noticing.
     ids_concluidos = carregar_ids_concluidos()
     if ids_concluidos is None:
         print("\nERRO ao ler o CSV dos concluidos - execucao abortada")
@@ -644,15 +649,15 @@ def main():
               "duplicaria o dataset. Corrija o arquivo e rode de novo.")
         return
 
-    # Etapa 00: nomear e mover o material de arquivos/input/ para
-    # arquivos/audios/, que e o que a listagem abaixo varre.
-    # O predicado vai injetado: a regra continua morando so aqui.
+    # Step 00: name and move the material from arquivos/input/ to
+    # arquivos/audios/, which is what the listing below scans.
+    # The predicate is injected: the rule keeps living in only one place.
     if not preparar_entrada(lambda audio_id: audio_id in ids_concluidos):
         print("\nERRO na etapa de nomeacao - execucao abortada")
         print("Nenhum audio foi processado. Verifique as mensagens [M00] acima.")
         return
 
-    # Listar IDs disponiveis
+    # List available IDs
     ids_disponiveis = listar_ids_disponiveis()
 
     if not ids_disponiveis:
@@ -665,16 +670,16 @@ def main():
         print(f"  - {audio_id}")
     print()
 
-    # Contadores DESTA EXECUCAO
+    # Counters FOR THIS RUN
     total_nesta_execucao = 0
     processados_nesta_execucao = 0
     pulados_nesta_execucao = 0
     erros_nesta_execucao = 0
 
-    # Lista de IDs processados COM SUCESSO NESTA EXECUCAO
+    # List of IDs processed SUCCESSFULLY IN THIS RUN
     ids_processados_com_sucesso = []
 
-    # Dicionario para acumular tempos de todos os modulos DESTA EXECUCAO
+    # Dictionary to accumulate times for all modules IN THIS RUN
     tempos_modulos_acumulados = {
         'm02': 0.0, 'm04_vad': None,
         'm05': 0.0, 'm06': None, 'm07': None, 'm08': None, 'm09': None,
@@ -685,11 +690,11 @@ def main():
         print(f"\n[{idx}/{len(ids_disponiveis)}] Processando: {audio_id}")
         print("-"*80)
 
-        # Verificar se ja foi concluido ANTES
+        # Check whether it was already completed BEFORE
         if audio_id in ids_concluidos:
             print(f"Audio {audio_id} ja concluido (consta de {CSV_CONCLUIDOS.name})")
 
-            # Executar cleanup se configurado
+            # Run cleanup if configured
             modo_cleanup = MASTER.get('cleanup', 'none')
             if modo_cleanup in ['all', 'input']:
                 print(f"Executando cleanup (modo: {modo_cleanup})...")
@@ -702,23 +707,23 @@ def main():
             pulados_nesta_execucao += 1
             continue
 
-        # Audio NAO estava concluido - contar NESTA EXECUCAO
+        # Audio file was NOT completed - count IN THIS RUN
         total_nesta_execucao += 1
 
-        # Configurar logger
+        # Configure logger
         logger = configurar_logger(audio_id)
 
-        # Dicionario para tempos deste audio
+        # Dictionary for this audio file's times
         tempos_modulos_audio = {}
 
-        # Executar pipeline
+        # Run the pipeline
         sucesso = executar_pipeline(audio_id, logger, tempos_modulos_audio)
 
         if sucesso:
             processados_nesta_execucao += 1
             ids_processados_com_sucesso.append(audio_id)
 
-            # Acumular tempos APENAS dos processados com sucesso
+            # Accumulate times ONLY for those processed successfully
             for modulo, tempo in tempos_modulos_audio.items():
                 if tempo is not None:
                     if tempos_modulos_acumulados[modulo] is None:
@@ -728,13 +733,13 @@ def main():
             erros_nesta_execucao += 1
             print(f"\nERRO ao processar {audio_id} - verifique o log")
     
-    # Calcular duracao total DESTA EXECUCAO
+    # Calculate the total duration OF THIS RUN
     duracao_total = time.time() - inicio_geral
-    
-    # Calcular duracao dos audios aprovados APENAS DESTA EXECUCAO
+
+    # Calculate the duration of approved audio files ONLY FROM THIS RUN
     duracao_audios_aprovados = calcular_duracao_audios_aprovados(ids_processados_com_sucesso)
-    
-    # Salvar metadados em CSV (APPEND) - APENAS dados DESTA EXECUCAO
+
+    # Save metadata to CSV (APPEND) - ONLY data FROM THIS RUN
     salvar_metadados_csv(
         duracao_total=duracao_total,
         total_audios=total_nesta_execucao,
@@ -745,7 +750,7 @@ def main():
         tempos_modulos=tempos_modulos_acumulados
     )
     
-    # Relatorio final
+    # Final report
     print("\n" + "="*80)
     print("PROCESSAMENTO FINALIZADO")
     print("="*80)
@@ -759,7 +764,7 @@ def main():
 
 
 # ==============================================================================
-# EXECUCAO
+# EXECUTION
 # ==============================================================================
 
 if __name__ == "__main__":

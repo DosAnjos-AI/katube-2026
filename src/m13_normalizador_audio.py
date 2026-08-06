@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Modulo m13_normalizador_audio.py
-Normaliza segmentos de audio usando SoX
-Adiciona campos 'sox_*' e 'utilizou_sox' aos metadados JSON
+Module m13_normalizador_audio.py
+Normalizes audio segments using SoX
+Adds 'sox_*' and 'utilizou_sox' fields to the JSON metadata
 """
 
 import sys
@@ -25,8 +25,8 @@ from config import SOX_NORMALIZER, PROJECT_ROOT
 
 def carregar_json(caminho: Path) -> Optional[Dict]:
     """
-    Carrega arquivo JSON
-    Retorna None se arquivo nao existir
+    Loads a JSON file
+    Returns None if the file does not exist
     """
     if not caminho.exists():
         return None
@@ -44,8 +44,8 @@ def carregar_json(caminho: Path) -> Optional[Dict]:
 
 def salvar_json(dados: Dict, caminho: Path) -> bool:
     """
-    Salva dados em arquivo JSON com atomic write
-    Retorna True se sucesso, False caso contrario
+    Saves data to a JSON file with an atomic write
+    Returns True on success, False otherwise
     """
     try:
         # Criar pasta pai se nao existir
@@ -71,8 +71,8 @@ def salvar_json(dados: Dict, caminho: Path) -> bool:
 
 def verificar_sox_instalado() -> bool:
     """
-    Verifica se SoX esta instalado e acessivel
-    Retorna True se disponivel, False caso contrario
+    Checks whether SoX is installed and accessible
+    Returns True if available, False otherwise
     """
     try:
         resultado = subprocess.run(
@@ -97,9 +97,9 @@ def construir_comando_sox(
     config: Dict
 ) -> list:
     """
-    Constroi comando SoX baseado em parametros do config
-    Sintaxe correta: sox [opcoes_input] input [opcoes_output] output [efeitos]
-    Retorna lista de argumentos para subprocess
+    Builds the SoX command based on config parameters
+    Correct syntax: sox [input_options] input [output_options] output [effects]
+    Returns a list of arguments for subprocess
     """
     comando = ['sox']
     
@@ -144,8 +144,8 @@ def normalizar_audio(
     config: Dict
 ) -> bool:
     """
-    Normaliza audio usando SoX
-    Retorna True se sucesso, False caso contrario
+    Normalizes audio using SoX
+    Returns True on success, False otherwise
     """
     try:
         # Criar pasta de saida se nao existir
@@ -198,15 +198,16 @@ def obter_caminho_input_audio(
     pasta_audios_originais: Path
 ) -> Optional[Path]:
     """
-    Determina caminho de input do audio baseado em 'utilizou_denoiser'
-    Prioriza pasta denoiser se flag=True, senao usa originais
-    Retorna Path se arquivo existe, None caso contrario
-    
+    Determines the audio input path based on 'utilizou_denoiser'
+    Prioritizes the denoiser folder if flag=True, otherwise uses the
+    originals
+    Returns a Path if the file exists, None otherwise
+
     Args:
-        nome_audio: Nome do arquivo de audio
-        metadados: Metadados do segmento
-        pasta_audios_denoiser: Caminho para pasta 10-denoiser
-        pasta_audios_originais: Caminho para pasta 02-segmentos_originais
+        nome_audio: Audio file name
+        metadados: Segment metadata
+        pasta_audios_denoiser: Path to the 10-denoiser folder
+        pasta_audios_originais: Path to the 02-segmentos_originais folder
     """
     usou_denoiser = metadados.get('utilizou_denoiser', False)
     
@@ -224,8 +225,9 @@ def obter_caminho_input_audio(
 
 def renomear_chave_json(nome_original: str, novo_formato: str) -> str:
     """
-    Renomeia chave JSON alterando extensao conforme formato de saida
-    Exemplo: "video_001.flac" + "wav" -> "video_001.wav"
+    Renames the JSON key, changing the extension according to the
+    output format
+    Example: "video_001.flac" + "wav" -> "video_001.wav"
     """
     caminho = Path(nome_original)
     novo_nome = caminho.stem + '.' + novo_formato
@@ -234,9 +236,9 @@ def renomear_chave_json(nome_original: str, novo_formato: str) -> str:
 
 def adicionar_campos_sox(metadados: Dict, config: Dict, processado: bool) -> Dict:
     """
-    Adiciona campos sox_* ao dicionario de metadados
-    Se processado=True, usa valores do config
-    Se processado=False, define todos como null
+    Adds sox_* fields to the metadata dictionary
+    If processado=True, uses config values
+    If processado=False, sets all of them to null
     """
     metadados_atualizados = metadados.copy()
     
@@ -262,8 +264,8 @@ def adicionar_campos_sox(metadados: Dict, config: Dict, processado: bool) -> Dic
 
 def limpar_pasta_vazia(pasta: Path):
     """
-    Remove pasta se estiver vazia (sem arquivos)
-    Utilizado para evitar pastas vazias no dataset
+    Removes the folder if it is empty (no files)
+    Used to avoid empty folders in the dataset
     """
     if not pasta.exists():
         return
@@ -283,15 +285,16 @@ def limpar_pasta_vazia(pasta: Path):
 
 def processar_normalizacao(audio_id: str) -> Optional[Tuple[int, int, int]]:
     """
-    Funcao principal de processamento.
+    Main processing function.
 
     Args:
-        audio_id: ID do audio a processar
+        audio_id: ID of the audio file to process
 
     Returns:
-        Tupla (processados, pulados, falhados), ou None em falha dura
-        (SoX ausente ou JSON de acompanhamento ausente). None distingue
-        a falha do lote legitimamente vazio, que devolve (0, 0, 0).
+        Tuple (processados, pulados, falhados), or None on a hard
+        failure (SoX missing or the tracking JSON missing). None
+        distinguishes the failure from a legitimately empty batch,
+        which returns (0, 0, 0).
     """
     # Definir caminhos baseados no audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"
@@ -432,14 +435,14 @@ def processar_normalizacao(audio_id: str) -> Optional[Tuple[int, int, int]]:
 
 def main(audio_id: str) -> bool:
     """
-    Funcao principal.
+    Main function.
 
     Args:
-        audio_id: ID do audio a processar
+        audio_id: ID of the audio file to process
 
     Returns:
-        True se a normalizacao rodou, False em falha dura (SoX ausente
-        ou JSON de acompanhamento ausente).
+        True if the normalization ran, False on a hard failure (SoX
+        missing or the tracking JSON missing).
     """
     resultado = processar_normalizacao(audio_id)
 

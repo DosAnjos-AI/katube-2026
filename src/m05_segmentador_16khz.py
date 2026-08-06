@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Modulo m05_segmentador_16khz.py
-Converte segmentos de audio para 16kHz mono quando necessario
-Mantem formato original, copia JSON de metadados
+Module m05_segmentador_16khz.py
+Converts audio segments to 16kHz mono when needed
+Keeps the original format, copies the metadata JSON
 """
 
 import sys
@@ -15,29 +15,29 @@ from typing import List, Tuple
 
 
 # ==============================================================================
-# CONFIGURACAO DE CAMINHOS
+# PATH CONFIGURATION
 # ==============================================================================
 
-# Adicionar pasta raiz ao path para importar config
+# Add root folder to the path to import config
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from config import EXTENSOES_AUDIO
 
 # ==============================================================================
-# FUNCOES AUXILIARES
+# HELPER FUNCTIONS
 # ==============================================================================
 
 def obter_sample_rate(caminho_audio: Path) -> int:
     """
-    Obtem o sample rate de um arquivo de audio usando ffprobe
-    
+    Gets the sample rate of an audio file using ffprobe
+
     Args:
-        caminho_audio: Path do arquivo de audio
-        
+        caminho_audio: Path of the audio file
+
     Returns:
-        Sample rate em Hz (ex: 16000, 44100, 48000)
-        Retorna 0 se houver erro
+        Sample rate in Hz (e.g., 16000, 44100, 48000)
+        Returns 0 if there is an error
     """
     try:
         cmd = [
@@ -58,14 +58,14 @@ def obter_sample_rate(caminho_audio: Path) -> int:
 
 def obter_canais(caminho_audio: Path) -> int:
     """
-    Obtem o numero de canais de um arquivo de audio usando ffprobe
-    
+    Gets the number of channels of an audio file using ffprobe
+
     Args:
-        caminho_audio: Path do arquivo de audio
-        
+        caminho_audio: Path of the audio file
+
     Returns:
-        Numero de canais (1=mono, 2=stereo, etc)
-        Retorna 0 se houver erro
+        Number of channels (1=mono, 2=stereo, etc)
+        Returns 0 if there is an error
     """
     try:
         cmd = [
@@ -86,22 +86,22 @@ def obter_canais(caminho_audio: Path) -> int:
 
 def converter_audio_16khz_mono(caminho_origem: Path, caminho_destino: Path) -> bool:
     """
-    Converte audio para 16kHz mono mantendo formato original
-    
+    Converts audio to 16kHz mono, keeping the original format
+
     Args:
-        caminho_origem: Path do arquivo original
-        caminho_destino: Path do arquivo destino
-        
+        caminho_origem: Path of the original file
+        caminho_destino: Path of the destination file
+
     Returns:
-        True se conversao bem-sucedida, False caso contrario
+        True if conversion succeeded, False otherwise
     """
     try:
         cmd = [
             'ffmpeg',
             '-i', str(caminho_origem),
             '-ar', '16000',
-            '-ac', '1',  # Forca conversao para mono
-            '-y',  # Sobrescrever sem perguntar
+            '-ac', '1',  # Force conversion to mono
+            '-y',  # Overwrite without asking
             str(caminho_destino)
         ]
         subprocess.run(cmd, capture_output=True, check=True)
@@ -113,14 +113,14 @@ def converter_audio_16khz_mono(caminho_origem: Path, caminho_destino: Path) -> b
 
 def copiar_audio(caminho_origem: Path, caminho_destino: Path) -> bool:
     """
-    Copia arquivo de audio sem conversao
-    
+    Copies an audio file without conversion
+
     Args:
-        caminho_origem: Path do arquivo original
-        caminho_destino: Path do arquivo destino
-        
+        caminho_origem: Path of the original file
+        caminho_destino: Path of the destination file
+
     Returns:
-        True se copia bem-sucedida, False caso contrario
+        True if the copy succeeded, False otherwise
     """
     try:
         shutil.copy2(caminho_origem, caminho_destino)
@@ -132,15 +132,15 @@ def copiar_audio(caminho_origem: Path, caminho_destino: Path) -> bool:
 
 def processar_audio(caminho_origem: Path, caminho_destino: Path) -> Tuple[bool, str]:
     """
-    Processa um arquivo de audio: converte se necessario ou copia
-    
+    Processes an audio file: converts if necessary, otherwise copies
+
     Args:
-        caminho_origem: Path do arquivo original
-        caminho_destino: Path do arquivo destino
-        
+        caminho_origem: Path of the original file
+        caminho_destino: Path of the destination file
+
     Returns:
-        Tupla (sucesso: bool, acao: str)
-        acao pode ser: 'convertido', 'copiado', 'falhou'
+        Tuple (sucesso: bool, acao: str)
+        acao can be: 'convertido', 'copiado', 'falhou'
     """
     sr_atual = obter_sample_rate(caminho_origem)
     canais_atual = obter_canais(caminho_origem)
@@ -149,24 +149,24 @@ def processar_audio(caminho_origem: Path, caminho_destino: Path) -> Tuple[bool, 
         return False, 'falhou'
     
     if sr_atual == 16000 and canais_atual == 1:
-        # Audio ja esta em 16kHz mono, apenas copiar
+        # Audio file is already 16kHz mono, just copy
         sucesso = copiar_audio(caminho_origem, caminho_destino)
         return sucesso, 'copiado' if sucesso else 'falhou'
     else:
-        # Precisa converter para 16kHz mono
+        # Needs to convert to 16kHz mono
         sucesso = converter_audio_16khz_mono(caminho_origem, caminho_destino)
         return sucesso, 'convertido' if sucesso else 'falhou'
 
 
 def listar_arquivos_audio(pasta: Path) -> List[Path]:
     """
-    Lista todos os arquivos de audio na pasta
-    
+    Lists all audio files in the folder
+
     Args:
-        pasta: Path da pasta para buscar
-        
+        pasta: Path of the folder to search
+
     Returns:
-        Lista de Path dos arquivos de audio encontrados
+        List of Paths of the audio files found
     """
     arquivos = []
     for arquivo in pasta.iterdir():
@@ -177,16 +177,17 @@ def listar_arquivos_audio(pasta: Path) -> List[Path]:
 
 def copiar_json(pasta_origem: Path, pasta_destino: Path, audio_id: str) -> bool:
     """
-    Copia o arquivo JSON de metadados para pasta destino.
-    Cria copia adicional na pasta 00-json_dinamico com nome customizado.
+    Copies the metadata JSON file to the destination folder.
+    Creates an additional copy in the 00-json_dinamico folder with a
+    custom name.
 
     Args:
-        pasta_origem: Path da pasta de origem
-        pasta_destino: Path da pasta de destino
-        audio_id: ID do audio para nomear arquivo de acompanhamento
+        pasta_origem: Path of the source folder
+        pasta_destino: Path of the destination folder
+        audio_id: Audio ID, used to name the tracking file
 
     Returns:
-        True se ambas copias bem-sucedidas, False caso contrario
+        True if both copies succeeded, False otherwise
     """
     try:
         arquivos_json = list(pasta_origem.glob('*.json'))
@@ -199,12 +200,12 @@ def copiar_json(pasta_origem: Path, pasta_destino: Path, audio_id: str) -> bool:
 
         json_origem = arquivos_json[0]
 
-        # Copia 1: pasta 03-segments_16khz com nome original
+        # Copy 1: 03-segments_16khz folder with the original name
         json_destino = pasta_destino / json_origem.name
         shutil.copy2(json_origem, json_destino)
         print(f"JSON copiado: {json_origem.name}")
 
-        # Copia 2: pasta 00-json_dinamico com nome customizado
+        # Copy 2: 00-json_dinamico folder with a custom name
         pasta_json_dinamico = pasta_destino.parent / "00-json_dinamico"
         pasta_json_dinamico.mkdir(parents=True, exist_ok=True)
 
@@ -222,60 +223,60 @@ def copiar_json(pasta_origem: Path, pasta_destino: Path, audio_id: str) -> bool:
 
 
 # ==============================================================================
-# FUNCAO PRINCIPAL
+# MAIN FUNCTION
 # ==============================================================================
 
 def processar_pasta(audio_id: str) -> bool:
     """
-    Funcao principal: processa todos os audios da pasta input.
-    Converte para 16kHz mono quando necessario e copia JSON.
+    Main function: processes all audio files in the input folder.
+    Converts to 16kHz mono when necessary and copies the JSON.
 
     Args:
-        audio_id: ID do audio a processar
+        audio_id: ID of the audio file to process
 
     Returns:
-        True se a saida obrigatoria foi produzida (audios + JSON),
-        False se falta pre-condicao, se o JSON nao pode ser copiado
-        ou se nenhum audio chegou a pasta de destino.
+        True if the required output was produced (audio files + JSON),
+        False if a precondition is missing, if the JSON could not be
+        copied, or if no audio file reached the destination folder.
     """
     print("=" * 70)
     print("INICIANDO CONVERSAO DE AUDIOS PARA 16kHz MONO")
     print("=" * 70)
 
-    # Validar caminhos
+    # Validate paths
     PROJECT_ROOT = Path(__file__).resolve().parent.parent
     pasta_input = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "02-segmentos_originais"
     pasta_output = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "03-segments_16khz"
-    
+
     if not pasta_input.exists():
         print(f"ERRO: Pasta de input nao existe: {pasta_input}")
         return False
 
-    # Criar pasta output se nao existir
+    # Create output folder if it does not exist
     pasta_output.mkdir(parents=True, exist_ok=True)
 
-    # Validar existencia do JSON antes de iniciar
+    # Validate the JSON's existence before starting
     arquivos_json = list(pasta_input.glob('*.json'))
     if not arquivos_json:
         print("ERRO: Nenhum arquivo JSON encontrado na pasta origem")
         print("Processo abortado - JSON e obrigatorio")
         return False
 
-    # Listar arquivos de audio
+    # List audio files
     arquivos_audio = listar_arquivos_audio(pasta_input)
     total_arquivos = len(arquivos_audio)
-    
+
     print(f"\nArquivos encontrados: {total_arquivos}")
     print(f"Pasta origem: {pasta_input}")
     print(f"Pasta destino: {pasta_output}")
     print("-" * 70)
-    
-    # Contadores
+
+    # Counters
     convertidos = 0
     copiados = 0
     falhas = []
-    
-    # Processar cada arquivo
+
+    # Process each file
     print("\nProcessando arquivos...")
     for idx, arquivo_origem in enumerate(arquivos_audio, 1):
         arquivo_destino = pasta_output / arquivo_origem.name
@@ -294,7 +295,7 @@ def processar_pasta(audio_id: str) -> bool:
             falhas.append(arquivo_origem)
             print("FALHOU")
     
-    # Segunda tentativa para arquivos que falharam
+    # Second attempt for files that failed
     if falhas:
         print("\n" + "=" * 70)
         print(f"SEGUNDA TENTATIVA - {len(falhas)} arquivo(s) com falha")
@@ -321,11 +322,11 @@ def processar_pasta(audio_id: str) -> bool:
         
         falhas = falhas_finais
     
-    # Copiar JSON (obrigatorio: sem ele os modulos seguintes nao tem metadados)
+    # Copy JSON (required: without it, the following modules have no metadata)
     print("\n" + "-" * 70)
     json_copiado = copiar_json(pasta_input, pasta_output, audio_id)
 
-    # Relatorio final
+    # Final report
     print("\n" + "=" * 70)
     print("PROCESSAMENTO CONCLUIDO")
     print("=" * 70)
@@ -345,7 +346,7 @@ def processar_pasta(audio_id: str) -> bool:
         print("ERRO: JSON obrigatorio nao foi copiado para a pasta de destino")
         return False
 
-    # Nenhum audio na saida significa que o modulo nao entregou nada
+    # No audio in the output means the module delivered nothing
     if convertidos + copiados == 0:
         print("ERRO: Nenhum audio produzido em 03-segments_16khz")
         return False
@@ -354,11 +355,11 @@ def processar_pasta(audio_id: str) -> bool:
 
 
 # ==============================================================================
-# EXECUCAO
+# EXECUTION
 # ==============================================================================
 
 if __name__ == "__main__":
-    # Execucao direta exige o audio_id como argumento - sem id fixo no codigo
+    # Direct execution requires audio_id as an argument - no fixed id in the code
     if len(sys.argv) != 2:
         print("Uso: python src/m05_segmentador_16khz.py <audio_id>")
         sys.exit(1)

@@ -1,31 +1,32 @@
 #!/usr/bin/env python3
 """
-Modulo m00_nomeacao.py - Porta de entrada da pipeline
+Module m00_nomeacao.py - Pipeline entry point
 
-Roda UMA vez por execucao do main.py, antes de listar os audios. Varre
-`arquivos/input/` recursivamente, resolve um id para cada audio encontrado e
-MOVE o arquivo para `arquivos/audios/{id}/{id}.<formato original>`, que e a
-estrutura que o resto da pipeline consome.
+Runs ONCE per execution of main.py, before listing the audio files. Scans
+`arquivos/input/` recursively, resolves an id for each audio file found and
+MOVES the file to `arquivos/audios/{id}/{id}.<original format>`, which is
+the structure the rest of the pipeline consumes.
 
-Nao converte formato: o arquivo chega ao destino no formato original. A
-conversao para WAV e do m02.
+Does not convert format: the file arrives at the destination in its
+original format. Conversion to WAV belongs to m02.
 
-O id sai de NOMEACAO['modo']: no modo 'hash_md5' e o MD5 dos BYTES do
-arquivo (ver _md5_do_conteudo); no modo 'nome_original' e o nome sem
-extensao, desempatado com _002/_003 quando repete no lote. O desempate
-existe SO no modo 'nome_original' - ver o bloco do id em preparar_entrada.
+The id comes from NOMEACAO['modo']: in 'hash_md5' mode it is the MD5 of the
+file's BYTES (see _md5_do_conteudo); in 'nome_original' mode it is the name
+without the extension, tie-broken with _002/_003 when it repeats in the
+batch. The tie-break exists ONLY in 'nome_original' mode - see the id block
+in preparar_entrada.
 
-Duas guardas barram audio repetido, ambas com log nominal e contagem:
-guarda 1, o audio ja esta em arquivos/audios/{id}/ (retomada apos quebra);
-guarda 2, o id ja consta do CSV dos concluidos (config.CSV_CONCLUIDOS),
-consultado pelo predicado que o main injeta.
+Two guards block a repeated audio file, both with a named log entry and a
+count: guard 1, the audio file is already in arquivos/audios/{id}/ (resume
+after a break); guard 2, the id is already in the completed-audio CSV
+(config.CSV_CONCLUIDOS), checked via the predicate that main injects.
 
-Grava tambem, NOS DOIS MODOS de nomeacao, o CSV auxiliar da procedencia
-(config.CSV_NOMEACAO): e por ele que o m14 preenche a coluna `nome_original`
-do dataset.csv. A escrita e APPEND PURO, uma linha por audio movido, feita
-logo apos o move - ver _registrar_no_csv.
+Also writes, in BOTH naming modes, the auxiliary provenance CSV
+(config.CSV_NOMEACAO): this is what m14 uses to fill the `nome_original`
+column of dataset.csv. The write is PURE APPEND, one row per moved audio
+file, done right after the move - see _registrar_no_csv.
 
-ATENCAO - A PASTA DE INPUT E ESVAZIADA: o arquivo e MOVIDO, nao copiado.
+ATTENTION - THE INPUT FOLDER IS EMPTIED: the file is MOVED, not copied.
 """
 
 import hashlib
@@ -37,30 +38,31 @@ from pathlib import Path
 from typing import Callable
 
 # ==============================================================================
-# CONFIGURACAO DE CAMINHOS
+# PATH CONFIGURATION
 # ==============================================================================
 
-# Adicionar pasta raiz ao path para importar config
+# Add root folder to the path to import config
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from config import CSV_NOMEACAO, NOMEACAO
 
-# Cabecalho do CSV auxiliar, escrito nos DOIS modos de nomeacao
+# Header of the auxiliary CSV, written in BOTH naming modes
 CSV_NOMEACAO_HEADER = 'nome_processado|nome_original|datetime_movido'
 
 
 # ==============================================================================
-# FUNCOES AUXILIARES
+# HELPER FUNCTIONS
 # ==============================================================================
 
 def _nome_valido(nome: str) -> bool:
     """
-    Diz se um nome de arquivo serve como id (nome de pasta e nome de arquivo).
+    Says whether a file name works as an id (folder name and file name).
 
-    Recusa o que quebra o caminho ('', '.', '..', separadores) e o que
-    corromperia uma linha do dataset.csv, que usa '|' como separador.
-    Nome invalido e RECUSADO com log, nunca "consertado" em silencio.
+    Rejects anything that breaks the path ('', '.', '..', separators) and
+    anything that would corrupt a dataset.csv row, which uses '|' as the
+    separator. An invalid name is REJECTED with a log entry, never
+    silently "fixed".
     """
     if not nome or nome in ('.', '..'):
         return False
@@ -69,16 +71,18 @@ def _nome_valido(nome: str) -> bool:
 
 def _mover_seguro(origem: Path, destino: Path) -> bool:
     """
-    Move origem para destino sem jamais deixar arquivo incompleto com o nome
-    final, e sem jamais apagar a origem antes de o destino estar pronto.
+    Moves origem to destino without ever leaving an incomplete file under
+    the final name, and without ever deleting origem before destino is
+    ready.
 
-    O nome final so aparece depois de o conteudo estar completo - e o que
-    permite a guarda 1 confiar num simples exists(). O rename dentro do mesmo
-    sistema de arquivos e atomico; entre sistemas diferentes ele levanta
-    OSError (EXDEV) e o caminho de copia assume.
+    The final name only appears once the content is complete - that is
+    what lets guard 1 rely on a simple exists(). The rename within the
+    same file system is atomic; across different file systems it raises
+    OSError (EXDEV) and the copy path takes over.
 
     Returns:
-        True se o arquivo esta no destino, False se falhou (com log).
+        True if the file is at destino, False if it failed (with a log
+        entry).
     """
     destino.parent.mkdir(parents=True, exist_ok=True)
     parcial = destino.with_name(destino.name + '.parcial')
@@ -87,8 +91,8 @@ def _mover_seguro(origem: Path, destino: Path) -> bool:
         try:
             origem.rename(parcial)
         except OSError:
-            # Sistemas de arquivos diferentes: copia, efetiva o nome final e
-            # so entao apaga a origem
+            # Different file systems: copy, commit the final name and
+            # only then delete the source
             shutil.copy2(origem, parcial)
             os.replace(parcial, destino)
             origem.unlink()
@@ -102,13 +106,14 @@ def _mover_seguro(origem: Path, destino: Path) -> bool:
 
         if parcial.exists():
             if origem.exists():
-                # A origem sobreviveu: o parcial e lixo e pode sair
+                # The source survived: the partial file is garbage and can go
                 try:
                     parcial.unlink()
                 except OSError as e_limpeza:
                     print(f"[M00] ERRO ao remover parcial '{parcial}': {e_limpeza}")
             else:
-                # A origem ja saiu do lugar: o parcial e a UNICA copia do audio
+                # The source has already left its place: the partial file is
+                # the ONLY copy of the audio
                 print(f"[M00] ATENCAO: a origem nao existe mais e o conteudo "
                       f"esta em '{parcial}'. NAO apague esse arquivo - mova-o "
                       f"para '{destino}' na mao antes de rodar de novo.")
@@ -118,19 +123,21 @@ def _mover_seguro(origem: Path, destino: Path) -> bool:
 
 def _md5_do_conteudo(caminho: Path) -> str:
     """
-    MD5 dos BYTES do arquivo, lido em blocos de 1 MB.
+    MD5 of the file's BYTES, read in 1 MB blocks.
 
-    E o id do modo 'hash_md5'. O hash e do CONTEUDO, nunca do nome: e isso
-    que faz dois audios diferentes de mesmo nome entrarem os dois, e faz o
-    mesmo arquivo colado em outra pasta ser reconhecido como repetido.
+    This is the id for 'hash_md5' mode. The hash is of the CONTENT, never
+    the name: that is what makes two different audio files with the same
+    name both get in, and makes the same file pasted into another folder
+    be recognized as a repeat.
 
-    A leitura em blocos mantem o uso de RAM em O(1) - um audio de 1 GB ocupa
-    1 MB de memoria aqui, nao 1 GB.
+    Reading in blocks keeps RAM usage at O(1) - a 1 GB audio file takes up
+    1 MB of memory here, not 1 GB.
 
     Returns:
-        Os 32 caracteres hexadecimais do hash, ou '' se o arquivo nao pode
-        ser lido (com log). String vazia NUNCA vira id: o chamador a trata
-        como erro e nao move o arquivo.
+        The 32 hexadecimal characters of the hash, or '' if the file
+        cannot be read (with a log entry). An empty string NEVER becomes
+        an id: the caller treats it as an error and does not move the
+        file.
     """
     resumo = hashlib.md5()
 
@@ -147,34 +154,35 @@ def _md5_do_conteudo(caminho: Path) -> str:
 
 def _agora_iso() -> str:
     """
-    Momento atual em ISO 8601 com fuso, precisao de segundos.
+    Current moment in ISO 8601 with timezone, second precision.
 
-    O fuso vem do sistema operacional (astimezone sem argumento), NUNCA de
-    constante no codigo: um servidor em Frankfurt tem que gravar '+02:00'
-    sozinho, sem ninguem editar o projeto.
+    The timezone comes from the operating system (astimezone with no
+    argument), NEVER from a constant in the code: a server in Frankfurt
+    has to write '+02:00' on its own, with no one editing the project.
     """
     return datetime.now().astimezone().replace(microsecond=0).isoformat()
 
 
 def _registrar_no_csv(nome_processado: str, nome_original: str) -> bool:
     """
-    Acrescenta UMA linha ao CSV auxiliar, em APPEND PURO.
+    Appends ONE row to the auxiliary CSV, in PURE APPEND.
 
-    Nunca le o arquivo, nunca reescreve linha existente, nunca perde
-    registro. O header so e escrito quando o arquivo nasce.
+    Never reads the file, never rewrites an existing row, never loses a
+    record. The header is only written when the file is born.
 
-    A funcao e chamada logo depois de cada move bem-sucedido, e nao no fim
-    da varredura: se o processo morrer no meio do lote, a procedencia dos
-    audios ja movidos ja esta no disco. Perder essa relacao deixaria audio
-    orfao de origem parado em arquivos/audios/, sem como preencher a coluna
-    `nome_original` do dataset.csv.
+    The function is called right after each successful move, not at the
+    end of the scan: if the process dies mid-batch, the provenance of the
+    audio files already moved is already on disk. Losing this
+    relationship would leave an audio file orphaned of its origin,
+    sitting in arquivos/audios/, with no way to fill the `nome_original`
+    column of dataset.csv.
 
-    A protecao contra linha duplicada NAO mora aqui: mora na guarda 1
-    (exists() em arquivos/audios/{id}/), que barra o audio ja movido antes
-    de chegar neste ponto.
+    Protection against a duplicate row does NOT live here: it lives in
+    guard 1 (exists() in arquivos/audios/{id}/), which blocks an
+    already-moved audio file before it reaches this point.
 
     Returns:
-        True se a linha esta gravada, False se falhou (com log).
+        True if the row is saved, False if it failed (with a log entry).
     """
     CSV_NOMEACAO.parent.mkdir(parents=True, exist_ok=True)
 
@@ -193,22 +201,23 @@ def _registrar_no_csv(nome_processado: str, nome_original: str) -> bool:
 
 
 # ==============================================================================
-# FUNCAO PRINCIPAL
+# MAIN FUNCTION
 # ==============================================================================
 
 def preparar_entrada(ja_concluido: Callable[[str], bool]) -> bool:
     """
-    Nomeia e move o material de `arquivos/input/` para `arquivos/audios/`.
+    Names and moves material from `arquivos/input/` to `arquivos/audios/`.
 
     Args:
-        ja_concluido: predicado que diz se um id ja consta do CSV dos
-            concluidos (config.CSV_CONCLUIDOS). Vem injetado pelo main.py
-            para que a regra da deduplicacao continue morando num lugar so.
+        ja_concluido: predicate that says whether an id is already in the
+            completed-audio CSV (config.CSV_CONCLUIDOS). Injected by
+            main.py so that the deduplication rule keeps living in a
+            single place.
 
     Returns:
-        True se toda a varredura terminou sem perder arquivo, False se algum
-        move falhou ou se o CSV auxiliar nao pode ser gravado. Lote vazio nao
-        e erro.
+        True if the whole scan finished without losing a file, False if
+        some move failed or the auxiliary CSV could not be written. An
+        empty batch is not an error.
     """
     print("\n" + "="*80)
     print("[M00] NOMEACAO - PORTA DE ENTRADA")
@@ -232,8 +241,8 @@ def preparar_entrada(ja_concluido: Callable[[str], bool]) -> bool:
     print(f"[M00] Formatos aceitos: {sorted(formatos)}")
     print(f"[M00] Varrendo (recursivo): {pasta_input}")
 
-    # Ordem alfabetica do caminho relativo completo: regra fixa que garante
-    # que a mesma pasta de entrada produza sempre os mesmos ids
+    # Alphabetical order of the full relative path: fixed rule that ensures
+    # the same input folder always produces the same ids
     candidatos = sorted(
         (p for p in pasta_input.rglob('*') if p.is_file()),
         key=lambda p: p.relative_to(pasta_input).as_posix()
@@ -247,8 +256,9 @@ def preparar_entrada(ja_concluido: Callable[[str], bool]) -> bool:
     movidos = 0
     erros = 0
 
-    # Nome base -> quantas vezes ja apareceu, para o desempate _002, _003...
-    # Usado APENAS no modo 'nome_original' - ver o bloco do id, mais abaixo
+    # Base name -> how many times it has already appeared, for the
+    # _002, _003... tie-break
+    # Used ONLY in 'nome_original' mode - see the id block, further below
     ocorrencias = {}
     csv_ok = True
 
@@ -269,10 +279,11 @@ def preparar_entrada(ja_concluido: Callable[[str], bool]) -> bool:
             continue
 
         if modo == 'hash_md5':
-            # Id do CONTEUDO. Nao ha desempate neste modo, e nao e
-            # esquecimento: dois arquivos de mesmo nome ja se distinguem
-            # pelos bytes, e se os bytes forem iguais sao o mesmo audio e
-            # devem mesmo colidir - a guarda 1 barra o segundo, corretamente.
+            # CONTENT id. There is no tie-break in this mode, and it is not
+            # an oversight: two files with the same name are already
+            # distinguished by their bytes, and if the bytes are the same
+            # they are the same audio and should really collide - guard 1
+            # correctly blocks the second one.
             audio_id = _md5_do_conteudo(origem)
             if not audio_id:
                 print(f"[M00] ERRO (hash nao pode ser calculado, arquivo NAO "
@@ -280,12 +291,13 @@ def preparar_entrada(ja_concluido: Callable[[str], bool]) -> bool:
                 erros += 1
                 continue
         else:
-            # Id do NOME, com desempate. So aqui ele existe: neste modo o
-            # nome desempatado E o audio_id, e dois 'entrevista' do mesmo
-            # lote disputariam a mesma pasta sem ele.
-            # O contador avanca ANTES das guardas: pular um audio ja movido
-            # nao pode renumerar os seguintes, senao a segunda execucao
-            # produz outros ids.
+            # NAME id, with tie-break. It only exists here: in this mode
+            # the tie-broken name IS the audio_id, and two 'entrevista'
+            # from the same batch would compete for the same folder
+            # without it.
+            # The counter advances BEFORE the guards: skipping an
+            # already-moved audio file cannot renumber the following
+            # ones, or the second run would produce different ids.
             numero = ocorrencias.get(nome_base, 0) + 1
             ocorrencias[nome_base] = numero
             audio_id = nome_base if numero == 1 else f"{nome_base}_{numero:03d}"
@@ -293,8 +305,9 @@ def preparar_entrada(ja_concluido: Callable[[str], bool]) -> bool:
         pasta_destino = pasta_audios / audio_id
         destino = pasta_destino / f"{audio_id}{extensao}"
 
-        # Guarda 1 - retomada apos quebra: qualquer formato aceito ja presente
-        # na pasta do id significa que este audio ja foi movido
+        # Guard 1 - resume after a break: any accepted format already
+        # present in the id's folder means this audio file has already
+        # been moved
         ja_no_destino = sorted(
             ext for ext in formatos if (pasta_destino / f"{audio_id}{ext}").exists()
         )
@@ -304,9 +317,10 @@ def preparar_entrada(ja_concluido: Callable[[str], bool]) -> bool:
             pulados_guarda1 += 1
             continue
 
-        # Guarda 2 - audio ja CONCLUIDO antes: nao entra de novo. A fonte e
-        # o CSV dos concluidos (config.CSV_CONCLUIDOS), consultado pelo
-        # predicado que o main injeta
+        # Guard 2 - audio file already COMPLETED before: does not get in
+        # again. The source is the completed-audio CSV
+        # (config.CSV_CONCLUIDOS), checked via the predicate that main
+        # injects
         if ja_concluido(audio_id):
             print(f"[M00] PULADO (guarda 2 - id '{audio_id}' ja consta do CSV "
                   f"dos concluidos): {relativo}")
@@ -320,7 +334,7 @@ def preparar_entrada(ja_concluido: Callable[[str], bool]) -> bool:
         movidos += 1
         print(f"[M00] MOVIDO: {relativo} -> arquivos/audios/{audio_id}/{destino.name}")
 
-        # Procedencia gravada imediatamente apos o move, nos dois modos
+        # Provenance recorded immediately after the move, in both modes
         if not _registrar_no_csv(audio_id, relativo):
             csv_ok = False
 

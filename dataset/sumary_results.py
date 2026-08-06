@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Analise de segmentos do dataset
-Uso: python result_segments.py
+Dataset segment analysis
+Usage: python result_segments.py
 """
 
 import pandas as pd
@@ -11,7 +11,7 @@ import sys
 
 
 def contar_arquivos(diretorio: str) -> int:
-    """Conta arquivos em um diretório (equivalente a ls | wc -l)."""
+    """Counts files in a directory (equivalent to ls | wc -l)."""
     result = subprocess.run(
         f"ls {diretorio} | wc -l",
         shell=True,

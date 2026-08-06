@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Modulo m09_wav2vec.py
-Transcreve segmentos de audio usando wav2vec2 (lgris/wav2vec2-large-xlsr-open-brazilian-portuguese)
-Adiciona campo 'stt_wav2vec' aos metadados JSON
+Module m09_wav2vec.py
+Transcribes audio segments using wav2vec2 (lgris/wav2vec2-large-xlsr-open-brazilian-portuguese)
+Adds the 'stt_wav2vec' field to the JSON metadata
 """
 
 import sys
@@ -41,13 +41,13 @@ MODELO_WAV2VEC2 = "lgris/wav2vec2-large-xlsr-open-brazilian-portuguese"
 
 def carregar_json(caminho: Path) -> Optional[Dict]:
     """
-    Carrega arquivo JSON
-    
+    Loads a JSON file
+
     Args:
-        caminho: Path do arquivo JSON
-        
+        caminho: Path of the JSON file
+
     Returns:
-        Dict com conteudo ou None se nao existir
+        Dict with content, or None if it does not exist
     """
     if not caminho.exists():
         return None
@@ -62,14 +62,14 @@ def carregar_json(caminho: Path) -> Optional[Dict]:
 
 def obter_segmentos_elegiveis(pasta_json_dinamico: Path, audio_id: str) -> tuple[Dict, Set[str]]:
     """
-    Determina quais segmentos devem ser processados.
+    Determines which segments should be processed.
 
     Args:
-        pasta_json_dinamico: Caminho para pasta 00-json_dinamico
-        audio_id: ID do audio
+        pasta_json_dinamico: Path to the 00-json_dinamico folder
+        audio_id: Audio ID
 
     Returns:
-        Tupla (dados_acompanhamento, set_de_chaves_elegiveis)
+        Tuple (dados_acompanhamento, set_de_chaves_elegiveis)
     """
     # Carregar arquivo de acompanhamento (obrigatorio)
     caminho_acompanhamento = pasta_json_dinamico / f"{audio_id}_segments_acompanhamento.json"
@@ -105,15 +105,15 @@ def obter_segmentos_elegiveis(pasta_json_dinamico: Path, audio_id: str) -> tuple
 
 def transcrever_segmentos(dados_acompanhamento: Dict, segmentos_elegiveis: Set[str], pasta_audios: Path) -> tuple[Dict, Dict]:
     """
-    Transcreve os segmentos elegiveis usando wav2vec2
-    
+    Transcribes the eligible segments using wav2vec2
+
     Args:
-        dados_acompanhamento: Dicionario completo de segmentos
-        segmentos_elegiveis: Set com chaves dos segmentos a processar
-        pasta_audios: Caminho para pasta com audios
-        
+        dados_acompanhamento: Full dictionary of segments
+        segmentos_elegiveis: Set with the keys of segments to process
+        pasta_audios: Path to the folder with audio files
+
     Returns:
-        Tupla (dados_acompanhamento_atualizado, dados_wav2vec_somente_elegiveis)
+        Tuple (dados_acompanhamento_atualizado, dados_wav2vec_somente_elegiveis)
     """
     # Inicializar pipeline wav2vec2 usando ModelManager (singleton)
     print(f"\nCarregando modelo: {MODELO_WAV2VEC2}")
@@ -187,11 +187,11 @@ def transcrever_segmentos(dados_acompanhamento: Dict, segmentos_elegiveis: Set[s
 
 def salvar_json(dados: Dict, caminho: Path):
     """
-    Salva dicionario como JSON
-    
+    Saves a dictionary as JSON
+
     Args:
-        dados: Dicionario a salvar
-        caminho: Path do arquivo de destino
+        dados: Dictionary to save
+        caminho: Path of the destination file
     """
     caminho.parent.mkdir(parents=True, exist_ok=True)
     
@@ -203,14 +203,14 @@ def salvar_json(dados: Dict, caminho: Path):
 
 def salvar_outputs(dados_acompanhamento: Dict, dados_wav2vec: Dict, pasta_output_stt: Path, pasta_output_json_dinamico: Path, audio_id: str):
     """
-    Salva os arquivos de output nas pastas corretas.
+    Saves the output files to the correct folders.
 
     Args:
-        dados_acompanhamento: Dados completos com stt_wav2vec
-        dados_wav2vec: Dados apenas dos segmentos elegiveis
-        pasta_output_stt: Caminho para pasta 07-stt_wav2vec
-        pasta_output_json_dinamico: Caminho para pasta 00-json_dinamico
-        audio_id: ID do audio
+        dados_acompanhamento: Full data with stt_wav2vec
+        dados_wav2vec: Data for the eligible segments only
+        pasta_output_stt: Path to the 07-stt_wav2vec folder
+        pasta_output_json_dinamico: Path to the 00-json_dinamico folder
+        audio_id: Audio ID
     """
     print("\n" + "="*70)
     print("SALVANDO OUTPUTS")
@@ -245,14 +245,15 @@ def salvar_outputs(dados_acompanhamento: Dict, dados_wav2vec: Dict, pasta_output
 
 def main(audio_id: str) -> bool:
     """
-    Funcao principal de execucao.
+    Main execution function.
 
     Args:
-        audio_id: ID do audio a processar
+        audio_id: ID of the audio file to process
 
     Returns:
-        True se os outputs foram salvos. Pre-condicao ausente propaga
-        excecao (FileNotFoundError) em vez de retorno mudo.
+        True if the outputs were saved. A missing precondition
+        propagates an exception (FileNotFoundError) instead of a silent
+        return.
     """
     # Definir caminhos baseados no audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"

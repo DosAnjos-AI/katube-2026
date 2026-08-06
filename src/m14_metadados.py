@@ -1,37 +1,40 @@
 #!/usr/bin/env python3
 """
-Modulo m14_metadados.py
-Gera metadados finais do dataset em formato CSV
-Copia arquivo de acompanhamento JSON para historico
+Module m14_metadados.py
+Generates the dataset's final metadata in CSV format
+Copies the tracking JSON file to the history
 
-Arquivo gerenciado:
-  dataset.csv — uma linha por segmento entregue, de todos os audio_ids
+File managed:
+  dataset.csv — one row per delivered segment, from all audio_ids
 
-Regras de escrita (SEGURANCA MAXIMA DO dataset.csv):
+Writing rules (MAXIMUM SAFETY OF dataset.csv):
 
-1. APPEND PURO. O modulo so CRIA o arquivo, quando ele ainda nao existe, e
-   faz APPEND das linhas da rodada ao final. Nunca reescreve o arquivo
-   inteiro, nunca remove linha, nunca apaga audio do disco. Remover linha
-   do dataset e privilegio exclusivo do usuario, manualmente.
+1. PURE APPEND. The module only CREATES the file, when it does not yet
+   exist, and APPENDS the run's rows at the end. It never rewrites the
+   whole file, never removes a row, never deletes audio from disk.
+   Removing a row from the dataset is the user's exclusive privilege,
+   done manually.
 
-2. LINHA REPETIDA NAO E PROBLEMA AQUI. A deduplicacao nao pertence ao
-   dataset.csv: o main barra o audio ja concluido na ENTRADA, pelo CSV dos
-   concluidos (config.CSV_CONCLUIDOS), antes de qualquer modulo rodar. E
-   este modulo quem escreve nesse CSV, como ULTIMO passo - ver
-   registrar_concluido.
+2. A REPEATED ROW IS NOT A PROBLEM HERE. Deduplication does not belong
+   to dataset.csv: main blocks the already-completed audio file at the
+   ENTRY point, via the completed-audio CSV (config.CSV_CONCLUIDOS),
+   before any module runs. This module is the one that writes to that
+   CSV, as the LAST step - see registrar_concluido.
 
-3. SCHEMA FIXO. As colunas sao SEMPRE as de SCHEMA_DATASET, na ordem
-   declarada, qualquer que seja a configuracao da rodada. Denoiser
-   desligado, SoX que nao rodou, modulo pulado: a coluna continua la,
-   vazia. O que varia e o preenchimento, nunca o conjunto de colunas.
-   Campo do JSON fora do schema nao entra, e e avisado nominalmente.
+3. FIXED SCHEMA. The columns are ALWAYS those of SCHEMA_DATASET, in the
+   declared order, whatever the run's configuration is. Denoiser off,
+   SoX that did not run, a skipped module: the column stays there,
+   empty. What varies is the fill, never the set of columns. A JSON
+   field outside the schema does not get in, and is warned about by
+   name.
 
-4. HEADER DIVERGENTE FALHA ALTO. Se o arquivo ja existe com header
-   diferente do schema, o modulo se recusa a gravar. Fazer append de 31
-   campos sob um header de outro tamanho corromperia o arquivo em silencio.
+4. DIVERGENT HEADER FAILS LOUD. If the file already exists with a
+   header different from the schema, the module refuses to write.
+   Appending 31 fields under a header of a different size would
+   silently corrupt the file.
 
-5. RETORNO EXPLICITO. processar_metadados devolve um dicionario com
-   sucesso, contagem e motivo de falha. Quem chama verifica.
+5. EXPLICIT RETURN. processar_metadados returns a dictionary with
+   success, count and failure reason. The caller checks it.
 """
 
 import sys
@@ -145,22 +148,22 @@ CAMPOS_EXCLUIDOS = {
 # ==============================================================================
 
 def construir_caminho_audio(nome_arquivo: str, audio_id: str) -> str:
-    """Constroi caminho relativo do audio a partir do audio_id."""
+    """Builds the audio's relative path from the audio_id."""
     return f"./audio_dataset/{audio_id}/{nome_arquivo}"
 
 
 def pasta_audios_do_id(audio_id: str) -> Path:
-    """Pasta onde vivem os .flac entregues de um audio_id."""
+    """Folder where the delivered .flac files of an audio_id live."""
     return PROJECT_ROOT / "dataset" / "audio_dataset" / audio_id
 
 
 def formatar_valor(valor: Any, coluna: str) -> Any:
     """
-    Converte um valor do JSON para o que vai na celula do CSV.
+    Converts a JSON value into what goes in the CSV cell.
 
-    Booleano vira string 'True'/'False' capitalizada. Ausencia (None) segue a
-    regra de COLUNAS_BOOLEANAS: 'False' para os tres booleanos, celula vazia
-    para todo o resto.
+    A boolean becomes the capitalized string 'True'/'False'. Absence
+    (None) follows the COLUNAS_BOOLEANAS rule: 'False' for the three
+    booleans, an empty cell for everything else.
     """
     if valor is None:
         return 'False' if coluna in COLUNAS_BOOLEANAS else ''
@@ -171,18 +174,19 @@ def formatar_valor(valor: Any, coluna: str) -> Any:
 
 def agora_iso() -> str:
     """
-    Momento atual em ISO 8601 com fuso, precisao de segundos.
+    Current moment in ISO 8601 with timezone, second precision.
 
-    O fuso vem do sistema operacional (astimezone sem argumento), NUNCA de
-    constante no codigo: um servidor em Frankfurt tem que gravar '+02:00'
-    sozinho. Sem milissegundos - as linhas de um mesmo audio sao escritas no
-    mesmo instante, e a precisao extra nao distinguiria nada.
+    The timezone comes from the operating system (astimezone with no
+    argument), NEVER from a constant in the code: a server in Frankfurt
+    has to write '+02:00' on its own. No milliseconds - the rows of the
+    same audio file are written at the same instant, and the extra
+    precision would not distinguish anything.
     """
     return datetime.now().astimezone().replace(microsecond=0).isoformat()
 
 
 def carregar_json(caminho: Path) -> Optional[Dict[str, Any]]:
-    """Carrega arquivo JSON. Retorna None se o arquivo nao existir."""
+    """Loads a JSON file. Returns None if the file does not exist."""
     if not caminho.exists():
         return None
     with open(caminho, 'r', encoding='utf-8') as f:
@@ -191,16 +195,17 @@ def carregar_json(caminho: Path) -> Optional[Dict[str, Any]]:
 
 def buscar_nome_original(audio_id: str) -> Optional[str]:
     """
-    Procura no CSV auxiliar da nomeacao o caminho de origem deste audio_id.
+    Looks up this audio_id's source path in the auxiliary naming CSV.
 
-    O arquivo e varrido linha a linha (O(1) de RAM) e a PRIMEIRA ocorrencia
-    vence: o CSV e append puro, entao a linha mais antiga e a do move que de
-    fato aconteceu.
+    The file is scanned line by line (O(1) of RAM) and the FIRST
+    occurrence wins: the CSV is pure append, so the oldest row is the
+    one from the move that actually happened.
 
     Returns:
-        O caminho relativo de origem, ou None quando nao ha registro - o que
-        acontece com audio colocado a mao em arquivos/audios/, sem passar
-        pelo m00. O chamador transforma isso em aviso, nunca em silencio.
+        The relative source path, or None when there is no record -
+        which happens with an audio file placed by hand in
+        arquivos/audios/, without going through m00. The caller turns
+        this into a warning, never into silence.
     """
     if not CSV_NOMEACAO.exists():
         return None
@@ -224,12 +229,12 @@ def preparar_linha_csv(nome_arquivo: str,
                        nome_original: str,
                        momento: str) -> Dict[str, Any]:
     """
-    Prepara um dicionario de linha para o CSV, com TODAS as colunas do
-    SCHEMA_DATASET preenchidas:
-      - colunas calculadas pelo m14 com seus valores
-      - campos presentes no JSON com seus valores (bool convertido)
-      - campos ausentes com o valor de ausencia (vazio, ou 'False' nos
-        booleanos declarados)
+    Prepares a row dictionary for the CSV, with ALL SCHEMA_DATASET
+    columns filled in:
+      - columns calculated by m14, with their values
+      - fields present in the JSON, with their values (bool converted)
+      - missing fields with the absence value (empty, or 'False' for
+        the declared booleans)
     """
     linha: Dict[str, Any] = {}
     for col in SCHEMA_DATASET:
@@ -250,9 +255,9 @@ def preparar_linha_csv(nome_arquivo: str,
 
 def campos_fora_do_schema(dados_json: Dict[str, Any]) -> List[str]:
     """
-    Lista os campos do JSON que nao tem coluna no schema, na ordem de
-    primeira aparicao. Sao os campos que NAO serao gravados - o chamador
-    avisa nominalmente, para que a perda nunca seja silenciosa.
+    Lists the JSON fields that have no column in the schema, in order
+    of first appearance. These are the fields that will NOT be written
+    - the caller warns about them by name, so the loss is never silent.
     """
     fora: List[str] = []
     conhecidos = set(SCHEMA_DATASET) | CAMPOS_EXCLUIDOS
@@ -268,9 +273,9 @@ def campos_fora_do_schema(dados_json: Dict[str, Any]) -> List[str]:
 
 def ler_header_csv(caminho: Path) -> List[str]:
     """
-    Le APENAS o header do CSV (primeira linha).
-    Uso de RAM: O(1) — nao carrega nenhuma linha de dados.
-    Retorna lista vazia quando o arquivo nao existe ou esta vazio.
+    Reads ONLY the CSV header (first line).
+    RAM usage: O(1) — does not load any data row.
+    Returns an empty list when the file does not exist or is empty.
     """
     if not caminho.exists():
         return []
@@ -289,19 +294,19 @@ def escrever_linhas(caminho_csv: Path,
                     linhas_novas: List[Dict[str, Any]],
                     escrever_header: bool) -> str:
     """
-    Grava as linhas da rodada no fim do CSV.
+    Writes the run's rows at the end of the CSV.
 
-    O arquivo e aberto em modo 'a': ele e criado se nao existir e JAMAIS e
-    truncado. Nenhuma linha ja gravada e lida, movida ou removida. O header
-    so e escrito quando o arquivo esta sendo criado agora, e e sempre o
-    SCHEMA_DATASET.
+    The file is opened in 'a' mode: it is created if it does not exist
+    and is NEVER truncated. No row already written is read, moved or
+    removed. The header is only written when the file is being created
+    right now, and it is always SCHEMA_DATASET.
 
-    As linhas chegam prontas de preparar_linha_csv, com exatamente as chaves
-    do schema. O extrasaction e o restval do DictWriter sao redundancia
-    defensiva, nunca exercitada por este fluxo.
+    The rows arrive ready from preparar_linha_csv, with exactly the
+    schema's keys. DictWriter's extrasaction and restval are defensive
+    redundancy, never exercised by this flow.
 
     Returns:
-        Modo usado: 'criacao' ou 'append'
+        Mode used: 'criacao' or 'append'
     """
     caminho_csv.parent.mkdir(parents=True, exist_ok=True)
 
@@ -329,24 +334,27 @@ def escrever_linhas(caminho_csv: Path,
 
 def copiar_json_historico(origem: Path, destino: Path) -> None:
     """
-    Copia o JSON de acompanhamento para o historico (sobrescreve se ja existe).
+    Copies the tracking JSON to the history (overwrites if it already
+    exists).
 
-    O historico NAO E MAIS o marcador de audio concluido - esse papel e do
-    CSV dos concluidos (ver registrar_concluido). O que ele e hoje:
+    The history is NO LONGER the marker for a completed audio file -
+    that role belongs to the completed-audio CSV (see
+    registrar_concluido). What it is today:
 
-    1. BACKUP DAS INFORMACOES PROCESSADAS. Se o dataset.csv for perdido, o
-       dataset pode ser reconstruido a partir destes JSONs SEM passar pelos
-       modelos de novo. So por isso ele ja se paga.
+    1. BACKUP OF THE PROCESSED INFORMATION. If dataset.csv is lost, the
+       dataset can be rebuilt from these JSONs WITHOUT rerunning the
+       models. That alone justifies its cost.
 
-    2. FONTE DA DURACAO APROVADA DA RODADA. calcular_duracao_audios_aprovados
-       (main.py) le estes JSONs para somar o campo `duracao` de cada
-       segmento, e e dai que sai a coluna
-       `duracao_audios_aprovados_segundos` do processamento_metadados.csv.
+    2. SOURCE OF THE RUN'S APPROVED DURATION. calcular_duracao_audios_aprovados
+       (main.py) reads these JSONs to sum up the `duracao` field of
+       each segment, and that is where the
+       `duracao_audios_aprovados_segundos` column of
+       processamento_metadados.csv comes from.
 
-    ATENCAO: tirar a deduplicacao do historico NAO e parar de escrever os
-    JSONs. Se esta copia deixar de acontecer, a conta do item 2 passa a
-    devolver zero SEM ERRO NENHUM - arquivo ausente e ignorado la. Nao
-    remova esta chamada.
+    ATTENTION: removing deduplication from the history does NOT mean
+    stopping the writing of the JSONs. If this copy stops happening,
+    item 2's count starts returning zero WITH NO ERROR AT ALL - a
+    missing file is ignored there. Do not remove this call.
     """
     destino.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(origem, destino)
@@ -362,23 +370,25 @@ CSV_CONCLUIDOS_HEADER = 'nome_processado|nome_original|datetime_concluido'
 
 def registrar_concluido(audio_id: str, nome_original: str) -> bool:
     """
-    Acrescenta UMA linha ao CSV dos concluidos, em APPEND PURO.
+    Appends ONE row to the completed-audio CSV, in PURE APPEND.
 
-    E o marcador que barra o audio na entrada da proxima rodada, e por isso
-    e a ULTIMA coisa que o m14 faz: quando esta linha e escrita, os
-    segmentos ja estao em dataset/audio_dataset/{id}/, as linhas ja estao no
-    dataset.csv e o backup do JSON ja esta no historico. Audio que quebrou
-    antes deste ponto NAO fica registrado e SERA reprocessado - e essa a
-    razao da ordem.
+    This is the marker that blocks the audio file at the entry point of
+    the next run, and that is why it is the LAST thing m14 does: when
+    this row is written, the segments are already in
+    dataset/audio_dataset/{id}/, the rows are already in dataset.csv
+    and the JSON backup is already in the history. An audio file that
+    broke before this point is NOT registered and WILL be reprocessed -
+    that is the reason for the order.
 
-    Nunca le o arquivo, nunca reescreve linha existente, nunca apaga nada.
-    O header so e escrito quando o arquivo nasce.
+    Never reads the file, never rewrites an existing row, never deletes
+    anything. The header is only written when the file is born.
 
     Returns:
-        True se a linha esta gravada, False se falhou (com log). O chamador
-        transforma a falha em aviso: as linhas do dataset.csv ja estao
-        gravadas e nao seriam desfeitas, mas o audio nao fica marcado e
-        voltara a ser processado - o que precisa aparecer no log.
+        True if the row is saved, False if it failed (with a log
+        entry). The caller turns the failure into a warning: the
+        dataset.csv rows are already saved and would not be undone, but
+        the audio file is not marked and will go back to being
+        processed - which needs to show up in the log.
     """
     CSV_CONCLUIDOS.parent.mkdir(parents=True, exist_ok=True)
 
@@ -407,15 +417,16 @@ def montar_resultado(audio_id: str,
                      n_persistidos: int = 0,
                      avisos: Optional[List[str]] = None) -> Dict[str, Any]:
     """
-    Monta o resultado devolvido por processar_metadados.
+    Builds the result returned by processar_metadados.
 
-    Campos:
-        sucesso       — False so em falha real (JSON de entrada ausente,
-                        pasta de audio ausente havendo segmentos a entregar).
-                        Lote sem segmento aprovado e sucesso-com-aviso.
-        motivo_falha  — texto do erro quando sucesso e False
-        n_persistidos — linhas gravadas no CSV nesta rodada
-        avisos        — mensagens de degradacao do lote
+    Fields:
+        sucesso       — False only on a real failure (missing input
+                        JSON, missing audio folder while there are
+                        segments to deliver). A batch with no approved
+                        segment is a success-with-warning.
+        motivo_falha  — error text when sucesso is False
+        n_persistidos — rows written to the CSV in this run
+        avisos        — batch degradation messages
     """
     return {
         'audio_id': audio_id,
@@ -432,24 +443,27 @@ def montar_resultado(audio_id: str,
 
 def processar_metadados(audio_id: str) -> Dict[str, Any]:
     """
-    Processa metadados e gera outputs, NESTA ORDEM:
-      1. Faz append das linhas do lote no dataset.csv (criando-o se preciso)
-      2. Copia o JSON de acompanhamento para o historico (backup)
-      3. Registra o audio no CSV dos concluidos (o marcador da deduplicacao)
+    Processes metadata and generates outputs, IN THIS ORDER:
+      1. Appends the batch's rows to dataset.csv (creating it if needed)
+      2. Copies the tracking JSON to the history (backup)
+      3. Registers the audio file in the completed-audio CSV (the
+         deduplication marker)
 
-    A ordem e o mecanismo, nao detalhe: o passo 3 e o ultimo justamente para
-    que a rodada que morre antes dele deixe o audio SEM marca de concluido,
-    e a proxima execucao o reprocesse inteiro.
+    The order is the mechanism, not a detail: step 3 is the last one
+    precisely so that a run that dies before it leaves the audio file
+    WITHOUT a completed mark, and the next execution reprocesses it in
+    full.
 
-    Lote sem nenhum segmento aprovado retorna antes do passo 1 e por isso
-    nao chega ao passo 3 - o audio nao fica marcado, de proposito.
+    A batch with no approved segment returns before step 1 and
+    therefore never reaches step 3 - the audio file is not marked, on
+    purpose.
 
     Args:
-        audio_id: ID do audio a processar
+        audio_id: ID of the audio file to process
 
     Returns:
-        Dicionario de resultado (ver montar_resultado). O chamador DEVE
-        verificar a chave 'sucesso'.
+        Result dictionary (see montar_resultado). The caller MUST check
+        the 'sucesso' key.
     """
     # --- Definir caminhos ---
     PASTA_JSON_DINAMICO       = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"

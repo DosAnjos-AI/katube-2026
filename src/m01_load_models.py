@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Modulo m01_model_manager.py
-Gerenciador centralizado de modelos de IA usando padrao Singleton
-Carrega modelos 1x e reutiliza entre multiplas execucoes
+Module m01_model_manager.py
+Centralized AI model manager using the Singleton pattern
+Loads models once and reuses them across multiple executions
 """
 
 import inspect
@@ -14,11 +14,11 @@ from typing import Any, Callable, Dict, List, Optional, Tuple
 import torch
 from dotenv import load_dotenv
 
-# Adicionar pasta raiz ao path para importar config
+# Add root folder to the path to import config
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-# Carregar variaveis de ambiente do .env na raiz do projeto
+# Load environment variables from .env at the project root
 load_dotenv(PROJECT_ROOT / '.env')
 
 from config import (
@@ -32,7 +32,7 @@ from config import (
 
 
 # ==============================================================================
-# CONSTANTES - IDs DOS MODELOS (HARDCODED)
+# CONSTANTS - MODEL IDs (HARDCODED)
 # ==============================================================================
 
 WHISPER_MODEL_ID = "freds0/distil-whisper-large-v3-ptbr"
@@ -40,15 +40,16 @@ WAV2VEC_MODEL_ID = "lgris/wav2vec2-large-xlsr-open-brazilian-portuguese"
 
 
 # ==============================================================================
-# LOG ALTO - ERRO QUE NAO PODE PASSAR DESPERCEBIDO
+# LOUD LOG - ERROR THAT CANNOT GO UNNOTICED
 # ==============================================================================
 
 def _log_erro(linhas: List[str]) -> None:
     """
-    Registra erro em nivel alto, no stderr, com prefixo [ERRO].
+    Logs an error at high visibility, on stderr, with the [ERRO] prefix.
 
-    Usado para a queda de GPU para CPU: uma rodada que cai para CPU sem
-    ninguem perceber custa cerca de 9,7x tempo real e passa por normal.
+    Used for the GPU-to-CPU fallback: a run that falls back to CPU
+    without anyone noticing costs about 9.7x real time and passes as
+    normal.
     """
     print("", file=sys.stderr)
     print("[ERRO] " + "=" * 62, file=sys.stderr)
@@ -59,36 +60,39 @@ def _log_erro(linhas: List[str]) -> None:
 
 
 # ==============================================================================
-# COMPATIBILIDADE ENTRE VERSOES - NOME DO PARAMETRO DE AUTENTICACAO
+# COMPATIBILITY BETWEEN VERSIONS - AUTHENTICATION PARAMETER NAME
 # ==============================================================================
 
-# Nomes ja usados por bibliotecas do ecossistema HuggingFace para o mesmo
-# parametro. A ordem e a de preferencia: o nome novo primeiro.
+# Names already used by libraries in the HuggingFace ecosystem for the
+# same parameter. The order is the preference order: the new name first.
 NOMES_PARAMETRO_TOKEN = ('token', 'use_auth_token')
 
 
 def _kwarg_autenticacao(funcao: Callable, token: Optional[str],
                         pacote: str) -> Dict[str, Optional[str]]:
     """
-    Descobre, na assinatura da versao instalada, qual nome de parametro de
-    autenticacao a funcao aceita, e devolve o kwarg pronto para a chamada.
+    Discovers, in the signature of the installed version, which
+    authentication parameter name the function accepts, and returns the
+    kwarg ready for the call.
 
-    O ecossistema HuggingFace renomeou 'use_auth_token' para 'token'. Versoes
-    diferentes da mesma biblioteca convivem entre a maquina local e o servidor,
-    e a assinatura - nao o numero de versao - e o fato que decide a chamada.
+    The HuggingFace ecosystem renamed 'use_auth_token' to 'token'.
+    Different versions of the same library coexist between the local
+    machine and the server, and the signature - not the version number -
+    is the fact that decides the call.
 
     Args:
-        funcao: A funcao que sera chamada (ex.: Pipeline.from_pretrained)
-        token: Valor do token a passar
-        pacote: Nome de distribuicao do pacote, so para a mensagem de erro
+        funcao: The function that will be called (e.g., Pipeline.from_pretrained)
+        token: Token value to pass
+        pacote: Package distribution name, only for the error message
 
     Returns:
-        Dicionario de um item: {nome_aceito: token}
+        A one-item dictionary: {accepted_name: token}
 
     Raises:
-        RuntimeError: Se a assinatura nao aceitar nenhum dos nomes conhecidos.
-                      Seguir sem autenticacao nao e opcao: o modelo e restrito
-                      e a falha apareceria adiante, longe da causa.
+        RuntimeError: If the signature does not accept any of the known
+                      names. Proceeding without authentication is not an
+                      option: the model is gated and the failure would
+                      show up further down, far from the cause.
     """
     parametros = inspect.signature(funcao).parameters
 
@@ -111,37 +115,37 @@ def _kwarg_autenticacao(funcao: Callable, token: Optional[str],
 
 
 # ==============================================================================
-# CLASSE SINGLETON - GERENCIADOR DE MODELOS
+# SINGLETON CLASS - MODEL MANAGER
 # ==============================================================================
 
 class ModelManager:
     """
-    Gerenciador singleton de modelos de IA
-    Garante carregamento unico e reutilizacao de instancias
+    Singleton manager for AI models
+    Ensures single loading and reuse of instances
     """
-    
-    _instance = None  # Instancia unica do singleton
+
+    _instance = None  # Single singleton instance
     
     def __new__(cls):
-        """Implementacao do padrao Singleton"""
+        """Singleton pattern implementation"""
         if cls._instance is None:
             cls._instance = super(ModelManager, cls).__new__(cls)
             cls._instance._initialized = False
         return cls._instance
     
     def __init__(self):
-        """Inicializa gerenciador (executa apenas 1x)"""
+        """Initializes the manager (runs only once)"""
         if self._initialized:
             return
         
-        # Cache de modelos carregados
+        # Cache of loaded models
         self._whisper = None
         self._wav2vec = None
         self._pyannote = None
         self._squim = None
         self._deepfilternet = None
-        
-        # Marca como inicializado
+
+        # Mark as initialized
         self._initialized = True
         
         print("\n" + "="*70)
@@ -151,26 +155,27 @@ class ModelManager:
         print("="*70 + "\n")
     
     # ==========================================================================
-    # METODOS AUXILIARES - DEVICE MANAGEMENT
+    # HELPER METHODS - DEVICE MANAGEMENT
     # ==========================================================================
     
     def _obter_device(self, config_device: str, nome_bloco: str) -> str:
         """
-        Determina device a partir da configuracao.
+        Determines the device from the configuration.
 
-        Aceita SOMENTE "gpu" ou "cpu" - o valor "auto" foi eliminado do
-        projeto. Nao ha resolucao silenciosa nem valor padrao escondido.
+        Accepts ONLY "gpu" or "cpu" - the "auto" value was eliminated
+        from the project. There is no silent resolution or hidden
+        default value.
 
         Args:
-            config_device: valor do campo 'device' do bloco
-            nome_bloco: nome do bloco do config, para a mensagem de erro
+            config_device: value of the block's 'device' field
+            nome_bloco: name of the config block, for the error message
 
         Returns:
-            "cuda" ou "cpu"
+            "cuda" or "cpu"
 
         Raises:
-            ValueError: valor de device invalido
-            RuntimeError: "gpu" pedida sem CUDA e MASTER['fallback_cpu'] False
+            ValueError: invalid device value
+            RuntimeError: "gpu" requested without CUDA and MASTER['fallback_cpu'] False
         """
         device_config = str(config_device).lower()
 
@@ -186,7 +191,7 @@ class ModelManager:
         if torch.cuda.is_available():
             return "cuda"
 
-        # GPU pedida e CUDA indisponivel: quem decide e o fallback_cpu
+        # GPU requested and CUDA unavailable: fallback_cpu is the decider
         if not MASTER.get('fallback_cpu', False):
             raise RuntimeError(
                 f"{nome_bloco}['device']='gpu' mas CUDA nao esta disponivel "
@@ -203,20 +208,20 @@ class ModelManager:
     def _fallback_para_cpu(self, erro: Exception, device: str,
                            nome_modelo: str, nome_bloco: str) -> bool:
         """
-        Decide se um carregamento que falhou deve ser refeito em CPU.
+        Decides whether a failed load should be redone on CPU.
 
         Args:
-            erro: excecao original do carregamento
-            device: device em que a tentativa falhou (None se a falha foi
-                    anterior a resolucao do device)
-            nome_modelo: nome do modelo, para o log
-            nome_bloco: bloco do config, para o log
+            erro: original loading exception
+            device: device on which the attempt failed (None if the
+                    failure happened before the device was resolved)
+            nome_modelo: model name, for the log
+            nome_bloco: config block, for the log
 
         Returns:
-            True se o chamador deve recarregar em CPU; False se o erro
-            deve derrubar o modulo.
+            True if the caller should reload on CPU; False if the error
+            should bring the module down.
         """
-        # Falha em CPU, ou antes de resolver o device, nao tem para onde cair
+        # Failure on CPU, or before resolving the device, has nowhere to fall back to
         if device != "cuda":
             return False
 
@@ -241,13 +246,14 @@ class ModelManager:
 
     def _obter_device_id(self, device: str) -> int:
         """
-        Converte device string para device_id (para transformers pipeline)
-        
+        Converts the device string to a device_id (for the transformers
+        pipeline)
+
         Args:
-            device: "cuda" ou "cpu"
-            
+            device: "cuda" or "cpu"
+
         Returns:
-            0 para GPU, -1 para CPU
+            0 for GPU, -1 for CPU
         """
         return 0 if device == "cuda" else -1
     
@@ -256,7 +262,7 @@ class ModelManager:
     # ==========================================================================
     
     def _carregar_whisper(self, device: str) -> Any:
-        """Carrega o pipeline Whisper no device indicado"""
+        """Loads the Whisper pipeline on the given device"""
         from transformers import pipeline
 
         print(f"Modelo: {WHISPER_MODEL_ID}")
@@ -270,20 +276,20 @@ class ModelManager:
 
     def get_whisper(self) -> Any:
         """
-        Obtem pipeline Whisper (carrega 1x, reutiliza depois)
+        Gets the Whisper pipeline (loads once, reuses afterward)
 
         Returns:
-            Pipeline do transformers para Whisper
+            transformers pipeline for Whisper
 
         Raises:
-            RuntimeError: Se modulo desabilitado no MASTER
-            Exception: Se carregamento falhar e nao houver fallback
+            RuntimeError: If the module is disabled in MASTER
+            Exception: If loading fails and there is no fallback
         """
-        # Retorna se ja carregado
+        # Return if already loaded
         if self._whisper is not None:
             return self._whisper
 
-        # Verifica se modulo esta ativo no MASTER
+        # Check whether the module is active in MASTER
         if not MASTER.get('transcricao_whisper', False):
             raise RuntimeError("ERRO: Whisper desabilitado no MASTER config")
 
@@ -300,7 +306,7 @@ class ModelManager:
                 print(f"ERRO ao carregar Whisper: {e}")
                 print("-"*70 + "\n")
                 raise
-            # Retry em CPU: se este tambem falhar, o erro propaga
+            # Retry on CPU: if this also fails, the error propagates
             self._whisper = self._carregar_whisper("cpu")
 
         print("Whisper carregado com sucesso")
@@ -313,7 +319,7 @@ class ModelManager:
     # ==========================================================================
     
     def _carregar_wav2vec(self, device: str) -> Any:
-        """Carrega o pipeline wav2vec no device indicado"""
+        """Loads the wav2vec pipeline on the given device"""
         from transformers import pipeline
 
         print(f"Modelo: {WAV2VEC_MODEL_ID}")
@@ -327,20 +333,20 @@ class ModelManager:
 
     def get_wav2vec(self) -> Any:
         """
-        Obtem pipeline wav2vec (carrega 1x, reutiliza depois)
+        Gets the wav2vec pipeline (loads once, reuses afterward)
 
         Returns:
-            Pipeline do transformers para wav2vec
+            transformers pipeline for wav2vec
 
         Raises:
-            RuntimeError: Se modulo desabilitado no MASTER
-            Exception: Se carregamento falhar e nao houver fallback
+            RuntimeError: If the module is disabled in MASTER
+            Exception: If loading fails and there is no fallback
         """
-        # Retorna se ja carregado
+        # Return if already loaded
         if self._wav2vec is not None:
             return self._wav2vec
 
-        # Verifica se modulo esta ativo no MASTER
+        # Check whether the module is active in MASTER
         if not MASTER.get('transcricao_wav2vec', False):
             raise RuntimeError("ERRO: wav2vec desabilitado no MASTER config")
 
@@ -357,7 +363,7 @@ class ModelManager:
                 print(f"ERRO ao carregar wav2vec: {e}")
                 print("-"*70 + "\n")
                 raise
-            # Retry em CPU: se este tambem falhar, o erro propaga
+            # Retry on CPU: if this also fails, the error propagates
             self._wav2vec = self._carregar_wav2vec("cpu")
 
         print("wav2vec carregado com sucesso")
@@ -370,20 +376,20 @@ class ModelManager:
     # ==========================================================================
     
     def _carregar_pyannote(self, device: str) -> Any:
-        """Carrega o pipeline pyannote no device indicado"""
+        """Loads the pyannote pipeline on the given device"""
         from pyannote.audio import Pipeline
 
-        # Modelo vem do config - nao ha mais constante hardcoded
+        # Model comes from config - there is no more hardcoded constant
         modelo_id = OVERLAP_DETECTOR['modelo']
 
-        # Token HuggingFace — lido do .env
+        # HuggingFace token — read from .env
         hf_token = os.getenv('HF_TOKEN')
 
         print(f"Modelo: {modelo_id}")
         print(f"Device: {device}")
 
-        # O nome do parametro de autenticacao muda entre versoes do pyannote:
-        # e lido da assinatura instalada, nunca presumido.
+        # The authentication parameter name changes between pyannote
+        # versions: it is read from the installed signature, never assumed.
         pipeline = Pipeline.from_pretrained(
             modelo_id,
             **_kwarg_autenticacao(
@@ -391,27 +397,27 @@ class ModelManager:
             )
         )
 
-        # Mover para device
+        # Move to device
         pipeline.to(torch.device(device))
 
         return pipeline
 
     def get_pyannote(self) -> Any:
         """
-        Obtem pipeline pyannote (carrega 1x, reutiliza depois)
+        Gets the pyannote pipeline (loads once, reuses afterward)
 
         Returns:
-            Pipeline pyannote.audio
+            pyannote.audio pipeline
 
         Raises:
-            RuntimeError: Se modulo desabilitado no MASTER
-            Exception: Se carregamento falhar e nao houver fallback
+            RuntimeError: If the module is disabled in MASTER
+            Exception: If loading fails and there is no fallback
         """
-        # Retorna se ja carregado
+        # Return if already loaded
         if self._pyannote is not None:
             return self._pyannote
 
-        # Verifica se modulo esta ativo no MASTER
+        # Check whether the module is active in MASTER
         if not MASTER.get('overlap', False):
             raise RuntimeError("ERRO: Overlap detector desabilitado no MASTER config")
 
@@ -428,7 +434,7 @@ class ModelManager:
                 print(f"ERRO ao carregar pyannote: {e}")
                 print("-"*70 + "\n")
                 raise
-            # Retry em CPU: se este tambem falhar, o erro propaga
+            # Retry on CPU: if this also fails, the error propagates
             self._pyannote = self._carregar_pyannote("cpu")
 
         print("pyannote carregado com sucesso")
@@ -441,7 +447,7 @@ class ModelManager:
     # ==========================================================================
     
     def _carregar_squim(self, device: str) -> Any:
-        """Carrega o modelo SQUIM no device indicado"""
+        """Loads the SQUIM model on the given device"""
         import torchaudio
 
         print(f"Modelo: SQUIM_OBJECTIVE (torchaudio)")
@@ -452,20 +458,20 @@ class ModelManager:
 
     def get_squim(self) -> Any:
         """
-        Obtem modelo SQUIM (carrega 1x, reutiliza depois)
+        Gets the SQUIM model (loads once, reuses afterward)
 
         Returns:
-            Modelo SQUIM do torchaudio
+            torchaudio SQUIM model
 
         Raises:
-            RuntimeError: Se modulo desabilitado no MASTER
-            Exception: Se carregamento falhar e nao houver fallback
+            RuntimeError: If the module is disabled in MASTER
+            Exception: If loading fails and there is no fallback
         """
-        # Retorna se ja carregado
+        # Return if already loaded
         if self._squim is not None:
             return self._squim
 
-        # Verifica se modulo esta ativo no MASTER
+        # Check whether the module is active in MASTER
         if not MASTER.get('mos_filter', False):
             raise RuntimeError("ERRO: MOS filter desabilitado no MASTER config")
 
@@ -482,7 +488,7 @@ class ModelManager:
                 print(f"ERRO ao carregar SQUIM: {e}")
                 print("-"*70 + "\n")
                 raise
-            # Retry em CPU: se este tambem falhar, o erro propaga
+            # Retry on CPU: if this also fails, the error propagates
             self._squim = self._carregar_squim("cpu")
 
         print("SQUIM carregado com sucesso")
@@ -496,15 +502,18 @@ class ModelManager:
     
     def _carregar_deepfilternet(self, device: str) -> Tuple[Any, Any, int]:
         """
-        Carrega o DeepFilterNet3 e submete a biblioteca ao device do config.
+        Loads DeepFilterNet3 and forces the library onto the device from
+        the config.
 
-        Achado A29: o init_df() nao aceita parametro device, e o enhance()
-        resolve o dispositivo sozinho, por get_device(), que escolhe cuda:0
-        sempre que houver CUDA. Sem o ajuste abaixo, num servidor com GPU e
-        device='cpu' o modelo fica em CPU e as features vao para cuda:0.
+        Finding A29: init_df() does not accept a device parameter, and
+        enhance() resolves the device on its own, via get_device(),
+        which picks cuda:0 whenever CUDA is available. Without the
+        adjustment below, on a server with a GPU and device='cpu' the
+        model stays on CPU while the features go to cuda:0.
 
-        O ajuste tem de vir DEPOIS do init_df(): o proprio init_df() recarrega
-        o parser da config interna do DeepFilterNet e apagaria o valor.
+        The adjustment has to come AFTER init_df(): init_df() itself
+        reloads DeepFilterNet's internal config parser and would erase
+        the value.
         """
         from df import init_df
         from df.config import config as df_config
@@ -518,18 +527,18 @@ class ModelManager:
 
         modelo, df_state, _ = init_df(
             post_filter=post_filter,
-            log_level="ERROR"  # Reduz verbosidade
+            log_level="ERROR"  # Reduce verbosity
         )
 
-        # A29: submeter o get_device() da biblioteca ao device do config
+        # A29: force the library's get_device() onto the config's device
         df_config.set("DEVICE", device, str, section="train")
 
-        # Mover modelo para device
+        # Move model to device
         modelo = modelo.to(device)
 
-        # Conferencia por log: o dispositivo interno tem de bater com o pedido.
-        # Divergencia aqui e o achado A29 se manifestando - nao pode passar
-        # em silencio na primeira rodada com GPU.
+        # Log check: the internal device has to match what was requested.
+        # A divergence here is finding A29 manifesting itself - it cannot
+        # pass silently on the first run with GPU.
         device_interno = str(df_get_device())
         print(f"Device interno do DeepFilterNet (get_device): {device_interno}")
         if device_interno.split(':')[0] != device:
@@ -544,25 +553,26 @@ class ModelManager:
 
     def get_deepfilternet(self) -> Tuple[Any, Any, int]:
         """
-        Obtem modelo e estado DeepFilterNet (carrega 1x, reutiliza depois)
+        Gets the DeepFilterNet model and state (loads once, reuses
+        afterward)
 
         Returns:
-            Tupla (modelo, df_state, sample_rate)
+            Tuple (model, df_state, sample_rate)
 
         Raises:
-            RuntimeError: Se modulo desabilitado no MASTER
-            Exception: Se carregamento falhar e nao houver fallback
+            RuntimeError: If the module is disabled in MASTER
+            Exception: If loading fails and there is no fallback
 
-        LIMITACAO CONHECIDA (decisao registrada, instrucao 20): o retry em
-        CPU chama init_df() de novo, e o init_df() volta a escolher o
-        dispositivo por conta propria. Numa GPU que falhe, o fallback deste
-        modelo pode nao se completar - ao contrario dos outros quatro.
+        KNOWN LIMITATION (decision recorded, instruction 20): the CPU
+        retry calls init_df() again, and init_df() goes back to choosing
+        the device on its own. On a GPU that fails, this model's
+        fallback may not complete - unlike the other four.
         """
-        # Retorna se ja carregado
+        # Return if already loaded
         if self._deepfilternet is not None:
             return self._deepfilternet
 
-        # Verifica se modulo esta ativo no MASTER
+        # Check whether the module is active in MASTER
         if not MASTER.get('Denoiser', False):
             raise RuntimeError("ERRO: Denoiser desabilitado no MASTER config")
 
@@ -581,7 +591,7 @@ class ModelManager:
                 print(f"ERRO ao carregar DeepFilterNet3: {e}")
                 print("-"*70 + "\n")
                 raise
-            # Retry em CPU: se este tambem falhar, o erro propaga
+            # Retry on CPU: if this also fails, the error propagates
             self._deepfilternet = self._carregar_deepfilternet("cpu")
 
         sr = self._deepfilternet[2]
@@ -591,21 +601,21 @@ class ModelManager:
         return self._deepfilternet
     
     # ==========================================================================
-    # UTILIDADES - GESTAO DE MEMORIA
+    # UTILITIES - MEMORY MANAGEMENT
     # ==========================================================================
     
     def clear_cache(self):
-        """Limpa cache de GPU (util para liberar VRAM)"""
+        """Clears the GPU cache (useful for freeing VRAM)"""
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
             print("Cache GPU limpo")
     
     def get_vram_usage(self) -> dict:
         """
-        Obtem uso atual de VRAM
-        
+        Gets current VRAM usage
+
         Returns:
-            Dict com informacoes de memoria GPU
+            Dict with GPU memory information
         """
         if not torch.cuda.is_available():
             return {"available": False}
@@ -618,7 +628,7 @@ class ModelManager:
         }
     
     def print_status(self):
-        """Imprime status atual dos modelos carregados"""
+        """Prints the current status of the loaded models"""
         print("\n" + "="*70)
         print("STATUS DO MODEL MANAGER")
         print("="*70)
@@ -628,7 +638,7 @@ class ModelManager:
         print(f"SQUIM carregado:         {'SIM' if self._squim is not None else 'NAO'}")
         print(f"DeepFilterNet carregado: {'SIM' if self._deepfilternet is not None else 'NAO'}")
         
-        # Info de VRAM
+        # VRAM info
         vram = self.get_vram_usage()
         if vram["available"]:
             print(f"\nVRAM alocada:  {vram['allocated_gb']:.2f} GB")
@@ -641,21 +651,21 @@ class ModelManager:
 
 
 # ==============================================================================
-# FUNCAO DE CONVENIENCIA - OBTER INSTANCIA SINGLETON
+# CONVENIENCE FUNCTION - GET SINGLETON INSTANCE
 # ==============================================================================
 
 def get_manager() -> ModelManager:
     """
-    Obtem instancia singleton do ModelManager
-    
+    Gets the singleton instance of ModelManager
+
     Returns:
-        Instancia unica do ModelManager
+        The single instance of ModelManager
     """
     return ModelManager()
 
 
 # ==============================================================================
-# TESTE DO MODULO - CARREGA TODOS OS MODELOS HABILITADOS
+# MODULE TEST - LOADS ALL ENABLED MODELS
 # ==============================================================================
 
 if __name__ == "__main__":
@@ -664,17 +674,17 @@ if __name__ == "__main__":
     print("Este teste carregara TODOS os modelos habilitados no MASTER")
     print("="*70 + "\n")
     
-    # Criar instancia
+    # Create instance
     manager = get_manager()
-    
-    # Testar singleton
+
+    # Test singleton
     manager2 = ModelManager()
     print(f"Singleton OK: {manager is manager2}\n")
-    
-    # Status inicial
+
+    # Initial status
     manager.print_status()
-    
-    # Carregar modelos conforme MASTER
+
+    # Load models according to MASTER
     modelos_carregados = 0
     modelos_falhados = 0
     
@@ -737,15 +747,15 @@ if __name__ == "__main__":
     else:
         print("[SKIP] DeepFilterNet desabilitado no MASTER")
     
-    # Relatorio final
+    # Final report
     print("\n" + "="*70)
     print("RELATORIO FINAL DE CARREGAMENTO")
     print("="*70)
     print(f"Modelos carregados com sucesso: {modelos_carregados}")
     print(f"Modelos com falha: {modelos_falhados}")
     print("="*70 + "\n")
-    
-    # Status final
+
+    # Final status
     manager.print_status()
     
     print("\nTESTE CONCLUIDO")

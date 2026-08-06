@@ -1,14 +1,14 @@
-# Congelamento do ambiente de referencia do servidor (GPU), env conda katube_final.
-# Gerado a partir de `pip freeze` de um ambiente que rodou a pipeline completa.
+# Freeze of the reference server (GPU) environment, katube_final conda env.
+# Generated from `pip freeze` of an environment that ran the full pipeline.
 #
-# Instale em UMA UNICA chamada, para que o resolvedor decida tudo de uma vez:
+# Install in a SINGLE call, so the resolver decides everything at once:
 #
 #     pip install -r requirements-servidor.txt
 #
-# Nao instale em partes, nao reordene, nao desafixe versao.
+# Do not install in parts, do not reorder, do not unpin a version.
 #
-# setuptools e wheel estao listados porque o `pip freeze` os omite por padrao.
-# Sem eles, o lightning_fabric falha com:
+# setuptools and wheel are listed because `pip freeze` omits them by default.
+# Without them, lightning_fabric fails with:
 #     ModuleNotFoundError: No module named 'pkg_resources'
 setuptools==80.9.0
 wheel==0.45.1

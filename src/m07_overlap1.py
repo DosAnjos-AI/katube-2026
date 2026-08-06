@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Modulo m07_overlap01.py
-Detecta overlap (sobreposicao de locutores) em segmentos de audio
-Utiliza pyannote/speaker-diarization para identificar multiplos speakers
+Module m07_overlap01.py
+Detects overlap (speaker overlap) in audio segments
+Uses pyannote/speaker-diarization to identify multiple speakers
 """
 
 import sys
@@ -16,7 +16,7 @@ from contextlib import contextmanager
 
 from dotenv import load_dotenv
 
-# Adicionar pasta raiz ao path para importar config
+# Add root folder to the path to import config
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
@@ -25,10 +25,10 @@ from m01_load_models import ModelManager
 
 
 # ==============================================================================
-# CONFIGURACAO
+# CONFIGURATION
 # ==============================================================================
 
-# Carregar variaveis de ambiente (.env)
+# Load environment variables (.env)
 load_dotenv(PROJECT_ROOT / '.env')
 
 
@@ -37,25 +37,25 @@ load_dotenv(PROJECT_ROOT / '.env')
 # ==============================================================================
 
 class TimeoutException(Exception):
-    """Excecao lancada quando timeout e atingido"""
+    """Exception raised when the timeout is reached"""
     pass
 
 
 @contextmanager
 def timeout(seconds: int):
     """
-    Context manager para timeout de operacoes
-    
+    Context manager for operation timeouts
+
     Args:
-        seconds: Tempo maximo em segundos
-        
+        seconds: Maximum time in seconds
+
     Raises:
-        TimeoutException: Se tempo limite for excedido
+        TimeoutException: If the time limit is exceeded
     """
     def timeout_handler(signum, frame):
         raise TimeoutException(f"Operacao excedeu {seconds}s")
     
-    # Configurar handler (apenas Linux/Mac)
+    # Configure handler (Linux/Mac only)
     if hasattr(signal, 'SIGALRM'):
         original_handler = signal.signal(signal.SIGALRM, timeout_handler)
         signal.alarm(seconds)
@@ -65,25 +65,25 @@ def timeout(seconds: int):
             signal.alarm(0)
             signal.signal(signal.SIGALRM, original_handler)
     else:
-        # Windows nao suporta SIGALRM - executar sem timeout
+        # Windows does not support SIGALRM - run without timeout
         yield
 
 
 # ==============================================================================
-# FUNCOES DE CARREGAMENTO
+# LOADING FUNCTIONS
 # ==============================================================================
 
 
 
 def carregar_json(caminho: Path) -> Dict:
     """
-    Carrega arquivo JSON
-    
+    Loads a JSON file
+
     Args:
-        caminho: Path do arquivo JSON
-        
+        caminho: Path of the JSON file
+
     Returns:
-        Dicionario com conteudo do JSON
+        Dictionary with the JSON content
     """
     with open(caminho, 'r', encoding='utf-8') as f:
         return json.load(f)
@@ -91,45 +91,45 @@ def carregar_json(caminho: Path) -> Dict:
 
 def salvar_json(dados: Dict, caminho: Path) -> None:
     """
-    Salva dicionario em arquivo JSON com indentacao
-    
+    Saves a dictionary to a JSON file with indentation
+
     Args:
-        dados: Dicionario para salvar
-        caminho: Path do arquivo de destino
+        dados: Dictionary to save
+        caminho: Path of the destination file
     """
     with open(caminho, 'w', encoding='utf-8') as f:
         json.dump(dados, f, ensure_ascii=False, indent=2)
 
 
 # ==============================================================================
-# FUNCOES DE PROCESSAMENTO
+# PROCESSING FUNCTIONS
 # ==============================================================================
 
 def listar_segmentos_para_processar(pasta_json_dinamico: Path, audio_id: str) -> Tuple[Dict, Dict, List[str]]:
     """
-    Lista segmentos elegiveis para processamento.
+    Lists segments eligible for processing.
 
     Args:
-        pasta_json_dinamico: Caminho para pasta 00-json_dinamico
-        audio_id: ID do audio
+        pasta_json_dinamico: Path to the 00-json_dinamico folder
+        audio_id: Audio ID
 
     Returns:
-        Tupla contendo:
-        - dados_acompanhamento: JSON completo de acompanhamento
-        - dados_filtro: JSON de filtro (se existir) ou None
-        - segmentos_processar: Lista de nomes de arquivos a processar
+        Tuple containing:
+        - dados_acompanhamento: full tracking JSON
+        - dados_filtro: filter JSON (if it exists) or None
+        - segmentos_processar: list of file names to process
     """
-    # Carregar JSON de acompanhamento (obrigatorio)
+    # Load tracking JSON (required)
     json_acompanhamento = pasta_json_dinamico / f"{audio_id}_segments_acompanhamento.json"
-    
+
     if not json_acompanhamento.exists():
         raise FileNotFoundError(
             f"JSON de acompanhamento nao encontrado: {json_acompanhamento}"
         )
-    
+
     dados_acompanhamento = carregar_json(json_acompanhamento)
-    
-    # Tentar carregar JSON de filtro (opcional)
+
+    # Try to load filter JSON (optional)
     json_filtro = pasta_json_dinamico / f"{audio_id}.json"
     dados_filtro = None
     
@@ -146,24 +146,27 @@ def listar_segmentos_para_processar(pasta_json_dinamico: Path, audio_id: str) ->
 
 def _extrair_anotacao(resultado):
     """
-    Devolve a Annotation da diarizacao, qualquer que seja o formato do retorno.
+    Returns the diarization Annotation, whatever the return format is.
 
-    O formato varia com a versao e com o modo do pipeline pyannote:
-    - objeto de saida que carrega a Annotation no campo speaker_diarization;
-    - a propria Annotation, direta (pyannote 3.x e o modo legacy do 4.x).
+    The format varies with the version and with the pyannote pipeline's
+    mode:
+    - an output object that carries the Annotation in the
+      speaker_diarization field;
+    - the Annotation itself, directly (pyannote 3.x and 4.x's legacy
+      mode).
 
-    A escolha e feita por inspecao do objeto recebido, nunca por numero de
-    versao. A ordem importa: se um objeto for Annotation E tiver o campo,
-    o campo vence.
+    The choice is made by inspecting the received object, never by
+    version number. Order matters: if an object is an Annotation AND has
+    the field, the field wins.
 
     Args:
-        resultado: Objeto devolvido pela chamada do pipeline
+        resultado: Object returned by the pipeline call
 
     Returns:
-        Annotation com as faixas da diarizacao
+        Annotation with the diarization tracks
 
     Raises:
-        TypeError: Se o objeto nao for nenhum dos dois formatos conhecidos
+        TypeError: If the object is neither of the two known formats
     """
     from pyannote.core import Annotation
 
@@ -184,29 +187,29 @@ def _extrair_anotacao(resultado):
 
 def detectar_overlap(pipeline, audio_path: Path, timeout_segundos: int) -> Optional[bool]:
     """
-    Detecta se ha overlap (multiplos speakers) no audio
-    
+    Detects whether there is overlap (multiple speakers) in the audio
+
     Args:
-        pipeline: Pipeline pyannote carregado
-        audio_path: Path do arquivo de audio
-        timeout_segundos: Tempo maximo de processamento
-        
+        pipeline: Loaded pyannote pipeline
+        audio_path: Path of the audio file
+        timeout_segundos: Maximum processing time
+
     Returns:
-        True: Multiplos speakers detectados (overlap)
-        False: Apenas 1 speaker ou nenhum
-        None: Erro ou timeout
+        True: Multiple speakers detected (overlap)
+        False: Only 1 speaker or none
+        None: Error or timeout
     """
     try:
         with timeout(timeout_segundos):
-            # Executar diarizacao
+            # Run diarization
             diarizacao = pipeline(str(audio_path))
             anotacao = _extrair_anotacao(diarizacao)
 
-            # Extrair speakers unicos
+            # Extract unique speakers
             speakers = set()
             for segment, _, speaker in anotacao.itertracks(yield_label=True):
                 speakers.add(speaker)
-            # Overlap = 2 ou mais speakers distintos
+            # Overlap = 2 or more distinct speakers
             num_speakers = len(speakers)
             tem_overlap = num_speakers >= 2
             
@@ -217,8 +220,8 @@ def detectar_overlap(pipeline, audio_path: Path, timeout_segundos: int) -> Optio
         return None
     except Exception as e:
         msg = str(e)
-        # Segmento mais curto que a janela do pyannote (esperava 160000 samples = 10s)
-        # Segmentos curtos dificilmente tem 2 speakers simultaneos — tratar como sem overlap
+        # Segment shorter than the pyannote window (expected 160000 samples = 10s)
+        # Short segments rarely have 2 simultaneous speakers — treat as no overlap
         if "samples instead of the expected" in msg:
             print(f"  AVISO: audio curto demais para pyannote (chunk insuficiente) — assumindo sem overlap")
             return False
@@ -233,17 +236,17 @@ def processar_todos_segmentos(
     pasta_audios: Path
 ) -> Dict[str, Optional[bool]]:
     """
-    Processa todos os segmentos de audio
-    
+    Processes all audio segments
+
     Args:
-        pipeline: Pipeline pyannote carregado
-        segmentos: Lista de nomes de arquivos a processar
-        timeout_segundos: Timeout por audio
-        pasta_audios: Caminho para pasta com audios
-        
+        pipeline: Loaded pyannote pipeline
+        segmentos: List of file names to process
+        timeout_segundos: Timeout per audio file
+        pasta_audios: Path to the folder with audio files
+
     Returns:
-        Dicionario {nome_arquivo: resultado_overlap}
-        resultado_overlap pode ser: True, False ou None
+        Dictionary {file_name: overlap_result}
+        overlap_result can be: True, False or None
     """
     resultados = {}
     total = len(segmentos)
@@ -252,20 +255,20 @@ def processar_todos_segmentos(
     print("-" * 70)
     
     for idx, nome_arquivo in enumerate(segmentos, 1):
-        # Encontrar arquivo de audio (pode ter extensao diferente)
+        # Find audio file (may have a different extension)
         audio_path = None
         for ext in EXTENSOES_AUDIO:
             caminho_teste = pasta_audios / nome_arquivo
             if caminho_teste.exists():
                 audio_path = caminho_teste
                 break
-        
+
         if not audio_path:
             print(f"[{idx}/{total}] {nome_arquivo} - ARQUIVO NAO ENCONTRADO")
             resultados[nome_arquivo] = None
             continue
-        
-        # Processar audio
+
+        # Process audio
         print(f"[{idx}/{total}] {nome_arquivo}...", end=" ", flush=True)
         
         resultado = detectar_overlap(pipeline, audio_path, timeout_segundos)
@@ -289,18 +292,18 @@ def retry_falhas(
     pasta_audios: Path
 ) -> Dict[str, Optional[bool]]:
     """
-    Tenta reprocessar arquivos que falharam
-    
+    Tries to reprocess files that failed
+
     Args:
-        pipeline: Pipeline pyannote carregado
-        resultados: Resultados do processamento inicial
-        timeout_segundos: Timeout por audio
-        pasta_audios: Caminho para pasta com audios
-        
+        pipeline: Loaded pyannote pipeline
+        resultados: Results from the initial processing
+        timeout_segundos: Timeout per audio file
+        pasta_audios: Path to the folder with audio files
+
     Returns:
-        Dicionario de resultados atualizado
+        Updated results dictionary
     """
-    # Identificar falhas
+    # Identify failures
     falhas = [nome for nome, resultado in resultados.items() if resultado is None]
     
     if not falhas:
@@ -311,7 +314,7 @@ def retry_falhas(
     print("=" * 70)
     
     for idx, nome_arquivo in enumerate(falhas, 1):
-        # Encontrar arquivo
+        # Find file
         audio_path = None
         for ext in EXTENSOES_AUDIO:
             caminho_teste = pasta_audios / nome_arquivo
@@ -339,7 +342,7 @@ def retry_falhas(
 
 
 # ==============================================================================
-# FUNCOES DE CRIACAO DE OUTPUTS
+# OUTPUT CREATION FUNCTIONS
 # ==============================================================================
 
 def criar_jsons_output(
@@ -348,28 +351,28 @@ def criar_jsons_output(
     resultados: Dict[str, Optional[bool]]
 ) -> Tuple[Dict, Dict]:
     """
-    Cria os JSONs de output
-    
+    Creates the output JSONs
+
     Args:
-        dados_acompanhamento: JSON completo original
-        dados_filtro: JSON de filtro (se existir)
-        resultados: Resultados do processamento
-        
+        dados_acompanhamento: original full JSON
+        dados_filtro: filter JSON (if it exists)
+        resultados: processing results
+
     Returns:
-        Tupla (json_acompanhamento_atualizado, json_overlap01)
+        Tuple (updated_json_acompanhamento, json_overlap01)
     """
-    # Atualizar JSON de acompanhamento com campo overlap01
+    # Update tracking JSON with the overlap01 field
     json_acompanhamento_novo = dados_acompanhamento.copy()
-    
+
     for nome_arquivo, metadados in json_acompanhamento_novo.items():
         if nome_arquivo in resultados:
-            # Segmento foi processado
+            # Segment was processed
             metadados['overlap01'] = resultados[nome_arquivo]
         else:
-            # Segmento nao foi processado (nao estava em filtro)
+            # Segment was not processed (was not in the filter)
             metadados['overlap01'] = None
-    
-    # Criar JSON overlap01 (apenas segmentos aprovados: overlap01 = False)
+
+    # Create overlap01 JSON (approved segments only: overlap01 = False)
     json_overlap01 = {}
     
     for nome_arquivo, metadados in json_acompanhamento_novo.items():
@@ -386,30 +389,30 @@ def validar_consistencia(
     pasta_audios: Path
 ) -> bool:
     """
-    Valida consistencia dos dados antes de salvar
-    
+    Validates data consistency before saving
+
     Args:
-        json_acompanhamento: JSON de acompanhamento
-        json_overlap01: JSON overlap01
-        resultados: Resultados do processamento
-        pasta_audios: Caminho para pasta com audios
-        
+        json_acompanhamento: tracking JSON
+        json_overlap01: overlap01 JSON
+        resultados: processing results
+        pasta_audios: path to the folder with audio files
+
     Returns:
-        True se validacao OK, False caso contrario
+        True if validation passed, False otherwise
     """
     erros = []
     
-    # Validacao 1: Todos os resultados estao no JSON acompanhamento
+    # Validation 1: All results are in the tracking JSON
     for nome in resultados.keys():
         if nome not in json_acompanhamento:
             erros.append(f"Resultado sem entrada no JSON: {nome}")
-    
-    # Validacao 2: Todos em overlap01 tem overlap01=False
+
+    # Validation 2: Everything in overlap01 has overlap01=False
     for nome, metadados in json_overlap01.items():
         if metadados.get('overlap01') is not False:
             erros.append(f"Segmento em overlap01 com overlap01!={False}: {nome}")
-    
-    # Validacao 3: Verificar arquivos fisicos existem
+
+    # Validation 3: Check that physical files exist
     for nome in resultados.keys():
         arquivo_existe = False
         for ext in EXTENSOES_AUDIO:
@@ -437,19 +440,19 @@ def salvar_outputs(
     audio_id: str
 ) -> None:
     """
-    Salva JSONs nas pastas de output.
+    Saves JSONs to the output folders.
 
     Args:
-        json_acompanhamento: JSON de acompanhamento atualizado
-        json_overlap01: JSON overlap01 (apenas aprovados)
-        pasta_output_overlap: Caminho para pasta 05-overlap1
-        pasta_output_json_dinamico: Caminho para pasta 00-json_dinamico
-        audio_id: ID do audio
+        json_acompanhamento: updated tracking JSON
+        json_overlap01: overlap01 JSON (approved only)
+        pasta_output_overlap: path to the 05-overlap1 folder
+        pasta_output_json_dinamico: path to the 00-json_dinamico folder
+        audio_id: audio ID
     """
-    # Criar pasta 05-overlap1 se nao existir
+    # Create 05-overlap1 folder if it does not exist
     pasta_output_overlap.mkdir(parents=True, exist_ok=True)
 
-    # Salvar em 05-overlap1
+    # Save in 05-overlap1
     caminho_acompanhamento = pasta_output_overlap / f"{audio_id}_segments_acompanhamento.json"
     caminho_overlap01 = pasta_output_overlap / f"{audio_id}_overlap01.json"
 
@@ -460,7 +463,7 @@ def salvar_outputs(
     print(f"  - {caminho_acompanhamento.name}")
     print(f"  - {caminho_overlap01.name}")
 
-    # Copiar para 00-json_dinamico (sobrescrever)
+    # Copy to 00-json_dinamico (overwrite)
     dest_acompanhamento = pasta_output_json_dinamico / f"{audio_id}_segments_acompanhamento.json"
     dest_filtro = pasta_output_json_dinamico / f"{audio_id}.json"
     
@@ -473,38 +476,39 @@ def salvar_outputs(
 
 
 # ==============================================================================
-# FUNCAO PRINCIPAL
+# MAIN FUNCTION
 # ==============================================================================
 
 def main(audio_id: str) -> bool:
     """
-    Funcao principal: orquestra todo o processamento.
+    Main function: orchestrates the entire processing.
 
     Args:
-        audio_id: ID do audio a processar
+        audio_id: ID of the audio file to process
 
     Returns:
-        True se o modulo concluiu (inclusive quando nao ha segmento
-        elegivel), False se falta pre-condicao ou a validacao reprovou
-        e os JSONs nao foram salvos.
+        True if the module completed (including when there is no
+        eligible segment), False if a precondition is missing or
+        validation failed and the JSONs were not saved.
     """
-    # Definir caminhos baseados no audio_id
+    # Define paths based on audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"
     PASTA_AUDIOS = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "03-segments_16khz"
     PASTA_OUTPUT_OVERLAP = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "05-overlap1"
     PASTA_OUTPUT_JSON_DINAMICO = PASTA_JSON_DINAMICO
-    
+
     print("=" * 70)
     print("DETECTOR DE OVERLAP DE LOCUTORES")
     print("=" * 70)
-    
-    # Configurar timeout
+
+    # Configure timeout
     timeout_segundos = OVERLAP_DETECTOR['timeout']['por_audio_segundos']
 
-    # Este modulo processa UM segmento por vez, com timeout individual: nao
-    # existe caminho de lote. O campo do config passa a ser lido e recusado
-    # quando pede algo que o modulo nao faz - antes ele era ignorado em
-    # silencio, e quem configurasse batch 8 nao tinha como saber.
+    # This module processes ONE segment at a time, with an individual
+    # timeout: there is no batch path. The config field IS now read and
+    # rejected when it asks for something the module does not do -
+    # previously it was silently ignored, and anyone who configured
+    # batch 8 had no way of noticing.
     batch_size = OVERLAP_DETECTOR['batch']['batch_size']
     if batch_size != 1:
         print(f"ERRO: OVERLAP_DETECTOR['batch']['batch_size'] = {batch_size!r}")
@@ -512,7 +516,7 @@ def main(audio_id: str) -> bool:
               "suportado e 1")
         return False
 
-    # Validar caminhos
+    # Validate paths
     if not PASTA_JSON_DINAMICO.exists():
         print(f"ERRO: Pasta JSON nao existe: {PASTA_JSON_DINAMICO}")
         return False
@@ -521,54 +525,54 @@ def main(audio_id: str) -> bool:
         print(f"ERRO: Pasta de audios nao existe: {PASTA_AUDIOS}")
         return False
 
-    # Carregar modelo usando ModelManager (singleton)
+    # Load model using ModelManager (singleton)
     print("\n2. Carregando modelo pyannote...")
     manager = ModelManager()
     pipeline = manager.get_pyannote()
-    
-    # O device quem decide e o ModelManager (m01). Aqui apenas anunciamos o
-    # dispositivo que o pipeline de fato esta usando - nada de resolver o
-    # device uma segunda vez, que era como o log podia anunciar CUDA com o
-    # modelo em CPU.
+
+    # The device is decided by the ModelManager (m01). Here we only
+    # announce the device the pipeline is actually using - no resolving
+    # the device a second time, which was how the log could announce
+    # CUDA with the model on CPU.
     print(f"Pipeline carregado no dispositivo: {pipeline.device}")
-    
-    # Listar segmentos para processar
+
+    # List segments to process
     print("\n3. Listando segmentos para processar...")
     dados_acompanhamento, dados_filtro, segmentos = listar_segmentos_para_processar(PASTA_JSON_DINAMICO, audio_id)
-    
+
     if not segmentos:
-        # Funil pode ter reprovado tudo antes: nao e falha deste modulo
+        # The funnel may have failed everything earlier: not a failure of this module
         print("AVISO: Nenhum segmento para processar")
         return True
 
-    # Processar segmentos
+    # Process segments
     print("\n4. Processando segmentos...")
     resultados = processar_todos_segmentos(pipeline, segmentos, timeout_segundos, PASTA_AUDIOS)
-    
-    # Retry para falhas (se houver)
+
+    # Retry for failures (if any)
     resultados = retry_falhas(pipeline, resultados, timeout_segundos, PASTA_AUDIOS)
-    
-    # Criar JSONs de output
+
+    # Create output JSONs
     print("\n5. Criando JSONs de output...")
     json_acompanhamento_novo, json_overlap01 = criar_jsons_output(
         dados_acompanhamento,
         dados_filtro,
         resultados
     )
-    
-    # Validar consistencia
+
+    # Validate consistency
     print("\n6. Validando consistencia dos dados...")
     if not validar_consistencia(json_acompanhamento_novo, json_overlap01, resultados, PASTA_AUDIOS):
         print("\nERRO: Validacao falhou - JSONs NAO foram salvos")
         return False
 
     print("Validacao OK")
-    
-    # Salvar outputs
+
+    # Save outputs
     print("\n7. Salvando outputs...")
     salvar_outputs(json_acompanhamento_novo, json_overlap01, PASTA_OUTPUT_OVERLAP, PASTA_OUTPUT_JSON_DINAMICO, audio_id)
-    
-    # Relatorio final
+
+    # Final report
     print("\n" + "=" * 70)
     print("PROCESSAMENTO CONCLUIDO")
     print("=" * 70)
@@ -589,12 +593,12 @@ def main(audio_id: str) -> bool:
 
 
 # ==============================================================================
-# EXECUCAO
+# EXECUTION
 # ==============================================================================
 
 if __name__ == "__main__":
-    # Execucao direta exige o audio_id como argumento - nao ha id fixo
-    # no codigo. Mesmo padrao do m15_cleanup.py.
+    # Direct execution requires audio_id as an argument - there is no
+    # fixed id in the code. Same pattern as m15_cleanup.py.
     if len(sys.argv) != 2:
         print("Uso: python src/m07_overlap1.py <audio_id>")
         sys.exit(1)

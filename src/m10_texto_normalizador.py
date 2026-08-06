@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Modulo m10_texto_normalizador.py
-Normaliza as transcrições STT (Whisper e WAV2VEC2)
-Adiciona campos normalizados aos metadados JSON para análise WER
+Module m10_texto_normalizador.py
+Normalizes the STT transcriptions (Whisper and WAV2VEC2)
+Adds normalized fields to the JSON metadata for WER analysis
 """
 
 import sys
@@ -82,16 +82,16 @@ SIGLAS_ABREVIACOES = {
 
 def number_to_words_pt(num: int, with_accents: bool = False) -> str:
     """
-    Converte numero para extenso em portugues
-    Suporta numeros de 0 ate 999.999.999
-    
+    Converts a number to its written form in Portuguese
+    Supports numbers from 0 to 999,999,999
+
     Args:
-        num: Numero inteiro para converter
-        with_accents: Se True, inclui acentuacao (tres, decimo)
-                     Se False, sem acentos (tres, decimo)
-    
+        num: Integer to convert
+        with_accents: If True, includes accents (tres, decimo)
+                     If False, without accents (tres, decimo)
+
     Returns:
-        Numero por extenso
+        Number written out in full
     """
     if num == 0:
         return 'zero'
@@ -167,15 +167,15 @@ def number_to_words_pt(num: int, with_accents: bool = False) -> str:
 
 def ordinal_to_words_pt(num: int, gender: str = 'm', with_accents: bool = False) -> str:
     """
-    Converte numero ordinal para extenso
-    
+    Converts an ordinal number to its written form
+
     Args:
-        num: Numero ordinal
-        gender: 'm' para masculino, 'f' para feminino
-        with_accents: Se True, inclui acentuacao
-    
+        num: Ordinal number
+        gender: 'm' for masculine, 'f' for feminine
+        with_accents: If True, includes accents
+
     Returns:
-        Ordinal por extenso
+        Ordinal written out in full
     """
     if with_accents:
         ordinais_m = {
@@ -212,26 +212,26 @@ def ordinal_to_words_pt(num: int, gender: str = 'm', with_accents: bool = False)
 
 def apply_char_mapping(text: str) -> str:
     """
-    Aplica mapeamento de caracteres especiais
-    
+    Applies the special character mapping
+
     Args:
-        text: Texto para aplicar mapeamento
-    
+        text: Text to apply the mapping to
+
     Returns:
-        Texto com caracteres mapeados
+        Text with mapped characters
     """
     return text.translate(CHARS_MAP)
 
 
 def expand_abbreviations(text: str) -> str:
     """
-    Expande siglas e abreviacoes comuns
-    
+    Expands common acronyms and abbreviations
+
     Args:
-        text: Texto com possíveis siglas
-    
+        text: Text with possible acronyms
+
     Returns:
-        Texto com siglas expandidas
+        Text with expanded acronyms
     """
     for pattern, replacement in SIGLAS_ABREVIACOES.items():
         text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
@@ -240,15 +240,15 @@ def expand_abbreviations(text: str) -> str:
 
 def advanced_number_to_text(text: str, with_accents: bool = False) -> str:
     """
-    Conversao avancada de numeros para texto
-    Suporta: decimais, percentuais, ordinais
-    
+    Advanced conversion of numbers to text
+    Supports: decimals, percentages, ordinals
+
     Args:
-        text: Texto com numeros
-        with_accents: Se True, numeros por extenso com acento
-    
+        text: Text with numbers
+        with_accents: If True, numbers are written out with accents
+
     Returns:
-        Texto com numeros convertidos
+        Text with converted numbers
     """
     # Ordinais (1º, 2ª, 3º, etc.)
     def replace_ordinal(match):
@@ -287,13 +287,13 @@ def advanced_number_to_text(text: str, with_accents: bool = False) -> str:
 
 def remove_html_tags(text: str) -> str:
     """
-    Remove tags HTML do texto
-    
+    Removes HTML tags from the text
+
     Args:
-        text: Texto com possiveis tags HTML
-    
+        text: Text with possible HTML tags
+
     Returns:
-        Texto limpo
+        Cleaned text
     """
     clean = re.compile('<.*?>')
     return re.sub(clean, '', text)
@@ -305,15 +305,15 @@ def normalize_text(
     remove_accents: bool = True
 ) -> Optional[str]:
     """
-    Normalizacao completa do texto para analise STT
-    
+    Full text normalization for STT analysis
+
     Args:
-        text: Texto para normalizar
-        remove_punctuation: Se True, remove pontuacao de diccao (.,;!?_)
-        remove_accents: Se True, remove acentos graficos ('`^~)
-    
+        text: Text to normalize
+        remove_punctuation: If True, removes diction punctuation (.,;!?_)
+        remove_accents: If True, removes graphic accents ('`^~)
+
     Returns:
-        Texto normalizado ou None se vazio
+        Normalized text, or None if empty
     """
     if not text or text.strip() == "":
         return None
@@ -361,13 +361,13 @@ def normalize_text(
 
 def load_json(filepath: Path) -> Optional[Dict]:
     """
-    Carrega arquivo JSON
-    
+    Loads a JSON file
+
     Args:
-        filepath: Caminho do arquivo JSON
-    
+        filepath: Path of the JSON file
+
     Returns:
-        Dicionario com dados ou None se erro
+        Dictionary with data, or None on error
     """
     if not filepath.exists():
         logger.warning(f"Arquivo nao encontrado: {filepath}")
@@ -383,14 +383,14 @@ def load_json(filepath: Path) -> Optional[Dict]:
 
 def save_json(data: Dict, filepath: Path) -> bool:
     """
-    Salva dados em arquivo JSON
-    
+    Saves data to a JSON file
+
     Args:
-        data: Dicionario para salvar
-        filepath: Caminho do arquivo de saida
-    
+        data: Dictionary to save
+        filepath: Path of the output file
+
     Returns:
-        True se sucesso, False se erro
+        True on success, False on error
     """
     try:
         filepath.parent.mkdir(parents=True, exist_ok=True)
@@ -407,15 +407,15 @@ def normalizar_segmentos(
     segmentos_elegiveis: Optional[List[str]] = None
 ) -> Tuple[Dict, Dict]:
     """
-    Normaliza textos dos segmentos
-    
+    Normalizes the segments' texts
+
     Args:
-        dados_acompanhamento: Dados completos de todos segmentos
-        segmentos_elegiveis: Lista de IDs de segmentos para processar
-                            Se None, processa todos
-    
+        dados_acompanhamento: Full data for all segments
+        segmentos_elegiveis: List of segment IDs to process
+                            If None, processes all
+
     Returns:
-        Tupla (dados_acompanhamento_atualizado, dados_elegiveis_normalizados)
+        Tuple (dados_acompanhamento_atualizado, dados_elegiveis_normalizados)
     """
     # Configuracoes de normalizacao
     remove_punct = TEXT_NORMALIZER.get('remove_punctuation_diction', True)
@@ -483,17 +483,17 @@ def normalizar_segmentos(
 
 def processar_normalizacao(audio_id: str):
     """
-    Processa normalizacao de textos STT.
+    Processes STT text normalization.
 
     Args:
-        audio_id: ID do audio a processar
+        audio_id: ID of the audio file to process
 
-    Fluxo:
-    1. Carrega arquivo de acompanhamento (obrigatorio)
-    2. Carrega arquivo de filtro (opcional)
-    3. Normaliza segmentos elegiveis
-    4. Salva em 08-normalizador_texto/
-    5. Copia para 00-json_dinamico/ (sobrescreve)
+    Flow:
+    1. Loads the tracking file (required)
+    2. Loads the filter file (optional)
+    3. Normalizes eligible segments
+    4. Saves to 08-normalizador_texto/
+    5. Copies to 00-json_dinamico/ (overwrites)
     """
     # Definir caminhos baseados no audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Modulo m12_denoiser_deepfilternet3.py
-Aplica denoising em segmentos de audio usando DeepFilterNet3
-Filtra por qualidade MOS e adiciona campo 'utilizou_denoiser' aos metadados JSON
+Module m12_denoiser_deepfilternet3.py
+Applies denoising to audio segments using DeepFilterNet3
+Filters by MOS quality and adds the 'utilizou_denoiser' field to the JSON metadata
 """
 
 import sys
@@ -55,36 +55,38 @@ def processar_audio_denoiser(
     sr_modelo: int
 ) -> Tuple[np.ndarray, int]:
     """
-    Processa um arquivo de audio com DeepFilterNet3, devolvendo-o na taxa
-    de amostragem em que entrou.
+    Processes an audio file with DeepFilterNet3, returning it at the
+    sample rate it came in at.
 
-    O DeepFilterNet3 opera a 48 kHz internamente: um segmento de 24 kHz e
-    reamostrado na entrada, e isso e inevitavel. A saida, porem, e devolvida
-    a taxa da fonte. Sem isso o dataset sairia com sample rate MISTURADO -
-    48 kHz nos segmentos que passaram pelo denoiser, a taxa da fonte nos que
-    nao passaram - e os de 48 kHz seriam material de 24 kHz esticado, sem
-    informacao nenhuma acima de 12 kHz. O custo do resample e irrisorio.
+    DeepFilterNet3 operates internally at 48 kHz: a 24 kHz segment is
+    resampled on input, and that is unavoidable. The output, however,
+    is returned at the source rate. Without this the dataset would come
+    out with a MIXED sample rate - 48 kHz in segments that went through
+    the denoiser, the source rate in those that did not - and the
+    48 kHz ones would be stretched 24 kHz material, with no information
+    at all above 12 kHz. The resample cost is negligible.
 
-    CANAIS NAO SAO RESTAURADOS, de proposito: o modelo e mono, e recriar um
-    par estereo duplicando o canal seria inventar informacao que o denoiser
-    nao produziu. O m13 leva todos os caminhos a mono de qualquer forma
-    (SOX_NORMALIZER['channels']), entao isso nao mistura nada no dataset.
+    CHANNELS ARE NOT RESTORED, on purpose: the model is mono, and
+    recreating a stereo pair by duplicating the channel would be
+    inventing information the denoiser did not produce. m13 takes every
+    path to mono anyway (SOX_NORMALIZER['channels']), so this does not
+    mix anything into the dataset.
 
-    O dispositivo nao e parametro desta funcao: quem o define e o m01, ao
-    carregar o modelo, inclusive escrevendo a chave DEVICE na config
-    interna do DeepFilterNet (achado A29).
+    The device is not a parameter of this function: it is set by m01,
+    when loading the model, including writing the DEVICE key into
+    DeepFilterNet's internal config (finding A29).
 
     Args:
-        audio_path: Caminho do arquivo de audio
-        model: Modelo DeepFilterNet
-        df_state: Estado do DeepFilterNet
-        attenuation_limit: Limite de atenuacao, em decibeis
-        sr_modelo: Taxa interna do modelo, como o m01 a anuncia - nao ha
-            numero fixo aqui, quem manda e a biblioteca carregada
+        audio_path: Path of the audio file
+        model: DeepFilterNet model
+        df_state: DeepFilterNet state
+        attenuation_limit: Attenuation limit, in decibels
+        sr_modelo: Model's internal rate, as announced by m01 - there is
+            no fixed number here, the loaded library is what decides
 
     Returns:
-        Tupla (audio_denoised, sample_rate), o sample rate sendo o do
-        segmento de ENTRADA - nao a taxa interna do modelo.
+        Tuple (audio_denoised, sample_rate), the sample rate being that
+        of the INPUT segment - not the model's internal rate.
     """
     # Taxa nativa do segmento, medida ANTES da reamostragem para o modelo
     sr_fonte = sf.info(str(audio_path)).samplerate
@@ -130,17 +132,18 @@ def salvar_audio_formato_original(
     subtype: str
 ) -> None:
     """
-    Salva audio processado no mesmo formato do arquivo original
+    Saves the processed audio in the same format as the original file
 
     Args:
-        audio_denoised: Array numpy com audio processado
+        audio_denoised: Numpy array with the processed audio
         sr: Sample rate
-        output_path: Caminho de saida (com extensao original)
-        formato_original: Extensao do arquivo original (ex: '.flac', '.mp3')
-        subtype: Subtipo do soundfile lido do segmento de ENTRADA. Gravar com
-            constante fixa rebaixaria um segmento de 24 bits sem avisar - o
-            m04 ja o entregou na profundidade da fonte, e o denoiser nao pode
-            ser o ponto que joga isso fora.
+        output_path: Output path (with the original extension)
+        formato_original: Original file extension (e.g., '.flac', '.mp3')
+        subtype: soundfile subtype read from the INPUT segment. Writing
+            with a fixed constant would downgrade a 24-bit segment
+            without warning - m04 already delivered it at the source's
+            depth, and the denoiser cannot be the point that throws
+            that away.
     """
     # Normaliza audio para evitar clipping
     audio_normalized = np.clip(audio_denoised, -1.0, 1.0)
@@ -183,15 +186,15 @@ def salvar_audio_formato_original(
 
 def carregar_json_dinamico(pasta_json: Path, audio_id: str) -> Tuple[Optional[Dict], Dict]:
     """
-    Carrega os arquivos JSON dinamicos.
+    Loads the dynamic JSON files.
 
     Args:
-        pasta_json: Pasta contendo os JSON
-        audio_id: ID do audio
+        pasta_json: Folder containing the JSONs
+        audio_id: Audio ID
 
     Returns:
-        Tupla (json_filtrado, json_acompanhamento)
-        json_filtrado pode ser None se nao existir
+        Tuple (json_filtrado, json_acompanhamento)
+        json_filtrado can be None if it does not exist
     """
     # Arquivo de filtro (opcional)
     path_filtrado = pasta_json / f"{audio_id}.json"
@@ -225,16 +228,16 @@ def determinar_segmentos_processar(
     skip_if_processed: bool
 ) -> Tuple[List[str], Dict[str, bool]]:
     """
-    Determina quais segmentos devem ser processados baseado nos filtros
-    
+    Determines which segments should be processed based on the filters
+
     Args:
-        json_filtrado: JSON com segmentos filtrados (pode ser None)
-        json_acompanhamento: JSON com todos os segmentos
-        mos_quality_filter: Lista de qualidades MOS para processar
-        skip_if_processed: Se True, pula segmentos ja processados
-    
+        json_filtrado: JSON with filtered segments (can be None)
+        json_acompanhamento: JSON with all segments
+        mos_quality_filter: List of MOS qualities to process
+        skip_if_processed: If True, skips segments already processed
+
     Returns:
-        Tupla (lista_segmentos_elegíveis, dict_status_todos_segmentos)
+        Tuple (eligible_segments_list, all_segments_status_dict)
     """
     segmentos_elegiveis = []
     status_segmentos = {}
@@ -274,12 +277,12 @@ def salvar_json_atualizado(
     output_path: Path
 ) -> None:
     """
-    Salva JSON com campo 'utilizou_denoiser' atualizado
-    
+    Saves the JSON with the 'utilizou_denoiser' field updated
+
     Args:
-        json_data: Dicionario com metadados
-        status_segmentos: Dict com status de processamento por segmento
-        output_path: Caminho de saida do JSON
+        json_data: Dictionary with metadata
+        status_segmentos: Dict with the processing status per segment
+        output_path: Output path of the JSON
     """
     # Cria copia do JSON original
     json_atualizado = json_data.copy()
@@ -305,14 +308,14 @@ def salvar_json_atualizado(
 
 def main(audio_id: str) -> bool:
     """
-    Funcao principal de execucao.
+    Main execution function.
 
     Args:
-        audio_id: ID do audio a processar
+        audio_id: ID of the audio file to process
 
     Returns:
-        True se os JSONs atualizados foram gravados. Pre-condicao
-        ausente propaga excecao (FileNotFoundError).
+        True if the updated JSONs were written. A missing precondition
+        propagates an exception (FileNotFoundError).
     """
     # Definir caminhos baseados no audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"

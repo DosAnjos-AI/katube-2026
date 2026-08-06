@@ -22,7 +22,7 @@ cache/
 
 
 
-# Dados de processamento - conteudo ignorado, pastas preservadas
+# Processing data - content ignored, folders preserved
 arquivos/temp/*
 !arquivos/temp/README.md
 arquivos/audios/*
@@ -30,11 +30,11 @@ arquivos/audios/*
 arquivos/input/*
 !arquivos/input/README.md
 
-# Saida da pipeline - conteudo ignorado, o sumarizador e versionado
+# Pipeline output - content ignored, the summarizer is versioned
 dataset/*
 !dataset/sumary_results.py
 
-# Absorvido de gitignore.git
+# Absorbed from gitignore.git
 .venv/
 .idea/
 .vscode/settings.json
@@ -46,8 +46,8 @@ audacity_data/
 *.ogg
 .DS_Store
 
-# Credenciais - NUNCA versionar
+# Credentials - NEVER version
 .env
 .env.*
-# Excecao: o modelo sem valores e versionado
+# Exception: the template without values is versioned
 !.env.example

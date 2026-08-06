@@ -1,23 +1,23 @@
 # arquivos/input/
 
-Cole aqui os áudios que você quer processar. É a porta de entrada da
-pipeline.
+Paste here the audio files you want to process. This is the pipeline's
+entry point.
 
-## ATENÇÃO - COLE SEMPRE UMA CÓPIA, NUNCA A ÚNICA CÓPIA
+## ATTENTION - ALWAYS PASTE A COPY, NEVER THE ONLY COPY
 
-Os arquivos colados aqui são **MOVIDOS**, não copiados. Esta pasta é
-**esvaziada** a cada execução do `main.py`.
+Files pasted here are **MOVED**, not copied. This folder is
+**emptied** on every run of `main.py`.
 
-Se você colar aqui a única cópia que tem de um áudio, ela sai daqui e vai
-para `arquivos/audios/{id}/`. Se algo der errado depois disso, o material
-original não está mais no lugar de onde veio.
+If you paste the only copy you have of an audio file here, it leaves this
+folder and goes to `arquivos/audios/{id}/`. If something goes wrong after
+that, the original material is no longer where it came from.
 
-**Sempre mantenha o original em outro lugar.**
+**Always keep the original somewhere else.**
 
-## Como colar
+## How to paste
 
-Pode colar arquivos soltos ou pastas inteiras, em quantos níveis de subpasta
-quiser - a varredura é recursiva:
+You can paste loose files or entire folders, at any number of subfolder
+levels - the scan is recursive:
 
     arquivos/input/
     ├── audio_solto.flac
@@ -26,37 +26,38 @@ quiser - a varredura é recursiva:
         └── programa_02/
             └── entrevista.wav
 
-## Formatos aceitos
+## Accepted formats
 
-Definidos em `config.py`, no campo `NOMEACAO['formatos_entrada']`. Arquivo
-com extensão fora dessa lista é **ignorado com aviso no log** e fica onde
-está - não é apagado nem movido.
+Defined in `config.py`, in the `NOMEACAO['formatos_entrada']` field. A
+file with an extension outside this list is **ignored with a log
+warning** and stays where it is - it is neither deleted nor moved.
 
-## Que nome cada áudio recebe
+## What name each audio file receives
 
-Decidido em `config.py`, no campo `NOMEACAO['modo']`:
+Decided in `config.py`, in the `NOMEACAO['modo']` field:
 
-- `"hash_md5"` (recomendado) - o id é o MD5 do **conteúdo** do arquivo.
-  Dois áudios de conteúdo diferente com o mesmo nome entram os dois; o
-  mesmo arquivo colado em outra pasta é reconhecido como repetido.
-- `"nome_original"` - o id é o nome do arquivo sem a extensão.
+- `"hash_md5"` (recommended) - the id is the MD5 of the file's
+  **content**. Two audio files with different content and the same name
+  both get in; the same file pasted into another folder is recognized as
+  a repeat.
+- `"nome_original"` - the id is the file name without the extension.
 
-Nos dois modos, a relação `id <-> caminho de origem` fica em
+In both modes, the `id <-> source path` relationship is kept in
 `dataset/nomeacao.csv`.
 
-Nomes repetidos em pastas diferentes ganham sufixo: `entrevista`,
-`entrevista_002`, `entrevista_003`, na ordem alfabética do caminho -
-**apenas no modo `nome_original`**. No modo hash não há sufixo: o
-conteúdo já distingue os arquivos.
+Repeated names in different folders get a suffix: `entrevista`,
+`entrevista_002`, `entrevista_003`, in alphabetical order of the path -
+**only in `nome_original` mode**. In hash mode there is no suffix: the
+content already distinguishes the files.
 
-## Áudio já concluído
+## Audio already completed
 
-Áudio cujo id já consta de `dataset/concluidos.csv` **não é movido** e
-fica parado aqui, nomeado no log com a guarda que o barrou. Mesma coisa
-para áudio que já está em `arquivos/audios/{id}/`.
+An audio file whose id is already in `dataset/concluidos.csv` **is not
+moved** and stays here, named in the log with the guard that blocked it.
+Same for an audio file already in `arquivos/audios/{id}/`.
 
-O `dataset/historico_dataset/` **não** participa disso: ele é backup do
-JSON de acompanhamento, não marcador de deduplicação.
+`dataset/historico_dataset/` **does not** take part in this: it is a
+backup of the tracking JSON, not a deduplication marker.
 
-O conteúdo deste diretório não é versionado (ver .gitignore).
-Este README existe para preservar a pasta no repositório.
+The content of this directory is not versioned (see .gitignore).
+This README exists to preserve the folder in the repository.

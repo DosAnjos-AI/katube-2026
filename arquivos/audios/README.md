@@ -1,20 +1,20 @@
 # arquivos/audios/
 
-Diretório de entrada da pipeline. Guarda as pastas com os áudios que serão
-processados.
+Input directory for the pipeline. Holds the folders with the audio files
+that will be processed.
 
-## Estrutura
+## Structure
 
-    arquivos/audios/{id}/{id}.<formato>
+    arquivos/audios/{id}/{id}.<format>
 
-- Primeiro nível: uma pasta por áudio, nomeada com o {id}.
-- Dentro dela: o arquivo de áudio usando o mesmo {id} como nome base.
-- O formato é variável (.mp3, .flac, .wav, .ogg, entre outros).
+- First level: one folder per audio file, named with the {id}.
+- Inside it: the audio file, using the same {id} as the base name.
+- The format is variable (.mp3, .flac, .wav, .ogg, among others).
 
-## Atenção
+## Attention
 
-Não assumir nenhum formato como padrão ao implementar leitura ou varredura.
-A extensão deve ser sempre detectada, nunca fixada em código.
+Do not assume any format as default when implementing reading or
+scanning. The extension must always be detected, never hardcoded.
 
-O conteúdo deste diretório não é versionado (ver .gitignore).
-Este README existe para preservar a pasta no repositório.
+The content of this directory is not versioned (see .gitignore).
+This README exists to preserve the folder in the repository.

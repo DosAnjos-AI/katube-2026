@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Modulo m15_cleanup.py
-Realiza limpeza de arquivos temporarios e/ou input conforme configuracao
+Module m15_cleanup.py
+Cleans up temporary and/or input files according to configuration
 """
 
 import sys
@@ -25,14 +25,14 @@ from config import MASTER
 
 def excluir_pasta(pasta: Path, tipo: str) -> bool:
     """
-    Exclui pasta e todo seu conteudo
-    
+    Deletes a folder and all its content
+
     Args:
-        pasta: Path da pasta a excluir
-        tipo: Tipo de pasta ('temp' ou 'input') para logs
-        
+        pasta: Path of the folder to delete
+        tipo: Folder type ('temp' or 'input'), for logs
+
     Returns:
-        True se excluiu com sucesso, False caso contrario
+        True on successful deletion, False otherwise
     """
     if not pasta.exists():
         print(f"[AVISO] Pasta {tipo} nao encontrada: {pasta}")
@@ -52,15 +52,16 @@ def excluir_pasta(pasta: Path, tipo: str) -> bool:
 
 def executar_cleanup(audio_id: str) -> bool:
     """
-    Executa limpeza conforme configuracao MASTER['cleanup'].
+    Runs cleanup according to the MASTER['cleanup'] configuration.
 
     Args:
-        audio_id: ID do audio a processar
+        audio_id: ID of the audio file to process
 
     Returns:
-        True se a limpeza pedida foi concluida (ou estava desabilitada),
-        False se alguma pasta nao pode ser removida ou o modo e invalido.
-        Falha aqui e AVISO para o chamador: o dataset ja esta gravado.
+        True if the requested cleanup was completed (or was disabled),
+        False if some folder could not be removed or the mode is
+        invalid. A failure here is a WARNING for the caller: the
+        dataset is already saved.
     """
     # Definir caminhos baseados no audio_id
     PASTA_TEMP = PROJECT_ROOT / "arquivos" / "temp" / audio_id

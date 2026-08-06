@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Modulo m08_whisper.py
-Transcreve segmentos de audio usando Whisper (distil-whisper-large-v3-ptbr)
-Adiciona campo 'stt_whisper' aos metadados JSON
+Module m08_whisper.py
+Transcribes audio segments using Whisper (distil-whisper-large-v3-ptbr)
+Adds the 'stt_whisper' field to the JSON metadata
 """
 
 import sys
@@ -14,7 +14,7 @@ import torch
 from transformers import pipeline
 import librosa
 
-# Adicionar pasta raiz ao path para importar config
+# Add root folder to the path to import config
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
@@ -23,37 +23,37 @@ from m01_load_models import ModelManager
 
 
 # ==============================================================================
-# CONFIGURACAO
+# CONFIGURATION
 # ==============================================================================
 
-# Modelo Whisper
+# Whisper model
 MODELO_WHISPER = "freds0/distil-whisper-large-v3-ptbr"
 
 
 # ==============================================================================
-# FUNCOES DE MODELO E DEVICE
+# MODEL AND DEVICE FUNCTIONS
 # ==============================================================================
 
 
 def calcular_batch_size_auto(device: str) -> int:
     """
-    Calcula o batch_size automatico baseado em VRAM disponivel
-    
+    Calculates the automatic batch_size based on available VRAM
+
     Args:
-        device: 'cuda' ou 'cpu'
-        
+        device: 'cuda' or 'cpu'
+
     Returns:
-        Batch size otimizado
+        Optimized batch size
     """
     if device == 'cpu':
         return 1
     
     try:
-        # Obter VRAM total disponivel
+        # Get total available VRAM
         vram_total_gb = torch.cuda.get_device_properties(0).total_memory / (1024**3)
-        
-        # Calculo conservador baseado em testes empiricos
-        # distil-whisper-large-v3: ~2.5GB base + ~0.4GB por audio adicional
+
+        # Conservative calculation based on empirical tests
+        # distil-whisper-large-v3: ~2.5GB base + ~0.4GB per additional audio file
         if vram_total_gb >= 20:
             return 16
         elif vram_total_gb >= 12:
@@ -65,28 +65,28 @@ def calcular_batch_size_auto(device: str) -> int:
         else:
             return 1
     except:
-        # Fallback seguro
+        # Safe fallback
         return 4
 
 
 def obter_batch_size(device: str) -> int:
     """
-    Obtem o batch_size final considerando config e device
-    
+    Gets the final batch_size, considering config and device
+
     Args:
-        device: 'cuda' ou 'cpu'
-        
+        device: 'cuda' or 'cpu'
+
     Returns:
-        Batch size a ser usado
+        Batch size to use
     """
-    # CPU sempre usa batch_size=1
+    # CPU always uses batch_size=1
     if device == 'cpu':
         batch_config = STT_WHISPER['batch']['batch_size']
         if batch_config != 1:
             print(f"CPU detectada: batch_size ajustado de {batch_config} para 1 automaticamente")
         return 1
-    
-    # GPU: usar config ou calcular automatico
+
+    # GPU: use config or calculate automatically
     batch_config = STT_WHISPER['batch']['batch_size']
     
     if batch_config == 'auto':
@@ -101,18 +101,18 @@ def obter_batch_size(device: str) -> int:
 
 
 # ==============================================================================
-# FUNCOES DE JSON
+# JSON FUNCTIONS
 # ==============================================================================
 
 def carregar_json(caminho: Path) -> Optional[Dict]:
     """
-    Carrega arquivo JSON
-    
+    Loads a JSON file
+
     Args:
-        caminho: Path do arquivo JSON
-        
+        caminho: Path of the JSON file
+
     Returns:
-        Dicionario com dados ou None se erro
+        Dictionary with data, or None on error
     """
     try:
         with open(caminho, 'r', encoding='utf-8') as f:
@@ -126,14 +126,14 @@ def carregar_json(caminho: Path) -> Optional[Dict]:
 
 def salvar_json(dados: Dict, caminho: Path) -> bool:
     """
-    Salva dados em arquivo JSON
-    
+    Saves data to a JSON file
+
     Args:
-        dados: Dicionario a salvar
-        caminho: Path do arquivo destino
-        
+        dados: Dictionary to save
+        caminho: Path of the destination file
+
     Returns:
-        True se sucesso, False se erro
+        True on success, False on error
     """
     try:
         with open(caminho, 'w', encoding='utf-8') as f:
@@ -146,18 +146,18 @@ def salvar_json(dados: Dict, caminho: Path) -> bool:
 
 def carregar_metadados(pasta_json_dinamico: Path, audio_id: str) -> Tuple[Optional[Dict], Optional[Dict]]:
     """
-    Carrega os arquivos JSON de metadados.
+    Loads the metadata JSON files.
 
     Args:
-        pasta_json_dinamico: Caminho para pasta 00-json_dinamico
-        audio_id: ID do audio
+        pasta_json_dinamico: Path to the 00-json_dinamico folder
+        audio_id: Audio ID
 
     Returns:
-        Tupla (json_filtrado, json_acompanhamento)
-        json_filtrado pode ser None se nao existir
-        json_acompanhamento deve existir (obrigatorio)
+        Tuple (json_filtrado, json_acompanhamento)
+        json_filtrado can be None if it does not exist
+        json_acompanhamento must exist (required)
     """
-    # Arquivo de acompanhamento (obrigatorio)
+    # Tracking file (required)
     arquivo_acompanhamento = pasta_json_dinamico / f"{audio_id}_segments_acompanhamento.json"
     json_acompanhamento = carregar_json(arquivo_acompanhamento)
 
@@ -165,7 +165,7 @@ def carregar_metadados(pasta_json_dinamico: Path, audio_id: str) -> Tuple[Option
         print(f"ERRO CRITICO: Arquivo obrigatorio nao encontrado: {arquivo_acompanhamento.name}")
         return None, None
 
-    # Arquivo filtrado (opcional)
+    # Filtered file (optional)
     arquivo_filtrado = pasta_json_dinamico / f"{audio_id}.json"
     json_filtrado = carregar_json(arquivo_filtrado)
     
@@ -182,38 +182,38 @@ def carregar_metadados(pasta_json_dinamico: Path, audio_id: str) -> Tuple[Option
 def determinar_segmentos_elegiveis(json_filtrado: Optional[Dict], 
                                    json_acompanhamento: Dict) -> List[str]:
     """
-    Determina quais segmentos devem ser processados
-    
+    Determines which segments should be processed
+
     Args:
-        json_filtrado: JSON com segmentos filtrados (ou None)
-        json_acompanhamento: JSON com todos os segmentos
-        
+        json_filtrado: JSON with filtered segments (or None)
+        json_acompanhamento: JSON with all segments
+
     Returns:
-        Lista de nomes de arquivos elegiveis para processamento
+        List of file names eligible for processing
     """
     if json_filtrado is not None:
-        # Usar apenas segmentos do filtrado
+        # Use only segments from the filtered file
         return list(json_filtrado.keys())
     else:
-        # Usar todos os segmentos do acompanhamento
+        # Use all segments from the tracking file
         return list(json_acompanhamento.keys())
 
 
 # ==============================================================================
-# FUNCOES DE AUDIO
+# AUDIO FUNCTIONS
 # ==============================================================================
 
 def listar_arquivos_audio_elegiveis(pasta: Path, 
                                     segmentos_elegiveis: List[str]) -> List[Path]:
     """
-    Lista arquivos de audio que estao na lista de elegiveis
-    
+    Lists audio files that are in the eligible list
+
     Args:
-        pasta: Path da pasta com arquivos de audio
-        segmentos_elegiveis: Lista de nomes de arquivos elegiveis
-        
+        pasta: Path of the folder with audio files
+        segmentos_elegiveis: List of eligible file names
+
     Returns:
-        Lista de Path dos arquivos encontrados
+        List of Paths of the files found
     """
     arquivos = []
     segmentos_set = set(segmentos_elegiveis)
@@ -230,54 +230,54 @@ def transcrever_batch(pipe: pipeline,
                      arquivos_audio: List[Path],
                      batch_size: int) -> Dict[str, str]:
     """
-    Transcreve um batch de arquivos de audio
-    
+    Transcribes a batch of audio files
+
     Args:
-        pipe: Pipeline do Whisper configurado
-        arquivos_audio: Lista de paths dos arquivos
-        batch_size: Tamanho do batch
-        
+        pipe: Configured Whisper pipeline
+        arquivos_audio: List of file paths
+        batch_size: Batch size
+
     Returns:
-        Dicionario {nome_arquivo: transcricao}
+        Dictionary {file_name: transcription}
     """
     resultados = {}
     total = len(arquivos_audio)
     
-    # Processar em batches
+    # Process in batches
     for i in range(0, total, batch_size):
         batch = arquivos_audio[i:i + batch_size]
         batch_atual = min(i + batch_size, total)
-        
+
         print(f"Processando batch [{i+1}-{batch_atual}/{total}]...")
-        
-        # Carregar audios do batch
+
+        # Load the batch's audio files
         audios = []
         nomes = []
         for arquivo in batch:
             try:
-                # Carregar audio em 16kHz (sample rate do Whisper)
+                # Load audio at 16kHz (Whisper's sample rate)
                 audio, _ = librosa.load(str(arquivo), sr=16000, mono=True)
                 audios.append(audio)
                 nomes.append(arquivo.name)
             except Exception as e:
                 print(f"  ERRO ao carregar {arquivo.name}: {e}")
                 resultados[arquivo.name] = None
-        
-        # Transcrever batch
+
+        # Transcribe batch
         if audios:
             try:
-                # Pipeline aceita lista de arrays
+                # Pipeline accepts a list of arrays
                 outputs = pipe(audios, generate_kwargs={"language": "pt", "task": "transcribe"})
-                
-                # Extrair transcricoes
+
+                # Extract transcriptions
                 for nome, output in zip(nomes, outputs):
                     transcricao = output['text'].strip()
                     resultados[nome] = transcricao
                     print(f"  {nome}: OK")
-                    
+
             except Exception as e:
                 print(f"  ERRO no batch: {e}")
-                # Marcar todos do batch como falha
+                # Mark all of the batch as failed
                 for nome in nomes:
                     if nome not in resultados:
                         resultados[nome] = None
@@ -289,15 +289,15 @@ def processar_transcricoes(pipe: pipeline,
                           arquivos_audio: List[Path],
                           batch_size: int) -> Dict[str, str]:
     """
-    Processa todas as transcricoes com controle de progresso
-    
+    Processes all transcriptions with progress tracking
+
     Args:
-        pipe: Pipeline do Whisper
-        arquivos_audio: Lista de arquivos para transcrever
-        batch_size: Tamanho do batch
-        
+        pipe: Whisper pipeline
+        arquivos_audio: List of files to transcribe
+        batch_size: Batch size
+
     Returns:
-        Dicionario {nome_arquivo: transcricao}
+        Dictionary {file_name: transcription}
     """
     print(f"\nIniciando transcricao de {len(arquivos_audio)} arquivos...")
     print(f"Batch size: {batch_size}")
@@ -305,7 +305,7 @@ def processar_transcricoes(pipe: pipeline,
     
     resultados = transcrever_batch(pipe, arquivos_audio, batch_size)
     
-    # Estatisticas
+    # Statistics
     total = len(resultados)
     sucesso = sum(1 for v in resultados.values() if v is not None)
     falhas = total - sucesso
@@ -317,20 +317,20 @@ def processar_transcricoes(pipe: pipeline,
 
 
 # ==============================================================================
-# FUNCOES DE ATUALIZACAO E SALVAMENTO
+# UPDATE AND SAVE FUNCTIONS
 # ==============================================================================
 
 def atualizar_json_com_transcricoes(json_dados: Dict,
                                     transcricoes: Dict[str, str]) -> Dict:
     """
-    Adiciona campo stt_whisper aos metadados
-    
+    Adds the stt_whisper field to the metadata
+
     Args:
-        json_dados: Dicionario original de metadados
-        transcricoes: Dicionario {nome_arquivo: transcricao}
-        
+        json_dados: Original metadata dictionary
+        transcricoes: Dictionary {file_name: transcription}
+
     Returns:
-        Dicionario atualizado
+        Updated dictionary
     """
     json_atualizado = json_dados.copy()
     
@@ -344,14 +344,14 @@ def atualizar_json_com_transcricoes(json_dados: Dict,
 def adicionar_transcricoes_null(json_dados: Dict,
                                 segmentos_processados: List[str]) -> Dict:
     """
-    Adiciona stt_whisper=null para segmentos nao processados
-    
+    Adds stt_whisper=null for segments that were not processed
+
     Args:
-        json_dados: Dicionario de metadados
-        segmentos_processados: Lista de segmentos que foram processados
-        
+        json_dados: Metadata dictionary
+        segmentos_processados: List of segments that were processed
+
     Returns:
-        Dicionario atualizado
+        Updated dictionary
     """
     json_atualizado = json_dados.copy()
     processados_set = set(segmentos_processados)
@@ -372,64 +372,64 @@ def salvar_outputs(json_filtrado: Optional[Dict],
                   pasta_output_json_dinamico: Path,
                   audio_id: str) -> bool:
     """
-    Salva os JSONs atualizados nas pastas de output.
+    Saves the updated JSONs to the output folders.
 
     Args:
-        json_filtrado: JSON filtrado original (ou None)
-        json_acompanhamento: JSON acompanhamento original
-        segmentos_elegiveis: Lista de segmentos que eram elegiveis
-        transcricoes: Dicionario com transcricoes
-        pasta_output_stt: Caminho para pasta 06-stt_whisper
-        pasta_output_json_dinamico: Caminho para pasta 00-json_dinamico
-        audio_id: ID do audio
+        json_filtrado: original filtered JSON (or None)
+        json_acompanhamento: original tracking JSON
+        segmentos_elegiveis: list of segments that were eligible
+        transcricoes: dictionary with transcriptions
+        pasta_output_stt: path to the 06-stt_whisper folder
+        pasta_output_json_dinamico: path to the 00-json_dinamico folder
+        audio_id: audio ID
 
     Returns:
-        True se sucesso, False se erro
+        True on success, False on error
     """
-    # Criar pasta output se nao existir
+    # Create output folder if it does not exist
     pasta_output_stt.mkdir(parents=True, exist_ok=True)
 
     print("\n" + "=" * 70)
     print("SALVANDO OUTPUTS")
     print("=" * 70)
 
-    # 1. Atualizar JSON acompanhamento (todos os segmentos)
+    # 1. Update tracking JSON (all segments)
     json_acomp_atualizado = atualizar_json_com_transcricoes(
         json_acompanhamento,
         transcricoes
     )
-    # Adicionar null para nao processados
+    # Add null for unprocessed segments
     json_acomp_atualizado = adicionar_transcricoes_null(
         json_acomp_atualizado,
         segmentos_elegiveis
     )
 
-    # Salvar em 06-stt_whisper
+    # Save in 06-stt_whisper
     arquivo_acomp_output = pasta_output_stt / f"{audio_id}_segments_acompanhamento.json"
     if not salvar_json(json_acomp_atualizado, arquivo_acomp_output):
         return False
     print(f"Salvo: {arquivo_acomp_output}")
 
-    # Copiar para 00-json_dinamico (sobrescrever)
+    # Copy to 00-json_dinamico (overwrite)
     arquivo_acomp_dinamico = pasta_output_json_dinamico / f"{audio_id}_segments_acompanhamento.json"
     if not salvar_json(json_acomp_atualizado, arquivo_acomp_dinamico):
         return False
     print(f"Sobrescrito: {arquivo_acomp_dinamico}")
 
-    # 2. Se existir JSON filtrado, atualizar e salvar
+    # 2. If a filtered JSON exists, update and save
     if json_filtrado is not None:
         json_filtrado_atualizado = atualizar_json_com_transcricoes(
             json_filtrado,
             transcricoes
         )
 
-        # Salvar em 06-stt_whisper
+        # Save in 06-stt_whisper
         arquivo_filtrado_output = pasta_output_stt / f"{audio_id}_whisper.json"
         if not salvar_json(json_filtrado_atualizado, arquivo_filtrado_output):
             return False
         print(f"Salvo: {arquivo_filtrado_output}")
 
-        # Copiar para 00-json_dinamico como {id}.json (sobrescrever)
+        # Copy to 00-json_dinamico as {id}.json (overwrite)
         arquivo_filtrado_dinamico = pasta_output_json_dinamico / f"{audio_id}.json"
         if not salvar_json(json_filtrado_atualizado, arquivo_filtrado_dinamico):
             return False
@@ -440,21 +440,21 @@ def salvar_outputs(json_filtrado: Optional[Dict],
 
 
 # ==============================================================================
-# FUNCAO PRINCIPAL
+# MAIN FUNCTION
 # ==============================================================================
 
 def main(audio_id: str) -> bool:
     """
-    Funcao principal: orquestra todo o fluxo de transcricao.
+    Main function: orchestrates the entire transcription flow.
 
     Args:
-        audio_id: ID do audio a processar
+        audio_id: ID of the audio file to process
 
     Returns:
-        True se as transcricoes foram salvas (ou nao havia segmento
-        elegivel), False se falta pre-condicao ou o salvamento falhou.
+        True if the transcriptions were saved (or there was no eligible
+        segment), False if a precondition is missing or saving failed.
     """
-    # Definir caminhos baseados no audio_id
+    # Define paths based on audio_id
     PASTA_JSON_DINAMICO = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "00-json_dinamico"
     PASTA_AUDIOS = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "03-segments_16khz"
     PASTA_OUTPUT_STT = PROJECT_ROOT / "arquivos" / "temp" / audio_id / "06-stt_whisper"
@@ -465,23 +465,23 @@ def main(audio_id: str) -> bool:
     print("=" * 70)
     print(f"Audio ID: {audio_id}")
     print(f"Modelo: {MODELO_WHISPER}")
-    
-    # 1. Carregar modelo usando ModelManager (singleton)
+
+    # 1. Load model using ModelManager (singleton)
     print("\nCarregando modelo Whisper...")
     manager = ModelManager()
     pipe = manager.get_whisper()
-    
-    # Device e dtype ja gerenciados pelo manager
-    # Obter device do modelo para logs e batch_size
+
+    # Device and dtype already managed by the manager
+    # Get the model's device for logs and batch_size
     device = str(pipe.model.device)
     if 'cuda' in device:
         device = 'cuda'
     print(f"Pipeline carregado em {device.upper()}")
-    
-    # Obter batch_size
+
+    # Get batch_size
     batch_size = obter_batch_size(device)
-    
-    # 2. Carregar metadados
+
+    # 2. Load metadata
     print("\n" + "=" * 70)
     print("CARREGANDO METADADOS")
     print("=" * 70)
@@ -491,14 +491,14 @@ def main(audio_id: str) -> bool:
         print("ERRO: Nao foi possivel carregar metadados. Abortando.")
         return False
 
-    # 4. Determinar segmentos elegiveis
+    # 4. Determine eligible segments
     segmentos_elegiveis = determinar_segmentos_elegiveis(
-        json_filtrado, 
+        json_filtrado,
         json_acompanhamento
     )
     print(f"\nSegmentos elegiveis para processamento: {len(segmentos_elegiveis)}")
-    
-    # 5. Listar arquivos de audio elegiveis
+
+    # 5. List eligible audio files
     print("\n" + "=" * 70)
     print("LISTANDO ARQUIVOS DE AUDIO")
     print("=" * 70)
@@ -506,22 +506,22 @@ def main(audio_id: str) -> bool:
         PASTA_AUDIOS,
         segmentos_elegiveis
     )
-    
+
     if not arquivos_audio:
-        # Funil pode ter reprovado tudo antes: nao e falha deste modulo
+        # The funnel may have failed everything earlier: not a failure of this module
         print("AVISO: Nenhum arquivo de audio elegivel encontrado")
         print("Verifique se os arquivos existem em:", PASTA_AUDIOS)
         return True
 
     print(f"Arquivos encontrados: {len(arquivos_audio)}/{len(segmentos_elegiveis)}")
-    
-    # 6. Processar transcricoes
+
+    # 6. Process transcriptions
     print("\n" + "=" * 70)
     print("PROCESSANDO TRANSCRICOES")
     print("=" * 70)
     transcricoes = processar_transcricoes(pipe, arquivos_audio, batch_size)
-    
-    # 7. Salvar outputs
+
+    # 7. Save outputs
     sucesso = salvar_outputs(
         json_filtrado,
         json_acompanhamento,
@@ -532,7 +532,7 @@ def main(audio_id: str) -> bool:
         audio_id
     )
 
-    # 8. Relatorio final
+    # 8. Final report
     print("\n" + "=" * 70)
     print("PROCESSAMENTO CONCLUIDO")
     print("=" * 70)
@@ -549,12 +549,12 @@ def main(audio_id: str) -> bool:
 
 
 # ==============================================================================
-# EXECUCAO
+# EXECUTION
 # ==============================================================================
 
 if __name__ == "__main__":
-    # Execucao direta exige o audio_id como argumento - nao ha id fixo
-    # no codigo. Mesmo padrao do m15_cleanup.py.
+    # Direct execution requires audio_id as an argument - there is no
+    # fixed id in the code. Same pattern as m15_cleanup.py.
     if len(sys.argv) != 2:
         print("Uso: python src/m08_whisper.py <audio_id>")
         sys.exit(1)
